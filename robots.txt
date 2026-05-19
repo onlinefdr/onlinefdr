@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Keep practitioner application private
+Disallow: /join-the-team/
+
+Sitemap: https://onlinefdr.com.au/sitemap.xml
