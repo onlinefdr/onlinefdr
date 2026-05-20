@@ -457,6 +457,13 @@ footer { background: var(--charcoal); padding: 64px 0 36px; }
 
 .post-body-wrap{padding:0 0 80px;background:var(--bg)}
 .post-body{max-width:720px;margin:0 auto;padding:0 var(--pad)}
+
+/* TLDR summary block (top of post, AEO-optimised) */
+.post-tldr{max-width:720px;margin:0 auto 36px;padding:0 var(--pad)}
+.post-tldr-inner{background:var(--dust);border:1px solid var(--dust-3);border-left:3px solid var(--ochre);border-radius:8px;padding:22px 26px}
+.post-tldr-label{display:inline-block;font-size:0.66rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--terra);margin-bottom:8px}
+.post-tldr-text{font-size:0.98rem;font-weight:500;color:var(--charcoal);line-height:1.65;margin:0}
+@media(max-width:768px){.post-tldr-inner{padding:18px 20px}}
 .post-body h2{font-size:clamp(1.4rem,2.4vw,1.75rem);font-weight:700;color:var(--charcoal);letter-spacing:-0.01em;line-height:1.25;margin:42px 0 16px}
 .post-body h2:first-child{margin-top:8px}
 .post-body h3{font-size:clamp(1.1rem,1.6vw,1.25rem);font-weight:700;color:var(--charcoal);line-height:1.3;margin:32px 0 12px}
@@ -552,6 +559,12 @@ footer { background: var(--charcoal); padding: 64px 0 36px; }
 </div>
 
 <section class="post-body-wrap">
+  <aside class="post-tldr" aria-label="Summary">
+    <div class="post-tldr-inner">
+      <span class="post-tldr-label">In short</span>
+      <p class="post-tldr-text">The 2026 Federal Budget proposes major changes to Capital Gains Tax and negative gearing from 1 July 2027, with a 30% minimum tax on discretionary trusts from 1 July 2028. If legislated, these reforms will substantially increase the embedded tax liability in investment properties, shares, and trust structures, directly affecting how the property pool is valued and divided. CGT rollover relief continues to apply when assets are transferred between separating spouses through Consent Orders or a Binding Financial Agreement. Family Dispute Resolution allows parties to negotiate informed, tax-aware settlements before timing pressures arise.</p>
+    </div>
+  </aside>
   <article class="post-body">
 <p>The 2026 Federal Budget has announced sweeping proposed changes to Capital Gains Tax and negative gearing that, if legislated, will fundamentally alter how separating couples divide their assets. If you are navigating a property settlement right now, understanding these reforms is not optional; it is essential to protecting your financial future.</p>
 <p>The landscape of Australian family law property settlements is shifting on two fronts simultaneously. The Family Law Amendment Act 2024, effective 10 June 2025, has codified the four-step property framework that courts use to divide assets. Now, the 2026 Federal Budget is proposing to change the taxation rules that determine what those assets are actually worth after settlement. Together, these reforms demand a more informed, strategic approach to financial separation.</p>
