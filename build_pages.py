@@ -4011,6 +4011,7 @@ build_page(
     extra_css=COMPLAINTS_CSS,
     breadcrumbs=[("Home", "/"), ("Complaints", "/complaints/")],
     page_html=COMPLAINTS_HTML,
+    robots="noindex, nofollow",
     show_marquee=False,
     extra_js=COMPLAINTS_JS,
 )
@@ -4268,6 +4269,7 @@ build_page(
     extra_css=LEGAL_CSS,
     breadcrumbs=[("Home", "/"), ("Privacy Policy", "/privacy/")],
     page_html=PRIVACY_HTML,
+    robots="noindex, nofollow",
     show_marquee=False,
 )
 print("Privacy done.")
@@ -4480,6 +4482,7 @@ build_page(
     extra_css=LEGAL_CSS,
     breadcrumbs=[("Home", "/"), ("Terms of Service", "/terms/")],
     page_html=TERMS_HTML,
+    robots="noindex, nofollow",
     show_marquee=False,
 )
 print("Terms done.")
