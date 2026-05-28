@@ -189,6 +189,11 @@ body { font-family: var(--f); background: var(--dust); color: var(--charcoal); l
 .btn-primary:hover { background: var(--terra-lt); border-color: var(--terra-lt); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(168,92,50,0.28); }
 .btn-primary svg { transition: transform 0.2s; flex-shrink: 0; }
 .btn-primary:hover svg { transform: translateX(4px); }
+/* Hero phone-icon button: no arrow slide on hover (it's a phone glyph, not an arrow) */
+.hero-actions .btn-primary:hover svg { transform: none; }
+/* Calendar icon button (hero secondary): terracotta outline, transparent fill, square */
+.btn-icon-book { display: inline-flex; align-items: center; justify-content: center; width: 52px; height: 52px; background: transparent; color: var(--terra); border: 2px solid var(--terra); border-radius: 8px; text-decoration: none; transition: all 0.2s var(--ease); flex-shrink: 0; }
+.btn-icon-book:hover { background: var(--terra); color: var(--white); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(168,92,50,0.28); }
 .btn-secondary { display: inline-flex; align-items: center; gap: 10px; background: transparent; color: var(--terra); font-family: var(--f); font-size: 0.92rem; font-weight: 700; letter-spacing: 0.01em; padding: 13px 28px; border-radius: 8px; text-decoration: none; border: 2px solid var(--terra); transition: all 0.2s var(--ease); }
 .btn-secondary:hover { background: var(--terra); color: var(--white); transform: translateY(-1px); }
 .btn-light { display: inline-flex; align-items: center; gap: 10px; background: var(--white); color: var(--terra); font-family: var(--f); font-size: 0.92rem; font-weight: 800; letter-spacing: 0.01em; padding: 15px 30px; border-radius: 8px; text-decoration: none; border: 2px solid var(--white); transition: all 0.2s var(--ease); }
@@ -328,7 +333,7 @@ footer { background: var(--charcoal); padding: 64px 0 36px; }
   .nav-links.open > li > a { display: block; text-align: left; padding: 10px 0; }
   .nav-cta-wrap { display: none; }
   .nav-cta-mobile-only { display: block; margin-top: 12px; }
-  .nav-cta-mobile-only > a { display: inline-flex; }
+  .nav-links.open > li.nav-cta-mobile-only > a { display: flex; justify-content: center; align-items: center; width: 100%; text-align: center; padding: 13px 28px; }
   /* Dropdowns become flat indented lists on mobile */
   .nav-sub-trigger { width: 100%; justify-content: flex-start; text-align: left; cursor: default; pointer-events: none; padding: 10px 0; }
   .nav-sub-caret { display: none; }
@@ -594,6 +599,10 @@ footer { background: var(--charcoal); padding: 64px 0 36px; }
       <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free 15-Minute Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
     </div>

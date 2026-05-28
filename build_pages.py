@@ -593,6 +593,10 @@ HOME_HTML = """
       <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free 15-Minute Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
     </div>
@@ -994,6 +998,10 @@ ABOUT_HTML = """
       <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free 15-Minute Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
     </div>
@@ -1329,6 +1337,10 @@ PO_HTML = """
       <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free 15-Minute Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
     </div>
@@ -1645,6 +1657,10 @@ FS_HTML = """
       <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free 15-Minute Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
     </div>
@@ -1931,6 +1947,10 @@ S60I_HTML = """
       <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free 15-Minute Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
     </div>
@@ -2300,6 +2320,10 @@ JTT_HTML = """
       <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free 15-Minute Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
     </div>
@@ -2617,6 +2641,10 @@ HIW_HTML = """
       <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free 15-Minute Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
     </div>
@@ -3049,6 +3077,10 @@ WIFDR_HTML = """
       <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free 15-Minute Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
     </div>
@@ -3743,6 +3775,10 @@ FAQ_HTML = f"""
       <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free 15-Minute Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
     </div>
@@ -3920,6 +3956,10 @@ COMPLAINTS_HTML = """
       <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free 15-Minute Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
     </div>
@@ -4108,6 +4148,10 @@ PRIVACY_HTML = """
       <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free 15-Minute Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
     </div>
@@ -4330,6 +4374,10 @@ TERMS_HTML = """
       <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free 15-Minute Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
     </div>
@@ -4654,6 +4702,10 @@ BOOK_HTML = """
       <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free 15-Minute Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
     </div>
@@ -5146,6 +5198,10 @@ LOCATIONS_HTML = """
       <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free 15-Minute Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
     </div>

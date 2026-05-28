@@ -104,7 +104,7 @@ def load_shell_components():
     ns = {}
 
     # NAV_LINKS = """...""" (single-line triple-quoted)
-    for name in ["NAV_LINKS", "MARQUEE_ITEMS", "ENTITY_BAR", "FOOTER", "BASE_JS"]:
+    for name in ["NAV_LINKS", "NAV_CTA", "MARQUEE_ITEMS", "ENTITY_BAR", "FOOTER", "BASE_JS"]:
         # Match: NAME = """...""" (multiline)
         pattern = re.compile(
             rf'^{name}\s*=\s*"""(.*?)"""',
@@ -620,11 +620,17 @@ def shell(title, meta_desc, canonical, schema_json, page_html, current_page=None
     </a>
     <ul class="nav-links" id="nav-links" role="list">{nav_links}
     </ul>
+    <div class="nav-cta-wrap">{SHELL["NAV_CTA"]}</div>
     <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
     </button>
   </div>
 </nav>
+
+<div class="marquee-bar" aria-hidden="true" role="marquee">
+  <div class="marquee-track">{SHELL["MARQUEE_ITEMS"]}
+  </div>
+</div>
 
 <main id="main">
 {page_html}
