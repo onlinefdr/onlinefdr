@@ -28,7 +28,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
   <noscript><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"How "best interests of the child" actually works after the 2024 amendments","description":"Section 60CC of the Family Law Act was rewritten on 6 May 2024. Here is how the new six-factor best-interests test actually works in 2026, factor by factor.","datePublished":"2026-05-28","dateModified":"2026-05-28","author":{"@type":"Organization","name":"onlinefdr.com.au","url":"https://onlinefdr.com.au/"},"publisher":{"@type":"Organization","name":"onlinefdr.com.au","url":"https://onlinefdr.com.au/","logo":{"@type":"ImageObject","url":"https://onlinefdr.com.au/images/og-default.jpg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://onlinefdr.com.au/blog/best-interests-of-the-child-section-60cc-2024-amendments/"},"articleSection":"Parenting"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"How \"best interests of the child\" actually works after the 2024 amendments","description":"Section 60CC of the Family Law Act was rewritten on 6 May 2024. Here is how the new six-factor best-interests test actually works in 2026, factor by factor.","datePublished":"2026-05-28","dateModified":"2026-05-28","author":{"@type":"Organization","name":"onlinefdr.com.au","url":"https://onlinefdr.com.au/"},"publisher":{"@type":"Organization","name":"onlinefdr.com.au","url":"https://onlinefdr.com.au/","logo":{"@type":"ImageObject","url":"https://onlinefdr.com.au/images/og-default.jpg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://onlinefdr.com.au/blog/best-interests-of-the-child-section-60cc-2024-amendments/"},"articleSection":"Parenting"}</script>
   <style>
 /* ============================================================
    onlinefdr.com.au — DESIGN SYSTEM
@@ -186,6 +186,11 @@ body { font-family: var(--f); background: var(--dust); color: var(--charcoal); l
 .btn-primary:hover { background: var(--terra-lt); border-color: var(--terra-lt); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(168,92,50,0.28); }
 .btn-primary svg { transition: transform 0.2s; flex-shrink: 0; }
 .btn-primary:hover svg { transform: translateX(4px); }
+/* Hero phone-icon button: no arrow slide on hover (it's a phone glyph, not an arrow) */
+.hero-actions .btn-primary:hover svg { transform: none; }
+/* Calendar icon button (hero secondary): terracotta outline, transparent fill, square */
+.btn-icon-book { display: inline-flex; align-items: center; justify-content: center; width: 52px; height: 52px; background: transparent; color: var(--terra); border: 2px solid var(--terra); border-radius: 8px; text-decoration: none; transition: all 0.2s var(--ease); flex-shrink: 0; }
+.btn-icon-book:hover { background: var(--terra); color: var(--white); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(168,92,50,0.28); }
 .btn-secondary { display: inline-flex; align-items: center; gap: 10px; background: transparent; color: var(--terra); font-family: var(--f); font-size: 0.92rem; font-weight: 700; letter-spacing: 0.01em; padding: 13px 28px; border-radius: 8px; text-decoration: none; border: 2px solid var(--terra); transition: all 0.2s var(--ease); }
 .btn-secondary:hover { background: var(--terra); color: var(--white); transform: translateY(-1px); }
 .btn-light { display: inline-flex; align-items: center; gap: 10px; background: var(--white); color: var(--terra); font-family: var(--f); font-size: 0.92rem; font-weight: 800; letter-spacing: 0.01em; padding: 15px 30px; border-radius: 8px; text-decoration: none; border: 2px solid var(--white); transition: all 0.2s var(--ease); }
@@ -325,7 +330,7 @@ footer { background: var(--charcoal); padding: 64px 0 36px; }
   .nav-links.open > li > a { display: block; text-align: left; padding: 10px 0; }
   .nav-cta-wrap { display: none; }
   .nav-cta-mobile-only { display: block; margin-top: 12px; }
-  .nav-cta-mobile-only > a { display: inline-flex; }
+  .nav-links.open > li.nav-cta-mobile-only > a { display: flex; justify-content: center; align-items: center; width: 100%; text-align: center; padding: 13px 28px; }
   /* Dropdowns become flat indented lists on mobile */
   .nav-sub-trigger { width: 100%; justify-content: flex-start; text-align: left; cursor: default; pointer-events: none; padding: 10px 0; }
   .nav-sub-caret { display: none; }
@@ -508,6 +513,11 @@ footer { background: var(--charcoal); padding: 64px 0 36px; }
 .post-body ol li::marker{color:var(--terra);font-weight:700}
 .post-body blockquote{border-left:3px solid var(--ochre);padding:6px 0 6px 22px;margin:28px 0;color:var(--charcoal);font-style:normal;font-size:1.05rem;font-weight:500;line-height:1.65}
 .post-body code{background:var(--dust-2);padding:2px 6px;border-radius:4px;font-size:0.9em;font-family:Menlo,Consolas,monospace}
+/* Language grid (multilingual post): 3 columns desktop, responsive down */
+.lang-grid{column-count:3;column-gap:24px;margin:24px 0 28px;padding:24px;background:var(--dust);border:1px solid var(--dust-3);border-radius:12px}
+.lang-item{display:block;break-inside:avoid;font-size:0.95rem;color:var(--charcoal);line-height:1.9;padding:2px 0;border-bottom:1px solid var(--dust-2)}
+@media(max-width:680px){.lang-grid{column-count:2}}
+@media(max-width:420px){.lang-grid{column-count:1}}
 
 /* Related pages block */
 .post-related{max-width:720px;margin:48px auto 0;padding:0 var(--pad)}

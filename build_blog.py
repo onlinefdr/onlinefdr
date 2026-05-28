@@ -38,6 +38,7 @@ VALIDATION:
 import os
 import re
 import sys
+import json
 import yaml
 import html
 from pathlib import Path
@@ -830,20 +831,25 @@ def render_post_page(post):
   </aside>
 </section>"""
 
-    # BlogPosting schema
+    # BlogPosting schema. Build as a dict and json.dumps it so all string
+    # values (title, description) are correctly JSON-escaped. Using xml_escape
+    # here was a bug: it does not escape the double-quotes that JSON requires,
+    # so a title containing " produced invalid JSON-LD (Search Console parsing
+    # error "Missing ',' or '}'").
     iso_date = post["date"].isoformat()
-    schema = (
-        '{"@context":"https://schema.org","@type":"BlogPosting",'
-        f'"headline":"{xml_escape(post["title"])}",'
-        f'"description":"{xml_escape(post["meta_description"])}",'
-        f'"datePublished":"{iso_date}",'
-        f'"dateModified":"{iso_date}",'
-        '"author":{"@type":"Organization","name":"onlinefdr.com.au","url":"https://onlinefdr.com.au/"},'
-        '"publisher":{"@type":"Organization","name":"onlinefdr.com.au","url":"https://onlinefdr.com.au/","logo":{"@type":"ImageObject","url":"https://onlinefdr.com.au/images/og-default.jpg"}},'
-        f'"mainEntityOfPage":{{"@type":"WebPage","@id":"https://onlinefdr.com.au{canonical}"}},'
-        f'"articleSection":"{cat}"'
-        '}'
-    )
+    schema_obj = {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": post["title"],
+        "description": post["meta_description"],
+        "datePublished": iso_date,
+        "dateModified": iso_date,
+        "author": {"@type": "Organization", "name": "onlinefdr.com.au", "url": "https://onlinefdr.com.au/"},
+        "publisher": {"@type": "Organization", "name": "onlinefdr.com.au", "url": "https://onlinefdr.com.au/", "logo": {"@type": "ImageObject", "url": "https://onlinefdr.com.au/images/og-default.jpg"}},
+        "mainEntityOfPage": {"@type": "WebPage", "@id": f"https://onlinefdr.com.au{canonical}"},
+        "articleSection": cat,
+    }
+    schema = json.dumps(schema_obj, ensure_ascii=False, separators=(",", ":"))
 
     return shell(
         title=f"{post['title']} · onlinefdr.com.au",
