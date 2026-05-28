@@ -66,19 +66,38 @@ body { font-family: var(--f); background: var(--dust); color: var(--charcoal); l
 /* NAV */
 .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; background: rgba(242,237,228,0.96); backdrop-filter: blur(16px); border-bottom: 1px solid transparent; transition: border-color 0.3s var(--ease); }
 .nav.scrolled { border-color: var(--dust-3); }
-.nav-inner { display: flex; align-items: center; justify-content: space-between; height: 72px; max-width: var(--max); margin: 0 auto; padding: 0 var(--pad); }
+.nav-inner { display: flex; align-items: center; gap: 24px; height: 72px; max-width: var(--max); margin: 0 auto; padding: 0 var(--pad); }
+.nav-brand { flex-shrink: 0; }
+.nav-cta-wrap { flex-shrink: 0; display: flex; align-items: center; }
 .nav-brand { text-decoration: none; display: flex; align-items: center; gap: 10px; }
 .nav-brand-mark { flex-shrink: 0; display: block; }
 .nav-brand-text { display: flex; flex-direction: column; }
 .nav-brand-name { font-size: 1rem; font-weight: 800; color: var(--charcoal); letter-spacing: -0.02em; display: block; }
 .nav-brand-name .brand-fdr { color: var(--ochre); }
 .nav-brand-tag { font-size: 0.6rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--light-mid); display: block; }
-.nav-links { display: flex; align-items: center; gap: 2px; list-style: none; }
+.nav-links { flex: 1; display: flex; align-items: center; justify-content: center; gap: 2px; list-style: none; }
+.nav-cta-mobile-only { display: none; }
 .nav-links a { font-size: 0.82rem; font-weight: 600; color: var(--mid); text-decoration: none; padding: 8px 14px; border-radius: 6px; transition: all 0.2s var(--ease); white-space: nowrap; }
 .nav-links a:hover, .nav-links a[aria-current="page"] { color: var(--charcoal); background: var(--dust-2); }
-.nav-cta { background: var(--terra) !important; color: var(--white) !important; }
+.nav-cta { display: inline-flex; align-items: center; font-size: 0.82rem; font-weight: 600; text-decoration: none; padding: 8px 14px; border-radius: 6px; white-space: nowrap; background: var(--terra) !important; color: var(--white) !important; transition: all 0.2s var(--ease); }
 .nav-cta:hover { background: var(--terra-lt) !important; }
 .nav-toggle { display: none; background: none; border: none; cursor: pointer; color: var(--charcoal); padding: 8px; }
+
+/* SERVICES DROPDOWN */
+.nav-has-sub { position: relative; }
+.nav-sub-trigger { display: inline-flex; align-items: center; gap: 4px; font-family: inherit; font-size: 0.82rem; font-weight: 600; color: var(--mid); background: none; border: none; cursor: pointer; padding: 8px 14px; border-radius: 6px; transition: all 0.2s var(--ease); white-space: nowrap; }
+.nav-sub-trigger:hover, .nav-has-sub.open > .nav-sub-trigger, .nav-has-sub:has(a[aria-current="page"]) > .nav-sub-trigger { color: var(--charcoal); background: var(--dust-2); }
+.nav-sub-caret { transition: transform 0.2s var(--ease); }
+.nav-has-sub.open > .nav-sub-trigger .nav-sub-caret { transform: rotate(180deg); }
+.nav-sub { display: none; position: absolute; top: calc(100% + 4px); left: 0; min-width: 200px; background: var(--white); border: 1px solid var(--dust-3); border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.08); padding: 6px; list-style: none; z-index: 100; }
+.nav-has-sub.open > .nav-sub, .nav-has-sub:hover > .nav-sub { display: block; }
+.nav-sub li { display: block; }
+.nav-sub a { display: block; font-size: 0.82rem; font-weight: 600; color: var(--mid); text-decoration: none; padding: 8px 14px; border-radius: 6px; transition: all 0.2s var(--ease); white-space: nowrap; }
+.nav-sub a:hover, .nav-sub a[aria-current="page"] { color: var(--charcoal); background: var(--dust-2); }
+.nav-sub-ext { margin-left: 6px; opacity: 0.55; vertical-align: -1px; }
+.nav-sub-divider { display: block; height: 1px; background: var(--dust-3); margin: 6px 4px; padding: 0; pointer-events: none; }
+/* Resources dropdown sits near the right edge; right-align its popover so it doesn't clip off-screen */
+.nav-has-sub:nth-last-of-type(1) > .nav-sub { left: auto; right: 0; }
 
 /* MARQUEE */
 .marquee-bar { background: var(--ochre); overflow: hidden; padding: 12px 0; white-space: nowrap; }
@@ -298,9 +317,21 @@ footer { background: var(--charcoal); padding: 64px 0 36px; }
   .footer-top { grid-template-columns: 1fr 1fr; gap: 32px; }
 }
 @media(max-width:768px) {
+  .nav-inner { gap: 12px; }
+  .nav-toggle { display: flex; margin-left: auto; }
   .nav-links { display: none; }
-  .nav-links.open { display: flex; flex-direction: column; position: absolute; top: 72px; left: 0; right: 0; background: var(--dust); border-bottom: 1px solid var(--dust-3); padding: 16px var(--pad); gap: 4px; box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
-  .nav-toggle { display: flex; }
+  .nav-links.open { display: flex; flex-direction: column; align-items: stretch; text-align: left; position: absolute; top: 72px; left: 0; right: 0; background: var(--dust); border-bottom: 1px solid var(--dust-3); padding: 16px var(--pad); gap: 2px; box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+  .nav-links.open > li { width: 100%; text-align: left; }
+  .nav-links.open > li > a { display: block; text-align: left; padding: 10px 0; }
+  .nav-cta-wrap { display: none; }
+  .nav-cta-mobile-only { display: block; margin-top: 12px; }
+  .nav-cta-mobile-only > a { display: inline-flex; }
+  /* Dropdowns become flat indented lists on mobile */
+  .nav-sub-trigger { width: 100%; justify-content: flex-start; text-align: left; cursor: default; pointer-events: none; padding: 10px 0; }
+  .nav-sub-caret { display: none; }
+  .nav-sub { display: block; position: static; background: none; border: none; box-shadow: none; padding: 0; min-width: 0; }
+  .nav-sub a { display: block; text-align: left; padding: 8px 0 8px 20px; }
+  .nav-sub-divider { margin: 6px 0 6px 20px; }
   .footer-top { grid-template-columns: 1fr; gap: 28px; }
   .footer-bottom { flex-direction: column; text-align: center; }
   .entity-bar-inner { gap: 16px; }
@@ -525,13 +556,28 @@ footer { background: var(--charcoal); padding: 64px 0 36px; }
       </span>
     </a>
     <ul class="nav-links" id="nav-links" role="list">
+      <li><a href="/about/">About</a></li>
       <li><a href="/what-is-fdr/">What is FDR?</a></li>
       <li><a href="/how-it-works/">How It Works</a></li>
-      <li><a href="/parenting/">Parenting</a></li>
-      <li><a href="/financial-settlement/">Financial Settlements</a></li>
-      <li><a href="/section-60i/">60I Certificate</a></li>
-      <li><a href="/faq/">FAQ</a></li>
-      <li><a href="tel:0399617544" class="nav-cta" aria-label="Call us on 0 3 9 9 6 1 7 5 4 4"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right:6px;vertical-align:-2px"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(03) 9961 7544</a>
+      <li class="nav-has-sub"><button type="button" class="nav-sub-trigger" aria-haspopup="true" aria-expanded="false">Services<svg class="nav-sub-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <ul class="nav-sub" role="menu">
+          <li role="none"><a href="/parenting/" role="menuitem">Parenting</a></li>
+          <li role="none"><a href="/financial-settlement/" role="menuitem">Financial Settlement</a></li>
+          <li role="none"><a href="/section-60i/" role="menuitem">Section 60I</a></li>
+        </ul>
+      </li>
+      <li><a href="/book/">Book</a></li>
+      <li class="nav-has-sub"><button type="button" class="nav-sub-trigger" aria-haspopup="true" aria-expanded="false">Resources<svg class="nav-sub-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <ul class="nav-sub" role="menu">
+          <li role="none"><a href="/faq/" role="menuitem">FAQ</a></li>
+          <li role="none"><a href="/blog/" role="menuitem">Blog</a></li>
+          <li role="none" class="nav-sub-divider" aria-hidden="true"></li>
+          <li role="none"><a href="https://www.facebook.com/onlinefdr/" role="menuitem" target="_blank" rel="noopener noreferrer">Facebook<svg class="nav-sub-ext" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></li>
+          <li role="none"><a href="https://www.instagram.com/onlinefdr.com.au/" role="menuitem" target="_blank" rel="noopener noreferrer">Instagram<svg class="nav-sub-ext" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></li>
+          <li role="none"><a href="https://www.linkedin.com/company/onlinefdr/" role="menuitem" target="_blank" rel="noopener noreferrer">LinkedIn<svg class="nav-sub-ext" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></li>
+        </ul>
+      </li>
+      <li class="nav-cta-mobile-only"><a href="tel:0399617544" class="nav-cta" aria-label="Call us on 0 3 9 9 6 1 7 5 4 4"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right:6px;vertical-align:-2px"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(03) 9961 7544</a></li>
     </ul>
     <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
@@ -699,6 +745,15 @@ footer { background: var(--charcoal); padding: 64px 0 36px; }
     toggle.addEventListener('click',()=>{const o=navLinks.classList.toggle('open');toggle.setAttribute('aria-expanded',o)});
     navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navLinks.classList.remove('open');toggle.setAttribute('aria-expanded','false')}));
   }
+  document.querySelectorAll('.nav-sub-trigger').forEach(t=>{
+    const parent=t.parentElement;
+    t.addEventListener('click',e=>{e.stopPropagation();const o=parent.classList.toggle('open');t.setAttribute('aria-expanded',o)});
+  });
+  document.addEventListener('click',e=>{
+    document.querySelectorAll('.nav-has-sub.open').forEach(item=>{
+      if(!item.contains(e.target)){item.classList.remove('open');item.querySelector('.nav-sub-trigger').setAttribute('aria-expanded','false')}
+    });
+  });
   document.querySelectorAll('.faq-q').forEach(btn=>{
     btn.addEventListener('click',()=>{
       const item=btn.closest('.faq-item'),isOpen=item.classList.contains('open');
