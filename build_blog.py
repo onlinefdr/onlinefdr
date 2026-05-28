@@ -222,6 +222,11 @@ BLOG_CSS = """
 .post-body ol li::marker{color:var(--terra);font-weight:700}
 .post-body blockquote{border-left:3px solid var(--ochre);padding:6px 0 6px 22px;margin:28px 0;color:var(--charcoal);font-style:normal;font-size:1.05rem;font-weight:500;line-height:1.65}
 .post-body code{background:var(--dust-2);padding:2px 6px;border-radius:4px;font-size:0.9em;font-family:Menlo,Consolas,monospace}
+/* Language grid (multilingual post): 3 columns desktop, responsive down */
+.lang-grid{column-count:3;column-gap:24px;margin:24px 0 28px;padding:24px;background:var(--dust);border:1px solid var(--dust-3);border-radius:12px}
+.lang-item{display:block;break-inside:avoid;font-size:0.95rem;color:var(--charcoal);line-height:1.9;padding:2px 0;border-bottom:1px solid var(--dust-2)}
+@media(max-width:680px){.lang-grid{column-count:2}}
+@media(max-width:420px){.lang-grid{column-count:1}}
 
 /* Related pages block */
 .post-related{max-width:720px;margin:48px auto 0;padding:0 var(--pad)}
@@ -301,8 +306,22 @@ def md_to_html(md_text):
             i += 1
             continue
 
+        # Raw HTML passthrough block: a line starting with <div ...> captures
+        # everything verbatim until the matching closing </div> on its own line.
+        # Used for the language table and any other pre-built HTML the renderer
+        # does not natively support (renderer has no table support by design).
+        if stripped.startswith("<div"):
+            html_block = [line]
+            i += 1
+            depth = stripped.count("<div") - stripped.count("</div>")
+            while i < n and depth > 0:
+                html_block.append(lines[i])
+                depth += lines[i].count("<div") - lines[i].count("</div>")
+                i += 1
+            out.append("\n".join(html_block))
+            continue
+
         # Headings: ## or ###
-        if stripped.startswith("### "):
             out.append(f"<h3>{inline_md(stripped[4:].strip())}</h3>")
             i += 1
             continue
