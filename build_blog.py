@@ -559,6 +559,17 @@ def shell(title, meta_desc, canonical, schema_json, page_html, current_page=None
             f'href="{current_page}" aria-current="page"'
         )
 
+    # Marquee sits AFTER the page header (dark header -> ochre marquee -> body),
+    # matching how the static content pages place it.
+    marquee = (f'<div class="marquee-bar" aria-hidden="true" role="marquee">\n'
+               f'  <div class="marquee-track">{SHELL["MARQUEE_ITEMS"]}\n'
+               f'  </div>\n</div>')
+    if "</header>" in page_html:
+        head, rest = page_html.split("</header>", 1)
+        page_html_with_marquee = head + "</header>\n" + marquee + rest
+    else:
+        page_html_with_marquee = marquee + page_html
+
     schema_block = (f'<script type="application/ld+json">{schema_json}</script>'
                     if schema_json else "")
 
@@ -627,13 +638,8 @@ def shell(title, meta_desc, canonical, schema_json, page_html, current_page=None
   </div>
 </nav>
 
-<div class="marquee-bar" aria-hidden="true" role="marquee">
-  <div class="marquee-track">{SHELL["MARQUEE_ITEMS"]}
-  </div>
-</div>
-
 <main id="main">
-{page_html}
+{page_html_with_marquee}
 </main>
 
 {SHELL["ENTITY_BAR"]}
