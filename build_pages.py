@@ -42,13 +42,30 @@ with open('/home/claude/base.css') as f:
     BASE_CSS = f.read()
 
 NAV_LINKS = """
+      <li><a href="/about/">About</a></li>
       <li><a href="/what-is-fdr/">What is FDR?</a></li>
       <li><a href="/how-it-works/">How It Works</a></li>
-      <li><a href="/parenting/">Parenting</a></li>
-      <li><a href="/financial-settlement/">Financial Settlements</a></li>
-      <li><a href="/section-60i/">60I Certificate</a></li>
-      <li><a href="/faq/">FAQ</a></li>
-      <li><a href="tel:0399617544" class="nav-cta" aria-label="Call us on 0 3 9 9 6 1 7 5 4 4"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right:6px;vertical-align:-2px"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(03) 9961 7544</a>"""
+      <li class="nav-has-sub"><button type="button" class="nav-sub-trigger" aria-haspopup="true" aria-expanded="false">Services<svg class="nav-sub-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <ul class="nav-sub" role="menu">
+          <li role="none"><a href="/parenting/" role="menuitem">Parenting</a></li>
+          <li role="none"><a href="/financial-settlement/" role="menuitem">Financial Settlement</a></li>
+          <li role="none"><a href="/section-60i/" role="menuitem">Section 60I</a></li>
+        </ul>
+      </li>
+      <li><a href="/book/">Book</a></li>
+      <li class="nav-has-sub"><button type="button" class="nav-sub-trigger" aria-haspopup="true" aria-expanded="false">Resources<svg class="nav-sub-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <ul class="nav-sub" role="menu">
+          <li role="none"><a href="/faq/" role="menuitem">FAQ</a></li>
+          <li role="none"><a href="/blog/" role="menuitem">Blog</a></li>
+          <li role="none" class="nav-sub-divider" aria-hidden="true"></li>
+          <li role="none"><a href="https://www.facebook.com/onlinefdr/" role="menuitem" target="_blank" rel="noopener noreferrer">Facebook<svg class="nav-sub-ext" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></li>
+          <li role="none"><a href="https://www.instagram.com/onlinefdr.com.au/" role="menuitem" target="_blank" rel="noopener noreferrer">Instagram<svg class="nav-sub-ext" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></li>
+          <li role="none"><a href="https://www.linkedin.com/company/onlinefdr/" role="menuitem" target="_blank" rel="noopener noreferrer">LinkedIn<svg class="nav-sub-ext" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></li>
+        </ul>
+      </li>
+      <li class="nav-cta-mobile-only"><a href="tel:0399617544" class="nav-cta" aria-label="Call us on 0 3 9 9 6 1 7 5 4 4"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right:6px;vertical-align:-2px"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(03) 9961 7544</a></li>"""
+
+NAV_CTA = """<a href="tel:0399617544" class="nav-cta" aria-label="Call us on 0 3 9 9 6 1 7 5 4 4"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right:6px;vertical-align:-2px"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(03) 9961 7544</a>"""
 
 MARQUEE_ITEMS = """
       <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
@@ -157,6 +174,15 @@ BASE_JS = """<script>
     toggle.addEventListener('click',()=>{const o=navLinks.classList.toggle('open');toggle.setAttribute('aria-expanded',o)});
     navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navLinks.classList.remove('open');toggle.setAttribute('aria-expanded','false')}));
   }
+  document.querySelectorAll('.nav-sub-trigger').forEach(t=>{
+    const parent=t.parentElement;
+    t.addEventListener('click',e=>{e.stopPropagation();const o=parent.classList.toggle('open');t.setAttribute('aria-expanded',o)});
+  });
+  document.addEventListener('click',e=>{
+    document.querySelectorAll('.nav-has-sub.open').forEach(item=>{
+      if(!item.contains(e.target)){item.classList.remove('open');item.querySelector('.nav-sub-trigger').setAttribute('aria-expanded','false')}
+    });
+  });
   document.querySelectorAll('.faq-q').forEach(btn=>{
     btn.addEventListener('click',()=>{
       const item=btn.closest('.faq-item'),isOpen=item.classList.contains('open');
@@ -258,6 +284,7 @@ def build_page(
     </a>
     <ul class="nav-links" id="nav-links" role="list">{nav_links}
     </ul>
+    <div class="nav-cta-wrap">{NAV_CTA}</div>
     <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
     </button>
