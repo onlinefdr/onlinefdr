@@ -167,6 +167,8 @@ BLOG_CSS = """
 .post-card-meta{display:flex;align-items:center;gap:10px;margin-bottom:12px;flex-wrap:wrap}
 .post-card-cat{display:inline-flex;font-size:0.62rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--terra);background:var(--ochre-pale);padding:4px 10px;border-radius:100px}
 .post-card-date{font-size:0.74rem;font-weight:500;color:var(--mid)}
+.post-card-pinned{display:inline-flex;align-items:center;gap:5px;font-size:0.62rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#fff;background:var(--terra);padding:4px 10px;border-radius:100px}
+.post-card-pinned svg{width:11px;height:11px}
 .post-card h2{font-size:1.1rem;font-weight:700;line-height:1.3;color:var(--charcoal);margin-bottom:10px;letter-spacing:-0.01em}
 .post-card-excerpt{font-size:0.88rem;font-weight:400;color:var(--mid);line-height:1.6;margin-bottom:16px;flex:1}
 .post-card-read{font-size:0.78rem;font-weight:600;color:var(--terra);display:inline-flex;align-items:center;gap:6px;margin-top:auto}
@@ -467,6 +469,17 @@ def parse_post(path):
     else:
         meta["tldr"] = None
 
+    # pin_order (optional positive int). Hand-ranked pin position on the blog
+    # index: 1 = top, 2 = next, etc. Unpinned posts (no pin_order) follow in
+    # newest-first order below the pinned block. Display property, not a category.
+    if "pin_order" in meta and meta["pin_order"] is not None:
+        if not isinstance(meta["pin_order"], int) or meta["pin_order"] < 1:
+            raise ValidationError(
+                f"{path.name}: pin_order must be a positive integer (1 = top)"
+            )
+    else:
+        meta["pin_order"] = None
+
     meta_desc = meta["meta_description"]
     if not (100 <= len(meta_desc) <= 200):
         print(f"  WARN {path.name}: meta_description is {len(meta_desc)} chars "
@@ -513,8 +526,22 @@ def load_all_posts():
             print(f"  ERROR {e}")
             sys.exit(1)
 
-    # Sort newest first
-    posts.sort(key=lambda x: x["date"], reverse=True)
+    # Halt if two posts share the same pin_order (clash must not pass silently)
+    seen = {}
+    for p in posts:
+        po = p["pin_order"]
+        if po is not None:
+            if po in seen:
+                print(f"  ERROR pin_order clash: position {po} used by both "
+                      f"'{seen[po]}' and '{p['slug']}'. Renumber one of them.")
+                sys.exit(1)
+            seen[po] = p["slug"]
+
+    # Pinned posts first by pin_order (1 = top), then unpinned newest-first
+    posts.sort(key=lambda x: (
+        x["pin_order"] if x["pin_order"] is not None else float("inf"),
+        x["date"].toordinal() * -1,
+    ))
     return posts
 
 
@@ -646,6 +673,12 @@ def render_post_card(post):
     title_safe = html.escape(post["title"])
     excerpt_safe = html.escape(post["excerpt"])
 
+    pinned_badge = ""
+    if post.get("pin_order") is not None:
+        pinned_badge = ('<span class="post-card-pinned">'
+                        '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.4 2.6a1 1 0 0 0-1.5.1l-1 1.3-5.1 1.7a1 1 0 0 0-.4 1.6l3 3-4.6 4.6a1 1 0 0 0 1.4 1.4L10.8 17l3 3a1 1 0 0 0 1.6-.4l1.7-5.1 1.3-1a1 1 0 0 0 .1-1.5z"/></svg>'
+                        'Pinned</span>')
+
     if post.get("hero_image"):
         img_block = f'<img src="/blog/images/{post["hero_image"]}" alt="{title_safe}" loading="lazy">'
     else:
@@ -655,7 +688,7 @@ def render_post_card(post):
   <div class="post-card-image">{img_block}</div>
   <div class="post-card-body">
     <div class="post-card-meta">
-      <span class="post-card-cat">{cat}</span>
+      {pinned_badge}<span class="post-card-cat">{cat}</span>
       <span class="post-card-date">{fmt_date(post['date'])}</span>
     </div>
     <h2>{title_safe}</h2>
