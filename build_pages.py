@@ -543,7 +543,8 @@ main > .marquee-bar{padding:13px 0}
   .cta-band-inner{flex-direction:column;text-align:center}
 }
 @media(max-width:480px){
-  .hero-actions{flex-direction:column;align-items:flex-start}
+  .hero-actions{flex-direction:row;align-items:stretch;flex-wrap:nowrap}
+  .hero-actions .btn-primary{flex:1;justify-content:center;padding-left:16px;padding-right:16px}
   .why-stats{grid-template-columns:1fr}
   .cta-actions{flex-direction:column;align-items:center}
 }
@@ -561,13 +562,12 @@ HOME_HTML = """
           </h1>
           <p class="hero-sub">Family dispute resolution is the structured, professionally facilitated path to working out parenting and financial matters without going to court. Significantly less costly than contested proceedings, and most families resolve their matter in a matter of weeks rather than years.</p>
           <div class="hero-actions">
-            <a href="#discovery" class="btn-primary">
-              Book a free discovery call
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            <a href="tel:0399617544" class="btn-primary" aria-label="Call us on 0 3 9 9 6 1 7 5 4 4">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right:4px"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Call (03) 9961 7544
             </a>
-            <a href="/how-it-works/" class="btn-ghost">
-              How it works
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            <a href="/book/" class="btn-icon-book" aria-label="Book a free discovery call">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
             </a>
           </div>
         </div>

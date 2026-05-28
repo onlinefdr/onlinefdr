@@ -189,6 +189,11 @@ body { font-family: var(--f); background: var(--dust); color: var(--charcoal); l
 .btn-primary:hover { background: var(--terra-lt); border-color: var(--terra-lt); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(168,92,50,0.28); }
 .btn-primary svg { transition: transform 0.2s; flex-shrink: 0; }
 .btn-primary:hover svg { transform: translateX(4px); }
+/* Hero phone-icon button: no arrow slide on hover (it's a phone glyph, not an arrow) */
+.hero-actions .btn-primary:hover svg { transform: none; }
+/* Calendar icon button (hero secondary): terracotta outline, transparent fill, square */
+.btn-icon-book { display: inline-flex; align-items: center; justify-content: center; width: 52px; height: 52px; background: transparent; color: var(--terra); border: 2px solid var(--terra); border-radius: 8px; text-decoration: none; transition: all 0.2s var(--ease); flex-shrink: 0; }
+.btn-icon-book:hover { background: var(--terra); color: var(--white); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(168,92,50,0.28); }
 .btn-secondary { display: inline-flex; align-items: center; gap: 10px; background: transparent; color: var(--terra); font-family: var(--f); font-size: 0.92rem; font-weight: 700; letter-spacing: 0.01em; padding: 13px 28px; border-radius: 8px; text-decoration: none; border: 2px solid var(--terra); transition: all 0.2s var(--ease); }
 .btn-secondary:hover { background: var(--terra); color: var(--white); transform: translateY(-1px); }
 .btn-light { display: inline-flex; align-items: center; gap: 10px; background: var(--white); color: var(--terra); font-family: var(--f); font-size: 0.92rem; font-weight: 800; letter-spacing: 0.01em; padding: 15px 30px; border-radius: 8px; text-decoration: none; border: 2px solid var(--white); transition: all 0.2s var(--ease); }
@@ -328,7 +333,7 @@ footer { background: var(--charcoal); padding: 64px 0 36px; }
   .nav-links.open > li > a { display: block; text-align: left; padding: 10px 0; }
   .nav-cta-wrap { display: none; }
   .nav-cta-mobile-only { display: block; margin-top: 12px; }
-  .nav-cta-mobile-only > a { display: inline-flex; }
+  .nav-links.open > li.nav-cta-mobile-only > a { display: flex; justify-content: center; align-items: center; width: 100%; text-align: center; padding: 13px 28px; }
   /* Dropdowns become flat indented lists on mobile */
   .nav-sub-trigger { width: 100%; justify-content: flex-start; text-align: left; cursor: default; pointer-events: none; padding: 10px 0; }
   .nav-sub-caret { display: none; }
@@ -645,7 +650,8 @@ main > .marquee-bar{padding:13px 0}
   .cta-band-inner{flex-direction:column;text-align:center}
 }
 @media(max-width:480px){
-  .hero-actions{flex-direction:column;align-items:flex-start}
+  .hero-actions{flex-direction:row;align-items:stretch;flex-wrap:nowrap}
+  .hero-actions .btn-primary{flex:1;justify-content:center;padding-left:16px;padding-right:16px}
   .why-stats{grid-template-columns:1fr}
   .cta-actions{flex-direction:column;align-items:center}
 }
@@ -719,13 +725,12 @@ main > .marquee-bar{padding:13px 0}
           </h1>
           <p class="hero-sub">Family dispute resolution is the structured, professionally facilitated path to working out parenting and financial matters without going to court. Significantly less costly than contested proceedings, and most families resolve their matter in a matter of weeks rather than years.</p>
           <div class="hero-actions">
-            <a href="#discovery" class="btn-primary">
-              Book a free discovery call
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            <a href="tel:0399617544" class="btn-primary" aria-label="Call us on 0 3 9 9 6 1 7 5 4 4">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right:4px"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Call (03) 9961 7544
             </a>
-            <a href="/how-it-works/" class="btn-ghost">
-              How it works
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            <a href="/book/" class="btn-icon-book" aria-label="Book a free discovery call">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
             </a>
           </div>
         </div>
