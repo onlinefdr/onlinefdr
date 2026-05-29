@@ -550,7 +550,7 @@ def load_all_posts():
 # ─────────────────────────────────────────────────────────────────
 
 def shell(title, meta_desc, canonical, schema_json, page_html, current_page=None,
-          extra_css="", robots="index, follow"):
+          extra_css="", robots="index, follow", show_marquee=True):
     """Render a full HTML page using the site shell + blog CSS."""
     nav_links = SHELL["NAV_LINKS"]
     if current_page:
@@ -560,15 +560,19 @@ def shell(title, meta_desc, canonical, schema_json, page_html, current_page=None
         )
 
     # Marquee sits AFTER the page header (dark header -> ochre marquee -> body),
-    # matching how the static content pages place it.
-    marquee = (f'<div class="marquee-bar" aria-hidden="true" role="marquee">\n'
-               f'  <div class="marquee-track">{SHELL["MARQUEE_ITEMS"]}\n'
-               f'  </div>\n</div>')
-    if "</header>" in page_html:
-        head, rest = page_html.split("</header>", 1)
-        page_html_with_marquee = head + "</header>\n" + marquee + rest
+    # matching how the static content pages place it. Suppressed on individual
+    # post pages because the post hero image clashes with the marquee strip.
+    if show_marquee:
+        marquee = (f'<div class="marquee-bar" aria-hidden="true" role="marquee">\n'
+                   f'  <div class="marquee-track">{SHELL["MARQUEE_ITEMS"]}\n'
+                   f'  </div>\n</div>')
+        if "</header>" in page_html:
+            head, rest = page_html.split("</header>", 1)
+            page_html_with_marquee = head + "</header>\n" + marquee + rest
+        else:
+            page_html_with_marquee = marquee + page_html
     else:
-        page_html_with_marquee = marquee + page_html
+        page_html_with_marquee = page_html
 
     schema_block = (f'<script type="application/ld+json">{schema_json}</script>'
                     if schema_json else "")
@@ -902,6 +906,7 @@ def render_post_page(post):
         canonical=canonical,
         schema_json=schema,
         page_html=page_html,
+        show_marquee=False,
     )
 
 
