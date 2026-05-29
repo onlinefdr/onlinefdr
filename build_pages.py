@@ -67,13 +67,22 @@ NAV_LINKS = """
 
 NAV_CTA = """<a href="tel:0399617544" class="nav-cta" aria-label="Call us on 0 3 9 9 6 1 7 5 4 4"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right:6px;vertical-align:-2px"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(03) 9961 7544</a>"""
 
+GTAG = """  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18195606042"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18195606042');
+  </script>"""
+
 MARQUEE_ITEMS = """
       <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free 15-Minute Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
@@ -82,7 +91,7 @@ MARQUEE_ITEMS = """
       <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free 15-Minute Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>"""
@@ -229,6 +238,7 @@ def build_page(
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{GTAG}
   <title>{title}</title>
   <meta name="description" content="{meta_desc}">
   <meta name="robots" content="{robots}">
@@ -586,7 +596,7 @@ HOME_HTML = """
       <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free 15-Minute Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
@@ -595,7 +605,7 @@ HOME_HTML = """
       <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free 15-Minute Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
@@ -682,7 +692,7 @@ HOME_HTML = """
       <div class="cta-band-inner">
         <div class="cta-band-text">
           <h3>Not sure where to start? Start with a conversation.</h3>
-          <p>A free 15-minute call with an accredited FDR practitioner. No pressure, no commitment. Just a straight conversation about your options.</p>
+          <p>A free discovery call with an accredited FDR practitioner. No pressure, no commitment. Just a straight conversation about your options.</p>
         </div>
         <a href="#discovery" class="cta-band-btn">
           Book your free call
@@ -787,8 +797,8 @@ HOME_HTML = """
             <div class="process-num" aria-hidden="true">01</div>
             <div class="process-content">
               <h3>Free discovery call</h3>
-              <p>A no-obligation 15-minute conversation. We explain how FDR works, whether it is right for your circumstances, and answer any questions before you commit to anything.</p>
-              <span class="process-tag">15 minutes &bull; Free &bull; No obligation</span>
+              <p>A no-obligation conversation. We explain how FDR works, whether it is right for your circumstances, and answer any questions before you commit to anything.</p>
+              <span class="process-tag">Free &bull; No obligation</span>
             </div>
           </div>
           <div class="process-step reveal reveal-d1">
@@ -879,7 +889,7 @@ HOME_HTML = """
       <div class="cta-inner">
         <span class="cta-eyebrow">Take the first step</span>
         <h2 id="cta-heading">The call you make before you call a lawyer.</h2>
-        <p>A free, no-obligation 15-minute conversation with an accredited FDR practitioner. Whether your matter involves children, property, or both, this is a chance to understand your options before you commit to anything.</p>
+        <p>A free, no-obligation conversation with an accredited FDR practitioner. Whether your matter involves children, property, or both, this is a chance to understand your options before you commit to anything.</p>
         <div class="cta-actions">
           <a href="https://calendar.app.google/zwNm4dzYnwAwhwxY8" class="cta-btn">
             Book your free discovery call
@@ -991,7 +1001,7 @@ ABOUT_HTML = """
       <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free 15-Minute Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
@@ -1000,7 +1010,7 @@ ABOUT_HTML = """
       <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free 15-Minute Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
@@ -1174,7 +1184,7 @@ ABOUT_HTML = """
       <div class="page-cta-inner">
         <span class="page-cta-eyebrow">Take the first step</span>
         <h2 id="about-cta-heading">Ready to find out if FDR is right for your situation?</h2>
-        <p>A free 15-minute discovery call with an accredited practitioner. No pressure, no commitment. Just a straight conversation about your options.</p>
+        <p>A free discovery call with an accredited practitioner. No pressure, no commitment. Just a straight conversation about your options.</p>
         <div class="page-cta-actions">
           <a href="https://calendar.app.google/zwNm4dzYnwAwhwxY8" class="btn-light">Book your free discovery call</a>
           <a href="tel:0399617544" class="btn-outline-light">Call (03) 9961 7544</a>
@@ -1330,7 +1340,7 @@ PO_HTML = """
       <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free 15-Minute Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
@@ -1339,7 +1349,7 @@ PO_HTML = """
       <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free 15-Minute Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
@@ -1524,7 +1534,7 @@ PO_HTML = """
         </div>
         <div class="sidebar-card">
           <h4>Where to start</h4>
-          <p>A free 15-minute discovery call to talk through which path is right for your situation. No pressure, no commitment.</p>
+          <p>A free discovery call to talk through which path is right for your situation. No pressure, no commitment.</p>
           <a href="/#discovery" class="btn-primary">Book a free discovery call</a>
         </div>
         <div class="sidebar-card sidebar-card-download">
@@ -1585,7 +1595,7 @@ PO_HTML = """
       <div class="page-cta-inner">
         <span class="page-cta-eyebrow">Where most families should start</span>
         <h2 id="po-cta-heading">A Parenting Plan is reachable for most separating couples.</h2>
-        <p>FDR is the structured way to get there. A free 15-minute discovery call to talk through whether it is right for your situation.</p>
+        <p>FDR is the structured way to get there. A free discovery call to talk through whether it is right for your situation.</p>
         <div class="page-cta-actions">
           <a href="https://calendar.app.google/zwNm4dzYnwAwhwxY8" class="btn-light">Book your free discovery call</a>
           <a href="tel:0399617544" class="btn-outline-light">Call (03) 9961 7544</a>
@@ -1650,7 +1660,7 @@ FS_HTML = """
       <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free 15-Minute Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
@@ -1659,7 +1669,7 @@ FS_HTML = """
       <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free 15-Minute Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
@@ -1812,7 +1822,7 @@ FS_HTML = """
       <aside class="sidebar">
         <div class="sidebar-card">
           <h4>Ready to talk through your financial situation?</h4>
-          <p>A free 15-minute discovery call to discuss where you stand and whether FDR is right for your circumstances.</p>
+          <p>A free discovery call to discuss where you stand and whether FDR is right for your circumstances.</p>
           <a href="/#discovery" class="btn-primary">Book a free discovery call</a>
         </div>
         <div class="sidebar-card sidebar-card-download">
@@ -1876,7 +1886,7 @@ FS_HTML = """
       <div class="page-cta-inner">
         <span class="page-cta-eyebrow">Before it becomes a legal battle</span>
         <h2 id="fs-cta-heading">The call you make before you call a lawyer.</h2>
-        <p>A free 15-minute call to discuss your financial situation, understand your options, and find out whether FDR is right for your circumstances.</p>
+        <p>A free discovery call to discuss your financial situation, understand your options, and find out whether FDR is right for your circumstances.</p>
         <div class="page-cta-actions">
           <a href="https://calendar.app.google/zwNm4dzYnwAwhwxY8" class="btn-light">Book your free discovery call</a>
           <a href="tel:0399617544" class="btn-outline-light">Call (03) 9961 7544</a>
@@ -1940,7 +1950,7 @@ S60I_HTML = """
       <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free 15-Minute Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
@@ -1949,7 +1959,7 @@ S60I_HTML = """
       <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free 15-Minute Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
@@ -2073,7 +2083,7 @@ S60I_HTML = """
       <aside class="sidebar">
         <div class="sidebar-card">
           <h4>Considering FDR for a parenting matter?</h4>
-          <p>Start with a free 15-minute discovery call. We will explain the process, walk through whether FDR is appropriate, and answer questions about Section 60I.</p>
+          <p>Start with a free discovery call. We will explain the process, walk through whether FDR is appropriate, and answer questions about Section 60I.</p>
           <a href="/#discovery" class="btn-primary">Book a free discovery call</a>
         </div>
         <div class="sidebar-card sidebar-card-img">
@@ -2126,7 +2136,7 @@ S60I_HTML = """
       <div class="page-cta-inner">
         <span class="page-cta-eyebrow">A proper process, not a shortcut</span>
         <h2 id="s60i-cta-heading">Talk through your matter before deciding the next step.</h2>
-        <p>A free 15-minute discovery call to understand whether FDR is appropriate for your circumstances and to walk through what the Section 60I process involves.</p>
+        <p>A free discovery call to understand whether FDR is appropriate for your circumstances and to walk through what the Section 60I process involves.</p>
         <div class="page-cta-actions">
           <a href="https://calendar.app.google/zwNm4dzYnwAwhwxY8" class="btn-light">Book your free discovery call</a>
           <a href="tel:0399617544" class="btn-outline-light">Call (03) 9961 7544</a>
@@ -2313,7 +2323,7 @@ JTT_HTML = """
       <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free 15-Minute Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
@@ -2322,7 +2332,7 @@ JTT_HTML = """
       <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free 15-Minute Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
@@ -2634,7 +2644,7 @@ HIW_HTML = """
       <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free 15-Minute Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
@@ -2643,7 +2653,7 @@ HIW_HTML = """
       <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free 15-Minute Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
@@ -2667,10 +2677,9 @@ HIW_HTML = """
           <div class="tl-content">
             <span class="tl-step-num">Step 01</span>
             <h3 id="step-discovery">Free discovery call</h3>
-            <p>A 15-minute call with your mediator to talk through your situation and confirm that FDR is appropriate for your circumstances. This is not a sales call. If FDR is not right for you, we will say so and point you in the right direction.</p>
+            <p>A discovery call with your mediator to talk through your situation and confirm that FDR is appropriate for your circumstances. This is not a sales call. If FDR is not right for you, we will say so and point you in the right direction.</p>
             <p>If you decide to proceed, you will each receive a booking link for your individual intake session.</p>
             <div class="tl-meta">
-              <span class="tl-tag tl-tag-time">15 minutes</span>
               <span class="tl-tag tl-tag-note">Free, no obligation</span>
             </div>
           </div>
@@ -2889,7 +2898,7 @@ HIW_HTML = """
       <div class="page-cta-inner">
         <span class="page-cta-eyebrow">Ready to start?</span>
         <h2 id="hiw-cta-heading">The call you make before you call a lawyer.</h2>
-        <p>A free 15-minute discovery call. Find out whether FDR is right for your situation, what the process looks like for your circumstances, and how quickly you can start.</p>
+        <p>A free discovery call. Find out whether FDR is right for your situation, what the process looks like for your circumstances, and how quickly you can start.</p>
         <div class="page-cta-actions">
           <a href="https://calendar.app.google/zwNm4dzYnwAwhwxY8" class="btn-light">Book your free discovery call</a>
           <a href="tel:0399617544" class="btn-outline-light">Call (03) 9961 7544</a>
@@ -3070,7 +3079,7 @@ WIFDR_HTML = """
       <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free 15-Minute Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
@@ -3079,7 +3088,7 @@ WIFDR_HTML = """
       <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free 15-Minute Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
@@ -3122,7 +3131,7 @@ WIFDR_HTML = """
         <div class="how-summary-step reveal">
           <div class="how-summary-num">1</div>
           <h3>Free discovery call</h3>
-          <p>A 15-minute conversation with the practitioner to understand the matter, check whether FDR is appropriate, and answer your questions about the process.</p>
+          <p>A discovery call with the practitioner to understand the matter, check whether FDR is appropriate, and answer your questions about the process.</p>
         </div>
         <div class="how-summary-step reveal reveal-d1">
           <div class="how-summary-num">2</div>
@@ -3329,7 +3338,7 @@ WIFDR_HTML = """
           </div>
           <div class="sidebar-card">
             <h4>Ready to find out if FDR is right for you?</h4>
-            <p>A free 15-minute call with an accredited practitioner. No pressure, no commitment.</p>
+            <p>A free discovery call with an accredited practitioner. No pressure, no commitment.</p>
             <a href="https://calendar.app.google/zwNm4dzYnwAwhwxY8" class="btn-primary">Book a free discovery call</a>
           </div>
           <nav class="sidebar-card sidebar-nav">
@@ -3373,7 +3382,7 @@ WIFDR_HTML = """
     <div class="wrap">
       <div class="page-cta-inner">
         <span class="page-cta-eyebrow">Before you call a lawyer</span>
-        <h2 id="wifdr-cta-heading">Find out in 15 minutes whether FDR is right for your situation.</h2>
+        <h2 id="wifdr-cta-heading">Find out whether FDR is right for your situation.</h2>
         <p>A free discovery call with an accredited practitioner. No pressure, no commitment, no obligation to proceed.</p>
         <div class="page-cta-actions">
           <a href="https://calendar.app.google/zwNm4dzYnwAwhwxY8" class="btn-light">Book your free discovery call</a>
@@ -3555,7 +3564,7 @@ SECTIONS = [
     "count": 8,
     "items": [
       ("How does the FDR process work?",
-       "The process moves through four stages. First, a free 15-minute discovery call to confirm FDR is appropriate. Second, individual intake sessions of one hour each, conducted separately. Third, one or more joint mediation sessions: four hours for parenting matters and three hours for financial matters. Fourth, if agreement is reached, the terms are documented in a Parenting Plan or heads of agreement. If not, a Section 60I certificate may be issued. See our <a href='/how-it-works/'>How It Works</a> page for a full walkthrough."),
+       "The process moves through four stages. First, a free discovery call to confirm FDR is appropriate. Second, individual intake sessions of one hour each, conducted separately. Third, one or more joint mediation sessions: four hours for parenting matters and three hours for financial matters. Fourth, if agreement is reached, the terms are documented in a Parenting Plan or heads of agreement. If not, a Section 60I certificate may be issued. See our <a href='/how-it-works/'>How It Works</a> page for a full walkthrough."),
       ("What happens in the intake session?",
        "Each party meets separately with the mediator for one hour. This is your opportunity to speak candidly about your situation, your concerns, and what matters most to you, without the other party present. The intake session also allows the mediator to assess whether the matter is suitable for joint FDR and to identify any issues that may affect the process, including safety considerations."),
       ("How long does a joint session run?",
@@ -3768,7 +3777,7 @@ FAQ_HTML = f"""
       <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free 15-Minute Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
@@ -3777,7 +3786,7 @@ FAQ_HTML = f"""
       <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free 15-Minute Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
@@ -3805,7 +3814,7 @@ FAQ_HTML = f"""
         <div class="faq-sections">
 {sections_html}
           <div class="faq-cta-inline">
-            <p><strong>Still have a question?</strong> A free 15-minute discovery call with an accredited practitioner. Ask anything.</p>
+            <p><strong>Still have a question?</strong> A free discovery call with an accredited practitioner. Ask anything.</p>
             <a href="https://calendar.app.google/zwNm4dzYnwAwhwxY8" class="btn-light" style="white-space:nowrap">Book a free call</a>
           </div>
         </div>
@@ -3949,7 +3958,7 @@ COMPLAINTS_HTML = """
       <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free 15-Minute Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
@@ -3958,7 +3967,7 @@ COMPLAINTS_HTML = """
       <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free 15-Minute Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
@@ -4141,7 +4150,7 @@ PRIVACY_HTML = """
       <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free 15-Minute Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
@@ -4150,7 +4159,7 @@ PRIVACY_HTML = """
       <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free 15-Minute Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
@@ -4367,7 +4376,7 @@ TERMS_HTML = """
       <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free 15-Minute Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
@@ -4376,7 +4385,7 @@ TERMS_HTML = """
       <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free 15-Minute Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
@@ -4695,7 +4704,7 @@ BOOK_HTML = """
       <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free 15-Minute Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
@@ -4704,7 +4713,7 @@ BOOK_HTML = """
       <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free 15-Minute Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
@@ -4726,7 +4735,6 @@ BOOK_HTML = """
           <h2>Free discovery call</h2>
         </div>
         <div class="book-card-meta">
-          <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>15 minutes</span>
           <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>Online via Google Meet</span>
         </div>
         <p>A short, no-obligation conversation to confirm that FDR is the right path for your situation. We ask a few brief questions about your circumstances, answer any questions you have about how the process works, and give you a clear picture of what is involved.</p>
@@ -4909,7 +4917,7 @@ build_page(
     meta_desc="Book a free discovery call to find out if FDR is right for you, or book an intake session to begin the process. Online, anywhere in Australia.",
     canonical="/book/",
     current_page="/book/",
-    schema_json='{"@context":"https://schema.org","@type":"WebPage","@id":"https://onlinefdr.com.au/book/#webpage","url":"https://onlinefdr.com.au/book/","name":"Book Online FDR","description":"Three booking pathways for online Family Dispute Resolution: free 15-minute discovery call, 1-hour individual intake session, or arranged joint mediation (four hours for parenting, three hours for financial). Available nationally, conducted via Google Meet.","about":{"@id":"https://onlinefdr.com.au/#organization"}}',
+    schema_json='{"@context":"https://schema.org","@type":"WebPage","@id":"https://onlinefdr.com.au/book/#webpage","url":"https://onlinefdr.com.au/book/","name":"Book Online FDR","description":"Three booking pathways for online Family Dispute Resolution: free discovery call, 1-hour individual intake session, or arranged joint mediation (four hours for parenting, three hours for financial). Available nationally, conducted via Google Meet.","about":{"@id":"https://onlinefdr.com.au/#organization"}}',
     extra_css=BOOK_CSS,
     breadcrumbs=[("Home", "/"), ("Book", "/book/")],
     page_html=BOOK_HTML,
@@ -5191,7 +5199,7 @@ LOCATIONS_HTML = """
       <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free 15-Minute Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
@@ -5200,7 +5208,7 @@ LOCATIONS_HTML = """
       <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free 15-Minute Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>

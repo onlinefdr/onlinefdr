@@ -143,7 +143,7 @@ The AI translation runs on Google's infrastructure as part of Google Meet. The u
 
 ## Arranging a session in your language
 
-The first step is the free 15-minute discovery call. If you speak a language other than English, that call cannot be made through a normal phone line, because phone calls do not carry live translation.
+The first step is the free discovery call. If you speak a language other than English, that call cannot be made through a normal phone line, because phone calls do not carry live translation.
 
 Instead, book the discovery call through the website, and it will be held over Google Meet with translated captions, the same way the mediation itself runs. That way the very first conversation already happens in your language.
 

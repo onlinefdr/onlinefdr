@@ -84,7 +84,7 @@ Consider engaging an accountant alongside your family law process to model the t
 
 The practice is here to help you navigate this intersection of tax reform and family law with clarity and confidence.
 
-[Book a free 15-minute discovery call](/book/) to discuss your situation and understand how FDR can help you reach a fair, informed property settlement.
+[Book a free discovery call](/book/) to discuss your situation and understand how FDR can help you reach a fair, informed property settlement.
 
 Divorce. Done different.
 

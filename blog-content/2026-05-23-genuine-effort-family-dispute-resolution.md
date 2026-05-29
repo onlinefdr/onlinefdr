@@ -77,6 +77,6 @@ The final piece is honesty about the process itself. Family Dispute Resolution w
 
 Family Dispute Resolution is not a courtroom and it is not a negotiation across enemy lines. It is a structured conversation between two parents about their child, conducted by an accredited practitioner whose job is to help them reach a workable arrangement. Genuine effort is what makes it work.
 
-If you are preparing for Family Dispute Resolution and want to discuss how the process will work in your matter, [book a free 15-minute discovery call](/book/) to talk it through.
+If you are preparing for Family Dispute Resolution and want to discuss how the process will work in your matter, [book a free discovery call](/book/) to talk it through.
 
 > This article is general information only and does not constitute legal advice. For advice about your specific circumstances, please consult a family lawyer or accredited Family Dispute Resolution Practitioner.

@@ -71,6 +71,6 @@ Pets are one of the most emotionally charged items in any property settlement, a
 
 This is because they can craft arrangements the court cannot order. The most useful thing separating couples can do, before any negotiation begins, is gather the basic factual picture: who acquired the animal, whose name is on the registration, who has paid for vet bills, who walks the dog or changes the litter tray, who the animal sleeps with at night, and who the children are closest to with the animal. This information is the foundation of any sensible conversation, whether in mediation or in court.
 
-If you and your former partner are working through a property settlement that includes a pet, [book a free 15-minute discovery call](/book/) to discuss whether Family Dispute Resolution is right for your situation.
+If you and your former partner are working through a property settlement that includes a pet, [book a free discovery call](/book/) to discuss whether Family Dispute Resolution is right for your situation.
 
 > This article is general information only and does not constitute legal advice. For advice about your specific circumstances, please consult a family lawyer or accredited Family Dispute Resolution Practitioner.

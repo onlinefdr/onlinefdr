@@ -120,6 +120,15 @@ def load_shell_components():
 
 SHELL = load_shell_components()
 
+GTAG = """  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18195606042"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18195606042');
+  </script>"""
+
 
 # ─────────────────────────────────────────────────────────────────
 # BASE CSS
@@ -582,6 +591,7 @@ def shell(title, meta_desc, canonical, schema_json, page_html, current_page=None
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{GTAG}
   <title>{title}</title>
   <meta name="description" content="{html.escape(meta_desc, quote=True)}">
   <meta name="robots" content="{robots}">
@@ -874,7 +884,7 @@ def render_post_page(post):
   <aside class="post-cta">
     <div class="post-cta-inner">
       <h3>Have a question about your situation?</h3>
-      <p>Book a free 15-minute discovery call. No obligation, no pressure, just a chance to ask whether Family Dispute Resolution is the right path for you.</p>
+      <p>Book a free discovery call. No obligation, no pressure, just a chance to ask whether Family Dispute Resolution is the right path for you.</p>
       <a href="/book/" class="btn">Book a discovery call <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
     </div>
   </aside>

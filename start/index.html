@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en-AU" data-call-state="closed">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18195606042"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18195606042');
+  </script>
+  <title>Free Discovery Call | Online Family Dispute Resolution | onlinefdr.com.au</title>
+  <meta name="description" content="Speak with an accredited Family Dispute Resolution practitioner. Resolve parenting and property matters without going to court. Free discovery call, available anywhere in Australia.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://onlinefdr.com.au/start/">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CTA state + conversion tracking. CALL_HOURS is the single source of truth: -->
+  <!-- change start/end here in late June (e.g. 8 to 17) and both the logic AND the -->
+  <!-- displayed times update together. -->
+  <script>
+    var CALL_HOURS = { start: 10, end: 19, days: [1,2,3,4,5] }; // Mon-Fri 10:00-19:00 Melbourne
+    (function(){
+      function melb(){
+        var f = new Intl.DateTimeFormat('en-US', {timeZone:'Australia/Melbourne', hour12:false, weekday:'short', hour:'2-digit'});
+        var p = {}; f.formatToParts(new Date()).forEach(function(x){ p[x.type] = x.value; });
+        var wk = {Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6};
+        return { day: wk[p.weekday], hour: parseInt(p.hour,10) % 24 };
+      }
+      function isOpen(){
+        var m = melb();
+        return CALL_HOURS.days.indexOf(m.day) > -1 && m.hour >= CALL_HOURS.start && m.hour < CALL_HOURS.end;
+      }
+      document.documentElement.setAttribute('data-call-state', isOpen() ? 'open' : 'closed');
+    })();
+    function fmtHour(h){ var ap = h < 12 ? 'am' : 'pm'; var hh = h % 12; if (hh === 0) hh = 12; return hh + ap; }
+    function fireCall(){ if (typeof gtag === 'function'){ gtag('event','conversion',{'send_to':'AW-18195606042/D1p1CKrZi7UcEJrUq-RD'}); } return true; }
+    function fireBook(){ if (typeof gtag === 'function'){ gtag('event','conversion',{'send_to':'AW-18195606042/ru3xCK3Zi7UcEJrUq-RD'}); } return true; }
+  </script>
+
+  <style>
+    :root{
+      --dust:#F2EDE4; --dust-2:#E8E0D4; --dust-3:#D8CEC0;
+      --ochre:#C4873A; --ochre-pale:#F9F2E8;
+      --terra:#A85C32; --terra-lt:#BC7050;
+      --charcoal:#2C2825; --mid:#7A6F65; --light-mid:#A09690;
+      --white:#FDFAF6;
+      --f:'Manrope', system-ui, -apple-system, sans-serif;
+      --max:760px; --ease:cubic-bezier(0.25,0.1,0.25,1);
+    }
+    *,*::before,*::after{ box-sizing:border-box; margin:0; padding:0; }
+    html{ font-size:16px; -webkit-text-size-adjust:100%; }
+    body{
+      font-family:var(--f); background:var(--dust); color:var(--charcoal);
+      line-height:1.6; -webkit-font-smoothing:antialiased; min-height:100vh;
+      background-image:radial-gradient(120% 80% at 50% -10%, var(--ochre-pale) 0%, var(--dust) 60%);
+    }
+    a{ color:inherit; }
+    .wrap{ max-width:var(--max); margin:0 auto; padding:0 24px; }
+
+    /* Top bar */
+    .top{ display:flex; align-items:center; justify-content:space-between; padding:20px 24px; max-width:1080px; margin:0 auto; }
+    .brand{ text-decoration:none; display:flex; flex-direction:column; line-height:1.1; }
+    .brand-name{ font-size:1rem; font-weight:800; letter-spacing:-0.02em; color:var(--charcoal); }
+    .brand-name .fdr{ color:var(--ochre); }
+    .brand-tag{ font-size:0.58rem; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; color:var(--light-mid); margin-top:2px; }
+    .top-phone{ display:inline-flex; align-items:center; gap:7px; text-decoration:none; font-weight:700; font-size:0.92rem; color:var(--terra); padding:8px 14px; border:1.5px solid var(--dust-3); border-radius:8px; transition:all .2s var(--ease); }
+    .top-phone:hover{ border-color:var(--terra); background:var(--white); }
+    .top-phone svg{ width:15px; height:15px; }
+    [data-call-state="closed"] .top-phone{ display:none; }
+
+    /* Hero */
+    .hero{ padding:18px 0 56px; text-align:center; }
+    .hero-img{ max-width:100%; margin:0 auto 30px; border-radius:18px; overflow:hidden; box-shadow:0 18px 46px rgba(44,40,37,0.16); line-height:0; }
+    .hero-img img{ width:100%; height:auto; display:block; }
+    .eyebrow{ display:inline-flex; align-items:center; gap:10px; font-size:0.72rem; font-weight:700; letter-spacing:0.13em; text-transform:uppercase; color:var(--ochre); margin-bottom:22px; }
+    .eyebrow::before{ content:""; width:26px; height:2px; background:var(--ochre); display:inline-block; }
+    h1{ font-size:clamp(2.1rem, 6vw, 3.3rem); font-weight:800; line-height:1.08; letter-spacing:-0.03em; color:var(--charcoal); margin-bottom:22px; }
+    h1 .accent{ color:var(--ochre); }
+    .sub{ font-size:clamp(1.02rem, 2.4vw, 1.18rem); color:var(--mid); max-width:580px; margin:0 auto 36px; }
+
+    /* CTA */
+    .cta-open, .cta-closed{ display:none; flex-direction:column; align-items:center; gap:14px; }
+    [data-call-state="open"] .cta-open{ display:flex; }
+    [data-call-state="closed"] .cta-closed{ display:flex; }
+
+    .btn{ display:inline-flex; align-items:center; justify-content:center; gap:10px; text-decoration:none; font-weight:700; border-radius:12px; transition:all .2s var(--ease); cursor:pointer; line-height:1.2; }
+    .btn-primary{ background:var(--terra); color:var(--white); padding:18px 34px; font-size:1.18rem; box-shadow:0 6px 20px rgba(168,92,50,0.28); }
+    .btn-primary:hover{ background:var(--terra-lt); transform:translateY(-1px); box-shadow:0 8px 26px rgba(168,92,50,0.34); }
+    .btn-primary .btn-num{ font-weight:800; letter-spacing:0.01em; }
+    .btn-secondary{ background:transparent; color:var(--terra); padding:13px 26px; font-size:1rem; border:1.5px solid var(--dust-3); }
+    .btn-secondary:hover{ border-color:var(--terra); background:var(--white); }
+    .btn svg{ width:20px; height:20px; flex-shrink:0; }
+
+    .usp{ font-size:0.92rem; font-weight:600; color:var(--ochre); margin-top:2px; }
+    .lang{ font-size:0.9rem; color:var(--mid); }
+    .lang a{ color:var(--terra); font-weight:600; text-decoration:underline; text-underline-offset:2px; }
+    .or{ font-size:0.85rem; color:var(--light-mid); text-transform:uppercase; letter-spacing:0.1em; font-weight:600; margin:2px 0; }
+    .closed-note{ font-size:0.92rem; color:var(--mid); max-width:440px; margin-top:6px; }
+    .closed-note a{ color:var(--terra); font-weight:600; white-space:nowrap; }
+
+    /* Trust strip */
+    .trust{ display:flex; flex-wrap:wrap; justify-content:center; gap:10px 12px; margin-top:48px; }
+    .chip{ display:inline-flex; align-items:center; gap:8px; font-size:0.86rem; font-weight:600; color:var(--charcoal); background:var(--white); border:1px solid var(--dust-3); border-radius:999px; padding:8px 16px; }
+    .chip svg{ width:15px; height:15px; color:var(--ochre); flex-shrink:0; }
+
+    /* What the call covers */
+    .covers{ background:var(--white); border:1px solid var(--dust-3); border-radius:18px; padding:36px 32px; margin:8px auto 0; text-align:left; }
+    .covers h2{ font-size:1.32rem; font-weight:800; letter-spacing:-0.02em; margin-bottom:6px; }
+    .covers .lede{ color:var(--mid); font-size:0.98rem; margin-bottom:22px; }
+    .covers ul{ list-style:none; display:flex; flex-direction:column; gap:16px; }
+    .covers li{ display:flex; gap:14px; align-items:flex-start; }
+    .covers li svg{ width:22px; height:22px; color:var(--ochre); flex-shrink:0; margin-top:1px; }
+    .covers li .t{ font-weight:700; display:block; margin-bottom:1px; }
+    .covers li .d{ color:var(--mid); font-size:0.94rem; }
+    .covers .foot{ margin-top:24px; padding-top:20px; border-top:1px solid var(--dust-2); font-size:0.92rem; color:var(--mid); }
+    .covers .foot strong{ color:var(--charcoal); }
+
+    /* Footer */
+    footer{ text-align:center; padding:44px 24px 40px; color:var(--light-mid); font-size:0.82rem; }
+    footer .links{ margin-bottom:10px; }
+    footer a{ color:var(--mid); text-decoration:none; margin:0 10px; }
+    footer a:hover{ color:var(--terra); }
+    footer .disc{ max-width:560px; margin:0 auto; line-height:1.5; }
+
+    @media (max-width:560px){
+      .hero{ padding:24px 0 40px; }
+      .btn-primary{ padding:16px 26px; font-size:1.05rem; flex-direction:column; gap:2px; }
+      .btn-primary .btn-num{ font-size:1.12rem; }
+      .covers{ padding:28px 22px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top">
+    <a class="brand" href="/" aria-label="onlinefdr.com.au home">
+      <span class="brand-name">online<span class="fdr">fdr</span>.com.au</span>
+      <span class="brand-tag">Accredited Online FDR</span>
+    </a>
+    <a class="top-phone" href="tel:0399617544" onclick="fireCall()" aria-label="Call us on 0 3 9 9 6 1 7 5 4 4">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      (03) 9961 7544
+    </a>
+  </div>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="hero-img">
+        <img src="/images/start-hero.jpg" alt="A woman sitting at a kitchen table, holding her phone, about to make a call." width="1520" height="753" loading="eager" fetchpriority="high">
+      </div>
+      <span class="eyebrow">Online Family Dispute Resolution &bull; Available nationally</span>
+      <h1>The call you make<br>before you call <span class="accent">a lawyer.</span></h1>
+      <p class="sub">Family Dispute Resolution is the structured, professionally facilitated way to sort out parenting and property matters without going to court. Most families reach agreement in weeks, not years, and at a fraction of the cost of going to court.</p>
+
+      <!-- IN-HOURS: call leads -->
+      <div class="cta-open">
+        <a class="btn btn-primary" href="tel:0399617544" onclick="fireCall()" aria-label="Call us on 0 3 9 9 6 1 7 5 4 4">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Free Discovery Call <span class="btn-num">(03) 9961 7544</span>
+        </a>
+        <p class="usp">Phone lines open until <span data-close-time>7pm</span>, Mon to Fri (Melbourne).</p>
+        <span class="or">or</span>
+        <a class="btn btn-secondary" href="https://calendar.app.google/zwNm4dzYnwAwhwxY8" target="_blank" rel="noopener" onclick="fireBook()">Book a discovery call instead</a>
+        <p class="lang">Prefer another language? Book a call and we will arrange it.</p>
+      </div>
+
+      <!-- OUT-OF-HOURS / WEEKEND: booking leads, number demoted -->
+      <div class="cta-closed">
+        <a class="btn btn-primary" href="https://calendar.app.google/zwNm4dzYnwAwhwxY8" target="_blank" rel="noopener" onclick="fireBook()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Book a Free Discovery Call
+        </a>
+        <p class="lang">Prefer another language? Book a call and we will arrange it.</p>
+        <p class="closed-note">Phone lines are open <span data-open-time>10am</span> to <span data-close-time>7pm</span>, Mon to Fri (Melbourne). Book a time above and we will talk then, or <a href="tel:0399617544" onclick="fireCall()" aria-label="Call us on 0 3 9 9 6 1 7 5 4 4">call (03) 9961 7544</a> and leave a message.</p>
+      </div>
+
+      <div class="trust">
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>AGD-Accredited FDR Practitioner</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Available anywhere in Australia</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Confidential under the Family Law Act</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Both parenting and financial matters</span>
+      </div>
+    </section>
+
+    <section class="covers">
+      <h2>What the discovery call covers</h2>
+      <p class="lede">A short, no-obligation conversation with an accredited FDR practitioner. Nothing is decided on the call.</p>
+      <ul>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <div><span class="t">Your situation, heard</span><span class="d">You explain what is happening. The practitioner listens and asks a few questions to understand where things stand.</span></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          <div><span class="t">How the process works for you</span><span class="d">A plain-language walk through of how FDR runs for your circumstances, whether your matter involves children, property, or both.</span></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 11 3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          <div><span class="t">Whether FDR is right for you</span><span class="d">An honest read on whether Family Dispute Resolution suits your matter. If it is not the right path, the practitioner will say so and point you in the right direction.</span></div>
+        </li>
+      </ul>
+      <p class="foot"><strong>No obligation.</strong> The practitioner assigned to your matter does not take sides and does not decide the outcome. They help each person shape and reality-check the proposals they put to each other.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="links">
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+      <a href="/">onlinefdr.com.au</a>
+    </div>
+    <p class="disc">Accredited online Family Dispute Resolution, available anywhere in Australia. This page is general information, not legal advice.</p>
+  </footer>
+
+  <script>
+    // Fill displayed times from the single CALL_HOURS source.
+    (function(){
+      document.querySelectorAll('[data-open-time]').forEach(function(el){ el.textContent = fmtHour(CALL_HOURS.start); });
+      document.querySelectorAll('[data-close-time]').forEach(function(el){ el.textContent = fmtHour(CALL_HOURS.end); });
+    })();
+  </script>
+</body>
+</html>

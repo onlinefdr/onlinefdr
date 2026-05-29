@@ -76,7 +76,7 @@ Furthermore, FDR is significantly faster than going to court. While a contested 
 
 If you are concerned about how your superannuation will be treated in your separation, we are here to help you navigate the process with clarity and confidence.
 
-[Book a free 15-minute discovery call](/book/) to discuss your situation.
+[Book a free discovery call](/book/) to discuss your situation.
 
 Divorce. Done different.
 
