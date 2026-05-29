@@ -56,21 +56,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://onlinefdr.com.au/complaints/</loc>
-    <lastmod>2026-05-29</lastmod>
-    <priority>0.4</priority>
-  </url>
-  <url>
-    <loc>https://onlinefdr.com.au/privacy/</loc>
-    <lastmod>2026-05-29</lastmod>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://onlinefdr.com.au/terms/</loc>
-    <lastmod>2026-05-29</lastmod>
-    <priority>0.3</priority>
-  </url>
-  <url>
     <loc>https://onlinefdr.com.au/blog/</loc>
     <lastmod>2026-05-29</lastmod>
     <priority>0.8</priority>

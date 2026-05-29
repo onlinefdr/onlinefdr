@@ -938,10 +938,7 @@ def update_sitemap(posts):
         ("/locations/", "0.7"),
         ("/book/", "0.9"),
         ("/get-help/", "0.6"),
-        ("/complaints/", "0.4"),
-        ("/privacy/", "0.3"),
-        ("/terms/", "0.3"),
-        # Join the Team intentionally excluded from sitemap (noindex page, no internal links)
+        # Noindex pages (join-the-team, privacy, terms, complaints) intentionally excluded from the sitemap
     ]
 
     today = datetime.now().date().isoformat()
