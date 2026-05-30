@@ -104,7 +104,7 @@ def load_shell_components():
     ns = {}
 
     # NAV_LINKS = """...""" (single-line triple-quoted)
-    for name in ["NAV_LINKS", "NAV_CTA", "MARQUEE_ITEMS", "ENTITY_BAR", "FOOTER", "BASE_JS"]:
+    for name in ["NAV_LINKS", "NAV_CTA", "MARQUEE_ITEMS", "ENTITY_BAR", "FOOTER", "BASE_JS", "SOCIAL_RAIL", "SOCIAL_INLINE"]:
         # Match: NAME = """...""" (multiline)
         pattern = re.compile(
             rf'^{name}\s*=\s*"""(.*?)"""',
@@ -628,6 +628,8 @@ def shell(title, meta_desc, canonical, schema_json, page_html, current_page=None
 
 <a href="#main" class="skip-to-content">Skip to main content</a>
 
+{SHELL["SOCIAL_RAIL"]}
+
 <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
   <div class="nav-inner">
     <a href="/" class="nav-brand" aria-label="onlinefdr.com.au home">
@@ -655,6 +657,8 @@ def shell(title, meta_desc, canonical, schema_json, page_html, current_page=None
 <main id="main">
 {page_html_with_marquee}
 </main>
+
+{SHELL["SOCIAL_INLINE"]}
 
 {SHELL["ENTITY_BAR"]}
 
