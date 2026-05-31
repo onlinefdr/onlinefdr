@@ -36,7 +36,7 @@ Separation is not just moving out. The law treats you as separated when one of y
 
 Section 49 of the Act sets this out. The decision has to be communicated and acted on, not just held privately. In plain terms, there has to be a point where the relationship ended in substance and at least one of you made that clear.
 
-It is possible to be separated while still living in the same home, for money, parenting, or other practical reasons, although that situation needs extra evidence when you apply for divorce. We will cover separation under one roof in its own article. The key point here is that separation starts when the relationship ends in substance, not on the day someone packs a bag.
+It is possible to be separated while still living in the same home, for money, parenting, or other practical reasons, although that situation needs extra evidence when you apply for divorce. We cover [separation under one roof](/blog/separated-living-same-house-australia/) in its own article. The key point here is that separation starts when the relationship ends in substance, not on the day someone packs a bag.
 
 ## Does trying to reconcile reset the clock?
 
@@ -77,3 +77,5 @@ A divorce order does not take effect the day the court makes it. It becomes fina
 The timing comes from section 55 of the Act, and you can only remarry once the order is final under section 59. If you have a wedding date in mind, count back from it: you need the order made, then the month-and-a-day wait, before a new marriage can go ahead.
 
 A divorce order can also affect other things, such as a will, so it is worth knowing the date it becomes final rather than assuming it is the day of the hearing. If any of that timing is tight for you, sort the sequence out early, well before the dates start to matter.
+
+> This article is general information only and is not legal advice. For advice about your specific circumstances, please consult a family lawyer or accredited Family Dispute Resolution Practitioner.

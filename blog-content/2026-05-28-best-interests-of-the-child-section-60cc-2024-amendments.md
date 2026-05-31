@@ -125,3 +125,5 @@ For parents preparing for FDR, the most useful starting point is to work through
 Parents who arrive at mediation having thought through these questions separately, in advance, tend to reach workable arrangements faster than parents who arrive without that preparation. The Pre-Mediation Parenting Reflection Workbook on the Parenting page is designed for exactly this purpose.
 
 The Family Law Act is not a manual for raising children. It is a framework for resolving disputes about how children will be raised when parents cannot agree without help. In FDR, the section 60CC factors operate as the quiet test the parents' own arrangement needs to pass.
+
+> This article is general information only and is not legal advice. For advice about your specific circumstances, including any concerns about your child's safety, please consult a family lawyer or accredited Family Dispute Resolution Practitioner.

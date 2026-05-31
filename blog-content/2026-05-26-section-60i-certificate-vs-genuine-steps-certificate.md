@@ -109,3 +109,5 @@ A party who is heading toward a court application benefits from understanding th
 The 12-month limit in Regulation 24(2) means a Section 60I certificate cannot be issued more than 12 months after the party last attended FDR, so the certificate is not something that can be obtained years before a court application.
 
 The cleanest path to court, where court becomes necessary, runs through FDR first. Both certificates fall into place naturally as the result of a process that, in most cases, also resolves the dispute without the court application being needed at all.
+
+> This article is general information only and is not legal advice. For advice about your specific circumstances, please consult a family lawyer or accredited Family Dispute Resolution Practitioner.

@@ -148,3 +148,5 @@ The first step is the free discovery call. If you speak a language other than En
 Instead, book the discovery call through the website, and it will be held over Google Meet with translated captions, the same way the mediation itself runs. That way the very first conversation already happens in your language.
 
 From there, the process is the same as any other matter, with translated captions running throughout, the agreement handled in the step-by-step way described above, and independent legal advice before anything is formalised. Speaking a language other than English is not a barrier to resolving a family law matter out of court. It is exactly the kind of situation online FDR is built to handle.
+
+> This article is general information only and is not legal advice. For advice about your specific circumstances, please consult a family lawyer or accredited Family Dispute Resolution Practitioner.
