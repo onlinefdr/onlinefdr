@@ -1,0 +1,19 @@
+# ── onlinefdr.com.au repo ignore rules ──
+# Added 3 June 2026 so committed junk never recurs.
+
+# macOS Finder metadata (the recurring offender)
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows shell metadata (in case the repo is ever opened on Windows)
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Build-staging files written on the build machine, never part of the live site
+*-v2.html
+
+# Editor / temp scratch
+*.swp
+*.tmp
