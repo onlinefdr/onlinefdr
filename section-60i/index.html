@@ -387,25 +387,22 @@ footer { background: var(--charcoal); padding: 64px 0 36px; }
 /* BRAND WORDMARK — the ochre "fdr" segment in onlinefdr.com.au. Site-wide. */
 .brand-fdr{color:var(--ochre)}
 
-/* COMPARATOR — site-wide pattern, used in WIFDR hero, home Why Online, etc. */
-.why-comparator{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:32px 28px;margin-top:24px}
-.why-comparator-header{display:grid;grid-template-columns:90px 1fr 1fr;gap:18px;margin-bottom:18px;padding-bottom:14px;border-bottom:1px solid rgba(255,255,255,0.08)}
-.why-comparator-header > div{font-size:0.66rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:rgba(253,250,246,0.4)}
-.why-comparator-row{display:grid;grid-template-columns:90px 1fr 1fr;gap:18px;align-items:center;padding:18px 0}
-.why-comparator-row + .why-comparator-row{border-top:1px solid rgba(255,255,255,0.06)}
-.why-comparator-label{font-size:0.78rem;font-weight:700;color:var(--white);letter-spacing:0.02em}
-.why-comparator-label .qual{display:block;font-size:0.66rem;font-weight:500;color:rgba(253,250,246,0.4);letter-spacing:0;margin-top:4px;text-transform:none}
-.why-bar-cell{position:relative;height:36px;display:flex;align-items:center}
-.why-bar{height:8px;border-radius:4px;position:relative}
-.why-bar-fdr{background:var(--ochre);width:8%}
-.why-bar-court{background:rgba(253,250,246,0.18);width:100%;position:relative}
-.why-bar-court::after{content:"";position:absolute;right:-6px;top:50%;transform:translateY(-50%);border-left:8px solid rgba(253,250,246,0.45);border-top:6px solid transparent;border-bottom:6px solid transparent}
-.why-bar-text{position:absolute;left:0;top:100%;margin-top:8px;font-size:0.72rem;font-weight:600;color:rgba(253,250,246,0.85);white-space:nowrap}
-.why-bar-text.text-fdr{color:var(--ochre-lt)}
-.why-comparator-foot{margin-top:18px;padding-top:14px;border-top:1px solid rgba(255,255,255,0.06);font-size:0.7rem;font-style:italic;color:rgba(253,250,246,0.35);line-height:1.55}
+/* THREE-QUESTION TEST teaser — Why Online section (home + What is FDR). Replaced the comparator 3 June 2026. */
+.why-triage{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:32px 28px;margin-top:24px}
+.why-triage-eyebrow{font-size:0.66rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--ochre-lt);margin-bottom:12px}
+.why-triage-title{font-size:1.12rem;font-weight:700;color:var(--white);line-height:1.35;letter-spacing:-0.01em;margin:0 0 20px}
+.why-triage-list{list-style:none;margin:0 0 24px;padding:0;border-top:1px solid rgba(255,255,255,0.08)}
+.why-triage-item{display:flex;align-items:center;gap:14px;padding:15px 0;border-bottom:1px solid rgba(255,255,255,0.06)}
+.why-triage-num{flex-shrink:0;width:27px;height:27px;border-radius:50%;border:1px solid rgba(196,135,58,0.55);color:var(--ochre-lt);font-size:0.8rem;font-weight:700;display:flex;align-items:center;justify-content:center}
+.why-triage-q{font-size:0.92rem;font-weight:500;color:rgba(253,250,246,0.82);line-height:1.4}
+.why-triage-cta{display:inline-flex;align-items:center;gap:9px;background:var(--terra);color:var(--white);font-family:var(--f);font-size:0.88rem;font-weight:700;padding:13px 24px;border-radius:8px;text-decoration:none;border:2px solid var(--terra);transition:all 0.2s var(--ease)}
+.why-triage-cta:hover{background:var(--terra-lt);border-color:var(--terra-lt);transform:translateY(-1px);box-shadow:0 6px 20px rgba(168,92,50,0.28)}
+.why-triage-cta svg{transition:transform 0.2s;flex-shrink:0}
+.why-triage-cta:hover svg{transform:translateX(4px)}
+.why-triage-foot{margin-top:16px;font-size:0.72rem;color:rgba(253,250,246,0.42);line-height:1.6}
 @media(max-width:640px){
-  .why-comparator-header,.why-comparator-row{grid-template-columns:1fr;gap:8px}
-  .why-comparator-label{margin-bottom:6px}
+  .why-triage{padding:24px 18px}
+  .why-triage-cta{width:100%;justify-content:center}
 }
 
 /* DOWNLOAD COMPONENTS — site-wide pattern, used on Financial Settlements, Parenting, and any future page with downloadable resources */

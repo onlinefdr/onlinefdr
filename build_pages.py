@@ -478,29 +478,6 @@ main > .marquee-bar{padding:13px 0}
 .why-stat-val .unit{color:var(--ochre);font-weight:800;margin-left:4px}
 .why-stat-val.text{font-size:clamp(1.6rem,2.6vw,2.1rem)}
 .why-stat-label{font-size:0.74rem;font-weight:500;color:rgba(253,250,246,0.35);line-height:1.5}
-.why-comparator{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:32px 28px;margin-top:24px}
-.why-comparator-header{display:grid;grid-template-columns:90px 1fr 1fr;gap:18px;margin-bottom:18px;padding-bottom:14px;border-bottom:1px solid rgba(255,255,255,0.08)}
-.why-comparator-header > div{font-size:0.66rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:rgba(253,250,246,0.4)}
-.why-comparator-row{display:grid;grid-template-columns:90px 1fr 1fr;gap:18px;align-items:center;padding:18px 0}
-.why-comparator-row + .why-comparator-row{border-top:1px solid rgba(255,255,255,0.06)}
-.why-comparator-label{font-size:0.78rem;font-weight:700;color:var(--white);letter-spacing:0.02em}
-.why-comparator-label .qual{display:block;font-size:0.66rem;font-weight:500;color:rgba(253,250,246,0.4);letter-spacing:0;margin-top:4px;text-transform:none}
-.why-bar-cell{position:relative;height:36px;display:flex;align-items:center}
-.why-bar{height:8px;border-radius:4px;position:relative}
-.why-bar-fdr{background:var(--ochre);width:8%}
-.why-bar-court{background:rgba(253,250,246,0.18);width:100%;position:relative}
-.why-bar-court::after{content:"";position:absolute;right:-6px;top:50%;transform:translateY(-50%);border-left:8px solid rgba(253,250,246,0.45);border-top:6px solid transparent;border-bottom:6px solid transparent}
-.why-bar-text{position:absolute;left:0;top:100%;margin-top:8px;font-size:0.72rem;font-weight:600;color:rgba(253,250,246,0.85);white-space:nowrap}
-.why-bar-text.text-fdr{color:var(--ochre-lt)}
-.why-comparator-foot{margin-top:18px;padding-top:14px;border-top:1px solid rgba(255,255,255,0.06);font-size:0.7rem;font-style:italic;color:rgba(253,250,246,0.35);line-height:1.55}
-
-@media(max-width:640px){
-  .why-comparator{padding:24px 18px}
-  .why-comparator-header{grid-template-columns:70px 1fr 1fr;gap:10px}
-  .why-comparator-row{grid-template-columns:70px 1fr 1fr;gap:10px}
-  .why-bar-text{white-space:normal;line-height:1.3;padding-right:6px}
-  .why-bar-cell{height:auto;min-height:36px;padding-bottom:30px}
-}
 
 /* ── PROCESS ── */
 .process{background:var(--white);padding:100px 0}
@@ -756,43 +733,16 @@ HOME_HTML = """
         </div>
         <div class="reveal reveal-d2">
           <div class="why-img-real"><img src="/images/home-supporting-2.jpg" alt="A woman at her desk wearing noise-cancelling headphones, composed and focused before her online mediation session." loading="lazy" decoding="async"></div>
-          <div class="why-comparator">
-            <div class="why-comparator-header">
-              <div></div>
-              <div>Time</div>
-              <div>Cost</div>
-            </div>
-            <div class="why-comparator-row">
-              <div class="why-comparator-label">
-                FDR
-                <span class="qual">Online via this practice</span>
-              </div>
-              <div class="why-bar-cell">
-                <div class="why-bar why-bar-fdr"></div>
-                <div class="why-bar-text text-fdr">Weeks</div>
-              </div>
-              <div class="why-bar-cell">
-                <div class="why-bar why-bar-fdr"></div>
-                <div class="why-bar-text text-fdr">A fraction of litigation</div>
-              </div>
-            </div>
-            <div class="why-comparator-row">
-              <div class="why-comparator-label">
-                Court
-                <span class="qual">Contested proceedings</span>
-              </div>
-              <div class="why-bar-cell">
-                <div class="why-bar why-bar-court"></div>
-                <div class="why-bar-text">18 to 36 months</div>
-              </div>
-              <div class="why-bar-cell">
-                <div class="why-bar why-bar-court"></div>
-                <div class="why-bar-text">Often six figures per party</div>
-              </div>
-            </div>
-            <div class="why-comparator-foot">
-              Court figures reflect typical fully-litigated parenting or property matters from filing to final hearing. Costs vary with complexity.
-            </div>
+          <div class="why-triage">
+            <div class="why-triage-eyebrow">The 3-question test</div>
+            <h3 class="why-triage-title">Not sure where your matter would land? Find your most realistic path.</h3>
+            <ul class="why-triage-list">
+              <li class="why-triage-item"><span class="why-triage-num">1</span><span class="why-triage-q">How much you are ready to spend</span></li>
+              <li class="why-triage-item"><span class="why-triage-num">2</span><span class="why-triage-q">How quickly you want it resolved</span></li>
+              <li class="why-triage-item"><span class="why-triage-num">3</span><span class="why-triage-q">How flexible you can be</span></li>
+            </ul>
+            <a href="/start/" class="why-triage-cta">Start the 3-question test <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+            <p class="why-triage-foot">Three quick questions, no sign-up. See the most realistic path for your situation, what it tends to cost, and how long it tends to take.</p>
           </div>
         </div>
       </div>
@@ -2925,43 +2875,16 @@ WIFDR_HTML = """
             <a href="/how-it-works/" class="btn-outline-light">How it works</a>
           </div>
         </div>
-        <div class="why-comparator">
-          <div class="why-comparator-header">
-            <div></div>
-            <div>Time</div>
-            <div>Cost</div>
-          </div>
-          <div class="why-comparator-row">
-            <div class="why-comparator-label">
-              FDR
-              <span class="qual">Online via this practice</span>
-            </div>
-            <div class="why-bar-cell">
-              <div class="why-bar why-bar-fdr"></div>
-              <div class="why-bar-text text-fdr">Weeks</div>
-            </div>
-            <div class="why-bar-cell">
-              <div class="why-bar why-bar-fdr"></div>
-              <div class="why-bar-text text-fdr">A fraction of litigation</div>
-            </div>
-          </div>
-          <div class="why-comparator-row">
-            <div class="why-comparator-label">
-              Court
-              <span class="qual">Contested proceedings</span>
-            </div>
-            <div class="why-bar-cell">
-              <div class="why-bar why-bar-court"></div>
-              <div class="why-bar-text">18 to 36 months</div>
-            </div>
-            <div class="why-bar-cell">
-              <div class="why-bar why-bar-court"></div>
-              <div class="why-bar-text">Often six figures per party</div>
-            </div>
-          </div>
-          <div class="why-comparator-foot">
-            Court figures reflect typical fully-litigated parenting or property matters from filing to final hearing. Costs vary with complexity.
-          </div>
+        <div class="why-triage">
+          <div class="why-triage-eyebrow">The 3-question test</div>
+          <h3 class="why-triage-title">Not sure where your matter would land? Find your most realistic path.</h3>
+          <ul class="why-triage-list">
+            <li class="why-triage-item"><span class="why-triage-num">1</span><span class="why-triage-q">How much you are ready to spend</span></li>
+            <li class="why-triage-item"><span class="why-triage-num">2</span><span class="why-triage-q">How quickly you want it resolved</span></li>
+            <li class="why-triage-item"><span class="why-triage-num">3</span><span class="why-triage-q">How flexible you can be</span></li>
+          </ul>
+          <a href="/start/" class="why-triage-cta">Start the 3-question test <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+          <p class="why-triage-foot">Three quick questions, no sign-up. See the most realistic path for your situation, what it tends to cost, and how long it tends to take.</p>
         </div>
       </div>
     </div>
