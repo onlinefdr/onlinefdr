@@ -144,6 +144,9 @@
     .btn{ display:inline-flex; align-items:center; justify-content:center; gap:11px; text-decoration:none; font-weight:800; font-size:1.06rem; border-radius:14px; padding:18px 26px; transition:all .2s var(--ease); border:none; cursor:pointer; font-family:inherit; }
     .btn svg{ width:19px; height:19px; }
     .btn-primary{ background:var(--terra); color:var(--white); box-shadow:0 8px 24px rgba(168,92,50,0.34); }
+    .callbtn .btn-txt{ display:inline-flex; flex-wrap:wrap; align-items:baseline; justify-content:center; gap:4px 9px; }
+    .callbtn .bl{ white-space:nowrap; }
+    .callbtn .nb{ white-space:nowrap; }
     .btn-primary:hover{ background:var(--terra-lt); transform:translateY(-2px); }
     .btn-secondary{ background:transparent; color:var(--white); border:1.5px solid rgba(253,250,246,0.3); }
     .btn-secondary:hover{ border-color:var(--white); }
@@ -178,6 +181,8 @@
       .verdict{ padding:28px 22px; }
       .est-tile{ min-width:calc(50% - 6px); }
       .cta-open, .cta-closed{ width:100%; }
+      .btn{ font-size:1rem; padding:17px 18px; }
+      .callbtn .btn-txt{ flex-direction:column; gap:1px; }
     }
   </style>
 </head>
@@ -317,7 +322,7 @@
       function ctaBlock(){
         return '<div class="actions">' +
           '<div class="cta-open">' +
-            '<a class="btn btn-primary" href="tel:0399617544" onclick="fireCall()">' + I.phone + 'Free Discovery Call &nbsp;(03) 9961 7544</a>' +
+            '<a class="btn btn-primary callbtn" href="tel:0399617544" onclick="fireCall()">' + I.phone + '<span class="btn-txt"><span class="bl">Free Discovery Call</span> <span class="nb">(03)\u00a09961\u00a07544</span></span></a>' +
             '<a class="btn btn-secondary" href="https://calendar.app.google/zwNm4dzYnwAwhwxY8" target="_blank" rel="noopener" onclick="fireBook()">Book a time instead</a>' +
           '</div>' +
           '<div class="cta-closed">' +
