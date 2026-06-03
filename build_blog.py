@@ -938,6 +938,7 @@ def update_sitemap(posts):
         ("/parenting/", "0.9"),
         ("/financial-settlement/", "0.9"),
         ("/section-60i/", "0.9"),
+        ("/pricing/", "0.9"),
         ("/faq/", "0.7"),
         ("/locations/", "0.7"),
         ("/book/", "0.9"),

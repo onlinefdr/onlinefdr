@@ -43,8 +43,12 @@ with open('/home/claude/base.css') as f:
 
 NAV_LINKS = """
       <li><a href="/about/">About</a></li>
-      <li><a href="/what-is-fdr/">What is FDR?</a></li>
-      <li><a href="/how-it-works/">How It Works</a></li>
+      <li class="nav-has-sub"><button type="button" class="nav-sub-trigger" aria-haspopup="true" aria-expanded="false">Understanding FDR<svg class="nav-sub-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <ul class="nav-sub" role="menu">
+          <li role="none"><a href="/what-is-fdr/" role="menuitem">What is FDR?</a></li>
+          <li role="none"><a href="/how-it-works/" role="menuitem">How It Works</a></li>
+        </ul>
+      </li>
       <li class="nav-has-sub"><button type="button" class="nav-sub-trigger" aria-haspopup="true" aria-expanded="false">Services<svg class="nav-sub-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
         <ul class="nav-sub" role="menu">
           <li role="none"><a href="/parenting/" role="menuitem">Parenting</a></li>
@@ -52,6 +56,7 @@ NAV_LINKS = """
           <li role="none"><a href="/section-60i/" role="menuitem">Section 60I</a></li>
         </ul>
       </li>
+      <li><a href="/pricing/">Pricing</a></li>
       <li><a href="/book/">Book</a></li>
       <li class="nav-has-sub"><button type="button" class="nav-sub-trigger" aria-haspopup="true" aria-expanded="false">Resources<svg class="nav-sub-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
         <ul class="nav-sub" role="menu">
@@ -5341,3 +5346,203 @@ build_page(
     show_marquee=False,
 )
 print("Locations done.")
+
+# ─────────────────────────────────────────────
+# PRICING
+# ─────────────────────────────────────────────
+PRICING_HTML = """
+  <header class="article-page-header page-fold">
+    <div class="wrap">
+      <div class="pricing-fold-grid">
+        <div class="article-page-header-inner">
+          <span class="page-label">Pricing</span>
+          <h1>How much does Family Dispute Resolution <span class="accent">cost?</span></h1>
+          <p class="page-intro">Family Dispute Resolution is a pay-as-you-go service, not a fixed-price package. What a matter costs depends on how complex it is and how the two of you engage with the process. The ranges below are indicative, per person, to help you plan. They are not a quote, and the discovery call is free.</p>
+        </div>
+        <div class="pricing-fold-image-panel" aria-hidden="true">
+          <div class="pricing-fold-img-real"><img src="/images/pricing-fold.jpg" alt="A woman at a kitchen table in warm morning light, a laptop open beside a notepad and a cup of tea, working calmly through her options after separation." fetchpriority="high"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOVE-FOLD MARQUEE -->
+  <div class="marquee-bar" aria-label="Accreditation and credentials" role="marquee">
+    <div class="marquee-track" aria-hidden="true">
+      <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
+    </div>
+  </div>
+
+
+  <div class="wrap article-wrap">
+    <div class="article-grid">
+      <article class="article-body">
+
+        <h2 id="indicative-ranges">What FDR costs, in plain terms</h2>
+        <p>We bill for the time your matter takes. There is no single set fee, because no two separations take the same amount of work. The figures below are indicative ranges, per person, to help you plan where your matter is likely to sit.</p>
+
+        <div class="card-list">
+          <div class="card-item"><div class="card-item-header"><span class="card-dot"></span><h3>Under $3,000 per person</h3></div><p>At this level, the honest first stop is a government-funded provider such as Relationships Australia or Legal Aid. They offer Family Dispute Resolution at low or no cost, though waiting times can be longer. If your budget is here, a private practice is not where your money goes furthest, and we will tell you so.</p><span class="card-tag tag-dust">Funded services</span></div>
+          <div class="card-item"><div class="card-item-header"><span class="card-dot"></span><h3>$3,000 to $7,999 per person</h3></div><p>This is the heart of what we do: a mostly-agreed separation. The lower end suits a single issue, such as parenting only. The higher end covers both parenting and financial matters. Fees usually include the court documentation, such as Consent Orders for a financial settlement. Binding Financial Agreements are arranged separately.</p><span class="card-tag tag-amber">Most common</span></div>
+          <div class="card-item"><div class="card-item-header"><span class="card-dot"></span><h3>$8,000 to $19,999 per person</h3></div><p>A more involved separation, usually both parenting and financial matters where you do not yet agree on much, but you both still want to stay out of court. This typically takes several sessions and may bring in a third party, such as a child consultant or an accountant for a business valuation.</p><span class="card-tag tag-terra">Complex matters</span></div>
+          <div class="card-item"><div class="card-item-header"><span class="card-dot"></span><h3>$20,000 or more</h3></div><p>Budgeting this much usually means bracing for lawyers and court. For some matters that is the right call. But contested court cases regularly run past $80,000 per person and take 18 to 36 months, and the outcome is decided for you rather than shaped by you. Where there is genuine willingness to move, mediation can often resolve even a substantial matter for a fraction of that.</p><span class="card-tag tag-dust">Court path</span></div>
+        </div>
+
+        <div class="notice notice-amber">
+          <p class="notice-label">Indicative only</p>
+          <p>These figures are per person and are a guide, not a quote. Every matter is different. Because we work pay-as-you-go, what you actually spend depends on the complexity of your matter and on how both parties engage with the process.</p>
+        </div>
+
+        <div class="img-real" style="aspect-ratio:16/9;margin:32px 0"><img src="/images/pricing-supporting-1.jpg" alt="Two parents in separate homes, each at a laptop, meeting the same mediator in an online session shown side by side on screen, talking calmly through a written list of points." loading="lazy" decoding="async"></div>
+
+        <h2 id="pay-as-you-go">Why pay-as-you-go, and what skin in the game means</h2>
+        <p>We bill for the time a matter takes rather than charging one set fee. That is a deliberate choice. When both people have a stake in keeping the process efficient, reasonableness becomes the cheaper path and entrenchment becomes the expensive one.</p>
+        <p>Focused, reasonable parties tend to resolve quickly, which keeps the cost at the lower end of the range. Where neither person will move, sessions stretch out, the cost climbs, and a matter can drift toward lawyers and court anyway, at far greater cost in both money and time.</p>
+
+        <div class="pull">
+          <p>"How much you spend is, in a real sense, up to you and your former partner."</p>
+        </div>
+
+        <h2 id="whats-included">What your fees cover</h2>
+        <p>Your fee covers the practitioner's time across the stages of your matter: the individual intake, the joint sessions, and the preparation of the documents that record what you agree. The discovery call beforehand is free.</p>
+
+        <div class="info-box">
+          <h3>What can come out of the process</h3>
+          <div class="info-items">
+            <div class="info-item"><div class="info-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><div><h4>A Parenting Plan</h4><p>A written, signed agreement about parenting arrangements. Flexible and easy to change, but not directly enforceable as a court order.</p></div></div>
+            <div class="info-item"><div class="info-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><div><h4>Consent Orders</h4><p>An agreement turned into court orders, for parenting, finances, or both. The preparation is usually included in the fee for the matters you resolve.</p></div></div>
+            <div class="info-item"><div class="info-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><div><h4>A Binding Financial Agreement</h4><p>An alternative to financial Consent Orders. Each party needs their own legal advice for it to be binding, so a Binding Financial Agreement is arranged separately from the mediation fee.</p></div></div>
+            <div class="info-item"><div class="info-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><div><h4>A Section 60I certificate</h4><p>For parenting matters where no agreement is reached, so you can apply to court. Issued by the practitioner in line with the Family Law Act.</p></div></div>
+          </div>
+        </div>
+
+        <h2 id="tight-budget">If your budget is tight</h2>
+        <p>If a private practice is out of reach right now, that is worth knowing early, because there is a real alternative. Government-funded and subsidised services offer Family Dispute Resolution at low or no cost. They are intended for people who genuinely cannot afford a private practice, so eligibility and fees are income-tested.</p>
+
+        <div class="card-list">
+          <div class="card-item"><div class="card-item-header"><span class="card-dot"></span><h3>Family Relationship Centres</h3></div><p>Government-funded centres you can find through <a href="https://www.familyrelationships.gov.au/" target="_blank" rel="noopener nofollow">Family Relationships Online</a> or the Family Relationship Advice Line on 1800 050 321. Information and individual sessions are free, and the first hour of joint mediation is free per couple. Beyond that, fees are income-tested on a sliding scale, so people on low incomes or holding a Commonwealth concession card generally pay little or nothing.</p></div>
+          <div class="card-item"><div class="card-item-header"><span class="card-dot"></span><h3>Relationships Australia</h3></div><p><a href="https://www.relationships.org.au/" target="_blank" rel="noopener nofollow">Relationships Australia</a> is a community provider whose mediation fees are set on a sliding scale based on your income. People on low incomes and concession holders pay the least.</p></div>
+          <div class="card-item"><div class="card-item-header"><span class="card-dot"></span><h3>Legal Aid</h3></div><p>Legal Aid runs lawyer-assisted family dispute resolution conferences, but only where at least one party holds a grant of legal aid. That grant is both means tested, on income and assets, and merits tested, so it is reserved for people who genuinely cannot afford to resolve their matter privately.</p></div>
+        </div>
+
+        <div class="notice notice-amber">
+          <p class="notice-label">Expect a wait</p>
+          <p><strong>These services are in high demand, and waiting times commonly run to several weeks or months.</strong> If your matter is time-sensitive, that delay is the real trade-off for the lower cost. Get on a waitlist early, and do not assume a funded service can move at the pace a private practice can.</p>
+        </div>
+
+        <h2 id="court-comparison">How this compares to court</h2>
+        <p>The alternative to resolving matters yourselves is having a court decide for you. Contested family law proceedings regularly run past $80,000 per person and take 18 to 36 months, and at the end a judge makes the decision rather than the two of you.</p>
+        <p>Family Dispute Resolution keeps the decision in your hands, and most families reach agreement in weeks rather than years. For a sense of how the process runs, see <a href="/how-it-works/">how it works</a>, and for property and finance specifically, see <a href="/financial-settlement/">financial settlements</a>.</p>
+
+      </article>
+
+      <aside class="sidebar">
+        <div class="sidebar-card">
+          <h4>Not sure which path is yours?</h4>
+          <p>Answer three quick questions and see the most realistic path for your situation, what it tends to cost, and how long it tends to take.</p>
+          <a href="/start/" class="btn-primary">Find your path</a>
+        </div>
+        <div class="sidebar-card">
+          <h4>Free discovery call</h4>
+          <p>A short, no-obligation conversation with an accredited FDR practitioner. Nothing is decided on the call.</p>
+          <a href="https://calendar.app.google/zwNm4dzYnwAwhwxY8" class="btn-primary">Book a free discovery call</a>
+          <a href="tel:0399617544" class="btn-outline">Call (03) 9961 7544</a>
+        </div>
+        <div class="sidebar-card sidebar-card-img">
+          <div class="img-real" style="aspect-ratio:4/5"><img src="/images/pricing-supporting-2.jpg" alt="A man at a desk by a window in afternoon light, reading through a single page of notes, a phone and a cup of coffee beside him, looking settled." loading="lazy" decoding="async"></div>
+        </div>
+        <nav class="sidebar-card sidebar-nav">
+          <h5>On this page</h5>
+          <ul>
+            <li><a href="#indicative-ranges"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>What it costs</a></li>
+            <li><a href="#pay-as-you-go"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>Pay-as-you-go</a></li>
+            <li><a href="#whats-included"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>What fees cover</a></li>
+            <li><a href="#tight-budget"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>If your budget is tight</a></li>
+            <li><a href="#court-comparison"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>Compared to court</a></li>
+          </ul>
+        </nav>
+        <div class="sidebar-card">
+          <h4>Related pages</h4>
+          <ul class="related-links">
+            <li><a href="/financial-settlement/">Financial settlements <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
+            <li><a href="/parenting/">Parenting <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
+            <li><a href="/how-it-works/">How it works <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <section class="page-faq" aria-labelledby="pricing-faq-heading">
+    <div class="wrap">
+      <div class="page-faq-header reveal">
+        <span class="section-label">Common questions</span>
+        <h2 id="pricing-faq-heading">Cost questions answered</h2>
+      </div>
+      <div class="faq-list reveal" style="max-width:760px">
+        <div class="faq-item"><button class="faq-q" aria-expanded="false">How much does Family Dispute Resolution cost in Australia?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>It depends on the matter, because we work pay-as-you-go rather than charging a fixed fee. As a guide, per person: most mostly-agreed separations fall between $3,000 and $7,999; more complex matters with several sessions fall between $8,000 and $19,999; and below about $3,000 a government-funded service is usually the better fit. These are indicative ranges, not a quote, and the discovery call is free.</p></div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false">Do you charge a fixed fee or by the hour?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>We are a pay-as-you-go practice, not a fixed-price service. We bill for the time your matter takes. This is deliberate: when both people have a stake in keeping the process efficient, reasonableness is the cheaper path. How much you spend is, in large part, up to you and your former partner.</p></div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false">Is mediation cheaper than going to court?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>In most cases yes, and by a wide margin. Contested court proceedings regularly run past $80,000 per person and take 18 to 36 months. Most matters that resolve through Family Dispute Resolution settle in weeks, at a fraction of the cost of litigation, and the parties keep control of the outcome.</p></div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false">What if I cannot afford private mediation?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>Government-funded and subsidised services exist for exactly this situation, and they are intended for people who genuinely cannot afford a private practice. Family Relationship Centres offer a free first hour of joint mediation, with further hours income-tested on a sliding scale, so people on low incomes or holding a concession card pay little or nothing. Relationships Australia uses a similar sliding scale. Legal Aid runs lawyer-assisted conferences for people who pass its income and assets means test. All of these are in high demand, so waiting times commonly run to several weeks or months. Call the Family Relationship Advice Line on 1800 050 321 to find a service.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-cta" id="discovery" aria-labelledby="pricing-cta-heading">
+    <div class="wrap">
+      <div class="page-cta-inner">
+        <span class="page-cta-eyebrow">No obligation, no pressure</span>
+        <h2 id="pricing-cta-heading">Start with a free discovery call.</h2>
+        <p>Talk through where you stand and find out whether FDR is right for your circumstances. If a funded service is the better fit, we will say so.</p>
+        <div class="page-cta-actions">
+          <a href="https://calendar.app.google/zwNm4dzYnwAwhwxY8" class="btn-light">Book your free discovery call</a>
+          <a href="tel:0399617544" class="btn-outline-light">Call (03) 9961 7544</a>
+        </div>
+        <span class="page-cta-note">Free &bull; Confidential &bull; No obligation &bull; Available nationally</span>
+      </div>
+    </div>
+  </section>
+"""
+
+PRICING_CSS = """
+.pricing-fold-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;position:relative;z-index:1;width:100%;min-height:0}
+.pricing-fold-image-panel{position:relative;align-self:stretch;opacity:0;animation:fadeUp 0.9s var(--ease) 0.4s forwards}
+.pricing-fold-image-panel > .pricing-fold-img-real{position:absolute;inset:0;width:100%;height:100%}
+.pricing-fold-image-panel img{width:100%;height:100%;object-fit:cover;object-position:center 40%;border-radius:8px}
+@media(max-width:960px){
+  .pricing-fold-grid{grid-template-columns:1fr;gap:0}
+  .pricing-fold-image-panel{position:static;align-self:auto;aspect-ratio:1/1;margin-top:32px;border-radius:8px;overflow:hidden}
+  .pricing-fold-image-panel > .pricing-fold-img-real{position:static;width:100%;height:100%}
+  .pricing-fold-image-panel img{width:100%;height:100%;object-fit:cover;border-radius:8px}
+}
+"""
+
+build_page(
+    filename="pricing-v2.html",
+    title="How Much Does Family Dispute Resolution Cost in Australia? | onlinefdr.com.au",
+    meta_desc="What Family Dispute Resolution costs in Australia. Indicative per-person ranges for parenting and property mediation, how pay-as-you-go works, and how it compares to the cost of court.",
+    canonical="/pricing/",
+    current_page="/pricing/",
+    schema_json='{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://onlinefdr.com.au/pricing/#webpage","url":"https://onlinefdr.com.au/pricing/","name":"How much does Family Dispute Resolution cost in Australia?","description":"Indicative per-person pricing for online Family Dispute Resolution in Australia, how the pay-as-you-go model works, what fees cover, funded alternatives, and how the cost compares to contested court proceedings.","about":{"@id":"https://onlinefdr.com.au/#organization"},"isPartOf":{"@id":"https://onlinefdr.com.au/#website"},"mainEntity":{"@id":"https://onlinefdr.com.au/pricing/#faq"},"inLanguage":"en-AU"},{"@type":"FAQPage","@id":"https://onlinefdr.com.au/pricing/#faq","mainEntity":[{"@type":"Question","name":"How much does Family Dispute Resolution cost in Australia?","acceptedAnswer":{"@type":"Answer","text":"It depends on the matter, because we work pay-as-you-go rather than charging a fixed fee. As a guide, per person: most mostly-agreed separations fall between $3,000 and $7,999; more complex matters with several sessions fall between $8,000 and $19,999; and below about $3,000 a government-funded service is usually the better fit. These are indicative ranges, not a quote, and the discovery call is free."}},{"@type":"Question","name":"Do you charge a fixed fee or by the hour?","acceptedAnswer":{"@type":"Answer","text":"We are a pay-as-you-go practice, not a fixed-price service. We bill for the time your matter takes. This is deliberate: when both people have a stake in keeping the process efficient, reasonableness is the cheaper path. How much you spend is, in large part, up to you and your former partner."}},{"@type":"Question","name":"Is mediation cheaper than going to court?","acceptedAnswer":{"@type":"Answer","text":"In most cases yes, and by a wide margin. Contested court proceedings regularly run past $80,000 per person and take 18 to 36 months. Most matters that resolve through Family Dispute Resolution settle in weeks, at a fraction of the cost of litigation, and the parties keep control of the outcome."}},{"@type":"Question","name":"What if I cannot afford private mediation?","acceptedAnswer":{"@type":"Answer","text":"Government-funded and subsidised services exist for exactly this situation, and they are intended for people who genuinely cannot afford a private practice. Family Relationship Centres offer a free first hour of joint mediation, with further hours income-tested on a sliding scale, so people on low incomes or holding a concession card pay little or nothing. Relationships Australia uses a similar sliding scale. Legal Aid runs lawyer-assisted conferences for people who pass its income and assets means test. All of these are in high demand, so waiting times commonly run to several weeks or months. Call the Family Relationship Advice Line on 1800 050 321 to find a service."}}]}]}',
+    extra_css=ARTICLE_CSS + PRICING_CSS,
+    breadcrumbs=[("Home", "/"), ("Pricing", "/pricing/")],
+    page_html=PRICING_HTML,
+)
+print("Pricing done.")

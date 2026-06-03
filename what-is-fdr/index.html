@@ -565,8 +565,12 @@ footer { background: var(--charcoal); padding: 64px 0 36px; }
     </a>
     <ul class="nav-links" id="nav-links" role="list">
       <li><a href="/about/">About</a></li>
-      <li><a href="/what-is-fdr/" aria-current="page">What is FDR?</a></li>
-      <li><a href="/how-it-works/">How It Works</a></li>
+      <li class="nav-has-sub"><button type="button" class="nav-sub-trigger" aria-haspopup="true" aria-expanded="false">Understanding FDR<svg class="nav-sub-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <ul class="nav-sub" role="menu">
+          <li role="none"><a href="/what-is-fdr/" aria-current="page" role="menuitem">What is FDR?</a></li>
+          <li role="none"><a href="/how-it-works/" role="menuitem">How It Works</a></li>
+        </ul>
+      </li>
       <li class="nav-has-sub"><button type="button" class="nav-sub-trigger" aria-haspopup="true" aria-expanded="false">Services<svg class="nav-sub-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
         <ul class="nav-sub" role="menu">
           <li role="none"><a href="/parenting/" role="menuitem">Parenting</a></li>
@@ -574,6 +578,7 @@ footer { background: var(--charcoal); padding: 64px 0 36px; }
           <li role="none"><a href="/section-60i/" role="menuitem">Section 60I</a></li>
         </ul>
       </li>
+      <li><a href="/pricing/">Pricing</a></li>
       <li><a href="/book/">Book</a></li>
       <li class="nav-has-sub"><button type="button" class="nav-sub-trigger" aria-haspopup="true" aria-expanded="false">Resources<svg class="nav-sub-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
         <ul class="nav-sub" role="menu">
