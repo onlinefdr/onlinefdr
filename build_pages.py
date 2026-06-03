@@ -153,6 +153,12 @@ FOOTER = """<footer role="contentinfo">
         <li><a href="/financial-settlement/">Financial Settlements</a></li>
         <li><a href="/section-60i/">Section 60I Certificate</a></li>
       </ul></div>
+      <div class="footer-col"><h5>Pricing</h5><ul>
+        <li><a href="/pricing/">What it costs</a></li>
+        <li><a href="/pricing/#pay-as-you-go">Pay as you go</a></li>
+        <li><a href="/pricing/#whats-included">What's included</a></li>
+        <li><a href="/pricing/#court-comparison">Cost vs court</a></li>
+      </ul></div>
       <div class="footer-col"><h5>Learn</h5><ul>
         <li><a href="/what-is-fdr/">What is FDR?</a></li>
         <li><a href="/how-it-works/">How It Works</a></li>

@@ -250,7 +250,7 @@ body { font-family: var(--f); background: var(--dust); color: var(--charcoal); l
 
 /* FOOTER */
 footer { background: var(--charcoal); padding: 64px 0 36px; }
-.footer-top { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr 1fr; gap: 40px; padding-bottom: 48px; border-bottom: 1px solid rgba(255,255,255,0.08); margin-bottom: 32px; }
+.footer-top { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr 1fr 1fr; gap: 36px; padding-bottom: 48px; border-bottom: 1px solid rgba(255,255,255,0.08); margin-bottom: 32px; }
 .footer-brand-lockup { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
 .footer-brand-mark { flex-shrink: 0; display: block; }
 .footer-brand-name { font-size: 1rem; font-weight: 800; color: var(--white); letter-spacing: -0.02em; margin: 0; }
