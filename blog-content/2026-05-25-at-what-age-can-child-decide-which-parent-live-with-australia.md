@@ -31,7 +31,7 @@ The child's views sit alongside five other factors. Safety of the child and thei
 
 ## What the High Court has said.
 
-The leading authority on the weight given to a child's views is Bondelmonte v Bondelmonte [2017] HCA 8, a High Court of Australia decision. It concerned two teenage boys, almost 15 and almost 17, who expressed a clear preference to remain with their father overseas. Their views were not followed.
+The leading authority on the weight given to a child's views is *Bondelmonte v Bondelmonte* [2017] HCA 8, a High Court of Australia decision. It concerned two teenage boys, almost 15 and almost 17, who expressed a clear preference to remain with their father overseas. Their views were not followed.
 
 The High Court was direct. A judge is not obliged to make orders consistent with a child's stated views. The court may, in some cases, give a child's views weight approaching the decisive, but the statute does not require that course. Children's views are one consideration among several to be taken into account in the overall assessment of the child's best interests.
 
@@ -76,5 +76,3 @@ If you are dealing with a child who is resisting changeover, or with a teenager 
 If you are navigating a parenting situation where your child has expressed strong preferences and you are not sure what to do with them, a short discovery call with an accredited FDR practitioner will tell you whether FDR is the right next step. Free, fifteen minutes, no commitment.
 
 [Book your free discovery call](/book/) or call (03) 9961 7544.
-
-> This article is general information only and does not constitute legal advice. For advice about your specific circumstances, including any concerns about your child's safety, please consult a family lawyer or accredited Family Dispute Resolution Practitioner.

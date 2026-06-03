@@ -34,7 +34,7 @@ Under the new section 79(3) of the Family Law Act 1975, the court is directed to
 
 That single word narrows the balance sheet and removes the foundation that add-backs were built on. If the money is gone, there is nothing existing to divide, so there is nothing to add back.
 
-## Shinohara and Shinohara: the case that confirmed it
+## *Shinohara and Shinohara*: the case that confirmed it
 
 The leading decision is *Shinohara and Shinohara* [2025] FedCFamC1A 126, handed down by the Full Court of the Federal Circuit and Family Court of Australia on 23 July 2025.
 
@@ -71,5 +71,3 @@ A party who understands that spent money will not be notionally restored, but th
 ## The takeaway
 
 The add-back, as a device for putting spent money back into the property pool, has largely ended. From 10 June 2025 the court divides only the property that exists at the time of the hearing, under section 79(3) for married couples and section 90SM(3) for de facto couples, and *Shinohara and Shinohara* confirmed it. Wasted or dissipated money is not ignored. It moves to the contributions assessment in section 79(4) and the current and future circumstances in section 79(5), where it can still change the share each party walks away with. The pool is what exists. The history of how it got there is dealt with in the split.
-
-> This article provides general information only and is not legal advice. For advice specific to your circumstances, consult a qualified legal professional.

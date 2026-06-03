@@ -10,6 +10,7 @@ related_pages:
 reading_time: 11
 hero_image: "how-much-does-a-divorce-cost-australia-hero.jpg"
 tldr: "The divorce itself is cheap and fixed: filing in the Federal Circuit and Family Court of Australia costs about $1,100, or about $365 on concession. But the divorce only ends the marriage. Dividing property and sorting out parenting are separate, and that is where the cost lives. A mostly agreed separation through family dispute resolution often resolves in weeks; a contested court fight can run 18 to 36 months and regularly costs more than $80,000 per person, for a result that usually lands in a similar range to an agreement."
+faq: true
 ---
 
 If you ask how much a divorce costs in Australia, the honest answer comes in two very different parts, and most people are quoted only the small one. The divorce itself, the legal end of the marriage, is cheap and has a fixed price. Everything that actually keeps couples awake at night, dividing the house and the super and working out the children's time, is separate, and it is where almost all of the money goes.
@@ -44,7 +45,7 @@ When you do look at private providers, you will see two billing models, and the 
 
 A fixed price package charges one set fee regardless of how the matter unfolds. It sounds reassuring, and for a genuinely simple matter it can be fine. The risk is that a fixed fee rewards closing the file quickly, because every extra hour eats the provider's margin. When the clock matters more to the provider than your result, the pressure runs toward wrapping things up rather than getting them right.
 
-A pay as you go model charges for the time a matter actually takes. The point of it is that both people then have a stake in keeping the process efficient. Reasonableness becomes the cheaper path and digging in becomes the expensive one, which tends to pull both parties toward sensible, durable agreements rather than entrenchment. It also means a simple matter stays genuinely inexpensive, instead of subsidising the complicated ones.
+A pay as you go model charges for the time a matter actually takes. The point of it is that both people then have a stake in keeping the process efficient. Reasonableness becomes the cheaper path and digging in becomes the expensive one, which tends to pull both parties toward sensible, durable agreements rather than entrenchment. It also means a simple matter costs less to resolve, instead of subsidising the complicated ones.
 
 Neither model is automatically better, but they pull in different directions, and it is worth knowing which way before you sign.
 
@@ -125,5 +126,3 @@ Even then, the system is built to push you back toward agreement. Under section 
 Often, yes. Many couples file the divorce themselves for the court fee, and use family dispute resolution to reach a property and parenting agreement that can be written up as a Parenting Plan, Consent Orders, or a Binding Financial Agreement. Getting your own legal advice on the final documents is sensible, but that is a very different cost from running a contested case for two years.
 
 If you want to understand the realistic path for your own situation, our [three question start tool](/start/) gives you an indicative read in a minute, and a free discovery call lets you talk it through with an accredited practitioner before you decide anything. You can see how the whole process works on our [how it works](/how-it-works/) page.
-
-> This article provides general information only and is not legal, tax, or financial advice. The 2026 Federal Budget measures referred to are announced government proposals and remain subject to legislation passing Parliament. Court fees change over time, so confirm the current figure with the court. For advice specific to your circumstances, consult a qualified legal, tax, or financial professional.

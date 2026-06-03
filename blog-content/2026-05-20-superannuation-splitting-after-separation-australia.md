@@ -78,10 +78,4 @@ If you are concerned about how your superannuation will be treated in your separ
 
 [Book a free discovery call](/book/) to discuss your situation.
 
-Divorce. Done different.
-
 > If you or someone you know is experiencing family violence, coercive control, or child safety concerns, please visit our [Get Help page](/get-help/) for crisis support services and pathways to safety.
-
-> This article provides general information only and is not legal, tax, or financial advice. For advice specific to your circumstances, consult a qualified legal, tax, or financial professional.
-
-For enquiries, contact us at (03) 9961 7544 or hello@onlinefdr.com.au.

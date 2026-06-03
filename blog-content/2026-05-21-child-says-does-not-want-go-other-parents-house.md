@@ -82,5 +82,3 @@ The hardest message in this area is the one that applies to both parents equally
 A parent who responds by withholding contact, even with good intentions, takes a decision the law does not give them. A parent who responds by dismissing the resistance, or pressuring the child to comply silently, takes a different kind of decision the child will remember. Family Dispute Resolution is built for the path between these extremes: a structured conversation where both parents hold their concerns, hear each other, and make decisions about the child together.
 
 If you are at the front door right now, support the transition. If you are facing this pattern repeatedly, [book a free discovery call](/book/) to talk through what Family Dispute Resolution might look like for your situation.
-
-> This article is general information only and does not constitute legal advice. For advice about your specific circumstances, including any concerns about your child's safety, please consult a family lawyer or accredited Family Dispute Resolution Practitioner.

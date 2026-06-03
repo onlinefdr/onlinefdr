@@ -64,7 +64,7 @@ NAV_LINKS = """
           <li role="none"><a href="/blog/" role="menuitem">Blog</a></li>
           <li role="none" class="nav-sub-divider" aria-hidden="true"></li>
           <li role="none"><a href="https://www.facebook.com/onlinefdr/" role="menuitem" target="_blank" rel="noopener noreferrer">Facebook<svg class="nav-sub-ext" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></li>
-          <li role="none"><a href="https://www.instagram.com/onlinefdr.com.au/" role="menuitem" target="_blank" rel="noopener noreferrer">Instagram<svg class="nav-sub-ext" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></li>
+          <li role="none"><a href="https://www.instagram.com/onlinefdr.au/" role="menuitem" target="_blank" rel="noopener noreferrer">Instagram<svg class="nav-sub-ext" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></li>
           <li role="none"><a href="https://www.linkedin.com/company/onlinefdr/" role="menuitem" target="_blank" rel="noopener noreferrer">LinkedIn<svg class="nav-sub-ext" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></li>
         </ul>
       </li>
@@ -101,6 +101,15 @@ MARQUEE_ITEMS = """
       <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>"""
 
+# Single-sourced marquee bar (built from MARQUEE_ITEMS). Injected at the <!--MARQUEE--> placeholder
+# in each static page that should show it (see build_page). Replaces 15 former hardcoded copies.
+MARQUEE_BAR = (
+    '  <div class="marquee-bar" aria-label="Accreditation and credentials" role="marquee">\n'
+    '    <div class="marquee-track" aria-hidden="true">' + MARQUEE_ITEMS + '\n'
+    '    </div>\n'
+    '  </div>'
+)
+
 ENTITY_BAR = """<div class="entity-bar" role="complementary" aria-label="Accreditation">
   <div class="wrap">
     <div class="entity-bar-inner">
@@ -131,7 +140,7 @@ FOOTER = """<footer role="contentinfo">
           <a href="https://www.facebook.com/onlinefdr/" aria-label="Follow onlinefdr.com.au on Facebook" rel="noopener" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/></svg>
           </a>
-          <a href="https://www.instagram.com/onlinefdr.com.au/" aria-label="Follow onlinefdr.com.au on Instagram" rel="noopener" target="_blank">
+          <a href="https://www.instagram.com/onlinefdr.au/" aria-label="Follow onlinefdr.com.au on Instagram" rel="noopener" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg>
           </a>
           <a href="https://www.linkedin.com/company/onlinefdr/" aria-label="Follow onlinefdr.com.au on LinkedIn" rel="noopener" target="_blank">
@@ -210,13 +219,13 @@ BASE_JS = """<script>
 
 SOCIAL_RAIL = """<aside class="social-rail" aria-label="Follow us on social media">
   <a href="https://www.facebook.com/onlinefdr/" aria-label="Follow onlinefdr.com.au on Facebook" rel="noopener" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/></svg></a>
-  <a href="https://www.instagram.com/onlinefdr.com.au/" aria-label="Follow onlinefdr.com.au on Instagram" rel="noopener" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg></a>
+  <a href="https://www.instagram.com/onlinefdr.au/" aria-label="Follow onlinefdr.com.au on Instagram" rel="noopener" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg></a>
   <a href="https://www.linkedin.com/company/onlinefdr/" aria-label="Follow onlinefdr.com.au on LinkedIn" rel="noopener" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg></a>
 </aside>"""
 
 SOCIAL_INLINE = """<aside class="social-inline" aria-label="Follow us on social media">
   <a href="https://www.facebook.com/onlinefdr/" aria-label="Follow onlinefdr.com.au on Facebook" rel="noopener" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/></svg></a>
-  <a href="https://www.instagram.com/onlinefdr.com.au/" aria-label="Follow onlinefdr.com.au on Instagram" rel="noopener" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg></a>
+  <a href="https://www.instagram.com/onlinefdr.au/" aria-label="Follow onlinefdr.com.au on Instagram" rel="noopener" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg></a>
   <a href="https://www.linkedin.com/company/onlinefdr/" aria-label="Follow onlinefdr.com.au on LinkedIn" rel="noopener" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg></a>
 </aside>"""
 
@@ -241,12 +250,16 @@ def build_page(
   <div class="wrap"><div class="breadcrumb-inner">{"".join(items)}</div></div>
 </nav>"""
 
-    marquee_html = ""
+    marquee_html = ""  # dead path retained for template; marquee now single-sourced via MARQUEE_BAR
+
+    # Marquee single-source: inject shared MARQUEE_BAR at each page's <!--MARQUEE--> placeholder.
     if show_marquee:
-        marquee_html = f"""<div class="marquee-bar" aria-hidden="true" role="marquee">
-  <div class="marquee-track">{MARQUEE_ITEMS}
-  </div>
-</div>"""
+        page_html = page_html.replace("<!--MARQUEE-->", MARQUEE_BAR)
+    else:
+        if "<!--MARQUEE-->" in page_html:
+            page_html = page_html.replace("  <!-- ABOVE-FOLD MARQUEE -->\n", "").replace("<!--MARQUEE-->", "")
+            while "\n\n\n" in page_html:
+                page_html = page_html.replace("\n\n\n", "\n\n")
 
     schema_block = f'<script type="application/ld+json">{schema_json}</script>' if schema_json else ""
 
@@ -269,10 +282,10 @@ def build_page(
   <meta property="og:image" content="https://onlinefdr.com.au/images/og-default.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="onlinefdr.com.au. Divorce. Done different. Accredited online Family Dispute Resolution, available nationally.">
+  <meta property="og:image:alt" content="onlinefdr.com.au. The call you make before you call a lawyer. Accredited online Family Dispute Resolution, available nationally.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://onlinefdr.com.au/images/og-default.jpg">
-  <meta name="twitter:image:alt" content="onlinefdr.com.au. Divorce. Done different. Accredited online Family Dispute Resolution, available nationally.">
+  <meta name="twitter:image:alt" content="onlinefdr.com.au. The call you make before you call a lawyer. Accredited online Family Dispute Resolution, available nationally.">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
@@ -610,28 +623,7 @@ HOME_HTML = """
   </section>
 
   <!-- HOME MARQUEE -->
-  <div class="marquee-bar" aria-label="Accreditation and credentials" role="marquee">
-    <div class="marquee-track" aria-hidden="true">
-      <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
-    </div>
-  </div>
+<!--MARQUEE-->
 
   <!-- FUTURE: REVIEWS SCROLLER (will replace this placeholder once reviews exist) -->
 
@@ -926,7 +918,7 @@ HOME_HTML = """
   </section>
 """
 
-HOME_SCHEMA = '{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://onlinefdr.com.au/#website","url":"https://onlinefdr.com.au/","name":"onlinefdr.com.au","description":"Accredited Online Family Dispute Resolution in Australia. Available nationally, conducted online, registered with the AGD.","publisher":{"@id":"https://onlinefdr.com.au/#organization"},"inLanguage":"en-AU"},{"@type":["Organization","LegalService"],"@id":"https://onlinefdr.com.au/#organization","name":"onlinefdr.com.au","alternateName":"Online FDR","url":"https://onlinefdr.com.au/","logo":"https://onlinefdr.com.au/images/logo.png","sameAs":["https://www.facebook.com/onlinefdr/","https://www.instagram.com/onlinefdr.com.au/","https://www.linkedin.com/company/onlinefdr/"],"telephone":"+61399617544","email":"hello@onlinefdr.com.au","description":"Accredited Online Family Dispute Resolution practice. Registered with the Australian Government Attorney-General\'s Department under the Family Law (Family Dispute Resolution Practitioners) Regulations 2025. Authorised to issue Section 60I certificates nationally.","areaServed":{"@type":"Country","name":"Australia"},"serviceType":["Family Dispute Resolution","Online Mediation","Section 60I Certificate Issuance","Parenting Mediation","Property Settlement Mediation"],"knowsAbout":["Family Law Act 1975","Section 60I certificates","Family Dispute Resolution","Parenting arrangements","Property settlement","Online mediation"],"founder":{"@type":"Person","name":"Kevin Scrimshaw","jobTitle":"Founder","identifier":{"@type":"PropertyValue","propertyID":"AGD FDRP Registration Number","value":"F2003011"},"hasCredential":[{"@type":"EducationalOccupationalCredential","credentialCategory":"Accreditation","name":"Accredited Family Dispute Resolution Practitioner","recognizedBy":{"@type":"GovernmentOrganization","name":"Australian Government Attorney-General\'s Department"}}]}},{"@type":"WebPage","@id":"https://onlinefdr.com.au/#webpage","url":"https://onlinefdr.com.au/","name":"Accredited Online Family Dispute Resolution in Australia","isPartOf":{"@id":"https://onlinefdr.com.au/#website"},"about":{"@id":"https://onlinefdr.com.au/#organization"},"mainEntity":{"@id":"https://onlinefdr.com.au/#faq"},"inLanguage":"en-AU"},{"@type":"FAQPage","@id":"https://onlinefdr.com.au/#faq","mainEntity":[{"@type":"Question","name":"Do I need to attempt FDR before going to the Family Court?","acceptedAnswer":{"@type":"Answer","text":"For parenting orders, yes. Under section 60I of the Family Law Act, FDR is the step the law expects to be taken before applying for parenting orders, unless an exemption applies. For financial and property matters, the Section 60I certificate does not apply, but every initiating application requires a Genuine Steps Certificate under Schedule 1 of the FCFCOA (Family Law) Rules 2021. The Genuine Steps Certificate is signed by the party themselves and confirms a genuine attempt at dispute resolution has been made."}},{"@type":"Question","name":"Is online family mediation legally valid in Australia?","acceptedAnswer":{"@type":"Answer","text":"Yes. The Family Law Act does not require FDR to be conducted in person. Online mediation by an accredited FDRP is fully legally valid. Section 60I certificates issued after online sessions carry exactly the same legal standing as those from in-person sessions, and the statutory confidentiality and inadmissibility protections under sections 10H and 10J apply equally."}},{"@type":"Question","name":"What if the other party will not participate?","acceptedAnswer":{"@type":"Answer","text":"If the other party refuses to attend after being given a genuine opportunity, a Section 60I certificate under paragraph 60I(8)(a) can be issued documenting non-attendance. The matter can then proceed to court for parenting orders. Courts may take non-participation into account when making subsequent orders, including in relation to costs."}},{"@type":"Question","name":"How long does the FDR process take?","acceptedAnswer":{"@type":"Answer","text":"Most matters resolve in a matter of weeks rather than months. Discovery calls are typically available within a few days of enquiry, intake within a week or two, and the first joint session within two weeks of initial contact. Higher-conflict matters take longer, but still run significantly faster than the 18 to 36 month timeline for contested family law proceedings."}},{"@type":"Question","name":"Can I participate if I live in regional or rural Australia?","acceptedAnswer":{"@type":"Answer","text":"Yes. Our practice is entirely online so you can participate from anywhere in Australia. Both parties can be in different cities or states. Access to an accredited FDRP is no longer determined by postcode."}},{"@type":"Question","name":"Does this apply to financial matters as well as parenting?","acceptedAnswer":{"@type":"Answer","text":"Yes. We handle parenting matters, financial and property settlement, and Section 60I certificates. Whether you are mid-separation, already divorced with ongoing parenting disputes, or dealing with financial matters only, FDR is available and appropriate. The Family Law Amendment Act 2024, in force from 10 June 2025, codified the four-step property settlement framework into the Family Law Act and imposed new statutory obligations on FDR practitioners to inform parties about their duty of disclosure."}}]}]}'
+HOME_SCHEMA = '{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://onlinefdr.com.au/#website","url":"https://onlinefdr.com.au/","name":"onlinefdr.com.au","description":"Accredited Online Family Dispute Resolution in Australia. Available nationally, conducted online, registered with the AGD.","publisher":{"@id":"https://onlinefdr.com.au/#organization"},"inLanguage":"en-AU"},{"@type":["Organization","LegalService"],"@id":"https://onlinefdr.com.au/#organization","name":"onlinefdr.com.au","alternateName":"Online FDR","url":"https://onlinefdr.com.au/","logo":"https://onlinefdr.com.au/images/logo.png","sameAs":["https://www.facebook.com/onlinefdr/","https://www.instagram.com/onlinefdr.au/","https://www.linkedin.com/company/onlinefdr/"],"telephone":"+61399617544","email":"hello@onlinefdr.com.au","description":"Accredited Online Family Dispute Resolution practice. Registered with the Australian Government Attorney-General\'s Department under the Family Law (Family Dispute Resolution Practitioners) Regulations 2025. Authorised to issue Section 60I certificates nationally.","areaServed":{"@type":"Country","name":"Australia"},"serviceType":["Family Dispute Resolution","Online Mediation","Section 60I Certificate Issuance","Parenting Mediation","Property Settlement Mediation"],"knowsAbout":["Family Law Act 1975","Section 60I certificates","Family Dispute Resolution","Parenting arrangements","Property settlement","Online mediation"],"founder":{"@type":"Person","name":"Kevin Scrimshaw","jobTitle":"Founder","identifier":{"@type":"PropertyValue","propertyID":"AGD FDRP Registration Number","value":"F2003011"},"hasCredential":[{"@type":"EducationalOccupationalCredential","credentialCategory":"Accreditation","name":"Accredited Family Dispute Resolution Practitioner","recognizedBy":{"@type":"GovernmentOrganization","name":"Australian Government Attorney-General\'s Department"}}]}},{"@type":"WebPage","@id":"https://onlinefdr.com.au/#webpage","url":"https://onlinefdr.com.au/","name":"Accredited Online Family Dispute Resolution in Australia","isPartOf":{"@id":"https://onlinefdr.com.au/#website"},"about":{"@id":"https://onlinefdr.com.au/#organization"},"mainEntity":{"@id":"https://onlinefdr.com.au/#faq"},"inLanguage":"en-AU"},{"@type":"FAQPage","@id":"https://onlinefdr.com.au/#faq","mainEntity":[{"@type":"Question","name":"Do I need to attempt FDR before going to the Family Court?","acceptedAnswer":{"@type":"Answer","text":"For parenting orders, yes. Under section 60I of the Family Law Act, FDR is the step the law expects to be taken before applying for parenting orders, unless an exemption applies. For financial and property matters, the Section 60I certificate does not apply, but every initiating application requires a Genuine Steps Certificate under Schedule 1 of the FCFCOA (Family Law) Rules 2021. The Genuine Steps Certificate is signed by the party themselves and confirms a genuine attempt at dispute resolution has been made."}},{"@type":"Question","name":"Is online family mediation legally valid in Australia?","acceptedAnswer":{"@type":"Answer","text":"Yes. The Family Law Act does not require FDR to be conducted in person. Online mediation by an accredited FDRP is fully legally valid. Section 60I certificates issued after online sessions carry exactly the same legal standing as those from in-person sessions, and the statutory confidentiality and inadmissibility protections under sections 10H and 10J apply equally."}},{"@type":"Question","name":"What if the other party will not participate?","acceptedAnswer":{"@type":"Answer","text":"If the other party refuses to attend after being given a genuine opportunity, a Section 60I certificate under paragraph 60I(8)(a) can be issued documenting non-attendance. The matter can then proceed to court for parenting orders. Courts may take non-participation into account when making subsequent orders, including in relation to costs."}},{"@type":"Question","name":"How long does the FDR process take?","acceptedAnswer":{"@type":"Answer","text":"Most matters resolve in a matter of weeks rather than months. Discovery calls are typically available within a few days of enquiry, intake within a week or two, and the first joint session within two weeks of initial contact. Higher-conflict matters take longer, but still run significantly faster than the 18 to 36 month timeline for contested family law proceedings."}},{"@type":"Question","name":"Can I participate if I live in regional or rural Australia?","acceptedAnswer":{"@type":"Answer","text":"Yes. Our practice is entirely online so you can participate from anywhere in Australia. Both parties can be in different cities or states. Access to an accredited FDRP is no longer determined by postcode."}},{"@type":"Question","name":"Does this apply to financial matters as well as parenting?","acceptedAnswer":{"@type":"Answer","text":"Yes. We handle parenting matters, financial and property settlement, and Section 60I certificates. Whether you are mid-separation, already divorced with ongoing parenting disputes, or dealing with financial matters only, FDR is available and appropriate. The Family Law Amendment Act 2024, in force from 10 June 2025, codified the four-step property settlement framework into the Family Law Act and imposed new statutory obligations on FDR practitioners to inform parties about their duty of disclosure."}}]}]}'
 
 build_page(
     filename="home-v2.html",
@@ -938,7 +930,7 @@ build_page(
     extra_css=HOME_CSS,
     breadcrumbs=[],
     page_html=HOME_HTML,
-    show_marquee=False,
+    show_marquee=True,
 )
 print("Home done.")
 
@@ -1015,28 +1007,7 @@ ABOUT_HTML = """
   </section>
 
   <!-- ABOVE-FOLD MARQUEE -->
-  <div class="marquee-bar" aria-label="Accreditation and credentials" role="marquee">
-    <div class="marquee-track" aria-hidden="true">
-      <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
-    </div>
-  </div>
+<!--MARQUEE-->
 
 
   <div class="divider" aria-hidden="true"></div>
@@ -1222,11 +1193,11 @@ build_page(
     meta_desc="onlinefdr.com.au was founded on the belief that accredited Family Dispute Resolution should be reachable by anyone in Australia, online and without long waits.",
     canonical="/about/",
     current_page="/about/",
-    schema_json='{"@context":"https://schema.org","@graph":[{"@type":"AboutPage","@id":"https://onlinefdr.com.au/about/#aboutpage","url":"https://onlinefdr.com.au/about/","name":"About onlinefdr.com.au","about":{"@id":"https://onlinefdr.com.au/#organization"},"mainEntity":{"@id":"https://onlinefdr.com.au/#kevin-scrimshaw"}},{"@type":"Organization","@id":"https://onlinefdr.com.au/#organization","name":"onlinefdr.com.au","url":"https://onlinefdr.com.au/","logo":"https://onlinefdr.com.au/images/logo.png","sameAs":["https://www.facebook.com/onlinefdr/","https://www.instagram.com/onlinefdr.com.au/","https://www.linkedin.com/company/onlinefdr/"],"description":"Accredited online Family Dispute Resolution practice serving separating couples nationally across Australia.","founder":{"@id":"https://onlinefdr.com.au/#kevin-scrimshaw"},"areaServed":{"@type":"Country","name":"Australia"}},{"@type":"Person","@id":"https://onlinefdr.com.au/#kevin-scrimshaw","name":"Kevin Scrimshaw","jobTitle":"Founder","identifier":{"@type":"PropertyValue","propertyID":"AGD FDRP Registration Number","value":"F2003011"},"worksFor":{"@id":"https://onlinefdr.com.au/#organization"},"hasCredential":[{"@type":"EducationalOccupationalCredential","credentialCategory":"professional accreditation","name":"Accredited Family Dispute Resolution Practitioner","recognizedBy":{"@type":"GovernmentOrganization","name":"Australian Government Attorney-General\'s Department"}},{"@type":"EducationalOccupationalCredential","credentialCategory":"professional membership","name":"Member, Australian Mediation Association"}]}]}',
+    schema_json='{"@context":"https://schema.org","@graph":[{"@type":"AboutPage","@id":"https://onlinefdr.com.au/about/#aboutpage","url":"https://onlinefdr.com.au/about/","name":"About onlinefdr.com.au","about":{"@id":"https://onlinefdr.com.au/#organization"},"mainEntity":{"@id":"https://onlinefdr.com.au/#kevin-scrimshaw"}},{"@type":"Organization","@id":"https://onlinefdr.com.au/#organization","name":"onlinefdr.com.au","url":"https://onlinefdr.com.au/","logo":"https://onlinefdr.com.au/images/logo.png","sameAs":["https://www.facebook.com/onlinefdr/","https://www.instagram.com/onlinefdr.au/","https://www.linkedin.com/company/onlinefdr/"],"description":"Accredited online Family Dispute Resolution practice serving separating couples nationally across Australia.","founder":{"@id":"https://onlinefdr.com.au/#kevin-scrimshaw"},"areaServed":{"@type":"Country","name":"Australia"}},{"@type":"Person","@id":"https://onlinefdr.com.au/#kevin-scrimshaw","name":"Kevin Scrimshaw","jobTitle":"Founder","identifier":{"@type":"PropertyValue","propertyID":"AGD FDRP Registration Number","value":"F2003011"},"worksFor":{"@id":"https://onlinefdr.com.au/#organization"},"hasCredential":[{"@type":"EducationalOccupationalCredential","credentialCategory":"professional accreditation","name":"Accredited Family Dispute Resolution Practitioner","recognizedBy":{"@type":"GovernmentOrganization","name":"Australian Government Attorney-General\'s Department"}},{"@type":"EducationalOccupationalCredential","credentialCategory":"professional membership","name":"Member, Australian Mediation Association"}]}]}',
     extra_css=ABOUT_CSS,
     breadcrumbs=[("Home", "/"), ("About", "/about/")],
     page_html=ABOUT_HTML,
-    show_marquee=False,
+    show_marquee=True,
 )
 
 print("About done.")
@@ -1354,28 +1325,7 @@ PO_HTML = """
   </header>
 
   <!-- ABOVE-FOLD MARQUEE -->
-  <div class="marquee-bar" aria-label="Accreditation and credentials" role="marquee">
-    <div class="marquee-track" aria-hidden="true">
-      <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
-    </div>
-  </div>
+<!--MARQUEE-->
 
 
   <div class="wrap article-wrap">
@@ -1651,6 +1601,7 @@ build_page(
     extra_css=ARTICLE_CSS + PO_CSS,
     breadcrumbs=[("Home", "/"), ("Parenting", "/parenting/")],
     page_html=PO_HTML,
+    show_marquee=True,
 )
 print("Parenting done.")
 
@@ -1674,28 +1625,7 @@ FS_HTML = """
   </header>
 
   <!-- ABOVE-FOLD MARQUEE -->
-  <div class="marquee-bar" aria-label="Accreditation and credentials" role="marquee">
-    <div class="marquee-track" aria-hidden="true">
-      <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
-    </div>
-  </div>
+<!--MARQUEE-->
 
 
   <div class="wrap article-wrap">
@@ -1728,7 +1658,7 @@ FS_HTML = """
         </div>
 
         <h2 id="family-violence">Family violence in financial settlements</h2>
-        <p>One of the most significant changes under the 2024 Act is the explicit role of family violence in property and financial matters. The principles set out in Kennon v Kennon, which recognised the economic effect of family violence on a party's ability to contribute and on their future circumstances, are now codified into the Family Law Act.</p>
+        <p>One of the most significant changes under the 2024 Act is the explicit role of family violence in property and financial matters. The principles set out in <em>Kennon v Kennon</em>, which recognised the economic effect of family violence on a party's ability to contribute and on their future circumstances, are now codified into the Family Law Act.</p>
         <p>The Act also expanded the definition of family violence in section 4AB to more clearly recognise economic or financial abuse, including:</p>
         <ul>
           <li>Unreasonably denying a partner financial autonomy</li>
@@ -1941,6 +1871,7 @@ build_page(
     extra_css=ARTICLE_CSS + FS_CSS,
     breadcrumbs=[("Home", "/"), ("Financial Settlements", "/financial-settlement/")],
     page_html=FS_HTML,
+    show_marquee=True,
 )
 print("Financial Settlement done.")
 
@@ -1964,28 +1895,7 @@ S60I_HTML = """
   </header>
 
   <!-- ABOVE-FOLD MARQUEE -->
-  <div class="marquee-bar" aria-label="Accreditation and credentials" role="marquee">
-    <div class="marquee-track" aria-hidden="true">
-      <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
-    </div>
-  </div>
+<!--MARQUEE-->
 
 
   <div class="wrap article-wrap">
@@ -2191,6 +2101,7 @@ build_page(
     extra_css=ARTICLE_CSS + S60I_CSS,
     breadcrumbs=[("Home", "/"), ("Section 60I Certificate", "/section-60i/")],
     page_html=S60I_HTML,
+    show_marquee=True,
 )
 print("Section 60I done.")
 
@@ -2337,28 +2248,7 @@ JTT_HTML = """
   </div>
 
   <!-- ABOVE-FOLD MARQUEE -->
-  <div class="marquee-bar" aria-label="Accreditation and credentials" role="marquee">
-    <div class="marquee-track" aria-hidden="true">
-      <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
-    </div>
-  </div>
+<!--MARQUEE-->
 
 
   <section class="wrap form-wrap" aria-labelledby="jtt-form-heading">
@@ -2549,7 +2439,7 @@ build_page(
     breadcrumbs=[("Home", "/"), ("Join the Team", "/join-the-team/")],
     page_html=JTT_HTML,
     robots="noindex, nofollow",
-    show_marquee=False,
+    show_marquee=True,
     extra_js=JTT_JS,
 )
 print("Join the Team done.")
@@ -2658,28 +2548,7 @@ HIW_HTML = """
   </header>
 
   <!-- ABOVE-FOLD MARQUEE -->
-  <div class="marquee-bar" aria-label="Accreditation and credentials" role="marquee">
-    <div class="marquee-track" aria-hidden="true">
-      <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
-    </div>
-  </div>
+<!--MARQUEE-->
 
 
   <!-- PROCESS TIMELINE -->
@@ -2940,7 +2809,7 @@ build_page(
     extra_css=HIW_CSS,
     breadcrumbs=[("Home", "/"), ("How It Works", "/how-it-works/")],
     page_html=HIW_HTML,
-    show_marquee=False,
+    show_marquee=True,
 )
 print("How It Works done.")
 
@@ -3093,28 +2962,7 @@ WIFDR_HTML = """
   </header>
 
   <!-- ABOVE-FOLD MARQUEE -->
-  <div class="marquee-bar" aria-label="Accreditation and credentials" role="marquee">
-    <div class="marquee-track" aria-hidden="true">
-      <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
-    </div>
-  </div>
+<!--MARQUEE-->
 
 
   <!-- DEFINITION -->
@@ -3425,7 +3273,7 @@ build_page(
     extra_css=WIFDR_CSS,
     breadcrumbs=[("Home", "/"), ("What is FDR?", "/what-is-fdr/")],
     page_html=WIFDR_HTML,
-    show_marquee=False,
+    show_marquee=True,
 )
 print("What is FDR done.")
 
@@ -3791,28 +3639,7 @@ FAQ_HTML = f"""
   </header>
 
   <!-- ABOVE-FOLD MARQUEE -->
-  <div class="marquee-bar" aria-label="Accreditation and credentials" role="marquee">
-    <div class="marquee-track" aria-hidden="true">
-      <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
-    </div>
-  </div>
+<!--MARQUEE-->
 
 
   <div class="wrap faq-page-wrap">
@@ -3855,7 +3682,7 @@ build_page(
     extra_css=FAQ_CSS,
     breadcrumbs=[("Home", "/"), ("FAQ", "/faq/")],
     page_html=FAQ_HTML,
-    show_marquee=False,
+    show_marquee=True,
     extra_js=FAQ_JS,
 )
 print("FAQ done.")
@@ -3972,28 +3799,7 @@ COMPLAINTS_HTML = """
   </header>
 
   <!-- ABOVE-FOLD MARQUEE -->
-  <div class="marquee-bar" aria-label="Accreditation and credentials" role="marquee">
-    <div class="marquee-track" aria-hidden="true">
-      <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
-    </div>
-  </div>
+<!--MARQUEE-->
 
 
   <div class="wrap complaints-wrap">
@@ -4090,6 +3896,8 @@ COMPLAINTS_HTML = """
           <h3>Our commitment</h3>
           <p>We will acknowledge every complaint within one business day and respond substantively within two business days.</p>
           <p>All complaints are handled confidentially within onlinefdr.com.au. Where a complaint cannot be resolved to your satisfaction internally, you can escalate the matter to our approved external complaints body, the Australian Mediation Association (AMA), at <a href="https://ama.asn.au/mediation-complaints/" style="color:var(--terra);text-decoration:none;font-weight:600">ama.asn.au/mediation-complaints</a>. The AMA handles complaints about accredited FDR practitioners independently of the practice.</p>
+          <h2 id="language">Language</h2>
+          <p>This page is published in English, and the English version is the authoritative version. If you read it using a browser or automated translation, the English text prevails in the event of any inconsistency or ambiguity.</p>
           <p><strong>Prefer to call?</strong> You can reach us on <a href="tel:0399617544" style="color:var(--terra);text-decoration:none;font-weight:600">(03) 9961 7544</a> during business hours.</p>
         </div>
       </aside>
@@ -4164,28 +3972,7 @@ PRIVACY_HTML = """
   </header>
 
   <!-- ABOVE-FOLD MARQUEE -->
-  <div class="marquee-bar" aria-label="Accreditation and credentials" role="marquee">
-    <div class="marquee-track" aria-hidden="true">
-      <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
-    </div>
-  </div>
+<!--MARQUEE-->
 
 
   <div class="wrap legal-wrap">
@@ -4348,6 +4135,8 @@ PRIVACY_HTML = """
         </ul>
         <p>If you have a complaint about our handling of your personal information, please contact us in the first instance. If we are unable to resolve your complaint, you may refer it to the Office of the Australian Information Commissioner at <a href="https://www.oaic.gov.au" target="_blank" rel="noopener noreferrer">oaic.gov.au</a>.</p>
         <p>This policy was last updated in May 2026. We may update it from time to time. The current version will always be available at this address.</p>
+        <h2 id="language">Language</h2>
+        <p>This policy is published in English, and the English version is the authoritative version. If you read this page using a browser or automated translation, the English text prevails in the event of any inconsistency or ambiguity.</p>
 
         <h2 id="changelog">Change log</h2>
         <p>Substantive changes to this Privacy Policy are recorded here. Minor formatting or typographical corrections may be made without entry.</p>
@@ -4390,28 +4179,7 @@ TERMS_HTML = """
   </header>
 
   <!-- ABOVE-FOLD MARQUEE -->
-  <div class="marquee-bar" aria-label="Accreditation and credentials" role="marquee">
-    <div class="marquee-track" aria-hidden="true">
-      <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
-    </div>
-  </div>
+<!--MARQUEE-->
 
 
   <div class="wrap legal-wrap">
@@ -4565,6 +4333,8 @@ TERMS_HTML = """
           <li>Phone: <a href="tel:0399617544">(03) 9961 7544</a></li>
         </ul>
         <p>These terms were last updated in May 2026. We may update them from time to time. Continued use of our services following any update constitutes acceptance of the revised terms. The current version will always be available at this address.</p>
+        <h2 id="language">Language</h2>
+        <p>These terms are published in English, and the English version is the authoritative version. If you read this page using a browser or automated translation, the English text prevails in the event of any inconsistency or ambiguity.</p>
 
         <h2 id="changelog">Change log</h2>
         <p>Substantive changes to these Terms of Service are recorded here. Minor formatting or typographical corrections may be made without entry.</p>
@@ -4718,28 +4488,7 @@ BOOK_HTML = """
   </header>
 
   <!-- ABOVE-FOLD MARQUEE -->
-  <div class="marquee-bar" aria-label="Accreditation and credentials" role="marquee">
-    <div class="marquee-track" aria-hidden="true">
-      <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
-    </div>
-  </div>
+<!--MARQUEE-->
 
 
   <div class="wrap book-wrap">
@@ -4943,6 +4692,7 @@ build_page(
     breadcrumbs=[("Home", "/"), ("Book", "/book/")],
     page_html=BOOK_HTML,
     extra_js=BOOK_JS,
+    show_marquee=True,
 )
 print("Book done.")
 
@@ -5213,28 +4963,7 @@ LOCATIONS_HTML = """
   </header>
 
   <!-- ABOVE-FOLD MARQUEE -->
-  <div class="marquee-bar" aria-label="Accreditation and credentials" role="marquee">
-    <div class="marquee-track" aria-hidden="true">
-      <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
-    </div>
-  </div>
+<!--MARQUEE-->
 
   <section class="loc-wrap">
     <div class="wrap">
@@ -5343,7 +5072,7 @@ build_page(
     extra_css=ARTICLE_CSS + LOCATIONS_CSS,
     breadcrumbs=[("Home", "/"), ("Locations", "/locations/")],
     page_html=LOCATIONS_HTML,
-    show_marquee=False,
+    show_marquee=True,
 )
 print("Locations done.")
 
@@ -5367,28 +5096,7 @@ PRICING_HTML = """
   </header>
 
   <!-- ABOVE-FOLD MARQUEE -->
-  <div class="marquee-bar" aria-label="Accreditation and credentials" role="marquee">
-    <div class="marquee-track" aria-hidden="true">
-      <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
-    </div>
-  </div>
+<!--MARQUEE-->
 
 
   <div class="wrap article-wrap">
@@ -5546,5 +5254,6 @@ build_page(
     extra_css=ARTICLE_CSS + PRICING_CSS,
     breadcrumbs=[("Home", "/"), ("Pricing", "/pricing/")],
     page_html=PRICING_HTML,
+    show_marquee=True,
 )
 print("Pricing done.")

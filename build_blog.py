@@ -303,6 +303,10 @@ def inline_md(text):
     return text
 
 
+# Blanket disclaimer appended as the closing blockquote on EVERY post (single source of truth).
+BLANKET_DISCLAIMER = "This article is general information only. It is not legal, tax, or financial advice and does not take account of your personal situation. The law changes, some measures mentioned may be proposals that are not yet in force, and fees and figures can change over time, so check anything that matters and get advice for your own circumstances from a family lawyer, an accredited Family Dispute Resolution Practitioner, or a qualified tax or financial professional before acting. If you or someone else is in immediate danger, call 000. For confidential support with family violence or concerns about a child's safety, contact 1800RESPECT on 1800 737 732."
+
+
 def md_to_html(md_text):
     """Convert Markdown body to HTML. Block-level processing."""
     lines = md_text.split("\n")
@@ -517,8 +521,39 @@ def parse_post(path):
     else:
         meta["excerpt"] = meta["meta_description"]
 
-    meta["body_html"] = md_to_html(body_md)
+    meta["body_html"] = md_to_html(body_md + "\n\n> " + BLANKET_DISCLAIMER)
     meta["source_path"] = path
+
+    # FAQ extraction for FAQPage JSON-LD. Posts with `faq: true` in frontmatter
+    # get their trailing "### Question?" headings + following paragraph emitted
+    # as FAQPage schema (in addition to the visible Q&A in the body).
+    if meta.get("faq"):
+        faq_items = []
+        flines = body_md.split("\n")
+        j = 0
+        while j < len(flines):
+            ln = flines[j].strip()
+            if ln.startswith("### ") and ln.endswith("?"):
+                q = ln[4:].strip()
+                ans, j = [], j + 1
+                while j < len(flines):
+                    a = flines[j].strip()
+                    if a.startswith("#"):
+                        break
+                    if a:
+                        ans.append(a)
+                    elif ans:
+                        break
+                    j += 1
+                atext = " ".join(ans)
+                atext = re.sub(r"\*\*([^*]+)\*\*", r"\1", atext)
+                atext = re.sub(r"\*([^*]+)\*", r"\1", atext)
+                atext = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", atext)
+                if q and atext:
+                    faq_items.append((q, atext))
+            else:
+                j += 1
+        meta["faq_items"] = faq_items
 
     return meta
 
@@ -821,13 +856,14 @@ def render_post_page(post):
     cat = post["category"]
     cat_slug = CATEGORY_SLUGS[cat]
     title_safe = html.escape(post["title"])
+    hero_alt_safe = html.escape(post.get("hero_alt") or post["title"])
     canonical = f"/blog/{post['slug']}/"
 
     # Hero image block
     if post.get("hero_image"):
         hero_block = f"""<div class="post-hero-image">
   <div class="post-hero-image-inner">
-    <img src="/blog/images/{post['hero_image']}" alt="{title_safe}">
+    <img src="/blog/images/{post['hero_image']}" alt="{hero_alt_safe}">
   </div>
 </div>"""
     else:
@@ -914,6 +950,17 @@ def render_post_page(post):
         "mainEntityOfPage": {"@type": "WebPage", "@id": f"https://onlinefdr.com.au{canonical}"},
         "articleSection": cat,
     }
+    if post.get("faq_items"):
+        blogposting = {k: v for k, v in schema_obj.items() if k != "@context"}
+        faqpage = {
+            "@type": "FAQPage",
+            "mainEntity": [
+                {"@type": "Question", "name": q,
+                 "acceptedAnswer": {"@type": "Answer", "text": a}}
+                for q, a in post["faq_items"]
+            ],
+        }
+        schema_obj = {"@context": "https://schema.org", "@graph": [blogposting, faqpage]}
     schema = json.dumps(schema_obj, ensure_ascii=False, separators=(",", ":"))
 
     return shell(

@@ -107,5 +107,3 @@ The cost of disclosing is the time it takes to gather the documents, complete th
 The cost of failing to disclose and being found out later, whether during proceedings or after them under section 79A, is much greater. Subpoenas to banks, superannuation funds, the Australian Taxation Office, accountants, and trustees are all available to the other party, and their cost can be sheeted home to the non-disclosing party under section 114UB. Adverse inferences can shift the property division by tens or hundreds of thousands of dollars.
 
 The cleanest path through a financial settlement runs through early, full, honest disclosure: on time, in writing, with the supporting documents. The duty under sections 71B, 90RI, and 90YJA exists because the alternative, in the long run, is always more expensive than the truth.
-
-> This article provides general information only and is not legal, tax, or financial advice. For advice specific to your circumstances, consult a qualified legal, tax, or financial professional.

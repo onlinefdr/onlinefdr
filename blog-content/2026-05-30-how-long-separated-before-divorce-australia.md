@@ -77,5 +77,3 @@ A divorce order does not take effect the day the court makes it. It becomes fina
 The timing comes from section 55 of the Act, and you can only remarry once the order is final under section 59. If you have a wedding date in mind, count back from it: you need the order made, then the month-and-a-day wait, before a new marriage can go ahead.
 
 A divorce order can also affect other things, such as a will, so it is worth knowing the date it becomes final rather than assuming it is the day of the hearing. If any of that timing is tight for you, sort the sequence out early, well before the dates start to matter.
-
-> This article is general information only and is not legal advice. For advice about your specific circumstances, please consult a family lawyer or accredited Family Dispute Resolution Practitioner.

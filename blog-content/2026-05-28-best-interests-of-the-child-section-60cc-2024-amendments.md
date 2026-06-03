@@ -51,7 +51,7 @@ For separating families, this matters in two practical ways. Where there is a hi
 
 Section 60CC(2)(b) requires the court to consider any views expressed by the child. The Act does not put an age threshold on when a child's views start to matter. Younger children's views are routinely considered. The weight given to those views is what shifts with age and maturity.
 
-There is no rule that says a child of a particular age can choose where to live. Courts consider the views of children of all ages and weight them according to the child's age, maturity, and the circumstances in which the views were formed. The High Court's approach in Bondelmonte v Bondelmonte [2017] HCA 8 remains good law on the principle that a child's stated views must be assessed in context, including any influence parents may have had over those views. The wording quoted in older cases referred to the pre-2024 section, but the underlying principle survives the reform.
+There is no rule that says a child of a particular age can choose where to live. Courts consider the views of children of all ages and weight them according to the child's age, maturity, and the circumstances in which the views were formed. The High Court's approach in *Bondelmonte v Bondelmonte* [2017] HCA 8 remains good law on the principle that a child's stated views must be assessed in context, including any influence parents may have had over those views. The wording quoted in older cases referred to the pre-2024 section, but the underlying principle survives the reform.
 
 In FDR, parents are not asked to relay what the children said. The practitioner does not interview the children. Where a child's views are likely to be central to the arrangement, a child consultant or family report may be considered, but that sits outside the FDR session itself.
 
@@ -125,5 +125,3 @@ For parents preparing for FDR, the most useful starting point is to work through
 Parents who arrive at mediation having thought through these questions separately, in advance, tend to reach workable arrangements faster than parents who arrive without that preparation. The Pre-Mediation Parenting Reflection Workbook on the Parenting page is designed for exactly this purpose.
 
 The Family Law Act is not a manual for raising children. It is a framework for resolving disputes about how children will be raised when parents cannot agree without help. In FDR, the section 60CC factors operate as the quiet test the parents' own arrangement needs to pass.
-
-> This article is general information only and is not legal advice. For advice about your specific circumstances, including any concerns about your child's safety, please consult a family lawyer or accredited Family Dispute Resolution Practitioner.

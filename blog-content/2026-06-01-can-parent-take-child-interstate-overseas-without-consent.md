@@ -93,5 +93,3 @@ In FDR, the practitioner assigned to your matter does not decide anything or put
 Because it runs online, distance is no barrier, which matters when one parent has already moved or is planning to. If travel or relocation is on the table and you would rather settle it calmly than fight it out, a Free Discovery Call is the simplest place to start.
 
 > If you or someone you know is experiencing family violence, coercive control, or fears a child may be taken without consent, please visit our [Get Help page](/get-help/) for crisis support services and pathways to safety.
-
-> This article is general information only and is not legal advice. For advice about your specific circumstances, please consult a family lawyer or accredited Family Dispute Resolution Practitioner.

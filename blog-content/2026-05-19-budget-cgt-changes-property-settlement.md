@@ -85,9 +85,3 @@ Consider engaging an accountant alongside your family law process to model the t
 The practice is here to help you navigate this intersection of tax reform and family law with clarity and confidence.
 
 [Book a free discovery call](/book/) to discuss your situation and understand how FDR can help you reach a fair, informed property settlement.
-
-Divorce. Done different.
-
-> This article provides general information only and is not legal, tax, or financial advice. The 2026 Federal Budget measures referenced are announced government proposals and remain subject to legislation passing Parliament. For advice specific to your circumstances, consult a qualified legal, tax, or financial professional.
-
-For enquiries, contact us at (03) 9961 7544 or hello@onlinefdr.com.au.
