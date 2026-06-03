@@ -71,7 +71,7 @@ CATEGORY_SLUGS = {
 
 APPROVED_RELATED_PAGES = {
     "/parenting/", "/financial-settlement/", "/section-60i/",
-    "/how-it-works/", "/what-is-fdr/", "/about/", "/book/",
+    "/how-it-works/", "/what-is-fdr/", "/about/", "/book/", "/pricing/",
 }
 
 # Display labels for the related-pages block
@@ -83,6 +83,7 @@ PAGE_LABELS = {
     "/what-is-fdr/": "What is FDR?",
     "/about/": "About the Practice",
     "/book/": "Book a Discovery Call",
+    "/pricing/": "Pricing",
 }
 
 SLUG_PATTERN = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
@@ -334,6 +335,7 @@ def md_to_html(md_text):
             continue
 
         # Headings: ## or ###
+        if stripped.startswith("### "):
             out.append(f"<h3>{inline_md(stripped[4:].strip())}</h3>")
             i += 1
             continue
