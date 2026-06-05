@@ -304,7 +304,7 @@ def inline_md(text):
 
 
 # Blanket disclaimer appended as the closing blockquote on EVERY post (single source of truth).
-BLANKET_DISCLAIMER = "This article is general information only. It is not legal, tax, or financial advice and does not take account of your personal situation. The law changes, some measures mentioned may be proposals that are not yet in force, and fees and figures can change over time, so check anything that matters and get advice for your own circumstances from a family lawyer, an accredited Family Dispute Resolution Practitioner, or a qualified tax or financial professional before acting. If you or someone else is in immediate danger, call 000. For confidential support with family violence or concerns about a child's safety, contact 1800RESPECT on 1800 737 732."
+BLANKET_DISCLAIMER = "This article is general information only and was correct to the best of our knowledge at the time of writing. It is not legal, tax, or financial advice and does not take account of your personal situation. The law changes, some measures mentioned may be proposals that are not yet in force, and fees and figures can change over time, so check anything that matters and get advice for your own circumstances from a family lawyer, an accredited Family Dispute Resolution Practitioner, or a qualified tax or financial professional before acting. If you or someone else is in immediate danger, call 000. For confidential support with family violence or concerns about a child's safety, contact 1800RESPECT on 1800 737 732."
 
 
 def md_to_html(md_text):
@@ -803,15 +803,15 @@ def render_index_page(posts, page_num, total_pages, active_category=None, catego
         meta_desc = f"Articles on {active_category.lower()} from the team at onlinefdr.com.au, Australia's accredited online Family Dispute Resolution practice."
         header_label = active_category
         header_h1 = f"{active_category} <span class=\"accent\">articles</span>."
-        header_intro = f"Practical, current writing on {active_category.lower()} for separating Australians. Updated daily."
+        header_intro = f"A closer look at {active_category.lower()} for separating Australians."
     else:
         canonical = "/blog/" if page_num == 1 else f"/blog/page/{page_num}/"
         base_url = "/blog/"
         title = "Blog · onlinefdr.com.au"
-        meta_desc = "Daily writing on separation, parenting, financial settlement, and Family Dispute Resolution in Australia. Practical, current, and accredited."
+        meta_desc = "In-depth articles on separation in Australia: parenting, financial settlement, and the process of Family Dispute Resolution."
         header_label = "Blog"
-        header_h1 = "Daily writing on <span class=\"accent\">separation in Australia</span>."
-        header_intro = "Practical, current, and accredited. New articles every day on parenting, financial settlement, and the process of Family Dispute Resolution."
+        header_h1 = "Dive deeper into the issues <span class=\"accent\">affecting you</span>."
+        header_intro = "The questions separating Australians actually ask, explored in more detail than a single page can hold. Parenting, financial settlement, and the process of Family Dispute Resolution."
 
     if posts:
         cards = "\n".join(render_post_card(p) for p in posts)

@@ -385,22 +385,21 @@ footer { background: var(--charcoal); padding: 64px 0 36px; }
 .brand-fdr{color:var(--ochre)}
 
 /* THREE-QUESTION TEST teaser — Why Online section (home + What is FDR). Replaced the comparator 3 June 2026. */
-.why-triage{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:32px 28px;margin-top:24px}
-.why-triage-eyebrow{font-size:0.66rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--ochre-lt);margin-bottom:12px}
-.why-triage-title{font-size:1.12rem;font-weight:700;color:var(--white);line-height:1.35;letter-spacing:-0.01em;margin:0 0 20px}
-.why-triage-list{list-style:none;margin:0 0 24px;padding:0;border-top:1px solid rgba(255,255,255,0.08)}
-.why-triage-item{display:flex;align-items:center;gap:14px;padding:15px 0;border-bottom:1px solid rgba(255,255,255,0.06)}
-.why-triage-num{flex-shrink:0;width:27px;height:27px;border-radius:50%;border:1px solid rgba(196,135,58,0.55);color:var(--ochre-lt);font-size:0.8rem;font-weight:700;display:flex;align-items:center;justify-content:center}
-.why-triage-q{font-size:0.92rem;font-weight:500;color:rgba(253,250,246,0.82);line-height:1.4}
-.why-triage-cta{display:inline-flex;align-items:center;gap:9px;background:var(--terra);color:var(--white);font-family:var(--f);font-size:0.88rem;font-weight:700;padding:13px 24px;border-radius:8px;text-decoration:none;border:2px solid var(--terra);transition:all 0.2s var(--ease)}
-.why-triage-cta:hover{background:var(--terra-lt);border-color:var(--terra-lt);transform:translateY(-1px);box-shadow:0 6px 20px rgba(168,92,50,0.28)}
-.why-triage-cta svg{transition:transform 0.2s;flex-shrink:0}
-.why-triage-cta:hover svg{transform:translateX(4px)}
-.why-triage-foot{margin-top:16px;font-size:0.72rem;color:rgba(253,250,246,0.42);line-height:1.6}
-@media(max-width:640px){
-  .why-triage{padding:24px 18px}
-  .why-triage-cta{width:100%;justify-content:center}
-}
+.path-teaser{background:var(--white);border:1px solid var(--dust-3);border-radius:16px;padding:30px 28px;margin-top:24px;box-shadow:0 12px 32px rgba(44,40,37,0.07)}
+.path-teaser-eyebrow{font-size:0.66rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--ochre);margin-bottom:10px}
+.path-teaser-title{font-size:1.18rem;font-weight:800;color:var(--charcoal);line-height:1.3;letter-spacing:-0.01em;margin:0 0 18px}
+.path-teaser-list{list-style:none;margin:0 0 22px;padding:0;border-top:1px solid var(--dust-2)}
+.path-teaser-item{display:flex;align-items:center;gap:13px;padding:13px 0;border-bottom:1px solid var(--dust-2)}
+.path-teaser-num{flex-shrink:0;width:26px;height:26px;border-radius:50%;border:1px solid rgba(168,92,50,0.4);color:var(--terra);font-size:0.8rem;font-weight:700;display:flex;align-items:center;justify-content:center}
+.path-teaser-q{font-size:0.92rem;font-weight:600;color:var(--charcoal);line-height:1.4}
+.path-teaser-btn{display:block;width:100%;text-align:center;background:var(--terra);color:var(--white);font-family:var(--f);font-size:1rem;font-weight:800;padding:16px 24px;border-radius:10px;text-decoration:none;border:2px solid var(--terra);transition:all 0.2s var(--ease)}
+.path-teaser-btn:hover{background:var(--terra-lt);border-color:var(--terra-lt);transform:translateY(-1px);box-shadow:0 8px 24px rgba(168,92,50,0.3)}
+.path-teaser-grey{background:var(--charcoal);border-color:var(--charcoal)}
+.path-teaser-grey .path-teaser-title{color:#fff}
+.path-teaser-grey .path-teaser-list{border-top-color:rgba(255,255,255,0.14)}
+.path-teaser-grey .path-teaser-item{border-bottom-color:rgba(255,255,255,0.14)}
+.path-teaser-grey .path-teaser-num{border-color:rgba(255,255,255,0.35);color:var(--dust)}
+.path-teaser-grey .path-teaser-q{color:rgba(255,255,255,0.88)}
 
 /* DOWNLOAD COMPONENTS — site-wide pattern, used on Financial Settlements, Parenting, and any future page with downloadable resources */
 .download-row{display:grid;grid-template-columns:1fr auto;gap:32px;align-items:center;background:var(--dust);border:1px solid var(--dust-2);border-radius:10px;padding:28px 32px;margin:32px 0}
@@ -687,7 +686,7 @@ footer { background: var(--charcoal); padding: 64px 0 36px; }
 <p>In Family Dispute Resolution, the practitioner assigned to your matter does not take sides or put forward a solution. They help each parent shape and reality-check their own proposals, and test how those would work for both households and for the children. An agreement reached this way can be written up and, if you need it to be enforceable, turned into Consent Orders.</p>
 <p>If you do go to court on a contravention, Division 13A gives the court a graduated set of responses. For a first or less serious breach without a reasonable excuse, that might be remedial orders or a bond of up to two years. The court can order make-up time for the parent who missed out, vary the order to stop the problem recurring, require a parent to attend a post-separation parenting program, or order one parent to pay the other's costs. A fine or imprisonment is reserved for the most serious or repeated breaches.</p>
 <p>A breach feels like grounds to go straight to court. Usually it is not, unless it is recent and serious enough to meet the exemption. The first move is a genuine attempt to resolve it, which is often what fixes the problem the breach was a symptom of.</p>
-<blockquote>This article is general information only. It is not legal, tax, or financial advice and does not take account of your personal situation. The law changes, some measures mentioned may be proposals that are not yet in force, and fees and figures can change over time, so check anything that matters and get advice for your own circumstances from a family lawyer, an accredited Family Dispute Resolution Practitioner, or a qualified tax or financial professional before acting. If you or someone else is in immediate danger, call 000. For confidential support with family violence or concerns about a child's safety, contact 1800RESPECT on 1800 737 732.</blockquote>
+<blockquote>This article is general information only and was correct to the best of our knowledge at the time of writing. It is not legal, tax, or financial advice and does not take account of your personal situation. The law changes, some measures mentioned may be proposals that are not yet in force, and fees and figures can change over time, so check anything that matters and get advice for your own circumstances from a family lawyer, an accredited Family Dispute Resolution Practitioner, or a qualified tax or financial professional before acting. If you or someone else is in immediate danger, call 000. For confidential support with family violence or concerns about a child's safety, contact 1800RESPECT on 1800 737 732.</blockquote>
   </article>
 
   <aside class="post-related" aria-label="Related">
