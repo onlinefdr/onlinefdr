@@ -733,16 +733,15 @@ HOME_HTML = """
         </div>
         <div class="reveal reveal-d2">
           <div class="why-img-real"><img src="/images/home-supporting-2.jpg" alt="A woman at her desk wearing noise-cancelling headphones, composed and focused before her online mediation session." loading="lazy" decoding="async"></div>
-          <div class="why-triage">
-            <div class="why-triage-eyebrow">The 3-question test</div>
-            <h3 class="why-triage-title">Not sure where your matter would land? Find your most realistic path.</h3>
-            <ul class="why-triage-list">
-              <li class="why-triage-item"><span class="why-triage-num">1</span><span class="why-triage-q">How much you are ready to spend</span></li>
-              <li class="why-triage-item"><span class="why-triage-num">2</span><span class="why-triage-q">How quickly you want it resolved</span></li>
-              <li class="why-triage-item"><span class="why-triage-num">3</span><span class="why-triage-q">How flexible you can be</span></li>
+          <div class="path-teaser">
+            <div class="path-teaser-eyebrow">The 3-question test</div>
+            <h3 class="path-teaser-title">Not sure where your matter would land?</h3>
+            <ul class="path-teaser-list">
+              <li class="path-teaser-item"><span class="path-teaser-num">1</span><span class="path-teaser-q">How quickly you want it resolved</span></li>
+              <li class="path-teaser-item"><span class="path-teaser-num">2</span><span class="path-teaser-q">How flexible you can be</span></li>
+              <li class="path-teaser-item"><span class="path-teaser-num">3</span><span class="path-teaser-q">How much would you like to save?</span></li>
             </ul>
-            <a href="/start/" class="why-triage-cta">Start the 3-question test <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
-            <p class="why-triage-foot">Three quick questions, no sign-up. See the most realistic path for your situation, what it tends to cost, and how long it tends to take.</p>
+            <a href="/pricing/#find-your-path" class="path-teaser-btn">Find your path</a>
           </div>
         </div>
       </div>
@@ -2875,17 +2874,16 @@ WIFDR_HTML = """
             <a href="/how-it-works/" class="btn-outline-light">How it works</a>
           </div>
         </div>
-        <div class="why-triage">
-          <div class="why-triage-eyebrow">The 3-question test</div>
-          <h3 class="why-triage-title">Not sure where your matter would land? Find your most realistic path.</h3>
-          <ul class="why-triage-list">
-            <li class="why-triage-item"><span class="why-triage-num">1</span><span class="why-triage-q">How much you are ready to spend</span></li>
-            <li class="why-triage-item"><span class="why-triage-num">2</span><span class="why-triage-q">How quickly you want it resolved</span></li>
-            <li class="why-triage-item"><span class="why-triage-num">3</span><span class="why-triage-q">How flexible you can be</span></li>
-          </ul>
-          <a href="/start/" class="why-triage-cta">Start the 3-question test <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
-          <p class="why-triage-foot">Three quick questions, no sign-up. See the most realistic path for your situation, what it tends to cost, and how long it tends to take.</p>
-        </div>
+        <div class="path-teaser">
+            <div class="path-teaser-eyebrow">The 3-question test</div>
+            <h3 class="path-teaser-title">Not sure where your matter would land?</h3>
+            <ul class="path-teaser-list">
+              <li class="path-teaser-item"><span class="path-teaser-num">1</span><span class="path-teaser-q">How quickly you want it resolved</span></li>
+              <li class="path-teaser-item"><span class="path-teaser-num">2</span><span class="path-teaser-q">How flexible you can be</span></li>
+              <li class="path-teaser-item"><span class="path-teaser-num">3</span><span class="path-teaser-q">How much would you like to save?</span></li>
+            </ul>
+            <a href="/pricing/#find-your-path" class="path-teaser-btn">Find your path</a>
+          </div>
       </div>
     </div>
   </header>
@@ -3167,7 +3165,7 @@ WIFDR_HTML = """
         <div class="faq-item"><button class="faq-q" aria-expanded="false">How is FDR different from family counselling?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>Family counselling focuses on relationship dynamics, communication, and emotional adjustment, with a therapeutic goal. FDR is a structured dispute resolution process aimed at reaching practical agreements on parenting or financial matters. The two can be complementary, but they are different professions with different goals. FDR practitioners are accredited under the Family Law Act; family counsellors are accredited separately.</p></div></div>
         <div class="faq-item"><button class="faq-q" aria-expanded="false">Can FDR be done online?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>Yes. Online FDR is a recognised mode of conducting Family Dispute Resolution under the Family Law Act. The statutory protections and the certificate-issuing process apply equally whether the practitioner meets parties in person or via video conference. Online FDR is particularly useful for parties in different locations, for matters involving safety concerns where physical separation is preferred, and for parties who would otherwise face significant travel or scheduling barriers.</p></div></div>
         <div class="faq-item"><button class="faq-q" aria-expanded="false">Do I need a lawyer before doing FDR?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>You do not need a lawyer to participate in FDR. Seeking legal advice before signing any agreement is sensible, so you understand what you are agreeing to. Lawyers do not typically attend FDR sessions. Their role is to advise, not to participate in the mediation itself.</p></div></div>
-        <div class="faq-item"><button class="faq-q" aria-expanded="false">Who pays for FDR?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>Each party typically pays their own share of the FDR practitioner's fee. The precise arrangement is set out at intake. Government-funded FDR services are also available through Family Relationship Centres and not-for-profit providers; means-tested fees apply. The discovery call is the right place to discuss what makes sense for your circumstances.</p></div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false">Who pays for FDR?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>Each party typically pays their own share of the FDR practitioner's fee. The precise arrangement is set out at intake. We work pay-as-you-go rather than charging a fixed fee, so what you spend depends on how the matter runs, and it is a fraction of the cost of contested court proceedings. The discovery call is the right place to discuss what makes sense for your circumstances.</p></div></div>
         <div class="faq-item"><button class="faq-q" aria-expanded="false">What's the difference between FDR and a Parenting Plan?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>They are different things. FDR is the process. A Parenting Plan is one of the documents that can come out of the process. A Parenting Plan is a written agreement between parents about parenting arrangements, signed and dated by both parents. It is not legally enforceable in the same way as a court order, but courts give it significant weight if a parenting matter later comes before them. The other typical FDR outputs are the basis for Consent Orders, a heads of agreement for financial matters, or a Section 60I certificate where no agreement was reached.</p></div></div>
         <div class="faq-item"><button class="faq-q" aria-expanded="false">What if there has been family violence?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>A history of family violence does not automatically make FDR inappropriate, but it does require careful assessment. The Family Law Amendment Act 2024, in force from 10 June 2025, expanded the definition of family violence in section 4AB to expressly include economic and financial abuse. Safety is evaluated as part of the intake process. Where genuine risk is identified, shuttle mediation or an exemption from the FDR requirement may apply. If you have concerns about your safety, raise them during the discovery call. Everything discussed is confidential.</p></div></div>
         <div class="faq-item"><button class="faq-q" aria-expanded="false">Can FDR cover both parenting and financial matters?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>Yes. Most couples with children need to resolve both parenting arrangements and financial settlement. These are typically addressed in separate sessions, since they involve different legal frameworks and different preparation requirements. Parenting is often addressed first, as the arrangements for children are usually the most pressing concern. Financial matters follow, or can run concurrently depending on the circumstances.</p></div></div>
@@ -3198,7 +3196,7 @@ build_page(
     meta_desc="Family Dispute Resolution explained for separating couples in Australia. What FDR is under the Family Law Act 1975, how it works, and the confidentiality protections.",
     canonical="/what-is-fdr/",
     current_page="/what-is-fdr/",
-    schema_json='{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://onlinefdr.com.au/what-is-fdr/#webpage","url":"https://onlinefdr.com.au/what-is-fdr/","name":"What is Family Dispute Resolution? FDR explained for separating couples in Australia","description":"Family Dispute Resolution explained: a structured mediation process under the Family Law Act 1975 for separating couples in Australia. Covers what FDR is, how a typical engagement works, the statutory confidentiality and inadmissibility protections, the 2024 and 2025 legislative updates, and where FDR fits in the family law system.","about":{"@id":"https://onlinefdr.com.au/#organization"},"mainEntity":{"@id":"https://onlinefdr.com.au/what-is-fdr/#faq"}},{"@type":"FAQPage","@id":"https://onlinefdr.com.au/what-is-fdr/#faq","mainEntity":[{"@type":"Question","name":"Is FDR the same as mediation?","acceptedAnswer":{"@type":"Answer","text":"FDR is a form of mediation, but not all mediation is FDR. Family Dispute Resolution is a specific legal term under the Family Law Act, conducted by an accredited practitioner registered with the AGD. Only an accredited FDRP can issue a Section 60I certificate, and the statutory confidentiality and inadmissibility protections under sections 10H and 10J apply specifically to FDR. A general mediator without this accreditation cannot provide the legal outcomes that family law requires."}},{"@type":"Question","name":"How is FDR different from family counselling?","acceptedAnswer":{"@type":"Answer","text":"Family counselling focuses on relationship dynamics, communication, and emotional adjustment, with a therapeutic goal. FDR is a structured dispute resolution process aimed at reaching practical agreements on parenting or financial matters. The two can be complementary, but they are different professions with different goals. FDR practitioners are accredited under the Family Law Act; family counsellors are accredited separately."}},{"@type":"Question","name":"Can FDR be done online?","acceptedAnswer":{"@type":"Answer","text":"Yes. Online FDR is a recognised mode of conducting Family Dispute Resolution under the Family Law Act. The statutory protections and the certificate-issuing process apply equally whether the practitioner meets parties in person or via video conference. Online FDR is particularly useful for parties in different locations, for matters involving safety concerns where physical separation is preferred, and for parties who would otherwise face significant travel or scheduling barriers."}},{"@type":"Question","name":"Do I need a lawyer before doing FDR?","acceptedAnswer":{"@type":"Answer","text":"You do not need a lawyer to participate in FDR. Seeking legal advice before signing any agreement is sensible, so you understand what you are agreeing to. Lawyers do not typically attend FDR sessions. Their role is to advise, not to participate in the mediation itself."}},{"@type":"Question","name":"Who pays for FDR?","acceptedAnswer":{"@type":"Answer","text":"Each party typically pays their own share of the FDR practitioner\'s fee. The precise arrangement is set out at intake. Government-funded FDR services are also available through Family Relationship Centres and not-for-profit providers; means-tested fees apply. The discovery call is the right place to discuss what makes sense for your circumstances."}},{"@type":"Question","name":"What is the difference between FDR and a parenting plan?","acceptedAnswer":{"@type":"Answer","text":"They are different things. FDR is the process. A parenting plan is one of the documents that can come out of the process. A parenting plan is a written agreement between parents about parenting arrangements, signed and dated by both parents. It is not legally enforceable in the same way as a court order, but courts give it significant weight if a parenting matter later comes before them. The other typical FDR outputs are the basis for consent orders, a heads of agreement for financial matters, or a Section 60I certificate where no agreement was reached."}},{"@type":"Question","name":"What if there has been family violence?","acceptedAnswer":{"@type":"Answer","text":"A history of family violence does not automatically make FDR inappropriate, but it does require careful assessment. The Family Law Amendment Act 2024, in force from 10 June 2025, expanded the definition of family violence in section 4AB to expressly include economic and financial abuse. Safety is evaluated as part of the intake process. Where genuine risk is identified, shuttle mediation or an exemption from the FDR requirement may apply. If you have concerns about your safety, raise them during the discovery call. Everything discussed is confidential."}},{"@type":"Question","name":"Can FDR cover both parenting and financial matters?","acceptedAnswer":{"@type":"Answer","text":"Yes. Most couples with children need to resolve both parenting arrangements and financial settlement. These are typically addressed in separate sessions, since they involve different legal frameworks and different preparation requirements. Parenting is often addressed first, as the arrangements for children are usually the most pressing concern. Financial matters follow, or can run concurrently depending on the circumstances."}},{"@type":"Question","name":"What happens if FDR does not result in agreement?","acceptedAnswer":{"@type":"Answer","text":"If agreement is not reached, parties can request a Section 60I certificate, which documents what occurred in the process. The certificate type reflects the practitioner\'s professional assessment of what happened, including whether each party attended and whether each made a genuine effort. The certificate allows the matter to proceed to court for parenting orders. Any agreements reached on particular issues during the process can be recorded separately, often in a parenting plan or heads of agreement."}}]}]}',
+    schema_json='{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://onlinefdr.com.au/what-is-fdr/#webpage","url":"https://onlinefdr.com.au/what-is-fdr/","name":"What is Family Dispute Resolution? FDR explained for separating couples in Australia","description":"Family Dispute Resolution explained: a structured mediation process under the Family Law Act 1975 for separating couples in Australia. Covers what FDR is, how a typical engagement works, the statutory confidentiality and inadmissibility protections, the 2024 and 2025 legislative updates, and where FDR fits in the family law system.","about":{"@id":"https://onlinefdr.com.au/#organization"},"mainEntity":{"@id":"https://onlinefdr.com.au/what-is-fdr/#faq"}},{"@type":"FAQPage","@id":"https://onlinefdr.com.au/what-is-fdr/#faq","mainEntity":[{"@type":"Question","name":"Is FDR the same as mediation?","acceptedAnswer":{"@type":"Answer","text":"FDR is a form of mediation, but not all mediation is FDR. Family Dispute Resolution is a specific legal term under the Family Law Act, conducted by an accredited practitioner registered with the AGD. Only an accredited FDRP can issue a Section 60I certificate, and the statutory confidentiality and inadmissibility protections under sections 10H and 10J apply specifically to FDR. A general mediator without this accreditation cannot provide the legal outcomes that family law requires."}},{"@type":"Question","name":"How is FDR different from family counselling?","acceptedAnswer":{"@type":"Answer","text":"Family counselling focuses on relationship dynamics, communication, and emotional adjustment, with a therapeutic goal. FDR is a structured dispute resolution process aimed at reaching practical agreements on parenting or financial matters. The two can be complementary, but they are different professions with different goals. FDR practitioners are accredited under the Family Law Act; family counsellors are accredited separately."}},{"@type":"Question","name":"Can FDR be done online?","acceptedAnswer":{"@type":"Answer","text":"Yes. Online FDR is a recognised mode of conducting Family Dispute Resolution under the Family Law Act. The statutory protections and the certificate-issuing process apply equally whether the practitioner meets parties in person or via video conference. Online FDR is particularly useful for parties in different locations, for matters involving safety concerns where physical separation is preferred, and for parties who would otherwise face significant travel or scheduling barriers."}},{"@type":"Question","name":"Do I need a lawyer before doing FDR?","acceptedAnswer":{"@type":"Answer","text":"You do not need a lawyer to participate in FDR. Seeking legal advice before signing any agreement is sensible, so you understand what you are agreeing to. Lawyers do not typically attend FDR sessions. Their role is to advise, not to participate in the mediation itself."}},{"@type":"Question","name":"Who pays for FDR?","acceptedAnswer":{"@type":"Answer","text":"Each party typically pays their own share of the FDR practitioner\'s fee. The precise arrangement is set out at intake. We work pay-as-you-go rather than charging a fixed fee, so what you spend depends on how the matter runs, and it is a fraction of the cost of contested court proceedings. The discovery call is the right place to discuss what makes sense for your circumstances."}},{"@type":"Question","name":"What is the difference between FDR and a parenting plan?","acceptedAnswer":{"@type":"Answer","text":"They are different things. FDR is the process. A parenting plan is one of the documents that can come out of the process. A parenting plan is a written agreement between parents about parenting arrangements, signed and dated by both parents. It is not legally enforceable in the same way as a court order, but courts give it significant weight if a parenting matter later comes before them. The other typical FDR outputs are the basis for consent orders, a heads of agreement for financial matters, or a Section 60I certificate where no agreement was reached."}},{"@type":"Question","name":"What if there has been family violence?","acceptedAnswer":{"@type":"Answer","text":"A history of family violence does not automatically make FDR inappropriate, but it does require careful assessment. The Family Law Amendment Act 2024, in force from 10 June 2025, expanded the definition of family violence in section 4AB to expressly include economic and financial abuse. Safety is evaluated as part of the intake process. Where genuine risk is identified, shuttle mediation or an exemption from the FDR requirement may apply. If you have concerns about your safety, raise them during the discovery call. Everything discussed is confidential."}},{"@type":"Question","name":"Can FDR cover both parenting and financial matters?","acceptedAnswer":{"@type":"Answer","text":"Yes. Most couples with children need to resolve both parenting arrangements and financial settlement. These are typically addressed in separate sessions, since they involve different legal frameworks and different preparation requirements. Parenting is often addressed first, as the arrangements for children are usually the most pressing concern. Financial matters follow, or can run concurrently depending on the circumstances."}},{"@type":"Question","name":"What happens if FDR does not result in agreement?","acceptedAnswer":{"@type":"Answer","text":"If agreement is not reached, parties can request a Section 60I certificate, which documents what occurred in the process. The certificate type reflects the practitioner\'s professional assessment of what happened, including whether each party attended and whether each made a genuine effort. The certificate allows the matter to proceed to court for parenting orders. Any agreements reached on particular issues during the process can be recorded separately, often in a parenting plan or heads of agreement."}}]}]}',
     extra_css=WIFDR_CSS,
     breadcrumbs=[("Home", "/"), ("What is FDR?", "/what-is-fdr/")],
     page_html=WIFDR_HTML,
@@ -5015,10 +5013,10 @@ PRICING_HTML = """
         <div class="article-page-header-inner">
           <span class="page-label">Pricing</span>
           <h1>How much does Family Dispute Resolution <span class="accent">cost?</span></h1>
-          <p class="page-intro">Family Dispute Resolution is a pay-as-you-go service, not a fixed-price package. What a matter costs depends on how complex it is and how the two of you engage with the process. The ranges below are indicative, per person, to help you plan. They are not a quote, and the discovery call is free.</p>
+          <p class="page-intro">Family Dispute Resolution is a pay-as-you-go service, not a fixed-price package, charged at $195 an hour including GST. How much, or how little, you pay is largely up to you and your former partner. For most families it is both faster and far more affordable than fighting it out in court. The figures below are per person and indicative, to help you plan. They are not a quote, and the discovery call is free.</p>
         </div>
         <div class="pricing-fold-image-panel" aria-hidden="true">
-          <div class="pricing-fold-img-real"><img src="/images/pricing-fold.jpg" alt="A woman at a kitchen table in warm morning light, a laptop open beside a notepad and a cup of tea, working calmly through her options after separation." fetchpriority="high"></div>
+          <div class="pricing-fold-img-real"><img src="/images/pricing-fold.jpg" alt="A simple terracotta ceramic piggy bank in soft, warm light, representing resolving a separation affordably and keeping more of what matters." fetchpriority="high"></div>
         </div>
       </div>
     </div>
@@ -5033,28 +5031,48 @@ PRICING_HTML = """
       <article class="article-body">
 
         <h2 id="indicative-ranges">What FDR costs, in plain terms</h2>
-        <p>We bill for the time your matter takes. There is no single set fee, because no two separations take the same amount of work. The figures below are indicative ranges, per person, to help you plan where your matter is likely to sit.</p>
+        <p>We bill for the time your matter takes, at $195 an hour including GST. There is no single set fee, because no two separations need the same amount of work. The figures below are per person and indicative, grouped by how much you and your former partner are able to agree. The more you settle between you, the less time it takes and the less it costs.</p>
 
         <div class="card-list">
-          <div class="card-item"><div class="card-item-header"><span class="card-dot"></span><h3>Under $3,000 per person</h3></div><p>At this level, the honest first stop is a government-funded provider such as Relationships Australia or Legal Aid. They offer Family Dispute Resolution at low or no cost, though waiting times can be longer. If your budget is here, a private practice is not where your money goes furthest, and we will tell you so.</p><span class="card-tag tag-dust">Funded services</span></div>
-          <div class="card-item"><div class="card-item-header"><span class="card-dot"></span><h3>$3,000 to $7,999 per person</h3></div><p>This is the heart of what we do: a mostly-agreed separation. The lower end suits a single issue, such as parenting only. The higher end covers both parenting and financial matters. Fees usually include the court documentation, such as Consent Orders for a financial settlement. Binding Financial Agreements are arranged separately.</p><span class="card-tag tag-amber">Most common</span></div>
-          <div class="card-item"><div class="card-item-header"><span class="card-dot"></span><h3>$8,000 to $19,999 per person</h3></div><p>A more involved separation, usually both parenting and financial matters where you do not yet agree on much, but you both still want to stay out of court. This typically takes several sessions and may bring in a third party, such as a child consultant or an accountant for a business valuation.</p><span class="card-tag tag-terra">Complex matters</span></div>
-          <div class="card-item"><div class="card-item-header"><span class="card-dot"></span><h3>$20,000 or more</h3></div><p>Budgeting this much usually means bracing for lawyers and court. For some matters that is the right call. But contested court cases regularly run past $80,000 per person and take 18 to 36 months, and the outcome is decided for you rather than shaped by you. Where there is genuine willingness to move, mediation can often resolve even a substantial matter for a fraction of that.</p><span class="card-tag tag-dust">Court path</span></div>
+          <div class="card-item grade-1"><div class="card-item-header"><span class="card-dot"></span><h3>High agreement</h3></div><p class="card-price">$1,658<span class="card-price-meta">per person, incl GST &middot; about 8.5 hours</span></p><p>You broadly agree on parenting and finances and mainly need help working through the detail and getting it documented properly. The quickest, lowest-cost path.</p><span class="card-tag">Lowest cost</span></div>
+          <div class="card-item grade-2"><div class="card-item-header"><span class="card-dot"></span><h3>Medium agreement</h3></div><p class="card-price">$2,340<span class="card-price-meta">per person, incl GST &middot; about 12 hours</span></p><p>You are largely on the same page, with a few real sticking points to talk through. A little more time, and still very manageable.</p><span class="card-tag">Some give and take</span></div>
+          <div class="card-item grade-3"><div class="card-item-header"><span class="card-dot"></span><h3>Low agreement</h3></div><p class="card-price">$3,023<span class="card-price-meta">per person, incl GST &middot; about 15.5 hours</span></p><p>You disagree on a fair amount, often across both parenting and finances, but you both want to stay out of court. More sessions, and sometimes an outside expert such as a valuer.</p><span class="card-tag">More to work through</span></div>
+          <div class="card-item grade-4"><div class="card-item-header"><span class="card-dot"></span><h3>High conflict (shuttle)</h3></div><p class="card-price">$5,070<span class="card-price-meta">per person, incl GST &middot; about 26 hours</span></p><p>Deeply entrenched matters, where we keep you in separate online rooms and move between you (shuttle mediation). The most involved mediation runs, and still a fraction of court.</p><p class="card-cliff"><strong>If mediation cannot get there:</strong> the alternative is lawyers and court, which typically runs about $20,000 if it settles early, $85,000 if contested, and $150,000 or more at trial, over 12 to 36 months, with a judge deciding the outcome rather than you.</p><span class="card-tag">Shuttle mediation</span></div>
         </div>
 
         <div class="notice notice-amber">
           <p class="notice-label">Indicative only</p>
-          <p>These figures are per person and are a guide, not a quote. Every matter is different. Because we work pay-as-you-go, what you actually spend depends on the complexity of your matter and on how both parties engage with the process.</p>
+          <p>These figures are per person, include GST, and are a guide rather than a quote. Every matter is different. Because we work pay-as-you-go, what you actually pay depends on the complexity of your matter and on how both of you engage with the process.</p>
         </div>
 
-        <div class="img-real" style="aspect-ratio:16/9;margin:32px 0"><img src="/images/pricing-supporting-1.jpg" alt="Two parents in separate homes, each at a laptop, meeting the same mediator in an online session shown side by side on screen, talking calmly through a written list of points." loading="lazy" decoding="async"></div>
+        <h3 class="addons-title">Add-ons, only if needed</h3>
+        <p>Some matters need a little more. These are charged once and are shown per person.</p>
+        <div class="addons">
+          <div class="addons-group">
+            <p class="addons-group-label">Our fees</p>
+            <ul class="addons-list">
+              <li><span>Consent Orders (drafting)</span><span class="addons-cost">$750</span></li>
+              <li><span>Section 60I certificate</span><span class="addons-cost">$195</span></li>
+            </ul>
+          </div>
+          <div class="addons-group">
+            <p class="addons-group-label">Third-party costs, arranged separately and usually split between you</p>
+            <ul class="addons-list">
+              <li><span>Property valuation</span><span class="addons-cost">about $325</span></li>
+              <li><span>Business valuation</span><span class="addons-cost">$1,250 to $5,000</span></li>
+              <li><span>Child psychologist report</span><span class="addons-cost">about $900</span></li>
+            </ul>
+          </div>
+        </div>
 
-        <h2 id="pay-as-you-go">Why pay-as-you-go, and what skin in the game means</h2>
-        <p>We bill for the time a matter takes rather than charging one set fee. That is a deliberate choice. When both people have a stake in keeping the process efficient, reasonableness becomes the cheaper path and entrenchment becomes the expensive one.</p>
-        <p>Focused, reasonable parties tend to resolve quickly, which keeps the cost at the lower end of the range. Where neither person will move, sessions stretch out, the cost climbs, and a matter can drift toward lawyers and court anyway, at far greater cost in both money and time.</p>
+<h2 id="pay-as-you-go">Why pay-as-you-go, and what we mean by "skin in the game"</h2>
+        <p>How much, or how little, you pay is largely up to you and your former partner. We bill for the time a matter takes rather than charging one set fee, because no two separations need the same amount of work.</p>
+        <p>That is what we mean by "skin in the game". When both of you have a direct stake in keeping things efficient, being fair, reasonable and flexible is rewarded in the most tangible way there is: it costs you less. Entrenchment is the expensive choice.</p>
+        <p>A fixed fee can feel safer, but it has to be priced for the matters that run long, which means reasonable couples quietly subsidise difficult ones. In practice, most fixed-fee offers turn out to be a range anyway once you read the detail. Pay-as-you-go keeps the saving with the people who earn it.</p>
+        <p>The goal is to keep you out of court, and away from lawyers billing in six-minute units, while you reach an agreement you have shaped yourselves.</p>
 
         <div class="pull">
-          <p>"How much you spend is, in a real sense, up to you and your former partner."</p>
+          <p>"How much, or how little, you pay is entirely up to you."</p>
         </div>
 
         <h2 id="whats-included">What your fees cover</h2>
@@ -5064,37 +5082,28 @@ PRICING_HTML = """
           <h3>What can come out of the process</h3>
           <div class="info-items">
             <div class="info-item"><div class="info-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><div><h4>A Parenting Plan</h4><p>A written, signed agreement about parenting arrangements. Flexible and easy to change, but not directly enforceable as a court order.</p></div></div>
-            <div class="info-item"><div class="info-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><div><h4>Consent Orders</h4><p>An agreement turned into court orders, for parenting, finances, or both. The preparation is usually included in the fee for the matters you resolve.</p></div></div>
+            <div class="info-item"><div class="info-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><div><h4>Consent Orders</h4><p>Your mediated agreement turned into formal court orders, for parenting, finances, or both. Drafting Consent Orders is an add-on, $750 per person.</p></div></div>
             <div class="info-item"><div class="info-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><div><h4>A Binding Financial Agreement</h4><p>An alternative to financial Consent Orders. Each party needs their own legal advice for it to be binding, so a Binding Financial Agreement is arranged separately from the mediation fee.</p></div></div>
             <div class="info-item"><div class="info-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><div><h4>A Section 60I certificate</h4><p>For parenting matters where no agreement is reached, so you can apply to court. Issued by the practitioner in line with the Family Law Act.</p></div></div>
           </div>
         </div>
 
-        <h2 id="tight-budget">If your budget is tight</h2>
-        <p>If a private practice is out of reach right now, that is worth knowing early, because there is a real alternative. Government-funded and subsidised services offer Family Dispute Resolution at low or no cost. They are intended for people who genuinely cannot afford a private practice, so eligibility and fees are income-tested.</p>
-
-        <div class="card-list">
-          <div class="card-item"><div class="card-item-header"><span class="card-dot"></span><h3>Family Relationship Centres</h3></div><p>Government-funded centres you can find through <a href="https://www.familyrelationships.gov.au/" target="_blank" rel="noopener nofollow">Family Relationships Online</a> or the Family Relationship Advice Line on 1800 050 321. Information and individual sessions are free, and the first hour of joint mediation is free per couple. Beyond that, fees are income-tested on a sliding scale, so people on low incomes or holding a Commonwealth concession card generally pay little or nothing.</p></div>
-          <div class="card-item"><div class="card-item-header"><span class="card-dot"></span><h3>Relationships Australia</h3></div><p><a href="https://www.relationships.org.au/" target="_blank" rel="noopener nofollow">Relationships Australia</a> is a community provider whose mediation fees are set on a sliding scale based on your income. People on low incomes and concession holders pay the least.</p></div>
-          <div class="card-item"><div class="card-item-header"><span class="card-dot"></span><h3>Legal Aid</h3></div><p>Legal Aid runs lawyer-assisted family dispute resolution conferences, but only where at least one party holds a grant of legal aid. That grant is both means tested, on income and assets, and merits tested, so it is reserved for people who genuinely cannot afford to resolve their matter privately.</p></div>
-        </div>
-
-        <div class="notice notice-amber">
-          <p class="notice-label">Expect a wait</p>
-          <p><strong>These services are in high demand, and waiting times commonly run to several weeks or months.</strong> If your matter is time-sensitive, that delay is the real trade-off for the lower cost. Get on a waitlist early, and do not assume a funded service can move at the pace a private practice can.</p>
-        </div>
-
-        <h2 id="court-comparison">How this compares to court</h2>
-        <p>The alternative to resolving matters yourselves is having a court decide for you. Contested family law proceedings regularly run past $80,000 per person and take 18 to 36 months, and at the end a judge makes the decision rather than the two of you.</p>
-        <p>Family Dispute Resolution keeps the decision in your hands, and most families reach agreement in weeks rather than years. For a sense of how the process runs, see <a href="/how-it-works/">how it works</a>, and for property and finance specifically, see <a href="/financial-settlement/">financial settlements</a>.</p>
+        <h2 id="court-comparison">Faster, and far more affordable than court</h2>
+        <p>The alternative to resolving things yourselves is having a court decide for you. Contested proceedings regularly run past $85,000 per person, and $150,000 or more if they reach trial, over 12 to 36 months, and at the end a judge makes the decision rather than the two of you.</p>
+        <p>Family Dispute Resolution keeps the decision in your hands, resolves most matters in weeks rather than years, and costs a fraction of what litigation does. For a sense of how the process runs, see <a href="/how-it-works/">how it works</a>, and for property and finance specifically, see <a href="/financial-settlement/">financial settlements</a>.</p>
 
       </article>
 
       <aside class="sidebar">
-        <div class="sidebar-card">
-          <h4>Not sure which path is yours?</h4>
-          <p>Answer three quick questions and see the most realistic path for your situation, what it tends to cost, and how long it tends to take.</p>
-          <a href="/start/" class="btn-primary">Find your path</a>
+        <div class="path-teaser">
+          <div class="path-teaser-eyebrow">The 3-question test</div>
+          <h3 class="path-teaser-title">Not sure where your matter would land?</h3>
+          <ul class="path-teaser-list">
+            <li class="path-teaser-item"><span class="path-teaser-num">1</span><span class="path-teaser-q">How quickly you want it resolved</span></li>
+            <li class="path-teaser-item"><span class="path-teaser-num">2</span><span class="path-teaser-q">How flexible you can be</span></li>
+            <li class="path-teaser-item"><span class="path-teaser-num">3</span><span class="path-teaser-q">How much would you like to save?</span></li>
+          </ul>
+          <a href="#find-your-path" class="path-teaser-btn">Find your path</a>
         </div>
         <div class="sidebar-card">
           <h4>Free discovery call</h4>
@@ -5102,8 +5111,18 @@ PRICING_HTML = """
           <a href="https://calendar.app.google/zwNm4dzYnwAwhwxY8" class="btn-primary">Book a free discovery call</a>
           <a href="tel:0399617544" class="btn-outline">Call (03) 9961 7544</a>
         </div>
-        <div class="sidebar-card sidebar-card-img">
-          <div class="img-real" style="aspect-ratio:4/5"><img src="/images/pricing-supporting-2.jpg" alt="A man at a desk by a window in afternoon light, reading through a single page of notes, a phone and a cup of coffee beside him, looking settled." loading="lazy" decoding="async"></div>
+        <div class="sidebar-card">
+          <h4>Pay securely</h4>
+          <p>All major cards, Apple Pay and Google Pay, and Pay in 4 interest-free with Afterpay or Zip. Processed through Stripe.</p>
+          <div class="paylogos">
+            <img src="/images/payment/visa.png" alt="Visa" loading="lazy" decoding="async">
+            <img src="/images/payment/mastercard.png" alt="Mastercard" loading="lazy" decoding="async">
+            <img src="/images/payment/amex.png" alt="American Express" loading="lazy" decoding="async">
+            <img src="/images/payment/applepay.png" alt="Apple Pay" loading="lazy" decoding="async">
+            <img src="/images/payment/googlepay.png" alt="Google Pay" loading="lazy" decoding="async">
+            <img src="/images/payment/afterpay.png" alt="Afterpay" loading="lazy" decoding="async">
+            <img src="/images/payment/zip.png" alt="Zip" loading="lazy" decoding="async">
+          </div>
         </div>
         <nav class="sidebar-card sidebar-nav">
           <h5>On this page</h5>
@@ -5111,7 +5130,6 @@ PRICING_HTML = """
             <li><a href="#indicative-ranges"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>What it costs</a></li>
             <li><a href="#pay-as-you-go"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>Pay-as-you-go</a></li>
             <li><a href="#whats-included"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>What fees cover</a></li>
-            <li><a href="#tight-budget"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>If your budget is tight</a></li>
             <li><a href="#court-comparison"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>Compared to court</a></li>
           </ul>
         </nav>
@@ -5127,6 +5145,258 @@ PRICING_HTML = """
     </div>
   </div>
 
+  <section class="find-path" id="find-your-path" aria-labelledby="fyp-heading">
+    <div class="wrap">
+      <div id="fyp">
+        <div class="fyp-head">
+          <span class="section-label">Optional</span>
+          <h2 id="fyp-heading">Not sure where your matter would land?</h2>
+          <p class="fyp-sub">Answer three quick questions and we will show you the most realistic path for your situation, how long it tends to take, and what it tends to cost.</p>
+        </div>
+        <div class="progress" aria-hidden="true">
+          <span class="dot active" data-d="1"></span>
+          <span class="dot" data-d="2"></span>
+          <span class="dot" data-d="3"></span>
+        </div>
+        <div class="step-count">Question 1 of 3</div>
+        <div class="stage">
+          <div class="step show" data-step="1">
+            <h2 class="q">How quickly do you want it resolved?</h2>
+            <p class="q-hint">How soon you would like an agreement in place.</p>
+            <div class="opts">
+          <button class="opt" data-q="speed" data-v="s1"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="otext"><span class="olabel">4 to 6 weeks</span><span class="odesc">I want this sorted soon.</span></span></button>
+          <button class="opt" data-q="speed" data-v="s2"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="otext"><span class="olabel">3 to 6 months</span><span class="odesc">Reasonably soon, with room for a few sessions.</span></span></button>
+          <button class="opt" data-q="speed" data-v="s3"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="otext"><span class="olabel">6 to 9 months</span><span class="odesc">I expect this to take a while to work through.</span></span></button>
+          <button class="opt" data-q="speed" data-v="s4"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="otext"><span class="olabel">12 to 36 months</span><span class="odesc">However long it takes to get the right outcome.</span></span></button>
+            </div>
+          </div>
+          <div class="step" data-step="2">
+            <h2 class="q">How flexible are you willing to be?</h2>
+            <p class="q-hint">Mediation works by each person shaping and testing their own proposals. It needs some give.</p>
+            <div class="opts">
+          <button class="opt" data-q="flex" data-v="f1"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="otext"><span class="olabel">Very flexible</span><span class="odesc">I want a fair, workable outcome and I will move to get one.</span></span></button>
+          <button class="opt" data-q="flex" data-v="f2"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="otext"><span class="olabel">Somewhat flexible</span><span class="odesc">There are a few things I will not budge on, but I can compromise.</span></span></button>
+          <button class="opt" data-q="flex" data-v="f3"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="otext"><span class="olabel">Not flexible at all</span><span class="odesc">I am not prepared to move from my position.</span></span></button>
+            </div>
+            <button class="back" data-back><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>Back</button>
+          </div>
+          <div class="step" data-step="3">
+            <h2 class="q">How much would you like to save?</h2>
+            <p class="q-hint">Mediation rewards co-operation. How you both approach this shapes what it costs.</p>
+            <div class="opts">
+          <button class="opt opt-green" data-q="budget" data-v="b2"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="otext"><span class="olabel">As much as possible</span><span class="odesc">We are willing to co-operate to keep our costs down.</span></span></button>
+          <button class="opt opt-amber" data-q="budget" data-v="b3"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="otext"><span class="olabel">Some, where we can</span><span class="odesc">We cannot agree on much yet, but we both want to stay out of court.</span></span></button>
+          <button class="opt opt-red" data-q="budget" data-v="b4"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="otext"><span class="olabel">Saving is not the priority</span><span class="odesc">Whatever it takes, including lawyers.</span></span></button>
+          <button class="opt opt-grey" data-q="budget" data-v="b1"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="otext"><span class="olabel">I need to keep costs to a minimum</span><span class="odesc">It needs to be free, or as close to free as possible.</span></span></button>
+            </div>
+            <button class="back" data-back><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>Back</button>
+          </div>
+          <div class="outcome">
+            <div class="verdict"></div>
+            <button class="restart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4v6h6M23 20v-6h-6"/><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4-4.64 4.36A9 9 0 0 1 3.51 15"/></svg>Start over</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <style>
+    #find-your-path{ padding:84px 0; border-top:1px solid var(--dust-3); }
+    #find-your-path #fyp{ max-width:760px; margin:0 auto; }
+    #find-your-path .fyp-head{ text-align:center; margin-bottom:10px; }
+    #find-your-path .fyp-head h2{ font-size:clamp(1.5rem,3.2vw,2.1rem); font-weight:800; letter-spacing:-0.02em; line-height:1.12; color:var(--charcoal); margin:8px 0 12px; }
+    #find-your-path .fyp-sub{ font-size:1rem; color:var(--mid); max-width:560px; margin:0 auto; line-height:1.7; }
+    #find-your-path .progress{ display:flex; align-items:center; justify-content:center; gap:8px; margin:34px 0 10px; }
+    #find-your-path .progress .dot{ height:6px; border-radius:999px; background:var(--dust-3); transition:all .45s var(--ease); width:34px; }
+    #find-your-path .progress .dot.active{ background:var(--terra); width:54px; }
+    #find-your-path .progress .dot.done{ background:var(--ochre); }
+    #find-your-path .step-count{ text-align:center; font-size:0.78rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--light-mid); margin-bottom:22px; }
+    #find-your-path .stage{ position:relative; }
+    #find-your-path .step{ display:none; animation:fyprise .5s var(--ease) both; }
+    #find-your-path .step.show{ display:block; }
+    @keyframes fyprise{ from{ opacity:0; transform:translateY(14px); } to{ opacity:1; transform:none; } }
+    #find-your-path .q{ text-align:center; font-size:clamp(1.3rem,3.4vw,1.7rem); font-weight:800; letter-spacing:-0.02em; margin-bottom:6px; color:var(--charcoal); }
+    #find-your-path .q-hint{ text-align:center; color:var(--mid); font-size:0.96rem; margin-bottom:26px; }
+    #find-your-path .opts{ display:grid; gap:12px; }
+    #find-your-path .opt{ width:100%; text-align:left; background:var(--white); border:1.5px solid var(--dust-3); border-radius:15px; padding:18px 20px; cursor:pointer; font-family:inherit; font-size:1rem; color:var(--charcoal); display:flex; align-items:center; gap:16px; transition:all .18s var(--ease); }
+    #find-your-path .opt:hover{ border-color:var(--terra); transform:translateY(-2px); box-shadow:0 10px 28px rgba(44,40,37,0.07); }
+    #find-your-path .opt .tick{ flex-shrink:0; width:26px; height:26px; border-radius:50%; border:2px solid var(--dust-3); display:flex; align-items:center; justify-content:center; transition:all .18s var(--ease); }
+    #find-your-path .opt .tick svg{ width:14px; height:14px; opacity:0; transform:scale(.5); transition:all .18s var(--ease); color:var(--white); }
+    #find-your-path .opt:hover .tick{ border-color:var(--terra); }
+    #find-your-path .opt.sel{ border-color:var(--terra); background:var(--ochre-pale); }
+    #find-your-path .opt.sel .tick{ background:var(--terra); border-color:var(--terra); }
+    #find-your-path .opt.sel .tick svg{ opacity:1; transform:scale(1); }
+    #find-your-path .opt .otext{ flex:1; }
+    #find-your-path .opt .olabel{ display:block; font-weight:700; font-size:1.04rem; }
+    #find-your-path .opt .odesc{ display:block; font-size:0.88rem; color:var(--mid); margin-top:3px; }
+    #find-your-path .opt{ position:relative; overflow:hidden; }
+    #find-your-path .opt::before{ content:""; position:absolute; left:0; top:0; bottom:0; width:4px; background:var(--light-mid); }
+    #find-your-path .opt.opt-red::before{ background:#9A4A33; }
+    #find-your-path .opt.opt-amber::before{ background:var(--ochre); }
+    #find-your-path .opt.opt-green::before{ background:#5B7553; }
+    #find-your-path .opt.opt-grey::before{ background:var(--light-mid); }
+    #find-your-path .back{ display:inline-flex; align-items:center; gap:7px; background:none; border:none; cursor:pointer; font-family:inherit; font-size:0.9rem; font-weight:600; color:var(--mid); margin-top:24px; padding:8px 4px; transition:color .2s; }
+    #find-your-path .back:hover{ color:var(--terra); }
+    #find-your-path .back svg{ width:15px; height:15px; }
+    #find-your-path .outcome{ display:none; animation:fyprise .55s var(--ease) both; }
+    #find-your-path .outcome.show{ display:block; }
+    #find-your-path .verdict{ border-radius:22px; padding:38px 34px; color:var(--white); position:relative; overflow:hidden; }
+    #find-your-path .verdict.fit{ background:linear-gradient(150deg, var(--charcoal) 0%, var(--charcoal-2) 100%); }
+    #find-your-path .verdict.caution{ background:linear-gradient(150deg, #4A3F33 0%, #5A4A38 100%); }
+    #find-your-path .verdict.redirect{ background:linear-gradient(150deg, var(--charcoal) 0%, #3a2f2a 100%); }
+    #find-your-path .verdict-tag{ display:inline-flex; align-items:center; gap:9px; font-size:0.72rem; font-weight:800; letter-spacing:0.13em; text-transform:uppercase; padding:7px 14px; border-radius:999px; margin-bottom:18px; }
+    #find-your-path .verdict.fit .verdict-tag{ background:rgba(91,117,83,0.25); color:#B6CBAE; }
+    #find-your-path .verdict.caution .verdict-tag{ background:rgba(196,135,58,0.22); color:#E7BE84; }
+    #find-your-path .verdict.redirect .verdict-tag{ background:rgba(154,74,51,0.28); color:#E0A491; }
+    #find-your-path .verdict h2{ font-size:clamp(1.5rem,3.6vw,2rem); font-weight:800; letter-spacing:-0.02em; line-height:1.12; margin-bottom:14px; color:var(--white); }
+    #find-your-path .verdict p{ color:rgba(253,250,246,0.82); font-size:1.02rem; margin-bottom:14px; }
+    #find-your-path .verdict p:last-child{ margin-bottom:0; }
+    #find-your-path .verdict strong{ color:var(--white); }
+    #find-your-path .est{ display:flex; flex-wrap:wrap; gap:12px; margin:22px 0 4px; }
+    #find-your-path .est-tile{ flex:1; min-width:150px; background:rgba(253,250,246,0.07); border:1px solid rgba(253,250,246,0.14); border-radius:14px; padding:16px 18px; }
+    #find-your-path .est-tile .k{ font-size:0.7rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:rgba(253,250,246,0.55); margin-bottom:5px; }
+    #find-your-path .est-tile .v{ font-size:1.18rem; font-weight:800; color:var(--white); line-height:1.2; }
+    #find-your-path .est-tile .v .unit{ font-size:0.82rem; font-weight:600; color:var(--ochre); margin-left:5px; }
+    #find-your-path .flag{ display:flex; gap:13px; align-items:flex-start; background:rgba(253,250,246,0.06); border-left:3px solid var(--ochre); border-radius:0 12px 12px 0; padding:15px 17px; margin-top:14px; }
+    #find-your-path .flag svg{ width:19px; height:19px; flex-shrink:0; color:var(--ochre); margin-top:2px; }
+    #find-your-path .flag .ft{ font-size:0.94rem; color:rgba(253,250,246,0.86); }
+    #find-your-path .flag .ft b{ color:var(--white); }
+    #find-your-path .fyp-cta{ display:flex; flex-wrap:wrap; gap:12px; margin-top:24px; }
+    #find-your-path .fyp-btn{ display:inline-flex; align-items:center; justify-content:center; text-decoration:none; font-weight:800; font-size:1rem; border-radius:12px; padding:15px 24px; transition:all .2s var(--ease); }
+    #find-your-path .fyp-btn-primary{ background:var(--white); color:var(--terra); }
+    #find-your-path .fyp-btn-primary:hover{ transform:translateY(-2px); box-shadow:0 8px 24px rgba(0,0,0,0.18); }
+    #find-your-path .fyp-btn-outline{ background:transparent; color:var(--white); border:1.5px solid rgba(253,250,246,0.4); }
+    #find-your-path .fyp-btn-outline:hover{ border-color:var(--white); }
+    #find-your-path .restart{ display:inline-flex; align-items:center; gap:8px; background:none; border:none; cursor:pointer; font-family:inherit; font-size:0.9rem; font-weight:700; color:var(--mid); margin-top:22px; padding:8px 4px; }
+    #find-your-path .restart:hover{ color:var(--terra); }
+    #find-your-path .restart svg{ width:15px; height:15px; }
+    @media(max-width:560px){
+      #find-your-path .verdict{ padding:28px 22px; }
+      #find-your-path .est-tile{ min-width:calc(50% - 6px); }
+      #find-your-path .fyp-btn{ width:100%; }
+    }
+  </style>
+  <script>
+    (function(){
+      var root = document.getElementById('find-your-path');
+      if(!root) return;
+      var answers = { budget:null, speed:null, flex:null };
+      var current = 1;
+      var steps = root.querySelectorAll('.step');
+      var dots = root.querySelectorAll('.progress .dot');
+      var stepCount = root.querySelector('.step-count');
+      var outcome = root.querySelector('.outcome');
+      var verdict = root.querySelector('.verdict');
+      var progress = root.querySelector('.progress');
+
+      function showStep(n){
+        steps.forEach(function(s){ s.classList.toggle('show', +s.dataset.step === n); });
+        outcome.classList.remove('show');
+        progress.style.display = ''; stepCount.style.display = '';
+        dots.forEach(function(d){ var dn=+d.dataset.d; d.classList.toggle('active',dn===n); d.classList.toggle('done',dn<n); });
+        stepCount.textContent = 'Question ' + n + ' of 3';
+        current = n;
+      }
+      root.querySelectorAll('.opt').forEach(function(btn){
+        btn.addEventListener('click', function(){
+          var q = btn.dataset.q, v = btn.dataset.v; answers[q] = v;
+          var group = btn.closest('.opts');
+          group.querySelectorAll('.opt').forEach(function(b){ b.classList.remove('sel'); });
+          btn.classList.add('sel');
+          setTimeout(function(){ if (q==='speed') showStep(2); else if (q==='flex') showStep(3); else renderOutcome(); }, 220);
+        });
+      });
+      root.querySelectorAll('[data-back]').forEach(function(b){ b.addEventListener('click', function(){ showStep(current - 1); }); });
+      root.querySelector('.restart').addEventListener('click', function(){
+        answers = { budget:null, speed:null, flex:null };
+        root.querySelectorAll('.opt').forEach(function(b){ b.classList.remove('sel'); });
+        showStep(1);
+      });
+
+      var WARN='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>';
+      function ctaBlock(){
+        return '<div class="fyp-cta">' +
+          '<a class="fyp-btn fyp-btn-primary" href="https://calendar.app.google/zwNm4dzYnwAwhwxY8" target="_blank" rel="noopener">Book a free discovery call</a>' +
+          '<a class="fyp-btn fyp-btn-outline" href="tel:0399617544">Call (03) 9961 7544</a>' +
+        '</div>';
+      }
+      function tiles(cost, time){
+        return '<div class="est"><div class="est-tile"><div class="k">Typical cost</div><div class="v">' + cost + '</div></div>' +
+          '<div class="est-tile"><div class="k">Typical timeframe</div><div class="v">' + time + '</div></div></div>';
+      }
+      function flag(text){ return '<div class="flag">' + WARN + '<div class="ft">' + text + '</div></div>'; }
+      function timeLabel(s){
+        if (s === 's1') return '4 to 6 <span class="unit">weeks</span>';
+        if (s === 's2') return '3 to 6 <span class="unit">months</span>';
+        if (s === 's3') return '6 to 9 <span class="unit">months</span>';
+        return '12 to 36 <span class="unit">months</span>';
+      }
+      function renderOutcome(){
+        var b = answers.budget, s = answers.speed, f = answers.flex;
+        var html = '';
+        if (b === 'b1'){
+          html += '<span class="verdict-tag">Worth knowing before you decide</span>';
+          html += '<h2>Good news: private FDR may be closer than you think.</h2>';
+          html += '<p>Where you and your former partner can co-operate, our work is about <strong>$1,658 per person, including GST</strong>, and our <strong>Pay-in-4</strong> option spreads even that across four interest-free payments through Stripe. So a private process is often within reach.</p>';
+          html += '<p>If a funded service still looks like the better fit, it helps to know how they really work. They are means tested, designed for low-income couples with limited assets, and rarely quick. And because they fund only a small, fixed number of sessions, they need both of you to be very flexible to reach agreement in the time allowed.</p>';
+          if (s === 's1'){
+            html += flag('<b>One thing to weigh:</b> you want this resolved in four to six weeks. Funded services often have waitlists of weeks or months, so the quick result and the free route do not usually go together. Private is the faster path.');
+          }
+          if (f === 'f3'){
+            html += flag('<b>And another:</b> you told us you are not flexible. Funded services have the least room for that, because their limited sessions only work when both people move. The more entrenched a matter, the more a private process tends to suit it.');
+          }
+          html += ctaBlock();
+          setVerdict('redirect', html); return;
+        }
+        if (b === 'b4'){
+          html += '<span class="verdict-tag">You may be heading for court. Pause first.</span>';
+          html += '<h2>Before you commit to that, look at what court really costs.</h2>';
+          html += '<p>Choosing the lawyer route usually means bracing for court. For some matters that is the right call. But go in with eyes open:</p>';
+          html += tiles('$85,000+ <span class="unit">per person, contested</span>', '12 to 36 <span class="unit">months</span>');
+          html += flag('<b>Lawyers and court</b> typically run about $20,000 if it settles early, $85,000 if contested, and $150,000 or more at trial, over 12 to 36 months, with the outcome decided for you. By contrast, even our most involved mediation, high-conflict shuttle, is about $5,070 per person.');
+          if (f === 'f1' || f === 'f2'){
+            html += '<p>Here is the thing: you told us you are <strong>' + (f === 'f1' ? 'very flexible' : 'somewhat flexible') + '</strong>. If there is genuine willingness to move on both sides, mediation can often resolve even a substantial matter for a fraction of that, and keep the decision in your hands. It is worth one conversation before you spend the price of a car on lawyers.</p>';
+          } else {
+            html += '<p>If real flexibility is off the table for both of you, mediation may not be the right tool, and that is an honest thing to know now. If anything shifts, we are here.</p>';
+          }
+          html += ctaBlock();
+          setVerdict('redirect', html); return;
+        }
+        var costStr = (b === 'b2') ? '$1,658 to $2,340 <span class="unit">per person, incl GST</span>' : '$3,023 to $5,070 <span class="unit">per person, incl GST</span>';
+        var entrenched = (f === 'f3');
+        var tone = entrenched ? 'caution' : 'fit';
+        if (b === 'b2'){
+          html += '<span class="verdict-tag">' + (entrenched ? 'A good fit, with one honest caution' : 'This is exactly what FDR is built for') + '</span>';
+          html += '<h2>' + (entrenched ? 'The budget fits. The flexibility is the question.' : 'You are the kind of matter we resolve well.') + '</h2>';
+          html += '<p>A mostly-agreed separation in the <strong>$1,658 to $2,340</strong> range is the heart of what we do. The lower end suits a single issue such as parenting only; the higher end covers both parenting and financial matters. Fees are per person and include the written agreement you reach, such as a Parenting Plan or Heads of Agreement. Turning that into <strong>Consent Orders</strong> is a $750 per person add-on, and Binding Financial Agreements are arranged separately.</p>';
+          html += tiles(costStr, timeLabel(s));
+        } else {
+          html += '<span class="verdict-tag">' + (entrenched ? 'We can help, with one honest caution' : 'Complex, and a sensible way to stay out of court') + '</span>';
+          html += '<h2>' + (entrenched ? 'We can do this, if there is room to move.' : 'Complex, but very much still mediable.') + '</h2>';
+          html += '<p>A more involved separation in the <strong>$3,023 to $5,070</strong> range usually means both parenting and financial matters where you do not yet agree on much, but you both still want to avoid court. That typically takes several sessions and may bring in third parties, such as a child-inclusive practitioner or an accountant for a business valuation. It can include Consent Orders for parenting, and either Consent Orders or a Binding Financial Agreement for the financial side.</p>';
+          html += tiles(costStr, timeLabel(s));
+        }
+        if (b === 'b3' && s === 's1'){
+          html += flag('<b>A note on timing:</b> a matter at this level, with several sessions and possibly outside experts, rarely wraps up in four to six weeks. Three to nine months is a more realistic runway, and worth planning for.');
+        }
+        if (entrenched){
+          html += flag('<b>This is the honest part.</b> Mediation only works where there is some willingness to move. If neither of you will shift, sessions stretch out, the cost climbs, and you can drift toward lawyers and court anyway, which costs far more in both money and time. Because we bill for the time a matter takes, reasonableness is genuinely the cheaper path. How much you spend is, in a real sense, up to you and your former partner.');
+        } else if (f === 'f1'){
+          html += '<p>Because you are willing to move, you are in the best position of all: focused, reasonable parties tend to resolve quickly, and that keeps the cost at the lower end. We bill for the time a matter takes, so the spend really is in your hands.</p>';
+        }
+        html += '<p>Spreading the cost is simple: our <strong>Pay-in-4</strong> option splits your fee into four interest-free payments through Stripe.</p>';
+        html += ctaBlock();
+        setVerdict(tone, html);
+      }
+      function setVerdict(tone, html){
+        verdict.className = 'verdict ' + tone;
+        verdict.innerHTML = html;
+        steps.forEach(function(s){ s.classList.remove('show'); });
+        progress.style.display = 'none'; stepCount.style.display = 'none';
+        outcome.classList.add('show');
+      }
+    })();
+  </script>
+
   <section class="page-faq" aria-labelledby="pricing-faq-heading">
     <div class="wrap">
       <div class="page-faq-header reveal">
@@ -5134,10 +5404,10 @@ PRICING_HTML = """
         <h2 id="pricing-faq-heading">Cost questions answered</h2>
       </div>
       <div class="faq-list reveal" style="max-width:760px">
-        <div class="faq-item"><button class="faq-q" aria-expanded="false">How much does Family Dispute Resolution cost in Australia?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>It depends on the matter, because we work pay-as-you-go rather than charging a fixed fee. As a guide, per person: most mostly-agreed separations fall between $3,000 and $7,999; more complex matters with several sessions fall between $8,000 and $19,999; and below about $3,000 a government-funded service is usually the better fit. These are indicative ranges, not a quote, and the discovery call is free.</p></div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false">How much does Family Dispute Resolution cost in Australia?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>It depends on the matter, because we work pay-as-you-go at $195 an hour including GST rather than charging a fixed fee. As a guide, per person: where you broadly agree, most matters land around $1,658 to $2,340; where there is more to work through, around $3,023; and high-conflict shuttle matters around $5,070. These are indicative, not a quote, and the discovery call is free.</p></div></div>
         <div class="faq-item"><button class="faq-q" aria-expanded="false">Do you charge a fixed fee or by the hour?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>We are a pay-as-you-go practice, not a fixed-price service. We bill for the time your matter takes. This is deliberate: when both people have a stake in keeping the process efficient, reasonableness is the cheaper path. How much you spend is, in large part, up to you and your former partner.</p></div></div>
-        <div class="faq-item"><button class="faq-q" aria-expanded="false">Is mediation cheaper than going to court?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>In most cases yes, and by a wide margin. Contested court proceedings regularly run past $80,000 per person and take 18 to 36 months. Most matters that resolve through Family Dispute Resolution settle in weeks, at a fraction of the cost of litigation, and the parties keep control of the outcome.</p></div></div>
-        <div class="faq-item"><button class="faq-q" aria-expanded="false">What if I cannot afford private mediation?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>Government-funded and subsidised services exist for exactly this situation, and they are intended for people who genuinely cannot afford a private practice. Family Relationship Centres offer a free first hour of joint mediation, with further hours income-tested on a sliding scale, so people on low incomes or holding a concession card pay little or nothing. Relationships Australia uses a similar sliding scale. Legal Aid runs lawyer-assisted conferences for people who pass its income and assets means test. All of these are in high demand, so waiting times commonly run to several weeks or months. Call the Family Relationship Advice Line on 1800 050 321 to find a service.</p></div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false">Is mediation more affordable than going to court?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>In most cases yes, and by a wide margin. Contested court proceedings regularly run past $80,000 per person and take 18 to 36 months. Most matters that resolve through Family Dispute Resolution settle in weeks, at a fraction of the cost of litigation, and the parties keep control of the outcome.</p></div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false">How do you keep it affordable?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>We work pay-as-you-go rather than charging a fixed fee, so you are billed only for the time your matter actually takes. Focused, reasonable parties resolve quickly, which keeps the spend at the lower end, and even a more involved matter is a fraction of what contested court proceedings cost. The discovery call is free and there is no obligation. How much you spend is, in large part, in your hands.</p></div></div>
       </div>
     </div>
   </section>
@@ -5147,7 +5417,7 @@ PRICING_HTML = """
       <div class="page-cta-inner">
         <span class="page-cta-eyebrow">No obligation, no pressure</span>
         <h2 id="pricing-cta-heading">Start with a free discovery call.</h2>
-        <p>Talk through where you stand and find out whether FDR is right for your circumstances. If a funded service is the better fit, we will say so.</p>
+        <p>Talk through where you stand and find out whether FDR is right for your circumstances. No obligation, and nothing is decided on the call.</p>
         <div class="page-cta-actions">
           <a href="https://calendar.app.google/zwNm4dzYnwAwhwxY8" class="btn-light">Book your free discovery call</a>
           <a href="tel:0399617544" class="btn-outline-light">Call (03) 9961 7544</a>
@@ -5171,15 +5441,39 @@ PRICING_CSS = """
 }
 .sidebar-card .btn-outline{display:block;text-align:center;margin-top:10px;background:transparent;color:var(--terra);font-family:var(--f);font-size:0.92rem;font-weight:700;letter-spacing:0.01em;padding:15px 30px;border-radius:8px;text-decoration:none;border:2px solid var(--terra);transition:all 0.2s var(--ease)}
 .sidebar-card .btn-outline:hover{background:var(--terra);color:var(--white);transform:translateY(-1px)}
+.card-item.grade-1{border-left:4px solid #5B7553;background:rgba(91,117,83,0.06)}
+.card-item.grade-2{border-left:4px solid #C4873A;background:rgba(196,135,58,0.07)}
+.card-item.grade-3{border-left:4px solid #B0652E;background:rgba(176,101,46,0.07)}
+.card-item.grade-4{border-left:4px solid #9A4A33;background:rgba(154,74,51,0.06)}
+.card-item.grade-1 .card-dot{background:#5B7553}
+.card-item.grade-2 .card-dot{background:#C4873A}
+.card-item.grade-3 .card-dot{background:#B0652E}
+.card-item.grade-4 .card-dot{background:#9A4A33}
+.card-item.grade-1 .card-tag{background:rgba(91,117,83,0.15);color:#46603F}
+.card-item.grade-2 .card-tag{background:rgba(196,135,58,0.18);color:#875B22}
+.card-item.grade-3 .card-tag{background:rgba(176,101,46,0.16);color:#7C4A22}
+.card-item.grade-4 .card-tag{background:rgba(154,74,51,0.15);color:#7C3A27}
+.card-price{font-size:1.5rem;font-weight:800;color:var(--charcoal);letter-spacing:-0.01em;margin:2px 0 10px;line-height:1.15}
+.card-price-meta{display:block;font-size:0.78rem;font-weight:600;color:var(--mid);letter-spacing:0;margin-top:3px}
+.card-cliff{background:rgba(154,74,51,0.06);border-radius:10px;padding:13px 15px;font-size:0.9rem;line-height:1.55;margin-top:14px}
+.addons-title{margin-top:6px}
+.addons{display:grid;gap:20px;margin:14px 0 8px}
+.addons-group-label{font-size:0.76rem;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;color:var(--ochre);margin-bottom:8px;line-height:1.4}
+.addons-list{list-style:none;margin:0;padding:0}
+.addons-list li{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:10px 0;border-bottom:1px solid var(--dust-2)}
+.addons-cost{font-weight:700;color:var(--charcoal);white-space:nowrap}
+.sidebar .path-teaser{margin-top:0}
+.paylogos{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;align-items:center}
+.paylogos img{height:34px;width:auto;max-width:100%;background:var(--white);border:1px solid var(--dust-3);border-radius:6px;padding:5px 8px;object-fit:contain;box-sizing:border-box}
 """
 
 build_page(
     filename="pricing-v2.html",
     title="How Much Does Family Dispute Resolution Cost in Australia? | onlinefdr.com.au",
-    meta_desc="What Family Dispute Resolution costs in Australia. Indicative per-person ranges for parenting and property mediation, how pay-as-you-go works, and how it compares to the cost of court.",
+    meta_desc="What Family Dispute Resolution costs in Australia, and why it is faster and more affordable than court. Indicative per-person ranges for parenting and property mediation, and how pay-as-you-go works.",
     canonical="/pricing/",
     current_page="/pricing/",
-    schema_json='{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://onlinefdr.com.au/pricing/#webpage","url":"https://onlinefdr.com.au/pricing/","name":"How much does Family Dispute Resolution cost in Australia?","description":"Indicative per-person pricing for online Family Dispute Resolution in Australia, how the pay-as-you-go model works, what fees cover, funded alternatives, and how the cost compares to contested court proceedings.","about":{"@id":"https://onlinefdr.com.au/#organization"},"isPartOf":{"@id":"https://onlinefdr.com.au/#website"},"mainEntity":{"@id":"https://onlinefdr.com.au/pricing/#faq"},"inLanguage":"en-AU"},{"@type":"FAQPage","@id":"https://onlinefdr.com.au/pricing/#faq","mainEntity":[{"@type":"Question","name":"How much does Family Dispute Resolution cost in Australia?","acceptedAnswer":{"@type":"Answer","text":"It depends on the matter, because we work pay-as-you-go rather than charging a fixed fee. As a guide, per person: most mostly-agreed separations fall between $3,000 and $7,999; more complex matters with several sessions fall between $8,000 and $19,999; and below about $3,000 a government-funded service is usually the better fit. These are indicative ranges, not a quote, and the discovery call is free."}},{"@type":"Question","name":"Do you charge a fixed fee or by the hour?","acceptedAnswer":{"@type":"Answer","text":"We are a pay-as-you-go practice, not a fixed-price service. We bill for the time your matter takes. This is deliberate: when both people have a stake in keeping the process efficient, reasonableness is the cheaper path. How much you spend is, in large part, up to you and your former partner."}},{"@type":"Question","name":"Is mediation cheaper than going to court?","acceptedAnswer":{"@type":"Answer","text":"In most cases yes, and by a wide margin. Contested court proceedings regularly run past $80,000 per person and take 18 to 36 months. Most matters that resolve through Family Dispute Resolution settle in weeks, at a fraction of the cost of litigation, and the parties keep control of the outcome."}},{"@type":"Question","name":"What if I cannot afford private mediation?","acceptedAnswer":{"@type":"Answer","text":"Government-funded and subsidised services exist for exactly this situation, and they are intended for people who genuinely cannot afford a private practice. Family Relationship Centres offer a free first hour of joint mediation, with further hours income-tested on a sliding scale, so people on low incomes or holding a concession card pay little or nothing. Relationships Australia uses a similar sliding scale. Legal Aid runs lawyer-assisted conferences for people who pass its income and assets means test. All of these are in high demand, so waiting times commonly run to several weeks or months. Call the Family Relationship Advice Line on 1800 050 321 to find a service."}}]}]}',
+    schema_json='{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://onlinefdr.com.au/pricing/#webpage","url":"https://onlinefdr.com.au/pricing/","name":"How much does Family Dispute Resolution cost in Australia?","description":"Indicative per-person pricing for online Family Dispute Resolution in Australia, how the pay-as-you-go model works, what fees cover, and how it compares to contested court proceedings.","about":{"@id":"https://onlinefdr.com.au/#organization"},"isPartOf":{"@id":"https://onlinefdr.com.au/#website"},"mainEntity":{"@id":"https://onlinefdr.com.au/pricing/#faq"},"inLanguage":"en-AU"},{"@type":"FAQPage","@id":"https://onlinefdr.com.au/pricing/#faq","mainEntity":[{"@type":"Question","name":"How much does Family Dispute Resolution cost in Australia?","acceptedAnswer":{"@type":"Answer","text":"It depends on the matter, because we work pay-as-you-go at $195 an hour including GST rather than charging a fixed fee. As a guide, per person: where you broadly agree, most matters land around $1,658 to $2,340; where there is more to work through, around $3,023; and high-conflict shuttle matters around $5,070. These are indicative, not a quote, and the discovery call is free."}},{"@type":"Question","name":"Do you charge a fixed fee or by the hour?","acceptedAnswer":{"@type":"Answer","text":"We are a pay-as-you-go practice, not a fixed-price service. We bill for the time your matter takes. This is deliberate: when both people have a stake in keeping the process efficient, reasonableness is the cheaper path. How much you spend is, in large part, up to you and your former partner."}},{"@type":"Question","name":"Is mediation more affordable than going to court?","acceptedAnswer":{"@type":"Answer","text":"In most cases yes, and by a wide margin. Contested court proceedings regularly run past $80,000 per person and take 18 to 36 months. Most matters that resolve through Family Dispute Resolution settle in weeks, at a fraction of the cost of litigation, and the parties keep control of the outcome."}},{"@type":"Question","name":"How do you keep it affordable?","acceptedAnswer":{"@type":"Answer","text":"We work pay-as-you-go rather than charging a fixed fee, so you are billed only for the time your matter actually takes. Focused, reasonable parties resolve quickly, which keeps the spend at the lower end, and even a more involved matter is a fraction of what contested court proceedings cost. The discovery call is free and there is no obligation. How much you spend is, in large part, in your hands."}}]}]}',
     extra_css=ARTICLE_CSS + PRICING_CSS,
     breadcrumbs=[("Home", "/"), ("Pricing", "/pricing/")],
     page_html=PRICING_HTML,

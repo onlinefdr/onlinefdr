@@ -11,8 +11,8 @@
     gtag('js', new Date());
     gtag('config', 'AW-18195606042');
   </script>
-  <title>Find your path | Online Family Dispute Resolution | onlinefdr.com.au</title>
-  <meta name="description" content="Answer three quick questions to see the most realistic path to resolving your separation, what it tends to cost, and how long it tends to take.">
+  <title>Start here | Free discovery call | Online Family Dispute Resolution | onlinefdr.com.au</title>
+  <meta name="description" content="Start with a free, confidential discovery call with an accredited Family Dispute Resolution practitioner. Australia-wide, online, no obligation.">
   <meta name="robots" content="noindex, follow">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -61,7 +61,6 @@
       min-height:100vh; -webkit-font-smoothing:antialiased;
     }
     a{ color:inherit; }
-
     .top{ max-width:1120px; margin:0 auto; padding:20px 28px; display:flex; align-items:center; justify-content:space-between; }
     .logo{ font-size:1.12rem; font-weight:800; letter-spacing:-0.02em; text-decoration:none; color:var(--charcoal); }
     .logo .fdr{ color:var(--ochre); }
@@ -70,119 +69,53 @@
     .top-phone:hover{ border-color:var(--terra); }
     .top-phone svg{ width:15px; height:15px; }
     [data-call-state="closed"] .top-phone{ display:none; }
-
     .wrap{ max-width:var(--max); margin:0 auto; padding:14px 28px 70px; }
-
-    .intro{ text-align:center; padding:18px 0 8px; }
     .eyebrow{ display:inline-flex; align-items:center; gap:10px; font-size:0.72rem; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--ochre); margin-bottom:16px; }
     .eyebrow::before, .eyebrow::after{ content:""; width:24px; height:2px; background:var(--ochre); opacity:.5; }
     h1{ font-size:clamp(2rem, 5.2vw, 3.1rem); font-weight:800; letter-spacing:-0.03em; line-height:1.04; }
     h1 .accent{ color:var(--terra); }
-    .intro .sub{ font-size:clamp(1rem,2.4vw,1.15rem); color:var(--mid); max-width:560px; margin:16px auto 0; }
-
-    .progress{ display:flex; align-items:center; justify-content:center; gap:8px; margin:30px 0 10px; }
-    .progress .dot{ height:6px; border-radius:999px; background:var(--dust-3); transition:all .45s var(--ease); width:34px; }
-    .progress .dot.active{ background:var(--terra); width:54px; }
-    .progress .dot.done{ background:var(--ochre); }
-    .step-count{ text-align:center; font-size:0.78rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--light-mid); margin-bottom:22px; }
-
-    .stage{ position:relative; }
-    .step{ display:none; animation:rise .5s var(--ease) both; }
-    .step.show{ display:block; }
-    @keyframes rise{ from{ opacity:0; transform:translateY(14px); } to{ opacity:1; transform:none; } }
-
-    .q{ text-align:center; font-size:clamp(1.3rem,3.4vw,1.7rem); font-weight:800; letter-spacing:-0.02em; margin-bottom:6px; }
-    .q-hint{ text-align:center; color:var(--mid); font-size:0.96rem; margin-bottom:26px; }
-
-    .opts{ display:grid; gap:12px; }
-    .opt{ width:100%; text-align:left; background:var(--white); border:1.5px solid var(--dust-3); border-radius:15px; padding:18px 20px; cursor:pointer; font-family:inherit; font-size:1rem; color:var(--charcoal); display:flex; align-items:center; gap:16px; transition:all .18s var(--ease); }
-    .opt:hover{ border-color:var(--terra); transform:translateY(-2px); box-shadow:0 10px 28px rgba(44,40,37,0.07); }
-    .opt .tick{ flex-shrink:0; width:26px; height:26px; border-radius:50%; border:2px solid var(--dust-3); display:flex; align-items:center; justify-content:center; transition:all .18s var(--ease); }
-    .opt .tick svg{ width:14px; height:14px; opacity:0; transform:scale(.5); transition:all .18s var(--ease); color:var(--white); }
-    .opt:hover .tick{ border-color:var(--terra); }
-    .opt.sel{ border-color:var(--terra); background:var(--ochre-pale); }
-    .opt.sel .tick{ background:var(--terra); border-color:var(--terra); }
-    .opt.sel .tick svg{ opacity:1; transform:scale(1); }
-    .opt .otext{ flex:1; }
-    .opt .olabel{ display:block; font-weight:700; font-size:1.04rem; }
-    .opt .odesc{ display:block; font-size:0.88rem; color:var(--mid); margin-top:3px; }
-
-    .back{ display:inline-flex; align-items:center; gap:7px; background:none; border:none; cursor:pointer; font-family:inherit; font-size:0.9rem; font-weight:600; color:var(--mid); margin-top:24px; padding:8px 4px; transition:color .2s; }
-    .back:hover{ color:var(--terra); }
-    .back svg{ width:15px; height:15px; }
-
-    .outcome{ display:none; animation:rise .55s var(--ease) both; }
-    .outcome.show{ display:block; }
-    .verdict{ border-radius:22px; padding:38px 34px; color:var(--white); position:relative; overflow:hidden; }
-    .verdict.fit{ background:linear-gradient(150deg, var(--charcoal) 0%, var(--charcoal-2) 100%); }
-    .verdict.caution{ background:linear-gradient(150deg, #4A3F33 0%, #5A4A38 100%); }
-    .verdict.redirect{ background:linear-gradient(150deg, var(--charcoal) 0%, #3a2f2a 100%); }
-    .verdict-tag{ display:inline-flex; align-items:center; gap:9px; font-size:0.72rem; font-weight:800; letter-spacing:0.13em; text-transform:uppercase; padding:7px 14px; border-radius:999px; margin-bottom:18px; }
-    .verdict.fit .verdict-tag{ background:rgba(91,117,83,0.25); color:#B6CBAE; }
-    .verdict.caution .verdict-tag{ background:rgba(196,135,58,0.22); color:#E7BE84; }
-    .verdict.redirect .verdict-tag{ background:rgba(154,74,51,0.28); color:#E0A491; }
-    .verdict h2{ font-size:clamp(1.5rem,3.6vw,2rem); font-weight:800; letter-spacing:-0.02em; line-height:1.12; margin-bottom:14px; color:var(--white); }
-    .verdict p{ color:rgba(253,250,246,0.82); font-size:1.02rem; margin-bottom:14px; }
-    .verdict p:last-child{ margin-bottom:0; }
-    .verdict strong{ color:var(--white); }
-
-    .est{ display:flex; flex-wrap:wrap; gap:12px; margin:22px 0 4px; }
-    .est-tile{ flex:1; min-width:150px; background:rgba(253,250,246,0.07); border:1px solid rgba(253,250,246,0.14); border-radius:14px; padding:16px 18px; }
-    .est-tile .k{ font-size:0.7rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:rgba(253,250,246,0.55); margin-bottom:5px; }
-    .est-tile .v{ font-size:1.18rem; font-weight:800; color:var(--white); line-height:1.2; }
-    .est-tile .v .unit{ font-size:0.82rem; font-weight:600; color:var(--ochre); margin-left:5px; }
-
-    .flag{ display:flex; gap:13px; align-items:flex-start; background:rgba(253,250,246,0.06); border-left:3px solid var(--ochre); border-radius:0 12px 12px 0; padding:15px 17px; margin-top:14px; }
-    .flag svg{ width:19px; height:19px; flex-shrink:0; color:var(--ochre); margin-top:2px; }
-    .flag .ft{ font-size:0.94rem; color:rgba(253,250,246,0.86); }
-    .flag .ft b{ color:var(--white); }
-
-    .actions{ margin-top:22px; }
-    .cta-open, .cta-closed{ display:none; flex-direction:column; gap:12px; }
-    [data-call-state="open"] .actions .cta-open{ display:flex; }
-    [data-call-state="closed"] .actions .cta-closed{ display:flex; }
     .btn{ display:inline-flex; align-items:center; justify-content:center; gap:11px; text-decoration:none; font-weight:800; font-size:1.06rem; border-radius:14px; padding:18px 26px; transition:all .2s var(--ease); border:none; cursor:pointer; font-family:inherit; }
     .btn svg{ width:19px; height:19px; }
     .btn-primary{ background:var(--terra); color:var(--white); box-shadow:0 8px 24px rgba(168,92,50,0.34); }
+    .btn-primary:hover{ background:var(--terra-lt); transform:translateY(-2px); }
     .callbtn .btn-txt{ display:inline-flex; flex-wrap:wrap; align-items:baseline; justify-content:center; gap:4px 9px; }
     .callbtn .bl{ white-space:nowrap; }
     .callbtn .nb{ white-space:nowrap; }
-    .btn-primary:hover{ background:var(--terra-lt); transform:translateY(-2px); }
-    .btn-secondary{ background:transparent; color:var(--white); border:1.5px solid rgba(253,250,246,0.3); }
-    .btn-secondary:hover{ border-color:var(--white); }
-    .note{ font-size:0.86rem; color:rgba(253,250,246,0.62); text-align:center; margin-top:4px; }
-    .note a{ color:var(--ochre); font-weight:600; }
-
-    .ext{ display:flex; flex-direction:column; gap:10px; margin-top:18px; }
-    .ext a{ display:flex; align-items:center; justify-content:space-between; gap:12px; text-decoration:none; background:rgba(253,250,246,0.07); border:1px solid rgba(253,250,246,0.16); border-radius:12px; padding:15px 18px; transition:all .2s var(--ease); }
-    .ext a:hover{ background:rgba(253,250,246,0.12); border-color:var(--ochre); }
-    .ext .el{ display:block; font-weight:700; color:var(--white); margin-bottom:3px; }
-    .ext .ed{ display:block; font-size:0.84rem; color:rgba(253,250,246,0.6); }
-    .ext svg{ width:18px; height:18px; color:var(--ochre); flex-shrink:0; }
-
-    .restart{ display:inline-flex; align-items:center; gap:8px; background:none; border:none; cursor:pointer; font-family:inherit; font-size:0.9rem; font-weight:700; color:var(--mid); margin-top:22px; padding:8px 4px; }
-    .restart:hover{ color:var(--terra); }
-    .restart svg{ width:15px; height:15px; }
-
-    .reassure{ text-align:center; margin-top:34px; padding-top:26px; border-top:1px solid var(--dust-3); }
-    .reassure .small{ font-size:0.9rem; font-weight:600; color:var(--mid); margin-bottom:12px; }
-    .pills{ display:flex; flex-wrap:wrap; justify-content:center; gap:10px; }
-    .pill{ display:inline-flex; align-items:center; gap:8px; text-decoration:none; font-weight:700; font-size:0.9rem; border-radius:999px; padding:10px 18px; border:1.5px solid var(--dust-3); color:var(--terra); background:var(--white); transition:all .2s var(--ease); }
-    .pill:hover{ border-color:var(--terra); transform:translateY(-1px); }
-    .pill svg{ width:15px; height:15px; }
-
+    .btn-secondary{ background:var(--white); color:var(--terra); border:1.5px solid var(--dust-3); }
+    .btn-secondary:hover{ border-color:var(--terra); }
+    .note{ font-size:0.86rem; color:var(--mid); text-align:center; margin-top:4px; }
+    .note a{ color:var(--terra); font-weight:700; }
+    .hero{ text-align:center; padding:24px 0 4px; }
+    .hero .sub{ font-size:clamp(1rem,2.4vw,1.18rem); color:var(--mid); max-width:585px; margin:18px auto 0; }
+    .hero-cta{ margin:30px auto 0; max-width:440px; }
+    .hero-cta .cta-open, .hero-cta .cta-closed{ display:none; flex-direction:column; gap:12px; }
+    [data-call-state="open"] .hero-cta .cta-open{ display:flex; }
+    [data-call-state="closed"] .hero-cta .cta-closed{ display:flex; }
+    .hero-trust{ font-size:0.86rem; color:var(--light-mid); margin-top:20px; display:flex; flex-wrap:wrap; gap:8px 18px; justify-content:center; }
+    .hero-trust span{ display:inline-flex; align-items:center; gap:7px; font-weight:600; }
+    .hero-trust svg{ width:14px; height:14px; color:var(--ochre); flex-shrink:0; }
+    .more{ margin-top:46px; padding-top:40px; border-top:1px solid var(--dust-3); }
+    .more-head{ text-align:center; margin-bottom:22px; }
+    .more-head h2{ font-size:clamp(1.35rem,3.2vw,1.75rem); font-weight:800; letter-spacing:-0.02em; line-height:1.12; }
+    .more-sub{ color:var(--mid); font-size:1rem; max-width:520px; margin:12px auto 0; }
+    .more-grid{ display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+    .more-card{ display:flex; flex-direction:column; gap:4px; text-decoration:none; background:var(--white); border:1.5px solid var(--dust-3); border-radius:15px; padding:18px 20px; position:relative; transition:all .18s var(--ease); }
+    .more-card:hover{ border-color:var(--terra); transform:translateY(-2px); box-shadow:0 10px 28px rgba(44,40,37,0.07); }
+    .more-card .mc-t{ font-weight:800; font-size:1.04rem; color:var(--charcoal); padding-right:24px; }
+    .more-card .mc-d{ font-size:0.9rem; color:var(--mid); }
+    .more-card .mc-arrow{ position:absolute; top:18px; right:18px; width:17px; height:17px; color:var(--ochre); transition:transform .18s var(--ease); }
+    .more-card:hover .mc-arrow{ transform:translateX(3px); }
     footer{ text-align:center; padding:30px 28px 50px; color:var(--light-mid); font-size:0.82rem; }
     footer .discl{ max-width:660px; margin:0 auto 14px; line-height:1.55; }
     footer a{ color:var(--mid); }
-
     @media (max-width:560px){
       .top{ padding:16px 18px; }
       .wrap{ padding:8px 18px 60px; }
-      .verdict{ padding:28px 22px; }
-      .est-tile{ min-width:calc(50% - 6px); }
       .cta-open, .cta-closed{ width:100%; }
       .btn{ font-size:1rem; padding:17px 18px; }
       .callbtn .btn-txt{ flex-direction:column; gap:1px; }
+      .hero-cta{ width:100%; }
+      .more-grid{ grid-template-columns:1fr; }
     }
   </style>
 </head>
@@ -193,232 +126,56 @@
   </header>
 
   <main class="wrap">
-    <div class="intro">
-      <span class="eyebrow">Find your path</span>
-      <h1>What will it really take to <span class="accent">resolve this?</span></h1>
-      <p class="sub">Three quick questions. No sign-up. We will show you the most realistic path for your situation, what it tends to cost, and how long it tends to take.</p>
-    </div>
-
-    <div class="progress" id="progress" aria-hidden="true">
-      <span class="dot active" data-d="1"></span>
-      <span class="dot" data-d="2"></span>
-      <span class="dot" data-d="3"></span>
-    </div>
-    <div class="step-count" id="stepCount">Question 1 of 3</div>
-
-    <div class="stage">
-      <div class="step show" data-step="1">
-        <h2 class="q">How much are you prepared to spend to resolve it?</h2>
-        <p class="q-hint">Per person, all in. A rough sense is fine.</p>
-        <div class="opts">
-          <button class="opt" data-q="budget" data-v="b1"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="otext"><span class="olabel">Under $2,999</span><span class="odesc">As little as possible, or it needs to be free.</span></span></button>
-          <button class="opt" data-q="budget" data-v="b2"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="otext"><span class="olabel">$3,000 to $7,999</span><span class="odesc">Happy to pay for a professional result on a mostly-agreed matter.</span></span></button>
-          <button class="opt" data-q="budget" data-v="b3"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="otext"><span class="olabel">$8,000 to $19,999</span><span class="odesc">A complex matter, but I still want to stay out of court.</span></span></button>
-          <button class="opt" data-q="budget" data-v="b4"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="otext"><span class="olabel">$20,000 or more</span><span class="odesc">Whatever it takes, including lawyers.</span></span></button>
+    <section class="hero">
+      <span class="eyebrow">Start here</span>
+      <h1>The simplest first step is a <span class="accent">free discovery call.</span></h1>
+      <p class="sub">A short, confidential conversation with an accredited Family Dispute Resolution practitioner. We will talk through your situation, whether FDR is the right fit, and the realistic path from here. No sign-up, no obligation.</p>
+      <div class="hero-cta">
+        <div class="cta-open">
+          <a class="btn btn-primary callbtn" href="tel:0399617544" onclick="fireCall()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span class="btn-txt"><span class="bl">Free Discovery Call</span> <span class="nb">(03)&nbsp;9961&nbsp;7544</span></span></a>
+          <a class="btn btn-secondary" href="https://calendar.app.google/zwNm4dzYnwAwhwxY8" target="_blank" rel="noopener" onclick="fireBook()">Book a time instead</a>
+        </div>
+        <div class="cta-closed">
+          <a class="btn btn-primary" href="https://calendar.app.google/zwNm4dzYnwAwhwxY8" target="_blank" rel="noopener" onclick="fireBook()">Book a Free Discovery Call</a>
+          <p class="note">Phone lines open 10am to 7pm, Mon to Fri (Melbourne). Book above, or <a href="tel:0399617544" onclick="fireCall()">call (03) 9961 7544</a> and leave a message.</p>
         </div>
       </div>
+      <p class="hero-trust"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Accredited FDR practitioner</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Australia-wide, online</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>No obligation</span></p>
+    </section>
 
-      <div class="step" data-step="2">
-        <h2 class="q">How quickly do you want it resolved?</h2>
-        <p class="q-hint">How soon you would like an agreement in place.</p>
-        <div class="opts">
-          <button class="opt" data-q="speed" data-v="s1"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="otext"><span class="olabel">4 to 6 weeks</span><span class="odesc">I want this sorted soon.</span></span></button>
-          <button class="opt" data-q="speed" data-v="s2"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="otext"><span class="olabel">3 to 6 months</span><span class="odesc">Reasonably soon, with room for a few sessions.</span></span></button>
-          <button class="opt" data-q="speed" data-v="s3"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="otext"><span class="olabel">6 to 9 months</span><span class="odesc">I expect this to take a while to work through.</span></span></button>
-          <button class="opt" data-q="speed" data-v="s4"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="otext"><span class="olabel">12 to 36 months</span><span class="odesc">However long it takes to get the right outcome.</span></span></button>
-        </div>
-        <button class="back" data-back><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>Back</button>
+    <section class="more">
+      <div class="more-head">
+        <h2>Not ready to talk? Learn more.</h2>
+        <p class="more-sub">Read up on your situation first, then come back when you are ready.</p>
       </div>
-
-      <div class="step" data-step="3">
-        <h2 class="q">How flexible are you willing to be?</h2>
-        <p class="q-hint">Mediation works by each person shaping and testing their own proposals. It needs some give.</p>
-        <div class="opts">
-          <button class="opt" data-q="flex" data-v="f1"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="otext"><span class="olabel">Very flexible</span><span class="odesc">I want a fair, workable outcome and I will move to get one.</span></span></button>
-          <button class="opt" data-q="flex" data-v="f2"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="otext"><span class="olabel">Somewhat flexible</span><span class="odesc">There are a few things I will not budge on, but I can compromise.</span></span></button>
-          <button class="opt" data-q="flex" data-v="f3"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span class="otext"><span class="olabel">Not flexible at all</span><span class="odesc">I am not prepared to move from my position.</span></span></button>
-        </div>
-        <button class="back" data-back><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>Back</button>
+      <div class="more-grid">
+        <a class="more-card" href="/parenting/">
+          <span class="mc-t">Parenting</span>
+          <span class="mc-d">Parenting plans, consent orders, and the best-interests framework.</span>
+          <svg class="mc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a class="more-card" href="/financial-settlement/">
+          <span class="mc-t">Financial settlement</span>
+          <span class="mc-d">Dividing property and superannuation, and the duty of disclosure.</span>
+          <svg class="mc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a class="more-card" href="/section-60i/">
+          <span class="mc-t">Section 60I certificates</span>
+          <span class="mc-d">What they are, when you need one, and how they are issued.</span>
+          <svg class="mc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a class="more-card" href="/how-it-works/">
+          <span class="mc-t">How it works</span>
+          <span class="mc-d">The discovery call, intake, and how online sessions run.</span>
+          <svg class="mc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
       </div>
-
-      <div class="outcome" id="outcome">
-        <div class="verdict" id="verdict"></div>
-        <button class="restart" id="restart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4v6h6M23 20v-6h-6"/><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4-4.64 4.36A9 9 0 0 1 3.51 15"/></svg>Start over</button>
-      </div>
-    </div>
-
-    <div class="reassure">
-      <p class="small">Prefer to look around first?</p>
-      <div class="pills">
-        <a class="pill" href="/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>Explore the site</a>
-        <a class="pill" href="/how-it-works/">How it works</a>
-        <a class="pill" href="/what-is-fdr/">What is FDR?</a>
-      </div>
-    </div>
+    </section>
   </main>
 
   <footer>
-    <p class="discl">The paths and figures shown here are general information only, indicative, and not a quote, a fee agreement, or legal or financial advice. Every matter is different. onlinefdr.com.au is a pay-as-you-go practice, not a fixed-price service, so what a matter costs depends on its complexity and on how the parties engage. If you are concerned about family violence or a child's safety, call 000 in an emergency, or contact 1800RESPECT on 1800 737 732.</p>
+    <p class="discl">onlinefdr.com.au provides general information only, not legal or financial advice, and is a pay-as-you-go practice rather than a fixed-price service. Every matter is different. If you are concerned about family violence or a child's safety, call 000 in an emergency, or contact 1800RESPECT on 1800 737 732.</p>
     <p>&copy; onlinefdr.com.au &bull; Accredited Family Dispute Resolution &bull; <a href="tel:0399617544" onclick="fireCall()">(03) 9961 7544</a></p>
   </footer>
-
-  <script>
-    (function(){
-      var answers = { budget:null, speed:null, flex:null };
-      var current = 1;
-      var steps = document.querySelectorAll('.step');
-      var dots = document.querySelectorAll('#progress .dot');
-      var stepCount = document.getElementById('stepCount');
-      var outcome = document.getElementById('outcome');
-      var verdict = document.getElementById('verdict');
-      var progress = document.getElementById('progress');
-
-      function showStep(n){
-        steps.forEach(function(s){ s.classList.toggle('show', +s.dataset.step === n); });
-        outcome.classList.remove('show');
-        progress.style.display = '';
-        stepCount.style.display = '';
-        dots.forEach(function(d){
-          var dn = +d.dataset.d;
-          d.classList.toggle('active', dn === n);
-          d.classList.toggle('done', dn < n);
-        });
-        stepCount.textContent = 'Question ' + n + ' of 3';
-        current = n;
-        window.scrollTo({ top:0, behavior:'smooth' });
-      }
-
-      document.querySelectorAll('.opt').forEach(function(btn){
-        btn.addEventListener('click', function(){
-          var q = btn.dataset.q, v = btn.dataset.v;
-          answers[q] = v;
-          var group = btn.closest('.opts');
-          group.querySelectorAll('.opt').forEach(function(b){ b.classList.remove('sel'); });
-          btn.classList.add('sel');
-          setTimeout(function(){
-            if (q === 'budget') showStep(2);
-            else if (q === 'speed') showStep(3);
-            else renderOutcome();
-          }, 220);
-        });
-      });
-
-      document.querySelectorAll('[data-back]').forEach(function(b){
-        b.addEventListener('click', function(){ showStep(current - 1); });
-      });
-
-      document.getElementById('restart').addEventListener('click', function(){
-        answers = { budget:null, speed:null, flex:null };
-        document.querySelectorAll('.opt').forEach(function(b){ b.classList.remove('sel'); });
-        showStep(1);
-      });
-
-      var I = {
-        warn:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>',
-        phone:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>',
-        arrow:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>'
-      };
-
-      function ctaBlock(){
-        return '<div class="actions">' +
-          '<div class="cta-open">' +
-            '<a class="btn btn-primary callbtn" href="tel:0399617544" onclick="fireCall()">' + I.phone + '<span class="btn-txt"><span class="bl">Free Discovery Call</span> <span class="nb">(03)\u00a09961\u00a07544</span></span></a>' +
-            '<a class="btn btn-secondary" href="https://calendar.app.google/zwNm4dzYnwAwhwxY8" target="_blank" rel="noopener" onclick="fireBook()">Book a time instead</a>' +
-          '</div>' +
-          '<div class="cta-closed">' +
-            '<a class="btn btn-primary" href="https://calendar.app.google/zwNm4dzYnwAwhwxY8" target="_blank" rel="noopener" onclick="fireBook()">Book a Free Discovery Call</a>' +
-            '<p class="note">Phone lines open 10am to 7pm, Mon to Fri (Melbourne). Book above, or <a href="tel:0399617544" onclick="fireCall()">call (03) 9961 7544</a> and leave a message.</p>' +
-          '</div>' +
-        '</div>';
-      }
-      function tiles(cost, time){
-        return '<div class="est">' +
-          '<div class="est-tile"><div class="k">Typical cost</div><div class="v">' + cost + '</div></div>' +
-          '<div class="est-tile"><div class="k">Typical timeframe</div><div class="v">' + time + '</div></div>' +
-        '</div>';
-      }
-      function flag(text){ return '<div class="flag">' + I.warn + '<div class="ft">' + text + '</div></div>'; }
-      function timeLabel(s){
-        if (s === 's1') return '4 to 6 <span class="unit">weeks</span>';
-        if (s === 's2') return '3 to 6 <span class="unit">months</span>';
-        if (s === 's3') return '6 to 9 <span class="unit">months</span>';
-        return '12 to 36 <span class="unit">months</span>';
-      }
-
-      function renderOutcome(){
-        var b = answers.budget, s = answers.speed, f = answers.flex;
-        var html = '';
-
-        if (b === 'b1'){
-          html += '<span class="verdict-tag">A government-funded service is your best fit</span>';
-          html += '<h2>For that budget, start with a funded service.</h2>';
-          html += '<p>At under $3,000 per person, the right first stop is a government-funded provider such as <strong>Relationships Australia</strong> or <strong>Legal Aid</strong>. They offer Family Dispute Resolution at low or no cost. This is the honest call: a private practice is not where your money goes furthest right now.</p>';
-          if (s === 's1' || s === 's2'){
-            html += flag('<b>One thing to plan for:</b> funded services are in high demand, so waiting times can run to several weeks or months. A four-to-six-week or three-to-six-month goal and a sub-$3,000 budget do not always sit comfortably together, so get on a waitlist early.');
-          }
-          html += '<p>If your matter turns out to be more involved than a funded service can take on, come back and we can talk about the private path.</p>';
-          html += '<div class="ext">' +
-            '<a href="https://www.relationships.org.au/" target="_blank" rel="noopener nofollow"><span><span class="el">Relationships Australia</span><span class="ed">Low-cost FDR and family services</span></span>' + I.arrow + '</a>' +
-            '<a href="https://www.familyrelationships.gov.au/" target="_blank" rel="noopener nofollow"><span><span class="el">Family Relationships Online</span><span class="ed">Find a funded service near you, or call 1800 050 321</span></span>' + I.arrow + '</a>' +
-          '</div>';
-          setVerdict('redirect', html); return;
-        }
-
-        if (b === 'b4'){
-          html += '<span class="verdict-tag">You may be heading for court. Pause first.</span>';
-          html += '<h2>Before you commit to that, look at what court really costs.</h2>';
-          html += '<p>Budgeting $20,000 or more usually means you are bracing for lawyers. For some matters that is the right call. But go in with eyes open:</p>';
-          html += tiles('$80,000+ <span class="unit">per person, contested</span>', '18 to 36 <span class="unit">months</span>');
-          html += flag('<b>Contested litigation</b> regularly runs past $80,000 per person and takes 18 to 36 months, and the outcome is decided for you by a court rather than shaped by you.');
-          if (f === 'f1' || f === 'f2'){
-            html += '<p>Here is the thing: you told us you are <strong>' + (f === 'f1' ? 'very flexible' : 'somewhat flexible') + '</strong>. If there is genuine willingness to move on both sides, mediation can often resolve even a substantial matter for a fraction of that, and keep the decision in your hands. It is worth one conversation before you spend the price of a car on lawyers.</p>';
-          } else {
-            html += '<p>If real flexibility is off the table for both of you, mediation may not be the right tool, and that is an honest thing to know now. If anything shifts, we are here.</p>';
-          }
-          html += ctaBlock();
-          setVerdict('redirect', html); return;
-        }
-
-        var costStr = (b === 'b2') ? '$3,000 to $7,999 <span class="unit">per person</span>' : '$8,000 to $19,999 <span class="unit">per person</span>';
-        var entrenched = (f === 'f3');
-        var tone = entrenched ? 'caution' : 'fit';
-
-        if (b === 'b2'){
-          html += '<span class="verdict-tag">' + (entrenched ? 'A good fit, with one honest caution' : 'This is exactly what FDR is built for') + '</span>';
-          html += '<h2>' + (entrenched ? 'The budget fits. The flexibility is the question.' : 'You are the kind of matter we resolve well.') + '</h2>';
-          html += '<p>A mostly-agreed separation in the <strong>$3,000 to $7,999</strong> range is the heart of what we do. The lower end suits a single issue such as parenting only; the higher end covers both parenting and financial matters. Fees are per person and typically include the court documentation, such as <strong>Consent Orders</strong> for a financial settlement. Binding Financial Agreements are handled separately.</p>';
-          html += tiles(costStr, timeLabel(s));
-        } else {
-          html += '<span class="verdict-tag">' + (entrenched ? 'We can help, with one honest caution' : 'Complex, and a sensible way to stay out of court') + '</span>';
-          html += '<h2>' + (entrenched ? 'We can do this, if there is room to move.' : 'Complex, but very much still mediable.') + '</h2>';
-          html += '<p>A more involved separation in the <strong>$8,000 to $19,999</strong> range usually means both parenting and financial matters where you do not yet agree on much, but you both still want to avoid court. That typically takes several sessions and may bring in third parties, such as a child-inclusive practitioner or an accountant for a business valuation. It can include Consent Orders for parenting, and either Consent Orders or a Binding Financial Agreement for the financial side.</p>';
-          html += tiles(costStr, timeLabel(s));
-        }
-
-        if (b === 'b3' && s === 's1'){
-          html += flag('<b>A note on timing:</b> a matter at this level, with several sessions and possibly outside experts, rarely wraps up in four to six weeks. Three to nine months is a more realistic runway, and worth planning for.');
-        }
-
-        if (entrenched){
-          html += flag('<b>This is the honest part.</b> Mediation only works where there is some willingness to move. If neither of you will shift, sessions stretch out, the cost climbs, and you can drift toward lawyers and court anyway, which costs far more in both money and time. Because we bill for the time a matter takes, reasonableness is genuinely the cheaper path. How much you spend is, in a real sense, up to you and your former partner.');
-        } else if (f === 'f1'){
-          html += '<p>Because you are willing to move, you are in the best position of all: focused, reasonable parties tend to resolve quickly, and that keeps the cost at the lower end. We bill for the time a matter takes, so the spend really is in your hands.</p>';
-        }
-
-        html += ctaBlock();
-        setVerdict(tone, html);
-      }
-
-      function setVerdict(tone, html){
-        verdict.className = 'verdict ' + tone;
-        verdict.innerHTML = html;
-        steps.forEach(function(s){ s.classList.remove('show'); });
-        progress.style.display = 'none';
-        stepCount.style.display = 'none';
-        outcome.classList.add('show');
-        window.scrollTo({ top:0, behavior:'smooth' });
-      }
-    })();
-  </script>
 </body>
 </html>
