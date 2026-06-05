@@ -3378,6 +3378,19 @@ SECTIONS = [
     ]
   },
   {
+    "id": "cost",
+    "title": "Cost and pricing",
+    "accent": "pricing",
+    "desc": "What Family Dispute Resolution costs, and how the pay-as-you-go price works.",
+    "count": 2,
+    "items": [
+      ("How much does Family Dispute Resolution cost in Australia?",
+       "It depends on the matter. We work pay-as-you-go at $195 an hour including GST, not a fixed fee, so what you pay reflects the time your matter takes. As a per-person guide: where you and your former partner broadly agree, most matters land between $1,658 and $2,340; where there is more to resolve, around $3,023; and high-conflict shuttle matters around $5,070. These figures are indicative, not a quote. Full detail, including what is included and how it compares with court, is on our <a href=\"/pricing/\">pricing page</a>, and the discovery call is free."),
+      ("Do you charge a fixed fee, or is the price pay-as-you-go?",
+       "Pay-as-you-go. We bill for the time your matter actually takes rather than charging one set price, because no two separations need the same amount of work. The practical effect is that focused, reasonable parties resolve sooner and pay less, so how much you spend is, in large part, in your hands."),
+    ],
+  },
+  {
     "id": "parenting",
     "title": "Parenting matters",
     "accent": "matters",
@@ -4025,7 +4038,7 @@ PRIVACY_HTML = """
           <li><strong>Google Workspace:</strong> Email, calendar, and document storage. See Google's Privacy Policy at google.com/privacy.</li>
           <li><strong>Google Meet:</strong> Video conferencing for sessions. Subject to Google's Privacy Policy.</li>
           <li><strong>Google Gemini:</strong> AI-assisted transcription and annotation of intake sessions only (with your express consent). Subject to Google's Privacy Policy.</li>
-          <li><strong>Stripe:</strong> Payment processing, including Buy Now Pay Later providers (Afterpay, Klarna, Affirm, Zip). See Stripe's Privacy Policy at stripe.com/privacy.</li>
+          <li><strong>Stripe:</strong> Payment processing, including Buy Now Pay Later providers (Afterpay, Zip). See Stripe's Privacy Policy at stripe.com/privacy.</li>
           <li><strong>Netlify:</strong> Website hosting and form submissions. See Netlify's Privacy Policy at netlify.com.</li>
           <li><strong>Dialpad:</strong> Phone service for our business landline. See Dialpad's Privacy Policy at dialpad.com.</li>
         </ul>
@@ -4068,6 +4081,7 @@ PRIVACY_HTML = """
         <h2 id="changelog">Change log</h2>
         <p>Substantive changes to this Privacy Policy are recorded here. Minor formatting or typographical corrections may be made without entry.</p>
         <ul class="changelog-list">
+          <li><strong>June 2026 &mdash; Payment providers.</strong> Updated the list of Buy Now Pay Later providers handled through Stripe to reflect those offered at checkout (Afterpay and Zip).</li>
           <li><strong>May 2026 &mdash; Initial version.</strong> Privacy Policy published at launch.</li>
         </ul>
 
@@ -4175,7 +4189,7 @@ TERMS_HTML = """
         <p>Sessions are conducted via Google Meet. Both parties are responsible for ensuring they have a suitable device, reliable internet connection, and a private space for the duration of the session.</p>
 
         <h2 id="fees">Fees and payment</h2>
-        <p>Our fees are confirmed at the time of booking. We do not publish fees on our website. Fees are discussed and confirmed during the discovery call and are fixed for the duration of your matter unless otherwise agreed in writing.</p>
+        <p>We work on a pay-as-you-go basis, charging for the time your matter takes at an hourly rate that includes GST, rather than a fixed fee for the matter as a whole. Indicative per-person figures are published on our <a href="/pricing/">pricing page</a> to help you plan. Those figures are a guide, not a quote: what you pay depends on how your matter runs.</p>
         <p>The discovery call is provided at no charge. Intake sessions and joint sessions are charged at the rates confirmed at the time of booking.</p>
         <p>Where a matter requires additional sessions beyond those initially anticipated, each additional session is charged at the same rate as the initial sessions unless otherwise agreed.</p>
         <p><strong>Strict prepayment.</strong> Payment must be received at least 24 hours before the scheduled session, or the session is automatically cancelled. This applies to all intake and joint sessions.</p>
@@ -4266,6 +4280,7 @@ TERMS_HTML = """
         <h2 id="changelog">Change log</h2>
         <p>Substantive changes to these Terms of Service are recorded here. Minor formatting or typographical corrections may be made without entry.</p>
         <ul class="changelog-list">
+          <li><strong>June 2026 &mdash; Fees and payment.</strong> Updated the fees clause to reflect the pay-as-you-go pricing model and the publication of indicative figures on the pricing page.</li>
           <li><strong>May 2026 &mdash; Initial version.</strong> Terms of Service published at launch.</li>
         </ul>
 
@@ -4457,7 +4472,7 @@ BOOK_HTML = """
         <p>The intake session is private and confidential. Attended by you alone with the practitioner. The other party attends their own intake session separately. Both intake sessions are required before any joint session can be scheduled.</p>
         <p>This is your chance to speak candidly about your situation, what you need from the process, and what you hope to achieve. The practitioner uses this session to assess whether the matter is suitable for joint mediation, and to identify any safety concerns or substantive matters that may need to be in the room.</p>
         <div class="book-card-emph">
-          <p><strong>The session fee is confirmed during your discovery call and is shown at the time of booking.</strong> Payment is taken at booking and secures your time slot.</p>
+          <p><strong>Indicative fees are published on our <a href="/pricing/">pricing page</a>, and the exact amount for your session is shown at the time of booking.</strong> Payment is taken at booking and secures your time slot.</p>
         </div>
         <div class="book-card-cta">
           <a href="https://calendar.app.google/vKZbYJmLo8JtHoiA6" class="btn-cta" target="_blank" rel="noopener noreferrer">
@@ -4533,7 +4548,7 @@ BOOK_HTML = """
     <section class="payment-section" aria-labelledby="payment-heading">
       <h3 id="payment-heading">Payment options</h3>
       <p>Payment is processed securely by Stripe. We accept Visa, Mastercard, American Express, Apple Pay, and Google Pay (if available).</p>
-      <p>Buy Now Pay Later (BNPL) is available at checkout for intake sessions and joint sessions in Australia (Afterpay, Klarna, Affirm, and Zip). BNPL lets you pay across instalments. Eligibility and instalment terms are set by each provider. Some providers may not be available for all bookings.</p>
+      <p>Buy Now Pay Later (BNPL) is available at checkout for intake sessions and joint sessions in Australia (Afterpay and Zip). BNPL lets you pay across instalments. Eligibility and instalment terms are set by each provider. Some providers may not be available for all bookings.</p>
       <div class="payment-grid" aria-label="Accepted payment methods">
         <div class="payment-brand-tile"><span class="payment-brand-logo"><img src="/images/payment/visa.png" alt="Visa" loading="lazy"></span></div>
         <div class="payment-brand-tile"><span class="payment-brand-logo"><img src="/images/payment/mastercard.png" alt="Mastercard" loading="lazy"></span></div>
@@ -5274,6 +5289,30 @@ PRICING_HTML = """
       #find-your-path .est-tile{ min-width:calc(50% - 6px); }
       #find-your-path .fyp-btn{ width:100%; }
     }
+
+    /* DARK MODE band (5 Jun 2026): intro + question steps matched to the already-dark verdict. Terra/ochre accents preserved. */
+    #find-your-path{ background:var(--charcoal); border-top:none; }
+    #find-your-path .section-label{ color:var(--ochre-lt); }
+    #find-your-path .fyp-head h2,
+    #find-your-path .q{ color:var(--white); }
+    #find-your-path .fyp-sub,
+    #find-your-path .q-hint{ color:rgba(253,250,246,0.72); }
+    #find-your-path .step-count{ color:rgba(253,250,246,0.55); }
+    #find-your-path .progress .dot{ background:rgba(253,250,246,0.18); }
+    #find-your-path .progress .dot.active{ background:var(--terra); }
+    #find-your-path .progress .dot.done{ background:var(--ochre); }
+    #find-your-path .opt{ background:rgba(253,250,246,0.05); border-color:rgba(253,250,246,0.14); color:var(--white); }
+    #find-your-path .opt:hover{ border-color:var(--terra); box-shadow:0 10px 28px rgba(0,0,0,0.28); }
+    #find-your-path .opt .tick{ border-color:rgba(253,250,246,0.3); }
+    #find-your-path .opt:hover .tick{ border-color:var(--terra); }
+    #find-your-path .opt .odesc{ color:rgba(253,250,246,0.6); }
+    #find-your-path .opt.sel{ border-color:var(--terra); background:rgba(168,92,50,0.18); }
+    #find-your-path .opt.sel .tick{ background:var(--terra); border-color:var(--terra); }
+    #find-your-path .back,
+    #find-your-path .restart{ color:rgba(253,250,246,0.6); }
+    #find-your-path .back:hover,
+    #find-your-path .restart:hover{ color:var(--ochre-lt); }
+    #find-your-path .verdict{ border:1px solid rgba(253,250,246,0.10); box-shadow:0 18px 50px rgba(0,0,0,0.28); }
   </style>
   <script>
     (function(){
@@ -5406,7 +5445,7 @@ PRICING_HTML = """
       <div class="faq-list reveal" style="max-width:760px">
         <div class="faq-item"><button class="faq-q" aria-expanded="false">How much does Family Dispute Resolution cost in Australia?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>It depends on the matter, because we work pay-as-you-go at $195 an hour including GST rather than charging a fixed fee. As a guide, per person: where you broadly agree, most matters land around $1,658 to $2,340; where there is more to work through, around $3,023; and high-conflict shuttle matters around $5,070. These are indicative, not a quote, and the discovery call is free.</p></div></div>
         <div class="faq-item"><button class="faq-q" aria-expanded="false">Do you charge a fixed fee or by the hour?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>We are a pay-as-you-go practice, not a fixed-price service. We bill for the time your matter takes. This is deliberate: when both people have a stake in keeping the process efficient, reasonableness is the cheaper path. How much you spend is, in large part, up to you and your former partner.</p></div></div>
-        <div class="faq-item"><button class="faq-q" aria-expanded="false">Is mediation more affordable than going to court?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>In most cases yes, and by a wide margin. Contested court proceedings regularly run past $80,000 per person and take 18 to 36 months. Most matters that resolve through Family Dispute Resolution settle in weeks, at a fraction of the cost of litigation, and the parties keep control of the outcome.</p></div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false">Is mediation more affordable than going to court?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>In most cases yes, and by a wide margin. Contested court proceedings regularly run past $85,000 per person and take 18 to 36 months. Most matters that resolve through Family Dispute Resolution settle in weeks, at a fraction of the cost of litigation, and the parties keep control of the outcome.</p></div></div>
         <div class="faq-item"><button class="faq-q" aria-expanded="false">How do you keep it affordable?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>We work pay-as-you-go rather than charging a fixed fee, so you are billed only for the time your matter actually takes. Focused, reasonable parties resolve quickly, which keeps the spend at the lower end, and even a more involved matter is a fraction of what contested court proceedings cost. The discovery call is free and there is no obligation. How much you spend is, in large part, in your hands.</p></div></div>
       </div>
     </div>
@@ -5473,7 +5512,7 @@ build_page(
     meta_desc="What Family Dispute Resolution costs in Australia, and why it is faster and more affordable than court. Indicative per-person ranges for parenting and property mediation, and how pay-as-you-go works.",
     canonical="/pricing/",
     current_page="/pricing/",
-    schema_json='{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://onlinefdr.com.au/pricing/#webpage","url":"https://onlinefdr.com.au/pricing/","name":"How much does Family Dispute Resolution cost in Australia?","description":"Indicative per-person pricing for online Family Dispute Resolution in Australia, how the pay-as-you-go model works, what fees cover, and how it compares to contested court proceedings.","about":{"@id":"https://onlinefdr.com.au/#organization"},"isPartOf":{"@id":"https://onlinefdr.com.au/#website"},"mainEntity":{"@id":"https://onlinefdr.com.au/pricing/#faq"},"inLanguage":"en-AU"},{"@type":"FAQPage","@id":"https://onlinefdr.com.au/pricing/#faq","mainEntity":[{"@type":"Question","name":"How much does Family Dispute Resolution cost in Australia?","acceptedAnswer":{"@type":"Answer","text":"It depends on the matter, because we work pay-as-you-go at $195 an hour including GST rather than charging a fixed fee. As a guide, per person: where you broadly agree, most matters land around $1,658 to $2,340; where there is more to work through, around $3,023; and high-conflict shuttle matters around $5,070. These are indicative, not a quote, and the discovery call is free."}},{"@type":"Question","name":"Do you charge a fixed fee or by the hour?","acceptedAnswer":{"@type":"Answer","text":"We are a pay-as-you-go practice, not a fixed-price service. We bill for the time your matter takes. This is deliberate: when both people have a stake in keeping the process efficient, reasonableness is the cheaper path. How much you spend is, in large part, up to you and your former partner."}},{"@type":"Question","name":"Is mediation more affordable than going to court?","acceptedAnswer":{"@type":"Answer","text":"In most cases yes, and by a wide margin. Contested court proceedings regularly run past $80,000 per person and take 18 to 36 months. Most matters that resolve through Family Dispute Resolution settle in weeks, at a fraction of the cost of litigation, and the parties keep control of the outcome."}},{"@type":"Question","name":"How do you keep it affordable?","acceptedAnswer":{"@type":"Answer","text":"We work pay-as-you-go rather than charging a fixed fee, so you are billed only for the time your matter actually takes. Focused, reasonable parties resolve quickly, which keeps the spend at the lower end, and even a more involved matter is a fraction of what contested court proceedings cost. The discovery call is free and there is no obligation. How much you spend is, in large part, in your hands."}}]}]}',
+    schema_json='{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://onlinefdr.com.au/pricing/#webpage","url":"https://onlinefdr.com.au/pricing/","name":"How much does Family Dispute Resolution cost in Australia?","description":"Indicative per-person pricing for online Family Dispute Resolution in Australia, how the pay-as-you-go model works, what fees cover, and how it compares to contested court proceedings.","about":{"@id":"https://onlinefdr.com.au/#organization"},"isPartOf":{"@id":"https://onlinefdr.com.au/#website"},"mainEntity":{"@id":"https://onlinefdr.com.au/pricing/#faq"},"inLanguage":"en-AU"},{"@type":"FAQPage","@id":"https://onlinefdr.com.au/pricing/#faq","mainEntity":[{"@type":"Question","name":"How much does Family Dispute Resolution cost in Australia?","acceptedAnswer":{"@type":"Answer","text":"It depends on the matter, because we work pay-as-you-go at $195 an hour including GST rather than charging a fixed fee. As a guide, per person: where you broadly agree, most matters land around $1,658 to $2,340; where there is more to work through, around $3,023; and high-conflict shuttle matters around $5,070. These are indicative, not a quote, and the discovery call is free."}},{"@type":"Question","name":"Do you charge a fixed fee or by the hour?","acceptedAnswer":{"@type":"Answer","text":"We are a pay-as-you-go practice, not a fixed-price service. We bill for the time your matter takes. This is deliberate: when both people have a stake in keeping the process efficient, reasonableness is the cheaper path. How much you spend is, in large part, up to you and your former partner."}},{"@type":"Question","name":"Is mediation more affordable than going to court?","acceptedAnswer":{"@type":"Answer","text":"In most cases yes, and by a wide margin. Contested court proceedings regularly run past $85,000 per person and take 18 to 36 months. Most matters that resolve through Family Dispute Resolution settle in weeks, at a fraction of the cost of litigation, and the parties keep control of the outcome."}},{"@type":"Question","name":"How do you keep it affordable?","acceptedAnswer":{"@type":"Answer","text":"We work pay-as-you-go rather than charging a fixed fee, so you are billed only for the time your matter actually takes. Focused, reasonable parties resolve quickly, which keeps the spend at the lower end, and even a more involved matter is a fraction of what contested court proceedings cost. The discovery call is free and there is no obligation. How much you spend is, in large part, in your hands."}}]}]}',
     extra_css=ARTICLE_CSS + PRICING_CSS,
     breadcrumbs=[("Home", "/"), ("Pricing", "/pricing/")],
     page_html=PRICING_HTML,
