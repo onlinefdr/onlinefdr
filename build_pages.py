@@ -5016,7 +5016,7 @@ PRICING_HTML = """
           <p class="page-intro">Family Dispute Resolution is a pay-as-you-go service, not a fixed-price package, charged at $195 an hour including GST. How much, or how little, you pay is largely up to you and your former partner. For most families it is both faster and far more affordable than fighting it out in court. The figures below are per person and indicative, to help you plan. They are not a quote, and the discovery call is free.</p>
         </div>
         <div class="pricing-fold-image-panel" aria-hidden="true">
-          <div class="pricing-fold-img-real"><img src="/images/pricing-fold.jpg" alt="A simple terracotta ceramic piggy bank in soft, warm light, representing resolving a separation affordably and keeping more of what matters." fetchpriority="high"></div>
+          <div class="pricing-fold-img-real"><img src="/images/pricing-fold-piggy.jpg" alt="A simple terracotta ceramic piggy bank in soft, warm light, representing resolving a separation affordably and keeping more of what matters." fetchpriority="high"></div>
         </div>
       </div>
     </div>
@@ -5095,7 +5095,7 @@ PRICING_HTML = """
       </article>
 
       <aside class="sidebar">
-        <div class="path-teaser">
+        <div class="path-teaser path-teaser-grey">
           <div class="path-teaser-eyebrow">The 3-question test</div>
           <h3 class="path-teaser-title">Not sure where your matter would land?</h3>
           <ul class="path-teaser-list">
@@ -5108,7 +5108,7 @@ PRICING_HTML = """
         <div class="sidebar-card">
           <h4>Free discovery call</h4>
           <p>A short, no-obligation conversation with an accredited FDR practitioner. Nothing is decided on the call.</p>
-          <a href="https://calendar.app.google/zwNm4dzYnwAwhwxY8" class="btn-primary">Book a free discovery call</a>
+          <a href="https://calendar.app.google/zwNm4dzYnwAwhwxY8" class="btn-primary">Book a free<br>discovery call</a>
           <a href="tel:0399617544" class="btn-outline">Call (03) 9961 7544</a>
         </div>
         <div class="sidebar-card">

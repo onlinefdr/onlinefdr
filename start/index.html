@@ -105,6 +105,11 @@
     .more-card .mc-d{ font-size:0.9rem; color:var(--mid); }
     .more-card .mc-arrow{ position:absolute; top:18px; right:18px; width:17px; height:17px; color:var(--ochre); transition:transform .18s var(--ease); }
     .more-card:hover .mc-arrow{ transform:translateX(3px); }
+    .more-card-invert{ background:var(--terra); border-color:var(--terra); }
+    .more-card-invert .mc-t{ color:#fff; }
+    .more-card-invert .mc-d{ color:rgba(255,255,255,0.88); }
+    .more-card-invert .mc-arrow{ color:#fff; }
+    .more-card-invert:hover{ border-color:var(--terra); box-shadow:0 12px 30px rgba(168,92,50,0.32); }
     footer{ text-align:center; padding:30px 28px 50px; color:var(--light-mid); font-size:0.82rem; }
     footer .discl{ max-width:660px; margin:0 auto 14px; line-height:1.55; }
     footer a{ color:var(--mid); }
@@ -164,9 +169,9 @@
           <span class="mc-d">What they are, when you need one, and how they are issued.</span>
           <svg class="mc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
-        <a class="more-card" href="/how-it-works/">
-          <span class="mc-t">How it works</span>
-          <span class="mc-d">The discovery call, intake, and how online sessions run.</span>
+        <a class="more-card more-card-invert" href="/pricing/">
+          <span class="mc-t">Fair, transparent pricing</span>
+          <span class="mc-d">What it costs, how pay-as-you-go works, and ways to pay.</span>
           <svg class="mc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
       </div>

@@ -397,6 +397,12 @@ footer { background: var(--charcoal); padding: 64px 0 36px; }
 .path-teaser-q{font-size:0.92rem;font-weight:600;color:var(--charcoal);line-height:1.4}
 .path-teaser-btn{display:block;width:100%;text-align:center;background:var(--terra);color:var(--white);font-family:var(--f);font-size:1rem;font-weight:800;padding:16px 24px;border-radius:10px;text-decoration:none;border:2px solid var(--terra);transition:all 0.2s var(--ease)}
 .path-teaser-btn:hover{background:var(--terra-lt);border-color:var(--terra-lt);transform:translateY(-1px);box-shadow:0 8px 24px rgba(168,92,50,0.3)}
+.path-teaser-grey{background:var(--charcoal);border-color:var(--charcoal)}
+.path-teaser-grey .path-teaser-title{color:#fff}
+.path-teaser-grey .path-teaser-list{border-top-color:rgba(255,255,255,0.14)}
+.path-teaser-grey .path-teaser-item{border-bottom-color:rgba(255,255,255,0.14)}
+.path-teaser-grey .path-teaser-num{border-color:rgba(255,255,255,0.35);color:var(--dust)}
+.path-teaser-grey .path-teaser-q{color:rgba(255,255,255,0.88)}
 
 /* DOWNLOAD COMPONENTS — site-wide pattern, used on Financial Settlements, Parenting, and any future page with downloadable resources */
 .download-row{display:grid;grid-template-columns:1fr auto;gap:32px;align-items:center;background:var(--dust);border:1px solid var(--dust-2);border-radius:10px;padding:28px 32px;margin:32px 0}
@@ -651,7 +657,7 @@ footer { background: var(--charcoal); padding: 64px 0 36px; }
           <p class="page-intro">Family Dispute Resolution is a pay-as-you-go service, not a fixed-price package, charged at $195 an hour including GST. How much, or how little, you pay is largely up to you and your former partner. For most families it is both faster and far more affordable than fighting it out in court. The figures below are per person and indicative, to help you plan. They are not a quote, and the discovery call is free.</p>
         </div>
         <div class="pricing-fold-image-panel" aria-hidden="true">
-          <div class="pricing-fold-img-real"><img src="/images/pricing-fold.jpg" alt="A simple terracotta ceramic piggy bank in soft, warm light, representing resolving a separation affordably and keeping more of what matters." fetchpriority="high"></div>
+          <div class="pricing-fold-img-real"><img src="/images/pricing-fold-piggy.jpg" alt="A simple terracotta ceramic piggy bank in soft, warm light, representing resolving a separation affordably and keeping more of what matters." fetchpriority="high"></div>
         </div>
       </div>
     </div>
@@ -751,7 +757,7 @@ footer { background: var(--charcoal); padding: 64px 0 36px; }
       </article>
 
       <aside class="sidebar">
-        <div class="path-teaser">
+        <div class="path-teaser path-teaser-grey">
           <div class="path-teaser-eyebrow">The 3-question test</div>
           <h3 class="path-teaser-title">Not sure where your matter would land?</h3>
           <ul class="path-teaser-list">
@@ -764,7 +770,7 @@ footer { background: var(--charcoal); padding: 64px 0 36px; }
         <div class="sidebar-card">
           <h4>Free discovery call</h4>
           <p>A short, no-obligation conversation with an accredited FDR practitioner. Nothing is decided on the call.</p>
-          <a href="https://calendar.app.google/zwNm4dzYnwAwhwxY8" class="btn-primary">Book a free discovery call</a>
+          <a href="https://calendar.app.google/zwNm4dzYnwAwhwxY8" class="btn-primary">Book a free<br>discovery call</a>
           <a href="tel:0399617544" class="btn-outline">Call (03) 9961 7544</a>
         </div>
         <div class="sidebar-card">
