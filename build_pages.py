@@ -4684,6 +4684,10 @@ GET_HELP_CSS = """
 .gethelp-disclaimer p{font-size:0.86rem;font-weight:400;color:var(--mid);line-height:1.7;margin:0}
 .gethelp-disclaimer p strong{font-weight:700;color:var(--charcoal)}
 
+.gethelp-furtherreading{font-size:0.88rem;font-weight:400;color:var(--mid);line-height:1.65;margin-top:16px}
+.gethelp-furtherreading a{color:var(--terra);font-weight:600;text-decoration:none}
+.gethelp-furtherreading a:hover{color:var(--charcoal)}
+
 @media(max-width:760px){
   .gethelp-emergency{padding:22px 24px}
   .gethelp-emergency-cta{width:100%;font-size:1.2rem;padding:16px 24px}
@@ -4749,6 +4753,7 @@ GET_HELP_HTML = """
             </div>
 
           </div>
+          <p class="gethelp-furtherreading">Further reading: <a href="/blog/technology-facilitated-abuse-family-violence-australia/">Is technology-facilitated abuse a form of family violence?</a> explains how monitoring and tracking fit into Australian family law, and where to get specialist help.</p>
         </div>
 
         <div class="gethelp-category">

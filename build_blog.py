@@ -72,6 +72,7 @@ CATEGORY_SLUGS = {
 APPROVED_RELATED_PAGES = {
     "/parenting/", "/financial-settlement/", "/section-60i/",
     "/how-it-works/", "/what-is-fdr/", "/about/", "/book/", "/pricing/",
+    "/get-help/",
 }
 
 # Display labels for the related-pages block
@@ -84,6 +85,7 @@ PAGE_LABELS = {
     "/about/": "About the Practice",
     "/book/": "Book a Discovery Call",
     "/pricing/": "Pricing",
+    "/get-help/": "Get Help",
 }
 
 SLUG_PATTERN = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
