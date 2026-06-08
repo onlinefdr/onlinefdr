@@ -4074,7 +4074,7 @@ PRIVACY_HTML = """
           <li>Phone: <a href="tel:0399617544">(03) 9961 7544</a></li>
         </ul>
         <p>If you have a complaint about our handling of your personal information, please contact us in the first instance. If we are unable to resolve your complaint, you may refer it to the Office of the Australian Information Commissioner at <a href="https://www.oaic.gov.au" target="_blank" rel="noopener noreferrer">oaic.gov.au</a>.</p>
-        <p>This policy was last updated in May 2026. We may update it from time to time. The current version will always be available at this address.</p>
+        <p>This policy was last updated in June 2026. We may update it from time to time. The current version will always be available at this address.</p>
         <h2 id="language">Language</h2>
         <p>This policy is published in English, and the English version is the authoritative version. If you read this page using a browser or automated translation, the English text prevails in the event of any inconsistency or ambiguity.</p>
 
@@ -4273,7 +4273,7 @@ TERMS_HTML = """
           <li>Email: <a href="mailto:hello@onlinefdr.com.au">hello@onlinefdr.com.au</a></li>
           <li>Phone: <a href="tel:0399617544">(03) 9961 7544</a></li>
         </ul>
-        <p>These terms were last updated in May 2026. We may update them from time to time. Continued use of our services following any update constitutes acceptance of the revised terms. The current version will always be available at this address.</p>
+        <p>These terms were last updated in June 2026. We may update them from time to time. Continued use of our services following any update constitutes acceptance of the revised terms. The current version will always be available at this address.</p>
         <h2 id="language">Language</h2>
         <p>These terms are published in English, and the English version is the authoritative version. If you read this page using a browser or automated translation, the English text prevails in the event of any inconsistency or ambiguity.</p>
 
