@@ -42,8 +42,10 @@ import json
 import yaml
 import html
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
+from email.utils import format_datetime
 from xml.sax.saxutils import escape as xml_escape
+from PIL import Image
 
 # ─────────────────────────────────────────────────────────────────
 # CONFIG
@@ -55,6 +57,8 @@ OUT_DIR = SITE_ROOT / "blog"
 BASE_CSS_PATH = SITE_ROOT / "base.css"
 BUILD_PAGES_PATH = SITE_ROOT / "build_pages.py"
 SITEMAP_PATH = SITE_ROOT / "sitemap.xml"
+FEED_PATH = SITE_ROOT / "feed.xml"
+LLMS_PATH = SITE_ROOT / "llms.txt"
 
 POSTS_PER_PAGE = 12
 
@@ -89,6 +93,45 @@ PAGE_LABELS = {
 }
 
 SLUG_PATTERN = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
+
+# ─────────────────────────────────────────────────────────────────
+# IMAGE DIMENSION INJECTOR (CLS fix)
+# ─────────────────────────────────────────────────────────────────
+# Inject real intrinsic width/height into every <img> with a local
+# rooted src, read straight from the file on disk. Establishes aspect
+# ratio so the browser reserves space and layout does not shift on load.
+# Tags that already carry width/height are left untouched, and missing
+# files are skipped silently. Future images are covered automatically.
+
+_IMG_DIM_CACHE = {}
+_IMG_TAG_RE = re.compile(r"<img\b[^>]*?>", re.IGNORECASE)
+
+
+def _img_dims(src):
+    path = SITE_ROOT / src.lstrip("/")
+    key = str(path)
+    if key not in _IMG_DIM_CACHE:
+        try:
+            with Image.open(path) as im:
+                _IMG_DIM_CACHE[key] = im.size
+        except Exception:
+            _IMG_DIM_CACHE[key] = None
+    return _IMG_DIM_CACHE[key]
+
+
+def inject_img_dims(page_html):
+    def repl(m):
+        tag = m.group(0)
+        if re.search(r"\b(width|height)\s*=", tag):
+            return tag
+        ms = re.search(r'\bsrc\s*=\s*"([^"]+)"', tag)
+        if not ms or not ms.group(1).startswith("/"):
+            return tag
+        wh = _img_dims(ms.group(1))
+        if not wh:
+            return tag
+        return tag[:4] + f' width="{wh[0]}" height="{wh[1]}"' + tag[4:]
+    return _IMG_TAG_RE.sub(repl, page_html)
 
 # ─────────────────────────────────────────────────────────────────
 # SHELL IMPORT
@@ -207,6 +250,8 @@ BLOG_CSS = """
 .post-header h1{font-size:clamp(2rem,4.5vw,3.4rem);font-weight:800;line-height:1.1;letter-spacing:-0.02em;color:var(--white);margin-bottom:20px;text-wrap:balance}
 .post-meta{display:flex;align-items:center;gap:16px;flex-wrap:wrap;color:rgba(253,250,246,0.55);font-size:0.84rem;font-weight:500}
 .post-meta-sep{opacity:0.4}
+.post-reviewed{margin-top:14px;display:inline-flex;align-items:center;gap:7px;color:rgba(253,250,246,0.6);font-size:0.78rem;font-weight:600}
+.post-reviewed svg{width:14px;height:14px;color:var(--ochre);flex-shrink:0}
 
 .post-hero-image{max-width:880px;margin:0 auto;padding:0 var(--pad);transform:translateY(-32px)}
 .post-hero-image-inner{aspect-ratio:21/9;border-radius:12px;overflow:hidden;background:var(--dust-2);border:1px solid var(--dust-3);position:relative}
@@ -463,6 +508,23 @@ def parse_post(path):
     else:
         raise ValidationError(f"{path.name}: date must be YYYY-MM-DD")
 
+    # updated (OPTIONAL) — date of the last SUBSTANTIVE content revision.
+    # Drives the visible "Last updated" line and schema dateModified. Absent
+    # until a post is genuinely revised, so dateModified equals datePublished
+    # by default and no false freshness signal is emitted. Must be >= date.
+    if meta.get("updated"):
+        if isinstance(meta["updated"], str):
+            try:
+                meta["updated"] = datetime.strptime(meta["updated"], "%Y-%m-%d").date()
+            except ValueError:
+                raise ValidationError(f"{path.name}: updated '{meta['updated']}' not ISO YYYY-MM-DD")
+        elif not hasattr(meta["updated"], "isoformat"):
+            raise ValidationError(f"{path.name}: updated must be YYYY-MM-DD")
+        if meta["updated"] < meta["date"]:
+            raise ValidationError(f"{path.name}: updated ({meta['updated']}) is before date ({meta['date']})")
+    else:
+        meta["updated"] = None
+
     if not isinstance(meta["related_pages"], list) or not (1 <= len(meta["related_pages"]) <= 2):
         raise ValidationError(f"{path.name}: related_pages must be a list of 1-2 entries")
 
@@ -598,7 +660,9 @@ def load_all_posts():
 # ─────────────────────────────────────────────────────────────────
 
 def shell(title, meta_desc, canonical, schema_json, page_html, current_page=None,
-          extra_css="", robots="index, follow", show_marquee=True):
+          extra_css="", robots="index, follow", show_marquee=True,
+          og_image="https://onlinefdr.com.au/images/og-default.jpg",
+          og_w=1200, og_h=630):
     """Render a full HTML page using the site shell + blog CSS."""
     nav_links = SHELL["NAV_LINKS"]
     if current_page:
@@ -641,11 +705,12 @@ def shell(title, meta_desc, canonical, schema_json, page_html, current_page=None
   <meta property="og:url" content="https://onlinefdr.com.au{canonical}">
   <meta property="og:site_name" content="onlinefdr.com.au">
   <meta property="og:locale" content="en_AU">
-  <meta property="og:image" content="https://onlinefdr.com.au/images/og-default.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+  <meta property="og:image" content="{og_image}">
+  <meta property="og:image:width" content="{og_w}">
+  <meta property="og:image:height" content="{og_h}">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://onlinefdr.com.au/images/og-default.jpg">
+  <meta name="twitter:image" content="{og_image}">
+  <link rel="alternate" type="application/rss+xml" title="onlinefdr.com.au blog" href="https://onlinefdr.com.au/feed.xml">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
@@ -897,6 +962,13 @@ def render_post_page(post):
     else:
         tldr_block = ""
 
+    # Visible "Last updated" line, only when the post has a real revision date
+    if post.get("updated") and post["updated"] != post["date"]:
+        updated_meta = (f'\n      <span class="post-meta-sep">·</span>'
+                        f'\n      <span>Last updated {fmt_date(post["updated"])}</span>')
+    else:
+        updated_meta = ""
+
     page_html = f"""<header class="post-header">
   <div class="post-header-inner">
     <a href="/blog/category/{cat_slug}/" class="post-cat-pill">{cat}</a>
@@ -904,8 +976,9 @@ def render_post_page(post):
     <div class="post-meta">
       <span>{fmt_date(post['date'])}</span>
       <span class="post-meta-sep">·</span>
-      <span>{post['reading_time']} min read</span>
+      <span>{post['reading_time']} min read</span>{updated_meta}
     </div>
+    <p class="post-reviewed"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 4.5-3.2 7.5-8 9-4.8-1.5-8-4.5-8-9V7l8-4z"/><path d="M9 12l2 2 4-4"/></svg>Reviewed by an AGD-accredited FDR practitioner (Reg. No. F2003011)</p>
   </div>
 </header>
 
@@ -940,13 +1013,22 @@ def render_post_page(post):
     # so a title containing " produced invalid JSON-LD (Search Console parsing
     # error "Missing ',' or '}'").
     iso_date = post["date"].isoformat()
+    iso_modified = (post["updated"] or post["date"]).isoformat()
+    if post.get("hero_image"):
+        post_og_image = f"https://onlinefdr.com.au/blog/images/{post['hero_image']}"
+        _hd = _img_dims(f"/blog/images/{post['hero_image']}")
+        post_og_w, post_og_h = _hd if _hd else (1200, 630)
+    else:
+        post_og_image = "https://onlinefdr.com.au/images/og-default.jpg"
+        post_og_w, post_og_h = 1200, 630
     schema_obj = {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": post["title"],
         "description": post["meta_description"],
+        "image": post_og_image,
         "datePublished": iso_date,
-        "dateModified": iso_date,
+        "dateModified": iso_modified,
         "author": {"@type": "Organization", "name": "onlinefdr.com.au", "url": "https://onlinefdr.com.au/"},
         "publisher": {"@type": "Organization", "name": "onlinefdr.com.au", "url": "https://onlinefdr.com.au/", "logo": {"@type": "ImageObject", "url": "https://onlinefdr.com.au/images/og-default.jpg"}},
         "mainEntityOfPage": {"@type": "WebPage", "@id": f"https://onlinefdr.com.au{canonical}"},
@@ -972,6 +1054,9 @@ def render_post_page(post):
         schema_json=schema,
         page_html=page_html,
         show_marquee=False,
+        og_image=post_og_image,
+        og_w=post_og_w,
+        og_h=post_og_h,
     )
 
 
@@ -980,54 +1065,71 @@ def render_post_page(post):
 # ─────────────────────────────────────────────────────────────────
 
 def update_sitemap(posts):
-    """Rewrite sitemap.xml to include /blog/, category pages, and posts."""
+    """Rewrite sitemap.xml to include /blog/, category pages, and posts.
+
+    lastmod discipline: static pages carry an EXPLICIT per-page date that only
+    moves when that page's content actually changes, not on every shell rebuild
+    (the previous datetime.now() stamp restamped all 19 URLs on any footer or
+    chrome edit, which trains crawlers to ignore lastmod). Blog index and
+    category pages track the newest post date (their content changes when their
+    newest member does). Posts use their own published/updated date.
+    """
+    # (path, priority, content_lastmod). Bump the date ONLY on a real content
+    # change to that page. Pages edited 2026-06-11: meta descriptions and the
+    # further-reading modules. about/locations/book/get-help had only the
+    # technical width/height pass, so they keep their prior content date.
     static_entries = [
-        ("/", "1.0"),
-        ("/about/", "0.8"),
-        ("/what-is-fdr/", "0.8"),
-        ("/how-it-works/", "0.8"),
-        ("/parenting/", "0.9"),
-        ("/financial-settlement/", "0.9"),
-        ("/section-60i/", "0.9"),
-        ("/pricing/", "0.9"),
-        ("/faq/", "0.7"),
-        ("/locations/", "0.7"),
-        ("/book/", "0.9"),
-        ("/get-help/", "0.6"),
+        ("/", "1.0", "2026-06-11"),
+        ("/about/", "0.8", "2026-06-10"),
+        ("/what-is-fdr/", "0.8", "2026-06-11"),
+        ("/how-it-works/", "0.8", "2026-06-11"),
+        ("/parenting/", "0.9", "2026-06-11"),
+        ("/financial-settlement/", "0.9", "2026-06-11"),
+        ("/section-60i/", "0.9", "2026-06-11"),
+        ("/pricing/", "0.9", "2026-06-11"),
+        ("/faq/", "0.7", "2026-06-11"),
+        ("/locations/", "0.7", "2026-06-10"),
+        ("/book/", "0.9", "2026-06-10"),
+        ("/get-help/", "0.6", "2026-06-10"),
         # Noindex pages (join-the-team, privacy, terms, complaints) intentionally excluded from the sitemap
     ]
 
-    today = datetime.now().date().isoformat()
+    # Newest post date drives the blog index and category page freshness.
+    def post_mod(p):
+        return p["updated"] or p["date"]
+    newest = max((post_mod(p) for p in posts), default=datetime.now().date()).isoformat()
 
     urls = []
-    for path, priority in static_entries:
+    for path, priority, lastmod in static_entries:
         urls.append(f"""  <url>
     <loc>https://onlinefdr.com.au{path}</loc>
-    <lastmod>{today}</lastmod>
+    <lastmod>{lastmod}</lastmod>
     <priority>{priority}</priority>
   </url>""")
 
     # Blog index
     urls.append(f"""  <url>
     <loc>https://onlinefdr.com.au/blog/</loc>
-    <lastmod>{today}</lastmod>
+    <lastmod>{newest}</lastmod>
     <priority>0.8</priority>
   </url>""")
 
-    # Category pages
+    # Category pages — newest post within each category
     for cat in CATEGORIES:
         slug = CATEGORY_SLUGS[cat]
+        cat_dates = [post_mod(p) for p in posts if p["category"] == cat]
+        cat_mod = max(cat_dates).isoformat() if cat_dates else newest
         urls.append(f"""  <url>
     <loc>https://onlinefdr.com.au/blog/category/{slug}/</loc>
-    <lastmod>{today}</lastmod>
+    <lastmod>{cat_mod}</lastmod>
     <priority>0.6</priority>
   </url>""")
 
-    # Posts
+    # Posts — published date, or updated date if the post was revised
     for post in posts:
         urls.append(f"""  <url>
     <loc>https://onlinefdr.com.au/blog/{post['slug']}/</loc>
-    <lastmod>{post['date'].isoformat()}</lastmod>
+    <lastmod>{post_mod(post).isoformat()}</lastmod>
     <priority>0.7</priority>
   </url>""")
 
@@ -1042,6 +1144,111 @@ def update_sitemap(posts):
 
 
 # ─────────────────────────────────────────────────────────────────
+# RSS FEED + llms.txt
+# ─────────────────────────────────────────────────────────────────
+
+AEST = timezone(timedelta(hours=10))  # Australian Eastern Standard, fixed for stable pubDate
+
+
+def _ordered_for_feeds(posts):
+    """Newest-first by modified-or-published date."""
+    return sorted(posts, key=lambda p: (p["updated"] or p["date"]), reverse=True)
+
+
+def write_feed(posts):
+    """Emit an RSS 2.0 feed at /feed.xml. lastBuildDate tracks the newest post
+    so the feed is deterministic and does not signal false freshness on rebuild."""
+    ordered = _ordered_for_feeds(posts)
+    if ordered:
+        newest = ordered[0]["updated"] or ordered[0]["date"]
+        last_build = format_datetime(datetime(newest.year, newest.month, newest.day, 9, 0, 0, tzinfo=AEST))
+    else:
+        last_build = format_datetime(datetime.now(AEST))
+
+    items = []
+    for p in ordered:
+        d = p["updated"] or p["date"]
+        pub = format_datetime(datetime(d.year, d.month, d.day, 9, 0, 0, tzinfo=AEST))
+        url = f"https://onlinefdr.com.au/blog/{p['slug']}/"
+        items.append(f"""    <item>
+      <title>{xml_escape(p['title'])}</title>
+      <link>{url}</link>
+      <guid isPermaLink="true">{url}</guid>
+      <category>{xml_escape(p['category'])}</category>
+      <pubDate>{pub}</pubDate>
+      <description>{xml_escape(p['meta_description'])}</description>
+    </item>""")
+
+    xml = f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>onlinefdr.com.au blog</title>
+    <link>https://onlinefdr.com.au/blog/</link>
+    <atom:link href="https://onlinefdr.com.au/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>Plain-language, statute-accurate guidance on Family Dispute Resolution, parenting, and property settlement under the Family Law Act 1975.</description>
+    <language>en-AU</language>
+    <lastBuildDate>{last_build}</lastBuildDate>
+{chr(10).join(items)}
+  </channel>
+</rss>
+"""
+    with open(FEED_PATH, "w") as f:
+        f.write(xml)
+    print(f"  RSS feed rebuilt: {len(ordered)} items")
+
+
+LLMS_CORE_PAGES = [
+    ("/what-is-fdr/", "What Family Dispute Resolution is and how it works under the Family Law Act 1975."),
+    ("/how-it-works/", "The online FDR process step by step, from discovery call to certificate."),
+    ("/parenting/", "Parenting Plans, Consent Orders, and the best-interests framework after the 2024 reforms."),
+    ("/financial-settlement/", "How property, superannuation, and debt are divided after separation."),
+    ("/section-60i/", "What a Section 60I certificate is, who issues it, and when a parenting application needs one."),
+    ("/pricing/", "Indicative per-person cost bands on a pay-as-you-go basis."),
+    ("/faq/", "Plain answers to common questions about FDR, parenting, and financial matters."),
+    ("/book/", "Book a free 15-minute discovery call to check whether FDR is the right path."),
+]
+
+
+def write_llms(posts):
+    """Emit /llms.txt: a plain-text map of the site for LLM crawlers, on-thesis
+    with the AEO strategy. Rebuilt each run so the post index stays current."""
+    lines = [
+        "# onlinefdr.com.au",
+        "",
+        "> Accredited online Family Dispute Resolution (FDR) for separating families "
+        "across Australia. Plain-language, statute-accurate guidance on parenting "
+        "arrangements, property settlement, spousal maintenance, and Section 60I "
+        "certificates under the Family Law Act 1975. The practice runs confidential "
+        "shuttle mediation online and issues Section 60I certificates for parenting matters.",
+        "",
+        "## Core pages",
+    ]
+    for path, desc in LLMS_CORE_PAGES:
+        # derive a label from the path
+        label = {
+            "/what-is-fdr/": "What is FDR?",
+            "/how-it-works/": "How it works",
+            "/parenting/": "Parenting",
+            "/financial-settlement/": "Financial settlement",
+            "/section-60i/": "Section 60I certificates",
+            "/pricing/": "Pricing",
+            "/faq/": "FAQ",
+            "/book/": "Book a discovery call",
+        }[path]
+        lines.append(f"- [{label}](https://onlinefdr.com.au{path}): {desc}")
+
+    lines += ["", "## Blog", ""]
+    for p in _ordered_for_feeds(posts):
+        url = f"https://onlinefdr.com.au/blog/{p['slug']}/"
+        lines.append(f"- [{p['title']}]({url}): {p['meta_description']}")
+
+    lines.append("")
+    with open(LLMS_PATH, "w") as f:
+        f.write("\n".join(lines))
+    print(f"  llms.txt rebuilt: {len(LLMS_CORE_PAGES)} core pages + {len(posts)} posts")
+
+
+# ─────────────────────────────────────────────────────────────────
 # BUILD ORCHESTRATION
 # ─────────────────────────────────────────────────────────────────
 
@@ -1053,7 +1260,7 @@ def write_page(html_content, *path_parts):
     target_dir.mkdir(parents=True, exist_ok=True)
     target = target_dir / "index.html"
     with open(target, "w") as f:
-        f.write(html_content)
+        f.write(inject_img_dims(html_content))
     rel = target.relative_to(SITE_ROOT)
     print(f"  Wrote {rel}")
 
@@ -1113,6 +1320,11 @@ def build():
     # ── Sitemap ──
     print("\nUpdating sitemap.xml...")
     update_sitemap(posts)
+
+    # ── RSS feed + llms.txt ──
+    print("\nWriting feeds...")
+    write_feed(posts)
+    write_llms(posts)
 
     print("\nDone.")
 

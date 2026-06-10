@@ -38,6 +38,51 @@ Stat tiles use a consistent two-tone treatment everywhere they appear
       at the smaller .text size. No tail to colour.
 """
 
+import re
+from pathlib import Path
+from PIL import Image
+
+SITE_ROOT = Path(__file__).resolve().parent
+
+# ─────────────────────────────────────────────────────────────────
+# IMAGE DIMENSION INJECTOR (CLS fix)
+# ─────────────────────────────────────────────────────────────────
+# Inject real intrinsic width/height into every <img> with a local rooted
+# src, read straight from the file on disk, so the browser reserves space
+# and layout does not shift on load. Tags already carrying width/height are
+# left untouched; missing files are skipped. Covers future images too.
+
+_IMG_DIM_CACHE = {}
+_IMG_TAG_RE = re.compile(r"<img\b[^>]*?>", re.IGNORECASE)
+
+
+def _img_dims(src):
+    path = SITE_ROOT / src.lstrip("/")
+    key = str(path)
+    if key not in _IMG_DIM_CACHE:
+        try:
+            with Image.open(path) as im:
+                _IMG_DIM_CACHE[key] = im.size
+        except Exception:
+            _IMG_DIM_CACHE[key] = None
+    return _IMG_DIM_CACHE[key]
+
+
+def inject_img_dims(page_html):
+    def repl(m):
+        tag = m.group(0)
+        if re.search(r"\b(width|height)\s*=", tag):
+            return tag
+        ms = re.search(r'\bsrc\s*=\s*"([^"]+)"', tag)
+        if not ms or not ms.group(1).startswith("/"):
+            return tag
+        wh = _img_dims(ms.group(1))
+        if not wh:
+            return tag
+        return tag[:4] + f' width="{wh[0]}" height="{wh[1]}"' + tag[4:]
+    return _IMG_TAG_RE.sub(repl, page_html)
+
+
 with open('/home/claude/base.css') as f:
     BASE_CSS = f.read()
 
@@ -357,7 +402,7 @@ def build_page(
 </html>"""
     out = f"/home/claude/{filename}"
     with open(out, 'w') as f:
-        f.write(html)
+        f.write(inject_img_dims(html))
     lines = html.count('\n')
     print(f"  Built {filename}: {lines} lines")
     return out
@@ -876,7 +921,7 @@ HOME_SCHEMA = '{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@i
 build_page(
     filename="home-v2.html",
     title="Accredited Online Family Dispute Resolution Australia",
-    meta_desc="Accredited Online Family Dispute Resolution in Australia. Parenting matters, financial settlement, and Section 60I certificates. Available nationally, conducted online.",
+    meta_desc="Accredited online Family Dispute Resolution in Australia. Parenting, financial settlement, and Section 60I certificates. Available nationally, online.",
     canonical="/",
     current_page="/",
     schema_json=HOME_SCHEMA,
@@ -1491,6 +1536,15 @@ PO_HTML = """
             <li><a href="/financial-settlement/">Financial settlement <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
           </ul>
         </div>
+        <div class="sidebar-card">
+          <h4>Further reading</h4>
+          <ul class="related-links">
+            <li><a href="/blog/best-interests-of-the-child-section-60cc-2024-amendments/">How best interests works after 2024 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
+            <li><a href="/blog/can-you-change-final-parenting-orders-australia/">Changing final parenting orders <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
+            <li><a href="/blog/at-what-age-can-child-decide-which-parent-live-with-australia/">At what age can a child decide? <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
+            <li><a href="/blog/child-says-does-not-want-go-other-parents-house/">When a child won't go <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
+          </ul>
+        </div>
       </aside>
     </div>
   </div>
@@ -1547,7 +1601,7 @@ PO_CSS = """
 build_page(
     filename="parenting-v2.html",
     title="Parenting Arrangements After Separation | onlinefdr.com.au",
-    meta_desc="Three paths for parenting arrangements under the Family Law Act: Parenting Plan, Consent Orders, and contested Parenting Orders. With the 2024 best-interests framework.",
+    meta_desc="Three paths for parenting under the Family Law Act: Parenting Plan, Consent Orders, and contested Parenting Orders, with the 2024 best-interests test.",
     canonical="/parenting/",
     current_page="/parenting/",
     schema_json='{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://onlinefdr.com.au/parenting/#webpage","url":"https://onlinefdr.com.au/parenting/","name":"Parenting arrangements after separation in Australia","description":"Three paths for parenting arrangements after separation under the Family Law Act: Parenting Plan, Consent Orders, and contested Parenting Orders. The 2024 amendments to section 60CC and the best-interests framework. Recovery orders, contravention, changing arrangements, and the role of grandparents and other significant persons.","about":{"@id":"https://onlinefdr.com.au/#organization"},"mainEntity":{"@id":"https://onlinefdr.com.au/parenting/#faq"}},{"@type":"FAQPage","@id":"https://onlinefdr.com.au/parenting/#faq","mainEntity":[{"@type":"Question","name":"What is the difference between a Parenting Plan and Consent Orders?","acceptedAnswer":{"@type":"Answer","text":"A Parenting Plan is a written agreement between parents that is not court-approved and is not legally enforceable. Consent Orders are court orders made by agreement, approved by the Federal Circuit and Family Court, and have the same legal force as orders made after a contested hearing. Parenting Plans are more flexible and easier to change. Consent Orders are more rigid and harder to change, but they are enforceable."}},{"@type":"Question","name":"If we have Consent Orders, can the police enforce them automatically?","acceptedAnswer":{"@type":"Answer","text":"No. State or territory police have no automatic power over parenting orders. If the other parent withholds the child in breach of Consent Orders, you must apply to the court for a contravention order, and separately for a recovery order if you need the child physically returned. Having Consent Orders in place makes this process faster than starting from a Parenting Plan, but the orders themselves do not function as a recovery instrument."}},{"@type":"Question","name":"Can we change our Parenting Plan as the children grow?","acceptedAnswer":{"@type":"Answer","text":"Yes. This is one of the main practical advantages of a Parenting Plan. As long as both parents agree, you can update or replace the plan at any time with a new written agreement that is signed and dated. No court application, no fee, no significant-change-in-circumstances threshold. This flexibility is the reason most amicable separations stay at the Parenting Plan level."}},{"@type":"Question","name":"Can we change Consent Orders if we both agree?","acceptedAnswer":{"@type":"Answer","text":"Yes. Where both parents agree to a change, new Consent Orders can be applied for, or in some cases a Parenting Plan can vary the Consent Orders. The significant-change-in-circumstances threshold applies where one parent wants to change the orders without the other parent\'s agreement. Where both agree, the change is straightforward."}},{"@type":"Question","name":"Do we still need to attempt FDR if we already agree?","acceptedAnswer":{"@type":"Answer","text":"If you are agreeing privately to a Parenting Plan, there is no requirement to involve an FDR practitioner. If you are applying for Consent Orders, FDR is not required because the matter is not in dispute. FDR is the step the law expects before applying for contested parenting orders, with limited exemptions for family violence, urgent matters, and a few other circumstances."}},{"@type":"Question","name":"Do de facto parents have the same rights as married parents in parenting matters?","acceptedAnswer":{"@type":"Answer","text":"Yes. The Family Law Act applies equally to all parents in parenting matters, regardless of marital status. Married, divorced, separated, and de facto parents all have the same rights and obligations in relation to their children. The same three paths apply (Parenting Plan, Consent Orders, contested orders), the same best-interests framework in section 60CC applies, and Section 60I certificates are required in the same circumstances before applying for contested parenting orders."}},{"@type":"Question","name":"Can grandparents apply for parenting orders?","acceptedAnswer":{"@type":"Answer","text":"Yes. Section 65C of the Family Law Act expressly gives grandparents standing to apply for parenting orders, alongside any other person concerned with the care, welfare, or development of the child. The court applies the same best-interests framework regardless of whether the applicant is a parent, a grandparent, a step-parent, or another significant person. Grandparents who have been substantially involved in raising a child can also be included in a Parenting Plan or Consent Orders by agreement."}},{"@type":"Question","name":"Do I need a lawyer to apply for parenting orders?","acceptedAnswer":{"@type":"Answer","text":"Not legally required, but strongly recommended. Parenting order proceedings are procedurally complex and the consequences are significant. Even for Consent Orders, getting legal advice on the proposed terms before signing is sensible. For contested proceedings, legal representation is close to essential. Legal Aid may be available depending on your circumstances and state or territory."}}]}]}',
@@ -1742,6 +1796,15 @@ FS_HTML = """
             <li><a href="/section-60i/">Section 60I certificates <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
             <li><a href="/parenting/">Parenting <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
             <li><a href="/what-is-fdr/">What is FDR <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
+          </ul>
+        </div>
+        <div class="sidebar-card">
+          <h4>Further reading</h4>
+          <ul class="related-links">
+            <li><a href="/blog/duty-of-disclosure-financial-settlement-australia/">The duty of disclosure <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
+            <li><a href="/blog/superannuation-splitting-after-separation-australia/">How superannuation splitting works <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
+            <li><a href="/blog/spousal-maintenance-after-separation-australia/">Spousal maintenance after separation <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
+            <li><a href="/blog/family-violence-property-settlement-australia/">Family violence and property <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
           </ul>
         </div>
       </aside>
@@ -1973,6 +2036,15 @@ S60I_HTML = """
             <li><a href="/parenting/">Parenting <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
             <li><a href="/financial-settlement/">Financial settlements <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
             <li><a href="/what-is-fdr/">What is FDR <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
+          </ul>
+        </div>
+        <div class="sidebar-card">
+          <h4>Further reading</h4>
+          <ul class="related-links">
+            <li><a href="/blog/section-60i-certificate-vs-genuine-steps-certificate/">Section 60I vs Genuine Steps <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
+            <li><a href="/blog/genuine-effort-family-dispute-resolution/">What 'genuine effort' means <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
+            <li><a href="/blog/ex-breaks-parenting-order-mediation-australia/">If your ex breaks an order <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
+            <li><a href="/blog/grandparents-rights-see-grandchildren-australia/">Grandparents' rights <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
           </ul>
         </div>
       </aside>
@@ -2737,7 +2809,7 @@ HIW_HTML = """
 build_page(
     filename="how-it-works-v2.html",
     title="How Online FDR Works | onlinefdr.com.au",
-    meta_desc="A plain-language walkthrough of the online FDR process. Discovery call, intake sessions, joint mediation, typical timeframes, and what to expect from start to finish.",
+    meta_desc="A plain-language walkthrough of the online FDR process: discovery call, intake, joint mediation, typical timeframes, and what to expect from start to finish.",
     canonical="/how-it-works/",
     current_page="/how-it-works/",
     schema_json='{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://onlinefdr.com.au/how-it-works/#webpage","url":"https://onlinefdr.com.au/how-it-works/","name":"How Online FDR Works","description":"Step-by-step walkthrough of the online Family Dispute Resolution process: discovery call, individual intake, joint sessions for parenting (four hours) and financial matters (three hours), typical timeframes, shuttle mediation, and what to expect from start to finish.","about":{"@id":"https://onlinefdr.com.au/#organization"},"mainEntity":{"@id":"https://onlinefdr.com.au/how-it-works/#faq"}},{"@type":"FAQPage","@id":"https://onlinefdr.com.au/how-it-works/#faq","mainEntity":[{"@type":"Question","name":"Do both parties have to agree to participate?","acceptedAnswer":{"@type":"Answer","text":"Yes. FDR requires the genuine participation of both parties. We cannot compel participation. If the other party declines to attend, a Section 60I certificate under paragraph 60I(8)(a) can be issued reflecting their non-attendance, which allows the matter to proceed to court for parenting orders. If only one party contacts us, we will explain the process and suggest ways to approach the other party about participating."}},{"@type":"Question","name":"Can I have a lawyer present during sessions?","acceptedAnswer":{"@type":"Answer","text":"Generally, lawyers do not attend FDR sessions. You are encouraged to seek legal advice before and after sessions, and to consult a lawyer before signing any agreement. Having lawyers present in sessions tends to change the dynamic in ways that can make agreement harder to reach, not easier. If you have specific concerns about this, raise them in the discovery call."}},{"@type":"Question","name":"What if we cannot agree on everything?","acceptedAnswer":{"@type":"Answer","text":"Partial agreement is a real and useful outcome. Any agreements reached during the process can be recorded in a Parenting Plan or heads of agreement. For matters that need to proceed to court on the remaining issues, parties can request a Section 60I certificate that allows the parenting matter to be filed. Court then deals only with what remains in dispute, not with the matters already settled in FDR."}},{"@type":"Question","name":"What financial documents do I need to prepare?","acceptedAnswer":{"@type":"Answer","text":"For financial settlement, both parties complete the Full and Frank Disclosure worksheet ahead of the first joint financial session. The worksheet covers income, assets, liabilities, superannuation, financial resources, and any property disposals since separation. Supporting documents include three years of tax returns, twelve months of bank and credit card statements, recent superannuation statements, and statements for any loans or mortgages. The duty of full and frank disclosure is now a statutory obligation under sections 71B and 90RI of the Family Law Act. The worksheet is provided to you at the intake session."}},{"@type":"Question","name":"How quickly can we start?","acceptedAnswer":{"@type":"Answer","text":"Discovery calls are typically available within a few days of enquiry. Intake sessions follow shortly after. For most matters, the first joint session can be scheduled within two weeks of initial contact. This is significantly faster than government FDR services in most areas, where waiting times can run to several months."}},{"@type":"Question","name":"How long does a typical matter take from start to finish?","acceptedAnswer":{"@type":"Answer","text":"For most matters, the full process runs from first contact to final agreement in a matter of weeks rather than months. Discovery call within a few days, intake sessions within a week or two, joint sessions in the weeks following. Most matters that need more than one joint session resolve in two to three joint sessions in total. Higher-conflict matters can take longer but still run significantly faster than the 18 to 36 month timeline for contested family law proceedings."}}]}]}',
@@ -3128,6 +3200,15 @@ WIFDR_HTML = """
               <li><a href="/faq/"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>FAQ</a></li>
             </ul>
           </nav>
+        <div class="sidebar-card">
+          <h4>Further reading</h4>
+          <ul class="related-links">
+            <li><a href="/blog/genuine-effort-family-dispute-resolution/">What 'genuine effort' means <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
+            <li><a href="/blog/section-60i-certificate-vs-genuine-steps-certificate/">Section 60I vs Genuine Steps <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
+            <li><a href="/blog/family-dispute-resolution-in-your-language-australia/">FDR in your language <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
+            <li><a href="/blog/ex-breaks-parenting-order-mediation-australia/">If your ex breaks an order <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
+          </ul>
+        </div>
         </aside>
       </div>
     </div>
@@ -3173,7 +3254,7 @@ WIFDR_HTML = """
 build_page(
     filename="what-is-fdr-v2.html",
     title="What is Family Dispute Resolution? | onlinefdr.com.au",
-    meta_desc="Family Dispute Resolution explained for separating couples in Australia. What FDR is under the Family Law Act 1975, how it works, and the confidentiality protections.",
+    meta_desc="Family Dispute Resolution explained for separating Australians: what FDR is under the Family Law Act 1975, how it works, and how confidentiality applies.",
     canonical="/what-is-fdr/",
     current_page="/what-is-fdr/",
     schema_json='{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://onlinefdr.com.au/what-is-fdr/#webpage","url":"https://onlinefdr.com.au/what-is-fdr/","name":"What is Family Dispute Resolution? FDR explained for separating couples in Australia","description":"Family Dispute Resolution explained: a structured mediation process under the Family Law Act 1975 for separating couples in Australia. Covers what FDR is, how a typical engagement works, the statutory confidentiality and inadmissibility protections, the 2024 and 2025 legislative updates, and where FDR fits in the family law system.","about":{"@id":"https://onlinefdr.com.au/#organization"},"mainEntity":{"@id":"https://onlinefdr.com.au/what-is-fdr/#faq"}},{"@type":"FAQPage","@id":"https://onlinefdr.com.au/what-is-fdr/#faq","mainEntity":[{"@type":"Question","name":"Is FDR the same as mediation?","acceptedAnswer":{"@type":"Answer","text":"FDR is a form of mediation, but not all mediation is FDR. Family Dispute Resolution is a specific legal term under the Family Law Act, conducted by an accredited practitioner registered with the AGD. Only an accredited FDRP can issue a Section 60I certificate, and the statutory confidentiality and inadmissibility protections under sections 10H and 10J apply specifically to FDR. A general mediator without this accreditation cannot provide the legal outcomes that family law requires."}},{"@type":"Question","name":"How is FDR different from family counselling?","acceptedAnswer":{"@type":"Answer","text":"Family counselling focuses on relationship dynamics, communication, and emotional adjustment, with a therapeutic goal. FDR is a structured dispute resolution process aimed at reaching practical agreements on parenting or financial matters. The two can be complementary, but they are different professions with different goals. FDR practitioners are accredited under the Family Law Act; family counsellors are accredited separately."}},{"@type":"Question","name":"Can FDR be done online?","acceptedAnswer":{"@type":"Answer","text":"Yes. Online FDR is a recognised mode of conducting Family Dispute Resolution under the Family Law Act. The statutory protections and the certificate-issuing process apply equally whether the practitioner meets parties in person or via video conference. Online FDR is particularly useful for parties in different locations, for matters involving safety concerns where physical separation is preferred, and for parties who would otherwise face significant travel or scheduling barriers."}},{"@type":"Question","name":"Do I need a lawyer before doing FDR?","acceptedAnswer":{"@type":"Answer","text":"You do not need a lawyer to participate in FDR. Seeking legal advice before signing any agreement is sensible, so you understand what you are agreeing to. Lawyers do not typically attend FDR sessions. Their role is to advise, not to participate in the mediation itself."}},{"@type":"Question","name":"Who pays for FDR?","acceptedAnswer":{"@type":"Answer","text":"Each party typically pays their own share of the FDR practitioner\'s fee. The precise arrangement is set out at intake. We work pay-as-you-go rather than charging a fixed fee, so what you spend depends on how the matter runs, and it is a fraction of the cost of contested court proceedings. The discovery call is the right place to discuss what makes sense for your circumstances."}},{"@type":"Question","name":"What is the difference between FDR and a parenting plan?","acceptedAnswer":{"@type":"Answer","text":"They are different things. FDR is the process. A parenting plan is one of the documents that can come out of the process. A parenting plan is a written agreement between parents about parenting arrangements, signed and dated by both parents. It is not legally enforceable in the same way as a court order, but courts give it significant weight if a parenting matter later comes before them. The other typical FDR outputs are the basis for consent orders, a heads of agreement for financial matters, or a Section 60I certificate where no agreement was reached."}},{"@type":"Question","name":"What if there has been family violence?","acceptedAnswer":{"@type":"Answer","text":"A history of family violence does not automatically make FDR inappropriate, but it does require careful assessment. The Family Law Amendment Act 2024, in force from 10 June 2025, expanded the definition of family violence in section 4AB to expressly include economic and financial abuse. Safety is evaluated as part of the intake process. Where genuine risk is identified, shuttle mediation or an exemption from the FDR requirement may apply. If you have concerns about your safety, raise them during the discovery call. Everything discussed is confidential."}},{"@type":"Question","name":"Can FDR cover both parenting and financial matters?","acceptedAnswer":{"@type":"Answer","text":"Yes. Most couples with children need to resolve both parenting arrangements and financial settlement. These are typically addressed in separate sessions, since they involve different legal frameworks and different preparation requirements. Parenting is often addressed first, as the arrangements for children are usually the most pressing concern. Financial matters follow, or can run concurrently depending on the circumstances."}},{"@type":"Question","name":"What happens if FDR does not result in agreement?","acceptedAnswer":{"@type":"Answer","text":"If agreement is not reached, parties can request a Section 60I certificate, which documents what occurred in the process. The certificate type reflects the practitioner\'s professional assessment of what happened, including whether each party attended and whether each made a genuine effort. The certificate allows the matter to proceed to court for parenting orders. Any agreements reached on particular issues during the process can be recorded separately, often in a parenting plan or heads of agreement."}}]}]}',
@@ -3595,7 +3676,7 @@ FAQ_HTML = f"""
 build_page(
     filename="faq-v2.html",
     title="FAQ | Family Dispute Resolution Questions | onlinefdr.com.au",
-    meta_desc="Plain answers to every question separating couples ask about FDR. Parenting, financial settlement, Section 60I certificates, online sessions, accreditation, and more.",
+    meta_desc="Plain answers to the questions separating couples ask about FDR: parenting, financial settlement, Section 60I certificates, online sessions, and accreditation.",
     canonical="/faq/",
     current_page="/faq/",
     schema_json=schema_json,
@@ -3836,7 +3917,7 @@ build_page(
     extra_css=COMPLAINTS_CSS,
     breadcrumbs=[("Home", "/"), ("Complaints", "/complaints/")],
     page_html=COMPLAINTS_HTML,
-    robots="noindex, nofollow",
+    robots="noindex, follow",
     show_marquee=False,
     extra_js=COMPLAINTS_JS,
 )
@@ -4080,7 +4161,7 @@ build_page(
     extra_css=LEGAL_CSS,
     breadcrumbs=[("Home", "/"), ("Privacy Policy", "/privacy/")],
     page_html=PRIVACY_HTML,
-    robots="noindex, nofollow",
+    robots="noindex, follow",
     show_marquee=False,
 )
 print("Privacy done.")
@@ -4279,7 +4360,7 @@ build_page(
     extra_css=LEGAL_CSS,
     breadcrumbs=[("Home", "/"), ("Terms of Service", "/terms/")],
     page_html=TERMS_HTML,
-    robots="noindex, nofollow",
+    robots="noindex, follow",
     show_marquee=False,
 )
 print("Terms done.")
@@ -5494,7 +5575,7 @@ PRICING_CSS = """
 build_page(
     filename="pricing-v2.html",
     title="How Much Does Family Dispute Resolution Cost in Australia? | onlinefdr.com.au",
-    meta_desc="What Family Dispute Resolution costs in Australia, and why it is faster and more affordable than court. Indicative per-person ranges for parenting and property mediation, and how pay-as-you-go works.",
+    meta_desc="What Family Dispute Resolution costs in Australia, and why it is faster and more cost-effective than court. Indicative per-person ranges, with pay-as-you-go.",
     canonical="/pricing/",
     current_page="/pricing/",
     schema_json='{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://onlinefdr.com.au/pricing/#webpage","url":"https://onlinefdr.com.au/pricing/","name":"How much does Family Dispute Resolution cost in Australia?","description":"Indicative per-person pricing for online Family Dispute Resolution in Australia, how the pay-as-you-go model works, what fees cover, and how it compares to contested court proceedings.","about":{"@id":"https://onlinefdr.com.au/#organization"},"isPartOf":{"@id":"https://onlinefdr.com.au/#website"},"mainEntity":{"@id":"https://onlinefdr.com.au/pricing/#faq"},"inLanguage":"en-AU"},{"@type":"FAQPage","@id":"https://onlinefdr.com.au/pricing/#faq","mainEntity":[{"@type":"Question","name":"How much does Family Dispute Resolution cost in Australia?","acceptedAnswer":{"@type":"Answer","text":"It depends on the matter, because we work pay-as-you-go at $195 an hour including GST rather than charging a fixed fee. As a guide, per person: where you broadly agree, most matters land around $1,658 to $2,340; where there is more to work through, around $3,023; and high-conflict shuttle matters around $5,070. These are indicative, not a quote, and the discovery call is free."}},{"@type":"Question","name":"Do you charge a fixed fee or by the hour?","acceptedAnswer":{"@type":"Answer","text":"We are a pay-as-you-go practice, not a fixed-price service. We bill for the time your matter takes. This is deliberate: when both people have a stake in keeping the process efficient, reasonableness is the cheaper path. How much you spend is, in large part, up to you and your former partner."}},{"@type":"Question","name":"Is mediation more affordable than going to court?","acceptedAnswer":{"@type":"Answer","text":"In most cases yes, and by a wide margin. Contested court proceedings regularly run past $85,000 per person and take 18 to 36 months. Most matters that resolve through Family Dispute Resolution settle in weeks, at a fraction of the cost of litigation, and the parties keep control of the outcome."}},{"@type":"Question","name":"How do you keep it affordable?","acceptedAnswer":{"@type":"Answer","text":"We work pay-as-you-go rather than charging a fixed fee, so you are billed only for the time your matter actually takes. Focused, reasonable parties resolve quickly, which keeps the spend at the lower end, and even a more involved matter is a fraction of what contested court proceedings cost. The discovery call is free and there is no obligation. How much you spend is, in large part, in your hands."}}]}]}',
@@ -5504,3 +5585,54 @@ build_page(
     show_marquee=True,
 )
 print("Pricing done.")
+
+
+# ─────────────────────────────────────────────
+# 404 — NOT FOUND (served by Netlify at any unmatched path)
+# ─────────────────────────────────────────────
+NOTFOUND_CSS = """
+.nf-wrap { max-width: 680px; margin: 0 auto; padding: 110px var(--pad) 120px; text-align: center; }
+.nf-code { font-size: clamp(3.4rem, 9vw, 6rem); font-weight: 800; letter-spacing: -0.04em; color: var(--terra); line-height: 1; margin-bottom: 10px; }
+.nf-wrap h1 { font-size: clamp(1.7rem, 3.4vw, 2.4rem); font-weight: 800; letter-spacing: -0.03em; color: var(--charcoal); margin-bottom: 16px; }
+.nf-wrap p { font-size: 1.02rem; color: var(--charcoal-2); line-height: 1.7; margin-bottom: 36px; }
+.nf-links { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+.nf-links a { display: inline-flex; align-items: center; gap: 6px; padding: 10px 16px; border-radius: 10px; border: 1px solid var(--dust-3); background: var(--white); color: var(--charcoal); font-weight: 600; font-size: 0.9rem; text-decoration: none; transition: border-color .15s, color .15s; }
+.nf-links a:hover { border-color: var(--terra); color: var(--terra); }
+.nf-cta { margin-top: 34px; }
+"""
+
+NOTFOUND_HTML = """
+<section class="nf-wrap">
+  <div class="nf-code">404</div>
+  <h1>That page could not be found</h1>
+  <p>The page you were looking for has moved, or the link was mistyped. Nothing is wrong on your end. Here are the places people most often need.</p>
+  <div class="nf-links">
+    <a href="/">Home</a>
+    <a href="/what-is-fdr/">What is FDR?</a>
+    <a href="/parenting/">Parenting</a>
+    <a href="/financial-settlement/">Financial settlement</a>
+    <a href="/section-60i/">Section 60I certificates</a>
+    <a href="/pricing/">Pricing</a>
+    <a href="/blog/">Blog</a>
+    <a href="/faq/">FAQ</a>
+  </div>
+  <div class="nf-cta">
+    <a href="/book/" class="btn-primary">Book a free discovery call</a>
+  </div>
+</section>
+"""
+
+build_page(
+    filename="404.html",
+    title="Page not found | onlinefdr.com.au",
+    meta_desc="That page could not be found. Links to the main onlinefdr.com.au pages on Family Dispute Resolution, parenting, financial settlement, and Section 60I certificates.",
+    canonical="/404.html",
+    current_page=None,
+    schema_json="",
+    extra_css=NOTFOUND_CSS,
+    breadcrumbs=None,
+    page_html=NOTFOUND_HTML,
+    show_marquee=False,
+    robots="noindex, follow",
+)
+print("404 done.")

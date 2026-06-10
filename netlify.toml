@@ -13,9 +13,11 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "camera=(), microphone=(), geolocation=()"
 
-# Cache: HTML — no cache (always fresh)
+# Cache: HTML — no cache (always fresh). Pretty URLs (/about/, /) do not end
+# in .html, so the rule must target /* to actually apply; the more specific
+# /images/* immutable rule below still wins for image requests.
 [[headers]]
-  for = "/*.html"
+  for = "/*"
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
 
@@ -32,8 +34,8 @@
   status = 301
   force = true
 
-# 404 fallback
+# 404 fallback — serve the branded 404 page with a real 404 status
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "/404.html"
   status = 404
