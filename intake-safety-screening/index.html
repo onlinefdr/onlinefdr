@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>Confidential intake — before your first session</title>
+
+<!-- =========================================================================
+  ONLINE FDR — CUSTOM INTAKE SAFETY SCREEN
+  -------------------------------------------------------------------------
+  ORIGINAL wording (your IP). Inspired by the recognised family-violence
+  serious-risk factors (escalation, threats, physical harm, coercive control,
+  weapons, child safety, self-harm) — the same evidence base behind MARAM and
+  DOORS — NOT a copy of any published instrument.
+
+  DESIGN (deliberate):
+    - SAFETY / FACTUAL items  ->  Yes / No (+ "rather discuss in session").
+      Any "Yes" on a safety item is a flag for live follow-up. Binary on
+      purpose: it holds the bright line a scale would blur.
+    - WELLBEING / FEELINGS items  ->  1-10 resonance scale
+      (1 = Not at all, 5 = Neutral, 10 = Absolutely), worded so a HIGH score
+      means "check in" — consistent direction, no reverse-scored traps.
+
+  FRICTION CONTROL: three skip-gates (matter type, children y/n, recent
+  contact y/n) plus conditional sub-items. Most clients answer a fraction.
+
+  BEFORE GOING LIVE:
+    1. Wire SUBMIT_ENDPOINT to your Google Apps Script URL.
+    2. Swap :root tokens for your shared-shell brand values.
+    3. Decide and document your RESPONSE PROTOCOL (what a flag triggers) —
+       a screen is only as good as what you do when it lights up. See the
+       note returned with this file.
+
+  NOTE: this is YOUR clinical tool under your own judgement and PI. It is not
+  a validated instrument and shouldn't be described as one to clients.
+========================================================================== -->
+
+<style>
+  :root{
+    --teal-900:#0f3d40; --teal-700:#1c5e62; --teal-500:#2f8f93; --teal-050:#eef5f5;
+    --ochre:#c8862f; --ochre-soft:#f3e6d2;
+    --ink:#16201f; --muted:#5c6b6a; --line:#d9e2e1; --bg:#fbfcfc; --white:#fff;
+    --radius:14px; --maxw:680px;
+    --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box} html,body{margin:0;padding:0}
+  body{font-family:var(--font);color:var(--ink);background:var(--bg);line-height:1.55;-webkit-font-smoothing:antialiased}
+  main{max-width:var(--maxw);margin:0 auto;padding:0 18px 150px}
+
+  .topbar{background:var(--teal-900);color:#dff0ef;font-size:13px;text-align:center;padding:9px 14px}
+  .topbar strong{color:#fff}
+
+  header.brand{padding:26px 0 6px}
+  .wordmark{font-weight:700;font-size:17px;color:var(--teal-700)}
+  .wordmark span{color:var(--ochre)}
+  h1{font-size:25px;line-height:1.25;margin:18px 0 6px;color:var(--teal-900)}
+  .lede{color:var(--muted);font-size:15.5px;margin:0 0 8px}
+
+  .reassure{background:var(--teal-050);border:1px solid #cfe3e2;border-radius:var(--radius);padding:16px;margin:16px 0;font-size:15px}
+  .reassure ul{margin:8px 0 0;padding-left:18px} .reassure li{margin:4px 0}
+
+  .card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:20px 18px;margin:16px 0}
+  .card h2{font-size:18px;margin:0 0 4px;color:var(--teal-900)}
+  .card p.note{color:var(--muted);font-size:14px;margin:6px 0 0}
+
+  .chooser{display:grid;gap:10px;margin-top:14px}
+  .chooser label{display:flex;gap:12px;align-items:flex-start;border:1.5px solid var(--line);border-radius:var(--radius);padding:14px;cursor:pointer;background:var(--white);transition:.15s}
+  .chooser label:hover{border-color:var(--teal-500)}
+  .chooser input{margin-top:3px;width:18px;height:18px;accent-color:var(--teal-700);flex:0 0 auto}
+  .chooser .t{font-weight:600} .chooser .d{color:var(--muted);font-size:13.5px;display:block;margin-top:2px}
+
+  #screen{display:none}
+  .progress{position:sticky;top:0;z-index:5;background:var(--bg);padding:10px 0 8px}
+  .progress .track{height:6px;background:var(--line);border-radius:999px;overflow:hidden}
+  .progress .fill{height:100%;width:0;background:var(--ochre);transition:width .25s}
+  .progress .label{font-size:12.5px;color:var(--muted);margin-top:6px}
+
+  .domain{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:18px 16px;margin:14px 0}
+  .domain h3{font-size:16.5px;margin:0 0 2px;color:var(--teal-900)}
+  .domain .intro{color:var(--muted);font-size:13.5px;margin:2px 0 12px}
+
+  .q{padding:14px 0;border-top:1px solid var(--line)} .q:first-of-type{border-top:0}
+  .qtext{font-size:15px;margin:0 0 10px}
+  .sub{margin:10px 0 0 14px;padding-left:12px;border-left:2px solid var(--ochre-soft);display:none}
+
+  /* binary safety answers */
+  .yn{display:flex;gap:8px;flex-wrap:wrap}
+  .yn label{flex:1;min-width:90px;text-align:center;border:1.5px solid var(--line);border-radius:10px;padding:10px 6px;font-size:14px;cursor:pointer;background:var(--white);transition:.12s}
+  .yn input{position:absolute;opacity:0;width:0;height:0}
+  .yn label:has(input:checked){border-color:var(--teal-500);background:var(--teal-050);font-weight:600}
+  .yn .soft{flex-basis:100%;color:var(--muted);font-size:13px}
+
+  /* 1-10 wellbeing scale */
+  .scale .ends{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);margin-bottom:6px}
+  .scalebtns{display:grid;grid-template-columns:repeat(10,1fr);gap:5px}
+  .scalebtns label{text-align:center;border:1.5px solid var(--line);border-radius:8px;padding:9px 0;font-size:13px;cursor:pointer;background:var(--white);transition:.1s}
+  .scalebtns input{position:absolute;opacity:0;width:0;height:0}
+  .scalebtns label:has(input:checked){border-color:var(--ochre);background:var(--ochre-soft);font-weight:700;color:#7a5a1f}
+
+  .opentext label{display:block;font-size:15px;margin-bottom:6px}
+  textarea,input[type=text]{width:100%;border:1.5px solid var(--line);border-radius:10px;padding:11px 12px;font-family:inherit;font-size:15px;color:var(--ink);background:var(--white)}
+  textarea{min-height:84px;resize:vertical}
+  textarea:focus,input[type=text]:focus,.yn label:focus-within,.scalebtns label:focus-within,.chooser label:focus-within{outline:3px solid #bfe0df;outline-offset:1px}
+
+  .selfharm{background:#fff7ef;border:1px solid var(--ochre-soft)}
+  .submitrow{margin:22px 0 0}
+  button.submit{width:100%;background:var(--teal-700);color:#fff;border:0;border-radius:12px;padding:15px;font-size:16px;font-weight:600;cursor:pointer;transition:.15s}
+  button.submit:hover{background:var(--teal-900)}
+  .afterword{color:var(--muted);font-size:13.5px;margin-top:12px;text-align:center}
+
+  .helpstrip{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--teal-900);color:#eaf4f3;font-size:13px;padding:10px 14px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap;box-shadow:0 -2px 14px rgba(0,0,0,.12)}
+  .helpstrip a{color:#fff;font-weight:600;text-decoration:none;white-space:nowrap} .helpstrip .em{color:var(--ochre);font-weight:700}
+
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+  @media (max-width:480px){h1{font-size:22px} .scalebtns{gap:3px} .scalebtns label{padding:8px 0;font-size:12px}}
+</style>
+</head>
+
+<body>
+<div class="topbar">This form is <strong>confidential</strong> and part of your private intake. Your answers are not shared with the other party.</div>
+
+<main>
+  <header class="brand">
+    <div class="wordmark">Online&nbsp;<span>FDR</span></div>
+    <h1>A few questions before your first session</h1>
+    <p class="lede">The call you make before you call a lawyer.</p>
+  </header>
+
+  <div class="reassure">
+    We ask everyone these questions before they start. It helps the practitioner make sure the
+    process is safe and fair for you, and that you have the right support around you.
+    <ul>
+      <li>There are no right or wrong answers — answer what’s true for you.</li>
+      <li>If you’d rather not answer something here, you can leave it and talk it through in your session.</li>
+      <li>Fill it in somewhere private, on your own, where you won’t be overheard.</li>
+      <li>It takes about five minutes.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>What is your matter about?</h2>
+    <p class="note">This tailors which questions you’ll see.</p>
+    <div class="chooser" role="radiogroup" aria-label="Matter type">
+      <label><input type="radio" name="matter" value="parenting" onchange="setup()"><span class="txt"><span class="t">Parenting</span><span class="d">Arrangements for children</span></span></label>
+      <label><input type="radio" name="matter" value="property" onchange="setup()"><span class="txt"><span class="t">Property only</span><span class="d">Finances or property, no children involved</span></span></label>
+      <label><input type="radio" name="matter" value="both" onchange="setup()"><span class="txt"><span class="t">Both</span><span class="d">Parenting and property</span></span></label>
+    </div>
+  </div>
+
+  <form id="screen" name="intake-safety-screen" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/intake-received/">
+      <input type="hidden" name="form-name" value="intake-safety-screen">
+      <input type="hidden" name="matter_type" id="matter_type_hidden">
+      <p hidden><label>Leave this field empty: <input name="bot-field"></label></p>
+    <div class="progress" aria-hidden="true">
+      <div class="track"><div class="fill" id="fill"></div></div>
+      <div class="label" id="plabel">0% complete</div>
+    </div>
+
+    <div class="card">
+      <h2>About you</h2>
+      <div class="opentext" style="margin-top:10px">
+        <label for="cname">Your full name</label>
+        <input type="text" id="cname" name="client_name" autocomplete="name">
+      </div>
+    </div>
+
+    <!-- ============ WELLBEING — 1-10 resonance (high = check in) ============ -->
+    <section class="domain">
+      <h3>How you’re doing right now</h3>
+      <p class="intro">For each statement, slide to the number that fits — 1 means “not at all”, 5 “neutral”, 10 “absolutely”.</p>
+
+      <div class="q scale">
+        <p class="qtext">The separation has been weighing on me more than I can manage at the moment.</p>
+        <div class="ends"><span>1 · Not at all</span><span>5 · Neutral</span><span>10 · Absolutely</span></div>
+        <div class="scalebtns"><label><input type="radio" name="w1" value="1"><span>1</span></label><label><input type="radio" name="w1" value="2"><span>2</span></label><label><input type="radio" name="w1" value="3"><span>3</span></label><label><input type="radio" name="w1" value="4"><span>4</span></label><label><input type="radio" name="w1" value="5"><span>5</span></label><label><input type="radio" name="w1" value="6"><span>6</span></label><label><input type="radio" name="w1" value="7"><span>7</span></label><label><input type="radio" name="w1" value="8"><span>8</span></label><label><input type="radio" name="w1" value="9"><span>9</span></label><label><input type="radio" name="w1" value="10"><span>10</span></label></div>
+      </div>
+      <div class="q scale">
+        <p class="qtext">Lately I’ve felt more anxious, angry or low than usual.</p>
+        <div class="ends"><span>1 · Not at all</span><span>5 · Neutral</span><span>10 · Absolutely</span></div>
+        <div class="scalebtns"><label><input type="radio" name="w2" value="1"><span>1</span></label><label><input type="radio" name="w2" value="2"><span>2</span></label><label><input type="radio" name="w2" value="3"><span>3</span></label><label><input type="radio" name="w2" value="4"><span>4</span></label><label><input type="radio" name="w2" value="5"><span>5</span></label><label><input type="radio" name="w2" value="6"><span>6</span></label><label><input type="radio" name="w2" value="7"><span>7</span></label><label><input type="radio" name="w2" value="8"><span>8</span></label><label><input type="radio" name="w2" value="9"><span>9</span></label><label><input type="radio" name="w2" value="10"><span>10</span></label></div>
+      </div>
+      <div class="q scale">
+        <p class="qtext">I feel like I’m facing all of this largely on my own.</p>
+        <div class="ends"><span>1 · Not at all</span><span>5 · Neutral</span><span>10 · Absolutely</span></div>
+        <div class="scalebtns"><label><input type="radio" name="w3" value="1"><span>1</span></label><label><input type="radio" name="w3" value="2"><span>2</span></label><label><input type="radio" name="w3" value="3"><span>3</span></label><label><input type="radio" name="w3" value="4"><span>4</span></label><label><input type="radio" name="w3" value="5"><span>5</span></label><label><input type="radio" name="w3" value="6"><span>6</span></label><label><input type="radio" name="w3" value="7"><span>7</span></label><label><input type="radio" name="w3" value="8"><span>8</span></label><label><input type="radio" name="w3" value="9"><span>9</span></label><label><input type="radio" name="w3" value="10"><span>10</span></label></div>
+      </div>
+      <div class="q scale" data-contact="yes">
+        <p class="qtext">When the other party and I try to sort things out, it usually turns into conflict.</p>
+        <div class="ends"><span>1 · Not at all</span><span>5 · Neutral</span><span>10 · Absolutely</span></div>
+        <div class="scalebtns"><label><input type="radio" name="w4" value="1"><span>1</span></label><label><input type="radio" name="w4" value="2"><span>2</span></label><label><input type="radio" name="w4" value="3"><span>3</span></label><label><input type="radio" name="w4" value="4"><span>4</span></label><label><input type="radio" name="w4" value="5"><span>5</span></label><label><input type="radio" name="w4" value="6"><span>6</span></label><label><input type="radio" name="w4" value="7"><span>7</span></label><label><input type="radio" name="w4" value="8"><span>8</span></label><label><input type="radio" name="w4" value="9"><span>9</span></label><label><input type="radio" name="w4" value="10"><span>10</span></label></div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT GATE ============ -->
+    <section class="domain">
+      <h3>Contact with the other party</h3>
+      <div class="q">
+        <p class="qtext">Have you had any contact with the other party in the last six months or so?</p>
+        <div class="yn">
+          <label><input type="radio" name="contact" value="yes" onchange="applyGates()"><span>Yes</span></label>
+          <label><input type="radio" name="contact" value="no" onchange="applyGates()"><span>No</span></label>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SAFETY — binary (any Yes = flag) ============ -->
+    <section class="domain">
+      <h3>Your safety</h3>
+      <p class="intro">Working things out after separation can be stressful, and some people need extra support to feel safe. These help the practitioner understand what you might need. If a question is hard to answer here, leave it — you can talk it through in your session.</p>
+
+      <div class="q"><p class="qtext">Are you ever concerned for your own safety because of the other party (or anyone connected to them)?</p>
+        <div class="yn"><label><input type="radio" name="s_safe" value="yes"><span>Yes</span></label><label><input type="radio" name="s_safe" value="no"><span>No</span></label><label class="soft"><input type="radio" name="s_safe" value="defer"><span>I’d rather discuss this in my session</span></label></div></div>
+
+      <div class="q" data-contact="yes"><p class="qtext">Are you worried about how the other party might react if they’re unhappy with the outcome of this process?</p>
+        <div class="yn"><label><input type="radio" name="s_react" value="yes"><span>Yes</span></label><label><input type="radio" name="s_react" value="no"><span>No</span></label></div></div>
+
+      <div class="q"><p class="qtext">In the last year, has the other party physically hurt you, or used force to make you do something you didn’t want to do?</p>
+        <div class="yn"><label><input type="radio" name="s_phys" value="yes"><span>Yes</span></label><label><input type="radio" name="s_phys" value="no"><span>No</span></label><label class="soft"><input type="radio" name="s_phys" value="defer"><span>I’d rather discuss this in my session</span></label></div></div>
+
+      <div class="q"><p class="qtext">Has the other party ever threatened to harm you, your children, themselves, or anyone else?</p>
+        <div class="yn"><label><input type="radio" name="s_threat" value="yes"><span>Yes</span></label><label><input type="radio" name="s_threat" value="no"><span>No</span></label></div></div>
+
+      <div class="q"><p class="qtext">Does the other party try to control things like your money, where you go, or who you see?</p>
+        <div class="yn"><label><input type="radio" name="s_control" value="yes"><span>Yes</span></label><label><input type="radio" name="s_control" value="no"><span>No</span></label></div></div>
+
+      <div class="q"><p class="qtext">Has the other party followed, monitored or tracked you — in person, or through your phone, accounts or social media?</p>
+        <div class="yn"><label><input type="radio" name="s_stalk" value="yes"><span>Yes</span></label><label><input type="radio" name="s_stalk" value="no"><span>No</span></label></div></div>
+
+      <div class="q"><p class="qtext">Have the police ever been involved, or has any intervention or protection order ever been made, because of the other party’s behaviour?</p>
+        <div class="yn"><label><input type="radio" name="s_order" value="yes" onchange="sub('sub_order',true)"><span>Yes</span></label><label><input type="radio" name="s_order" value="no" onchange="sub('sub_order',false)"><span>No</span></label></div>
+        <div class="sub" id="sub_order"><p class="qtext">Is an order currently in place?</p>
+          <div class="yn"><label><input type="radio" name="s_order_now" value="yes"><span>Yes</span></label><label><input type="radio" name="s_order_now" value="no"><span>No</span></label></div></div></div>
+
+      <div class="q"><p class="qtext">Does the other party have access to a firearm or other weapon?</p>
+        <div class="yn"><label><input type="radio" name="s_weapon" value="yes"><span>Yes</span></label><label><input type="radio" name="s_weapon" value="no"><span>No</span></label><label class="soft"><input type="radio" name="s_weapon" value="unsure"><span>Not sure</span></label></div></div>
+
+      <div class="q"><p class="qtext">Lately, are any of these things happening more often, or getting worse?</p>
+        <div class="yn"><label><input type="radio" name="s_escalate" value="yes"><span>Yes</span></label><label><input type="radio" name="s_escalate" value="no"><span>No</span></label></div></div>
+    </section>
+
+    <!-- ============ CHILDREN — conditional ============ -->
+    <section class="domain" data-children="yes">
+      <h3>Your children</h3>
+      <p class="intro">Shown because your matter involves children. Answer for any of your children.</p>
+
+      <div class="q"><p class="qtext">Do you have any concerns about your children’s safety with the other parent, or anyone else who cares for them?</p>
+        <div class="yn"><label><input type="radio" name="c_safe" value="yes"><span>Yes</span></label><label><input type="radio" name="c_safe" value="no"><span>No</span></label></div></div>
+
+      <div class="q"><p class="qtext">Have your children ever seen or heard frightening conflict or violence at home?</p>
+        <div class="yn"><label><input type="radio" name="c_exposed" value="yes"><span>Yes</span></label><label><input type="radio" name="c_exposed" value="no"><span>No</span></label></div></div>
+
+      <div class="q"><p class="qtext">Has child protection ever been involved with your family?</p>
+        <div class="yn"><label><input type="radio" name="c_cp" value="yes" onchange="sub('sub_cp',true)"><span>Yes</span></label><label><input type="radio" name="c_cp" value="no" onchange="sub('sub_cp',false)"><span>No</span></label></div>
+        <div class="sub" id="sub_cp"><p class="qtext">Is anything currently open or ongoing?</p>
+          <div class="yn"><label><input type="radio" name="c_cp_now" value="yes"><span>Yes</span></label><label><input type="radio" name="c_cp_now" value="no"><span>No</span></label></div></div></div>
+
+      <div class="q" data-contact="yes"><p class="qtext">Has either parent ever threatened to take or keep the children outside the agreed arrangement?</p>
+        <div class="yn"><label><input type="radio" name="c_withhold" value="yes"><span>Yes</span></label><label><input type="radio" name="c_withhold" value="no"><span>No</span></label></div></div>
+    </section>
+
+    <!-- ============ OWN BEHAVIOUR — light, symmetrical ============ -->
+    <section class="domain">
+      <h3>A couple about you</h3>
+      <p class="intro">We ask both parties the same things — it’s routine, not an accusation.</p>
+      <div class="q"><p class="qtext">Has anyone ever raised a concern about your behaviour towards the other party or your children?</p>
+        <div class="yn"><label><input type="radio" name="o_concern" value="yes"><span>Yes</span></label><label><input type="radio" name="o_concern" value="no"><span>No</span></label></div></div>
+      <div class="q"><p class="qtext">Is there an intervention or protection order currently in place against you?</p>
+        <div class="yn"><label><input type="radio" name="o_order" value="yes"><span>Yes</span></label><label><input type="radio" name="o_order" value="no"><span>No</span></label></div></div>
+    </section>
+
+    <!-- ============ COPING / SELF-HARM — handled with care ============ -->
+    <section class="domain selfharm">
+      <h3>How you’ve been coping</h3>
+      <p class="intro">If anything here feels heavy, the support numbers at the bottom of this page are there for you any time, day or night.</p>
+      <div class="q"><p class="qtext">Have things ever felt so overwhelming that you’ve thought about harming yourself?</p>
+        <div class="yn"><label><input type="radio" name="sh" value="yes" onchange="sub('sub_sh',true)"><span>Yes</span></label><label><input type="radio" name="sh" value="no" onchange="sub('sub_sh',false)"><span>No</span></label><label class="soft"><input type="radio" name="sh" value="defer"><span>I’d rather talk about this in my session</span></label></div>
+        <div class="sub" id="sub_sh"><p class="qtext">Is that something you’ve felt recently?</p>
+          <div class="yn"><label><input type="radio" name="sh_now" value="yes"><span>Yes</span></label><label><input type="radio" name="sh_now" value="no"><span>No</span></label></div>
+          <p class="note">If you’re feeling this way now, you don’t have to wait for your session — 13&nbsp;11&nbsp;14 (Lifeline) is there any time, and 000 if you’re in danger.</p></div></div>
+    </section>
+
+    <!-- ============ OPEN ============ -->
+    <section class="domain">
+      <h3>What would help you feel safe and able to take part?</h3>
+      <div class="opentext"><textarea name="what_would_help" placeholder="For example: being kept in separate virtual rooms throughout, a support person with you, or a quiet signal you can use to pause."></textarea></div>
+    </section>
+    <section class="domain">
+      <h3>Anything else you think we should know?</h3>
+      <div class="opentext"><textarea name="anything_else"></textarea></div>
+    </section>
+
+    <div class="submitrow">
+      <button type="submit" class="submit">Send my answers securely</button>
+      <p class="afterword">Once both intakes are complete, the practitioner reviews them and confirms whether mediation is a safe and suitable way forward. Nothing is decided today.</p>
+    </div>
+  </form>
+</main>
+
+<div class="helpstrip">
+  <span><span class="em">In danger now?</span> Call <a href="tel:000">000</a></span>
+  <span>1800RESPECT <a href="tel:1800737732">1800&nbsp;737&nbsp;732</a></span>
+  <span>Lifeline <a href="tel:131114">13&nbsp;11&nbsp;14</a></span>
+</div>
+
+<script>
+  function setup(){
+    var matter=(document.querySelector('input[name="matter"]:checked')||{}).value;
+    if(!matter) return;
+    document.getElementById('matter_type_hidden').value=matter;
+    document.getElementById('screen').style.display='block';
+    document.querySelectorAll('[data-children="yes"]').forEach(function(el){
+      el.style.display=(matter==='property')?'none':'';
+    });
+    applyGates();
+    document.getElementById('screen').scrollIntoView({behavior:'smooth',block:'start'});
+  }
+  function applyGates(){
+    var contact=(document.querySelector('input[name="contact"]:checked')||{}).value;
+    document.querySelectorAll('[data-contact="yes"]').forEach(function(el){
+      el.style.display=(contact==='no')?'none':'';
+    });
+    updateProgress();
+  }
+  function sub(id,show){ var el=document.getElementById(id); if(el) el.style.display=show?'block':'none'; updateProgress(); }
+
+  function updateProgress(){
+    var qs=[].slice.call(document.querySelectorAll('#screen .q')).filter(function(q){return q.offsetParent!==null});
+    var total=qs.length, done=qs.filter(function(q){return q.querySelector('input:checked')}).length;
+    var pct=total?Math.round(done/total*100):0;
+    document.getElementById('fill').style.width=pct+'%';
+    document.getElementById('plabel').textContent=pct+'% complete';
+  }
+  document.addEventListener('change',function(e){ if(e.target.matches('#screen input')) updateProgress(); });
+</script>
+</body>
+</html>
