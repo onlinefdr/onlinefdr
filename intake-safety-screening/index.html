@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow, noarchive">
-<title>Confidential intake — before your first session</title>
+<title>Confidential intake before your first session</title>
 
 <!-- =========================================================================
   ONLINE FDR — CUSTOM INTAKE SAFETY SCREEN
@@ -38,26 +38,32 @@
 
 <style>
   :root{
-    --teal-900:#0f3d40; --teal-700:#1c5e62; --teal-500:#2f8f93; --teal-050:#eef5f5;
-    --ochre:#c8862f; --ochre-soft:#f3e6d2;
-    --ink:#16201f; --muted:#5c6b6a; --line:#d9e2e1; --bg:#fbfcfc; --white:#fff;
+    /* onlinefdr.com.au Outback earth palette (LOCKED, Tab 02) */
+    --dust:#F2EDE4; --dust-2:#E8E0D4; --dust-3:#D8CEC0;
+    --ochre:#C4873A; --ochre-lt:#D4975A; --ochre-pale:#F9F2E8;
+    --terra:#A85C32; --terra-lt:#BC7050;
+    --charcoal:#2C2825; --charcoal-2:#3D3830;
+    --mid:#7A6F65; --light-mid:#A09690; --white:#FDFAF6;
+    /* aliases so existing rules resolve; ochre on dark, terra on light */
+    --ink:#2C2825; --muted:#7A6F65; --line:#D8CEC0; --bg:#F2EDE4;
+    --ochre-soft:#F9F2E8; --teal-050:#F9F2E8; --teal-500:#BC7050; --teal-700:#A85C32; --teal-900:#A85C32;
     --radius:14px; --maxw:680px;
-    --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --font:'Manrope', system-ui, -apple-system, sans-serif;
   }
   *{box-sizing:border-box} html,body{margin:0;padding:0}
   body{font-family:var(--font);color:var(--ink);background:var(--bg);line-height:1.55;-webkit-font-smoothing:antialiased}
   main{max-width:var(--maxw);margin:0 auto;padding:0 18px 150px}
 
-  .topbar{background:var(--teal-900);color:#dff0ef;font-size:13px;text-align:center;padding:9px 14px}
-  .topbar strong{color:#fff}
+  .topbar{background:var(--charcoal);color:var(--dust);font-size:13px;text-align:center;padding:9px 14px}
+  .topbar strong{color:var(--white)}
 
   header.brand{padding:26px 0 6px}
-  .wordmark{font-weight:700;font-size:17px;color:var(--teal-700)}
-  .wordmark span{color:var(--ochre)}
+  .wordmark{font-weight:700;font-size:17px;color:var(--charcoal)}
+  .wordmark span{color:var(--terra)}
   h1{font-size:25px;line-height:1.25;margin:18px 0 6px;color:var(--teal-900)}
   .lede{color:var(--muted);font-size:15.5px;margin:0 0 8px}
 
-  .reassure{background:var(--teal-050);border:1px solid #cfe3e2;border-radius:var(--radius);padding:16px;margin:16px 0;font-size:15px}
+  .reassure{background:var(--ochre-pale);border:1px solid var(--dust-3);border-radius:var(--radius);padding:16px;margin:16px 0;font-size:15px}
   .reassure ul{margin:8px 0 0;padding-left:18px} .reassure li{margin:4px 0}
 
   .card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:20px 18px;margin:16px 0}
@@ -73,7 +79,7 @@
   #screen{display:none}
   .progress{position:sticky;top:0;z-index:5;background:var(--bg);padding:10px 0 8px}
   .progress .track{height:6px;background:var(--line);border-radius:999px;overflow:hidden}
-  .progress .fill{height:100%;width:0;background:var(--ochre);transition:width .25s}
+  .progress .fill{height:100%;width:0;background:var(--terra);transition:width .25s}
   .progress .label{font-size:12.5px;color:var(--muted);margin-top:6px}
 
   .domain{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:18px 16px;margin:14px 0}
@@ -88,7 +94,7 @@
   .yn{display:flex;gap:8px;flex-wrap:wrap}
   .yn label{flex:1;min-width:90px;text-align:center;border:1.5px solid var(--line);border-radius:10px;padding:10px 6px;font-size:14px;cursor:pointer;background:var(--white);transition:.12s}
   .yn input{position:absolute;opacity:0;width:0;height:0}
-  .yn label:has(input:checked){border-color:var(--teal-500);background:var(--teal-050);font-weight:600}
+  .yn label:has(input:checked){border-color:var(--terra);background:var(--ochre-pale);font-weight:600}
   .yn .soft{flex-basis:100%;color:var(--muted);font-size:13px}
 
   /* 1-10 wellbeing scale */
@@ -96,25 +102,26 @@
   .scalebtns{display:grid;grid-template-columns:repeat(10,1fr);gap:5px}
   .scalebtns label{text-align:center;border:1.5px solid var(--line);border-radius:8px;padding:9px 0;font-size:13px;cursor:pointer;background:var(--white);transition:.1s}
   .scalebtns input{position:absolute;opacity:0;width:0;height:0}
-  .scalebtns label:has(input:checked){border-color:var(--ochre);background:var(--ochre-soft);font-weight:700;color:#7a5a1f}
+  .scalebtns label:has(input:checked){border-color:var(--terra);background:var(--ochre-pale);font-weight:700;color:var(--terra)}
 
   .opentext label{display:block;font-size:15px;margin-bottom:6px}
   textarea,input[type=text]{width:100%;border:1.5px solid var(--line);border-radius:10px;padding:11px 12px;font-family:inherit;font-size:15px;color:var(--ink);background:var(--white)}
   textarea{min-height:84px;resize:vertical}
-  textarea:focus,input[type=text]:focus,.yn label:focus-within,.scalebtns label:focus-within,.chooser label:focus-within{outline:3px solid #bfe0df;outline-offset:1px}
+  textarea:focus,input[type=text]:focus,.yn label:focus-within,.scalebtns label:focus-within,.chooser label:focus-within{outline:3px solid var(--ochre-lt);outline-offset:1px}
 
-  .selfharm{background:#fff7ef;border:1px solid var(--ochre-soft)}
+  .selfharm{background:var(--ochre-pale);border:1px solid var(--dust-3)}
   .submitrow{margin:22px 0 0}
-  button.submit{width:100%;background:var(--teal-700);color:#fff;border:0;border-radius:12px;padding:15px;font-size:16px;font-weight:600;cursor:pointer;transition:.15s}
-  button.submit:hover{background:var(--teal-900)}
+  button.submit{width:100%;background:var(--terra);color:var(--white);border:0;border-radius:12px;padding:15px;font-size:16px;font-weight:600;cursor:pointer;transition:.15s}
+  button.submit:hover{background:var(--terra-lt)}
   .afterword{color:var(--muted);font-size:13.5px;margin-top:12px;text-align:center}
 
-  .helpstrip{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--teal-900);color:#eaf4f3;font-size:13px;padding:10px 14px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap;box-shadow:0 -2px 14px rgba(0,0,0,.12)}
-  .helpstrip a{color:#fff;font-weight:600;text-decoration:none;white-space:nowrap} .helpstrip .em{color:var(--ochre);font-weight:700}
+  .helpstrip{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--charcoal);color:var(--dust);font-size:13px;padding:10px 14px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap;box-shadow:0 -2px 14px rgba(0,0,0,.12)}
+  .helpstrip a{color:var(--white);font-weight:600;text-decoration:none;white-space:nowrap} .helpstrip .em{color:var(--ochre);font-weight:700}
 
   @media (prefers-reduced-motion:reduce){*{transition:none!important}}
   @media (max-width:480px){h1{font-size:22px} .scalebtns{gap:3px} .scalebtns label{padding:8px 0;font-size:12px}}
 </style>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -131,7 +138,7 @@
     We ask everyone these questions before they start. It helps the practitioner make sure the
     process is safe and fair for you, and that you have the right support around you.
     <ul>
-      <li>There are no right or wrong answers — answer what’s true for you.</li>
+      <li>There are no right or wrong answers. Answer what’s true for you.</li>
       <li>If you’d rather not answer something here, you can leave it and talk it through in your session.</li>
       <li>Fill it in somewhere private, on your own, where you won’t be overheard.</li>
       <li>It takes about five minutes.</li>
@@ -168,7 +175,7 @@
     <!-- ============ WELLBEING — 1-10 resonance (high = check in) ============ -->
     <section class="domain">
       <h3>How you’re doing right now</h3>
-      <p class="intro">For each statement, slide to the number that fits — 1 means “not at all”, 5 “neutral”, 10 “absolutely”.</p>
+      <p class="intro">For each statement, slide to the number that fits. 1 means “not at all”, 5 “neutral”, 10 “absolutely”.</p>
 
       <div class="q scale">
         <p class="qtext">The separation has been weighing on me more than I can manage at the moment.</p>
@@ -207,7 +214,7 @@
     <!-- ============ SAFETY — binary (any Yes = flag) ============ -->
     <section class="domain">
       <h3>Your safety</h3>
-      <p class="intro">Working things out after separation can be stressful, and some people need extra support to feel safe. These help the practitioner understand what you might need. If a question is hard to answer here, leave it — you can talk it through in your session.</p>
+      <p class="intro">Working things out after separation can be stressful, and some people need extra support to feel safe. These help the practitioner understand what you might need. If a question is hard to answer here, leave it, and you can talk it through in your session.</p>
 
       <div class="q"><p class="qtext">Are you ever concerned for your own safety because of the other party (or anyone connected to them)?</p>
         <div class="yn"><label><input type="radio" name="s_safe" value="yes"><span>Yes</span></label><label><input type="radio" name="s_safe" value="no"><span>No</span></label><label class="soft"><input type="radio" name="s_safe" value="defer"><span>I’d rather discuss this in my session</span></label></div></div>
@@ -224,7 +231,7 @@
       <div class="q"><p class="qtext">Does the other party try to control things like your money, where you go, or who you see?</p>
         <div class="yn"><label><input type="radio" name="s_control" value="yes"><span>Yes</span></label><label><input type="radio" name="s_control" value="no"><span>No</span></label></div></div>
 
-      <div class="q"><p class="qtext">Has the other party followed, monitored or tracked you — in person, or through your phone, accounts or social media?</p>
+      <div class="q"><p class="qtext">Has the other party followed, monitored or tracked you, in person or through your phone, accounts or social media?</p>
         <div class="yn"><label><input type="radio" name="s_stalk" value="yes"><span>Yes</span></label><label><input type="radio" name="s_stalk" value="no"><span>No</span></label></div></div>
 
       <div class="q"><p class="qtext">Have the police ever been involved, or has any intervention or protection order ever been made, because of the other party’s behaviour?</p>
@@ -262,7 +269,7 @@
     <!-- ============ OWN BEHAVIOUR — light, symmetrical ============ -->
     <section class="domain">
       <h3>A couple about you</h3>
-      <p class="intro">We ask both parties the same things — it’s routine, not an accusation.</p>
+      <p class="intro">We ask both parties the same things. It’s routine, not an accusation.</p>
       <div class="q"><p class="qtext">Has anyone ever raised a concern about your behaviour towards the other party or your children?</p>
         <div class="yn"><label><input type="radio" name="o_concern" value="yes"><span>Yes</span></label><label><input type="radio" name="o_concern" value="no"><span>No</span></label></div></div>
       <div class="q"><p class="qtext">Is there an intervention or protection order currently in place against you?</p>
@@ -277,7 +284,7 @@
         <div class="yn"><label><input type="radio" name="sh" value="yes" onchange="sub('sub_sh',true)"><span>Yes</span></label><label><input type="radio" name="sh" value="no" onchange="sub('sub_sh',false)"><span>No</span></label><label class="soft"><input type="radio" name="sh" value="defer"><span>I’d rather talk about this in my session</span></label></div>
         <div class="sub" id="sub_sh"><p class="qtext">Is that something you’ve felt recently?</p>
           <div class="yn"><label><input type="radio" name="sh_now" value="yes"><span>Yes</span></label><label><input type="radio" name="sh_now" value="no"><span>No</span></label></div>
-          <p class="note">If you’re feeling this way now, you don’t have to wait for your session — 13&nbsp;11&nbsp;14 (Lifeline) is there any time, and 000 if you’re in danger.</p></div></div>
+          <p class="note">If you’re feeling this way now, you don’t have to wait for your session. 13&nbsp;11&nbsp;14 (Lifeline) is there any time, and 000 if you’re in danger.</p></div></div>
     </section>
 
     <!-- ============ OPEN ============ -->
