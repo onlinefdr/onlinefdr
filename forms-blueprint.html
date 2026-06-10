@@ -6,16 +6,14 @@
 <title>forms blueprint</title>
 </head>
 <body>
-<!-- Netlify form-detection blueprint. Not linked anywhere and renders blank.
-     It exists only so Netlify's build-time scanner registers the
-     "intake-safety-screen" form and every field name. The live form at
-     /intake-safety-screening/ posts against this registered schema. -->
+<!-- Netlify form-detection blueprint. Not linked anywhere; renders blank.
+     Registers both forms and every field name so the live forms post against
+     a known schema. -->
+
 <form name="intake-safety-screen" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
   <input type="hidden" name="form-name" value="intake-safety-screen">
   <input name="bot-field">
-  <input name="client_name">
-  <input name="matter_type">
-  <input name="contact">
+  <input name="client_name"><input name="matter_type"><input name="contact">
   <input name="w1"><input name="w2"><input name="w3"><input name="w4">
   <input name="s_safe"><input name="s_react"><input name="s_phys"><input name="s_threat">
   <input name="s_control"><input name="s_stalk"><input name="s_order"><input name="s_order_now">
@@ -23,8 +21,18 @@
   <input name="c_safe"><input name="c_exposed"><input name="c_cp"><input name="c_cp_now"><input name="c_withhold">
   <input name="o_concern"><input name="o_order">
   <input name="sh"><input name="sh_now">
-  <textarea name="what_would_help"></textarea>
-  <textarea name="anything_else"></textarea>
+  <textarea name="what_would_help"></textarea><textarea name="anything_else"></textarea>
 </form>
+
+<form name="callback-request" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+  <input type="hidden" name="form-name" value="callback-request">
+  <input name="bot-field">
+  <input name="client_name">
+  <input name="phone">
+  <input name="best_time">
+  <input name="matter">
+  <textarea name="note"></textarea>
+</form>
+
 </body>
 </html>
