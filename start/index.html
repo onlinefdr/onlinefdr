@@ -10,6 +10,7 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'AW-18195606042');
+    gtag('config', 'G-5TFC27B41R');
   </script>
   <title>Start here | Free discovery call | Online Family Dispute Resolution | onlinefdr.com.au</title>
   <meta name="description" content="Start with a free, confidential discovery call with an accredited Family Dispute Resolution practitioner. Australia-wide, online, no obligation.">
@@ -18,23 +19,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- CTA state + conversion tracking. CALL_HOURS is the single source of truth. -->
+  <!-- Conversion tracking. Time-based call-state toggle removed: the phone number shows at all times; voicemail handles out-of-hours calls. -->
   <script>
-    var CALL_HOURS = { start: 10, end: 19, days: [1,2,3,4,5] }; // Mon-Fri 10:00-19:00 Melbourne
-    (function(){
-      function melbNow(){
-        var s = new Date().toLocaleString('en-US', { timeZone: 'Australia/Melbourne' });
-        var d = new Date(s);
-        return { day: d.getDay(), hour: d.getHours() };
-      }
-      function isOpen(){
-        var m = melbNow();
-        return CALL_HOURS.days.indexOf(m.day) > -1 && m.hour >= CALL_HOURS.start && m.hour < CALL_HOURS.end;
-      }
-      window.addEventListener('DOMContentLoaded', function(){
-        document.documentElement.setAttribute('data-call-state', isOpen() ? 'open' : 'closed');
-      });
-    })();
     function fireCall(){ if (typeof gtag === 'function'){ gtag('event','conversion',{'send_to':'AW-18195606042/D1p1CKrZi7UcEJrUq-RD'}); } return true; }
     function fireBook(){ if (typeof gtag === 'function'){ gtag('event','conversion',{'send_to':'AW-18195606042/ru3xCK3Zi7UcEJrUq-RD'}); } return true; }
   </script>
@@ -68,7 +54,6 @@
     .top-phone{ text-decoration:none; font-weight:700; font-size:0.96rem; color:var(--terra); border:1.5px solid var(--dust-3); border-radius:999px; padding:9px 18px; display:inline-flex; align-items:center; gap:8px; transition:all .2s var(--ease); }
     .top-phone:hover{ border-color:var(--terra); }
     .top-phone svg{ width:15px; height:15px; }
-    [data-call-state="closed"] .top-phone{ display:none; }
     .wrap{ max-width:var(--max); margin:0 auto; padding:14px 28px 70px; }
     .eyebrow{ display:inline-flex; align-items:center; gap:10px; font-size:0.72rem; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--ochre); margin-bottom:16px; }
     .eyebrow::before, .eyebrow::after{ content:""; width:24px; height:2px; background:var(--ochre); opacity:.5; }
@@ -78,6 +63,7 @@
     .btn svg{ width:19px; height:19px; }
     .btn-primary{ background:var(--terra); color:var(--white); box-shadow:0 8px 24px rgba(168,92,50,0.34); }
     .btn-primary:hover{ background:var(--terra-lt); transform:translateY(-2px); }
+    .btn-2line{ flex-direction:column; gap:1px; line-height:1.16; }
     .callbtn .btn-txt{ display:inline-flex; flex-wrap:wrap; align-items:baseline; justify-content:center; gap:4px 9px; }
     .callbtn .bl{ white-space:nowrap; }
     .callbtn .nb{ white-space:nowrap; }
@@ -87,10 +73,9 @@
     .note a{ color:var(--terra); font-weight:700; }
     .hero{ text-align:center; padding:24px 0 4px; }
     .hero .sub{ font-size:clamp(1rem,2.4vw,1.18rem); color:var(--mid); max-width:585px; margin:18px auto 0; }
-    .hero-cta{ margin:30px auto 0; max-width:440px; }
-    .hero-cta .cta-open, .hero-cta .cta-closed{ display:none; flex-direction:column; gap:12px; }
-    [data-call-state="open"] .hero-cta .cta-open{ display:flex; }
-    [data-call-state="closed"] .hero-cta .cta-closed{ display:flex; }
+    .hero-cta{ margin:30px auto 0; max-width:480px; }
+    .hero-cta .cta-row{ display:flex; gap:12px; }
+    .hero-cta .cta-row .btn{ flex:1; }
     .hero-trust{ font-size:0.86rem; color:var(--light-mid); margin-top:20px; display:flex; flex-wrap:wrap; gap:8px 18px; justify-content:center; }
     .hero-trust span{ display:inline-flex; align-items:center; gap:7px; font-weight:600; }
     .hero-trust svg{ width:14px; height:14px; color:var(--ochre); flex-shrink:0; }
@@ -116,7 +101,7 @@
     @media (max-width:560px){
       .top{ padding:16px 18px; }
       .wrap{ padding:8px 18px 60px; }
-      .cta-open, .cta-closed{ width:100%; }
+      .hero-cta .cta-row{ flex-direction:column; }
       .btn{ font-size:1rem; padding:17px 18px; }
       .callbtn .btn-txt{ flex-direction:column; gap:1px; }
       .hero-cta{ width:100%; }
@@ -134,19 +119,14 @@
   <main class="wrap">
     <section class="hero">
       <span class="eyebrow">Start here</span>
-      <h1>The simplest first step is a <span class="accent">free discovery call.</span></h1>
+      <h1>The simplest first step is a<br><span class="accent">free discovery call.</span></h1>
       <p class="sub">A short, confidential conversation with an accredited Family Dispute Resolution practitioner. We will talk through your situation, whether FDR is the right fit, and the realistic path from here. No sign-up, no obligation.</p>
       <div class="hero-cta">
-        <div class="cta-open">
-          <a class="btn btn-primary callbtn" href="tel:0399617544" onclick="fireCall()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span class="btn-txt"><span class="bl">Free Discovery Call</span> <span class="nb">(03)&nbsp;9961&nbsp;7544</span></span></a>
-          <a class="btn btn-secondary" href="/callback/">Request a callback</a>
-          <p class="note">Prefer to pick a time yourself? <a href="https://calendar.app.google/zwNm4dzYnwAwhwxY8" target="_blank" rel="noopener" onclick="fireBook()">Book a time instead</a>.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary btn-2line" href="/pricing/#get-quote"><span>Get a free,</span><span>fixed quote</span></a>
+          <a class="btn btn-primary btn-2line" href="/callback/"><span>Request</span><span>call back</span></a>
         </div>
-        <div class="cta-closed">
-          <a class="btn btn-primary" href="https://calendar.app.google/zwNm4dzYnwAwhwxY8" target="_blank" rel="noopener" onclick="fireBook()">Book a Free Discovery Call</a>
-          <a class="btn btn-secondary" href="/callback/">Request a callback</a>
-          <p class="note">Lines are open 10am to 7pm, Mon to Fri (Melbourne). Book a time, request a callback above, or <a href="tel:0399617544" onclick="fireCall()">call (03) 9961 7544</a>.</p>
-        </div>
+        <p class="note">Or call <a href="tel:0399617544" onclick="fireCall()">(03)&nbsp;9961&nbsp;7544</a> (voicemail out of hours).<br>Or <a href="https://calendar.app.google/zwNm4dzYnwAwhwxY8" target="_blank" rel="noopener" onclick="fireBook()">book a call if English is not your first language</a>.</p>
       </div>
       <p class="hero-trust"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Accredited FDR practitioner</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Australia-wide, online</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>No obligation</span></p>
     </section>

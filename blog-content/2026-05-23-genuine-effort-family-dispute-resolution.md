@@ -3,7 +3,7 @@ title: "What 'genuine effort' means in Family Dispute Resolution"
 slug: "genuine-effort-family-dispute-resolution"
 date: 2026-05-23
 category: Section 60I
-meta_description: "What 'genuine effort' means in Family Dispute Resolution, what counts and what doesn't, and how the certificate type can affect later court proceedings."
+meta_description: "What genuine effort means in Family Dispute Resolution, what counts and what does not, and how the certificate type can affect later court proceedings."
 related_pages:
   - /section-60i/
   - /how-it-works/

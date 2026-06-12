@@ -173,6 +173,7 @@ GTAG = """  <!-- Google tag (gtag.js) -->
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'AW-18195606042');
+    gtag('config', 'G-5TFC27B41R');
   </script>"""
 
 
