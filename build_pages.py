@@ -5201,7 +5201,7 @@ PRICING_HTML = """
         <section class="getquote" id="get-quote">
           <h2>Get your fixed-price quote</h2>
           <p>Tell us where to send it. No obligation, and we reply with a single fixed price, transparent and agreed up front.</p>
-          <form name="request-a-quote" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/quote-received/" class="qform">
+          <form id="quote-form" name="request-a-quote" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/quote-received/" class="qform">
             <input type="hidden" name="form-name" value="request-a-quote">
             <p hidden><input name="bot-field"></p>
             <div class="qform-row">
@@ -5220,6 +5220,21 @@ PRICING_HTML = """
             <button type="submit" class="btn">Send my quote request</button>
             <p class="qform-note">Prefer to talk first? <a href="https://calendar.app.google/zwNm4dzYnwAwhwxY8">Book a free discovery call</a> or call <a href="tel:0399617544">(03) 9961 7544</a>.</p>
           </form>
+          <script>
+          (function(){
+            var f=document.getElementById('quote-form');
+            if(!f) return;
+            f.addEventListener('submit',function(e){
+              e.preventDefault();
+              if(typeof f.reportValidity==='function' && !f.reportValidity()) return;
+              var go=function(){ window.location.href='/quote-received/'; };
+              try{
+                var body=new URLSearchParams(new FormData(f)).toString();
+                fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:body}).then(go,go);
+              }catch(err){ go(); }
+            });
+          })();
+          </script>
         </section>
 
       </div>
