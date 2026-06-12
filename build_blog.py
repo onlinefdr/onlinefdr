@@ -1079,15 +1079,15 @@ def update_sitemap(posts):
     # further-reading modules. about/locations/book/get-help had only the
     # technical width/height pass, so they keep their prior content date.
     static_entries = [
-        ("/", "1.0", "2026-06-11"),
+        ("/", "1.0", "2026-06-12"),
         ("/about/", "0.8", "2026-06-10"),
-        ("/what-is-fdr/", "0.8", "2026-06-11"),
+        ("/what-is-fdr/", "0.8", "2026-06-12"),
         ("/how-it-works/", "0.8", "2026-06-11"),
         ("/parenting/", "0.9", "2026-06-11"),
         ("/financial-settlement/", "0.9", "2026-06-11"),
         ("/section-60i/", "0.9", "2026-06-11"),
-        ("/pricing/", "0.9", "2026-06-11"),
-        ("/faq/", "0.7", "2026-06-11"),
+        ("/pricing/", "0.9", "2026-06-12"),
+        ("/faq/", "0.7", "2026-06-12"),
         ("/locations/", "0.7", "2026-06-10"),
         ("/book/", "0.9", "2026-06-10"),
         ("/get-help/", "0.6", "2026-06-10"),
@@ -1203,7 +1203,7 @@ LLMS_CORE_PAGES = [
     ("/parenting/", "Parenting Plans, Consent Orders, and the best-interests framework after the 2024 reforms."),
     ("/financial-settlement/", "How property, superannuation, and debt are divided after separation."),
     ("/section-60i/", "What a Section 60I certificate is, who issues it, and when a parenting application needs one."),
-    ("/pricing/", "Indicative per-person cost bands on a pay-as-you-go basis."),
+    ("/pricing/", "Fixed-price packages, agreed up front, with no nasty surprises."),
     ("/faq/", "Plain answers to common questions about FDR, parenting, and financial matters."),
     ("/book/", "Book a free 15-minute discovery call to check whether FDR is the right path."),
 ]

@@ -2,8 +2,9 @@
 title: "How much does a divorce cost in Australia?"
 slug: "how-much-does-a-divorce-cost-australia"
 date: 2026-06-05
+updated: 2026-06-12
 category: Financial Settlement
-meta_description: "The divorce itself costs about $1,100 to file. The real money is in sorting out property and parenting, and the path you choose can swing it by tens of thousands. A clear 2026 guide."
+meta_description: "A divorce costs about $1,100 to file in Australia. The real money is in property and parenting, where your path can swing it by tens of thousands."
 related_pages:
   - /pricing/
   - /financial-settlement/
@@ -36,9 +37,9 @@ For most separating couples, family dispute resolution, or FDR, is the path that
 
 Private FDR sits across a wide band. Hourly rates commonly run from about $150 to $500, and the total a matter costs depends on how many sessions it takes and how much you and your former partner are able to agree between yourselves. A useful rule of thumb is that you tend to get what you pay for, so the aim is not the cheapest quote you can find or the dearest, but a fair rate from an experienced, accredited practitioner. Somewhere in the middle is where you want to land.
 
-Online practice changes the maths in your favour. A practitioner working online carries none of the office and venue overheads that push many in-person rates toward the top of that band, which is why a well-run online service can sit comfortably in the lower-middle without cutting any corners. We charge $195 an hour, and that figure already includes GST.
+Online practice changes the maths in your favour. A practitioner working online carries none of the office and venue overheads that push many in-person rates toward the top of that band, which is why a well-run online service can sit comfortably in the lower-middle without cutting any corners. We work to a single fixed price, agreed up front and including GST, so the number you are quoted is the number you pay.
 
-That last point matters more than it looks. When you compare quotes, check whether the figure includes GST, because many practitioners quote excluding it. A session advertised at "$1,200 plus GST" is really $1,320. Our figures are quoted including GST, so the number you see is the number you pay. For indicative, per-person totals for a typical parenting or property matter, see [what it costs](/pricing/).
+That last point matters more than it looks. When you compare quotes, check whether the figure includes GST, because many practitioners quote excluding it. A session advertised at "$1,200 plus GST" is really $1,320. Our figures are quoted including GST, so the number you see is the number you pay. For our fixed-price packages covering a typical parenting or property matter, see [what it costs](/pricing/).
 
 ## What a courtroom fight costs
 
@@ -70,7 +71,7 @@ You do not always have to meet the cost in one hit. The fee is usually split bet
 
 Strip it all back and your final bill comes down to two things: how complex your situation is, and how the two of you engage with the process. A couple who are broadly willing to be reasonable, even where they do not yet agree, will resolve faster and pay less. A couple who treat every point as a battle will pay for every hour of it. The law is the same for both. The difference in cost, and it is a large one, is almost entirely in your hands.
 
-If you want a sense of where your own matter might land, the [pricing page](/pricing/) sets out indicative figures, or you can book a free discovery call and ask. There is no obligation, and the call costs nothing.
+If you want your own fixed price, the [pricing page](/pricing/) sets out our packages and you can request a quote, or you can book a free discovery call and ask. There is no obligation, and the call costs nothing.
 
 ### How much does a divorce cost in Australia?
 
