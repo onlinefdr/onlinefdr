@@ -5201,8 +5201,8 @@ PRICING_HTML = """
         <section class="getquote" id="get-quote">
           <h2>Get your fixed-price quote</h2>
           <p>Tell us where to send it. No obligation, and we reply with a single fixed price, transparent and agreed up front.</p>
-          <form name="quote-request" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/quote-received/" class="qform">
-            <input type="hidden" name="form-name" value="quote-request">
+          <form name="request-a-quote" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/quote-received/" class="qform">
+            <input type="hidden" name="form-name" value="request-a-quote">
             <p hidden><input name="bot-field"></p>
             <div class="qform-row">
               <input type="text" name="name" placeholder="Your name" required>
