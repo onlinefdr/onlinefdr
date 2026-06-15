@@ -113,9 +113,9 @@ NAV_LINKS = """
           <li role="none"><a href="https://www.linkedin.com/company/onlinefdr/" role="menuitem" target="_blank" rel="noopener noreferrer">LinkedIn<svg class="nav-sub-ext" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></li>
         </ul>
       </li>
-      <li class="nav-cta-mobile-only"><a href="tel:0399617544" class="nav-cta" aria-label="Call us on 0 3 9 9 6 1 7 5 4 4"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right:6px;vertical-align:-2px"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(03) 9961 7544</a></li>"""
+      <li class="nav-cta-mobile-only"><a href="tel:1800957253" class="nav-cta" aria-label="Call us on 1 8 0 0 9 5 7 2 5 3"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right:6px;vertical-align:-2px"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>1800 957 253</a></li>"""
 
-NAV_CTA = """<a href="tel:0399617544" class="nav-cta" aria-label="Call us on 0 3 9 9 6 1 7 5 4 4"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right:6px;vertical-align:-2px"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(03) 9961 7544</a>"""
+NAV_CTA = """<a href="tel:1800957253" class="nav-cta" aria-label="Call us on 1 8 0 0 9 5 7 2 5 3"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right:6px;vertical-align:-2px"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>1800 957 253</a>"""
 
 GTAG = """  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18195606042"></script>
@@ -216,7 +216,7 @@ FOOTER = """<footer role="contentinfo">
         <li><a href="/downloads/onlinefdr-parenting-reflection-workbook.pdf" download>Parenting reflection workbook (PDF)</a></li>
       </ul></div>
       <div class="footer-col"><h5>Contact</h5><ul>
-        <li><a href="tel:0399617544">(03) 9961 7544</a></li>
+        <li><a href="tel:1800957253">1800 957 253</a></li>
         <li><a href="mailto:hello@onlinefdr.com.au">hello@onlinefdr.com.au</a></li>
         <li><a href="/#discovery">Free Discovery Call</a></li>
         <li><a href="/book/">Book a Session</a></li>
@@ -632,9 +632,9 @@ HOME_HTML = """
           </h1>
           <p class="hero-sub">Family dispute resolution is the structured, professionally facilitated path to working out parenting and financial matters without going to court. Significantly less costly than contested proceedings, and most families resolve their matter in a matter of weeks rather than years.</p>
           <div class="hero-actions">
-            <a href="tel:0399617544" class="btn-primary" aria-label="Call us on 0 3 9 9 6 1 7 5 4 4">
+            <a href="tel:1800957253" class="btn-primary" aria-label="Call us on 1 8 0 0 9 5 7 2 5 3">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right:4px"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-              Call (03) 9961 7544
+              Call 1800 957 253
             </a>
             <a href="/book/" class="btn-icon-book" aria-label="Book a free discovery call">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
@@ -906,8 +906,8 @@ HOME_HTML = """
             Book your free discovery call
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
-          <a href="tel:0399617544" class="cta-btn-outline">
-            Call (03) 9961 7544
+          <a href="tel:1800957253" class="cta-btn-outline">
+            Call 1800 957 253
           </a>
         </div>
         <span class="cta-note">Free &bull; Confidential &bull; No obligation &bull; Available nationally &bull; AGD Accredited</span>
@@ -916,7 +916,7 @@ HOME_HTML = """
   </section>
 """
 
-HOME_SCHEMA = '{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://onlinefdr.com.au/#website","url":"https://onlinefdr.com.au/","name":"onlinefdr.com.au","description":"Accredited Online Family Dispute Resolution in Australia. Available nationally, conducted online, registered with the AGD.","publisher":{"@id":"https://onlinefdr.com.au/#organization"},"inLanguage":"en-AU"},{"@type":["Organization","LegalService"],"@id":"https://onlinefdr.com.au/#organization","name":"onlinefdr.com.au","alternateName":"Online FDR","url":"https://onlinefdr.com.au/","logo":"https://onlinefdr.com.au/images/logo.png","sameAs":["https://www.facebook.com/onlinefdr/","https://www.instagram.com/onlinefdr.au/","https://www.linkedin.com/company/onlinefdr/"],"telephone":"+61399617544","email":"hello@onlinefdr.com.au","description":"Accredited Online Family Dispute Resolution practice. Registered with the Australian Government Attorney-General\'s Department under the Family Law (Family Dispute Resolution Practitioners) Regulations 2025. Authorised to issue Section 60I certificates nationally.","areaServed":{"@type":"Country","name":"Australia"},"serviceType":["Family Dispute Resolution","Online Mediation","Section 60I Certificate Issuance","Parenting Mediation","Property Settlement Mediation"],"knowsAbout":["Family Law Act 1975","Section 60I certificates","Family Dispute Resolution","Parenting arrangements","Property settlement","Online mediation"],"founder":{"@type":"Person","name":"Kevin Scrimshaw","jobTitle":"Founder","identifier":{"@type":"PropertyValue","propertyID":"AGD FDRP Registration Number","value":"F2003011"},"hasCredential":[{"@type":"EducationalOccupationalCredential","credentialCategory":"Accreditation","name":"Accredited Family Dispute Resolution Practitioner","recognizedBy":{"@type":"GovernmentOrganization","name":"Australian Government Attorney-General\'s Department"}}]}},{"@type":"WebPage","@id":"https://onlinefdr.com.au/#webpage","url":"https://onlinefdr.com.au/","name":"Accredited Online Family Dispute Resolution in Australia","isPartOf":{"@id":"https://onlinefdr.com.au/#website"},"about":{"@id":"https://onlinefdr.com.au/#organization"},"mainEntity":{"@id":"https://onlinefdr.com.au/#faq"},"inLanguage":"en-AU"},{"@type":"FAQPage","@id":"https://onlinefdr.com.au/#faq","mainEntity":[{"@type":"Question","name":"Do I need to attempt FDR before going to the Family Court?","acceptedAnswer":{"@type":"Answer","text":"For parenting orders, yes. Under section 60I of the Family Law Act, FDR is the step the law expects to be taken before applying for parenting orders, unless an exemption applies. For financial and property matters, the Section 60I certificate does not apply, but every initiating application requires a Genuine Steps Certificate under Schedule 1 of the FCFCOA (Family Law) Rules 2021. The Genuine Steps Certificate is signed by the party themselves and confirms a genuine attempt at dispute resolution has been made."}},{"@type":"Question","name":"Is online family mediation legally valid in Australia?","acceptedAnswer":{"@type":"Answer","text":"Yes. The Family Law Act does not require FDR to be conducted in person. Online mediation by an accredited FDRP is fully legally valid. Section 60I certificates issued after online sessions carry exactly the same legal standing as those from in-person sessions, and the statutory confidentiality and inadmissibility protections under sections 10H and 10J apply equally."}},{"@type":"Question","name":"What if the other party will not participate?","acceptedAnswer":{"@type":"Answer","text":"If the other party refuses to attend after being given a genuine opportunity, a Section 60I certificate under paragraph 60I(8)(a) can be issued documenting non-attendance. The matter can then proceed to court for parenting orders. Courts may take non-participation into account when making subsequent orders, including in relation to costs."}},{"@type":"Question","name":"How long does the FDR process take?","acceptedAnswer":{"@type":"Answer","text":"Most matters resolve in a matter of weeks rather than months. Discovery calls are typically available within a few days of enquiry, intake within a week or two, and the first joint session within two weeks of initial contact. Higher-conflict matters take longer, but still run significantly faster than the 18 to 36 month timeline for contested family law proceedings."}},{"@type":"Question","name":"Can I participate if I live in regional or rural Australia?","acceptedAnswer":{"@type":"Answer","text":"Yes. Our practice is entirely online so you can participate from anywhere in Australia. Both parties can be in different cities or states. Access to an accredited FDRP is no longer determined by postcode."}},{"@type":"Question","name":"Does this apply to financial matters as well as parenting?","acceptedAnswer":{"@type":"Answer","text":"Yes. We handle parenting matters, financial and property settlement, and Section 60I certificates. Whether you are mid-separation, already divorced with ongoing parenting disputes, or dealing with financial matters only, FDR is available and appropriate. The Family Law Amendment Act 2024, in force from 10 June 2025, codified the four-step property settlement framework into the Family Law Act and imposed new statutory obligations on FDR practitioners to inform parties about their duty of disclosure."}}]}]}'
+HOME_SCHEMA = '{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://onlinefdr.com.au/#website","url":"https://onlinefdr.com.au/","name":"onlinefdr.com.au","description":"Accredited Online Family Dispute Resolution in Australia. Available nationally, conducted online, registered with the AGD.","publisher":{"@id":"https://onlinefdr.com.au/#organization"},"inLanguage":"en-AU"},{"@type":["Organization","LegalService"],"@id":"https://onlinefdr.com.au/#organization","name":"onlinefdr.com.au","alternateName":"Online FDR","url":"https://onlinefdr.com.au/","logo":"https://onlinefdr.com.au/images/logo.png","sameAs":["https://www.facebook.com/onlinefdr/","https://www.instagram.com/onlinefdr.au/","https://www.linkedin.com/company/onlinefdr/"],"telephone":"1800 957 253","email":"hello@onlinefdr.com.au","description":"Accredited Online Family Dispute Resolution practice. Registered with the Australian Government Attorney-General\'s Department under the Family Law (Family Dispute Resolution Practitioners) Regulations 2025. Authorised to issue Section 60I certificates nationally.","areaServed":{"@type":"Country","name":"Australia"},"serviceType":["Family Dispute Resolution","Online Mediation","Section 60I Certificate Issuance","Parenting Mediation","Property Settlement Mediation"],"knowsAbout":["Family Law Act 1975","Section 60I certificates","Family Dispute Resolution","Parenting arrangements","Property settlement","Online mediation"],"founder":{"@type":"Person","name":"Kevin Scrimshaw","jobTitle":"Founder","identifier":{"@type":"PropertyValue","propertyID":"AGD FDRP Registration Number","value":"F2003011"},"hasCredential":[{"@type":"EducationalOccupationalCredential","credentialCategory":"Accreditation","name":"Accredited Family Dispute Resolution Practitioner","recognizedBy":{"@type":"GovernmentOrganization","name":"Australian Government Attorney-General\'s Department"}}]}},{"@type":"WebPage","@id":"https://onlinefdr.com.au/#webpage","url":"https://onlinefdr.com.au/","name":"Accredited Online Family Dispute Resolution in Australia","isPartOf":{"@id":"https://onlinefdr.com.au/#website"},"about":{"@id":"https://onlinefdr.com.au/#organization"},"mainEntity":{"@id":"https://onlinefdr.com.au/#faq"},"inLanguage":"en-AU"},{"@type":"FAQPage","@id":"https://onlinefdr.com.au/#faq","mainEntity":[{"@type":"Question","name":"Do I need to attempt FDR before going to the Family Court?","acceptedAnswer":{"@type":"Answer","text":"For parenting orders, yes. Under section 60I of the Family Law Act, FDR is the step the law expects to be taken before applying for parenting orders, unless an exemption applies. For financial and property matters, the Section 60I certificate does not apply, but every initiating application requires a Genuine Steps Certificate under Schedule 1 of the FCFCOA (Family Law) Rules 2021. The Genuine Steps Certificate is signed by the party themselves and confirms a genuine attempt at dispute resolution has been made."}},{"@type":"Question","name":"Is online family mediation legally valid in Australia?","acceptedAnswer":{"@type":"Answer","text":"Yes. The Family Law Act does not require FDR to be conducted in person. Online mediation by an accredited FDRP is fully legally valid. Section 60I certificates issued after online sessions carry exactly the same legal standing as those from in-person sessions, and the statutory confidentiality and inadmissibility protections under sections 10H and 10J apply equally."}},{"@type":"Question","name":"What if the other party will not participate?","acceptedAnswer":{"@type":"Answer","text":"If the other party refuses to attend after being given a genuine opportunity, a Section 60I certificate under paragraph 60I(8)(a) can be issued documenting non-attendance. The matter can then proceed to court for parenting orders. Courts may take non-participation into account when making subsequent orders, including in relation to costs."}},{"@type":"Question","name":"How long does the FDR process take?","acceptedAnswer":{"@type":"Answer","text":"Most matters resolve in a matter of weeks rather than months. Discovery calls are typically available within a few days of enquiry, intake within a week or two, and the first joint session within two weeks of initial contact. Higher-conflict matters take longer, but still run significantly faster than the 18 to 36 month timeline for contested family law proceedings."}},{"@type":"Question","name":"Can I participate if I live in regional or rural Australia?","acceptedAnswer":{"@type":"Answer","text":"Yes. Our practice is entirely online so you can participate from anywhere in Australia. Both parties can be in different cities or states. Access to an accredited FDRP is no longer determined by postcode."}},{"@type":"Question","name":"Does this apply to financial matters as well as parenting?","acceptedAnswer":{"@type":"Answer","text":"Yes. We handle parenting matters, financial and property settlement, and Section 60I certificates. Whether you are mid-separation, already divorced with ongoing parenting disputes, or dealing with financial matters only, FDR is available and appropriate. The Family Law Amendment Act 2024, in force from 10 June 2025, codified the four-step property settlement framework into the Family Law Act and imposed new statutory obligations on FDR practitioners to inform parties about their duty of disclosure."}}]}]}'
 
 build_page(
     filename="home-v2.html",
@@ -1177,7 +1177,7 @@ ABOUT_HTML = """
         <p>A free discovery call with an accredited practitioner. No pressure, no commitment. Just a straight conversation about your options.</p>
         <div class="page-cta-actions">
           <a href="https://calendar.app.google/zwNm4dzYnwAwhwxY8" class="btn-light">Book your free discovery call</a>
-          <a href="tel:0399617544" class="btn-outline-light">Call (03) 9961 7544</a>
+          <a href="tel:1800957253" class="btn-outline-light">Call 1800 957 253</a>
         </div>
         <span class="page-cta-note">Free &bull; Confidential &bull; No obligation &bull; Available nationally</span>
       </div>
@@ -1576,7 +1576,7 @@ PO_HTML = """
         <p>FDR is the structured way to get there. A free discovery call to talk through whether it is right for your situation.</p>
         <div class="page-cta-actions">
           <a href="https://calendar.app.google/zwNm4dzYnwAwhwxY8" class="btn-light">Book your free discovery call</a>
-          <a href="tel:0399617544" class="btn-outline-light">Call (03) 9961 7544</a>
+          <a href="tel:1800957253" class="btn-outline-light">Call 1800 957 253</a>
         </div>
         <span class="page-cta-note">Free &bull; Confidential &bull; No obligation &bull; Available nationally</span>
       </div>
@@ -1838,7 +1838,7 @@ FS_HTML = """
         <p>A free discovery call to discuss your financial situation, understand your options, and find out whether FDR is right for your circumstances.</p>
         <div class="page-cta-actions">
           <a href="https://calendar.app.google/zwNm4dzYnwAwhwxY8" class="btn-light">Book your free discovery call</a>
-          <a href="tel:0399617544" class="btn-outline-light">Call (03) 9961 7544</a>
+          <a href="tel:1800957253" class="btn-outline-light">Call 1800 957 253</a>
         </div>
         <span class="page-cta-note">Free &bull; Confidential &bull; No obligation &bull; Available nationally</span>
       </div>
@@ -2077,7 +2077,7 @@ S60I_HTML = """
         <p>A free discovery call to understand whether FDR is appropriate for your circumstances and to walk through what the Section 60I process involves.</p>
         <div class="page-cta-actions">
           <a href="https://calendar.app.google/zwNm4dzYnwAwhwxY8" class="btn-light">Book your free discovery call</a>
-          <a href="tel:0399617544" class="btn-outline-light">Call (03) 9961 7544</a>
+          <a href="tel:1800957253" class="btn-outline-light">Call 1800 957 253</a>
         </div>
         <span class="page-cta-note">Free &bull; Confidential &bull; No obligation &bull; Available nationally</span>
       </div>
@@ -2792,7 +2792,7 @@ HIW_HTML = """
         <p>A free discovery call. Find out whether FDR is right for your situation, what the process looks like for your circumstances, and how quickly you can start.</p>
         <div class="page-cta-actions">
           <a href="https://calendar.app.google/zwNm4dzYnwAwhwxY8" class="btn-light">Book your free discovery call</a>
-          <a href="tel:0399617544" class="btn-outline-light">Call (03) 9961 7544</a>
+          <a href="tel:1800957253" class="btn-outline-light">Call 1800 957 253</a>
         </div>
         <span class="page-cta-note">Free &bull; Confidential &bull; No obligation &bull; Available nationally</span>
       </div>
@@ -3237,7 +3237,7 @@ WIFDR_HTML = """
         <p>A free discovery call with an accredited practitioner. No pressure, no commitment, no obligation to proceed.</p>
         <div class="page-cta-actions">
           <a href="https://calendar.app.google/zwNm4dzYnwAwhwxY8" class="btn-light">Book your free discovery call</a>
-          <a href="tel:0399617544" class="btn-outline-light">Call (03) 9961 7544</a>
+          <a href="tel:1800957253" class="btn-outline-light">Call 1800 957 253</a>
         </div>
         <span class="page-cta-note">Free &bull; Confidential &bull; No obligation &bull; Available nationally</span>
       </div>
@@ -3893,7 +3893,7 @@ COMPLAINTS_HTML = """
           <p>All complaints are handled confidentially within onlinefdr.com.au. Where a complaint cannot be resolved to your satisfaction internally, you can escalate the matter to our approved external complaints body, the Australian Mediation Association (AMA), at <a href="https://ama.asn.au/mediation-complaints/" style="color:var(--terra);text-decoration:none;font-weight:600">ama.asn.au/mediation-complaints</a>. The AMA handles complaints about accredited FDR practitioners independently of the practice.</p>
           <h2 id="language">Language</h2>
           <p>This page is published in English, and the English version is the authoritative version. If you read it using a browser or automated translation, the English text prevails in the event of any inconsistency or ambiguity.</p>
-          <p><strong>Prefer to call?</strong> You can reach us on <a href="tel:0399617544" style="color:var(--terra);text-decoration:none;font-weight:600">(03) 9961 7544</a> during business hours.</p>
+          <p><strong>Prefer to call?</strong> You can reach us on <a href="tel:1800957253" style="color:var(--terra);text-decoration:none;font-weight:600">1800 957 253</a> during business hours.</p>
         </div>
       </aside>
 
@@ -4001,7 +4001,7 @@ PRIVACY_HTML = """
         <h2 id="who-we-are">Who we are</h2>
         <p>onlinefdr.com.au is an accredited online Family Dispute Resolution practice registered with the Australian Government Attorney-General's Department. We operate under the Family Law Act 1975 (Cth) and the Australian Privacy Act 1988 (Cth).</p>
         <p>References to "we", "us", and "our" in this policy refer to the practice operating under the onlinefdr.com.au brand. References to "you" refer to any person who contacts us, uses our website, or participates in our FDR services.</p>
-        <p><strong>Contact:</strong> <a href="mailto:hello@onlinefdr.com.au">hello@onlinefdr.com.au</a> &bull; <a href="tel:0399617544">(03) 9961 7544</a></p>
+        <p><strong>Contact:</strong> <a href="mailto:hello@onlinefdr.com.au">hello@onlinefdr.com.au</a> &bull; <a href="tel:1800957253">1800 957 253</a></p>
 
         <h2 id="what-we-collect">What information we collect</h2>
         <h3>When you contact us or book a call</h3>
@@ -4126,7 +4126,7 @@ PRIVACY_HTML = """
         <p>For privacy enquiries or to exercise your rights, contact us:</p>
         <ul>
           <li>Email: <a href="mailto:hello@onlinefdr.com.au">hello@onlinefdr.com.au</a></li>
-          <li>Phone: <a href="tel:0399617544">(03) 9961 7544</a></li>
+          <li>Phone: <a href="tel:1800957253">1800 957 253</a></li>
         </ul>
         <p>If you have a complaint about our handling of your personal information, please contact us in the first instance. If we are unable to resolve your complaint, you may refer it to the Office of the Australian Information Commissioner at <a href="https://www.oaic.gov.au" target="_blank" rel="noopener noreferrer">oaic.gov.au</a>.</p>
         <p>This policy was last updated in June 2026. We may update it from time to time. The current version will always be available at this address.</p>
@@ -4211,7 +4211,7 @@ TERMS_HTML = """
 
         <h2 id="about">About these terms</h2>
         <p>These Terms of Service govern your use of the onlinefdr.com.au website and your engagement with our Family Dispute Resolution services. By booking a session, submitting an enquiry, or using our website, you agree to these terms.</p>
-        <p>These terms should be read together with our <a href="/privacy/">Privacy Policy</a>. If you have any questions before booking, contact us at <a href="mailto:hello@onlinefdr.com.au">hello@onlinefdr.com.au</a> or <a href="tel:0399617544">(03) 9961 7544</a>.</p>
+        <p>These terms should be read together with our <a href="/privacy/">Privacy Policy</a>. If you have any questions before booking, contact us at <a href="mailto:hello@onlinefdr.com.au">hello@onlinefdr.com.au</a> or <a href="tel:1800957253">1800 957 253</a>.</p>
 
         <h2 id="services">Our services</h2>
         <p>onlinefdr.com.au provides accredited Family Dispute Resolution services conducted online via Google Meet. Our services include:</p>
@@ -4326,7 +4326,7 @@ TERMS_HTML = """
         <p>Questions about these terms can be directed to:</p>
         <ul>
           <li>Email: <a href="mailto:hello@onlinefdr.com.au">hello@onlinefdr.com.au</a></li>
-          <li>Phone: <a href="tel:0399617544">(03) 9961 7544</a></li>
+          <li>Phone: <a href="tel:1800957253">1800 957 253</a></li>
         </ul>
         <p>These terms were last updated in June 2026. We may update them from time to time. Continued use of our services following any update constitutes acceptance of the revised terms. The current version will always be available at this address.</p>
         <h2 id="language">Language</h2>
@@ -4618,7 +4618,7 @@ BOOK_HTML = """
     </section>
 
     <div class="book-fallback">
-      <p><strong>Prefer to talk first?</strong> Reach us at <a href="mailto:hello@onlinefdr.com.au">hello@onlinefdr.com.au</a> or <a href="tel:0399617544">(03) 9961 7544</a>. We respond to enquiries within one business day.</p>
+      <p><strong>Prefer to talk first?</strong> Reach us at <a href="mailto:hello@onlinefdr.com.au">hello@onlinefdr.com.au</a> or <a href="tel:1800957253">1800 957 253</a>. We respond to enquiries within one business day.</p>
     </div>
   </div>
 """
@@ -5212,7 +5212,7 @@ PRICING_HTML = """
               <option>Divorce application</option>
             </select>
             <button type="submit" class="btn">Send my quote request</button>
-            <p class="qform-note">Prefer to talk first? <a href="https://calendar.app.google/zwNm4dzYnwAwhwxY8">Book a free discovery call</a> or call <a href="tel:0399617544">(03) 9961 7544</a>.</p>
+            <p class="qform-note">Prefer to talk first? <a href="https://calendar.app.google/zwNm4dzYnwAwhwxY8">Book a free discovery call</a> or call <a href="tel:1800957253">1800 957 253</a>.</p>
           </form>
           <script>
           (function(){
@@ -5250,7 +5250,7 @@ PRICING_HTML = """
           <h4>Free discovery call</h4>
           <p>A short, no-obligation conversation with an accredited FDR practitioner. Nothing is decided on the call.</p>
           <a href="https://calendar.app.google/zwNm4dzYnwAwhwxY8" class="btn-primary">Book a free<br>discovery call</a>
-          <a href="tel:0399617544" class="btn-outline">Call (03) 9961 7544</a>
+          <a href="tel:1800957253" class="btn-outline">Call 1800 957 253</a>
         </div>
         <div class="sidebar-card">
           <h4>Pay securely</h4>
@@ -5590,7 +5590,7 @@ PRICING_HTML = """
         <p>Talk through where you stand and find out whether FDR is right for your circumstances. No obligation, and nothing is decided on the call.</p>
         <div class="page-cta-actions">
           <a href="https://calendar.app.google/zwNm4dzYnwAwhwxY8" class="btn-light">Book your free discovery call</a>
-          <a href="tel:0399617544" class="btn-outline-light">Call (03) 9961 7544</a>
+          <a href="tel:1800957253" class="btn-outline-light">Call 1800 957 253</a>
         </div>
         <span class="page-cta-note">Free &bull; Confidential &bull; No obligation &bull; Available nationally</span>
       </div>

@@ -75,4 +75,4 @@ If you are dealing with a child who is resisting changeover, or with a teenager 
 
 If you are navigating a parenting situation where your child has expressed strong preferences and you are not sure what to do with them, a short discovery call with an accredited FDR practitioner will tell you whether FDR is the right next step. Free, fifteen minutes, no commitment.
 
-[Book your free discovery call](/book/) or call (03) 9961 7544.
+[Book your free discovery call](/book/) or call 1800 957 253.
