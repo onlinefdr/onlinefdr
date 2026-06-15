@@ -2215,17 +2215,9 @@ JTT_JS = """<script>
       e.preventDefault();
       submitBtn.disabled=true;
       submitBtn.textContent='Submitting...';
-      if(typeof grecaptcha!=='undefined'){
-        grecaptcha.ready(()=>{
-          grecaptcha.execute('YOUR_RECAPTCHA_SITE_KEY',{action:'submit'}).then(token=>{
-            fetch('/api/practitioner-application',{method:'POST',body:new FormData(form)})
-              .then(r=>{if(r.ok){form.style.display='none';document.getElementById('form-success').classList.add('show')}else{submitBtn.disabled=false;submitBtn.textContent='Submit application'}})
-              .catch(()=>{submitBtn.disabled=false;submitBtn.textContent='Submit application'});
-          });
-        });
-      } else {
-        form.style.display='none';document.getElementById('form-success').classList.add('show');
-      }
+      fetch('/',{method:'POST',body:new FormData(form)})
+        .then(r=>{if(r.ok){form.style.display='none';document.getElementById('form-success').classList.add('show')}else{submitBtn.disabled=false;submitBtn.textContent='Submit application'}})
+        .catch(()=>{submitBtn.disabled=false;submitBtn.textContent='Submit application'});
     });
   }
 </script>"""
@@ -2265,7 +2257,9 @@ JTT_HTML = """
       <p>Thank you for your interest in joining the onlinefdr.com.au network. We review all applications personally and will be in touch within five business days if we would like to proceed to interview.</p>
     </div>
 
-    <form id="jtt-form" novalidate>
+    <form id="jtt-form" name="practitioner-application" method="POST" enctype="multipart/form-data" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+      <input type="hidden" name="form-name" value="practitioner-application">
+      <p hidden><input name="bot-field"></p>
 
       <div class="form-section-header">
         <span class="form-section-num">01</span>
