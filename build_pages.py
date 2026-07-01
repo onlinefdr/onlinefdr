@@ -99,6 +99,7 @@ NAV_LINKS = """
           <li role="none"><a href="/parenting/" role="menuitem">Parenting</a></li>
           <li role="none"><a href="/financial-settlement/" role="menuitem">Financial Settlement</a></li>
           <li role="none"><a href="/section-60i/" role="menuitem">Section 60I</a></li>
+          <li role="none"><a href="/mediation-coaching/" role="menuitem">Mediation Coaching</a></li>
         </ul>
       </li>
       <li><a href="/pricing/">Pricing</a></li>
@@ -198,6 +199,7 @@ FOOTER = """<footer role="contentinfo">
         <li><a href="/parenting/">Parenting</a></li>
         <li><a href="/financial-settlement/">Financial Settlements</a></li>
         <li><a href="/section-60i/">Section 60I Certificate</a></li>
+        <li><a href="/mediation-coaching/">Mediation Coaching</a></li>
       </ul></div>
       <div class="footer-col"><h5>Pricing</h5><ul>
         <li><a href="/pricing/">Our packages</a></li>
@@ -2586,7 +2588,7 @@ HIW_HTML = """
             <p>The intake session also allows the mediator to assess whether the matter is suitable for joint FDR, and to identify any issues that may need to be managed in the joint process. For financial matters, the mediator will walk through the duty of full and frank disclosure with you, in line with the statutory obligation under sections 71B, 90RI, and 90YJA of the Family Law Act.</p>
             <p>If financial matters are in scope, you will be given the Full and Frank Disclosure worksheet to complete before the first joint financial session.</p>
             <div class="tl-meta">
-              <span class="tl-tag tl-tag-time">1 hour each party</span>
+              <span class="tl-tag tl-tag-time">1.5 hours each party</span>
               <span class="tl-tag tl-tag-note">Held separately</span>
               <span class="tl-tag tl-tag-note">Conducted online</span>
             </div>
@@ -2710,23 +2712,23 @@ HIW_HTML = """
         <div class="tf-card">
           <span class="tf-label">Scenario</span>
           <div class="tf-type">Financial only, no children</div>
-          <div class="tf-row"><span class="tf-row-label">Intake sessions</span><span class="tf-row-val">1hr each party</span></div>
+          <div class="tf-row"><span class="tf-row-label">Intake sessions</span><span class="tf-row-val">1.5hrs each party</span></div>
           <div class="tf-row"><span class="tf-row-label">Joint sessions</span><span class="tf-row-val">1 to 2 x 3hrs</span></div>
-          <div class="tf-row"><span class="tf-row-label">Total time (per person)</span><span class="tf-row-val">~4 to 7hrs</span></div>
+          <div class="tf-row"><span class="tf-row-label">Total time (per person)</span><span class="tf-row-val">~4.5 to 7.5hrs</span></div>
           <p class="tf-note">Requires both parties to arrive with the Full and Frank Disclosure worksheet completed and supporting documents gathered.</p>
         </div>
         <div class="tf-card">
           <span class="tf-label">Scenario</span>
           <div class="tf-type">Parenting and financial</div>
-          <div class="tf-row"><span class="tf-row-label">Intake sessions</span><span class="tf-row-val">1hr each party</span></div>
+          <div class="tf-row"><span class="tf-row-label">Intake sessions</span><span class="tf-row-val">1.5hrs each party</span></div>
           <div class="tf-row"><span class="tf-row-label">Joint sessions</span><span class="tf-row-val">1 x 4hrs + 1 x 3hrs</span></div>
-          <div class="tf-row"><span class="tf-row-label">Total time (per person)</span><span class="tf-row-val">~8hrs</span></div>
+          <div class="tf-row"><span class="tf-row-label">Total time (per person)</span><span class="tf-row-val">~8.5hrs</span></div>
           <p class="tf-note">One four-hour session for parenting, one three-hour session for financial. Low to moderate conflict.</p>
         </div>
         <div class="tf-card">
           <span class="tf-label">Scenario</span>
           <div class="tf-type">Complex or high conflict</div>
-          <div class="tf-row"><span class="tf-row-label">Intake sessions</span><span class="tf-row-val">1hr each party</span></div>
+          <div class="tf-row"><span class="tf-row-label">Intake sessions</span><span class="tf-row-val">1.5hrs each party</span></div>
           <div class="tf-row"><span class="tf-row-label">Joint sessions</span><span class="tf-row-val">2 to 3 sessions per area</span></div>
           <div class="tf-row"><span class="tf-row-label">Total time (per person)</span><span class="tf-row-val">13hrs+</span></div>
           <p class="tf-note">Still significantly less than the time and cost of contested proceedings.</p>
@@ -3416,9 +3418,9 @@ SECTIONS = [
     "count": 8,
     "items": [
       ("How does the FDR process work?",
-       "The process moves through four stages. First, a free discovery call to confirm FDR is appropriate. Second, individual intake sessions of one hour each, conducted separately. Third, one or more joint mediation sessions: four hours for parenting matters and three hours for financial matters. Fourth, if agreement is reached, the terms are documented in a Parenting Plan or heads of agreement. If not, a Section 60I certificate may be issued. See our <a href='/how-it-works/'>How It Works</a> page for a full walkthrough."),
+       "The process moves through four stages. First, a free discovery call to confirm FDR is appropriate. Second, individual intake sessions of one and a half hours each, conducted separately. Third, one or more joint mediation sessions: four hours for parenting matters and three hours for financial matters. Fourth, if agreement is reached, the terms are documented in a Parenting Plan or heads of agreement. If not, a Section 60I certificate may be issued. See our <a href='/how-it-works/'>How It Works</a> page for a full walkthrough."),
       ("What happens in the intake session?",
-       "Each party meets separately with the mediator for one hour. This is your opportunity to speak candidly about your situation, your concerns, and what matters most to you, without the other party present. The intake session also allows the mediator to assess whether the matter is suitable for joint FDR and to identify any issues that may affect the process, including safety considerations."),
+       "Each party meets separately with the mediator for one and a half hours. This is your opportunity to speak candidly about your situation, your concerns, and what matters most to you, without the other party present. The intake session also allows the mediator to assess whether the matter is suitable for joint FDR and to identify any issues that may affect the process, including safety considerations."),
       ("How long does a joint session run?",
        "Joint mediation sessions run for four hours for parenting matters and three hours for financial matters. For parenting matters, many couples with lower levels of conflict can work through arrangements in a single session. Financial settlement typically requires its own session. Higher-conflict matters, or those involving greater complexity, may need two or three sessions for each area."),
       ("How many sessions will we need?",
@@ -4094,7 +4096,7 @@ PRIVACY_HTML = """
           <li><strong>Google Workspace:</strong> Email, calendar, and document storage. See Google's Privacy Policy at google.com/privacy.</li>
           <li><strong>Google Meet:</strong> Video conferencing for sessions. Subject to Google's Privacy Policy.</li>
           <li><strong>Google Gemini:</strong> AI-assisted transcription and annotation of intake sessions only (with your express consent). Subject to Google's Privacy Policy.</li>
-          <li><strong>Stripe:</strong> Payment processing, including Buy Now Pay Later providers (Afterpay, Zip). See Stripe's Privacy Policy at stripe.com/privacy.</li>
+          <li><strong>Stripe:</strong> Payment processing, including Buy Now Pay Later providers (Afterpay). See Stripe's Privacy Policy at stripe.com/privacy.</li>
           <li><strong>Netlify:</strong> Website hosting and form submissions. See Netlify's Privacy Policy at netlify.com.</li>
           <li><strong>Dialpad:</strong> Phone service for our business landline. See Dialpad's Privacy Policy at dialpad.com.</li>
         </ul>
@@ -4137,7 +4139,7 @@ PRIVACY_HTML = """
         <h2 id="changelog">Change log</h2>
         <p>Substantive changes to this Privacy Policy are recorded here. Minor formatting or typographical corrections may be made without entry.</p>
         <ul class="changelog-list">
-          <li><strong>June 2026 &mdash; Payment providers.</strong> Updated the list of Buy Now Pay Later providers handled through Stripe to reflect those offered at checkout (Afterpay and Zip).</li>
+          <li><strong>June 2026 &mdash; Payment providers.</strong> Updated the list of Buy Now Pay Later providers handled through Stripe to reflect those offered at checkout (Afterpay).</li>
           <li><strong>May 2026 &mdash; Initial version.</strong> Privacy Policy published at launch.</li>
         </ul>
 
@@ -4218,7 +4220,7 @@ TERMS_HTML = """
         <p>onlinefdr.com.au provides accredited Family Dispute Resolution services conducted online via Google Meet. Our services include:</p>
         <ul>
           <li>Free discovery calls to assess whether FDR is appropriate for your circumstances</li>
-          <li>Individual intake sessions (one hour per party)</li>
+          <li>Individual intake sessions (one and a half hours per party)</li>
           <li>Joint mediation sessions (four hours for parenting matters, three hours for financial matters)</li>
           <li>Documentation of agreed terms</li>
           <li>Section 60I certificates where appropriate</li>
@@ -4521,7 +4523,7 @@ BOOK_HTML = """
           <h2>Private &amp; confidential 1:1 intake session</h2>
         </div>
         <div class="book-card-meta">
-          <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>1 hour</span>
+          <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>1.5 hours</span>
           <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>Online via Google Meet</span>
           <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Held privately with each party</span>
         </div>
@@ -4568,11 +4570,11 @@ BOOK_HTML = """
         <div class="hours-grid-left">
           <table class="hours-table" aria-label="Office hours">
             <tbody>
-              <tr><td>Monday</td><td>10am &ndash; 7pm</td></tr>
-              <tr><td>Tuesday</td><td>10am &ndash; 7pm</td></tr>
-              <tr><td>Wednesday</td><td>10am &ndash; 7pm</td></tr>
-              <tr><td>Thursday</td><td>10am &ndash; 7pm</td></tr>
-              <tr><td>Friday</td><td>10am &ndash; 7pm</td></tr>
+              <tr><td>Monday</td><td>9am to 5pm</td></tr>
+              <tr><td>Tuesday</td><td>9am to 5pm</td></tr>
+              <tr><td>Wednesday</td><td>9am to 5pm</td></tr>
+              <tr><td>Thursday</td><td>9am to 5pm</td></tr>
+              <tr><td>Friday</td><td>9am to 5pm</td></tr>
               <tr><td>Saturday</td><td>By appointment</td></tr>
               <tr class="closed"><td>Sunday</td><td>n/a</td></tr>
             </tbody>
@@ -4596,7 +4598,7 @@ BOOK_HTML = """
             <div class="hours-cal-dow">Sat</div>
             <div class="hours-cal-dow">Sun</div>
           </div>
-          <div class="hours-cal-foot">Bookings available <strong>Monday&ndash;Friday</strong></div>
+          <div class="hours-cal-foot">Bookings available <strong>Monday to Friday</strong></div>
         </figure>
       </div>
     </section>
@@ -4604,7 +4606,7 @@ BOOK_HTML = """
     <section class="payment-section" aria-labelledby="payment-heading">
       <h3 id="payment-heading">Payment options</h3>
       <p>Payment is processed securely by Stripe. We accept Visa, Mastercard, American Express, Apple Pay, and Google Pay (if available).</p>
-      <p>Buy Now Pay Later (BNPL) is available at checkout for intake sessions and joint sessions in Australia (Afterpay and Zip). BNPL lets you pay across instalments. Eligibility and instalment terms are set by each provider. Some providers may not be available for all bookings.</p>
+      <p>Buy Now Pay Later (BNPL) is available at checkout for intake sessions and joint sessions in Australia (Afterpay). BNPL lets you pay across instalments. Eligibility and instalment terms are set by each provider. Some providers may not be available for all bookings.</p>
       <div class="payment-grid" aria-label="Accepted payment methods">
         <div class="payment-brand-tile"><span class="payment-brand-logo"><img src="/images/payment/visa.png" alt="Visa" loading="lazy"></span></div>
         <div class="payment-brand-tile"><span class="payment-brand-logo"><img src="/images/payment/mastercard.png" alt="Mastercard" loading="lazy"></span></div>
@@ -4614,7 +4616,6 @@ BOOK_HTML = """
         <div class="payment-brand-tile"><span class="payment-brand-logo"><img src="/images/payment/afterpay.png" alt="Afterpay" loading="lazy"></span></div>
         <div class="payment-brand-tile"><span class="payment-brand-logo"><img src="/images/payment/klarna.png" alt="Klarna" loading="lazy"></span></div>
         <div class="payment-brand-tile"><span class="payment-brand-logo"><img src="/images/payment/affirm.png" alt="Affirm" loading="lazy"></span></div>
-        <div class="payment-brand-tile"><span class="payment-brand-logo"><img src="/images/payment/zip.png" alt="Zip" loading="lazy"></span></div>
       </div>
     </section>
 
@@ -4685,7 +4686,7 @@ build_page(
     meta_desc="Book a free discovery call to find out if FDR is right for you, or book an intake session to begin the process. Online, anywhere in Australia.",
     canonical="/book/",
     current_page="/book/",
-    schema_json='{"@context":"https://schema.org","@type":"WebPage","@id":"https://onlinefdr.com.au/book/#webpage","url":"https://onlinefdr.com.au/book/","name":"Book Online FDR","description":"Three booking pathways for online Family Dispute Resolution: free discovery call, 1-hour individual intake session, or arranged joint mediation (four hours for parenting, three hours for financial). Available nationally, conducted via Google Meet.","about":{"@id":"https://onlinefdr.com.au/#organization"}}',
+    schema_json='{"@context":"https://schema.org","@type":"WebPage","@id":"https://onlinefdr.com.au/book/#webpage","url":"https://onlinefdr.com.au/book/","name":"Book Online FDR","description":"Three booking pathways for online Family Dispute Resolution: free discovery call, 1.5-hour individual intake session, or arranged joint mediation (four hours for parenting, three hours for financial). Available nationally, conducted via Google Meet.","about":{"@id":"https://onlinefdr.com.au/#organization"}}',
     extra_css=BOOK_CSS,
     breadcrumbs=[("Home", "/"), ("Book", "/book/")],
     page_html=BOOK_HTML,
@@ -5149,7 +5150,7 @@ PRICING_HTML = """
         </div>
 
         <section class="payband">
-          <div class="payband-text"><h3>One fixed price, and you can spread it</h3><p>Pay securely by card, Apple Pay or Google Pay, or split your fixed fee into four interest-free payments with Afterpay or Zip. All processed through Stripe.</p></div>
+          <div class="payband-text"><h3>One fixed price, and you can spread it</h3><p>Pay securely by card, Apple Pay or Google Pay, or split your fixed fee into four interest-free payments with Afterpay. All processed through Stripe.</p></div>
           <div class="paylogos">
             <img src="/images/payment/visa.png" alt="Visa" loading="lazy" decoding="async">
             <img src="/images/payment/mastercard.png" alt="Mastercard" loading="lazy" decoding="async">
@@ -5157,7 +5158,6 @@ PRICING_HTML = """
             <img src="/images/payment/applepay.png" alt="Apple Pay" loading="lazy" decoding="async">
             <img src="/images/payment/googlepay.png" alt="Google Pay" loading="lazy" decoding="async">
             <img src="/images/payment/afterpay.png" alt="Afterpay" loading="lazy" decoding="async">
-            <img src="/images/payment/zip.png" alt="Zip" loading="lazy" decoding="async">
           </div>
         </section>
 
@@ -5255,7 +5255,7 @@ PRICING_HTML = """
         </div>
         <div class="sidebar-card">
           <h4>Pay securely</h4>
-          <p>All major cards, Apple Pay and Google Pay, and Pay in 4 interest-free with Afterpay or Zip. Processed through Stripe.</p>
+          <p>All major cards, Apple Pay and Google Pay, and Pay in 4 interest-free with Afterpay. Processed through Stripe.</p>
           <div class="paylogos">
             <img src="/images/payment/visa.png" alt="Visa" loading="lazy" decoding="async">
             <img src="/images/payment/mastercard.png" alt="Mastercard" loading="lazy" decoding="async">
@@ -5263,7 +5263,6 @@ PRICING_HTML = """
             <img src="/images/payment/applepay.png" alt="Apple Pay" loading="lazy" decoding="async">
             <img src="/images/payment/googlepay.png" alt="Google Pay" loading="lazy" decoding="async">
             <img src="/images/payment/afterpay.png" alt="Afterpay" loading="lazy" decoding="async">
-            <img src="/images/payment/zip.png" alt="Zip" loading="lazy" decoding="async">
           </div>
         </div>
         <nav class="sidebar-card sidebar-nav">
@@ -5576,7 +5575,7 @@ PRICING_HTML = """
         <div class="faq-item"><button class="faq-q" aria-expanded="false">What is included in the price?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>Your fixed fee covers the mediation time across intake and the joint session, your written agreement, and the documents that record what you agree, such as Consent Orders prepared by a partner lawyer and lodged for you. The free discovery call beforehand is not charged. Each package lists exactly what is included, and what optional add-ons are available if your matter needs them.</p></div></div>
         <div class="faq-item"><button class="faq-q" aria-expanded="false">What if we do not reach agreement?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>If a parenting matter does not resolve, you receive a Section 60I certificate so you can apply to court. If a matter is assessed as unsuitable for mediation before it begins, you receive a partial refund. You are told where you stand at every stage, and the price never moves beyond what was agreed up front.</p></div></div>
         <div class="faq-item"><button class="faq-q" aria-expanded="false">Who drafts the Consent Orders or Binding Financial Agreement?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>The legal documents are prepared by a lawyer on our panel and included in your fixed fee. For a Binding Financial Agreement, the law requires each party to receive independent legal advice, so two lawyers are involved, and that is arranged and built into your quote. You do not organise or pay for any of this separately.</p></div></div>
-        <div class="faq-item"><button class="faq-q" aria-expanded="false">Can we spread the cost?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>Yes. You can pay securely by card, Apple Pay or Google Pay, or split your fixed fee into four interest-free payments with Afterpay or Zip. Everything is processed through Stripe. Because the price is fixed and agreed up front, you always know the total before you start.</p></div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false">Can we spread the cost?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>Yes. You can pay securely by card, Apple Pay or Google Pay, or split your fixed fee into four interest-free payments with Afterpay. Everything is processed through Stripe. Because the price is fixed and agreed up front, you always know the total before you start.</p></div></div>
         <div class="faq-item"><button class="faq-q" aria-expanded="false">Is mediation more affordable than going to court?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>In most cases yes, and by a wide margin. The lawyer-led path regularly runs past $85,000 per party and takes 12 to 36 months, with a judge deciding the outcome. Most matters that resolve through Family Dispute Resolution settle in weeks, for one transparent fixed price, and the parties keep control of the outcome.</p></div></div>
       </div>
       </div>
@@ -5772,3 +5771,282 @@ build_page(
     robots="noindex, follow",
 )
 print("404 done.")
+
+
+# ===== Mediation Coaching (FDR for one) =====
+MC_CSS = """
+/* fold-grid header (mirrors s60i pattern) */
+.mc-fold-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;position:relative;z-index:1;width:100%;min-height:0}
+.mc-fold-image-panel{position:relative;align-self:stretch;opacity:0;animation:fadeUp 0.9s var(--ease) 0.4s forwards}
+.mc-fold-image-panel > .mc-fold-img-real{position:absolute;inset:0;width:100%;height:100%}
+.mc-fold-image-panel img{width:100%;height:100%;object-fit:cover;object-position:center 35%;border-radius:8px}
+@media(max-width:960px){
+  .mc-fold-grid{grid-template-columns:1fr;gap:0}
+  .mc-fold-image-panel{position:static;align-self:auto;aspect-ratio:3/2;margin-top:32px;border-radius:8px;overflow:hidden}
+  .mc-fold-image-panel > .mc-fold-img-real{position:static;width:100%;height:100%}
+  .mc-fold-image-panel img{width:100%;height:100%;object-fit:cover;border-radius:8px}
+}
+/* price band */
+.mc-price{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 28px;background:var(--ochre-pale);border:1px solid var(--dust-3);border-radius:14px;padding:24px 26px;margin:28px 0}
+.mc-price .mc-price-amt{font-size:clamp(1.7rem,3.2vw,2.3rem);font-weight:800;color:var(--charcoal);letter-spacing:-0.02em;line-height:1.1}
+.mc-price .mc-price-amt .mc-per{font-size:0.5em;font-weight:600;color:var(--mid);letter-spacing:0}
+.mc-price .mc-price-amt .mc-gst{font-size:0.42em;font-weight:700;color:var(--ochre);letter-spacing:0.08em;text-transform:uppercase;vertical-align:middle;margin-left:6px}
+.mc-price .mc-price-meta{font-size:0.84rem;color:var(--mid);line-height:1.55;max-width:46ch;margin-top:8px}
+.mc-price .mc-bnpl{font-size:0.82rem;color:var(--charcoal);font-weight:600;line-height:1.5;margin-top:10px;display:flex;align-items:center;gap:7px}
+.mc-price .mc-bnpl svg{color:var(--terra);flex-shrink:0}
+.mc-price .btn-primary{flex-shrink:0;color:var(--white);border-bottom:0}
+.mc-price .btn-primary:hover{color:var(--white)}
+/* who-for checklist */
+.mc-list{list-style:none;margin:24px 0;padding:0;display:flex;flex-direction:column;gap:12px}
+.mc-list li{display:flex;gap:12px;align-items:flex-start;font-size:0.95rem;color:var(--mid);line-height:1.6}
+.mc-list li svg{color:var(--terra);flex-shrink:0;margin-top:3px}
+"""
+
+MC_HTML = """
+  <header class="article-page-header page-fold">
+    <div class="wrap">
+      <div class="mc-fold-grid">
+        <div class="article-page-header-inner">
+          <span class="page-label">Mediation coaching</span>
+          <h1>The other side arranged the mediation. <span class="accent">We will get you ready for it.</span></h1>
+          <p class="page-intro">If the other party, or their lawyer, has arranged Family Dispute Resolution and asked you to attend, you do not have to walk in cold. Mediation coaching is a private session for one person. It helps you understand the process, get your thinking clear, and stay composed on the day. It is preparation and support, not legal advice, and it is entirely separate from the practitioner who runs your mediation.</p>
+        </div>
+        <div class="mc-fold-image-panel" aria-hidden="true">
+          <div class="mc-fold-img-real"><img src="/images/mediation-coaching-fold.jpg" alt="A man in his late thirties standing by a sunlit window at home, reading a letter held at an angle, his brow drawn as he takes in news that the next step is mediation." fetchpriority="high"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOVE-FOLD MARQUEE -->
+<!--MARQUEE-->
+
+
+  <div class="wrap article-wrap">
+    <div class="article-grid">
+      <article class="article-body">
+
+        <h2 id="when">When mediation coaching helps</h2>
+        <p>Most people who come to this service did not set the process up. They have been told that Family Dispute Resolution is the next step, the other side has put forward one or more practitioners to run it, and a date is being arranged. It can feel like everything is happening on someone else's terms. Paying a lawyer to sit beside you through the whole matter is often more than the situation calls for, but turning up unprepared is not the answer either.</p>
+        <p>Mediation coaching is for the person who wants to meet the process on equal footing: informed, clear about what matters to them, and calm enough to speak to it.</p>
+
+        <ul class="mc-list">
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>You have been invited or directed to attend FDR that someone else arranged.</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>The other party has a lawyer and you do not, or not yet.</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>You have a mediation date coming up and want to prepare properly.</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>You want to understand your options before you agree to anything.</li>
+        </ul>
+
+        <div class="download-row">
+          <div class="download-row-text">
+            <h3>Free template: agreeing to attend, in your own words</h3>
+            <p>If a lawyer has written asking you to attend Family Dispute Resolution and you are willing to go, this plain Word template lets you confirm that in writing yourself, without paying a lawyer to draft a reply. Fill in the bracketed details, delete the guidance page, and send.</p>
+          </div>
+          <div class="download-row-buttons">
+            <a href="/downloads/Letter-agreeing-to-attend-FDR-template.docx" class="btn-primary" download>Download template</a>
+          </div>
+        </div>
+
+        <h2 id="boundaries">What it is, and what it is not</h2>
+        <p>This is the most important part of the page, so it is worth being exact. Mediation coaching is preparation and support for one party. It is a different role to the neutral practitioner who runs your mediation, and it has clear limits.</p>
+
+        <div class="notice notice-terra">
+          <p class="notice-label">Coaching is not legal advice</p>
+          <p>We are an accredited Family Dispute Resolution practitioner, not a law firm. Coaching helps you understand the process and prepare your own thinking. It does not tell you what you are legally entitled to. Where that question matters, we will say so plainly and point you to a family lawyer, including when a short, targeted piece of legal advice is worth the cost.</p>
+        </div>
+
+        <p>The person who coaches you is never the person who runs your mediation. Your FDR session is conducted by the neutral practitioner the parties have agreed on. Coaching sits completely outside that room. Nothing said in coaching is shared with the other side, with their lawyer, or with the practitioner running your mediation.</p>
+
+        <div class="notice notice-amber">
+          <p class="notice-label">We cannot coach you and mediate the same matter</p>
+          <p>If we prepare one party for a dispute, we can never act as the neutral practitioner in that same dispute. That rule is not a technicality. It is what keeps the mediation fair, and it protects both you and the other party. For that reason, coaching is only available where we are not, and will not be, the practitioner running your FDR.</p>
+        </div>
+
+        <h2 id="what-we-do">What we help you do</h2>
+        <p>A coaching session is practical. It is built around your matter and the decisions you are likely to face, not a generic briefing.</p>
+
+        <div class="card-list">
+          <div class="card-item">
+            <div class="card-item-header"><div class="card-dot"></div><h3>Understand the process</h3></div>
+            <p>What FDR is, what happens on the day, what the practitioner can and cannot do, how online sessions and private breakout rooms work, and what a Section 60I certificate would and would not mean for you.</p>
+          </div>
+          <div class="card-item">
+            <div class="card-item-header"><div class="card-dot"></div><h3>Get your priorities clear</h3></div>
+            <p>What matters most to you, where you have room to move, and what a workable agreement could look like for your family. Walking in with that settled in your own mind changes how the day goes.</p>
+          </div>
+          <div class="card-item">
+            <div class="card-item-header"><div class="card-dot"></div><h3>Understand your alternatives</h3></div>
+            <p>What happens if no agreement is reached, so you are weighing any proposal from a position of understanding rather than pressure. Knowing your alternative is the single biggest thing that steadies people in the room.</p>
+          </div>
+          <div class="card-item">
+            <div class="card-item-header"><div class="card-dot"></div><h3>Stay composed</h3></div>
+            <p>Practical ways to keep steady when the conversation is hard, to speak to your own interests without escalating, and to ask for a break when you need one.</p>
+          </div>
+          <div class="card-item">
+            <div class="card-item-header"><div class="card-dot"></div><h3>Know when to get legal advice</h3></div>
+            <p>The specific points where a family lawyer's input is worth paying for, so your money goes on advice that counts rather than on representation you may not need.</p>
+          </div>
+        </div>
+
+        <div class="img-real" style="aspect-ratio:16/9;margin:32px 0"><img src="/images/mediation-coaching-supporting-1.jpg" alt="A man in his late thirties at a home desk, an open notepad in front of him and a laptop turned away, making notes as he prepares for an upcoming mediation." loading="lazy" decoding="async"></div>
+
+        <h2 id="choosing">Which of the nominated practitioners should you choose?</h2>
+        <p>People often worry that a practitioner suggested by the other party, or by the other party's lawyer, will somehow be on their side. They will not be. Every AGD-accredited Family Dispute Resolution practitioner is bound by the same Act, the same regulations, and the same standards. An FDR practitioner is neutral by law, whoever nominated them. None of them acts for either party.</p>
+        <p>That is why the identity of the practitioner matters far less than how prepared you are when you arrive. If the names on your list are unfamiliar, it is reasonable to check each one's accreditation and read how they describe their approach. But you are not choosing the other side's referee. You are choosing a neutral facilitator, and any properly accredited practitioner on a sensible list will do that job to the same standard.</p>
+
+        <div class="notice notice-amber">
+          <p class="notice-label">A nominated practitioner is still neutral</p>
+          <p>Even where the other party or their lawyer suggested the practitioner, that practitioner does not act for, advise, or favour either side. Their obligations of neutrality and confidentiality apply equally to both parties from the first contact. The fact that someone else put the name forward does not change that.</p>
+        </div>
+
+        <h2 id="how">How a session works</h2>
+        <p>The service is deliberately light and quick to arrange, because most people come to it with a mediation date already approaching.</p>
+
+        <div class="proc-steps">
+          <div class="proc-step">
+            <div class="proc-dot"></div>
+            <div class="proc-num">1</div>
+            <div class="proc-content">
+              <h3>Free 30-minute discovery call</h3>
+              <p>We confirm the service is right for you, check there is no conflict, including making sure we are not the practitioner running your FDR, and tell you what to have ready.</p>
+            </div>
+          </div>
+          <div class="proc-step">
+            <div class="proc-dot"></div>
+            <div class="proc-num">2</div>
+            <div class="proc-content">
+              <h3>Your coaching session</h3>
+              <p>One private online session by Google Meet, held before your mediation date. One person, focused entirely on your matter and your preparation. At the end we gauge together how ready you feel, and whether a further hour closer to the date would help.</p>
+            </div>
+          </div>
+          <div class="proc-step">
+            <div class="proc-dot"></div>
+            <div class="proc-num">3</div>
+            <div class="proc-content">
+              <h3>A simple plan to take in with you</h3>
+              <p>A short written summary of your priorities and a plan for the day, in your own words, so you walk in clear rather than scrambling to remember.</p>
+            </div>
+          </div>
+        </div>
+
+        <h2 id="cost">What it costs</h2>
+        <p>Mediation coaching is charged at a simple hourly rate, agreed before anything starts. The discovery call is free, and there is no obligation to book a session after it.</p>
+        <p>Your first session is one hour, which is enough for most people to walk in clear. Whether you need more time depends on how confident you feel about the day, something we gauge together at the end of the session. Some people are set after an hour. Others book a further hour closer to their mediation date, once the issues are sharper in their mind. You are never signed up for more than you need.</p>
+
+        <div class="mc-price">
+          <div>
+            <div class="mc-price-amt">$195<span class="mc-per"> per hour</span><span class="mc-gst">incl. GST</span></div>
+            <p class="mc-price-meta">Your first session is one hour. Any additional time is booked only if it would help, based on how ready you feel. The 30-minute discovery call is free.</p>
+            <p class="mc-bnpl"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>Spread it into four interest-free payments with Afterpay.</p>
+          </div>
+          <a href="https://calendar.app.google/SVcgf1LRKREJifjP9" class="btn-primary">Book Now</a>
+        </div>
+
+        <div class="notice notice-terra">
+          <p class="notice-label">If you or your children are not safe</p>
+          <p>If you are experiencing family violence, or are concerned about the safety of a child, support is available. The <a href="/get-help/">Get Help</a> page lists national crisis and family violence services that operate independently of this practice. In immediate danger, call Triple Zero (000).</p>
+        </div>
+
+      </article>
+
+      <aside class="sidebar">
+        <div class="sidebar-card">
+          <h4>Have a mediation date coming up?</h4>
+          <p>Start with a free 30-minute discovery call. We will confirm the service fits, check there is no conflict, and tell you how to prepare.</p>
+          <a href="#book" class="btn-primary">Free Discovery Call</a>
+        </div>
+        <div class="sidebar-card sidebar-card-img">
+          <div class="img-real" style="aspect-ratio:4/5"><img src="/images/mediation-coaching-supporting-2.jpg" alt="A woman in her thirties sitting in a lamp-lit living room in the evening, writing in a notebook as she gathers her thoughts before her mediation." loading="lazy" decoding="async"></div>
+        </div>
+        <nav class="sidebar-card sidebar-nav">
+          <h5>On this page</h5>
+          <ul>
+            <li><a href="#when"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>When coaching helps</a></li>
+            <li><a href="#boundaries"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>What it is, and is not</a></li>
+            <li><a href="#what-we-do"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>What we help you do</a></li>
+            <li><a href="#choosing"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>Choosing a practitioner</a></li>
+            <li><a href="#how"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>How a session works</a></li>
+            <li><a href="#cost"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>What it costs</a></li>
+          </ul>
+        </nav>
+        <div class="sidebar-card">
+          <h4>Related pages</h4>
+          <ul class="related-links">
+            <li><a href="/what-is-fdr/">What is FDR <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
+            <li><a href="/how-it-works/">How it works <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
+            <li><a href="/section-60i/">Section 60I certificates <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <section class="page-faq" aria-labelledby="mc-faq-heading">
+    <div class="wrap">
+      <div class="page-faq-header reveal">
+        <span class="section-label">Common questions</span>
+        <h2 id="mc-faq-heading">Mediation coaching questions answered</h2>
+      </div>
+      <div class="faq-list reveal" style="max-width:760px">
+        <div class="faq-item"><button class="faq-q" aria-expanded="false">My ex's lawyer chose the mediator. Is that allowed, and is it fair?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>Yes, it is allowed, and it does not put you at a disadvantage. A Family Dispute Resolution practitioner is neutral by law and does not act for either party, no matter who suggested them. Their duties of neutrality and confidentiality apply equally to both of you. Where it helps, you can check the accreditation of any practitioner on the list, but the practitioner's identity matters far less than how prepared you are when you attend.</p></div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false">Is mediation coaching the same as legal advice?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>No. Coaching helps you understand the process and prepare your own thinking. It does not tell you what you are legally entitled to, because we are an accredited FDR practitioner and not a law firm. Where your situation needs legal advice, we will say so and point you to a family lawyer, including the specific points where a short piece of advice is worth paying for.</p></div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false">Can I bring a support person or coach into the FDR session?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>Whether a support person may attend is a matter for the practitioner running your mediation, and usually they do not take part in the discussion. Your coach is not in the room at all. Coaching is preparation that happens before the day. You walk in ready, and you speak for yourself.</p></div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false">Does it matter which of the nominated practitioners I choose?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>Far less than people expect. Every accredited practitioner is bound by the same Act, regulations, and standards, and is neutral whoever nominated them. If the names are unfamiliar, a quick check of each one's accreditation and stated approach is sensible. Beyond that, the practitioner you pick matters much less than how prepared and clear you are when you attend.</p></div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false">Will my coach be in the mediation with me?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>No. Coaching happens entirely before your mediation. On the day you attend on your own and speak for yourself, with the preparation and plan you put together in your session. Nothing from your coaching is shared with the other side or with the practitioner running the mediation.</p></div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false">Can the same person coach me and run my mediation?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>No. If we coach one party, we can never act as the neutral practitioner in that same matter. Preparing one side and then trying to run a neutral process between both sides cannot be done fairly. For that reason, coaching is only offered where we are not, and will not be, the practitioner conducting your FDR.</p></div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false">Is what I tell my coach confidential?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>Yes. Your coaching session is private. What you discuss is not shared with the other party, their lawyer, or the practitioner running your mediation. The usual limits apply where there is a serious risk to someone's safety, which we explain at the start of the discovery call.</p></div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false">How much does mediation coaching cost?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>Coaching is $195 per hour, including GST. Your first session is one hour, which is enough for most people. Any additional time is booked only if it would help, based on how ready you feel about the day. The 30-minute discovery call is free, and you can spread the fee into four interest-free payments with Afterpay.</p></div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false">Do I still need a lawyer?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>Sometimes, and coaching helps you work out when. Many people do not need a lawyer for the whole matter, but there are points where targeted legal advice is worth it, such as understanding your entitlements before agreeing to a property split, or having an agreement reviewed before it is finalised. Coaching helps you spend on advice where it counts rather than on full representation you may not need.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-cta" id="book" aria-labelledby="mc-cta-heading">
+    <div class="wrap">
+      <div class="page-cta-inner">
+        <span class="page-cta-eyebrow">Preparation, not pressure</span>
+        <h2 id="mc-cta-heading">Walk into your mediation ready.</h2>
+        <p>A free 30-minute discovery call to confirm the service fits, check there is no conflict, and tell you how to prepare for the day.</p>
+        <div class="page-cta-actions">
+          <a href="https://calendar.app.google/zwNm4dzYnwAwhwxY8" class="btn-light">Free Discovery Call</a>
+          <a href="tel:1800957253" class="btn-outline-light">Call 1800 957 253</a>
+        </div>
+        <span class="page-cta-note">Free &bull; Confidential &bull; No obligation &bull; Available nationally</span>
+      </div>
+    </div>
+  </section>
+"""
+
+MC_SCHEMA = (
+    '{"@context":"https://schema.org","@graph":['
+    '{"@type":"WebPage","@id":"https://onlinefdr.com.au/mediation-coaching/#webpage",'
+    '"url":"https://onlinefdr.com.au/mediation-coaching/","name":"Mediation Coaching",'
+    '"description":"Private preparation for one party attending Family Dispute Resolution arranged by the other side. What mediation coaching is, what it is not, and how it works.",'
+    '"about":{"@id":"https://onlinefdr.com.au/#organization"},'
+    '"isPartOf":{"@id":"https://onlinefdr.com.au/#website"},'
+    '"mainEntity":{"@id":"https://onlinefdr.com.au/mediation-coaching/#faq"},"inLanguage":"en-AU"},'
+    '{"@type":"FAQPage","@id":"https://onlinefdr.com.au/mediation-coaching/#faq","mainEntity":['
+    '{"@type":"Question","name":"My ex\'s lawyer chose the mediator. Is that allowed, and is it fair?","acceptedAnswer":{"@type":"Answer","text":"Yes, it is allowed, and it does not put you at a disadvantage. A Family Dispute Resolution practitioner is neutral by law and does not act for either party, no matter who suggested them. Their duties of neutrality and confidentiality apply equally to both parties. You can check the accreditation of any practitioner on the list, but the practitioner\'s identity matters far less than how prepared you are when you attend."}},'
+    '{"@type":"Question","name":"Is mediation coaching the same as legal advice?","acceptedAnswer":{"@type":"Answer","text":"No. Coaching helps you understand the process and prepare your own thinking. It does not tell you what you are legally entitled to, because we are an accredited FDR practitioner and not a law firm. Where your situation needs legal advice, we will say so and point you to a family lawyer."}},'
+    '{"@type":"Question","name":"Can I bring a support person or coach into the FDR session?","acceptedAnswer":{"@type":"Answer","text":"Whether a support person may attend is a matter for the practitioner running your mediation, and usually they do not take part in the discussion. Your coach is not in the room at all. Coaching is preparation that happens before the day, so you walk in ready and speak for yourself."}},'
+    '{"@type":"Question","name":"Does it matter which of the nominated practitioners I choose?","acceptedAnswer":{"@type":"Answer","text":"Far less than people expect. Every accredited practitioner is bound by the same Act, regulations, and standards, and is neutral whoever nominated them. A quick check of each one\'s accreditation and approach is sensible, but the practitioner you pick matters much less than how prepared you are when you attend."}},'
+    '{"@type":"Question","name":"Will my coach be in the mediation with me?","acceptedAnswer":{"@type":"Answer","text":"No. Coaching happens entirely before your mediation. On the day you attend on your own and speak for yourself, with the preparation and plan from your session. Nothing from your coaching is shared with the other side or with the practitioner running the mediation."}},'
+    '{"@type":"Question","name":"Can the same person coach me and run my mediation?","acceptedAnswer":{"@type":"Answer","text":"No. If we coach one party, we can never act as the neutral practitioner in that same matter. Preparing one side and then trying to run a neutral process between both sides cannot be done fairly. Coaching is only offered where we are not, and will not be, the practitioner conducting your FDR."}},'
+    '{"@type":"Question","name":"Is what I tell my coach confidential?","acceptedAnswer":{"@type":"Answer","text":"Yes. Your coaching session is private and is not shared with the other party, their lawyer, or the practitioner running your mediation. The usual limits apply where there is a serious risk to someone\'s safety, which we explain at the start of the discovery call."}},'
+    '{"@type":"Question","name":"How much does mediation coaching cost?","acceptedAnswer":{"@type":"Answer","text":"Coaching is $195 per hour, including GST. Your first session is one hour, which is enough for most people. Any additional time is booked only if it would help, based on how ready you feel about the day. The 30-minute discovery call is free, and you can spread the fee into four interest-free payments with Afterpay."}},'
+    '{"@type":"Question","name":"Do I still need a lawyer?","acceptedAnswer":{"@type":"Answer","text":"Sometimes, and coaching helps you work out when. Many people do not need a lawyer for the whole matter, but there are points where targeted legal advice is worth it, such as understanding entitlements before agreeing to a property split, or having an agreement reviewed before it is finalised. Coaching helps you spend on advice where it counts."}}]}]}'
+)
+
+build_page(
+    filename="mediation-coaching-v2.html",
+    title="Mediation Coaching | Prepare for Family Dispute Resolution | onlinefdr.com.au",
+    meta_desc="The other side arranged your Family Dispute Resolution? Private mediation coaching helps one party understand the process, prepare, and stay composed. Not legal advice.",
+    canonical="/mediation-coaching/",
+    current_page="/mediation-coaching/",
+    schema_json=MC_SCHEMA,
+    extra_css=ARTICLE_CSS + MC_CSS,
+    breadcrumbs=[("Home", "/"), ("Mediation Coaching", "/mediation-coaching/")],
+    page_html=MC_HTML,
+    show_marquee=True,
+)
+
