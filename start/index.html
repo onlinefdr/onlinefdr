@@ -62,7 +62,7 @@
 
     /* Hero canvas */
     .hero{ position:relative; overflow:hidden; border-bottom:1px solid var(--line); }
-    .hero-grid{ position:relative; display:grid; grid-template-columns:1.05fr 0.95fr; align-items:center; min-height:min(80vh,720px); }
+    .hero-grid{ position:relative; display:grid; grid-template-columns:1.05fr 0.95fr; align-items:center; min-height:calc(100svh - 88px); }
     .hero-photo{ position:absolute; inset:0 0 0 45%; z-index:0; }
     .hero-photo img{ width:100%; height:100%; object-fit:cover; object-position:60% 40%; display:block; }
     .hero-photo::after{ content:""; position:absolute; inset:0;
@@ -84,27 +84,33 @@
     .hero-trust span{ display:inline-flex; align-items:center; gap:7px; font-weight:600; }
     .hero-trust svg{ width:14px; height:14px; color:var(--ochre); flex-shrink:0; }
 
-    /* Ad-copy section (verbatim Meta ad body) */
-    .band{ padding:72px 0; }
-    .ad-copy{ max-width:760px; }
-    .ad-lead{ font-size:clamp(1.5rem,3.3vw,2.1rem); font-weight:800; letter-spacing:-0.02em; line-height:1.16; color:var(--white); margin-bottom:24px; }
-    .ad-copy p{ font-size:1.14rem; line-height:1.55; color:rgba(253,250,246,0.82); margin-bottom:20px; }
-    .ad-arrows{ list-style:none; margin:0 0 20px; }
-    .ad-arrows li{ font-size:1.14rem; line-height:1.5; color:rgba(253,250,246,0.82); padding-left:32px; position:relative; margin-bottom:12px; }
+    /* Fold 2 — the "why" (image left, text right) */
+    .band{ position:relative; overflow:hidden; min-height:100svh; display:flex; align-items:center; padding:80px 0; border-bottom:1px solid var(--line); }
+    .why-photo{ position:absolute; inset:0 56% 0 0; z-index:0; }
+    .why-photo img{ width:100%; height:100%; object-fit:cover; object-position:38% 46%; display:block; }
+    .why-photo::after{ content:""; position:absolute; inset:0;
+      background:linear-gradient(90deg, rgba(26,22,19,0) 0%, rgba(26,22,19,0.14) 46%, rgba(26,22,19,0.78) 74%, var(--ink) 100%); }
+    .band .shell{ position:relative; z-index:2; width:100%; }
+    .ad-copy{ max-width:540px; margin-left:auto; }
+    .ad-lead{ font-size:clamp(1.5rem,3.3vw,2.05rem); font-weight:800; letter-spacing:-0.02em; line-height:1.16; color:var(--white); margin-bottom:22px; }
+    .ad-copy p{ font-size:1.08rem; line-height:1.55; color:rgba(253,250,246,0.82); margin-bottom:18px; }
+    .ad-arrows{ list-style:none; margin:0 0 18px; }
+    .ad-arrows li{ font-size:1.08rem; line-height:1.5; color:rgba(253,250,246,0.82); padding-left:30px; position:relative; margin-bottom:11px; }
     .ad-arrows li::before{ content:"\2192"; position:absolute; left:0; top:0; color:var(--ochre); font-weight:800; }
-    .ad-cta{ margin-top:34px; }
+    .ad-cta{ margin-top:30px; }
 
-    /* Learn more */
-    .more{ padding:0 0 84px; }
-    .more-head{ margin-bottom:24px; }
-    .more-head h2{ font-size:clamp(1.35rem,3vw,1.7rem); font-weight:800; letter-spacing:-0.02em; color:var(--white); }
-    .more-head p{ color:var(--t-mid); font-size:1rem; margin-top:8px; }
-    .more-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:14px; }
-    .more-card{ display:flex; flex-direction:column; gap:5px; text-decoration:none; background:var(--card); border:1.5px solid var(--line); border-radius:15px; padding:20px; position:relative; transition:all .18s var(--ease); }
-    .more-card:hover{ border-color:var(--terra); transform:translateY(-2px); }
-    .more-card .mc-t{ font-weight:800; font-size:1rem; color:var(--white); padding-right:22px; }
-    .more-card .mc-d{ font-size:0.88rem; color:var(--t-mid); }
-    .more-card .mc-arrow{ position:absolute; top:20px; right:18px; width:16px; height:16px; color:var(--ochre); transition:transform .18s var(--ease); }
+    /* Fold 3 — Not ready to talk */
+    .more{ min-height:100svh; display:flex; align-items:center; padding:80px 0; }
+    .more .shell{ width:100%; }
+    .more-head{ margin-bottom:32px; }
+    .more-head h2{ font-size:clamp(1.6rem,3.4vw,2.15rem); font-weight:800; letter-spacing:-0.02em; color:var(--white); }
+    .more-head p{ color:var(--t-mid); font-size:1.05rem; margin-top:10px; }
+    .more-grid{ display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+    .more-card{ display:flex; flex-direction:column; gap:12px; text-decoration:none; background:var(--card); border:1.5px solid var(--line); border-radius:18px; padding:36px; min-height:clamp(210px,25vh,300px); position:relative; transition:all .18s var(--ease); }
+    .more-card:hover{ border-color:var(--terra); transform:translateY(-3px); }
+    .more-card .mc-t{ font-weight:800; font-size:1.35rem; color:var(--white); padding-right:30px; }
+    .more-card .mc-d{ font-size:1.02rem; color:var(--t-mid); line-height:1.55; }
+    .more-card .mc-arrow{ position:absolute; top:38px; right:34px; width:20px; height:20px; color:var(--ochre); transition:transform .18s var(--ease); }
     .more-card:hover .mc-arrow{ transform:translateX(3px); }
     .more-card-invert{ background:var(--terra); border-color:var(--terra); }
     .more-card-invert .mc-d{ color:rgba(255,255,255,0.9); }
@@ -121,12 +127,18 @@
       .hero-photo img{ object-position:60% 34%; }
       .hero-photo::after{ background:linear-gradient(180deg, rgba(26,22,19,0) 40%, var(--ink) 100%); }
       .hero-copy{ padding:34px 0 12px; max-width:none; }
+      .band{ display:block; min-height:0; padding:0 0 64px; }
+      .why-photo{ position:relative; inset:auto; height:300px; }
+      .why-photo img{ object-position:52% 42%; }
+      .why-photo::after{ background:linear-gradient(180deg, rgba(26,22,19,0) 40%, var(--ink) 100%); }
+      .ad-copy{ max-width:none; margin:0; padding-top:28px; }
+      .more{ min-height:0; display:block; padding:8px 0 64px; }
       .more-grid{ grid-template-columns:1fr 1fr; }
     }
     @media (max-width:560px){
       .shell{ padding:0 18px; }
       .more-grid{ grid-template-columns:1fr; }
-      .band{ padding:56px 0; }
+      .band{ padding:0 0 48px; }
       .btn{ width:100%; }
     }
   </style>
@@ -164,6 +176,9 @@
 
   <main>
     <section class="band">
+      <div class="why-photo">
+        <img src="/images/how-it-works-fold.jpg" width="2000" height="1331" alt="A practitioner wearing headphones at a home-office desk, viewing both parties side by side on a laptop video call during an online mediation session">
+      </div>
       <div class="shell">
         <div class="ad-copy">
           <h2 class="ad-lead">For Australians sorting out parenting and property after a relationship ends</h2>
