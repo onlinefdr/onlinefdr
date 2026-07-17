@@ -10,7 +10,7 @@
      Registers both forms and every field name so the live forms post against
      a known schema. -->
 
-<form name="intake-safety-screen" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+<form name="intake-safety-screen" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/intake-received/" hidden>
   <input type="hidden" name="form-name" value="intake-safety-screen">
   <input name="bot-field">
   <input name="client_name"><input name="matter_type"><input name="contact">
@@ -24,7 +24,7 @@
   <textarea name="what_would_help"></textarea><textarea name="anything_else"></textarea>
 </form>
 
-<form name="callback-request" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+<form name="callback-request" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/callback-received/" hidden>
   <input type="hidden" name="form-name" value="callback-request">
   <input name="bot-field">
   <input name="client_name">
@@ -34,7 +34,7 @@
   <textarea name="note"></textarea>
 </form>
 
-<form name="request-a-quote" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+<form name="request-a-quote" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/quote-received/" hidden>
   <input type="hidden" name="form-name" value="request-a-quote">
   <input name="bot-field">
   <input name="name">
