@@ -27,6 +27,12 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
+# Downloads: gated PDFs (fee guide etc.) — keep out of search results
+[[headers]]
+  for = "/downloads/*"
+  [headers.values]
+    X-Robots-Tag = "noindex"
+
 # Redirects: www to non-www (update once domain is connected)
 [[redirects]]
   from = "https://www.onlinefdr.com.au/*"

@@ -367,18 +367,155 @@ async function buildPdf(data, receivedAt) {
 /* Handler                                                             */
 /* ------------------------------------------------------------------ */
 
+const FEE_GUIDE_URL = "https://onlinefdr.com.au/downloads/onlinefdr-fee-guide.pdf";
+const BOOKING_URL = "https://go.acr.fit/widget/bookings/book-consult-call-with-kevin";
+
+function makeTransport() {
+  return nodemailer.createTransport({
+    host: "smtp.gmail.com",
+    port: 465,
+    secure: true,
+    auth: { user: process.env.GMAIL_USER, pass: process.env.GMAIL_APP_PASSWORD },
+  });
+}
+
+function prettyMatter(v) {
+  if (!v) return null;
+  const map = {
+    "parenting": "Parenting",
+    "financial settlement": "Financial settlement",
+    "financial": "Financial settlement",
+    "parenting + financial": "Parenting and financial",
+    "parenting and financial": "Parenting and financial",
+    "section 60i certificate only": "Section 60I certificate only",
+    "divorce application": "Divorce application",
+  };
+  return map[String(v).trim().toLowerCase()] || v;
+}
+
+function esc(s) {
+  return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
+function leadEmailHtml(first) {
+  return [
+    '<div style="font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.55;color:#2C2825;max-width:560px">',
+    "<p>Hi " + esc(first) + ",</p>",
+    "<p>Thanks for getting in touch. Here's what you need to know: most separations don't need to go anywhere near a courtroom, and the ones that do cost tens of thousands of dollars and drag on for a year or more.</p>",
+    "<p>There's a better way. Family Dispute Resolution resolves most matters in weeks, for a fraction of the cost, with you and the other party keeping control of the outcome instead of handing it to a judge.</p>",
+    '<p>See exactly what it costs: <a href="' + FEE_GUIDE_URL + '" style="color:#A85C32">our fee guide</a>.</p>',
+    "<p>You pay for each stage as you reach it. No hourly billing, no surprises, and the first step, a discovery call to see if we're the right fit, is free.</p>",
+    '<p style="margin:22px 0"><a href="' + BOOKING_URL + '" style="background:#C4873A;color:#FDFAF6;text-decoration:none;padding:12px 22px;border-radius:6px;font-weight:bold;display:inline-block">Book your free discovery call</a></p>',
+    '<p>Or call <strong>1800 957 253</strong>. The sooner you start, the sooner this is behind you.</p>',
+    '<p style="margin-top:26px">Kind regards,</p>',
+    '<table cellpadding="0" cellspacing="0" style="font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.5;color:#2C2825"><tr><td>',
+    '<div style="font-weight:bold;font-size:15px">Kevin Scrimshaw</div>',
+    '<div>Family Dispute Resolution Practitioner (FDRP)</div>',
+    '<div>AGD FDRP Reg. No. F2003011</div>',
+    '<div><a href="https://onlinefdr.com.au" style="color:#A85C32;text-decoration:none">OnlineFDR.com.au</a> (ABN 42 961 240 633)</div>',
+    '<div style="margin-top:6px">w| <a href="https://onlinefdr.com.au" style="color:#A85C32">https://onlinefdr.com.au</a></div>',
+    '<div>e| <a href="mailto:hello@onlinefdr.com.au" style="color:#A85C32">hello@onlinefdr.com.au</a></div>',
+    "<div>p| 1800 957 253</div>",
+    '<div>f| <a href="https://www.facebook.com/onlinefdr/" style="color:#A85C32">facebook.com/onlinefdr</a></div>',
+    '<div>i| <a href="https://www.instagram.com/onlinefdr.au/" style="color:#A85C32">instagram.com/onlinefdr.au</a></div>',
+    "</td></tr></table>",
+    "</div>",
+  ].join("");
+}
+
+function leadEmailText(first) {
+  return [
+    "Hi " + first + ",",
+    "",
+    "Thanks for getting in touch. Here's what you need to know: most separations don't need to go anywhere near a courtroom, and the ones that do cost tens of thousands of dollars and drag on for a year or more.",
+    "",
+    "There's a better way. Family Dispute Resolution resolves most matters in weeks, for a fraction of the cost, with you and the other party keeping control of the outcome instead of handing it to a judge.",
+    "",
+    "See exactly what it costs: " + FEE_GUIDE_URL,
+    "",
+    "You pay for each stage as you reach it. No hourly billing, no surprises, and the first step, a discovery call to see if we're the right fit, is free.",
+    "",
+    "Book your free discovery call now: " + BOOKING_URL,
+    "Or call 1800 957 253. The sooner you start, the sooner this is behind you.",
+    "",
+    "Kind regards,",
+    "",
+    "Kevin Scrimshaw",
+    "Family Dispute Resolution Practitioner (FDRP)",
+    "AGD FDRP Reg. No. F2003011",
+    "OnlineFDR.com.au (ABN 42 961 240 633)",
+    "w| https://onlinefdr.com.au",
+    "e| hello@onlinefdr.com.au",
+    "p| 1800 957 253",
+    "f| https://www.facebook.com/onlinefdr/",
+    "i| https://www.instagram.com/onlinefdr.au/",
+  ].join("\n");
+}
+
+/* ---- request-a-quote: fee guide to the lead, alert to the practice ---- */
+async function handleQuote(data, receivedAt) {
+  const name = (data.name || "").trim();
+  const first = name ? name.split(/\s+/)[0] : "there";
+  const email = (data.email || "").trim();
+  const matter = prettyMatter(data.matter);
+  const transporter = makeTransport();
+
+  // 1. Bold covering email to the lead (only if we have an address)
+  if (email) {
+    await transporter.sendMail({
+      from: '"Kevin Scrimshaw, Online FDR" <' + process.env.GMAIL_USER + ">",
+      to: email,
+      subject: "The faster, more affordable way to resolve your separation",
+      text: leadEmailText(first),
+      html: leadEmailHtml(first),
+    });
+  }
+
+  // 2. Alert to the practice
+  const alertText = [
+    "New quote request received " + receivedAt + ".",
+    "",
+    "Name: " + (name || "Not provided"),
+    "Email: " + (email || "Not provided"),
+    "Phone: " + (data.phone || "Not provided"),
+    "Matter: " + (matter || "Not provided"),
+    "",
+    "What they need to sort out:",
+    (data.description || "").trim() || "(nothing added)",
+    "",
+    email ? "Fee guide auto-sent to the lead." : "No email address given; fee guide NOT sent. Follow up by phone.",
+  ].join("\n");
+
+  await transporter.sendMail({
+    from: '"Online FDR Leads" <' + process.env.GMAIL_USER + ">",
+    to: process.env.DESTINATION_EMAIL || process.env.GMAIL_USER,
+    subject: "Quote request: " + (name || "Unnamed") + (matter ? " (" + matter + ")" : ""),
+    text: alertText,
+    replyTo: email || undefined,
+  });
+
+  console.log("Quote handled: " + (name || "unnamed") + (email ? ", guide sent" : ", no email"));
+  return { statusCode: 200, body: "OK" };
+}
+
 exports.handler = async function (event) {
   const payload = JSON.parse(event.body).payload || {};
   const data = payload.data || {};
-
-  // Only handle the intake form; ignore any other forms on the site.
-  if (payload.form_name && payload.form_name !== "intake-safety-screen") {
-    return { statusCode: 200, body: "Ignored: " + payload.form_name };
-  }
+  const form = payload.form_name;
 
   const receivedAt = new Intl.DateTimeFormat("en-AU", {
     dateStyle: "medium", timeStyle: "short", timeZone: "Australia/Melbourne",
   }).format(payload.created_at ? new Date(payload.created_at) : new Date()) + " (Melbourne time)";
+
+  // Route by form. Quote requests get the fee-guide auto-reply.
+  if (form === "request-a-quote") {
+    return handleQuote(data, receivedAt);
+  }
+
+  // Only the intake form is handled beyond this point; ignore anything else.
+  if (form && form !== "intake-safety-screen") {
+    return { statusCode: 200, body: "Ignored: " + form };
+  }
 
   const pdf = await buildPdf(data, receivedAt);
 
