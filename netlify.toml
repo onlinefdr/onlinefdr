@@ -27,17 +27,31 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
-# Downloads: gated PDFs (fee guide etc.) — keep out of search results
-[[headers]]
-  for = "/downloads/*"
-  [headers.values]
-    X-Robots-Tag = "noindex"
-
 # Redirects: www to non-www (update once domain is connected)
 [[redirects]]
   from = "https://www.onlinefdr.com.au/*"
   to = "https://onlinefdr.com.au/:splat"
   status = 301
+  force = true
+
+# Booking vanity paths — clean links for emails, forward to the Google Calendar
+# appointment schedules. MUST stay above the /* catch-all or they never fire.
+[[redirects]]
+  from = "/confidential-intake-90mins"
+  to = "https://calendar.app.google/D8umZMhPAMsRacJH6"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/confidential-intake-120mins"
+  to = "https://calendar.app.google/wyKoLiabRXcGXF4Q9"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/book-coaching"
+  to = "https://calendar.app.google/b25zgZZNvgioTW1g8"
+  status = 302
   force = true
 
 # 404 fallback — serve the branded 404 page with a real 404 status
