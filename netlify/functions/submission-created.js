@@ -452,6 +452,35 @@ function leadEmailText(first) {
   ].join("\n");
 }
 
+/* ---- start-lead: Google-ad funnel lead heading to booking. Alert the practice. ---- */
+async function handleStartLead(data, receivedAt) {
+  const name = (data.name || "").trim();
+  const email = (data.email || "").trim();
+  const transporter = makeTransport();
+
+  const alertText = [
+    "New /start booking lead received " + receivedAt + ".",
+    "This person completed the funnel and is being sent to the booking calendar now.",
+    "",
+    "Name: " + (name || "Not provided"),
+    "Email: " + (email || "Not provided"),
+    "Phone: " + (data.phone || "Not provided"),
+    "",
+    "If no booking appears in your calendar shortly, follow up: they gave details but may not have finished picking a time.",
+  ].join("\n");
+
+  await transporter.sendMail({
+    from: '"Online FDR Leads" <' + process.env.GMAIL_USER + ">",
+    to: process.env.DESTINATION_EMAIL || process.env.GMAIL_USER,
+    subject: "Start lead: " + (name || "Unnamed") + " (heading to booking)",
+    text: alertText,
+    replyTo: email || undefined,
+  });
+
+  console.log("Start lead handled: " + (name || "unnamed"));
+  return { statusCode: 200, body: "OK" };
+}
+
 /* ---- request-a-quote: fee guide to the lead, alert to the practice ---- */
 async function handleQuote(data, receivedAt) {
   const name = (data.name || "").trim();
@@ -510,6 +539,11 @@ exports.handler = async function (event) {
   // Route by form. Quote requests get the fee-guide auto-reply.
   if (form === "request-a-quote") {
     return handleQuote(data, receivedAt);
+  }
+
+  // /start funnel leads heading to booking: alert the practice.
+  if (form === "start-lead") {
+    return handleStartLead(data, receivedAt);
   }
 
   // Only the intake form is handled beyond this point; ignore anything else.

@@ -12,14 +12,14 @@
     gtag('config', 'AW-18195606042');
     gtag('config', 'G-5TFC27B41R');
   </script>
-  <title>Don't pay family lawyers $400-$600/hr | Upfront, transparent online mediation | onlinefdr.com.au</title>
-  <meta name="description" content="Sort parenting and property in as little as two months, not two to three years. Upfront, transparent, affordable online Family Dispute Resolution with an accredited practitioner. Free 30-minute discovery call, Australia-wide.">
+  <title>Don't pay family lawyers $400-$600/hr | Online mediation | onlinefdr.com.au</title>
+  <meta name="description" content="Sort parenting and property in as little as two months, not two to three years. Upfront, transparent, affordable online Family Dispute Resolution. Free 30-minute discovery call, Australia-wide.">
   <meta name="robots" content="noindex, follow">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Conversion tracking. Button targets are PLACEHOLDERS pending Step 2 (CTA lock-in). -->
+  <!-- Google Ads conversion events. fireCall = phone, fireBook = booking. -->
   <script>
     function fireCall(){ if (typeof gtag === 'function'){ gtag('event','conversion',{'send_to':'AW-18195606042/D1p1CKrZi7UcEJrUq-RD'}); } return true; }
     function fireBook(){ if (typeof gtag === 'function'){ gtag('event','conversion',{'send_to':'AW-18195606042/ru3xCK3Zi7UcEJrUq-RD'}); } return true; }
@@ -27,25 +27,21 @@
 
   <style>
     :root{
-      --ink:#1A1613; --char:#2C2825; --char-2:#3A3531; --char-3:#464039;
+      --ink:#1A1613; --char:#2C2825;
       --terra:#A85C32; --terra-lt:#BC7050;
-      --ochre:#C4873A; --ochre-pale:#F9F2E8;
-      --white:#FDFAF6; --dust-3:#E0D7C8;
+      --ochre:#C4873A; --ochre-lt:#D4975A; --ochre-pale:#F9F2E8;
+      --white:#FDFAF6; --dust:#F2EDE4; --dust-3:#E0D7C8;
       --t-hi:rgba(253,250,246,0.92); --t-mid:rgba(253,250,246,0.66); --t-lo:rgba(253,250,246,0.46);
-      --line:rgba(253,250,246,0.12); --card:rgba(253,250,246,0.05);
+      --line:rgba(253,250,246,0.12);
       --f:'Manrope', system-ui, -apple-system, sans-serif;
       --max:1120px; --ease:cubic-bezier(0.22,0.61,0.36,1);
     }
     *{ margin:0; padding:0; box-sizing:border-box; }
     html{ -webkit-text-size-adjust:100%; scroll-behavior:smooth; }
-    body{
-      font-family:var(--f); color:var(--t-hi); line-height:1.6; background:var(--ink);
-      min-height:100vh; -webkit-font-smoothing:antialiased;
-    }
-    a{ color:inherit; }
+    body{ font-family:var(--f); color:var(--t-hi); line-height:1.6; background:var(--ink); min-height:100vh; -webkit-font-smoothing:antialiased; }
+    img{ display:block; max-width:100%; height:auto; }
     .shell{ max-width:var(--max); margin:0 auto; padding:0 28px; }
 
-    /* Header */
     .top{ display:flex; align-items:center; justify-content:space-between; padding:20px 0; }
     .logo{ font-size:1.12rem; font-weight:800; letter-spacing:-0.02em; text-decoration:none; color:var(--white); }
     .logo .fdr{ color:var(--ochre); }
@@ -54,186 +50,173 @@
     .top-phone:hover{ border-color:var(--ochre); color:var(--ochre); }
     .top-phone svg{ width:15px; height:15px; }
 
-    /* Buttons */
-    .btn{ display:inline-flex; align-items:center; justify-content:center; gap:12px; text-decoration:none; font-weight:800; font-size:1.06rem; border-radius:14px; padding:18px 28px; transition:all .2s var(--ease); border:none; cursor:pointer; font-family:inherit; line-height:1.1; }
-    .btn svg{ width:20px; height:20px; flex-shrink:0; }
-    .btn-book{ background:var(--terra); color:var(--white); box-shadow:0 10px 30px rgba(168,92,50,0.40); }
-    .btn-book:hover{ background:var(--terra-lt); transform:translateY(-2px); }
-
-    /* Hero canvas */
     .hero{ position:relative; overflow:hidden; border-bottom:1px solid var(--line); }
-    .hero-grid{ position:relative; display:grid; grid-template-columns:1.05fr 0.95fr; align-items:center; min-height:calc(100svh - 88px); }
-    .hero-photo{ position:absolute; inset:0 0 0 45%; z-index:0; }
-    .hero-photo img{ width:100%; height:100%; object-fit:cover; object-position:60% 40%; display:block; }
-    .hero-photo::after{ content:""; position:absolute; inset:0;
-      background:linear-gradient(90deg, var(--ink) 0%, rgba(26,22,19,0.72) 22%, rgba(26,22,19,0.10) 55%, rgba(26,22,19,0) 100%); }
-    .hero-copy{ position:relative; z-index:2; padding:56px 0; max-width:560px; }
+    .hero-grid{ position:relative; display:grid; grid-template-columns:1.02fr 0.98fr; align-items:center; min-height:calc(100svh - 88px); gap:40px; }
+    .hero-photo{ position:absolute; inset:0 0 0 48%; z-index:0; }
+    .hero-photo img{ width:100%; height:100%; object-fit:cover; object-position:60% 40%; }
+    .hero-photo::after{ content:""; position:absolute; inset:0; background:linear-gradient(90deg, var(--ink) 0%, rgba(26,22,19,0.74) 24%, rgba(26,22,19,0.12) 58%, rgba(26,22,19,0) 100%); }
+    .hero-copy{ position:relative; z-index:2; padding:48px 0; max-width:560px; }
     .eyebrow{ display:inline-flex; align-items:center; gap:12px; font-size:0.74rem; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--ochre); margin-bottom:22px; }
     .eyebrow::after{ content:""; width:34px; height:2px; background:var(--ochre); opacity:.65; }
-    h1{ font-size:clamp(2.5rem, 6vw, 4.15rem); font-weight:800; letter-spacing:-0.03em; line-height:0.98; text-transform:uppercase; color:var(--white); }
+    h1{ font-size:clamp(2.4rem, 5.5vw, 4rem); font-weight:800; letter-spacing:-0.03em; line-height:0.99; text-transform:uppercase; color:var(--white); }
     h1 .terra{ color:var(--terra); }
-    .shield{ display:flex; align-items:flex-start; gap:14px; margin-top:30px; max-width:400px; }
-    .shield svg{ width:42px; height:42px; flex-shrink:0; color:var(--terra); stroke-width:1.6; }
-    .shield p{ font-size:1.12rem; font-weight:600; color:var(--t-hi); line-height:1.4; }
-    .rule{ width:64px; height:2px; background:var(--terra); margin:26px 0; }
-    .offer{ font-size:1.16rem; line-height:1.45; }
-    .offer b{ color:var(--terra); font-weight:800; display:block; }
-    .offer span{ color:var(--t-mid); font-weight:500; }
-    .hero-actions{ margin-top:30px; }
-    .hero-trust{ font-size:0.86rem; color:var(--t-lo); margin-top:22px; display:flex; flex-wrap:wrap; gap:8px 20px; }
-    .hero-trust span{ display:inline-flex; align-items:center; gap:7px; font-weight:600; }
-    .hero-trust svg{ width:14px; height:14px; color:var(--ochre); flex-shrink:0; }
+    .hero-sub{ font-size:1.14rem; font-weight:500; color:var(--t-hi); line-height:1.5; margin-top:24px; max-width:440px; }
 
-    /* Fold 2 — the "why" (image left, text right) */
-    .band{ position:relative; overflow:hidden; min-height:100svh; display:flex; align-items:center; padding:80px 0; border-bottom:1px solid var(--line); }
-    .why-photo{ position:absolute; inset:0 56% 0 0; z-index:0; }
-    .why-photo img{ width:100%; height:100%; object-fit:cover; object-position:38% 46%; display:block; }
-    .why-photo::after{ content:""; position:absolute; inset:0;
-      background:linear-gradient(90deg, rgba(26,22,19,0) 0%, rgba(26,22,19,0.14) 46%, rgba(26,22,19,0.78) 74%, var(--ink) 100%); }
-    .band .shell{ position:relative; z-index:2; width:100%; }
-    .ad-copy{ max-width:540px; margin-left:auto; }
-    .ad-lead{ font-size:clamp(1.5rem,3.3vw,2.05rem); font-weight:800; letter-spacing:-0.02em; line-height:1.16; color:var(--white); margin-bottom:22px; }
-    .ad-copy p{ font-size:1.08rem; line-height:1.55; color:rgba(253,250,246,0.82); margin-bottom:18px; }
-    .ad-arrows{ list-style:none; margin:0 0 18px; }
-    .ad-arrows li{ font-size:1.08rem; line-height:1.5; color:rgba(253,250,246,0.82); padding-left:30px; position:relative; margin-bottom:11px; }
-    .ad-arrows li::before{ content:"\2192"; position:absolute; left:0; top:0; color:var(--ochre); font-weight:800; }
-    .ad-cta{ margin-top:30px; }
+    /* the funnel card */
+    .funnel{ position:relative; z-index:3; background:var(--white); color:var(--char); border-radius:18px; padding:32px 30px; box-shadow:0 30px 70px rgba(0,0,0,0.4); max-width:440px; margin-left:auto; }
+    .step{ display:none; }
+    .step.active{ display:block; animation:fade .35s var(--ease); }
+    @keyframes fade{ from{ opacity:0; transform:translateY(8px);} to{ opacity:1; transform:none;} }
+    .prog{ display:flex; gap:6px; margin-bottom:22px; }
+    .prog span{ height:4px; flex:1; border-radius:2px; background:var(--dust-3); transition:background .3s; }
+    .prog span.on{ background:var(--ochre); }
+    .q{ font-size:1.34rem; font-weight:800; line-height:1.2; letter-spacing:-0.01em; color:var(--ink); margin-bottom:8px; }
+    .q .amt{ color:var(--terra); white-space:nowrap; }
+    .qsub{ font-size:0.98rem; color:#6B5E4E; margin-bottom:24px; }
+    .opt{ display:block; width:100%; text-align:left; font-family:inherit; font-size:1.06rem; font-weight:700; color:var(--ink); background:var(--dust); border:2px solid transparent; border-radius:12px; padding:16px 20px; margin-bottom:12px; cursor:pointer; transition:all .18s var(--ease); }
+    .opt:hover{ border-color:var(--ochre); background:var(--ochre-pale); transform:translateY(-1px); }
+    .opt:focus-visible{ outline:3px solid var(--terra); outline-offset:2px; }
 
-    /* Fold 3 — Not ready to talk */
-    .more{ min-height:100svh; display:flex; align-items:center; padding:80px 0; }
-    .more .shell{ width:100%; }
-    .more-head{ margin-bottom:32px; }
-    .more-head h2{ font-size:clamp(1.6rem,3.4vw,2.15rem); font-weight:800; letter-spacing:-0.02em; color:var(--white); }
-    .more-head p{ color:var(--t-mid); font-size:1.05rem; margin-top:10px; }
-    .more-grid{ display:grid; grid-template-columns:1fr 1fr; gap:18px; }
-    .more-card{ display:flex; flex-direction:column; gap:12px; text-decoration:none; background:var(--card); border:1.5px solid var(--line); border-radius:18px; padding:36px; min-height:clamp(210px,25vh,300px); position:relative; transition:all .18s var(--ease); }
-    .more-card:hover{ border-color:var(--terra); transform:translateY(-3px); }
-    .more-card .mc-t{ font-weight:800; font-size:1.35rem; color:var(--white); padding-right:30px; }
-    .more-card .mc-d{ font-size:1.02rem; color:var(--t-mid); line-height:1.55; }
-    .more-card .mc-arrow{ position:absolute; top:38px; right:34px; width:20px; height:20px; color:var(--ochre); transition:transform .18s var(--ease); }
-    .more-card:hover .mc-arrow{ transform:translateX(3px); }
-    .more-card-invert{ background:var(--terra); border-color:var(--terra); }
-    .more-card-invert .mc-d{ color:rgba(255,255,255,0.9); }
-    .more-card-invert .mc-arrow{ color:#fff; }
-    .more-card-invert:hover{ border-color:var(--ochre); }
+    label{ display:block; font-size:0.82rem; font-weight:700; color:#6B5E4E; margin:14px 0 6px; letter-spacing:0.01em; }
+    input{ width:100%; font-family:inherit; font-size:1.04rem; color:var(--ink); background:var(--dust); border:2px solid var(--dust-3); border-radius:11px; padding:14px 16px; transition:border-color .18s; }
+    input:focus{ outline:none; border-color:var(--ochre); }
+    .btn-primary{ display:flex; align-items:center; justify-content:center; gap:10px; width:100%; font-family:inherit; font-size:1.08rem; font-weight:800; color:var(--white); background:var(--terra); border:none; border-radius:12px; padding:17px; margin-top:22px; cursor:pointer; transition:background .18s, transform .18s; }
+    .btn-primary:hover{ background:var(--terra-lt); transform:translateY(-1px); }
+    .btn-primary:focus-visible{ outline:3px solid var(--ink); outline-offset:2px; }
+    .back{ background:none; border:none; font-family:inherit; font-size:0.92rem; font-weight:700; color:#6B5E4E; cursor:pointer; margin-top:14px; padding:6px; }
+    .back:hover{ color:var(--terra); }
+    .reassure{ font-size:0.86rem; color:#8A7C6C; text-align:center; margin-top:16px; line-height:1.45; }
 
-    footer{ border-top:1px solid var(--line); padding:34px 0 56px; color:var(--t-lo); font-size:0.82rem; text-align:center; }
-    footer .discl{ max-width:680px; margin:0 auto 14px; line-height:1.55; }
-    footer a{ color:var(--t-mid); }
+    /* "no" nudge */
+    .nudge .q{ color:var(--terra); }
+    .booking-intro{ text-align:center; }
+    .booking-intro .tick{ width:52px; height:52px; margin:0 auto 14px; color:var(--ochre); }
 
-    @media (max-width:900px){
-      .hero-grid{ grid-template-columns:1fr; min-height:0; }
-      .hero-photo{ position:relative; inset:auto; height:300px; order:-1; }
-      .hero-photo img{ object-position:60% 34%; }
-      .hero-photo::after{ background:linear-gradient(180deg, rgba(26,22,19,0) 40%, var(--ink) 100%); }
-      .hero-copy{ padding:34px 0 12px; max-width:none; }
-      .band{ display:block; min-height:0; padding:0 0 64px; }
-      .why-photo{ position:relative; inset:auto; height:300px; }
-      .why-photo img{ object-position:52% 42%; }
-      .why-photo::after{ background:linear-gradient(180deg, rgba(26,22,19,0) 40%, var(--ink) 100%); }
-      .ad-copy{ max-width:none; margin:0; padding-top:28px; }
-      .more{ min-height:0; display:block; padding:8px 0 64px; }
-      .more-grid{ grid-template-columns:1fr 1fr; }
+    .trust{ background:var(--char); border-top:1px solid var(--line); }
+    .trust-grid{ display:grid; grid-template-columns:repeat(4, 1fr); gap:20px; padding:34px 0; }
+    .trust-item{ text-align:center; }
+    .trust-item .tn{ font-size:1.7rem; font-weight:800; color:var(--ochre); letter-spacing:-0.02em; }
+    .trust-item .tl{ font-size:0.86rem; color:var(--t-mid); margin-top:4px; line-height:1.35; }
+
+    footer{ background:var(--ink); padding:30px 0 40px; }
+    footer .frow{ display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap; }
+    footer .tag{ font-size:0.9rem; color:var(--t-mid); }
+    footer .meta{ font-size:0.78rem; color:var(--t-lo); }
+
+    @media(max-width:860px){
+      .hero-grid{ grid-template-columns:1fr; min-height:0; gap:0; }
+      .hero-photo{ position:relative; inset:auto; height:200px; }
+      .hero-photo::after{ background:linear-gradient(0deg, var(--ink) 0%, rgba(26,22,19,0.2) 60%, rgba(26,22,19,0) 100%); }
+      .hero-copy{ padding:32px 0 8px; }
+      .funnel{ margin:0 0 40px; max-width:none; }
+      .trust-grid{ grid-template-columns:repeat(2,1fr); gap:24px; }
+      footer .frow{ flex-direction:column; text-align:center; }
     }
-    @media (max-width:560px){
-      .shell{ padding:0 18px; }
-      .more-grid{ grid-template-columns:1fr; }
-      .band{ padding:0 0 48px; }
-      .btn{ width:100%; }
-    }
+    @media(prefers-reduced-motion:reduce){ html{scroll-behavior:auto;} .step.active{animation:none;} .opt:hover,.btn-primary:hover{transform:none;} }
   </style>
 </head>
 <body>
-  <header class="hero">
-    <div class="shell">
-      <div class="top">
-        <a class="logo" href="/">online<span class="fdr">fdr</span>.com.au<small>Accredited Online FDR</small></a>
-        <a class="top-phone" href="tel:1800957253" onclick="fireCall()" aria-label="Call us on 1 8 0 0 9 5 7 2 5 3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>1800 957 253</a>
-      </div>
+
+  <div class="shell">
+    <div class="top">
+      <a class="logo" href="/">online<span class="fdr">fdr</span>.com.au<small>Online Family Mediation</small></a>
+      <a class="top-phone" href="tel:1800957253" onclick="fireCall()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>1800 957 253</a>
     </div>
+  </div>
+
+  <section class="hero">
+    <div class="hero-photo"><img src="/images/home-supporting-2.jpg" alt="A woman taking part in an online mediation session from home, headphones on, a cup of tea beside her."></div>
     <div class="shell">
       <div class="hero-grid">
-        <div class="hero-photo">
-          <img src="/images/home-supporting-2.jpg" width="2000" height="1500" alt="A woman at her laptop with headphones, taking part in an online mediation session from home">
-        </div>
         <div class="hero-copy">
           <span class="eyebrow">Online Family Mediation</span>
-          <h1><span class="terra">Don't pay</span><br>family lawyers.<br>$400-$600/hr.</h1>
-          <div class="shield">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
-            <p>Mediation gets you a fair outcome with upfront, transparent pricing. No surprises.</p>
-          </div>
-          <div class="rule"></div>
-          <p class="offer"><b>Free 30-minute discovery call.</b><span>Upfront, transparent pricing from there.</span></p>
-          <div class="hero-actions">
-            <a class="btn btn-book" href="https://go.acr.fit/widget/booking/AZe9GxY7Km90BXChvs0R" target="_blank" rel="noopener" onclick="fireBook()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Book Your Free Discovery Call</a>
-          </div>
-          <p class="hero-trust"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Accredited FDR practitioner</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Australia-wide, online</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>No obligation</span></p>
+          <h1><span class="terra">Don't pay family lawyers</span> $400&ndash;$600 an hour.</h1>
+          <p class="hero-sub">Sort out parenting and property in as little as two months, entirely online, and on terms you reach yourselves. It starts with one free call.</p>
         </div>
+
+        <div class="funnel" id="funnel">
+          <div class="prog"><span class="on" id="p1"></span><span id="p2"></span><span id="p3"></span></div>
+
+          <!-- STEP 1: qualifying question -->
+          <div class="step active" id="step1">
+            <p class="q">Are you a parent currently separating or divorced who wants to sort out parenting and property without spending <span class="amt">$100,000+</span> on lawyers?</p>
+            <button class="opt" onclick="toStep(2)">Yes, that's me</button>
+            <button class="opt" onclick="toNudge()">No</button>
+          </div>
+
+          <!-- NO nudge -->
+          <div class="step nudge" id="stepNo">
+            <p class="q">Are you sure?</p>
+            <p class="qsub">You want to spend $100,000 on lawyers and court proceedings that can drag on for years? There is a calmer, more affordable way.</p>
+            <button class="opt" onclick="toStep(1)">Back</button>
+          </div>
+
+          <!-- STEP 2: capture -->
+          <div class="step" id="step2">
+            <p class="q">Great. Where should we send your booking details?</p>
+            <p class="qsub">Enter your details, then pick a time for your free 30-minute discovery call.</p>
+            <form name="start-lead" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/start-booking/" id="leadform">
+              <input type="hidden" name="form-name" value="start-lead">
+              <p hidden><label>Skip<input name="bot-field"></label></p>
+              <label for="fname">Your name</label>
+              <input id="fname" name="name" type="text" autocomplete="name" required>
+              <label for="fphone">Phone</label>
+              <input id="fphone" name="phone" type="tel" autocomplete="tel" required>
+              <label for="femail">Email</label>
+              <input id="femail" name="email" type="email" autocomplete="email" required>
+              <button class="btn-primary" type="submit" onclick="fireBook()">Continue to booking
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </form>
+            <button class="back" onclick="toStep(1)">Back</button>
+            <p class="reassure">Free, confidential, and no obligation. We will never share your details.</p>
+          </div>
+        </div>
+
       </div>
     </div>
-  </header>
+  </section>
 
-  <main>
-    <section class="band">
-      <div class="why-photo">
-        <img src="/images/how-it-works-fold.jpg" width="2000" height="1331" alt="A practitioner wearing headphones at a home-office desk, viewing both parties side by side on a laptop video call during an online mediation session">
+  <section class="trust">
+    <div class="shell">
+      <div class="trust-grid">
+        <div class="trust-item"><div class="tn">Weeks</div><div class="tl">not the 18 to 36 months of a contested case</div></div>
+        <div class="trust-item"><div class="tn">100% online</div><div class="tl">anywhere in Australia, from wherever you feel safe</div></div>
+        <div class="trust-item"><div class="tn">You decide</div><div class="tl">the agreement is yours, not a judge's</div></div>
+        <div class="trust-item"><div class="tn">Accredited</div><div class="tl">nationally accredited FDR practitioner</div></div>
       </div>
-      <div class="shell">
-        <div class="ad-copy">
-          <h2 class="ad-lead">For Australians sorting out parenting and property after a relationship ends</h2>
-          <p>Family lawyers can cost $50,000-$100,000+ and family court can take 18-36 months to reach an outcome.</p>
-          <p>That's money and time that could go toward your kids, not legal bills.<br>There's a faster, more affordable way to reach a fair agreement - without setting foot in a courtroom.</p>
-          <p>Online FDR is an online mediation service, with upfront and transparent pricing, that helps separating couples agree on parenting and property - in as little as 2 months, not 2-3 years.</p>
-          <ul class="ad-arrows">
-            <li>All legally prepared documentation, court submissions and filing fees included - no extra charges.</li>
-            <li>Upfront, transparent pricing before you commit to anything - no hidden costs.</li>
-          </ul>
-          <p>If genuine efforts are made and agreement isn't reached, you'll still receive a s60I Certificate at no extra cost.</p>
-          <div class="ad-cta">
-            <a class="btn btn-book" href="https://go.acr.fit/widget/booking/AZe9GxY7Km90BXChvs0R" target="_blank" rel="noopener" onclick="fireBook()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Book Your Free 30-Minute Discovery Call</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="more">
-      <div class="shell">
-        <div class="more-head">
-          <h2>Not ready to talk? Learn more.</h2>
-          <p>Read up on your situation first, then come back when you are ready.</p>
-        </div>
-        <div class="more-grid">
-          <a class="more-card" href="/parenting/">
-            <span class="mc-t">Parenting</span>
-            <span class="mc-d">Parenting plans, consent orders, and the best-interests framework.</span>
-            <svg class="mc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-          <a class="more-card" href="/financial-settlement/">
-            <span class="mc-t">Financial settlement</span>
-            <span class="mc-d">Dividing property and superannuation, and the duty of disclosure.</span>
-            <svg class="mc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-          <a class="more-card" href="/section-60i/">
-            <span class="mc-t">Section 60I certificates</span>
-            <span class="mc-d">What they are, when you need one, and how they are issued.</span>
-            <svg class="mc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-          <a class="more-card more-card-invert" href="/pricing/">
-            <span class="mc-t">Upfront, transparent pricing</span>
-            <span class="mc-d">How our upfront, transparent pricing works and how you can spread the cost.</span>
-            <svg class="mc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-        </div>
-      </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
   <footer>
     <div class="shell">
-      <p class="discl">onlinefdr.com.au provides general information only, not legal or financial advice. Every matter is different. If you are concerned about family violence or a child's safety, call 000 in an emergency, or contact 1800RESPECT on 1800 737 732.</p>
-      <p>&copy; onlinefdr.com.au &bull; Accredited Family Dispute Resolution &bull; <a href="tel:1800957253" onclick="fireCall()">1800 957 253</a></p>
+      <div class="frow">
+        <span class="tag">The call you make before you call a lawyer.</span>
+        <span class="meta">1800 957 253 &bull; AGD Reg. F2003011 &bull; ABN 42 961 240 633</span>
+      </div>
     </div>
   </footer>
+
+  <script>
+    var BOOKING = "https://go.acr.fit/widget/bookings/book-consult-call-with-kevin";
+    function setProg(n){
+      document.getElementById('p2').className = n>=2 ? 'on' : '';
+      document.getElementById('p3').className = n>=3 ? 'on' : '';
+    }
+    function show(id){
+      document.querySelectorAll('.step').forEach(function(s){ s.classList.remove('active'); });
+      document.getElementById(id).classList.add('active');
+      document.getElementById('funnel').scrollIntoView({behavior:'smooth', block:'nearest'});
+    }
+    function toStep(n){
+      if(n===1){ show('step1'); setProg(1); }
+      if(n===2){ show('step2'); setProg(2); setTimeout(function(){var f=document.getElementById('fname'); if(f) f.focus();}, 200); }
+    }
+    function toNudge(){ show('stepNo'); }
+
+    // On successful Netlify submit, Netlify redirects to /start-booking/ which forwards to the calendar.
+    // But to guarantee the lead is captured AND they reach booking, we let the native form POST proceed.
+  </script>
+
 </body>
 </html>

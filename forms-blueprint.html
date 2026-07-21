@@ -34,6 +34,11 @@
   <textarea name="note"></textarea>
 </form>
 
+<form name="start-lead" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/start-booking/" hidden>
+  <input type="text" name="name">
+  <input type="tel" name="phone">
+  <input type="email" name="email">
+</form>
 <form name="request-a-quote" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/quote-received/" hidden>
   <input type="hidden" name="form-name" value="request-a-quote">
   <input name="bot-field">

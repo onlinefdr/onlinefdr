@@ -639,7 +639,7 @@ HOME_HTML = """
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right:4px"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
               Call 1800 957 253
             </a>
-            <a href="https://go.acr.fit/widget/booking/AZe9GxY7Km90BXChvs0R" class="btn-icon-book" aria-label="Book a free discovery call">
+            <a href="https://go.acr.fit/widget/bookings/book-consult-call-with-kevin" class="btn-icon-book" aria-label="Book a free discovery call">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
             </a>
           </div>
@@ -675,7 +675,7 @@ HOME_HTML = """
           </div>
           <p class="body-text reveal reveal-d3">That is what we do. Entirely online. Available anywhere in Australia. Ready within weeks, not months.</p>
           <div class="empathy-cta reveal">
-            <a href="https://go.acr.fit/widget/booking/AZe9GxY7Km90BXChvs0R" class="btn-primary">Book a free call<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+            <a href="https://go.acr.fit/widget/bookings/book-consult-call-with-kevin" class="btn-primary">Book a free call<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
             <a href="/what-is-fdr/" class="btn-secondary">What is FDR?</a>
           </div>
         </div>
@@ -736,7 +736,7 @@ HOME_HTML = """
           <h3>Not sure where to start? Start with a conversation.</h3>
           <p>A free discovery call with an accredited FDR practitioner. No pressure, no commitment. Just a straight conversation about your options.</p>
         </div>
-        <a href="https://go.acr.fit/widget/booking/AZe9GxY7Km90BXChvs0R" class="cta-band-btn">
+        <a href="https://go.acr.fit/widget/bookings/book-consult-call-with-kevin" class="cta-band-btn">
           Book your free call
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
         </a>
@@ -905,7 +905,7 @@ HOME_HTML = """
         <h2 id="cta-heading">The call you make before you call a lawyer.</h2>
         <p>A free, no-obligation conversation with an accredited FDR practitioner. Whether your matter involves children, property, or both, this is a chance to understand your options before you commit to anything.</p>
         <div class="cta-actions">
-          <a href="https://go.acr.fit/widget/booking/AZe9GxY7Km90BXChvs0R" class="cta-btn">
+          <a href="https://go.acr.fit/widget/bookings/book-consult-call-with-kevin" class="cta-btn">
             Book your free discovery call
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
@@ -1179,7 +1179,7 @@ ABOUT_HTML = """
         <h2 id="about-cta-heading">Ready to find out if FDR is right for your situation?</h2>
         <p>A free discovery call with an accredited practitioner. No pressure, no commitment. Just a straight conversation about your options.</p>
         <div class="page-cta-actions">
-          <a href="https://go.acr.fit/widget/booking/AZe9GxY7Km90BXChvs0R" class="btn-light">Book your free discovery call</a>
+          <a href="https://go.acr.fit/widget/bookings/book-consult-call-with-kevin" class="btn-light">Book your free discovery call</a>
           <a href="tel:1800957253" class="btn-outline-light">Call 1800 957 253</a>
         </div>
         <span class="page-cta-note">Free &bull; Confidential &bull; No obligation &bull; Available nationally</span>
@@ -1507,7 +1507,7 @@ PO_HTML = """
         <div class="sidebar-card">
           <h4>Where to start</h4>
           <p>A free discovery call to talk through which path is right for your situation. No pressure, no commitment.</p>
-          <a href="https://go.acr.fit/widget/booking/AZe9GxY7Km90BXChvs0R" class="btn-primary">Book a free discovery call</a>
+          <a href="https://go.acr.fit/widget/bookings/book-consult-call-with-kevin" class="btn-primary">Book a free discovery call</a>
         </div>
         <div class="sidebar-card sidebar-card-download">
           <h4>Pre-Mediation Parenting Reflection Workbook</h4>
@@ -1578,7 +1578,7 @@ PO_HTML = """
         <h2 id="po-cta-heading">A Parenting Plan is reachable for most separating couples.</h2>
         <p>FDR is the structured way to get there. A free discovery call to talk through whether it is right for your situation.</p>
         <div class="page-cta-actions">
-          <a href="https://go.acr.fit/widget/booking/AZe9GxY7Km90BXChvs0R" class="btn-light">Book your free discovery call</a>
+          <a href="https://go.acr.fit/widget/bookings/book-consult-call-with-kevin" class="btn-light">Book your free discovery call</a>
           <a href="tel:1800957253" class="btn-outline-light">Call 1800 957 253</a>
         </div>
         <span class="page-cta-note">Free &bull; Confidential &bull; No obligation &bull; Available nationally</span>
@@ -1773,7 +1773,7 @@ FS_HTML = """
         <div class="sidebar-card">
           <h4>Ready to talk through your financial situation?</h4>
           <p>A free discovery call to discuss where you stand and whether FDR is right for your circumstances.</p>
-          <a href="https://go.acr.fit/widget/booking/AZe9GxY7Km90BXChvs0R" class="btn-primary">Book a free discovery call</a>
+          <a href="https://go.acr.fit/widget/bookings/book-consult-call-with-kevin" class="btn-primary">Book a free discovery call</a>
         </div>
         <div class="sidebar-card sidebar-card-img">
           <div class="img-real" style="aspect-ratio:4/5"><img src="/images/financial-supporting-2.jpg" alt="A man at a kitchen table reviewing a bank statement on his laptop." loading="lazy" decoding="async"></div>
@@ -1840,7 +1840,7 @@ FS_HTML = """
         <h2 id="fs-cta-heading">The call you make before you call a lawyer.</h2>
         <p>A free discovery call to discuss your financial situation, understand your options, and find out whether FDR is right for your circumstances.</p>
         <div class="page-cta-actions">
-          <a href="https://go.acr.fit/widget/booking/AZe9GxY7Km90BXChvs0R" class="btn-light">Book your free discovery call</a>
+          <a href="https://go.acr.fit/widget/bookings/book-consult-call-with-kevin" class="btn-light">Book your free discovery call</a>
           <a href="tel:1800957253" class="btn-outline-light">Call 1800 957 253</a>
         </div>
         <span class="page-cta-note">Free &bull; Confidential &bull; No obligation &bull; Available nationally</span>
@@ -2017,7 +2017,7 @@ S60I_HTML = """
         <div class="sidebar-card">
           <h4>Considering FDR for a parenting matter?</h4>
           <p>Start with a free discovery call. We will explain the process, walk through whether FDR is appropriate, and answer questions about Section 60I.</p>
-          <a href="https://go.acr.fit/widget/booking/AZe9GxY7Km90BXChvs0R" class="btn-primary">Book a free discovery call</a>
+          <a href="https://go.acr.fit/widget/bookings/book-consult-call-with-kevin" class="btn-primary">Book a free discovery call</a>
         </div>
         <div class="sidebar-card sidebar-card-img">
           <div class="img-real" style="aspect-ratio:4/5"><img src="/images/section60i-supporting-2.jpg" alt="A man in a suit standing composed on the steps of the Federal Court of Australia, briefcase in hand, his solicitor in robes a few steps behind." loading="lazy" decoding="async"></div>
@@ -2080,7 +2080,7 @@ S60I_HTML = """
         <h2 id="s60i-cta-heading">Talk through your matter before deciding the next step.</h2>
         <p>A free discovery call to understand whether FDR is appropriate for your circumstances and to walk through what the Section 60I process involves.</p>
         <div class="page-cta-actions">
-          <a href="https://go.acr.fit/widget/booking/AZe9GxY7Km90BXChvs0R" class="btn-light">Book your free discovery call</a>
+          <a href="https://go.acr.fit/widget/bookings/book-consult-call-with-kevin" class="btn-light">Book your free discovery call</a>
           <a href="tel:1800957253" class="btn-outline-light">Call 1800 957 253</a>
         </div>
         <span class="page-cta-note">Free &bull; Confidential &bull; No obligation &bull; Available nationally</span>
@@ -2795,7 +2795,7 @@ HIW_HTML = """
         <h2 id="hiw-cta-heading">The call you make before you call a lawyer.</h2>
         <p>A free discovery call. Find out whether FDR is right for your situation, what the process looks like for your circumstances, and how quickly you can start.</p>
         <div class="page-cta-actions">
-          <a href="https://go.acr.fit/widget/booking/AZe9GxY7Km90BXChvs0R" class="btn-light">Book your free discovery call</a>
+          <a href="https://go.acr.fit/widget/bookings/book-consult-call-with-kevin" class="btn-light">Book your free discovery call</a>
           <a href="tel:1800957253" class="btn-outline-light">Call 1800 957 253</a>
         </div>
         <span class="page-cta-note">Free &bull; Confidential &bull; No obligation &bull; Available nationally</span>
@@ -2920,7 +2920,7 @@ WIFDR_HTML = """
           <h1 id="wifdr-heading">What is <span class="accent">Family</span> <span class="accent">Dispute</span> <span class="accent">Resolution?</span></h1>
           <p class="wifdr-hero-sub">Family Dispute Resolution is a structured, professionally facilitated process that helps separating couples reach their own agreements on parenting and financial matters. It is conducted by an accredited practitioner under the Family Law Act 1975 and is confidential and inadmissible by statute. This page explains what FDR is, how it works in practice, and where it fits in the Australian family law system.</p>
           <div style="display:flex;gap:12px;flex-wrap:wrap">
-            <a href="https://go.acr.fit/widget/booking/AZe9GxY7Km90BXChvs0R" class="btn-light">Book a free discovery call</a>
+            <a href="https://go.acr.fit/widget/bookings/book-consult-call-with-kevin" class="btn-light">Book a free discovery call</a>
             <a href="/how-it-works/" class="btn-outline-light">How it works</a>
           </div>
         </div>
@@ -3185,7 +3185,7 @@ WIFDR_HTML = """
           <div class="sidebar-card">
             <h4>Ready to find out if FDR is right for you?</h4>
             <p>A free discovery call with an accredited practitioner. No pressure, no commitment.</p>
-            <a href="https://go.acr.fit/widget/booking/AZe9GxY7Km90BXChvs0R" class="btn-primary">Book a free discovery call</a>
+            <a href="https://go.acr.fit/widget/bookings/book-consult-call-with-kevin" class="btn-primary">Book a free discovery call</a>
           </div>
           <nav class="sidebar-card sidebar-nav">
             <h5>Related pages</h5>
@@ -3240,7 +3240,7 @@ WIFDR_HTML = """
         <h2 id="wifdr-cta-heading">Find out whether FDR is right for your situation.</h2>
         <p>A free discovery call with an accredited practitioner. No pressure, no commitment, no obligation to proceed.</p>
         <div class="page-cta-actions">
-          <a href="https://go.acr.fit/widget/booking/AZe9GxY7Km90BXChvs0R" class="btn-light">Book your free discovery call</a>
+          <a href="https://go.acr.fit/widget/bookings/book-consult-call-with-kevin" class="btn-light">Book your free discovery call</a>
           <a href="tel:1800957253" class="btn-outline-light">Call 1800 957 253</a>
         </div>
         <span class="page-cta-note">Free &bull; Confidential &bull; No obligation &bull; Available nationally</span>
@@ -3662,7 +3662,7 @@ FAQ_HTML = f"""
 {sections_html}
           <div class="faq-cta-inline">
             <p><strong>Still have a question?</strong> A free discovery call with an accredited practitioner. Ask anything.</p>
-            <a href="https://go.acr.fit/widget/booking/AZe9GxY7Km90BXChvs0R" class="btn-light" style="white-space:nowrap">Book a free call</a>
+            <a href="https://go.acr.fit/widget/bookings/book-consult-call-with-kevin" class="btn-light" style="white-space:nowrap">Book a free call</a>
           </div>
         </div>
       </div>
@@ -4511,7 +4511,7 @@ BOOK_HTML = """
         <p>A short, no-obligation conversation to confirm that FDR is the right path for your situation. We ask a few brief questions about your circumstances, answer any questions you have about how the process works, and give you a clear picture of what is involved.</p>
         <p>You leave the call with a clear understanding of whether FDR is appropriate for your matter and what the next steps would look like. <strong>No payment required.</strong></p>
         <div class="book-card-cta">
-          <a href="https://go.acr.fit/widget/booking/AZe9GxY7Km90BXChvs0R" class="btn-cta" target="_blank" rel="noopener noreferrer">
+          <a href="https://go.acr.fit/widget/bookings/book-consult-call-with-kevin" class="btn-cta" target="_blank" rel="noopener noreferrer">
             Book a discovery call
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
@@ -5056,7 +5056,7 @@ LOCATIONS_HTML = """
             <h2>Wherever you are in Australia</h2>
             <p>If you are separating, FDR is available to you. The first step is a free discovery call to confirm the process is appropriate for your circumstances.</p>
           </div>
-          <a href="https://go.acr.fit/widget/booking/AZe9GxY7Km90BXChvs0R" class="loc-cta-btn">
+          <a href="https://go.acr.fit/widget/bookings/book-consult-call-with-kevin" class="loc-cta-btn">
             Book a discovery call
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
@@ -5214,7 +5214,7 @@ PRICING_HTML = """
               <option>Divorce application</option>
             </select>
             <button type="submit" class="btn">Send my quote request</button>
-            <p class="qform-note">Prefer to talk first? <a href="https://go.acr.fit/widget/booking/AZe9GxY7Km90BXChvs0R">Book a free discovery call</a> or call <a href="tel:1800957253">1800 957 253</a>.</p>
+            <p class="qform-note">Prefer to talk first? <a href="https://go.acr.fit/widget/bookings/book-consult-call-with-kevin">Book a free discovery call</a> or call <a href="tel:1800957253">1800 957 253</a>.</p>
           </form>
           <script>
           (function(){
@@ -5251,7 +5251,7 @@ PRICING_HTML = """
         <div class="sidebar-card">
           <h4>Free discovery call</h4>
           <p>A short, no-obligation conversation with an accredited FDR practitioner. Nothing is decided on the call.</p>
-          <a href="https://go.acr.fit/widget/booking/AZe9GxY7Km90BXChvs0R" class="btn-primary">Book a free<br>discovery call</a>
+          <a href="https://go.acr.fit/widget/bookings/book-consult-call-with-kevin" class="btn-primary">Book a free<br>discovery call</a>
           <a href="tel:1800957253" class="btn-outline">Call 1800 957 253</a>
         </div>
         <div class="sidebar-card">
@@ -5494,7 +5494,7 @@ PRICING_HTML = """
       function ctaBlock(){
         return '<div class="fyp-cta">' +
           '<a class="fyp-btn fyp-btn-primary" href="#get-quote">Get your fixed-price quote</a>' +
-          '<a class="fyp-btn fyp-btn-outline" href="https://go.acr.fit/widget/booking/AZe9GxY7Km90BXChvs0R" target="_blank" rel="noopener">Book a free discovery call</a>' +
+          '<a class="fyp-btn fyp-btn-outline" href="https://go.acr.fit/widget/bookings/book-consult-call-with-kevin" target="_blank" rel="noopener">Book a free discovery call</a>' +
         '</div>';
       }
       function contrast(lawyerCost, lawyerTime){
@@ -5590,7 +5590,7 @@ PRICING_HTML = """
         <h2 id="pricing-cta-heading">Start with a free discovery call.</h2>
         <p>Talk through where you stand and find out whether FDR is right for your circumstances. No obligation, and nothing is decided on the call.</p>
         <div class="page-cta-actions">
-          <a href="https://go.acr.fit/widget/booking/AZe9GxY7Km90BXChvs0R" class="btn-light">Book your free discovery call</a>
+          <a href="https://go.acr.fit/widget/bookings/book-consult-call-with-kevin" class="btn-light">Book your free discovery call</a>
           <a href="tel:1800957253" class="btn-outline-light">Call 1800 957 253</a>
         </div>
         <span class="page-cta-note">Free &bull; Confidential &bull; No obligation &bull; Available nationally</span>
@@ -5753,7 +5753,7 @@ NOTFOUND_HTML = """
     <a href="/faq/">FAQ</a>
   </div>
   <div class="nf-cta">
-    <a href="https://go.acr.fit/widget/booking/AZe9GxY7Km90BXChvs0R" class="btn-primary">Book a free discovery call</a>
+    <a href="https://go.acr.fit/widget/bookings/book-consult-call-with-kevin" class="btn-primary">Book a free discovery call</a>
   </div>
 </section>
 """
@@ -6009,7 +6009,7 @@ MC_HTML = """
         <h2 id="mc-cta-heading">Walk into your mediation ready.</h2>
         <p>A free 30-minute discovery call to confirm the service fits, check there is no conflict, and tell you how to prepare for the day.</p>
         <div class="page-cta-actions">
-          <a href="https://go.acr.fit/widget/booking/AZe9GxY7Km90BXChvs0R" class="btn-light">Free Discovery Call</a>
+          <a href="https://go.acr.fit/widget/bookings/book-consult-call-with-kevin" class="btn-light">Free Discovery Call</a>
           <a href="tel:1800957253" class="btn-outline-light">Call 1800 957 253</a>
         </div>
         <span class="page-cta-note">Free &bull; Confidential &bull; No obligation &bull; Available nationally</span>
