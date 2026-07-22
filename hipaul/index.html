@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18195606042"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18195606042');
+    gtag('config', 'G-5TFC27B41R');
+  </script>
+  <title>Hi Paul | onlinefdr.com.au</title>
+  <meta name="description" content="A short-lived demonstration page showing how onlinefdr.com.au is built.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://onlinefdr.com.au/hipaul/">
+  <meta property="og:title" content="Hi Paul | onlinefdr.com.au">
+  <meta property="og:description" content="A short-lived demonstration page showing how onlinefdr.com.au is built.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://onlinefdr.com.au/hipaul/">
+  <meta property="og:site_name" content="onlinefdr.com.au">
+  <meta property="og:locale" content="en_AU">
+  <meta property="og:image" content="https://onlinefdr.com.au/images/og-default.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="onlinefdr.com.au. The call you make before you call a lawyer. Accredited online Family Dispute Resolution, available nationally.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://onlinefdr.com.au/images/og-default.jpg">
+  <meta name="twitter:image:alt" content="onlinefdr.com.au. The call you make before you call a lawyer. Accredited online Family Dispute Resolution, available nationally.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon-192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <meta name="theme-color" content="#F2EDE4">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
+  <style>
+/* ============================================================
+   onlinefdr.com.au — DESIGN SYSTEM
+   Manrope throughout. No italics. No mixed fonts.
+   Outback earth palette. Warm, professional, familiar.
+   ============================================================ */
+
+/* TOKENS */
+:root {
+  --dust:        #F2EDE4;
+  --dust-2:      #E8E0D4;
+  --dust-3:      #D8CEC0;
+  --ochre:       #C4873A;
+  --ochre-lt:    #D4975A;
+  --ochre-pale:  #F9F2E8;
+  --terra:       #A85C32;
+  --terra-lt:    #BC7050;
+  --charcoal:    #2C2825;
+  --charcoal-2:  #3D3830;
+  --mid:         #7A6F65;
+  --light-mid:   #A09690;
+  --white:       #FDFAF6;
+  --f:           'Manrope', system-ui, sans-serif;
+  --max:         1160px;
+  --pad:         clamp(24px, 5vw, 64px);
+  --ease:        cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+/* RESET */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body { font-family: var(--f); background: var(--dust); color: var(--charcoal); line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+.wrap { max-width: var(--max); margin: 0 auto; padding: 0 var(--pad); }
+
+/* NAV */
+.nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; background: rgba(242,237,228,0.96); backdrop-filter: blur(16px); border-bottom: 1px solid transparent; transition: border-color 0.3s var(--ease); }
+.nav.scrolled { border-color: var(--dust-3); }
+.nav-inner { display: flex; align-items: center; gap: 24px; height: 72px; max-width: var(--max); margin: 0 auto; padding: 0 var(--pad); }
+.nav-brand { flex-shrink: 0; }
+.nav-cta-wrap { flex-shrink: 0; display: flex; align-items: center; }
+.nav-brand { text-decoration: none; display: flex; align-items: center; gap: 10px; }
+.nav-brand-mark { flex-shrink: 0; display: block; }
+.nav-brand-text { display: flex; flex-direction: column; }
+.nav-brand-name { font-size: 1rem; font-weight: 800; color: var(--charcoal); letter-spacing: -0.02em; display: block; }
+.nav-brand-name .brand-fdr { color: var(--ochre); }
+.nav-brand-tag { font-size: 0.6rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--light-mid); display: block; }
+.nav-links { flex: 1; display: flex; align-items: center; justify-content: center; gap: 2px; list-style: none; }
+.nav-cta-mobile-only { display: none; }
+.nav-links a { font-size: 0.82rem; font-weight: 600; color: var(--mid); text-decoration: none; padding: 8px 14px; border-radius: 6px; transition: all 0.2s var(--ease); white-space: nowrap; }
+.nav-links a:hover, .nav-links a[aria-current="page"] { color: var(--charcoal); background: var(--dust-2); }
+.nav-cta { display: inline-flex; align-items: center; font-size: 0.82rem; font-weight: 600; text-decoration: none; padding: 8px 14px; border-radius: 6px; white-space: nowrap; background: var(--terra) !important; color: var(--white) !important; transition: all 0.2s var(--ease); }
+.nav-cta:hover { background: var(--terra-lt) !important; }
+.nav-toggle { display: none; background: none; border: none; cursor: pointer; color: var(--charcoal); padding: 8px; }
+
+/* SERVICES DROPDOWN */
+.nav-has-sub { position: relative; }
+.nav-sub-trigger { display: inline-flex; align-items: center; gap: 4px; font-family: inherit; font-size: 0.82rem; font-weight: 600; color: var(--mid); background: none; border: none; cursor: pointer; padding: 8px 14px; border-radius: 6px; transition: all 0.2s var(--ease); white-space: nowrap; }
+.nav-sub-trigger:hover, .nav-has-sub.open > .nav-sub-trigger, .nav-has-sub:has(a[aria-current="page"]) > .nav-sub-trigger { color: var(--charcoal); background: var(--dust-2); }
+.nav-sub-caret { transition: transform 0.2s var(--ease); }
+.nav-has-sub.open > .nav-sub-trigger .nav-sub-caret { transform: rotate(180deg); }
+.nav-sub { display: none; position: absolute; top: calc(100% + 4px); left: 0; min-width: 200px; background: var(--white); border: 1px solid var(--dust-3); border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.08); padding: 6px; list-style: none; z-index: 100; }
+.nav-has-sub.open > .nav-sub, .nav-has-sub:hover > .nav-sub { display: block; }
+.nav-sub li { display: block; }
+.nav-sub a { display: block; font-size: 0.82rem; font-weight: 600; color: var(--mid); text-decoration: none; padding: 8px 14px; border-radius: 6px; transition: all 0.2s var(--ease); white-space: nowrap; }
+.nav-sub a:hover, .nav-sub a[aria-current="page"] { color: var(--charcoal); background: var(--dust-2); }
+.nav-sub-ext { margin-left: 6px; opacity: 0.55; vertical-align: -1px; }
+.nav-sub-divider { display: block; height: 1px; background: var(--dust-3); margin: 6px 4px; padding: 0; pointer-events: none; }
+/* Resources dropdown sits near the right edge; right-align its popover so it doesn't clip off-screen */
+.nav-has-sub:nth-last-of-type(1) > .nav-sub { left: auto; right: 0; }
+
+/* MARQUEE */
+.marquee-bar { background: var(--ochre); overflow: hidden; padding: 12px 0; white-space: nowrap; }
+.marquee-track { display: inline-flex; animation: marquee 32s linear infinite; }
+.marquee-track:hover { animation-play-state: paused; }
+.marquee-item { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--white); padding: 0 28px; display: flex; align-items: center; gap: 8px; }
+.marquee-sep { opacity: 0.5; }
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+/* PAGE FOLD — viewport-capped header that ends exactly at viewport bottom,
+   with the marquee sitting on the fold line. Measurements:
+     fixed nav  = 73px
+     marquee    = ~50px (12px x2 + ~22px line + 4px border-box headroom)
+   On pages with NO breadcrumb, .page-fold starts at y=73 (just under the fixed
+   nav), so its height needs to fill 100svh - 73 - 50 = 100svh - 123px.
+   On pages WITH a breadcrumb, the breadcrumb's calc(72px+24px) top padding
+   pushes .page-fold down to y≈115, so the fold needs height 100svh - 115 - 50
+   = 100svh - 165px. We target both via a sibling selector.
+   H1 and intro paragraph sizes are reduced so typical headers fit without
+   content rewrites. Dense headers (join-the-team's req-panel grid) will exceed
+   one viewport on smaller heights; that is acceptable. */
+.page-fold { min-height: calc(100svh - 123px); padding-top: 24px !important; padding-bottom: 32px !important; display: flex; align-items: center; box-sizing: border-box; }
+.breadcrumb + main .page-fold { min-height: calc(100svh - 165px); }
+.page-fold > .wrap { width: 100%; }
+.page-fold h1 { font-size: clamp(1.8rem, 4vw, 3.4rem) !important; line-height: 1.05 !important; margin-bottom: 16px !important; }
+.page-fold .page-intro,
+.page-fold .about-hero-sub,
+.page-fold .jtt-header-sub,
+.page-fold .hiw-header-sub,
+.page-fold .wifdr-hero-sub,
+.page-fold .faq-hero-sub,
+.page-fold .complaints-header-sub,
+.page-fold .legal-header-sub,
+.page-fold .book-header-sub { font-size: 0.95rem !important; line-height: 1.55 !important; max-width: 620px; }
+.page-fold .page-label { margin-bottom: 12px !important; }
+@media (max-width: 768px) {
+  .page-fold { min-height: 0; padding-top: 32px !important; padding-bottom: 32px !important; }
+  .breadcrumb + main .page-fold { min-height: 0; }
+  .page-fold h1 { font-size: clamp(1.6rem, 7vw, 2.2rem) !important; }
+}
+
+/* BREADCRUMB */
+.breadcrumb { padding: calc(72px + 24px) 0 0; background: var(--dust); }
+.breadcrumb-inner { display: flex; align-items: center; gap: 8px; font-size: 0.75rem; font-weight: 500; color: var(--light-mid); flex-wrap: wrap; }
+.breadcrumb-inner a { color: var(--light-mid); text-decoration: none; transition: color 0.2s; }
+.breadcrumb-inner a:hover { color: var(--terra); }
+.breadcrumb-sep { color: var(--dust-3); }
+
+/* PAGE HEADER */
+.page-header { padding: 48px 0 72px; background: var(--dust); }
+.page-header-inner { max-width: 760px; }
+.page-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--terra); margin-bottom: 16px; display: block; }
+.page-title { font-size: clamp(2.4rem, 5.5vw, 5rem); font-weight: 800; line-height: 1.0; letter-spacing: -0.03em; color: var(--charcoal); margin-bottom: 24px; }
+.page-title .accent { color: var(--terra); }
+.page-intro { font-size: 1.15rem; font-weight: 400; color: var(--mid); line-height: 1.8; max-width: 640px; }
+
+/* HERO DARK (homepage style, reusable) */
+.hero-dark { background: var(--charcoal); padding: 120px 0 80px; position: relative; overflow: hidden; }
+.hero-dark::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 70% 60% at 70% 40%, rgba(196,135,58,0.1) 0%, transparent 60%); pointer-events: none; }
+
+/* DIVIDER */
+.divider { height: 3px; background: var(--terra); }
+.divider-ochre { height: 3px; background: var(--ochre); }
+
+/* SECTION LABEL */
+.section-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--terra); margin-bottom: 14px; display: block; }
+.section-label-light { color: var(--ochre-lt); }
+
+/* SECTION HEADINGS */
+.section-h2 { font-size: clamp(1.8rem, 3.2vw, 2.8rem); font-weight: 800; line-height: 1.1; color: var(--charcoal); letter-spacing: -0.03em; margin-bottom: 16px; }
+.section-h2 .accent { color: var(--terra); }
+.section-h2-light { color: var(--white); }
+.section-h2-light .accent { color: var(--ochre); }
+
+/* BODY TEXT */
+.body-text { font-size: 1.05rem; font-weight: 400; color: var(--mid); line-height: 1.85; margin-bottom: 22px; }
+.body-text:last-child { margin-bottom: 0; }
+.body-text strong { font-weight: 700; color: var(--charcoal); }
+
+/* PULL QUOTE */
+.pull { border-left: 3px solid var(--ochre); padding: 18px 24px; margin: 28px 0; background: var(--ochre-pale); }
+.pull p { font-size: 1.1rem; font-weight: 600; color: var(--charcoal); line-height: 1.55; }
+
+/* BUTTONS */
+.btn-primary { display: inline-flex; align-items: center; gap: 10px; background: var(--terra); color: var(--white); font-family: var(--f); font-size: 0.92rem; font-weight: 700; letter-spacing: 0.01em; padding: 15px 30px; border-radius: 8px; text-decoration: none; border: 2px solid var(--terra); transition: all 0.2s var(--ease); }
+.btn-primary:hover { background: var(--terra-lt); border-color: var(--terra-lt); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(168,92,50,0.28); }
+.btn-primary svg { transition: transform 0.2s; flex-shrink: 0; }
+.btn-primary:hover svg { transform: translateX(4px); }
+/* Hero phone-icon button: no arrow slide on hover (it's a phone glyph, not an arrow) */
+.hero-actions .btn-primary:hover svg { transform: none; }
+/* Calendar icon button (hero secondary): terracotta outline, transparent fill, square */
+.btn-icon-book { display: inline-flex; align-items: center; justify-content: center; width: 52px; height: 52px; background: transparent; color: var(--terra); border: 2px solid var(--terra); border-radius: 8px; text-decoration: none; transition: all 0.2s var(--ease); flex-shrink: 0; }
+.btn-icon-book:hover { background: var(--terra); color: var(--white); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(168,92,50,0.28); }
+.btn-secondary { display: inline-flex; align-items: center; gap: 10px; background: transparent; color: var(--terra); font-family: var(--f); font-size: 0.92rem; font-weight: 700; letter-spacing: 0.01em; padding: 13px 28px; border-radius: 8px; text-decoration: none; border: 2px solid var(--terra); transition: all 0.2s var(--ease); }
+.btn-secondary:hover { background: var(--terra); color: var(--white); transform: translateY(-1px); }
+.btn-light { display: inline-flex; align-items: center; gap: 10px; background: var(--white); color: var(--terra); font-family: var(--f); font-size: 0.92rem; font-weight: 800; letter-spacing: 0.01em; padding: 15px 30px; border-radius: 8px; text-decoration: none; border: 2px solid var(--white); transition: all 0.2s var(--ease); }
+.btn-light:hover { background: var(--charcoal); color: var(--white); border-color: var(--charcoal); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(0,0,0,0.2); }
+.btn-outline-light { display: inline-flex; align-items: center; gap: 10px; background: transparent; color: var(--white); font-family: var(--f); font-size: 0.92rem; font-weight: 700; letter-spacing: 0.01em; padding: 13px 28px; border-radius: 8px; text-decoration: none; border: 2px solid rgba(255,255,255,0.4); transition: all 0.2s var(--ease); }
+.btn-outline-light:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.7); }
+
+/* IMAGE PLACEHOLDERS */
+.img-placeholder { background: var(--dust-2); border: 2px dashed var(--dust-3); border-radius: 10px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; }
+.img-placeholder-dark { background: rgba(255,255,255,0.04); border: 2px dashed rgba(255,255,255,0.12); }
+.img-placeholder svg { color: var(--light-mid); }
+.img-placeholder-dark svg { color: rgba(255,255,255,0.2); }
+.img-placeholder span { font-size: 0.7rem; font-weight: 600; color: var(--light-mid); letter-spacing: 0.08em; text-transform: uppercase; text-align: center; padding: 0 16px; line-height: 1.5; }
+.img-placeholder-dark span { color: rgba(255,255,255,0.2); }
+
+/* NOTICE BOXES */
+.notice { border-left: 4px solid; border-radius: 0 8px 8px 0; padding: 20px 24px; margin: 28px 0; }
+.notice-amber { background: var(--ochre-pale); border-color: var(--ochre); }
+.notice-terra { background: #FAF0EA; border-color: var(--terra); }
+.notice-label { font-size: 0.66rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 8px; }
+.notice-amber .notice-label { color: var(--ochre); }
+.notice-terra .notice-label { color: var(--terra); }
+.notice p { font-size: 0.9rem; font-weight: 400; color: var(--charcoal); line-height: 1.7; margin-bottom: 6px; }
+.notice p:last-child { margin-bottom: 0; }
+.notice p strong { font-weight: 700; }
+
+/* ARTICLE GRID (page with sidebar) */
+.article-wrap { padding: 60px 0 100px; }
+.article-grid { display: grid; grid-template-columns: 1fr 280px; gap: 64px; align-items: start; }
+.article-body h2 { font-size: clamp(1.5rem, 2.8vw, 2.1rem); font-weight: 800; line-height: 1.15; color: var(--charcoal); letter-spacing: -0.02em; margin: 52px 0 18px; padding-top: 16px; border-top: 1px solid var(--dust-3); }
+.article-body h2:first-child { margin-top: 0; padding-top: 0; border-top: none; }
+.article-body h2 .accent { color: var(--terra); }
+.article-body h3 { font-size: 1rem; font-weight: 700; color: var(--charcoal); margin: 28px 0 10px; }
+.article-body p { font-size: 1rem; font-weight: 400; color: var(--mid); line-height: 1.85; margin-bottom: 18px; }
+.article-body p:last-child { margin-bottom: 0; }
+.article-body p strong { font-weight: 700; color: var(--charcoal); }
+.article-body a { color: var(--terra); font-weight: 600; text-decoration: none; border-bottom: 1px solid rgba(168,92,50,0.3); transition: border-color 0.2s; }
+.article-body a:hover { border-color: var(--terra); }
+
+/* SIDEBAR */
+.sidebar { position: sticky; top: 92px; display: flex; flex-direction: column; gap: 20px; }
+.sidebar-card { background: var(--white); border: 1px solid var(--dust-3); border-radius: 10px; padding: 24px 22px; }
+.sidebar-card h4 { font-size: 0.95rem; font-weight: 800; color: var(--charcoal); margin-bottom: 10px; line-height: 1.3; letter-spacing: -0.01em; }
+.sidebar-card p { font-size: 0.84rem; font-weight: 400; color: var(--mid); line-height: 1.65; margin-bottom: 16px; }
+.sidebar-card .btn-primary { display: block; text-align: center; }
+.sidebar-nav h5 { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--light-mid); margin-bottom: 14px; }
+.sidebar-nav ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.sidebar-nav ul li a { font-size: 0.84rem; font-weight: 500; color: var(--mid); text-decoration: none; display: flex; align-items: center; gap: 8px; transition: color 0.2s; line-height: 1.35; }
+.sidebar-nav ul li a:hover { color: var(--terra); }
+.sidebar-nav ul li a svg { color: var(--dust-3); flex-shrink: 0; transition: color 0.2s; }
+.sidebar-nav ul li a:hover svg { color: var(--terra); }
+.related-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.related-links li a { font-size: 0.84rem; font-weight: 600; color: var(--terra); text-decoration: none; display: flex; align-items: center; gap: 6px; transition: gap 0.2s; }
+.related-links li a:hover { gap: 10px; }
+
+/* FAQ ACCORDION */
+.faq-list { border: 1px solid var(--dust-3); border-radius: 10px; overflow: hidden; background: var(--white); }
+.faq-item { border-bottom: 1px solid var(--dust-3); }
+.faq-item:last-child { border-bottom: none; }
+.faq-q { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 20px 26px; background: none; border: none; text-align: left; cursor: pointer; font-family: var(--f); font-size: 0.92rem; font-weight: 600; color: var(--charcoal); transition: background 0.2s; }
+.faq-q:hover { background: var(--ochre-pale); }
+.faq-q svg { flex-shrink: 0; color: var(--terra); transition: transform 0.3s; }
+.faq-item.open .faq-q svg { transform: rotate(45deg); }
+.faq-a { display: none; padding: 0 26px 20px; }
+.faq-item.open .faq-a { display: block; }
+.faq-a p { font-size: 0.9rem; font-weight: 400; color: var(--mid); line-height: 1.75; }
+
+/* PAGE FAQ SECTION */
+.page-faq { background: var(--dust); padding: 80px 0; }
+.page-faq-header { max-width: 560px; margin-bottom: 44px; }
+.page-faq-header h2 { font-size: clamp(1.8rem, 3vw, 2.4rem); font-weight: 800; line-height: 1.1; color: var(--charcoal); letter-spacing: -0.03em; margin-bottom: 12px; }
+.page-faq-header p { font-size: 0.95rem; font-weight: 400; color: var(--mid); line-height: 1.7; }
+
+/* PAGE CTA (bottom of content pages) */
+.page-cta { background: var(--terra); padding: 80px 0; position: relative; overflow: hidden; }
+.page-cta::before { content: ''; position: absolute; top: -40%; right: -8%; width: 400px; height: 400px; border-radius: 50%; background: rgba(255,255,255,0.05); pointer-events: none; }
+.page-cta-inner { max-width: 660px; margin: 0 auto; text-align: center; position: relative; z-index: 1; }
+.page-cta-eyebrow { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(253,250,246,0.5); margin-bottom: 18px; display: block; }
+.page-cta h2 { font-size: clamp(2rem, 4vw, 3.6rem); font-weight: 800; line-height: 1.05; color: var(--white); letter-spacing: -0.03em; margin-bottom: 18px; }
+.page-cta p { font-size: 1rem; font-weight: 400; color: rgba(253,250,246,0.7); line-height: 1.75; margin-bottom: 40px; }
+.page-cta-actions { display: flex; align-items: center; justify-content: center; gap: 14px; flex-wrap: wrap; margin-bottom: 20px; }
+.page-cta-note { font-size: 0.75rem; font-weight: 500; color: rgba(253,250,246,0.38); }
+
+/* ENTITY BAR */
+.entity-bar { background: var(--dust-2); border-top: 1px solid var(--dust-3); padding: 16px 0; }
+.entity-bar-inner { display: flex; align-items: center; justify-content: center; gap: 36px; flex-wrap: wrap; }
+.entity-item { display: flex; align-items: center; gap: 8px; font-size: 0.7rem; font-weight: 600; color: var(--mid); letter-spacing: 0.03em; }
+.entity-item svg { color: var(--terra); flex-shrink: 0; }
+
+/* FOOTER */
+footer { background: var(--charcoal); padding: 64px 0 36px; }
+.footer-top { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr 1fr 1fr; gap: 36px; padding-bottom: 48px; border-bottom: 1px solid rgba(255,255,255,0.08); margin-bottom: 32px; }
+.footer-brand-lockup { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+.footer-brand-mark { flex-shrink: 0; display: block; }
+.footer-brand-name { font-size: 1rem; font-weight: 800; color: var(--white); letter-spacing: -0.02em; margin: 0; }
+.footer-brand-name .brand-fdr { color: var(--ochre); }
+.footer-socials { display: flex; gap: 14px; margin-top: 18px; }
+.footer-socials a { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 8px; background: rgba(253,250,246,0.06); color: rgba(253,250,246,0.65); border: 1px solid rgba(253,250,246,0.08); transition: all 0.2s var(--ease); text-decoration: none; }
+.footer-socials a:hover { color: var(--ochre); background: rgba(196,135,58,0.1); border-color: var(--ochre); }
+.footer-socials svg { width: 18px; height: 18px; }
+.footer-tagline { font-size: 0.8rem; font-weight: 500; color: rgba(253,250,246,0.28); margin-bottom: 14px; line-height: 1.4; }
+.footer-desc { font-size: 0.8rem; font-weight: 400; color: rgba(253,250,246,0.25); line-height: 1.65; max-width: 260px; }
+.footer-col h5 { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(253,250,246,0.22); margin-bottom: 16px; }
+.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.footer-col ul li a { font-size: 0.84rem; font-weight: 400; color: rgba(253,250,246,0.42); text-decoration: none; transition: color 0.2s; }
+.footer-col ul li a:hover { color: var(--ochre); }
+.footer-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+.footer-copy { font-size: 0.72rem; color: rgba(253,250,246,0.18); }
+.footer-legal { display: flex; gap: 24px; }
+.footer-legal a { font-size: 0.72rem; color: rgba(253,250,246,0.18); text-decoration: none; transition: color 0.2s; }
+.footer-legal a:hover { color: rgba(253,250,246,0.5); }
+.footer-meta { margin-top: 28px; padding-top: 22px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; flex-direction: column; gap: 10px; }
+.footer-abn { font-size: 0.72rem; color: rgba(253,250,246,0.32); margin: 0; }
+.footer-disclaimer { font-size: 0.72rem; color: rgba(253,250,246,0.22); line-height: 1.65; margin: 0; max-width: 920px; }
+
+/* ANIMATIONS */
+@keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s var(--ease), transform 0.7s var(--ease); }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+.reveal-d1 { transition-delay: 0.1s; }
+.reveal-d2 { transition-delay: 0.2s; }
+.reveal-d3 { transition-delay: 0.3s; }
+.fade-in { opacity: 0; animation: fadeUp 0.7s var(--ease) forwards; }
+
+/* RESPONSIVE */
+@media(max-width:960px) {
+  .article-grid { grid-template-columns: 1fr; }
+  .sidebar { position: static; }
+  .footer-top { grid-template-columns: 1fr 1fr; gap: 32px; }
+}
+@media(max-width:768px) {
+  .nav-inner { gap: 12px; }
+  .nav-toggle { display: flex; margin-left: auto; }
+  .nav-links { display: none; }
+  .nav-links.open { display: flex; flex-direction: column; align-items: stretch; text-align: left; position: absolute; top: 72px; left: 0; right: 0; background: var(--dust); border-bottom: 1px solid var(--dust-3); padding: 16px var(--pad); gap: 2px; box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+  .nav-links.open > li { width: 100%; text-align: left; }
+  .nav-links.open > li > a { display: block; text-align: left; padding: 10px 0; }
+  .nav-cta-wrap { display: none; }
+  .nav-cta-mobile-only { display: block; margin-top: 12px; }
+  .nav-links.open > li.nav-cta-mobile-only > a { display: flex; justify-content: center; align-items: center; width: 100%; text-align: center; padding: 13px 28px; }
+  /* Dropdowns become flat indented lists on mobile */
+  .nav-sub-trigger { width: 100%; justify-content: flex-start; text-align: left; cursor: default; pointer-events: none; padding: 10px 0; }
+  .nav-sub-caret { display: none; }
+  .nav-sub { display: block; position: static; background: none; border: none; box-shadow: none; padding: 0; min-width: 0; }
+  .nav-sub a { display: block; text-align: left; padding: 8px 0 8px 20px; }
+  .nav-sub-divider { margin: 6px 0 6px 20px; }
+  .footer-top { grid-template-columns: 1fr; gap: 28px; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+  .entity-bar-inner { gap: 16px; }
+  .page-cta-actions { flex-direction: column; align-items: center; }
+}
+
+/* ── REAL IMAGES (replace placeholders, preserve sizing/aspect) ── */
+.hero-img-real, .empathy-img-real, .why-img-real, .process-img-real,
+.about-img-real, .principal-headshot-real, .img-real {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  background: var(--dust-2);
+}
+.hero-img-real { aspect-ratio: 4/5; border-radius: 12px; }
+.hero-image-panel .hero-img-real { aspect-ratio: auto; }
+.empathy-img-real { aspect-ratio: 4/3; border-radius: 10px; }
+.why-img-real { aspect-ratio: 4/3; border-radius: 12px; }
+.process-img-real { aspect-ratio: 4/3; border-radius: 12px; position: sticky; top: 100px; }
+.about-img-real { aspect-ratio: 16/9; }
+.about-img-real.about-img-tall { aspect-ratio: 4/5; }
+.principal-headshot-real { border-radius: 12px; overflow: hidden; }
+.hero-img-real img, .empathy-img-real img, .why-img-real img, .process-img-real img,
+.about-img-real img, .principal-headshot-real img, .img-real img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sidebar-card-img .img-real {
+  border-radius: 0;
+}
+@media(max-width:960px) {
+  .process-img-real { position: static; }
+}
+
+/* BRAND WORDMARK — the ochre "fdr" segment in onlinefdr.com.au. Site-wide. */
+.brand-fdr{color:var(--ochre)}
+
+/* THREE-QUESTION TEST teaser — Why Online section (home + What is FDR). Replaced the comparator 3 June 2026. */
+.path-teaser{background:var(--white);border:1px solid var(--dust-3);border-radius:16px;padding:30px 28px;margin-top:24px;box-shadow:0 12px 32px rgba(44,40,37,0.07)}
+.path-teaser-eyebrow{font-size:0.66rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--ochre);margin-bottom:10px}
+.path-teaser-title{font-size:1.18rem;font-weight:800;color:var(--charcoal);line-height:1.3;letter-spacing:-0.01em;margin:0 0 18px}
+.path-teaser-list{list-style:none;margin:0 0 22px;padding:0;border-top:1px solid var(--dust-2)}
+.path-teaser-item{display:flex;align-items:center;gap:13px;padding:13px 0;border-bottom:1px solid var(--dust-2)}
+.path-teaser-num{flex-shrink:0;width:26px;height:26px;border-radius:50%;border:1px solid rgba(168,92,50,0.4);color:var(--terra);font-size:0.8rem;font-weight:700;display:flex;align-items:center;justify-content:center}
+.path-teaser-q{font-size:0.92rem;font-weight:600;color:var(--charcoal);line-height:1.4}
+.path-teaser-btn{display:block;width:100%;text-align:center;background:var(--terra);color:var(--white);font-family:var(--f);font-size:1rem;font-weight:800;padding:16px 24px;border-radius:10px;text-decoration:none;border:2px solid var(--terra);transition:all 0.2s var(--ease)}
+.path-teaser-btn:hover{background:var(--terra-lt);border-color:var(--terra-lt);transform:translateY(-1px);box-shadow:0 8px 24px rgba(168,92,50,0.3)}
+.path-teaser-grey{background:var(--charcoal);border-color:var(--charcoal)}
+.path-teaser-grey .path-teaser-title{color:#fff}
+.path-teaser-grey .path-teaser-list{border-top-color:rgba(255,255,255,0.14)}
+.path-teaser-grey .path-teaser-item{border-bottom-color:rgba(255,255,255,0.14)}
+.path-teaser-grey .path-teaser-num{border-color:rgba(255,255,255,0.35);color:var(--dust)}
+.path-teaser-grey .path-teaser-q{color:rgba(255,255,255,0.88)}
+
+/* DOWNLOAD COMPONENTS — site-wide pattern, used on Financial Settlements, Parenting, and any future page with downloadable resources */
+.download-row{display:grid;grid-template-columns:1fr auto;gap:32px;align-items:center;background:var(--dust);border:1px solid var(--dust-2);border-radius:10px;padding:28px 32px;margin:32px 0}
+.download-row-text h3{font-size:1.05rem;font-weight:800;color:var(--charcoal);margin:0 0 6px;letter-spacing:-0.01em}
+.download-row-text p{font-size:0.88rem;font-weight:400;color:var(--mid);line-height:1.65;margin:0;max-width:520px}
+.download-row-buttons{display:flex;flex-direction:column;gap:10px;flex-shrink:0}
+.download-row-buttons .btn-primary{justify-content:center;padding:12px 24px;font-size:0.85rem;color:var(--white)}
+.download-row-buttons .btn-primary:hover{color:var(--white)}
+.download-row .btn-outline{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:transparent;color:var(--terra);font-family:var(--f);font-size:0.85rem;font-weight:700;letter-spacing:0.01em;padding:10px 24px;border-radius:8px;text-decoration:none;border:2px solid var(--terra);transition:all 0.2s var(--ease)}
+.download-row .btn-outline:hover{background:var(--terra);color:var(--white)}
+@media(max-width:760px){
+  .download-row{grid-template-columns:1fr;padding:24px 22px}
+  .download-row-buttons{flex-direction:row}
+  .download-row-buttons .btn-primary,.download-row .btn-outline{flex:1}
+}
+.sidebar-card-download{background:var(--dust);border:1px solid var(--dust-2)}
+.sidebar-card-download h4{color:var(--charcoal)}
+.sidebar-card-download .btn-primary{margin-bottom:8px}
+.sidebar-card-download .btn-outline{display:block;text-align:center;background:transparent;color:var(--terra);font-family:var(--f);font-size:0.85rem;font-weight:700;letter-spacing:0.01em;padding:10px 24px;border-radius:8px;text-decoration:none;border:2px solid var(--terra);transition:all 0.2s var(--ease)}
+.sidebar-card-download .btn-outline:hover{background:var(--terra);color:var(--white)}
+.sidebar-nav-download a{color:var(--terra) !important;font-weight:600}
+.sidebar-nav-download a svg{color:var(--terra)}
+
+/* SKIP-TO-CONTENT — visually hidden until focused (WCAG 2.4.1) */
+.skip-to-content{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:9999}
+.skip-to-content:focus{position:fixed;left:16px;top:16px;width:auto;height:auto;padding:12px 20px;background:var(--terra);color:var(--white);font-family:var(--f);font-size:0.9rem;font-weight:700;text-decoration:none;border-radius:6px;outline:3px solid var(--ochre);outline-offset:2px}
+
+/* SOCIAL FOLLOW RAIL (site-wide) - desktop floating left rail */
+.social-rail{position:fixed;left:14px;top:50%;transform:translateY(-50%);z-index:40;display:none;flex-direction:column;gap:10px;margin:0}
+.social-rail a{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:10px;color:var(--charcoal);background:#fff;border:1px solid rgba(44,40,37,0.12);box-shadow:0 1px 5px rgba(44,40,37,0.07);transition:color .2s var(--ease),background .2s var(--ease),border-color .2s var(--ease)}
+.social-rail a:hover{color:var(--terra);background:var(--ochre-pale);border-color:var(--ochre)}
+.social-rail svg{width:19px;height:19px}
+@media(min-width:1300px){.social-rail{display:flex}}
+/* SOCIAL FOLLOW ROW (tablet + mobile, inline above footer) */
+.social-inline{display:flex;justify-content:center;gap:14px;padding:28px 0 4px;margin:0}
+.social-inline a{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:10px;color:var(--charcoal);background:var(--ochre-pale);border:1px solid rgba(44,40,37,0.10);transition:color .2s var(--ease),background .2s var(--ease),border-color .2s var(--ease)}
+.social-inline a:hover{color:var(--terra);background:#fff;border-color:var(--ochre)}
+.social-inline svg{width:19px;height:19px}
+@media(min-width:1300px){.social-inline{display:none}}
+
+
+.wifdr-hero{background:var(--charcoal);padding:120px 0 80px;position:relative;overflow:hidden}
+.wifdr-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 65% 60% at 75% 35%,rgba(196,135,58,0.1) 0%,transparent 60%);pointer-events:none}
+.wifdr-hero-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:72px;align-items:center;position:relative;z-index:1}
+.wifdr-hero h1{font-size:clamp(2.8rem,6vw,5.2rem);font-weight:800;line-height:1.0;letter-spacing:-0.03em;color:var(--white);margin-bottom:24px}
+.wifdr-hero h1 .accent{color:var(--ochre)}
+.wifdr-hero-sub{font-size:1.1rem;font-weight:400;color:rgba(253,250,246,0.6);line-height:1.8;margin-bottom:32px}
+.wifdr-hero-stats{display:grid;grid-template-columns:1fr 1fr;gap:2px;border-radius:10px;overflow:hidden}
+.hero-stat{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.08);padding:22px 20px}
+.hero-stat-val{font-size:clamp(1.9rem,3vw,2.4rem);font-weight:800;color:var(--white);line-height:1;margin-bottom:6px;letter-spacing:-0.03em}
+.hero-stat-val .unit{color:var(--ochre);font-weight:800;margin-left:4px}
+.hero-stat-val.text{font-size:clamp(1.6rem,2.6vw,2.1rem)}
+.hero-stat-label{font-size:0.74rem;font-weight:500;color:rgba(253,250,246,0.4);line-height:1.4}
+
+/* DEFINITION */
+.definition-section{padding:80px 0;background:var(--white)}
+.definition-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+.definition-text h2{font-size:clamp(1.8rem,3vw,2.6rem);font-weight:800;line-height:1.1;letter-spacing:-0.03em;color:var(--charcoal);margin-bottom:20px}
+.definition-text h2 .accent{color:var(--terra)}
+
+/* HOW IT WORKS SUMMARY */
+.how-summary-section{padding:80px 0;background:var(--dust)}
+.how-summary-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:44px}
+.how-summary-step{background:var(--white);border:1px solid var(--dust-3);border-radius:10px;padding:24px 22px;transition:border-color 0.25s}
+.how-summary-step:hover{border-color:var(--ochre)}
+.how-summary-num{width:32px;height:32px;border-radius:8px;background:var(--ochre-pale);color:var(--terra);display:flex;align-items:center;justify-content:center;font-size:0.95rem;font-weight:800;margin-bottom:14px}
+.how-summary-step h3{font-size:0.92rem;font-weight:800;color:var(--charcoal);margin-bottom:8px;letter-spacing:-0.01em}
+.how-summary-step p{font-size:0.84rem;font-weight:400;color:var(--mid);line-height:1.65;margin-bottom:0}
+
+/* CONFIDENTIALITY */
+.confidentiality-section{padding:80px 0;background:var(--white)}
+
+/* VS SECTION */
+.vs-section{padding:80px 0;background:var(--dust)}
+.vs-header{max-width:600px;margin-bottom:52px}
+.vs-grid{display:grid;grid-template-columns:1fr 80px 1fr;gap:0;align-items:start}
+.vs-col{background:var(--white);border:1px solid var(--dust-3);border-radius:10px;padding:32px 28px}
+.vs-col.fdr{border-color:var(--ochre);border-width:2px}
+.vs-col-label{font-size:0.62rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;margin-bottom:8px;display:block}
+.vs-col.fdr .vs-col-label{color:var(--terra)}
+.vs-col.court .vs-col-label{color:var(--light-mid)}
+.vs-col h3{font-size:1.1rem;font-weight:800;color:var(--charcoal);margin-bottom:24px;letter-spacing:-0.02em}
+.vs-rows{display:flex;flex-direction:column;gap:0;border-top:1px solid var(--dust-3)}
+.vs-row{display:flex;align-items:flex-start;gap:12px;padding:14px 0;border-bottom:1px solid var(--dust-3)}
+.vs-row:last-child{border-bottom:none}
+.vs-icon{width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.vs-icon.yes{background:var(--ochre-pale);color:var(--terra)}
+.vs-icon.no{background:#FEF2F2;color:#DC2626}
+.vs-row-text{font-size:0.88rem;font-weight:400;color:var(--mid);line-height:1.55}
+.vs-row-text strong{font-weight:700;color:var(--charcoal)}
+.vs-mid{display:flex;align-items:center;justify-content:center;padding-top:72px}
+.vs-badge{width:60px;height:60px;border-radius:50%;background:var(--charcoal);color:var(--white);display:flex;align-items:center;justify-content:center;font-size:0.8rem;font-weight:800;letter-spacing:0.04em}
+
+/* WHO IS IT FOR */
+.who-section{padding:80px 0;background:var(--white)}
+.who-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-top:44px}
+.who-card{border:1px solid var(--dust-3);border-radius:10px;padding:28px 24px;background:var(--dust);transition:border-color 0.25s,transform 0.25s}
+.who-card:hover{border-color:var(--ochre);transform:translateY(-2px)}
+.who-card-icon{width:40px;height:40px;border-radius:10px;background:var(--ochre-pale);color:var(--terra);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.who-card h3{font-size:0.95rem;font-weight:800;color:var(--charcoal);margin-bottom:8px;letter-spacing:-0.01em}
+.who-card p{font-size:0.86rem;font-weight:400;color:var(--mid);line-height:1.7;margin-bottom:0}
+
+/* NOT FOR */
+.notfor-section{padding:72px 0;background:var(--charcoal)}
+.notfor-inner{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.notfor-list{display:flex;flex-direction:column;gap:2px;margin-top:24px;border-radius:10px;overflow:hidden}
+.notfor-item{display:flex;align-items:flex-start;gap:14px;padding:18px 20px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08)}
+.notfor-icon{width:28px;height:28px;border-radius:7px;background:rgba(220,38,38,0.15);color:#F87171;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.notfor-item h4{font-size:0.88rem;font-weight:700;color:var(--white);margin-bottom:3px}
+.notfor-item p{font-size:0.82rem;font-weight:400;color:rgba(253,250,246,0.45);line-height:1.55;margin-bottom:0}
+.notfor-note{margin-top:20px;padding:20px 22px;background:rgba(196,135,58,0.1);border:1px solid rgba(196,135,58,0.2);border-radius:8px}
+.notfor-note p{font-size:0.88rem;font-weight:400;color:rgba(253,250,246,0.6);line-height:1.7;margin-bottom:0}
+.notfor-note strong{color:var(--ochre-lt)}
+
+/* LEGAL BASIS */
+.legal-section{padding:80px 0;background:var(--dust)}
+
+@media(max-width:960px){
+  .wifdr-hero-grid,.definition-grid,.vs-grid,.notfor-inner{grid-template-columns:1fr;gap:48px}
+  .vs-mid{padding:16px 0}
+  .who-grid{grid-template-columns:1fr 1fr}
+  .how-summary-steps{grid-template-columns:1fr 1fr}
+}
+@media(max-width:640px){
+  .who-grid{grid-template-columns:1fr}
+  .wifdr-hero-stats{grid-template-columns:1fr 1fr}
+  .how-summary-steps{grid-template-columns:1fr}
+}
+
+  </style>
+</head>
+<body>
+
+<a href="#main" class="skip-to-content">Skip to main content</a>
+
+<aside class="social-rail" aria-label="Follow us on social media">
+  <a href="https://www.facebook.com/onlinefdr/" aria-label="Follow onlinefdr.com.au on Facebook" rel="noopener" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/></svg></a>
+  <a href="https://www.instagram.com/onlinefdr.au/" aria-label="Follow onlinefdr.com.au on Instagram" rel="noopener" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg></a>
+  <a href="https://www.linkedin.com/company/onlinefdr/" aria-label="Follow onlinefdr.com.au on LinkedIn" rel="noopener" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg></a>
+</aside>
+
+<nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="/" class="nav-brand" aria-label="onlinefdr.com.au home">
+      <svg class="nav-brand-mark" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C4873A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+        <path d="m11 17 2 2a1 1 0 1 0 3-3"/>
+        <path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/>
+        <path d="m21 3 1 11h-2"/>
+        <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/>
+        <path d="M3 4h8"/>
+      </svg>
+      <span class="nav-brand-text">
+        <span class="nav-brand-name">online<span class="brand-fdr">fdr</span>.com.au</span>
+        <span class="nav-brand-tag">Accredited Online FDR</span>
+      </span>
+    </a>
+    <ul class="nav-links" id="nav-links" role="list">
+      <li><a href="/about/">About</a></li>
+      <li class="nav-has-sub"><button type="button" class="nav-sub-trigger" aria-haspopup="true" aria-expanded="false">Understanding FDR<svg class="nav-sub-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <ul class="nav-sub" role="menu">
+          <li role="none"><a href="/what-is-fdr/" role="menuitem">What is FDR?</a></li>
+          <li role="none"><a href="/how-it-works/" role="menuitem">How It Works</a></li>
+        </ul>
+      </li>
+      <li class="nav-has-sub"><button type="button" class="nav-sub-trigger" aria-haspopup="true" aria-expanded="false">Services<svg class="nav-sub-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <ul class="nav-sub" role="menu">
+          <li role="none"><a href="/parenting/" role="menuitem">Parenting</a></li>
+          <li role="none"><a href="/financial-settlement/" role="menuitem">Financial Settlement</a></li>
+          <li role="none"><a href="/section-60i/" role="menuitem">Section 60I</a></li>
+          <li role="none"><a href="/mediation-coaching/" role="menuitem">Mediation Coaching</a></li>
+        </ul>
+      </li>
+      <li><a href="/pricing/">Pricing</a></li>
+      <li><a href="/book/">Book</a></li>
+      <li class="nav-has-sub"><button type="button" class="nav-sub-trigger" aria-haspopup="true" aria-expanded="false">Resources<svg class="nav-sub-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <ul class="nav-sub" role="menu">
+          <li role="none"><a href="/faq/" role="menuitem">FAQ</a></li>
+          <li role="none"><a href="/blog/" role="menuitem">Blog</a></li>
+          <li role="none" class="nav-sub-divider" aria-hidden="true"></li>
+          <li role="none"><a href="https://www.facebook.com/onlinefdr/" role="menuitem" target="_blank" rel="noopener noreferrer">Facebook<svg class="nav-sub-ext" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></li>
+          <li role="none"><a href="https://www.instagram.com/onlinefdr.au/" role="menuitem" target="_blank" rel="noopener noreferrer">Instagram<svg class="nav-sub-ext" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></li>
+          <li role="none"><a href="https://www.linkedin.com/company/onlinefdr/" role="menuitem" target="_blank" rel="noopener noreferrer">LinkedIn<svg class="nav-sub-ext" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></li>
+        </ul>
+      </li>
+      <li class="nav-cta-mobile-only"><a href="tel:1800957253" class="nav-cta" aria-label="Call us on 1 8 0 0 9 5 7 2 5 3"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right:6px;vertical-align:-2px"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>1800 957 253</a></li>
+    </ul>
+    <div class="nav-cta-wrap"><a href="tel:1800957253" class="nav-cta" aria-label="Call us on 1 8 0 0 9 5 7 2 5 3"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right:6px;vertical-align:-2px"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>1800 957 253</a></div>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</nav>
+
+
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <div class="wrap"><div class="breadcrumb-inner"><a href="/">Home</a><span class="breadcrumb-sep" aria-hidden="true">/</span><span aria-current="page">Hi Paul</span></div></div>
+</nav>
+
+<main id="main">
+
+  <header class="wifdr-hero page-fold" aria-labelledby="hipaul-heading">
+    <div class="wrap">
+      <div class="wifdr-hero-grid">
+        <div>
+          <span class="page-label" style="color:var(--ochre-lt)">A live demonstration</span>
+          <h1 id="hipaul-heading">Hi, <span class="accent">Paul.</span></h1>
+          <p class="wifdr-hero-sub">This page exists for one reason: to show you how onlinefdr.com.au gets built. Kevin described what he wanted in a sentence or two. Claude read the site's design system, wrote this page to match it, and packaged it for deployment. No design tool was opened, no template was purchased, and nobody wrote a line of code by hand. The page you are reading is the demonstration.</p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap">
+            <a href="/" class="btn-light">See the real site</a>
+            <a href="#hipaul-how" class="btn-outline-light">How this page was made</a>
+          </div>
+        </div>
+        <div class="wifdr-hero-stats" role="list" aria-label="Facts about this page">
+          <div class="hero-stat" role="listitem">
+            <div class="hero-stat-val">1</div>
+            <div class="hero-stat-label">Prompt to request this page</div>
+          </div>
+          <div class="hero-stat" role="listitem">
+            <div class="hero-stat-val">0</div>
+            <div class="hero-stat-label">Design tools opened</div>
+          </div>
+          <div class="hero-stat" role="listitem">
+            <div class="hero-stat-val">5<span class="unit">min</span></div>
+            <div class="hero-stat-label">Roughly, from request to deploy bundle</div>
+          </div>
+          <div class="hero-stat" role="listitem">
+            <div class="hero-stat-val text">Temporary</div>
+            <div class="hero-stat-label">This page's life expectancy</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="marquee-bar" aria-label="About this page" role="marquee">
+    <div class="marquee-track" aria-hidden="true">
+      <span class="marquee-item">Built by Claude <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Directed by Kevin <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Same design system as every other page <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Deliberately absent from the sitemap <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Scheduled for deletion <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Hello Paul <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Built by Claude <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Directed by Kevin <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Same design system as every other page <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Deliberately absent from the sitemap <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Scheduled for deletion <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Hello Paul <span class="marquee-sep">&bull;</span></span>
+    </div>
+  </div>
+
+  <section class="definition-section" aria-labelledby="hipaul-what-heading">
+    <div class="wrap">
+      <div class="definition-grid">
+        <div class="definition-text reveal">
+          <span class="section-label">What you are looking at</span>
+          <h2 id="hipaul-what-heading">A website built by <span class="accent">conversation.</span></h2>
+          <p class="body-text">Every page on this site, including this one, was produced the same way. Kevin explains what he wants in plain English. Claude, an AI assistant, does the rest: writing the copy, coding the page, checking it against the site's locked design rules, and preparing everything for deployment.</p>
+          <p class="body-text">The continuity comes from a master handover spreadsheet that acts as the project's memory. It records the design system, the legal positioning rules, the deploy method, and every decision that has been locked in along the way. Each working session starts by reading it, which is why a page requested today looks like it was built alongside pages requested two months ago.</p>
+          <p class="body-text">Kevin never touches the code. His side of the arrangement is judgement: deciding what gets built, reviewing what comes back, and clicking commit. The division of labour is unsentimental and it works.</p>
+        </div>
+        <div class="reveal reveal-d1">
+          <div class="pull" style="margin-top:0">
+            <p>"The whole site runs on one spreadsheet, one deploy script, and a working relationship with a language model. It is less complicated than it sounds."</p>
+          </div>
+          <div class="pull">
+            <p>"This page was requested, written, styled, and bundled before the kettle boiled. It will be deleted with similar ceremony."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true"></div>
+
+  <section class="how-summary-section" id="hipaul-how" aria-labelledby="hipaul-how-heading">
+    <div class="wrap">
+      <div class="reveal" style="max-width:760px">
+        <span class="section-label">The workflow</span>
+        <h2 class="section-h2" id="hipaul-how-heading">How this page went from sentence <span class="accent">to screen.</span></h2>
+        <p class="body-text">The same four steps produce every page, blog post, and fix on this site. This page followed them exactly.</p>
+      </div>
+      <div class="how-summary-steps">
+        <div class="how-summary-step reveal">
+          <div class="how-summary-num">1</div>
+          <h3>Kevin asks</h3>
+          <p>A plain-English request. In this case: build a page called Hi Paul, keep it out of the sitemap, we will delete it shortly. That was the entire specification.</p>
+        </div>
+        <div class="how-summary-step reveal reveal-d1">
+          <div class="how-summary-num">2</div>
+          <h3>Claude builds</h3>
+          <p>Claude reads the live site files and the master handover spreadsheet, writes the page to match the existing design system, and self-checks it against the locked rules before presenting anything.</p>
+        </div>
+        <div class="how-summary-step reveal reveal-d2">
+          <div class="how-summary-num">3</div>
+          <h3>One command deploys</h3>
+          <p>Claude produces a zip of changed files and a copy-only shell script. Kevin runs a single line in Terminal, then reviews the changes in GitHub Desktop before committing.</p>
+        </div>
+        <div class="how-summary-step reveal reveal-d3">
+          <div class="how-summary-num">4</div>
+          <h3>Live in about a minute</h3>
+          <p>The push triggers an automatic build and the page is live on the internet roughly sixty seconds later. Deleting a page is the same process in reverse, which is this page's eventual fate.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-faq" aria-labelledby="hipaul-faq-heading">
+    <div class="wrap">
+      <div class="page-faq-header reveal">
+        <span class="section-label">Anticipated questions</span>
+        <h2 id="hipaul-faq-heading">Questions Paul may have</h2>
+        <p>Answered pre-emptively, in the interests of efficiency.</p>
+      </div>
+      <div class="faq-list reveal" style="max-width:760px">
+        <div class="faq-item"><button class="faq-q" aria-expanded="false">Why does this page look like the rest of the site?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>Because it was assembled from the same design system as every other page: same fonts, same colour palette, same components, same rules. Consistency is not an accident here. It is a locked requirement that gets checked on every build.</p></div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false">Did a human write any of this?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>Kevin wrote the request. Claude wrote everything you are reading, including this answer, which is either impressive or mildly unsettling depending on your disposition.</p></div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false">How long will this page exist?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>Not long. It is deliberately excluded from the sitemap, marked as not-for-indexing, and scheduled for deletion once it has served its purpose. If you are reading this, you caught it during its brief window of existence. Well done.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<aside class="social-inline" aria-label="Follow us on social media">
+  <a href="https://www.facebook.com/onlinefdr/" aria-label="Follow onlinefdr.com.au on Facebook" rel="noopener" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/></svg></a>
+  <a href="https://www.instagram.com/onlinefdr.au/" aria-label="Follow onlinefdr.com.au on Instagram" rel="noopener" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg></a>
+  <a href="https://www.linkedin.com/company/onlinefdr/" aria-label="Follow onlinefdr.com.au on LinkedIn" rel="noopener" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg></a>
+</aside>
+
+<div class="entity-bar" role="complementary" aria-label="Accreditation">
+  <div class="wrap">
+    <div class="entity-bar-inner">
+      <div class="entity-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>AGD-Accredited Family Dispute Resolution Practitioner &middot; Reg. F2003011</div>
+      <div class="entity-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Authorised to issue Section 60I Certificates nationally</div>
+      <div class="entity-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>Serving all Australian states and territories</div>
+    </div>
+  </div>
+</div>
+
+<footer role="contentinfo">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand-lockup">
+          <svg class="footer-brand-mark" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C4873A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path d="m11 17 2 2a1 1 0 1 0 3-3"/>
+            <path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/>
+            <path d="m21 3 1 11h-2"/>
+            <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/>
+            <path d="M3 4h8"/>
+          </svg>
+          <div class="footer-brand-name">online<span class="brand-fdr">fdr</span>.com.au</div>
+        </div>
+        <div class="footer-tagline">The call you make before you call a lawyer.</div>
+        <p class="footer-desc">Accredited online Family Dispute Resolution, available anywhere in Australia. Registered with the Australian Government Attorney-General's Department.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/onlinefdr/" aria-label="Follow onlinefdr.com.au on Facebook" rel="noopener" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/></svg>
+          </a>
+          <a href="https://www.instagram.com/onlinefdr.au/" aria-label="Follow onlinefdr.com.au on Instagram" rel="noopener" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/company/onlinefdr/" aria-label="Follow onlinefdr.com.au on LinkedIn" rel="noopener" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col"><h5>Services</h5><ul>
+        <li><a href="/parenting/">Parenting</a></li>
+        <li><a href="/financial-settlement/">Financial Settlements</a></li>
+        <li><a href="/section-60i/">Section 60I Certificate</a></li>
+        <li><a href="/mediation-coaching/">Mediation Coaching</a></li>
+      </ul></div>
+      <div class="footer-col"><h5>Pricing</h5><ul>
+        <li><a href="/pricing/">Our packages</a></li>
+        <li><a href="/pricing/#single">What's included</a></li>
+        <li><a href="/pricing/#find-your-path">Cost vs court</a></li>
+      </ul></div>
+      <div class="footer-col"><h5>Learn</h5><ul>
+        <li><a href="/what-is-fdr/">What is FDR?</a></li>
+        <li><a href="/how-it-works/">How It Works</a></li>
+        <li><a href="/faq/">FAQ</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/locations/">Locations</a></li>
+        <li><a href="/get-help/">Get Help</a></li>
+      </ul></div>
+      <div class="footer-col"><h5>Downloads</h5><ul>
+        <li><a href="/downloads/onlinefdr-parenting-reflection-workbook.pdf" download>Parenting reflection workbook (PDF)</a></li>
+        <li><a href="/downloads/Letter-agreeing-to-attend-FDR-template.docx" download>Letter agreeing to attend FDR (Word)</a></li>
+      </ul></div>
+      <div class="footer-col"><h5>Contact</h5><ul>
+        <li><a href="tel:1800957253">1800 957 253</a></li>
+        <li><a href="mailto:hello@onlinefdr.com.au">hello@onlinefdr.com.au</a></li>
+        <li><a href="/#discovery">Free Discovery Call</a></li>
+        <li><a href="/book/">Book a Session</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2026 onlinefdr.com.au, Accredited Online Family Dispute Resolution. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="/about/">About Us</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+        <a href="/complaints/">Complaints</a>
+      </div>
+    </div>
+    <div class="footer-meta">
+      <p class="footer-abn">Operated by Kevin Scrimshaw, sole trader. ABN 42 961 240 633. AGD FDRP Reg. No. F2003011.</p>
+      <p class="footer-disclaimer">Information on this website is provided for general educational purposes only. Nothing on this site should be construed as legal or financial advice. For advice specific to your circumstances, consult a qualified legal or financial professional.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const nav=document.getElementById('nav');
+  window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>20),{passive:true});
+  const toggle=document.getElementById('nav-toggle'),navLinks=document.getElementById('nav-links');
+  if(toggle&&navLinks){
+    toggle.addEventListener('click',()=>{const o=navLinks.classList.toggle('open');toggle.setAttribute('aria-expanded',o)});
+    navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navLinks.classList.remove('open');toggle.setAttribute('aria-expanded','false')}));
+  }
+  document.querySelectorAll('.nav-sub-trigger').forEach(t=>{
+    const parent=t.parentElement;
+    t.addEventListener('click',e=>{e.stopPropagation();const o=parent.classList.toggle('open');t.setAttribute('aria-expanded',o)});
+  });
+  document.addEventListener('click',e=>{
+    document.querySelectorAll('.nav-has-sub.open').forEach(item=>{
+      if(!item.contains(e.target)){item.classList.remove('open');item.querySelector('.nav-sub-trigger').setAttribute('aria-expanded','false')}
+    });
+  });
+  document.querySelectorAll('.faq-q').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      const item=btn.closest('.faq-item'),isOpen=item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i=>{i.classList.remove('open');i.querySelector('.faq-q').setAttribute('aria-expanded','false')});
+      if(!isOpen){item.classList.add('open');btn.setAttribute('aria-expanded','true')}
+    });
+  });
+  const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:0.1,rootMargin:'0px 0px -48px 0px'});
+  document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+
+</body>
+</html>
