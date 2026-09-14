@@ -38,19 +38,19 @@
 # appointment schedules. MUST stay above the /* catch-all or they never fire.
 [[redirects]]
   from = "/confidential-intake-90mins"
-  to = "https://calendar.app.google/D8umZMhPAMsRacJH6"
+  to = "https://calendar.app.google/2zPa6KwbW1rF2nrA8"
   status = 302
   force = true
 
 [[redirects]]
   from = "/confidential-intake-120mins"
-  to = "https://calendar.app.google/wyKoLiabRXcGXF4Q9"
+  to = "https://calendar.app.google/evr3HUUwXJL2PgaX9"
   status = 302
   force = true
 
 [[redirects]]
   from = "/book-coaching"
-  to = "https://calendar.app.google/b25zgZZNvgioTW1g8"
+  to = "https://calendar.app.google/iEwbRKCty5R8qhgV9"
   status = 302
   force = true
 

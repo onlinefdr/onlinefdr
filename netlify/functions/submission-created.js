@@ -368,7 +368,7 @@ async function buildPdf(data, receivedAt) {
 /* ------------------------------------------------------------------ */
 
 const FEE_GUIDE_URL = "https://onlinefdr.com.au/downloads/onlinefdr-fee-guide.pdf";
-const BOOKING_URL = "https://go.acr.fit/widget/bookings/book-consult-call-with-kevin";
+const BOOKING_URL = "https://calendar.app.google/SLSqKqWMujYNovK2A";
 
 function makeTransport() {
   return nodemailer.createTransport({
