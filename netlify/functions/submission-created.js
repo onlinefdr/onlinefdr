@@ -238,7 +238,7 @@ async function buildPdf(data, receivedAt) {
   page.drawText(".com.au", { x: bx, y: y - 6, size: 15, font: black, color: CHARCOAL });
   page.drawText("Accredited Online FDR", { x: MARGIN + 36, y: y - 18, size: 7.5, font, color: MID });
 
-  const contact = "1800 957 253   |   hello@onlinefdr.com.au";
+  const contact = "1800 313 015   |   hello@onlinefdr.com.au";
   page.drawText(contact, {
     x: A4.w - MARGIN - font.widthOfTextAtSize(contact, 8),
     y: y - 6, size: 8, font, color: MID,
@@ -406,7 +406,7 @@ function leadEmailHtml(first) {
     '<p>See exactly what it costs: <a href="' + FEE_GUIDE_URL + '" style="color:#A85C32">our fee guide</a>.</p>',
     "<p>You pay for each stage as you reach it. No hourly billing, no surprises, and the first step, a discovery call to see if we're the right fit, is free.</p>",
     '<p style="margin:22px 0"><a href="' + BOOKING_URL + '" style="background:#C4873A;color:#FDFAF6;text-decoration:none;padding:12px 22px;border-radius:6px;font-weight:bold;display:inline-block">Book your free discovery call</a></p>',
-    '<p>Or call <strong>1800 957 253</strong>. The sooner you start, the sooner this is behind you.</p>',
+    '<p>Or call <strong>1800 313 015</strong>. The sooner you start, the sooner this is behind you.</p>',
     '<p style="margin-top:26px">Kind regards,</p>',
     '<table cellpadding="0" cellspacing="0" style="font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.5;color:#2C2825"><tr><td>',
     '<div style="font-weight:bold;font-size:15px">Kevin Scrimshaw</div>',
@@ -415,7 +415,7 @@ function leadEmailHtml(first) {
     '<div><a href="https://onlinefdr.com.au" style="color:#A85C32;text-decoration:none">OnlineFDR.com.au</a> (ABN 42 961 240 633)</div>',
     '<div style="margin-top:6px">w| <a href="https://onlinefdr.com.au" style="color:#A85C32">https://onlinefdr.com.au</a></div>',
     '<div>e| <a href="mailto:hello@onlinefdr.com.au" style="color:#A85C32">hello@onlinefdr.com.au</a></div>',
-    "<div>p| 1800 957 253</div>",
+    "<div>p| 1800 313 015</div>",
     '<div>f| <a href="https://www.facebook.com/onlinefdr/" style="color:#A85C32">facebook.com/onlinefdr</a></div>',
     '<div>i| <a href="https://www.instagram.com/onlinefdr.au/" style="color:#A85C32">instagram.com/onlinefdr.au</a></div>',
     "</td></tr></table>",
@@ -436,7 +436,7 @@ function leadEmailText(first) {
     "You pay for each stage as you reach it. No hourly billing, no surprises, and the first step, a discovery call to see if we're the right fit, is free.",
     "",
     "Book your free discovery call now: " + BOOKING_URL,
-    "Or call 1800 957 253. The sooner you start, the sooner this is behind you.",
+    "Or call 1800 313 015. The sooner you start, the sooner this is behind you.",
     "",
     "Kind regards,",
     "",
@@ -446,7 +446,7 @@ function leadEmailText(first) {
     "OnlineFDR.com.au (ABN 42 961 240 633)",
     "w| https://onlinefdr.com.au",
     "e| hello@onlinefdr.com.au",
-    "p| 1800 957 253",
+    "p| 1800 313 015",
     "f| https://www.facebook.com/onlinefdr/",
     "i| https://www.instagram.com/onlinefdr.au/",
   ].join("\n");
