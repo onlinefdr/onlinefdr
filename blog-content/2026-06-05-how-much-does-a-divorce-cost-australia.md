@@ -12,7 +12,7 @@ reading_time: 11
 hero_image: "how-much-does-a-divorce-cost-australia-hero-piggy.jpg"
 hero_alt: "A small terracotta ceramic piggy bank on a pale surface, lit by a warm shaft of afternoon light."
 faq: true
-tldr: "The divorce itself is cheap and fixed: filing an application costs about $1,100, or about $365 on a concession card or hardship, and it rises each 1 July. But that only ends the marriage. Sorting out property and parenting is separate, and that is where almost all of the cost lives. There, the figure depends on the path you choose. Family dispute resolution with a private practitioner commonly runs from a few hundred dollars an hour to a few thousand per person, and most matters resolve in weeks. A contested court fight can run 18 to 36 months and $85,000 or more per person."
+tldr: "The divorce itself is cheap and fixed: filing an application costs $1,170, or $390 on a concession card or hardship, and it rises each 1 July. But that only ends the marriage. Sorting out property and parenting is separate, and that is where almost all of the cost lives. There, the figure depends on the path you choose. Family dispute resolution with a private practitioner commonly runs from a few hundred dollars an hour to a few thousand per person, and most matters resolve in weeks. A contested court fight can run 18 to 36 months and $85,000 or more per person."
 ---
 
 If you ask how much a divorce costs in Australia, the honest answer comes in two very different parts, and most people are quoted only the small one. The divorce itself, the legal end of the marriage, is cheap and has a fixed price. Everything that actually keeps couples awake at night, dividing the house and the super and working out the children's time, is separate, and it is where almost all of the money goes.
@@ -37,9 +37,9 @@ For most separating couples, family dispute resolution, or FDR, is the path that
 
 Private FDR sits across a wide band. Hourly rates commonly run from about $150 to $500, and the total a matter costs depends on how many sessions it takes and how much you and your former partner are able to agree between yourselves. A useful rule of thumb is that you tend to get what you pay for, so the aim is not the cheapest quote you can find or the dearest, but a fair rate from an experienced, accredited practitioner. Somewhere in the middle is where you want to land.
 
-Online practice changes the maths in your favour. A practitioner working online carries none of the office and venue overheads that push many in-person rates toward the top of that band, which is why a well-run online service can sit comfortably in the lower-middle without cutting any corners. We work to a single fixed price, agreed up front and including GST, so the number you are quoted is the number you pay.
+Online practice changes the maths in your favour. A practitioner working online carries none of the office and venue overheads that push many in-person rates toward the top of that band, which is why a well-run online service can sit comfortably in the lower-middle without cutting any corners. We work to upfront, transparent pricing, agreed before anything starts and including GST, so the number you are quoted for each stage is the number you pay.
 
-That last point matters more than it looks. When you compare quotes, check whether the figure includes GST, because many practitioners quote excluding it. A session advertised at "$1,200 plus GST" is really $1,320. Our figures are quoted including GST, so the number you see is the number you pay. For our fixed-price packages covering a typical parenting or property matter, see [what it costs](/pricing/).
+That last point matters more than it looks. When you compare quotes, check whether the figure includes GST, because many practitioners quote excluding it. A session advertised at "$1,200 plus GST" is really $1,320. Our figures are quoted including GST, so the number you see is the number you pay. For what a typical parenting or property matter costs, stage by stage, see [our pricing](/pricing/).
 
 ## What a courtroom fight costs
 
@@ -71,7 +71,7 @@ You do not always have to meet the cost in one hit. The fee is usually split bet
 
 Strip it all back and your final bill comes down to two things: how complex your situation is, and how the two of you engage with the process. A couple who are broadly willing to be reasonable, even where they do not yet agree, will resolve faster and pay less. A couple who treat every point as a battle will pay for every hour of it. The law is the same for both. The difference in cost, and it is a large one, is almost entirely in your hands.
 
-If you want your own fixed price, the [pricing page](/pricing/) sets out our packages and you can request a quote, or you can book a free discovery call and ask. There is no obligation, and the call costs nothing.
+If you want your own quote, the [pricing page](/pricing/) sets out what each stage costs and you can request a quote, or you can book a free discovery call and ask. There is no obligation, and the call costs nothing.
 
 ### How much does a divorce cost in Australia?
 

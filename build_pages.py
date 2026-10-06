@@ -1308,283 +1308,204 @@ ARTICLE_CSS = """
 # ─────────────────────────────────────────────
 # PARENTING ORDERS (Children & Parenting)
 # ─────────────────────────────────────────────
-PO_HTML = """
-  <header class="article-page-header page-fold">
-    <div class="wrap">
-      <div class="parenting-fold-grid">
-        <div class="article-page-header-inner">
-          <span class="page-label">Parenting</span>
-          <h1><span class="accent">Parenting arrangements</span> after separation in Australia.</h1>
-          <p class="page-intro">When parents separate, Australian family law offers three distinct paths for setting parenting arrangements. They are not equally desirable. This page explains each one in the order that is generally best for children and parents, and the trade-offs that come with each. References to "parents" throughout cover married, separated, divorced, and de facto parents. The Family Law Act applies equally to all.</p>
-        </div>
-        <div class="parenting-fold-image-panel" aria-hidden="true">
-          <div class="parenting-fold-img-real"><img src="/images/parenting-fold.jpg" alt="A mother and father at the front door of a weatherboard home, handing off their young son for the changeover. The boy is wearing a backpack and holding a football, mid-step between his parents." fetchpriority="high"></div>
-        </div>
-      </div>
-    </div>
-  </header>
+PO_HTML = """<header class="article-page-header page-fold">
+<div class="wrap">
+<div class="parenting-fold-grid">
+<div class="article-page-header-inner">
+<span class="page-label">Parenting</span>
+<h1><span class="accent">Parenting arrangements</span> after separation in Australia.</h1>
+<p class="page-intro">When a relationship ends, the hardest question is usually the same one: what happens for the children? Australian family law starts from a single idea: every arrangement is measured against what is best for them. So this page starts there too, with what “best interests” really means and how your children’s voices can be heard, before turning to the practical ways parents put an arrangement in place. References to “parents” cover married, separated, divorced, and de facto parents alike; the Family Law Act applies equally to all.</p>
+</div>
+<div aria-hidden="true" class="parenting-fold-image-panel">
+<div class="parenting-fold-img-real"><img alt="A mother and father at the front door of a weatherboard home, handing off their young son for the changeover. The boy is wearing a backpack and holding a football, mid-step between his parents." fetchpriority="high" height="998" src="/images/parenting-fold.jpg" width="2000"/></div>
+</div>
+</div>
+</div>
+</header>
+<!-- ABOVE-FOLD MARQUEE -->
+<div aria-label="Accreditation and credentials" class="marquee-bar" role="marquee">
+<div aria-hidden="true" class="marquee-track">
+<span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">•</span></span>
+<span class="marquee-item">Mediation Institute Member <span class="marquee-sep">•</span></span>
+<span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">•</span></span>
+<span class="marquee-item">Conducted Securely Online <span class="marquee-sep">•</span></span>
+<span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">•</span></span>
+<span class="marquee-item">Free Discovery Call <span class="marquee-sep">•</span></span>
+<span class="marquee-item">No Obligation <span class="marquee-sep">•</span></span>
+<span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">•</span></span>
+<span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">•</span></span>
+<span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">•</span></span>
+<span class="marquee-item">Mediation Institute Member <span class="marquee-sep">•</span></span>
+<span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">•</span></span>
+<span class="marquee-item">Conducted Securely Online <span class="marquee-sep">•</span></span>
+<span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">•</span></span>
+<span class="marquee-item">Free Discovery Call <span class="marquee-sep">•</span></span>
+<span class="marquee-item">No Obligation <span class="marquee-sep">•</span></span>
+<span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">•</span></span>
+<span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">•</span></span>
+</div>
+</div>
+<div class="wrap article-wrap">
+<div class="article-grid">
+<article class="article-body">
+<h2 id="best-interests">What is best for your children comes first</h2><p>However you settle things, whether you agree it privately, have a court approve what you have agreed, or have it decided for you in a contested hearing, the same test governs what the arrangements should look like. Section 60CC of the Family Law Act, as amended in May 2024, requires that the child's best interests are the paramount consideration. The court works through six general factors to assess what those best interests require. The 2024 amendments also removed the presumption of equal shared parental responsibility, simplified the best-interests test, and strengthened the focus on safety where family violence is present.</p><div class="img-real" style="aspect-ratio:16/9;margin:32px 0"><img alt="A mother and her young son sharing a weeknight dinner at the dining table at home. Sensible meat-and-three-veg meal, warm pendant light overhead, the boy mid-conversation, the mother listening." decoding="async" height="1125" loading="lazy" src="/images/parenting-supporting-1.jpg" width="2000"/></div><div class="factor-rows">
+<div class="factor-row"><div class="factor-num"><span>1</span></div><div class="factor-content"><h4>Safety of the child and carers</h4><p>What arrangements promote safety from family violence, abuse, neglect, or other harm. Where genuine risk exists, the obligation to protect the child outweighs the benefit of maintaining a relationship with both parents. The Family Law Amendment Act 2024, in force from 10 June 2025, expanded the definition of family violence in section 4AB to expressly include economic and financial abuse.</p></div></div>
+<div class="factor-row"><div class="factor-num"><span>2</span></div><div class="factor-content"><h4>The child's own views</h4><p>Any views expressed by the child, considered in light of their age, maturity, and the circumstances in which those views were formed. Weight given to a child's views generally increases with age and maturity.</p></div></div>
+<div class="factor-row"><div class="factor-num"><span>3</span></div><div class="factor-content"><h4>Developmental, psychological, emotional and cultural needs</h4><p>What this particular child, at this stage of life, needs to thrive. Courts look at the child as an individual, not a generic child of their age.</p></div></div>
+<div class="factor-row"><div class="factor-num"><span>4</span></div><div class="factor-content"><h4>Each parent's capacity to meet those needs</h4><p>The practical capacity of each parent to provide for the child's identified needs. An assessment of capability, not character. Available time, stability, and the quality of the parent-child relationship.</p></div></div>
+<div class="factor-row"><div class="factor-num"><span>5</span></div><div class="factor-content"><h4>Benefit of the child's relationships with parents and significant others</h4><p>The benefit to the child of being able to have a relationship with both parents, and other people who are significant to them, where it is safe to do so. Since May 2024, the presumption of equal shared parental responsibility no longer applies, and this factor does not have elevated status relative to other considerations.</p></div></div>
+<div class="factor-row"><div class="factor-num"><span>6</span></div><div class="factor-content"><h4>Anything else relevant to this child's circumstances</h4><p>A catch-all allowing the court to consider any factor relevant to the particular family. No two families are the same, and rigid formulas fail children whose circumstances fall outside standard patterns.</p></div></div>
+</div><h2 id="childrens-voices">Your children’s voices: how they are heard</h2><p>In every matter, the focus stays on your children. The practitioner keeps each conversation anchored to their needs, their wellbeing, and their future, and helps you both bring what you already know about your children into the room. This is child-focused practice, and it is part of every parenting matter here.</p><p>Some families choose to go a step further with child inclusive practice. Where it is safe and suitable, an independent, specially trained child consultant, often a psychologist, social worker, or family therapist, meets with your children separately, away from the mediation. Through age-appropriate conversation, and sometimes drawing or play, the consultant gives your children a calm space to talk about how the separation has felt and what would help.</p><p>The consultant then feeds this back to both parents and the practitioner, so the arrangement you build is shaped by your children’s real experience rather than guesswork. Many parents find it far easier to set their own conflict aside once they hear, plainly, what their children need.</p><div class="notice notice-terra"><div class="notice-label">What child inclusive practice is not</div><p>Your children are never in the mediation with you, and are never asked to choose between you or to make decisions. The consultant shares only what your child agrees to share. There is no written report, and nothing said is used in court. It is voluntary, it is assessed case by case for safety and suitability, and it is usually offered where children are old enough to take part. Where it is not the right fit, child-focused practice still keeps your children at the centre.</p></div><p>If you would like your children’s voices included in this way, mention it at your discovery call or intake. The practitioner will talk through whether it suits your family and how an independent child consultant can be arranged.</p><h2 id="three-paths">Three paths at a glance</h2><p>Most separating parents do not need a court order. Most do not even need a lawyer to draft anything formal. The three paths below run from the most flexible and least adversarial to the most formal and most contested. Where it is safe and possible, the preference is always to stay at the top of this list.</p><p>The colloquial term "Parenting Agreement" is sometimes used. The legal term in the Family Law Act 1975 is "Parenting Plan" (section 63C). This page uses the legal term throughout.</p><div aria-label="Three paths for parenting arrangements" class="table-block" role="table">
+<div class="table-row header" role="row"><div class="table-cell" role="columnheader">Path</div><div class="table-cell" role="columnheader">What it is, and when to choose it</div></div>
+<div class="table-row" role="row"><div class="table-cell" role="cell"><strong>1. Parenting Plan</strong></div><div class="table-cell" role="cell">A written agreement between parents, signed and dated. Recognised under section 63C of the Family Law Act. Not court-approved. Easily updated by mutual agreement. <strong>Best when</strong> both parents can communicate, agreement is genuinely mutual, and flexibility matters more than enforceability.</div></div>
+<div class="table-row" role="row"><div class="table-cell" role="cell"><strong>2. Consent Orders</strong></div><div class="table-cell" role="cell">A court order made by agreement. Parents file an Application for Consent Orders and the court reviews and approves without a hearing. Legally enforceable. <strong>Best when</strong> both parents agree on the arrangements but want certainty, formal protection, and a higher bar against future change.</div></div>
+<div class="table-row" role="row"><div class="table-cell" role="cell"><strong>3. Contested Parenting Orders</strong></div><div class="table-cell" role="cell">A court order made after a hearing, where the judge decides. Used when parents cannot agree. The longest, most expensive, and most adversarial path. <strong>Best when</strong> agreement is genuinely impossible, or where there are serious safety concerns that require the court to step in.</div></div>
+</div><div class="notice notice-amber">
+<p class="notice-label">Preparing for the joint session</p>
+<p>Parents who arrive at mediation having thought through what they actually want, what is working, and where they already agree tend to have shorter, calmer, and more productive sessions. The <a href="/downloads/onlinefdr-parenting-reflection-workbook.pdf">Pre-Mediation Parenting Reflection Workbook</a> is a private thinking document, not a form. Nothing in it needs to be filled out, signed, or returned. It is for each parent, separately, in their own time, ahead of the joint session.</p>
+</div><div class="download-row">
+<div class="download-row-text">
+<h3>Pre-Mediation Parenting Reflection Workbook</h3>
+<p>A private thinking document for each parent to work through before the joint session. Covers time with the children, special days, major decisions, day-to-day life, money for the children, household practicalities, and how to handle change. Designed to surface what you already think, separately, so the joint session moves faster.</p>
+</div>
+<div class="download-row-buttons">
+<a class="btn-primary" download="" href="/downloads/onlinefdr-parenting-reflection-workbook.pdf">Download PDF</a>
+</div>
+</div><div class="img-real" style="aspect-ratio:16/9;margin:32px 0"><img alt="A father and his young son riding bicycles together along a leafy suburban Melbourne street on a bright spring morning, both wearing helmets, both smiling. The boy rides a small red kids' bike, the father rides a charcoal mountain bike." decoding="async" height="1124" loading="lazy" src="/images/parenting-hero.jpg" width="2000"/></div><h2 id="parenting-plan">1. Parenting Plan <span class="accent">(the flexible first option)</span></h2><p>A Parenting Plan is a written agreement between parents about parenting arrangements. The term used in the Family Law Act 1975 is "Parenting Plan" (section 63C). For most amicable separations, this is the right place to land.</p><p>To be recognised under section 63C, a Parenting Plan must be:</p><ul>
+<li>In writing</li>
+<li>Signed and dated by both parents</li>
+<li>Made free of threat, duress, or coercion</li>
+</ul><p>That is the legal threshold. There is no required format, no court filing, no lawyer required, and no fee. The plan can cover where the child lives, how time is divided, parental responsibility for major long-term decisions, communication, holidays, dispute-resolution procedures, and anything else relevant to the care, welfare, or development of the child.</p><div class="notice notice-amber">
+<p class="notice-label">Why parents choose this path first</p>
+<p>A Parenting Plan can be updated at any time by mutual written agreement, as your children grow and circumstances change. There is no court application, no significant-change-in-circumstances threshold to meet, and no filing fee. This flexibility is the strongest reason to keep arrangements at the Plan level wherever both parents continue to communicate and act in good faith.</p>
+</div><p><strong>What a Parenting Plan cannot do.</strong> A Parenting Plan is not legally enforceable in the way a court order is. If the other parent stops following the agreed arrangements, you cannot apply to the court for a contravention order on the basis of the plan alone. The plan is recognised by the Act and a court is likely to consider its terms in any later proceedings, but it does not, by itself, give you a path to enforcement.</p><p>For most families this limitation is theoretical. For some, particularly where there is a history of one party not following through, the lack of enforceability is the reason to formalise the agreement as Consent Orders instead.</p><h2 id="consent-orders">2. Consent Orders <span class="accent">(when you want it locked in)</span></h2><p>Consent Orders are court orders made by agreement. Both parents agree on the terms, file an Application for Consent Orders with the Federal Circuit and Family Court of Australia, and a Judicial Registrar reviews the application. Where the proposed orders are in the best interests of the children, the Registrar makes the orders without a hearing.</p><p>Once made, Consent Orders have the same legal force as orders made after a contested hearing. Breaching them carries real consequences. Changing them is deliberately harder than changing a Parenting Plan.</p><p>The Consent Orders path makes sense when:</p><ul>
+<li>Both parents agree on the arrangements but want them legally enforceable</li>
+<li>One or both parents want the structure and certainty of a court order without the cost and conflict of a contested hearing</li>
+<li>The matter is complex enough that formal documentation will reduce future disputes</li>
+<li>There is a realistic concern that one party may not honour an informal agreement</li>
+</ul><p>A filing fee applies, and there may be additional legal costs if you have a lawyer draft the orders. The process from filing to approval typically takes a few weeks if the application is complete and the proposed orders are clearly in the child's best interests. There is no hearing for either parent to attend.</p><div class="notice notice-terra">
+<p class="notice-label">A common misconception</p>
+<p>Consent Orders do not, by themselves, function as a recovery order. If the other parent withholds the child in breach of Consent Orders, you cannot rely on the Orders alone to require police action. You will still need to apply to the court for a recovery order. The advantage of having Consent Orders in this scenario is that the court already has parenting orders in place to enforce, which significantly speeds up the recovery process. Without any orders at all, you would be applying for parenting orders and a recovery order at the same time, which is slower and more complex.</p>
+</div><h2 id="contested">3. Contested Parenting Orders <span class="accent">(the path of last resort)</span></h2><p>Where parents cannot agree, the Federal Circuit and Family Court can make parenting orders after a hearing. The judge considers evidence from both sides, often with a family report and sometimes with an Independent Children's Lawyer, and makes final orders based on the child's best interests.</p><p>This path is the most legally rigorous but also the most expensive, the most adversarial, and the slowest. Contested parenting matters can commonly take 18 to 36 months from filing to final hearing. Legal costs can typically reach tens of thousands of dollars per party. The toll on parents and children, beyond the cost, is significant.</p><p>Before a contested application can be filed, parents must in most cases attempt Family Dispute Resolution and obtain a <a href="/section-60i/">Section 60I certificate</a> from an accredited FDR practitioner. Exemptions apply in limited circumstances, including family violence and urgent matters.</p><div class="notice notice-terra">
+<p class="notice-label">If you or your children are not safe</p>
+<p>If you are experiencing family violence, or are concerned about the safety of a child, support is available. The <a href="/get-help/">Get Help</a> page lists national crisis and family violence services that operate independently of this practice. In immediate danger, call Triple Zero (000).</p>
+</div><div class="proc-steps">
+<div class="proc-step"><div class="proc-dot"></div><div class="proc-num">1</div><div class="proc-content"><h3>Attempt Family Dispute Resolution</h3><p>Parties make a genuine attempt at FDR and obtain a <a href="/section-60i/">Section 60I certificate</a> before applying for contested parenting orders. The step the law expects in most cases. Exemptions apply for family violence, child abuse, urgent matters, and where the matter is genuinely not appropriate for FDR.</p><span class="proc-tag">Pre-action step</span></div></div>
+<div class="proc-step"><div class="proc-dot"></div><div class="proc-num">2</div><div class="proc-content"><h3>File an Initiating Application</h3><p>The applicant files with the court, setting out the orders sought. The other party files a Response. Both parties file financial statements and other required documents.</p></div></div>
+<div class="proc-step"><div class="proc-dot"></div><div class="proc-num">3</div><div class="proc-content"><h3>First return date and case management</h3><p>The matter is listed for a directions hearing. The court manages progression: ordering family reports, appointing an Independent Children's Lawyer where appropriate, and directing parties toward mediation or hearing.</p></div></div>
+<div class="proc-step"><div class="proc-dot"></div><div class="proc-num">4</div><div class="proc-content"><h3>Interim orders</h3><p>Where parties cannot agree on arrangements while the matter is proceeding, the court can make interim parenting orders. These can remain in place for many months while the matter is finalised.</p></div></div>
+<div class="proc-step"><div class="proc-dot"></div><div class="proc-num">5</div><div class="proc-content"><h3>Family report</h3><p>A family consultant may prepare a family report involving interviews with both parents and children. These reports carry significant weight in contested proceedings.</p></div></div>
+<div class="proc-step"><div class="proc-dot"></div><div class="proc-num">6</div><div class="proc-content"><h3>Final hearing</h3><p>Both parties give evidence and are cross-examined. The judge applies the best-interests framework in section 60CC of the Family Law Act and makes final orders.</p><span class="proc-tag">18 to 36 months typical</span></div></div>
+</div><h2 id="changing">Changing arrangements over time</h2><p>Children grow. Circumstances change. The right arrangement at age four is rarely the right arrangement at age fourteen. How easy it is to change the arrangements depends on which path you are on.</p><div aria-label="How to change parenting arrangements" class="table-block" role="table">
+<div class="table-row header" role="row"><div class="table-cell" role="columnheader">If you have...</div><div class="table-cell" role="columnheader">To change it, you need...</div></div>
+<div class="table-row" role="row"><div class="table-cell" role="cell">A Parenting Plan</div><div class="table-cell" role="cell">A new written agreement, signed and dated by both parents. No court application, no fee. As simple as the original plan.</div></div>
+<div class="table-row" role="row"><div class="table-cell" role="cell">Consent Orders (both parents agree on the change)</div><div class="table-cell" role="cell">A new Application for Consent Orders, or in some cases, a new Parenting Plan that varies the Consent Orders. Either way, both parents must agree.</div></div>
+<div class="table-row" role="row"><div class="table-cell" role="cell">Consent Orders or contested orders (the other parent does not agree)</div><div class="table-cell" role="cell">A court application. The court applies the Rice and Asplund principle, requiring a significant change in circumstances since the orders were made before it will revisit final parenting orders. The threshold is deliberately high.</div></div>
+</div><p>This is one of the strongest reasons to keep arrangements at the Parenting Plan level wherever both parents continue to communicate well. Court-made parenting orders, including Consent Orders, are designed to provide stability, which means they are designed to be difficult to change. Where genuine flexibility matters more than enforceability, a Parenting Plan is almost always the right answer.</p><h2 id="breach">When a parenting order is breached</h2><p>This section is about Consent Orders and contested Parenting Orders. A Parenting Plan is not enforceable in the same way, so the contravention process described here does not apply to plans.</p><p>A common misconception is that breaching a parenting order triggers automatic police intervention. It does not. The affected parent must apply to the court for a contravention order. The court then determines whether a breach occurred, whether the breaching party had a reasonable excuse, and what consequence is appropriate.</p><div aria-label="Consequences of breaching a parenting order" class="table-block" role="table">
+<div class="table-row header" role="row"><div class="table-cell" role="columnheader">Consequence</div><div class="table-cell" role="columnheader">When it applies</div></div>
+<div class="table-row" role="row"><div class="table-cell" role="cell">Make-up time</div><div class="table-cell" role="cell">Additional time ordered with the parent denied contact. Most common for less serious breaches.</div></div>
+<div class="table-row" role="row"><div class="table-cell" role="cell">Fine</div><div class="table-cell" role="cell">Financial penalty. Amount varies with severity and frequency of the breach.</div></div>
+<div class="table-row" role="row"><div class="table-cell" role="cell">Community service</div><div class="table-cell" role="cell">Court-ordered community service as an alternative to or in addition to financial penalty.</div></div>
+<div class="table-row" role="row"><div class="table-cell" role="cell">Variation of orders</div><div class="table-cell" role="cell">The court changes the parenting orders in response to the breach, which may reduce the breaching parent's time or responsibility.</div></div>
+<div class="table-row" role="row"><div class="table-cell" role="cell">Costs order</div><div class="table-cell" role="cell">The breaching party is ordered to pay the other party's legal costs for the contravention application.</div></div>
+<div class="table-row" role="row"><div class="table-cell" role="cell">Imprisonment</div><div class="table-cell" role="cell">Reserved for serious, wilful, repeated breaches. The court must be satisfied no other consequence is adequate.</div></div>
+</div><h2 id="recovery">Recovery orders</h2><p>A recovery order is a separate court order that authorises police or other officers to find, recover, and deliver a child to a person entitled to care of the child. A recovery order is sought when a child has been unlawfully withheld or taken.</p><p>The court can make a recovery order with or without an existing parenting order, though existing orders typically speed up the process. This is one of the practical reasons parents with a real risk of a child being withheld choose Consent Orders rather than relying on a Parenting Plan.</p><ul>
+<li>If you have <strong>Consent Orders or contested parenting orders</strong> and the other parent withholds the child in breach, you can apply to the court for a recovery order. Having the parenting orders already in place generally makes this faster.</li>
+<li>If you have <strong>only a Parenting Plan</strong> (or no formal arrangements), you can still apply for a recovery order, but you must apply for parenting orders at the same time. The court is unlikely to make a recovery order without parenting orders that define the care arrangements.</li>
+<li>The court is <strong>not a child-recovery agency</strong>. Where the court makes a recovery order, it is the responsibility of the applicant and police to act on it. State or territory police typically execute recovery orders, with the Australian Federal Police involved in interstate or international matters.</li>
+</ul><h2 id="grandparents">Grandparents and other significant persons</h2><p>Parenting arrangements are not limited to the legal parents. Section 65C of the Family Law Act gives standing to apply for parenting orders to a grandparent or any other person concerned with the care, welfare, or development of the child. In practice, applications from non-parents are most common from grandparents who have been substantially involved in raising the child, or from step-parents in long-established relationships.</p><p>The same best-interests framework in section 60CC applies. The court does not give automatic preference to biological parents over non-parents where the non-parent has been a primary caregiver. The arrangements that promote the child's best interests are the arrangements the court will make.</p><p>Where grandparents or other significant persons want to be included in a Parenting Plan or Consent Orders, this can usually be addressed during FDR alongside the parents' agreements about parenting arrangements.</p><h2 id="lawyer">When you genuinely need a lawyer</h2><p>FDR practitioners are not lawyers and do not give legal advice. There are situations where independent legal advice is not optional. You should obtain legal advice:</p><ul>
+<li>Before signing Consent Orders, so you understand what you are agreeing to and how it will be enforced</li>
+<li>Before commencing any contested court proceedings</li>
+<li>If you are served with an application for parenting orders</li>
+<li>If you are considering applying for a recovery order, particularly if there is no parenting order in place</li>
+<li>If there are urgent safety concerns about your child, including suspected abduction or relocation without consent</li>
+</ul><p>Legal Aid may be available in family law matters depending on your circumstances and state or territory.</p><div class="notice notice-terra">
+<p class="notice-label">Our role</p>
+<p>We are accredited Family Dispute Resolution Practitioners. Our role is to help separating parents reach their own agreements, which most commonly means working through a Parenting Plan or the basis for Consent Orders. We can also issue <a href="/section-60i/">Section 60I certificates</a> where the process has been properly completed. If your situation has moved beyond the point where FDR is appropriate, or if you need legal representation, we will tell you that directly.</p>
+</div></article>
+<aside class="sidebar">
+<div class="sidebar-card sidebar-card-img">
+<div class="img-real" style="aspect-ratio:4/5"><img alt="A five-year-old boy sitting at a small wooden desk in his bedroom, quietly absorbed in colouring a picture book. Soft afternoon light, a warm desk lamp, a teddy and books beside him." decoding="async" height="2000" loading="lazy" src="/images/parenting-supporting-2.jpg" width="1600"/></div>
+</div>
+<div class="sidebar-card">
+<h4>Where to start</h4>
+<p>A free discovery call to talk through which path is right for your situation. No pressure, no commitment.</p>
+<a class="btn-primary" href="https://calendar.app.google/SLSqKqWMujYNovK2A">Book a free discovery call</a>
+</div>
+<div class="sidebar-card sidebar-card-download">
+<h4>Pre-Mediation Parenting Reflection Workbook</h4>
+<p>A private thinking document, not a form. Nothing to fill out, sign, or return. For each parent to work through separately before the joint session.</p>
+<a class="btn-primary" download="" href="/downloads/onlinefdr-parenting-reflection-workbook.pdf">Download PDF</a>
+</div>
+<nav class="sidebar-card sidebar-nav">
+<h5>On this page</h5>
+<ul>
 
-  <!-- ABOVE-FOLD MARQUEE -->
-<!--MARQUEE-->
 
 
-  <div class="wrap article-wrap">
-    <div class="article-grid">
-      <article class="article-body">
 
-        <h2 id="three-paths">Three paths at a glance</h2>
-        <p>Most separating parents do not need a court order. Most do not even need a lawyer to draft anything formal. The three paths below run from the most flexible and least adversarial to the most formal and most contested. Where it is safe and possible, the preference is always to stay at the top of this list.</p>
-        <p>The colloquial term "Parenting Agreement" is sometimes used. The legal term in the Family Law Act 1975 is "Parenting Plan" (section 63C). This page uses the legal term throughout.</p>
 
-        <div class="table-block" role="table" aria-label="Three paths for parenting arrangements">
-          <div class="table-row header" role="row"><div class="table-cell" role="columnheader">Path</div><div class="table-cell" role="columnheader">What it is, and when to choose it</div></div>
-          <div class="table-row" role="row"><div class="table-cell" role="cell"><strong>1. Parenting Plan</strong></div><div class="table-cell" role="cell">A written agreement between parents, signed and dated. Recognised under section 63C of the Family Law Act. Not court-approved. Easily updated by mutual agreement. <strong>Best when</strong> both parents can communicate, agreement is genuinely mutual, and flexibility matters more than enforceability.</div></div>
-          <div class="table-row" role="row"><div class="table-cell" role="cell"><strong>2. Consent Orders</strong></div><div class="table-cell" role="cell">A court order made by agreement. Parents file an Application for Consent Orders and the court reviews and approves without a hearing. Legally enforceable. <strong>Best when</strong> both parents agree on the arrangements but want certainty, formal protection, and a higher bar against future change.</div></div>
-          <div class="table-row" role="row"><div class="table-cell" role="cell"><strong>3. Contested Parenting Orders</strong></div><div class="table-cell" role="cell">A court order made after a hearing, where the judge decides. Used when parents cannot agree. The longest, most expensive, and most adversarial path. <strong>Best when</strong> agreement is genuinely impossible, or where there are serious safety concerns that require the court to step in.</div></div>
-        </div>
 
-        <div class="notice notice-amber">
-          <p class="notice-label">Preparing for the joint session</p>
-          <p>Parents who arrive at mediation having thought through what they actually want, what is working, and where they already agree tend to have shorter, calmer, and more productive sessions. The <a href="/downloads/onlinefdr-parenting-reflection-workbook.pdf">Pre-Mediation Parenting Reflection Workbook</a> is a private thinking document, not a form. Nothing in it needs to be filled out, signed, or returned. It is for each parent, separately, in their own time, ahead of the joint session.</p>
-        </div>
 
-        <div class="download-row">
-          <div class="download-row-text">
-            <h3>Pre-Mediation Parenting Reflection Workbook</h3>
-            <p>A private thinking document for each parent to work through before the joint session. Covers time with the children, special days, major decisions, day-to-day life, money for the children, household practicalities, and how to handle change. Designed to surface what you already think, separately, so the joint session moves faster.</p>
-          </div>
-          <div class="download-row-buttons">
-            <a href="/downloads/onlinefdr-parenting-reflection-workbook.pdf" class="btn-primary" download>Download PDF</a>
-          </div>
-        </div>
 
-        <div class="img-real" style="aspect-ratio:16/9;margin:32px 0"><img src="/images/parenting-hero.jpg" alt="A father and his young son riding bicycles together along a leafy suburban Melbourne street on a bright spring morning, both wearing helmets, both smiling. The boy rides a small red kids' bike, the father rides a charcoal mountain bike." loading="lazy" decoding="async"></div>
 
-        <h2 id="parenting-plan">1. Parenting Plan <span class="accent">(the flexible first option)</span></h2>
-        <p>A Parenting Plan is a written agreement between parents about parenting arrangements. The term used in the Family Law Act 1975 is "Parenting Plan" (section 63C). For most amicable separations, this is the right place to land.</p>
 
-        <p>To be recognised under section 63C, a Parenting Plan must be:</p>
-        <ul>
-          <li>In writing</li>
-          <li>Signed and dated by both parents</li>
-          <li>Made free of threat, duress, or coercion</li>
-        </ul>
 
-        <p>That is the legal threshold. There is no required format, no court filing, no lawyer required, and no fee. The plan can cover where the child lives, how time is divided, parental responsibility for major long-term decisions, communication, holidays, dispute-resolution procedures, and anything else relevant to the care, welfare, or development of the child.</p>
-
-        <div class="notice notice-amber">
-          <p class="notice-label">Why parents choose this path first</p>
-          <p>A Parenting Plan can be updated at any time by mutual written agreement, as your children grow and circumstances change. There is no court application, no significant-change-in-circumstances threshold to meet, and no filing fee. This flexibility is the strongest reason to keep arrangements at the Plan level wherever both parents continue to communicate and act in good faith.</p>
-        </div>
-
-        <p><strong>What a Parenting Plan cannot do.</strong> A Parenting Plan is not legally enforceable in the way a court order is. If the other parent stops following the agreed arrangements, you cannot apply to the court for a contravention order on the basis of the plan alone. The plan is recognised by the Act and a court is likely to consider its terms in any later proceedings, but it does not, by itself, give you a path to enforcement.</p>
-
-        <p>For most families this limitation is theoretical. For some, particularly where there is a history of one party not following through, the lack of enforceability is the reason to formalise the agreement as Consent Orders instead.</p>
-
-        <h2 id="consent-orders">2. Consent Orders <span class="accent">(when you want it locked in)</span></h2>
-        <p>Consent Orders are court orders made by agreement. Both parents agree on the terms, file an Application for Consent Orders with the Federal Circuit and Family Court of Australia, and a Judicial Registrar reviews the application. Where the proposed orders are in the best interests of the children, the Registrar makes the orders without a hearing.</p>
-
-        <p>Once made, Consent Orders have the same legal force as orders made after a contested hearing. Breaching them carries real consequences. Changing them is deliberately harder than changing a Parenting Plan.</p>
-
-        <p>The Consent Orders path makes sense when:</p>
-        <ul>
-          <li>Both parents agree on the arrangements but want them legally enforceable</li>
-          <li>One or both parents want the structure and certainty of a court order without the cost and conflict of a contested hearing</li>
-          <li>The matter is complex enough that formal documentation will reduce future disputes</li>
-          <li>There is a realistic concern that one party may not honour an informal agreement</li>
-        </ul>
-
-        <p>A filing fee applies, and there may be additional legal costs if you have a lawyer draft the orders. The process from filing to approval typically takes a few weeks if the application is complete and the proposed orders are clearly in the child's best interests. There is no hearing for either parent to attend.</p>
-
-        <div class="notice notice-terra">
-          <p class="notice-label">A common misconception</p>
-          <p>Consent Orders do not, by themselves, function as a recovery order. If the other parent withholds the child in breach of Consent Orders, you cannot rely on the Orders alone to require police action. You will still need to apply to the court for a recovery order. The advantage of having Consent Orders in this scenario is that the court already has parenting orders in place to enforce, which significantly speeds up the recovery process. Without any orders at all, you would be applying for parenting orders and a recovery order at the same time, which is slower and more complex.</p>
-        </div>
-
-        <h2 id="contested">3. Contested Parenting Orders <span class="accent">(the path of last resort)</span></h2>
-        <p>Where parents cannot agree, the Federal Circuit and Family Court can make parenting orders after a hearing. The judge considers evidence from both sides, often with a family report and sometimes with an Independent Children's Lawyer, and makes final orders based on the child's best interests.</p>
-
-        <p>This path is the most legally rigorous but also the most expensive, the most adversarial, and the slowest. Contested parenting matters can commonly take 18 to 36 months from filing to final hearing. Legal costs can typically reach tens of thousands of dollars per party. The toll on parents and children, beyond the cost, is significant.</p>
-
-        <p>Before a contested application can be filed, parents must in most cases attempt Family Dispute Resolution and obtain a <a href="/section-60i/">Section 60I certificate</a> from an accredited FDR practitioner. Exemptions apply in limited circumstances, including family violence and urgent matters.</p>
-
-        <div class="notice notice-terra">
-          <p class="notice-label">If you or your children are not safe</p>
-          <p>If you are experiencing family violence, or are concerned about the safety of a child, support is available. The <a href="/get-help/">Get Help</a> page lists national crisis and family violence services that operate independently of this practice. In immediate danger, call Triple Zero (000).</p>
-        </div>
-
-        <div class="proc-steps">
-          <div class="proc-step"><div class="proc-dot"></div><div class="proc-num">1</div><div class="proc-content"><h3>Attempt Family Dispute Resolution</h3><p>Parties make a genuine attempt at FDR and obtain a <a href="/section-60i/">Section 60I certificate</a> before applying for contested parenting orders. The step the law expects in most cases. Exemptions apply for family violence, child abuse, urgent matters, and where the matter is genuinely not appropriate for FDR.</p><span class="proc-tag">Pre-action step</span></div></div>
-          <div class="proc-step"><div class="proc-dot"></div><div class="proc-num">2</div><div class="proc-content"><h3>File an Initiating Application</h3><p>The applicant files with the court, setting out the orders sought. The other party files a Response. Both parties file financial statements and other required documents.</p></div></div>
-          <div class="proc-step"><div class="proc-dot"></div><div class="proc-num">3</div><div class="proc-content"><h3>First return date and case management</h3><p>The matter is listed for a directions hearing. The court manages progression: ordering family reports, appointing an Independent Children's Lawyer where appropriate, and directing parties toward mediation or hearing.</p></div></div>
-          <div class="proc-step"><div class="proc-dot"></div><div class="proc-num">4</div><div class="proc-content"><h3>Interim orders</h3><p>Where parties cannot agree on arrangements while the matter is proceeding, the court can make interim parenting orders. These can remain in place for many months while the matter is finalised.</p></div></div>
-          <div class="proc-step"><div class="proc-dot"></div><div class="proc-num">5</div><div class="proc-content"><h3>Family report</h3><p>A family consultant may prepare a family report involving interviews with both parents and children. These reports carry significant weight in contested proceedings.</p></div></div>
-          <div class="proc-step"><div class="proc-dot"></div><div class="proc-num">6</div><div class="proc-content"><h3>Final hearing</h3><p>Both parties give evidence and are cross-examined. The judge applies the best-interests framework in section 60CC of the Family Law Act and makes final orders.</p><span class="proc-tag">18 to 36 months typical</span></div></div>
-        </div>
-
-        <h2 id="best-interests">The best-interests framework that applies to all three paths</h2>
-        <p>Whether parents are agreeing privately to a Parenting Plan, asking the court to approve Consent Orders, or in a contested hearing, the same legal framework governs what the arrangements should look like. Section 60CC of the Family Law Act, as amended in May 2024, requires that the child's best interests are the paramount consideration. The court works through six general factors to assess what those best interests require. The 2024 amendments also removed the presumption of equal shared parental responsibility, simplified the best-interests test, and strengthened the focus on safety where family violence is present.</p>
-
-        <div class="img-real" style="aspect-ratio:16/9;margin:32px 0"><img src="/images/parenting-supporting-1.jpg" alt="A mother and her young son sharing a weeknight dinner at the dining table at home. Sensible meat-and-three-veg meal, warm pendant light overhead, the boy mid-conversation, the mother listening." loading="lazy" decoding="async"></div>
-
-        <div class="factor-rows">
-          <div class="factor-row"><div class="factor-num"><span>1</span></div><div class="factor-content"><h4>Safety of the child and carers</h4><p>What arrangements promote safety from family violence, abuse, neglect, or other harm. Where genuine risk exists, the obligation to protect the child outweighs the benefit of maintaining a relationship with both parents. The Family Law Amendment Act 2024, in force from 10 June 2025, expanded the definition of family violence in section 4AB to expressly include economic and financial abuse.</p></div></div>
-          <div class="factor-row"><div class="factor-num"><span>2</span></div><div class="factor-content"><h4>The child's own views</h4><p>Any views expressed by the child, considered in light of their age, maturity, and the circumstances in which those views were formed. Weight given to a child's views generally increases with age and maturity.</p></div></div>
-          <div class="factor-row"><div class="factor-num"><span>3</span></div><div class="factor-content"><h4>Developmental, psychological, emotional and cultural needs</h4><p>What this particular child, at this stage of life, needs to thrive. Courts look at the child as an individual, not a generic child of their age.</p></div></div>
-          <div class="factor-row"><div class="factor-num"><span>4</span></div><div class="factor-content"><h4>Each parent's capacity to meet those needs</h4><p>The practical capacity of each parent to provide for the child's identified needs. An assessment of capability, not character. Available time, stability, and the quality of the parent-child relationship.</p></div></div>
-          <div class="factor-row"><div class="factor-num"><span>5</span></div><div class="factor-content"><h4>Benefit of the child's relationships with parents and significant others</h4><p>The benefit to the child of being able to have a relationship with both parents, and other people who are significant to them, where it is safe to do so. Since May 2024, the presumption of equal shared parental responsibility no longer applies, and this factor does not have elevated status relative to other considerations.</p></div></div>
-          <div class="factor-row"><div class="factor-num"><span>6</span></div><div class="factor-content"><h4>Anything else relevant to this child's circumstances</h4><p>A catch-all allowing the court to consider any factor relevant to the particular family. No two families are the same, and rigid formulas fail children whose circumstances fall outside standard patterns.</p></div></div>
-        </div>
-
-        <h2 id="breach">When a parenting order is breached</h2>
-        <p>This section is about Consent Orders and contested Parenting Orders. A Parenting Plan is not enforceable in the same way and the framework below does not apply to plans.</p>
-
-        <p>A common misconception is that breaching a parenting order triggers automatic police intervention. It does not. The affected parent must apply to the court for a contravention order. The court then determines whether a breach occurred, whether the breaching party had a reasonable excuse, and what consequence is appropriate.</p>
-
-        <div class="table-block" role="table" aria-label="Consequences of breaching a parenting order">
-          <div class="table-row header" role="row"><div class="table-cell" role="columnheader">Consequence</div><div class="table-cell" role="columnheader">When it applies</div></div>
-          <div class="table-row" role="row"><div class="table-cell" role="cell">Make-up time</div><div class="table-cell" role="cell">Additional time ordered with the parent denied contact. Most common for less serious breaches.</div></div>
-          <div class="table-row" role="row"><div class="table-cell" role="cell">Fine</div><div class="table-cell" role="cell">Financial penalty. Amount varies with severity and frequency of the breach.</div></div>
-          <div class="table-row" role="row"><div class="table-cell" role="cell">Community service</div><div class="table-cell" role="cell">Court-ordered community service as an alternative to or in addition to financial penalty.</div></div>
-          <div class="table-row" role="row"><div class="table-cell" role="cell">Variation of orders</div><div class="table-cell" role="cell">The court changes the parenting orders in response to the breach, which may reduce the breaching parent's time or responsibility.</div></div>
-          <div class="table-row" role="row"><div class="table-cell" role="cell">Costs order</div><div class="table-cell" role="cell">The breaching party is ordered to pay the other party's legal costs for the contravention application.</div></div>
-          <div class="table-row" role="row"><div class="table-cell" role="cell">Imprisonment</div><div class="table-cell" role="cell">Reserved for serious, wilful, repeated breaches. The court must be satisfied no other consequence is adequate.</div></div>
-        </div>
-
-        <h2 id="recovery">Recovery orders</h2>
-        <p>A recovery order is a separate court order that authorises police or other officers to find, recover, and deliver a child to a person entitled to care of the child. A recovery order is sought when a child has been unlawfully withheld or taken.</p>
-
-        <p>The court can make a recovery order with or without an existing parenting order, though existing orders typically speed up the process. This is one of the practical reasons parents with a real risk of a child being withheld choose Consent Orders rather than relying on a Parenting Plan.</p>
-
-        <ul>
-          <li>If you have <strong>Consent Orders or contested parenting orders</strong> and the other parent withholds the child in breach, you can apply to the court for a recovery order. Having the parenting orders already in place generally makes this faster.</li>
-          <li>If you have <strong>only a Parenting Plan</strong> (or no formal arrangements), you can still apply for a recovery order, but you must apply for parenting orders at the same time. The court is unlikely to make a recovery order without parenting orders that define the care arrangements.</li>
-          <li>The court is <strong>not a child-recovery agency</strong>. Where the court makes a recovery order, it is the responsibility of the applicant and police to act on it. State or territory police typically execute recovery orders, with the Australian Federal Police involved in interstate or international matters.</li>
-        </ul>
-
-        <h2 id="changing">Changing arrangements over time</h2>
-        <p>Children grow. Circumstances change. The right arrangement at age four is rarely the right arrangement at age fourteen. How easy it is to change the arrangements depends on which path you are on.</p>
-
-        <div class="table-block" role="table" aria-label="How to change parenting arrangements">
-          <div class="table-row header" role="row"><div class="table-cell" role="columnheader">If you have...</div><div class="table-cell" role="columnheader">To change it, you need...</div></div>
-          <div class="table-row" role="row"><div class="table-cell" role="cell">A Parenting Plan</div><div class="table-cell" role="cell">A new written agreement, signed and dated by both parents. No court application, no fee. As simple as the original plan.</div></div>
-          <div class="table-row" role="row"><div class="table-cell" role="cell">Consent Orders (both parents agree on the change)</div><div class="table-cell" role="cell">A new Application for Consent Orders, or in some cases, a new Parenting Plan that varies the Consent Orders. Either way, both parents must agree.</div></div>
-          <div class="table-row" role="row"><div class="table-cell" role="cell">Consent Orders or contested orders (the other parent does not agree)</div><div class="table-cell" role="cell">A court application. The court applies the Rice and Asplund principle, requiring a significant change in circumstances since the orders were made before it will revisit final parenting orders. The threshold is deliberately high.</div></div>
-        </div>
-
-        <p>This is one of the strongest reasons to keep arrangements at the Parenting Plan level wherever both parents continue to communicate well. Court-made parenting orders, including Consent Orders, are designed to provide stability, which means they are designed to be difficult to change. Where genuine flexibility matters more than enforceability, a Parenting Plan is almost always the right answer.</p>
-
-        <h2 id="grandparents">Grandparents and other significant persons</h2>
-        <p>Parenting arrangements are not limited to the legal parents. Section 65C of the Family Law Act gives standing to apply for parenting orders to a grandparent or any other person concerned with the care, welfare, or development of the child. In practice, applications from non-parents are most common from grandparents who have been substantially involved in raising the child, or from step-parents in long-established relationships.</p>
-
-        <p>The same best-interests framework in section 60CC applies. The court does not give automatic preference to biological parents over non-parents where the non-parent has been a primary caregiver. The arrangements that promote the child's best interests are the arrangements the court will make.</p>
-
-        <p>Where grandparents or other significant persons want to be included in a Parenting Plan or Consent Orders, this can usually be addressed during FDR alongside the parents' agreements about parenting arrangements.</p>
-
-        <h2 id="lawyer">When you genuinely need a lawyer</h2>
-        <p>FDR practitioners are not lawyers and do not give legal advice. There are situations where independent legal advice is not optional. You should obtain legal advice:</p>
-        <ul>
-          <li>Before signing Consent Orders, so you understand what you are agreeing to and how it will be enforced</li>
-          <li>Before commencing any contested court proceedings</li>
-          <li>If you are served with an application for parenting orders</li>
-          <li>If you are considering applying for a recovery order, particularly if there is no parenting order in place</li>
-          <li>If there are urgent safety concerns about your child, including suspected abduction or relocation without consent</li>
-        </ul>
-        <p>Legal Aid may be available in family law matters depending on your circumstances and state or territory.</p>
-
-        <div class="notice notice-terra">
-          <p class="notice-label">Our role</p>
-          <p>We are accredited Family Dispute Resolution Practitioners. Our role is to help separating parents reach their own agreements, which most commonly means working through a Parenting Plan or the basis for Consent Orders. We can also issue <a href="/section-60i/">Section 60I certificates</a> where the process has been properly completed. If your situation has moved beyond the point where FDR is appropriate, or if you need legal representation, we will tell you that directly.</p>
-        </div>
-
-      </article>
-
-      <aside class="sidebar">
-        <div class="sidebar-card sidebar-card-img">
-          <div class="img-real" style="aspect-ratio:4/5"><img src="/images/parenting-supporting-2.jpg" alt="A five-year-old boy sitting at a small wooden desk in his bedroom, quietly absorbed in colouring a picture book. Soft afternoon light, a warm desk lamp, a teddy and books beside him." loading="lazy" decoding="async"></div>
-        </div>
-        <div class="sidebar-card">
-          <h4>Where to start</h4>
-          <p>A free discovery call to talk through which path is right for your situation. No pressure, no commitment.</p>
-          <a href="https://calendar.app.google/SLSqKqWMujYNovK2A" class="btn-primary">Book a free discovery call</a>
-        </div>
-        <div class="sidebar-card sidebar-card-download">
-          <h4>Pre-Mediation Parenting Reflection Workbook</h4>
-          <p>A private thinking document, not a form. Nothing to fill out, sign, or return. For each parent to work through separately before the joint session.</p>
-          <a href="/downloads/onlinefdr-parenting-reflection-workbook.pdf" class="btn-primary" download>Download PDF</a>
-        </div>
-        <nav class="sidebar-card sidebar-nav">
-          <h5>On this page</h5>
-          <ul>
-            <li><a href="#three-paths"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>Three paths at a glance</a></li>
-            <li class="sidebar-nav-download"><a href="/downloads/onlinefdr-parenting-reflection-workbook.pdf" download><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>Reflection workbook (PDF)</a></li>
-            <li><a href="#parenting-plan"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>1. Parenting Plan</a></li>
-            <li><a href="#consent-orders"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>2. Consent Orders</a></li>
-            <li><a href="#contested"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>3. Contested Orders</a></li>
-            <li><a href="#best-interests"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>The best-interests framework</a></li>
-            <li><a href="#breach"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>When an order is breached</a></li>
-            <li><a href="#recovery"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>Recovery orders</a></li>
-            <li><a href="#changing"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>Changing arrangements</a></li>
-            <li><a href="#grandparents"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>Grandparents and others</a></li>
-            <li><a href="#lawyer"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>When you need a lawyer</a></li>
-          </ul>
-        </nav>
-        <div class="sidebar-card">
-          <h4>Related pages</h4>
-          <ul class="related-links">
-            <li><a href="/what-is-fdr/">What is FDR? <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
-            <li><a href="/how-it-works/">How it works <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
-            <li><a href="/section-60i/">Section 60I certificates <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
-            <li><a href="/financial-settlement/">Financial settlement <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
-          </ul>
-        </div>
-        <div class="sidebar-card">
-          <h4>Further reading</h4>
-          <ul class="related-links">
-            <li><a href="/blog/best-interests-of-the-child-section-60cc-2024-amendments/">How best interests works after 2024 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
-            <li><a href="/blog/can-you-change-final-parenting-orders-australia/">Changing final parenting orders <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
-            <li><a href="/blog/at-what-age-can-child-decide-which-parent-live-with-australia/">At what age can a child decide? <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
-            <li><a href="/blog/child-says-does-not-want-go-other-parents-house/">When a child won't go <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
-          </ul>
-        </div>
-      </aside>
-    </div>
-  </div>
-
-  <section class="page-faq" aria-labelledby="po-faq-heading">
-    <div class="wrap">
-      <div class="page-faq-header reveal">
-        <span class="section-label">Common questions</span>
-        <h2 id="po-faq-heading">Questions about children and parenting arrangements</h2>
-      </div>
-      <div class="faq-list reveal" style="max-width:760px">
-        <div class="faq-item"><button class="faq-q" aria-expanded="false">What is the difference between a Parenting Plan and Consent Orders?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>A Parenting Plan is a written agreement between parents that is not court-approved and is not legally enforceable. Consent Orders are court orders made by agreement, approved by the Federal Circuit and Family Court, and have the same legal force as orders made after a contested hearing. Parenting Plans are more flexible and easier to change. Consent Orders are more rigid and harder to change, but they are enforceable.</p></div></div>
-        <div class="faq-item"><button class="faq-q" aria-expanded="false">If we have Consent Orders, can the police enforce them automatically?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>No. State or territory police have no automatic power over parenting orders. If the other parent withholds the child in breach of Consent Orders, you must apply to the court for a contravention order, and separately for a recovery order if you need the child physically returned. Having Consent Orders in place makes this process faster than starting from a Parenting Plan, but the orders themselves do not function as a recovery instrument.</p></div></div>
-        <div class="faq-item"><button class="faq-q" aria-expanded="false">Can we change our Parenting Plan as the children grow?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>Yes. This is one of the main practical advantages of a Parenting Plan. As long as both parents agree, you can update or replace the plan at any time with a new written agreement that is signed and dated. No court application, no fee, no significant-change-in-circumstances threshold. This flexibility is the reason most amicable separations stay at the Parenting Plan level.</p></div></div>
-        <div class="faq-item"><button class="faq-q" aria-expanded="false">Can we change Consent Orders if we both agree?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>Yes. Where both parents agree to a change, new Consent Orders can be applied for, or in some cases a Parenting Plan can vary the Consent Orders. The significant-change-in-circumstances threshold applies where one parent wants to change the orders without the other parent's agreement. Where both agree, the change is straightforward.</p></div></div>
-        <div class="faq-item"><button class="faq-q" aria-expanded="false">Do we still need to attempt FDR if we already agree?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>If you are agreeing privately to a Parenting Plan, there is no requirement to involve an FDR practitioner. If you are applying for Consent Orders, FDR is not required because the matter is not in dispute. FDR is the step the law expects before applying for contested parenting orders, with limited exemptions for family violence, urgent matters, and a few other circumstances.</p></div></div>
-        <div class="faq-item"><button class="faq-q" aria-expanded="false">Do de facto parents have the same rights as married parents in parenting matters?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>Yes. The Family Law Act applies equally to all parents in parenting matters, regardless of marital status. Married, divorced, separated, and de facto parents all have the same rights and obligations in relation to their children. The same three paths apply (Parenting Plan, Consent Orders, contested orders), the same best-interests framework in section 60CC applies, and Section 60I certificates are required in the same circumstances before applying for contested parenting orders.</p></div></div>
-        <div class="faq-item"><button class="faq-q" aria-expanded="false">Can grandparents apply for parenting orders?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>Yes. Section 65C of the Family Law Act expressly gives grandparents standing to apply for parenting orders, alongside any other person concerned with the care, welfare, or development of the child. The court applies the same best-interests framework regardless of whether the applicant is a parent, a grandparent, a step-parent, or another significant person. Grandparents who have been substantially involved in raising a child can also be included in a Parenting Plan or Consent Orders by agreement.</p></div></div>
-        <div class="faq-item"><button class="faq-q" aria-expanded="false">Do I need a lawyer to apply for parenting orders?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="faq-a"><p>Not legally required, but strongly recommended. Parenting order proceedings are procedurally complex and the consequences are significant. Even for Consent Orders, getting legal advice on the proposed terms before signing is sensible. For contested proceedings, legal representation is close to essential. Legal Aid may be available depending on your circumstances and state or territory.</p></div></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="page-cta" id="discovery" aria-labelledby="po-cta-heading">
-    <div class="wrap">
-      <div class="page-cta-inner">
-        <span class="page-cta-eyebrow">Where most families should start</span>
-        <h2 id="po-cta-heading">A Parenting Plan is reachable for most separating couples.</h2>
-        <p>FDR is the structured way to get there. A free discovery call to talk through whether it is right for your situation.</p>
-        <div class="page-cta-actions">
-          <a href="https://calendar.app.google/SLSqKqWMujYNovK2A" class="btn-light">Book your free discovery call</a>
-          <a href="tel:1800313015" class="btn-outline-light">Call 1800 313 015</a>
-        </div>
-        <span class="page-cta-note">Free &bull; Confidential &bull; No obligation &bull; Available nationally</span>
-      </div>
-    </div>
-  </section>
-"""
+<li><a href="#best-interests"><svg fill="none" height="13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="13"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>What is best for your children</a></li><li><a href="#childrens-voices"><svg fill="none" height="13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="13"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>Your children’s voices</a></li><li><a href="#three-paths"><svg fill="none" height="13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="13"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>Three paths at a glance</a></li><li class="sidebar-nav-download"><a download="" href="/downloads/onlinefdr-parenting-reflection-workbook.pdf"><svg fill="none" height="13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="13"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg>Reflection workbook (PDF)</a></li><li><a href="#parenting-plan"><svg fill="none" height="13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="13"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>1. Parenting Plan</a></li><li><a href="#consent-orders"><svg fill="none" height="13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="13"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>2. Consent Orders</a></li><li><a href="#contested"><svg fill="none" height="13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="13"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>3. Contested Orders</a></li><li><a href="#changing"><svg fill="none" height="13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="13"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>Changing arrangements</a></li><li><a href="#breach"><svg fill="none" height="13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="13"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>When an order is breached</a></li><li><a href="#recovery"><svg fill="none" height="13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="13"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>Recovery orders</a></li><li><a href="#grandparents"><svg fill="none" height="13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="13"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>Grandparents and others</a></li><li><a href="#lawyer"><svg fill="none" height="13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="13"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>When you need a lawyer</a></li></ul>
+</nav>
+<div class="sidebar-card">
+<h4>Related pages</h4>
+<ul class="related-links">
+<li><a href="/what-is-fdr/">What is FDR? <svg fill="none" height="13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="13"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a></li>
+<li><a href="/how-it-works/">How it works <svg fill="none" height="13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="13"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a></li>
+<li><a href="/section-60i/">Section 60I certificates <svg fill="none" height="13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="13"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a></li>
+<li><a href="/financial-settlement/">Financial settlement <svg fill="none" height="13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="13"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a></li>
+</ul>
+</div>
+<div class="sidebar-card">
+<h4>Further reading</h4>
+<ul class="related-links">
+<li><a href="/blog/best-interests-of-the-child-section-60cc-2024-amendments/">How best interests works after 2024 <svg fill="none" height="13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="13"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a></li>
+<li><a href="/blog/can-you-change-final-parenting-orders-australia/">Changing final parenting orders <svg fill="none" height="13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="13"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a></li>
+<li><a href="/blog/at-what-age-can-child-decide-which-parent-live-with-australia/">At what age can a child decide? <svg fill="none" height="13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="13"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a></li>
+<li><a href="/blog/child-says-does-not-want-go-other-parents-house/">When a child won't go <svg fill="none" height="13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="13"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a></li>
+</ul>
+</div>
+</aside>
+</div>
+</div>
+<section aria-labelledby="po-faq-heading" class="page-faq">
+<div class="wrap">
+<div class="page-faq-header reveal">
+<span class="section-label">Common questions</span>
+<h2 id="po-faq-heading">Questions about children and parenting arrangements</h2>
+</div>
+<div class="faq-list reveal" style="max-width:760px">
+<div class="faq-item"><button aria-expanded="false" class="faq-q">What is the difference between a Parenting Plan and Consent Orders?<svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20"><line x1="12" x2="12" y1="5" y2="19"></line><line x1="5" x2="19" y1="12" y2="12"></line></svg></button><div class="faq-a"><p>A Parenting Plan is a written agreement between parents that is not court-approved and is not legally enforceable. Consent Orders are court orders made by agreement, approved by the Federal Circuit and Family Court, and have the same legal force as orders made after a contested hearing. Parenting Plans are more flexible and easier to change. Consent Orders are more rigid and harder to change, but they are enforceable.</p></div></div>
+<div class="faq-item"><button aria-expanded="false" class="faq-q">If we have Consent Orders, can the police enforce them automatically?<svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20"><line x1="12" x2="12" y1="5" y2="19"></line><line x1="5" x2="19" y1="12" y2="12"></line></svg></button><div class="faq-a"><p>No. State or territory police have no automatic power over parenting orders. If the other parent withholds the child in breach of Consent Orders, you must apply to the court for a contravention order, and separately for a recovery order if you need the child physically returned. Having Consent Orders in place makes this process faster than starting from a Parenting Plan, but the orders themselves do not function as a recovery instrument.</p></div></div>
+<div class="faq-item"><button aria-expanded="false" class="faq-q">Can we change our Parenting Plan as the children grow?<svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20"><line x1="12" x2="12" y1="5" y2="19"></line><line x1="5" x2="19" y1="12" y2="12"></line></svg></button><div class="faq-a"><p>Yes. This is one of the main practical advantages of a Parenting Plan. As long as both parents agree, you can update or replace the plan at any time with a new written agreement that is signed and dated. No court application, no fee, no significant-change-in-circumstances threshold. This flexibility is the reason most amicable separations stay at the Parenting Plan level.</p></div></div>
+<div class="faq-item"><button aria-expanded="false" class="faq-q">Can we change Consent Orders if we both agree?<svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20"><line x1="12" x2="12" y1="5" y2="19"></line><line x1="5" x2="19" y1="12" y2="12"></line></svg></button><div class="faq-a"><p>Yes. Where both parents agree to a change, new Consent Orders can be applied for, or in some cases a Parenting Plan can vary the Consent Orders. The significant-change-in-circumstances threshold applies where one parent wants to change the orders without the other parent's agreement. Where both agree, the change is straightforward.</p></div></div>
+<div class="faq-item"><button aria-expanded="false" class="faq-q">Do we still need to attempt FDR if we already agree?<svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20"><line x1="12" x2="12" y1="5" y2="19"></line><line x1="5" x2="19" y1="12" y2="12"></line></svg></button><div class="faq-a"><p>If you are agreeing privately to a Parenting Plan, there is no requirement to involve an FDR practitioner. If you are applying for Consent Orders, FDR is not required because the matter is not in dispute. FDR is the step the law expects before applying for contested parenting orders, with limited exemptions for family violence, urgent matters, and a few other circumstances.</p></div></div>
+<div class="faq-item"><button aria-expanded="false" class="faq-q">Do de facto parents have the same rights as married parents in parenting matters?<svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20"><line x1="12" x2="12" y1="5" y2="19"></line><line x1="5" x2="19" y1="12" y2="12"></line></svg></button><div class="faq-a"><p>Yes. The Family Law Act applies equally to all parents in parenting matters, regardless of marital status. Married, divorced, separated, and de facto parents all have the same rights and obligations in relation to their children. The same three paths apply (Parenting Plan, Consent Orders, contested orders), the same best-interests framework in section 60CC applies, and Section 60I certificates are required in the same circumstances before applying for contested parenting orders.</p></div></div>
+<div class="faq-item"><button aria-expanded="false" class="faq-q">Can grandparents apply for parenting orders?<svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20"><line x1="12" x2="12" y1="5" y2="19"></line><line x1="5" x2="19" y1="12" y2="12"></line></svg></button><div class="faq-a"><p>Yes. Section 65C of the Family Law Act expressly gives grandparents standing to apply for parenting orders, alongside any other person concerned with the care, welfare, or development of the child. The court applies the same best-interests framework regardless of whether the applicant is a parent, a grandparent, a step-parent, or another significant person. Grandparents who have been substantially involved in raising a child can also be included in a Parenting Plan or Consent Orders by agreement.</p></div></div>
+<div class="faq-item"><button aria-expanded="false" class="faq-q">Do I need a lawyer to apply for parenting orders?<svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20"><line x1="12" x2="12" y1="5" y2="19"></line><line x1="5" x2="19" y1="12" y2="12"></line></svg></button><div class="faq-a"><p>Not legally required, but strongly recommended. Parenting order proceedings are procedurally complex and the consequences are significant. Even for Consent Orders, getting legal advice on the proposed terms before signing is sensible. For contested proceedings, legal representation is close to essential. Legal Aid may be available depending on your circumstances and state or territory.</p></div></div>
+</div>
+</div>
+</section>
+<section aria-labelledby="po-cta-heading" class="page-cta" id="discovery">
+<div class="wrap">
+<div class="page-cta-inner">
+<span class="page-cta-eyebrow">Where most families should start</span>
+<h2 id="po-cta-heading">A Parenting Plan is reachable for most separating couples.</h2>
+<p>FDR is the structured way to get there. A free discovery call to talk through whether it is right for your situation.</p>
+<div class="page-cta-actions">
+<a class="btn-light" href="https://calendar.app.google/SLSqKqWMujYNovK2A">Book your free discovery call</a>
+<a class="btn-outline-light" href="tel:1800313015">Call 1800 313 015</a>
+</div>
+<span class="page-cta-note">Free • Confidential • No obligation • Available nationally</span>
+</div>
+</div>
+</section>"""
 
 PO_CSS = """
 .parenting-fold-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;position:relative;z-index:1;width:100%;min-height:0}
@@ -4182,10 +4103,6 @@ TERMS_HTML = """
     </div>
   </header>
 
-  <!-- ABOVE-FOLD MARQUEE -->
-<!--MARQUEE-->
-
-
   <div class="wrap legal-wrap">
     <div class="legal-grid">
       <nav class="legal-toc" aria-label="Terms sections">
@@ -4254,8 +4171,8 @@ TERMS_HTML = """
         <p>Sessions are conducted via Google Meet. Both parties are responsible for ensuring they have a suitable device, reliable internet connection, and a private space for the duration of the session.</p>
 
         <h2 id="fees">Fees and payment</h2>
-        <p>Each matter is quoted as a single fixed price, agreed in writing before any work begins, covering everything needed to finalise the matter. Optional add-ons are quoted up front. Details of what each fixed-price package includes are on our <a href="/pricing/">pricing page</a>. Your fixed price is confirmed in your quote before any work begins.</p>
-        <p>The discovery call is provided at no charge. Your fixed fee is confirmed in writing before booking, and may be paid in full or in instalments where offered.</p>
+        <p>Pricing is upfront and transparent, agreed in writing before any work begins. You pay for each stage as you reach it, at the rates shown, rather than the whole matter up front. Additional time beyond a stage's included hours is charged at the same clear hourly rate. Details of what each stage includes are on our <a href="/pricing/">pricing page</a>. Your pricing is confirmed in writing before any work begins.</p>
+        <p>The discovery call is provided at no charge. Your pricing is confirmed in writing before booking, and may be paid per stage, or in instalments where offered.</p>
         <p>Where a matter requires work beyond the scope of the agreed package, any additional work is quoted and agreed with you before it is carried out.</p>
         <p><strong>Strict prepayment.</strong> Payment must be received at least 24 hours before the scheduled session, or the session is automatically cancelled. This applies to all intake and joint sessions.</p>
         <p><strong>Three-cancellation rule.</strong> Three non-payment cancellations of scheduled sessions terminates the engagement. The three-cancellation rule applies to the party causing the cancellations only. Where the engagement is terminated under this clause, any prepaid fees for sessions not yet held are refunded in full to the paying party. Where a party's repeated non-payment results in the matter not being able to proceed, a Section 60I certificate may be issued reflecting that the party did not make a genuine effort to resolve the dispute, in accordance with section 60I(8) of the Family Law Act.</p>
@@ -4345,6 +4262,8 @@ TERMS_HTML = """
         <h2 id="changelog">Change log</h2>
         <p>Substantive changes to these Terms of Service are recorded here. Minor formatting or typographical corrections may be made without entry.</p>
         <ul class="changelog-list">
+          <li><strong>October 2026 &mdash; Our services.</strong> Added the 120-minute intake for matters covering both parenting and financial issues, and added mediation coaching as a separate service for one party.</li>
+          <li><strong>July 2026 &mdash; Fees and payment.</strong> Updated the fees clause to reflect upfront, transparent, stage-based pricing: parties pay for each stage as it is reached, at the rates shown, with any additional time charged at the same hourly rate.</li>
           <li><strong>June 2026 &mdash; Fees and payment.</strong> Updated the fees clause to reflect the move to fixed-price packages, quoted and agreed up front.</li>
           <li><strong>May 2026 &mdash; Initial version.</strong> Terms of Service published at launch.</li>
         </ul>
@@ -4398,6 +4317,7 @@ BOOK_CSS = """
 .book-card.discovery .book-card-step{color:var(--terra)}
 .book-card.intake .book-card-step{color:var(--ochre)}
 .book-card.joint .book-card-step{color:var(--charcoal-2)}
+.book-card.coaching .btn-cta{background:var(--terra)}
 .book-card h2{font-size:1.55rem;font-weight:700;line-height:1.2;letter-spacing:-0.015em;color:var(--charcoal);margin:0}
 .book-card-meta{display:flex;flex-wrap:wrap;gap:18px 24px;font-size:0.85rem;color:var(--mid);font-weight:500;margin-bottom:18px}
 .book-card-meta span{display:inline-flex;align-items:center;gap:6px}
@@ -4488,14 +4408,35 @@ BOOK_HTML = """
           <p class="page-intro">Three different conversations happen at three different stages of working with us. Pick the one that matches where you are.</p>
         </div>
         <div class="book-fold-image-panel" aria-hidden="true">
-          <div class="book-fold-img-real"><img src="/images/book-fold.jpg" alt="A pale oak desk in soft morning light with a smartphone, an open leather-bound diary on a clean weekly spread, a slim black pen resting across the page, and a small white ceramic cup of dark coffee. The quiet moment of taking the small decisive step of making a booking." fetchpriority="high"></div>
+          <div class="book-fold-img-real"><img width="2000" height="979" src="/images/book-fold.jpg" alt="A pale oak desk in soft morning light with a smartphone, an open leather-bound diary on a clean weekly spread, a slim black pen resting across the page, and a small white ceramic cup of dark coffee. The quiet moment of taking the small decisive step of making a booking." fetchpriority="high"></div>
         </div>
       </div>
     </div>
   </header>
 
   <!-- ABOVE-FOLD MARQUEE -->
-<!--MARQUEE-->
+  <div class="marquee-bar" aria-label="Accreditation and credentials" role="marquee">
+    <div class="marquee-track" aria-hidden="true">
+      <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Mediation Institute Member <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Mediation Institute Member <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Free Discovery Call <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">No Obligation <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
+    </div>
+  </div>
 
 
   <div class="wrap book-wrap">
@@ -4508,11 +4449,11 @@ BOOK_HTML = """
 
       <article class="book-card discovery">
         <div class="book-card-head">
-          <span class="book-card-step">Step 1</span>
           <h2>Free discovery call</h2>
         </div>
         <div class="book-card-meta">
           <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>Online via Google Meet</span>
+          <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>30 minutes</span>
         </div>
         <p>A short, no-obligation conversation to confirm that FDR is the right path for your situation. We ask a few brief questions about your circumstances, answer any questions you have about how the process works, and give you a clear picture of what is involved.</p>
         <p>You leave the call with a clear understanding of whether FDR is appropriate for your matter and what the next steps would look like. <strong>No payment required.</strong></p>
@@ -4526,22 +4467,43 @@ BOOK_HTML = """
 
       <article class="book-card intake">
         <div class="book-card-head">
-          <span class="book-card-step">Step 2</span>
-          <h2>Private &amp; confidential 1:1 intake session</h2>
+          <h2>Private &amp; confidential 1:1 intake &mdash; 90 minutes</h2>
         </div>
         <div class="book-card-meta">
-          <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>1.5 hours</span>
+          <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>90 minutes</span>
           <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>Online via Google Meet</span>
           <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Held privately with each party</span>
         </div>
-        <p>The intake session is private and confidential. Attended by you alone with the practitioner. The other party attends their own intake session separately. Both intake sessions are required before any joint session can be scheduled.</p>
-        <p>This is your chance to speak candidly about your situation, what you need from the process, and what you hope to achieve. The practitioner uses this session to assess whether the matter is suitable for joint mediation, and to identify any safety concerns or substantive matters that may need to be in the room.</p>
+        <p><strong>For a single matter</strong>, either parenting or property. This is the right intake if you are sorting out one of the two, not both.</p>
+        <p>The intake session is private and confidential, attended by you alone with the practitioner. The other party attends their own intake session separately. Both intake sessions are required before any joint session can be scheduled. It is your chance to speak candidly about your situation, what you need, and what you hope to achieve, and for the practitioner to assess suitability and identify any safety concerns.</p>
         <div class="book-card-emph">
           <p><strong>Indicative fees are published on our <a href="/pricing/">pricing page</a>, and the exact amount for your session is shown at the time of booking.</strong> Payment is taken at booking and secures your time slot.</p>
         </div>
         <div class="book-card-cta">
-          <a href="https://calendar.app.google/2zPa6KwbW1rF2nrA8" class="btn-cta" target="_blank" rel="noopener noreferrer">
-            Book an intake session
+          <a href="/confidential-intake-90mins" class="btn-cta" target="_blank" rel="noopener noreferrer">
+            Book a 90-minute intake
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="book-card intake">
+        <div class="book-card-head">
+          <h2>Private &amp; confidential 1:1 intake &mdash; 120 minutes</h2>
+        </div>
+        <div class="book-card-meta">
+          <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>120 minutes</span>
+          <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>Online via Google Meet</span>
+          <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Held privately with each party</span>
+        </div>
+        <p><strong>For a dual matter</strong>, both parenting and property together. Screening across both takes longer, so this intake runs for two hours.</p>
+        <p>The intake session is private and confidential, attended by you alone with the practitioner. The other party attends their own intake session separately. Both intake sessions are required before any joint session can be scheduled. It is your chance to speak candidly about your situation, what you need, and what you hope to achieve, and for the practitioner to assess suitability and identify any safety concerns.</p>
+        <div class="book-card-emph">
+          <p><strong>Indicative fees are published on our <a href="/pricing/">pricing page</a>, and the exact amount for your session is shown at the time of booking.</strong> Payment is taken at booking and secures your time slot.</p>
+        </div>
+        <div class="book-card-cta">
+          <a href="/confidential-intake-120mins" class="btn-cta" target="_blank" rel="noopener noreferrer">
+            Book a 120-minute intake
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
         </div>
@@ -4549,7 +4511,6 @@ BOOK_HTML = """
 
       <article class="book-card joint">
         <div class="book-card-head">
-          <span class="book-card-step">Step 3</span>
           <h2>Joint mediation sessions</h2>
         </div>
         <div class="book-card-meta">
@@ -4563,6 +4524,27 @@ BOOK_HTML = """
         <div class="book-card-note">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
           Arranged with your practitioner after intake.
+        </div>
+      </article>
+
+      <article class="book-card coaching">
+        <div class="book-card-head">
+          <h2>Mediation coaching</h2>
+        </div>
+        <div class="book-card-meta">
+          <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>Online via Google Meet</span>
+          <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>One-on-one</span>
+        </div>
+        <p>If the other party has asked you to attend Family Dispute Resolution and you want to walk in prepared, mediation coaching is a private session focused on you. We work through what to expect, how to put your position clearly, and how to stay steady in the room.</p>
+        <p>This is a standalone service, separate from mediation itself. It does not require the other party to take part, and it is a good fit if you have been directed to FDR and want support getting ready for it.</p>
+        <div class="book-card-emph">
+          <p><strong>Fees are shown at the time of booking</strong>, and payment secures your session.</p>
+        </div>
+        <div class="book-card-cta">
+          <a href="/book-coaching" class="btn-cta" target="_blank" rel="noopener noreferrer">
+            Book mediation coaching
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
         </div>
       </article>
 
@@ -4615,14 +4597,14 @@ BOOK_HTML = """
       <p>Payment is processed securely by Stripe. We accept Visa, Mastercard, American Express, Apple Pay, and Google Pay (if available).</p>
       <p>Buy Now Pay Later (BNPL) is available at checkout for intake sessions and joint sessions in Australia (Afterpay). BNPL lets you pay across instalments. Eligibility and instalment terms are set by each provider. Some providers may not be available for all bookings.</p>
       <div class="payment-grid" aria-label="Accepted payment methods">
-        <div class="payment-brand-tile"><span class="payment-brand-logo"><img src="/images/payment/visa.png" alt="Visa" loading="lazy"></span></div>
-        <div class="payment-brand-tile"><span class="payment-brand-logo"><img src="/images/payment/mastercard.png" alt="Mastercard" loading="lazy"></span></div>
-        <div class="payment-brand-tile"><span class="payment-brand-logo"><img src="/images/payment/amex.png" alt="American Express" loading="lazy"></span></div>
-        <div class="payment-brand-tile"><span class="payment-brand-logo"><img src="/images/payment/applepay.png" alt="Apple Pay" loading="lazy"></span></div>
-        <div class="payment-brand-tile"><span class="payment-brand-logo"><img src="/images/payment/googlepay.png" alt="Google Pay" loading="lazy"></span></div>
-        <div class="payment-brand-tile"><span class="payment-brand-logo"><img src="/images/payment/afterpay.png" alt="Afterpay" loading="lazy"></span></div>
-        <div class="payment-brand-tile"><span class="payment-brand-logo"><img src="/images/payment/klarna.png" alt="Klarna" loading="lazy"></span></div>
-        <div class="payment-brand-tile"><span class="payment-brand-logo"><img src="/images/payment/affirm.png" alt="Affirm" loading="lazy"></span></div>
+        <div class="payment-brand-tile"><span class="payment-brand-logo"><img width="96" height="96" src="/images/payment/visa.png" alt="Visa" loading="lazy"></span></div>
+        <div class="payment-brand-tile"><span class="payment-brand-logo"><img width="96" height="96" src="/images/payment/mastercard.png" alt="Mastercard" loading="lazy"></span></div>
+        <div class="payment-brand-tile"><span class="payment-brand-logo"><img width="96" height="96" src="/images/payment/amex.png" alt="American Express" loading="lazy"></span></div>
+        <div class="payment-brand-tile"><span class="payment-brand-logo"><img width="96" height="96" src="/images/payment/applepay.png" alt="Apple Pay" loading="lazy"></span></div>
+        <div class="payment-brand-tile"><span class="payment-brand-logo"><img width="96" height="96" src="/images/payment/googlepay.png" alt="Google Pay" loading="lazy"></span></div>
+        <div class="payment-brand-tile"><span class="payment-brand-logo"><img width="96" height="96" src="/images/payment/afterpay.png" alt="Afterpay" loading="lazy"></span></div>
+        <div class="payment-brand-tile"><span class="payment-brand-logo"><img width="96" height="96" src="/images/payment/klarna.png" alt="Klarna" loading="lazy"></span></div>
+        <div class="payment-brand-tile"><span class="payment-brand-logo"><img width="400" height="96" src="/images/payment/affirm.png" alt="Affirm" loading="lazy"></span></div>
       </div>
     </section>
 
