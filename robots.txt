@@ -1,7 +1,8 @@
 User-agent: *
 Allow: /
 
-# Keep practitioner application private
-Disallow: /join-the-team/
+# No Disallow lines: a blocked page can still be listed by address, and Google
+# cannot read the noindex tag on a page it is not allowed to fetch. Join the Team
+# is kept out of search results by its own noindex tag.
 
 Sitemap: https://onlinefdr.com.au/sitemap.xml

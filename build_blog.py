@@ -1081,16 +1081,17 @@ def update_sitemap(posts):
     # technical width/height pass, so they keep their prior content date.
     static_entries = [
         ("/", "1.0", "2026-06-12"),
-        ("/about/", "0.8", "2026-06-10"),
+        ("/about/", "0.8", "2026-10-06"),
         ("/what-is-fdr/", "0.8", "2026-06-12"),
         ("/how-it-works/", "0.8", "2026-06-11"),
         ("/parenting/", "0.9", "2026-06-11"),
         ("/financial-settlement/", "0.9", "2026-06-11"),
         ("/section-60i/", "0.9", "2026-06-11"),
         ("/pricing/", "0.9", "2026-06-12"),
-        ("/faq/", "0.7", "2026-06-12"),
+        ("/faq/", "0.7", "2026-10-06"),
         ("/locations/", "0.7", "2026-06-10"),
         ("/book/", "0.9", "2026-06-10"),
+        ("/mediation-coaching/", "0.9", "2026-09-15"),
         ("/get-help/", "0.6", "2026-06-10"),
         # Noindex pages (join-the-team, privacy, terms, complaints) intentionally excluded from the sitemap
     ]

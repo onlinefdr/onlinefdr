@@ -130,7 +130,7 @@ GTAG = """  <!-- Google tag (gtag.js) -->
 
 MARQUEE_ITEMS = """
       <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Mediation Institute Member <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
@@ -139,7 +139,7 @@ MARQUEE_ITEMS = """
       <span class="marquee-item">Confidential under the Family Law Act <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Both Parenting and Financial Matters <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">AGD-Accredited FDRP <span class="marquee-sep">&bull;</span></span>
-      <span class="marquee-item">Australian Mediation Association Member <span class="marquee-sep">&bull;</span></span>
+      <span class="marquee-item">Mediation Institute Member <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Section 60I Certificates (s 66H in WA) <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Conducted Securely Online <span class="marquee-sep">&bull;</span></span>
       <span class="marquee-item">Available Anywhere in Australia <span class="marquee-sep">&bull;</span></span>
@@ -235,7 +235,7 @@ FOOTER = """<footer role="contentinfo">
       </div>
     </div>
     <div class="footer-meta">
-      <p class="footer-abn">Operated by Kevin Scrimshaw, sole trader. ABN 42 961 240 633. AGD FDRP Reg. No. F2003011.</p>
+      <p class="footer-abn">Operated by Kevin Scrimshaw. ABN 42 961 240 633. AGD FDRP Reg. No. F2003011.</p>
       <p class="footer-disclaimer">Information on this website is provided for general educational purposes only. Nothing on this site should be construed as legal or financial advice. For advice specific to your circumstances, consult a qualified legal or financial professional.</p>
     </div>
   </div>
@@ -1114,7 +1114,7 @@ ABOUT_HTML = """
         <div class="story-left reveal">
           <span class="section-label">The founder</span>
           <h2 class="story-h2 section-h2" id="story-3b-heading">Kevin Scrimshaw, founder of <span class="accent">onlinefdr.com.au.</span></h2>
-          <p class="body-text" style="margin-top:16px">onlinefdr.com.au was founded by Kevin Scrimshaw, an accredited Family Dispute Resolution Practitioner registered with the Australian Government Attorney-General's Department (AGD FDRP Reg. No. F2003011) and a member of the Australian Mediation Association. Kevin leads the practice and continues to take on matters personally. His background and ongoing professional development are in mediation, conflict resolution, and family law process, not commercial litigation.</p>
+          <p class="body-text" style="margin-top:16px">onlinefdr.com.au was founded by Kevin Scrimshaw, an accredited Family Dispute Resolution Practitioner registered with the Australian Government Attorney-General's Department (AGD FDRP Reg. No. F2003011) and a member of the Mediation Institute. Kevin leads the practice and continues to take on matters personally. His background and ongoing professional development are in mediation, conflict resolution, and family law process, not commercial litigation.</p>
           <p class="body-text">The practice operates online by design. Sessions are conducted via Google Meet. There is no shared waiting room, no commute for either party, and no geographic limit on who can be reached.</p>
           <p class="body-text">Kevin founded onlinefdr.com.au to make accredited FDR reachable for families the public system cannot get to in time, and for those who simply live too far from one to attend in person. The practice is built to extend that reach over time. Online sessions only. Every type of family dispute, every stage of separation.</p>
           <div class="cred-cards" style="margin-top:28px">
@@ -1124,7 +1124,7 @@ ABOUT_HTML = """
             </div>
             <div class="cred-card">
               <div class="cred-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg></div>
-              <div class="cred-text"><strong>Australian Mediation Association</strong><span>Members of the AMA, subject to the AMA Code of Ethics and professional conduct standards.</span></div>
+              <div class="cred-text"><strong>Mediation Institute</strong><span>Member of the Mediation Institute, which is also the practice's external complaints body.</span></div>
             </div>
           </div>
         </div>
@@ -1194,7 +1194,7 @@ build_page(
     meta_desc="onlinefdr.com.au was founded on the belief that accredited Family Dispute Resolution should be reachable by anyone in Australia, online and without long waits.",
     canonical="/about/",
     current_page="/about/",
-    schema_json='{"@context":"https://schema.org","@graph":[{"@type":"AboutPage","@id":"https://onlinefdr.com.au/about/#aboutpage","url":"https://onlinefdr.com.au/about/","name":"About onlinefdr.com.au","about":{"@id":"https://onlinefdr.com.au/#organization"},"mainEntity":{"@id":"https://onlinefdr.com.au/#kevin-scrimshaw"}},{"@type":"Organization","@id":"https://onlinefdr.com.au/#organization","name":"onlinefdr.com.au","url":"https://onlinefdr.com.au/","logo":"https://onlinefdr.com.au/images/logo.png","sameAs":["https://www.facebook.com/onlinefdr/","https://www.instagram.com/onlinefdr.au/","https://www.linkedin.com/company/onlinefdr/"],"description":"Accredited online Family Dispute Resolution practice serving separating couples nationally across Australia.","founder":{"@id":"https://onlinefdr.com.au/#kevin-scrimshaw"},"areaServed":{"@type":"Country","name":"Australia"}},{"@type":"Person","@id":"https://onlinefdr.com.au/#kevin-scrimshaw","name":"Kevin Scrimshaw","jobTitle":"Founder","identifier":{"@type":"PropertyValue","propertyID":"AGD FDRP Registration Number","value":"F2003011"},"worksFor":{"@id":"https://onlinefdr.com.au/#organization"},"hasCredential":[{"@type":"EducationalOccupationalCredential","credentialCategory":"professional accreditation","name":"Accredited Family Dispute Resolution Practitioner","recognizedBy":{"@type":"GovernmentOrganization","name":"Australian Government Attorney-General\'s Department"}},{"@type":"EducationalOccupationalCredential","credentialCategory":"professional membership","name":"Member, Australian Mediation Association"}]}]}',
+    schema_json='{"@context":"https://schema.org","@graph":[{"@type":"AboutPage","@id":"https://onlinefdr.com.au/about/#aboutpage","url":"https://onlinefdr.com.au/about/","name":"About onlinefdr.com.au","about":{"@id":"https://onlinefdr.com.au/#organization"},"mainEntity":{"@id":"https://onlinefdr.com.au/#kevin-scrimshaw"}},{"@type":"Organization","@id":"https://onlinefdr.com.au/#organization","name":"onlinefdr.com.au","url":"https://onlinefdr.com.au/","logo":"https://onlinefdr.com.au/images/logo.png","sameAs":["https://www.facebook.com/onlinefdr/","https://www.instagram.com/onlinefdr.au/","https://www.linkedin.com/company/onlinefdr/"],"description":"Accredited online Family Dispute Resolution practice serving separating couples nationally across Australia.","founder":{"@id":"https://onlinefdr.com.au/#kevin-scrimshaw"},"areaServed":{"@type":"Country","name":"Australia"}},{"@type":"Person","@id":"https://onlinefdr.com.au/#kevin-scrimshaw","name":"Kevin Scrimshaw","jobTitle":"Founder","identifier":{"@type":"PropertyValue","propertyID":"AGD FDRP Registration Number","value":"F2003011"},"worksFor":{"@id":"https://onlinefdr.com.au/#organization"},"hasCredential":[{"@type":"EducationalOccupationalCredential","credentialCategory":"professional accreditation","name":"Accredited Family Dispute Resolution Practitioner","recognizedBy":{"@type":"GovernmentOrganization","name":"Australian Government Attorney-General\'s Department"}},{"@type":"EducationalOccupationalCredential","credentialCategory":"professional membership","name":"Member, Mediation Institute"}]}]}',
     extra_css=ABOUT_CSS,
     breadcrumbs=[("Home", "/"), ("About", "/about/")],
     page_html=ABOUT_HTML,
@@ -2406,7 +2406,7 @@ JTT_HTML = """
       </div>
       <div class="field-group standalone">
         <label for="how-heard">How did you hear about onlinefdr.com.au?</label>
-        <select id="how-heard" name="how_heard"><option value="" disabled selected>Select</option><option value="google">Google search</option><option value="colleague">Colleague referral</option><option value="social">Social media</option><option value="ama">Australian Mediation Association</option><option value="other">Other</option></select>
+        <select id="how-heard" name="how_heard"><option value="" disabled selected>Select</option><option value="google">Google search</option><option value="colleague">Colleague referral</option><option value="social">Social media</option><option value="mi">Mediation Institute</option><option value="other">Other</option></select>
       </div>
 
       <div class="form-section-header">
@@ -3574,7 +3574,7 @@ SECTIONS = [
       ("Why does accreditation matter?",
        "Accreditation is the difference between a qualified, accountable practitioner and someone offering a service without the training, professional obligations, or legal authority that protect clients. An accredited FDRP is subject to professional conduct standards, complaints processes, and the legal framework of the Family Law Act. Only they can issue the certificate required before court proceedings can begin."),
       ("What credentials does onlinefdr.com.au hold?",
-       "Practitioners working under the onlinefdr.com.au brand hold current registration with the Australian Government Attorney-General's Department as accredited Family Dispute Resolution Practitioners under the Family Law (Family Dispute Resolution Practitioners) Regulations 2025, and are members of relevant professional bodies including the Australian Mediation Association (AMA). These credentials reflect both legal accreditation and active participation in the professional community. For more about the founder of the practice, see the <a href='/about/'>About page</a>."),
+       "Practitioners working under the onlinefdr.com.au brand hold current registration with the Australian Government Attorney-General's Department as accredited Family Dispute Resolution Practitioners under the Family Law (Family Dispute Resolution Practitioners) Regulations 2025, and are members of relevant professional bodies including the Mediation Institute. These credentials reflect both legal accreditation and active participation in the professional community. For more about the founder of the practice, see the <a href='/about/'>About page</a>."),
       ("How do I verify an FDRP's accreditation?",
        "Accredited FDRPs are registered with the Australian Government Attorney-General's Department. You can ask any practitioner for their AGD registration number and verify it directly with the AGD. You should always confirm accreditation before engaging a practitioner for FDR, particularly if the outcome you need is a Section 60I certificate."),
     ]
@@ -3894,7 +3894,7 @@ COMPLAINTS_HTML = """
         <div class="complaints-info-card">
           <h3>Our commitment</h3>
           <p>We will acknowledge every complaint within one business day and respond substantively within two business days.</p>
-          <p>All complaints are handled confidentially within onlinefdr.com.au. Where a complaint cannot be resolved to your satisfaction internally, you can escalate the matter to our approved external complaints body, the Australian Mediation Association (AMA), at <a href="https://ama.asn.au/mediation-complaints/" style="color:var(--terra);text-decoration:none;font-weight:600">ama.asn.au/mediation-complaints</a>. The AMA handles complaints about accredited FDR practitioners independently of the practice.</p>
+          <p>All complaints are handled confidentially within onlinefdr.com.au. Where a complaint cannot be resolved to your satisfaction internally, you can escalate the matter to our approved external complaints body, the Mediation Institute, at <a href="https://www.mediationinstitute.edu.au/contactus/" style="color:var(--terra);text-decoration:none;font-weight:600">mediationinstitute.edu.au/contactus</a>. The Mediation Institute handles complaints about accredited FDR practitioners independently of the practice.</p>
           <h2 id="language">Language</h2>
           <p>This page is published in English, and the English version is the authoritative version. If you read it using a browser or automated translation, the English text prevails in the event of any inconsistency or ambiguity.</p>
           <p><strong>Prefer to call?</strong> You can reach us on <a href="tel:1800313015" style="color:var(--terra);text-decoration:none;font-weight:600">1800 313 015</a> during business hours.</p>
