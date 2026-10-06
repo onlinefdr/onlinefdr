@@ -119,12 +119,11 @@ NAV_LINKS = """
 NAV_CTA = """<a href="tel:1800313015" class="nav-cta" aria-label="Call us on 1 8 0 0 9 5 7 2 5 3"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right:6px;vertical-align:-2px"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>1800 313 015</a>"""
 
 GTAG = """  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18195606042"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TFC27B41R"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'AW-18195606042');
     gtag('config', 'G-5TFC27B41R');
   </script>"""
 
@@ -3965,7 +3964,7 @@ PRIVACY_HTML = """
       <div class="legal-header-inner">
         <span class="page-label" style="color:var(--ochre-lt)">Legal</span>
         <h1 id="privacy-heading">Privacy Policy</h1>
-        <p class="legal-header-meta">Last updated: May 2026 &bull; Effective: May 2026</p>
+        <p class="legal-header-meta">Last updated: October 2026 &bull; Effective: October 2026</p>
       </div>
     </div>
   </header>
@@ -4027,6 +4026,7 @@ PRIVACY_HTML = """
         <ul>
           <li>Standard web server logs (IP address, browser type, pages visited)</li>
           <li>Information submitted through website forms (contact, complaints, practitioner applications)</li>
+          <li>Usage data collected by Google Analytics (pages viewed, approximate location, device and browser type, and how you arrived at the site)</li>
           <li>Cookie data as described in the Cookies section below</li>
         </ul>
 
@@ -4077,6 +4077,7 @@ PRIVACY_HTML = """
           <li><strong>Google Gemini:</strong> Processing of intake recordings and transcripts may occur on Google infrastructure located outside Australia.</li>
           <li><strong>Stripe:</strong> United States-based payment processor. Stripe complies with applicable cross-border data protection frameworks.</li>
           <li><strong>Netlify:</strong> United States-based website hosting provider.</li>
+          <li><strong>Google Analytics:</strong> Website usage data is processed on Google infrastructure, which may be located outside Australia, including the United States.</li>
         </ul>
         <p>We take reasonable steps to ensure that any overseas recipients of personal information do not breach the Australian Privacy Principles in relation to your information. By using our services, you consent to the cross-border disclosures described above.</p>
 
@@ -4099,9 +4100,10 @@ PRIVACY_HTML = """
           <li><strong>Google Gemini:</strong> AI-assisted transcription and annotation of intake sessions only (with your express consent). Subject to Google's Privacy Policy.</li>
           <li><strong>Stripe:</strong> Payment processing, including Buy Now Pay Later providers (Afterpay). See Stripe's Privacy Policy at stripe.com/privacy.</li>
           <li><strong>Netlify:</strong> Website hosting and form submissions. See Netlify's Privacy Policy at netlify.com.</li>
-          <li><strong>Dialpad:</strong> Phone service for our business landline. See Dialpad's Privacy Policy at dialpad.com.</li>
+          <li><strong>Crazytel:</strong> Phone service for our business line. See Crazytel's Privacy Policy at crazytel.com.au.</li>
+          <li><strong>Google Analytics:</strong> Website traffic statistics, used to understand which pages are useful and how visitors find the site. See Google's Privacy Policy at policies.google.com.</li>
         </ul>
-        <p>We have selected these services carefully. We do not use advertising platforms, tracking pixels, or third-party analytics services that profile users for commercial purposes.</p>
+        <p>We have selected these services carefully. We use Google Analytics to measure how the website is used. We do not use advertising or remarketing pixels.</p>
 
         <h2 id="your-rights">Your rights</h2>
         <p>Under the Australian Privacy Act 1988 (Cth), you have the right to:</p>
@@ -4119,10 +4121,11 @@ PRIVACY_HTML = """
         </div>
 
         <h2 id="cookies">Cookies</h2>
-        <p>Our website uses minimal cookies. We do not use advertising cookies or third-party tracking cookies. The cookies we use are limited to:</p>
+        <p>Our website uses a small number of cookies. We do not use advertising cookies. The cookies we use are limited to:</p>
         <ul>
           <li><strong>Session cookies:</strong> Temporary cookies that expire when you close your browser, used to maintain basic website functionality.</li>
           <li><strong>Google Appointment Scheduling:</strong> If you use our booking system, Google may set cookies as part of their booking functionality.</li>
+          <li><strong>Google Analytics:</strong> Cookies that count visits and record how the site is used, so we can see which pages are useful. You can opt out with Google's browser add-on at tools.google.com/dlpage/gaoptout.</li>
         </ul>
         <p>You can control cookies through your browser settings. Disabling cookies may affect the functionality of our booking system.</p>
 
@@ -4133,13 +4136,14 @@ PRIVACY_HTML = """
           <li>Phone: <a href="tel:1800313015">1800 313 015</a></li>
         </ul>
         <p>If you have a complaint about our handling of your personal information, please contact us in the first instance. If we are unable to resolve your complaint, you may refer it to the Office of the Australian Information Commissioner at <a href="https://www.oaic.gov.au" target="_blank" rel="noopener noreferrer">oaic.gov.au</a>.</p>
-        <p>This policy was last updated in June 2026. We may update it from time to time. The current version will always be available at this address.</p>
+        <p>This policy was last updated in October 2026. We may update it from time to time. The current version will always be available at this address.</p>
         <h2 id="language">Language</h2>
         <p>This policy is published in English, and the English version is the authoritative version. If you read this page using a browser or automated translation, the English text prevails in the event of any inconsistency or ambiguity.</p>
 
         <h2 id="changelog">Change log</h2>
         <p>Substantive changes to this Privacy Policy are recorded here. Minor formatting or typographical corrections may be made without entry.</p>
         <ul class="changelog-list">
+          <li><strong>October 2026 &mdash; Website analytics and phone provider.</strong> Disclosed our use of Google Analytics to measure how the website is used, and named Crazytel as our phone provider, replacing Dialpad.</li>
           <li><strong>June 2026 &mdash; Payment providers.</strong> Updated the list of Buy Now Pay Later providers handled through Stripe to reflect those offered at checkout (Afterpay).</li>
           <li><strong>May 2026 &mdash; Initial version.</strong> Privacy Policy published at launch.</li>
         </ul>
@@ -4173,7 +4177,7 @@ TERMS_HTML = """
       <div class="legal-header-inner">
         <span class="page-label" style="color:var(--ochre-lt)">Legal</span>
         <h1 id="terms-heading">Terms of Service</h1>
-        <p class="legal-header-meta">Last updated: May 2026 &bull; Effective: May 2026</p>
+        <p class="legal-header-meta">Last updated: October 2026 &bull; Effective: October 2026</p>
       </div>
     </div>
   </header>
@@ -4221,11 +4225,13 @@ TERMS_HTML = """
         <p>onlinefdr.com.au provides accredited Family Dispute Resolution services conducted online via Google Meet. Our services include:</p>
         <ul>
           <li>Free discovery calls to assess whether FDR is appropriate for your circumstances</li>
-          <li>Individual intake sessions (one and a half hours per party)</li>
+          <li>Individual intake sessions (90 minutes per party, or 120 minutes where both parenting and financial matters are covered)</li>
           <li>Joint mediation sessions (four hours for parenting matters, three hours for financial matters)</li>
           <li>Documentation of agreed terms</li>
           <li>Section 60I certificates where appropriate</li>
+          <li>Mediation coaching: a private preparation session for one person attending a mediation run by another practitioner</li>
         </ul>
+        <p><strong>Mediation coaching.</strong> Mediation coaching is preparation and support for one party. It is not legal advice, and it is separate from the mediation itself. We will not coach a party in any dispute where we are, or will be, the practitioner running the FDR.</p>
         <p>Practitioners working under the onlinefdr.com.au brand hold current registration with the Australian Government Attorney-General's Department as accredited Family Dispute Resolution Practitioners.</p>
         <p><strong>No outcome is guaranteed.</strong> FDR is a process for assisting parties to reach their own agreements. We do not guarantee that agreement will be reached, that a particular outcome will be achieved, or that any agreement reached will be honoured by the other party.</p>
         <p><strong>Section 60I certificates and Letters of Attendance.</strong> For parenting matters, Section 60I certificates are issued at the practitioner's professional discretion in accordance with section 60I(8) of the Family Law Act 1975 and Regulation 24 of the Family Law (Family Dispute Resolution Practitioners) Regulations 2025. The type of certificate (i.e. which paragraph of section 60I(8) applies) is determined by the practitioner's assessment of what occurred in the FDR process, including whether each party made a genuine effort and whether FDR was appropriate in the circumstances. The certificate type is not negotiable; parties cannot request a particular type. For financial matters, the practitioner issues a Letter of Attendance and Genuine Effort confirming the dates of attendance, the practitioner's assessment of whether each party made a genuine effort, and the outcome. The letter is supporting evidence the party can use in their own Genuine Steps Certificate, which is the certificate the party themselves signs and files under Schedule 1 of the Federal Circuit and Family Court of Australia (Family Law) Rules 2021.</p>
@@ -4332,7 +4338,7 @@ TERMS_HTML = """
           <li>Email: <a href="mailto:hello@onlinefdr.com.au">hello@onlinefdr.com.au</a></li>
           <li>Phone: <a href="tel:1800313015">1800 313 015</a></li>
         </ul>
-        <p>These terms were last updated in June 2026. We may update them from time to time. Continued use of our services following any update constitutes acceptance of the revised terms. The current version will always be available at this address.</p>
+        <p>These terms were last updated in October 2026. We may update them from time to time. Continued use of our services following any update constitutes acceptance of the revised terms. The current version will always be available at this address.</p>
         <h2 id="language">Language</h2>
         <p>These terms are published in English, and the English version is the authoritative version. If you read this page using a browser or automated translation, the English text prevails in the event of any inconsistency or ambiguity.</p>
 

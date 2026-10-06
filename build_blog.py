@@ -167,12 +167,11 @@ def load_shell_components():
 SHELL = load_shell_components()
 
 GTAG = """  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18195606042"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TFC27B41R"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'AW-18195606042');
     gtag('config', 'G-5TFC27B41R');
   </script>"""
 
