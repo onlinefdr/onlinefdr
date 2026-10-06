@@ -2,9 +2,9 @@
 title: "How much does a divorce cost in Australia?"
 slug: "how-much-does-a-divorce-cost-australia"
 date: 2026-06-05
-updated: 2026-06-12
+updated: 2026-10-06
 category: Financial Settlement
-meta_description: "A divorce costs about $1,100 to file in Australia. The real money is in property and parenting, where your path can swing it by tens of thousands."
+meta_description: "A divorce costs $1,170 to file in Australia. The real money is in property and parenting, where your path can swing it by tens of thousands."
 related_pages:
   - /pricing/
   - /financial-settlement/
@@ -21,7 +21,7 @@ This post pulls the two apart, gives you real figures for each, and explains the
 
 ## What the divorce itself actually costs
 
-A divorce in Australia is the legal order that ends a marriage. Filing an application for divorce in the Federal Circuit and Family Court of Australia costs about $1,100. If you hold an eligible government concession card, or you can show financial hardship, that drops to a reduced fee of about $365. The fee is set by regulation and usually rises on 1 July each year, so check the court's current figure before you file. Court filing fees do not attract GST.
+A divorce in Australia is the legal order that ends a marriage. Filing an application for divorce in the Federal Circuit and Family Court of Australia costs $1,170. If you hold an eligible government concession card, or you can show financial hardship, that drops to a reduced fee of $390. The fee is set by regulation and usually rises on 1 July each year, so check the court's current figure before you file. Court filing fees do not attract GST.
 
 That is close to the whole cost if your circumstances are simple. You can apply yourself through the Commonwealth Courts Portal without a lawyer, and many people do. A joint application avoids the need to formally serve the other party, which keeps things simpler again.
 
@@ -75,7 +75,7 @@ If you want your own quote, the [pricing page](/pricing/) sets out what each sta
 
 ### How much does a divorce cost in Australia?
 
-The divorce order itself costs about $1,100 to file, or about $365 on a concession card or hardship, and it rises each 1 July. That fee only ends the marriage. The larger cost is resolving property and parenting, which are separate, and there the figure depends on the path you choose: family dispute resolution commonly runs from a few hundred dollars an hour to a few thousand dollars per person overall, while a contested court fight regularly costs $85,000 or more per person.
+The divorce order itself costs $1,170 to file, or $390 on a concession card or hardship, and it rises each 1 July. That fee only ends the marriage. The larger cost is resolving property and parenting, which are separate, and there the figure depends on the path you choose: family dispute resolution commonly runs from a few hundred dollars an hour to a few thousand dollars per person overall, while a contested court fight regularly costs $85,000 or more per person.
 
 ### Is family dispute resolution cheaper than going to court?
 
