@@ -7,6 +7,8 @@ meta_description: "What the Family Law Amendment Act 2024 changed about pets aft
 related_pages:
   - /financial-settlement/
   - /how-it-works/
+related_posts:
+  - de-facto-property-settlement-australia
 reading_time: 8
 hero_image: "who-keeps-family-pet-separation-companion-animals-hero.jpg"
 tldr: "From 10 June 2025, pets in Australia are no longer treated as ordinary property in family law proceedings. The Family Law Amendment Act 2024 introduced the concept of a companion animal, a distinct category of property with its own factors for ownership. The court can transfer ownership or order a sale, but cannot order shared care. Family violence involving pets is now expressly considered. Pets remain property, not children; arrangements are part of property settlement, not parenting."

@@ -94,6 +94,35 @@ PAGE_LABELS = {
 
 SLUG_PATTERN = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
 
+# Named author/reviewer for E-E-A-T. The @id values match the Person and
+# Organization nodes in the About page schema, so Google joins them up.
+AUTHOR_SCHEMA = {
+    "@type": "Person",
+    "@id": "https://onlinefdr.com.au/#kevin-scrimshaw",
+    "name": "Kevin Scrimshaw",
+    "url": "https://onlinefdr.com.au/about/",
+    "jobTitle": "Accredited Family Dispute Resolution Practitioner",
+    "identifier": {"@type": "PropertyValue", "propertyID": "AGD FDRP Registration Number", "value": "F2003011"},
+    "worksFor": {"@id": "https://onlinefdr.com.au/#organization"},
+}
+PUBLISHER_SCHEMA = {
+    "@type": "Organization",
+    "@id": "https://onlinefdr.com.au/#organization",
+    "name": "onlinefdr.com.au",
+    "url": "https://onlinefdr.com.au/",
+    "logo": {"@type": "ImageObject", "url": "https://onlinefdr.com.au/images/logo.png"},
+}
+
+# Internal linking between posts: each post gets RELATED_POST_COUNT "Keep
+# reading" links. Optional frontmatter `related_posts: [slug, ...]` pins
+# hand-picked ones first; the rest are filled by topic overlap (same category
+# plus shared slug words), so every post is linked from several others.
+RELATED_POST_COUNT = 3
+SLUG_STOPWORDS = {"australia", "after", "the", "a", "an", "of", "and", "or", "to",
+                  "in", "your", "you", "can", "does", "do", "what", "how", "who",
+                  "with", "without", "vs", "is", "it", "law", "2024", "family",
+                  "separation", "separated", "changes"}
+
 # ─────────────────────────────────────────────────────────────────
 # IMAGE DIMENSION INJECTOR (CLS fix)
 # ─────────────────────────────────────────────────────────────────
@@ -252,6 +281,9 @@ BLOG_CSS = """
 .post-meta-sep{opacity:0.4}
 .post-reviewed{margin-top:14px;display:inline-flex;align-items:center;gap:7px;color:rgba(253,250,246,0.6);font-size:0.78rem;font-weight:600}
 .post-reviewed svg{width:14px;height:14px;color:var(--ochre);flex-shrink:0}
+.post-reviewed a{color:rgba(253,250,246,0.85);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+.post-reviewed a:hover{color:var(--ochre-lt)}
+.post-related-link small{display:block;font-size:0.68rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--terra);margin-bottom:4px}
 
 .post-hero-image{max-width:880px;margin:0 auto;padding:0 var(--pad);transform:translateY(-32px)}
 .post-hero-image-inner{aspect-ratio:21/9;border-radius:12px;overflow:hidden;background:var(--dust-2);border:1px solid var(--dust-3);position:relative}
@@ -296,6 +328,7 @@ BLOG_CSS = """
 .post-related-link{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:14px 18px;background:var(--white);border:1px solid var(--dust-3);border-radius:8px;text-decoration:none;color:var(--charcoal);font-weight:600;font-size:0.95rem;transition:border-color 0.2s,transform 0.2s}
 .post-related-link:hover{border-color:var(--ochre);transform:translateX(2px)}
 .post-related-link svg{color:var(--terra);flex-shrink:0}
+.post-related + .post-related{margin-top:20px}
 
 /* Post final CTA */
 .post-cta{max-width:720px;margin:48px auto 0;padding:0 var(--pad)}
@@ -534,6 +567,11 @@ def parse_post(path):
                 f"{path.name}: related_pages entry '{p}' not in approved list"
             )
 
+    rp = meta.get("related_posts") or []
+    if not isinstance(rp, list) or not all(isinstance(x, str) for x in rp):
+        raise ValidationError(f"{path.name}: related_posts must be a list of slugs")
+    meta["related_posts"] = rp
+
     if not isinstance(meta["reading_time"], int) or meta["reading_time"] < 1:
         raise ValidationError(f"{path.name}: reading_time must be a positive integer")
 
@@ -653,6 +691,32 @@ def load_all_posts():
         x["date"].toordinal() * -1,
     ))
     return posts
+
+
+def _slug_words(slug):
+    return {w for w in slug.split("-") if w not in SLUG_STOPWORDS}
+
+
+def assign_related_posts(posts):
+    """Attach post["related_list"]: up to RELATED_POST_COUNT other posts."""
+    by_slug = {p["slug"]: p for p in posts}
+    for p in posts:
+        for s in p["related_posts"]:
+            if s not in by_slug or s == p["slug"]:
+                print(f"  ERROR {p['source_path'].name}: related_posts slug '{s}' not found")
+                sys.exit(1)
+        picked = [by_slug[s] for s in p["related_posts"]]
+        words = _slug_words(p["slug"])
+        def score(o):
+            sc = len(words & _slug_words(o["slug"]))
+            if o["category"] == p["category"]:
+                sc += 2
+            # Higher score first; then closest in date; then slug for determinism
+            return (-sc, abs((o["date"] - p["date"]).days), o["slug"])
+        # Posts marked `superseded: true` are never auto-suggested (only if hand-picked)
+        rest = sorted((o for o in posts if o is not p and o not in picked
+                       and not o.get("superseded")), key=score)
+        p["related_list"] = (picked + rest)[:max(RELATED_POST_COUNT, len(picked))]
 
 
 # ─────────────────────────────────────────────────────────────────
@@ -949,6 +1013,25 @@ def render_post_page(post):
         for p in post["related_pages"]
     )
 
+    arrow = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>'
+    keep_reading_html = "\n".join(
+        f'<a href="/blog/{o["slug"]}/" class="post-related-link"><span><small>{o["category"]}</small>{html.escape(o["title"])}</span>{arrow}</a>'
+        for o in post.get("related_list", [])
+    )
+    if keep_reading_html:
+        keep_reading_block = f"""
+  <aside class="post-related" aria-label="Keep reading">
+    <div class="post-related-inner">
+      <h3>Keep reading</h3>
+      <div class="post-related-links">
+{keep_reading_html}
+      </div>
+    </div>
+  </aside>
+"""
+    else:
+        keep_reading_block = ""
+
     # TLDR block (only if frontmatter provides one)
     if post.get("tldr"):
         tldr_safe = html.escape(post["tldr"])
@@ -978,7 +1061,7 @@ def render_post_page(post):
       <span class="post-meta-sep">·</span>
       <span>{post['reading_time']} min read</span>{updated_meta}
     </div>
-    <p class="post-reviewed"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 4.5-3.2 7.5-8 9-4.8-1.5-8-4.5-8-9V7l8-4z"/><path d="M9 12l2 2 4-4"/></svg>Reviewed by an AGD-accredited FDR practitioner (Reg. No. F2003011)</p>
+    <p class="post-reviewed"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 4.5-3.2 7.5-8 9-4.8-1.5-8-4.5-8-9V7l8-4z"/><path d="M9 12l2 2 4-4"/></svg><span>Reviewed by <a href="/about/">Kevin Scrimshaw</a>, AGD-accredited FDR practitioner (Reg. No. F2003011)</span></p>
   </div>
 </header>
 
@@ -988,7 +1071,7 @@ def render_post_page(post):
 {tldr_block}  <article class="post-body">
 {post['body_html']}
   </article>
-
+{keep_reading_block}
   <aside class="post-related" aria-label="Related">
     <div class="post-related-inner">
       <h3>Related</h3>
@@ -1029,8 +1112,8 @@ def render_post_page(post):
         "image": post_og_image,
         "datePublished": iso_date,
         "dateModified": iso_modified,
-        "author": {"@type": "Organization", "name": "onlinefdr.com.au", "url": "https://onlinefdr.com.au/"},
-        "publisher": {"@type": "Organization", "name": "onlinefdr.com.au", "url": "https://onlinefdr.com.au/", "logo": {"@type": "ImageObject", "url": "https://onlinefdr.com.au/images/og-default.jpg"}},
+        "author": AUTHOR_SCHEMA,
+        "publisher": PUBLISHER_SCHEMA,
         "mainEntityOfPage": {"@type": "WebPage", "@id": f"https://onlinefdr.com.au{canonical}"},
         "articleSection": cat,
     }
@@ -1275,6 +1358,7 @@ def build():
     print("Loading posts...")
     posts = load_all_posts()
     print(f"  {len(posts)} post(s) loaded")
+    assign_related_posts(posts)
 
     # ── Blog index (paginated) ──
     print("\nBuilding blog index...")

@@ -7,6 +7,9 @@ meta_description: "The duty of full and frank financial disclosure now sits in s
 related_pages:
   - /financial-settlement/
   - /how-it-works/
+related_posts:
+  - add-backs-property-settlement-australia
+  - superannuation-splitting-after-separation-australia
 reading_time: 8
 hero_image: "duty-of-disclosure-financial-settlement-australia-hero.jpg"
 tldr: "The duty of full and frank financial disclosure was elevated from court Rules into the Family Law Act 1975 on 10 June 2025, in sections 71B (married), 90RI (de facto), and 90YJA (Western Australian de facto). The duty applies from the start of pre-action through to the end of proceedings. FDR Practitioners now have a parallel statutory obligation to inform parties about the duty before financial mediation begins."

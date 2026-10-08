@@ -8,6 +8,8 @@ meta_description: "A divorce costs $1,170 to file in Australia. The real money i
 related_pages:
   - /pricing/
   - /financial-settlement/
+related_posts:
+  - how-long-separated-before-divorce-australia
 reading_time: 11
 hero_image: "how-much-does-a-divorce-cost-australia-hero-piggy.jpg"
 hero_alt: "A small terracotta ceramic piggy bank on a pale surface, lit by a warm shaft of afternoon light."

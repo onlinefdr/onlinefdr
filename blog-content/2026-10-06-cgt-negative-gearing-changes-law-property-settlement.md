@@ -7,6 +7,8 @@ meta_description: "The 2026 CGT and negative gearing changes are now law. What t
 related_pages:
   - /financial-settlement/
   - /book/
+related_posts:
+  - budget-cgt-changes-property-settlement
 reading_time: 9
 faq: true
 hero_image: "cgt-negative-gearing-changes-law-property-settlement-hero.jpg"
@@ -92,11 +94,11 @@ Yes. The Treasury Laws Amendment (Tax Reform No. 1) Act 2026 received Royal Asse
 
 ### Do pre-2027 gains keep the 50 percent discount?
 
-No. Assets are treated as sold and bought back at market value on 1 July 2027, and the gain to that date is deferred until the asset is actually sold. If it would have qualified for the discount, it keeps the discount. Only growth after 1 July 2027 is taxed under the new rules.
+Yes. Assets are treated as sold and bought back at market value on 1 July 2027, and the gain to that date is deferred until the asset is actually sold. If it would have qualified for the discount, it keeps the discount. Only growth after 1 July 2027 is taxed under the new rules.
 
 ### Is CGT payable when property changes hands in a settlement?
 
-Yes. Subdivision 126-A of the Income Tax Assessment Act 1997 is unchanged. A transfer between spouses or former spouses under a court order or Binding Financial Agreement does not trigger CGT at the time, but the person who receives the asset takes on its tax history and pays the tax when they sell.
+No, not at the time of the transfer. Subdivision 126-A of the Income Tax Assessment Act 1997 is unchanged. A transfer between spouses or former spouses under a court order or Binding Financial Agreement does not trigger CGT at the time, but the person who receives the asset takes on its tax history and pays the tax when they sell.
 
 ### Does a transferred property keep its negative gearing?
 

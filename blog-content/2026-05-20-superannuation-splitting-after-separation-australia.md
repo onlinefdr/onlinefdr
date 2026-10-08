@@ -7,6 +7,10 @@ meta_description: "Learn how superannuation splitting works in Australian family
 related_pages:
   - /financial-settlement/
   - /book/
+related_posts:
+  - duty-of-disclosure-financial-settlement-australia
+  - higher-earner-bigger-share-property-settlement-australia
+  - spousal-maintenance-after-separation-australia
 reading_time: 8
 hero_image: "superannuation-splitting-after-separation-australia-hero.jpg"
 tldr: "Under Australian family law, superannuation is treated as property and can be divided between separating couples. It must be disclosed, valued, and included in the property pool. Splitting requires Consent Orders or a Binding Financial Agreement; informal agreements are unenforceable. You do not always have to split your super; offsetting against other assets is an option. Family Dispute Resolution is the fastest, most cost-effective way to negotiate a fair outcome and formalise it legally."

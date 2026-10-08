@@ -6,7 +6,15 @@
     <atom:link href="https://onlinefdr.com.au/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Plain-language, statute-accurate guidance on Family Dispute Resolution, parenting, and property settlement under the Family Law Act 1975.</description>
     <language>en-AU</language>
-    <lastBuildDate>Tue, 06 Oct 2026 09:00:00 +1000</lastBuildDate>
+    <lastBuildDate>Thu, 08 Oct 2026 09:00:00 +1000</lastBuildDate>
+    <item>
+      <title>How the 2026 budget CGT changes impact your property settlement</title>
+      <link>https://onlinefdr.com.au/blog/budget-cgt-changes-property-settlement/</link>
+      <guid isPermaLink="true">https://onlinefdr.com.au/blog/budget-cgt-changes-property-settlement/</guid>
+      <category>Financial Settlement</category>
+      <pubDate>Thu, 08 Oct 2026 09:00:00 +1000</pubDate>
+      <description>Understand how the 2026 Federal Budget CGT and negative gearing changes affect Australian family law property settlements and trust distributions.</description>
+    </item>
     <item>
       <title>The CGT and negative gearing changes are now law: what it means for your property settlement</title>
       <link>https://onlinefdr.com.au/blog/cgt-negative-gearing-changes-law-property-settlement/</link>
@@ -190,14 +198,6 @@
       <category>Financial Settlement</category>
       <pubDate>Wed, 20 May 2026 09:00:00 +1000</pubDate>
       <description>Learn how superannuation splitting works in Australian family law property settlements, including the 4-step process, Consent Orders, and duty of disclosure.</description>
-    </item>
-    <item>
-      <title>How the 2026 budget CGT changes impact your property settlement</title>
-      <link>https://onlinefdr.com.au/blog/budget-cgt-changes-property-settlement/</link>
-      <guid isPermaLink="true">https://onlinefdr.com.au/blog/budget-cgt-changes-property-settlement/</guid>
-      <category>Financial Settlement</category>
-      <pubDate>Tue, 19 May 2026 09:00:00 +1000</pubDate>
-      <description>Understand how the 2026 Federal Budget CGT and negative gearing changes affect Australian family law property settlements and trust distributions.</description>
     </item>
   </channel>
 </rss>

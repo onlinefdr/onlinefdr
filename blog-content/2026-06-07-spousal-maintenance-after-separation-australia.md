@@ -7,6 +7,9 @@ meta_description: "Spousal maintenance is Australia's version of alimony: suppor
 related_pages:
   - /financial-settlement/
   - /how-it-works/
+related_posts:
+  - higher-earner-bigger-share-property-settlement-australia
+  - duty-of-disclosure-financial-settlement-australia
 reading_time: 8
 hero_image: "spousal-maintenance-after-separation-australia-hero.jpg"
 hero_alt: "An Australian flag and an American flag, both weathered and slightly torn, lie crumpled and overlapping at one corner on an ochre dusted floor."

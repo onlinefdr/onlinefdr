@@ -8,9 +8,13 @@ related_pages:
   - /financial-settlement/
   - /book/
 reading_time: 8
+updated: 2026-10-08
+superseded: true
 hero_image: "budget-cgt-changes-property-settlement-hero.jpg"
 tldr: "The 2026 Federal Budget proposes major changes to Capital Gains Tax and negative gearing from 1 July 2027, with a 30% minimum tax on discretionary trusts from 1 July 2028. If legislated, these reforms will substantially increase the embedded tax liability in investment properties, shares, and trust structures, directly affecting how the property pool is valued and divided. CGT rollover relief continues to apply between separating spouses through Consent Orders or a Binding Financial Agreement, and Family Dispute Resolution allows parties to negotiate tax-aware settlements efficiently."
 ---
+
+> **Update, October 2026:** These changes have now passed Parliament, and the final law differs from the Budget announcement. Gains made before 1 July 2027 keep the 50 percent discount, so the pressure to settle before that date is much lower than this post suggests, and the family trust tax is still not law. For the rules as they now stand, read [The CGT and negative gearing changes are now law](/blog/cgt-negative-gearing-changes-law-property-settlement/).
 
 The 2026 Federal Budget has announced sweeping proposed changes to Capital Gains Tax and negative gearing that, if legislated, will fundamentally alter how separating couples divide their assets. If you are navigating a property settlement right now, understanding these reforms is not optional; it is essential to protecting your financial future.
 
