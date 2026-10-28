@@ -13,6 +13,7 @@ related_posts:
 reading_time: 8
 hero_image: "duty-of-disclosure-financial-settlement-australia-hero.jpg"
 tldr: "The duty of full and frank financial disclosure was elevated from court Rules into the Family Law Act 1975 on 10 June 2025, in sections 71B (married), 90RI (de facto), and 90YJA (Western Australian de facto). The duty applies from the start of pre-action through to the end of proceedings. FDR Practitioners now have a parallel statutory obligation to inform parties about the duty before financial mediation begins."
+updated: 2026-10-28
 ---
 
 Every separating couple in Australia who reaches the financial side of their split runs into the same instruction from lawyers, mediators, and the court itself: disclose everything. Full and frank disclosure. No exceptions, no rounding down, no leaving things out because they feel personal or because the other party would not know to ask.
@@ -27,9 +28,9 @@ That sentence does the work. The rest of this post unpacks each part of it.
 
 ## What changed on 10 June 2025
 
-Before 10 June 2025, the duty of disclosure lived in the Federal Circuit and Family Court of Australia (Family Law) Rules 2021, principally in Rule 6.01. The duty was binding and supported by a long line of authority, but it was a procedural rule rather than a statutory provision.
+Before 10 June 2025, the duty of disclosure lived in the [Federal Circuit and Family Court of Australia (Family Law) Rules 2021](https://www.legislation.gov.au/F2021L01197/latest/text), principally in Rule 6.01. The duty was binding and supported by a long line of authority, but it was a procedural rule rather than a statutory provision.
 
-The Family Law Amendment Act 2024 changed that. From 10 June 2025, the duty was elevated into the Family Law Act 1975 itself, in three new sections: section 71B for married parties, section 90RI for non-Western-Australian de facto parties, and section 90YJA for Western Australian de facto parties. The Rules continue to apply, with cross-references to the new statutory sections. The substance of the duty did not change; what changed was its statutory force, and the shift brought a new parallel obligation onto legal practitioners and FDR practitioners, addressed below.
+The [Family Law Amendment Act 2024](https://www.legislation.gov.au/C2024A00118/latest/text) changed that. From 10 June 2025, the duty was elevated into the [Family Law Act 1975](https://www.legislation.gov.au/C2004A00275/latest/text) itself, in three new sections: section 71B for married parties, section 90RI for non-Western-Australian de facto parties, and section 90YJA for Western Australian de facto parties. The Rules continue to apply, with cross-references to the new statutory sections. The substance of the duty did not change; what changed was its statutory force, and the shift brought a new parallel obligation onto legal practitioners and FDR practitioners, addressed below.
 
 ## The three sections: 71B, 90RI, 90YJA
 
@@ -47,7 +48,7 @@ The duty extends to information held by third parties where the party can obtain
 
 ## When the duty starts and when it ends
 
-The duty starts at the pre-action stage, before any court application is filed. Once parties begin to prepare for a financial proceeding, the duty is on. Where a matter is being negotiated through Family Dispute Resolution rather than through litigation, the duty applies from the start of that process too.
+The duty starts at the [pre-action stage](https://www.fcfcoa.gov.au/fl/pubs/pre-action-financial), before any court application is filed. Once parties begin to prepare for a financial proceeding, the duty is on. Where a matter is being negotiated through Family Dispute Resolution rather than through litigation, the duty applies from the start of that process too.
 
 The duty continues throughout any proceeding until the proceeding is finalised. New information that becomes relevant during the proceeding must be disclosed as it arises. The duty does not end when a party has handed over a first batch of documents; it is ongoing.
 
@@ -55,7 +56,7 @@ For matters that resolve outside court through Consent Orders or a Binding Finan
 
 ## What you must disclose
 
-The Family Law Rules set out categories of information and documents that must be disclosed in a financial matter. The list is not exhaustive; it is a floor, not a ceiling.
+The Family Law Rules set out categories of information and documents that must be disclosed in a financial matter. The list is not exhaustive; it is a floor, not a ceiling. The Federal Circuit and Family Court of Australia summarises these categories in its [duty of disclosure brochure](https://www.fcfcoa.gov.au/fl/pubs/duty-disclosure).
 
 The core categories include earnings from employment and any other source, interests in real property, interests in personal property of value, interests in superannuation funds, interests in companies, partnerships, and trusts, financial resources including a deceased estate where the party is a named beneficiary and the estate is in administration, liabilities of every kind including taxation and family loans, and any disposals of property in the relevant lookback period.
 

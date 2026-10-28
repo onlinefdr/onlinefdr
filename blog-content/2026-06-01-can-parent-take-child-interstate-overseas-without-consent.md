@@ -10,6 +10,7 @@ related_pages:
 reading_time: 9
 hero_image: "can-parent-take-child-interstate-overseas-without-consent-hero.jpg"
 tldr: "Moving a child interstate and taking a child overseas are different legal questions. An interstate move is not automatically banned, but a court can order a child returned. Taking a child overseas can be a criminal offence where parenting orders exist or a case is pending. A passport needs both parents' consent, and the Family Law Watchlist can stop a child leaving Australia."
+updated: 2026-10-28
 ---
 
 Few questions cause more panic after separation than whether the other parent can take the children away. The honest answer depends on one thing most people skip past: are we talking about a move within Australia, or out of it? The law treats those two situations very differently. Here is how each one works, and what you can do.
@@ -18,7 +19,7 @@ Few questions cause more panic after separation than whether the other parent ca
 
 Start here, because most online answers blur it. Moving a child to another part of Australia and taking a child out of the country are governed by different rules. One is not a crime on its own. The other can be. Treat them as the same question and you will reach the wrong answer.
 
-The rest of this article splits along that line. First, moving within Australia, where consent, court orders, and the child's best interests do the work. Then, leaving Australia, where the Family Law Act 1975 adds criminal offences, passport rules, the Family Law Watchlist, and the Hague Convention on top.
+The rest of this article splits along that line. First, moving within Australia, where consent, court orders, and the child's best interests do the work. Then, leaving Australia, where the [Family Law Act 1975](https://www.legislation.gov.au/C2004A00275/latest/text) adds criminal offences, passport rules, the Family Law Watchlist, and the Hague Convention on top.
 
 ## Can you move interstate without the other parent's consent?
 
@@ -54,11 +55,11 @@ That does not leave a worried parent powerless. Two practical safeguards work ev
 
 ## A child's passport needs both parents' consent
 
-Under the Australian Passports Act 2005, an Australian passport cannot be issued to a child under eighteen unless everyone with parental responsibility for the child consents. In practice that usually means both parents have to sign the application. No passport, no international travel, whatever else is going on.
+Under the Australian Passports Act 2005, an Australian passport cannot be issued to a child under eighteen unless [everyone with parental responsibility for the child consents](https://www.passports.gov.au/consent). In practice that usually means both parents have to sign the application. No passport, no international travel, whatever else is going on.
 
 If one parent will not consent, the other has two routes. They can ask the court to make orders allowing the passport, or they can apply to the Department of Foreign Affairs and Trade to issue a passport in special circumstances, under Section 11 of the Australian Passports Act 2005 and the Australian Passports Determination 2015. The court cannot force the Minister to issue a passport, but it can grant one parent sole responsibility for the passport decision.
 
-If you fear the other parent might apply for a passport without telling you, you can lodge a Child Alert request with the Australian Passport Office. A Child Alert flags any future application so it gets close scrutiny. It does not guarantee refusal, and it does not cancel a passport the child already holds. A Child Alert lasts twelve months unless a court order backs it.
+If you fear the other parent might apply for a passport without telling you, you can lodge a [Child Alert request](https://passports.gov.au/passports-explained/childrens-passports/child-alert-requests) with the Australian Passport Office. A Child Alert flags any future application so it gets close scrutiny. It does not guarantee refusal, and it does not cancel a passport the child already holds. A Child Alert lasts twelve months unless a court order backs it.
 
 ## Did removing equal shared responsibility change the passport rule?
 
@@ -70,9 +71,9 @@ It is only different where a court has actually granted one parent sole parental
 
 ## The Family Law Watchlist can stop a child leaving
 
-The Family Law Watchlist, once called the Airport Watchlist, is run by the Australian Federal Police. If a child's name is on it, the police can stop the child leaving the country through any airport or seaport. It is the practical tool for a parent who fears the child will be taken overseas.
+The Family Law Watchlist, once called the Airport Watchlist, is run by the [Australian Federal Police](https://afp.gov.au/our-services/national-policing-services/family-law-watchlist). If a child's name is on it, the police can stop the child leaving the country through any airport or seaport. It is the practical tool for a parent who fears the child will be taken overseas.
 
-You cannot add a child yourself. You apply to the Federal Circuit and Family Court of Australia for an order that limits or prevents the child travelling overseas and asks the police to place the child on the Watchlist. Once the application is filed, the child can be put on the Watchlist straight away, even before the first court date. The Family Law Act also restrains both parents from removing the child once that application is on foot.
+You cannot add a child yourself. You apply to the [Federal Circuit and Family Court of Australia](https://www.fcfcoa.gov.au/fl/children/relocation-travel) for an order that limits or prevents the child travelling overseas and asks the police to place the child on the Watchlist. Once the application is filed, the child can be put on the Watchlist straight away, even before the first court date. The Family Law Act also restrains both parents from removing the child once that application is on foot.
 
 Removal works the same way in reverse. The police cannot take a child off the Watchlist without a court order. So if you later agree the child can travel, or want to travel with the child yourself, you have to go back to the court to have the name removed before the trip. Leave it too late and the child can be stopped at the airport, whoever they are with.
 
@@ -80,7 +81,7 @@ Removal works the same way in reverse. The police cannot take a child off the Wa
 
 If a child has already been taken or kept overseas without consent, the main avenue back is the Hague Convention on the Civil Aspects of International Child Abduction. It is an international agreement designed to secure the prompt return of a child wrongfully removed from the country where they normally live.
 
-Australia gives effect to the Convention through the Family Law (Child Abduction Convention) Regulations 1986, made under Section 111B of the Family Law Act 1975. The Attorney-General's Department is the central authority that handles applications. A parent in this situation should contact the department on 1800 100 480, and may also need legal advice in the country where the child has been taken.
+Australia gives effect to the Convention through the Family Law (Child Abduction Convention) Regulations 1986, made under Section 111B of the Family Law Act 1975. The [Attorney-General's Department](https://www.ag.gov.au/families-and-marriage/international-family-law-and-children/international-parental-child-abduction) is the central authority that handles applications. A parent in this situation should contact the department on 1800 100 480, and may also need legal advice in the country where the child has been taken.
 
 The Convention only works between Australia and other countries that have also signed it. If a child is taken to a country that is not a member, there is no treaty to compel a return, and the options are slower and harder, often involving the local courts of that country. This is one reason acting early, before a child leaves, matters so much.
 

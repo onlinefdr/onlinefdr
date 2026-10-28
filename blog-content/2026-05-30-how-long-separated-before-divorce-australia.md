@@ -10,13 +10,14 @@ related_pages:
 reading_time: 7
 hero_image: "how-long-separated-before-divorce-australia-hero.jpg"
 tldr: "One rule now applies to everyone: you must be separated for at least 12 months and one day before you can apply for a divorce. The extra steps for couples married under two years were removed on 10 June 2025. A divorce only ends the marriage. It does not sort out parenting or property, and those have their own deadlines."
+updated: 2026-10-28
 ---
 
 If you have just separated, one of the first questions is usually how long you have to wait before you can get divorced. The answer is simpler than most people expect, and it changed for the better in 2025. Here is what the law actually requires, how the timing is counted, and what a divorce does and does not do for you.
 
 ## How long do you have to be separated first?
 
-The only ground for divorce in Australia is that the marriage has broken down for good. You show that by living separated for at least 12 months before you apply. Fault does not come into it. This comes from section 48 of the Family Law Act 1975.
+The only ground for divorce in Australia is that the marriage has broken down for good. You show that by living separated for at least 12 months before you apply. Fault does not come into it. This comes from section 48 of the [Family Law Act 1975](https://www.legislation.gov.au/C2004A00275/latest/text).
 
 In practice that means 12 months and one day, because the day you separate does not count. If you separated on 7 November, you can file from 8 November the following year. Getting the date right matters, because filing even a day early means the application can be rejected and you have to start again.
 
@@ -26,7 +27,7 @@ The court also will not grant a divorce if it thinks there is a real chance you 
 
 Until 10 June 2025, couples married for less than two years had to take an extra step. They had to file a certificate saying they had considered counselling, or ask the court for permission to apply. That requirement is gone, and the same rule now applies to everyone.
 
-The change came from the Family Law Amendment Act 2024, which repealed sections 44(1B) and 44(1C) of the Family Law Act. So if you married recently and the relationship has ended, you no longer have to prove you tried counselling or seek the court's leave first.
+The change came from the [Family Law Amendment Act 2024](https://www.legislation.gov.au/C2024A00118/asmade/text), which repealed sections 44(1B) and 44(1C) of the Family Law Act. So if you married recently and the relationship has ended, you no longer have to prove you tried counselling or seek the court's leave first.
 
 The reason for the change is practical. The old rule added cost, delay, and an extra hurdle at a hard time, and it could be unsafe where there had been family violence. Removing it puts everyone on the same footing: the only timing rule left is the 12-month separation, whatever the length of the marriage.
 
@@ -56,7 +57,7 @@ If your marriage certificate is not in English, you will need a translation to f
 
 ## Does a divorce sort out property and parenting?
 
-No. A divorce only ends the marriage itself. It does not divide your property, deal with superannuation, or set the arrangements for your children. Those are three separate matters, and a divorce order says nothing about any of them, even when the paperwork feels final.
+No. A divorce only ends the marriage itself. It does not divide your property, deal with superannuation, or set the arrangements for your children. Those are three separate matters, and a divorce order says nothing about any of them, even when the paperwork feels final. The Federal Circuit and Family Court confirms this on its [divorce overview page](https://www.fcfcoa.gov.au/fl/divorce/divorce-overview).
 
 This is one of the most common and most costly misunderstandings in family law. People assume the divorce deals with everything, then find they are legally single but still have no agreement about the house, the super, or who the children live with. The divorce and the practical sorting-out are two different jobs, and you handle them on separate tracks.
 
@@ -66,7 +67,7 @@ That also means you can deal with parenting and property without waiting for a d
 
 You do not have to be divorced, or even eligible to apply yet, before you sort out parenting and property. You can start as soon as you separate. Waiting can actually cost you, because some deadlines run from the divorce, not from the day you separated.
 
-Once a divorce becomes final, a married couple has only 12 months to apply for property orders. After that you need the court's permission, which is not guaranteed. De facto couples have their own deadline of two years from the end of the relationship. Either way, leaving property unresolved while time passes can quietly close a door that was open.
+Once a divorce becomes final, a married couple has only [12 months to apply for property orders](https://www.legalaid.nsw.gov.au/my-problem-is-about/my-family-or-relationship/finance-and-property). After that you need the court's permission, which is not guaranteed. De facto couples have their own deadline of two years from the end of the relationship. Either way, leaving property unresolved while time passes can quietly close a door that was open.
 
 For most people the better path is to settle parenting and property by agreement, rather than running everything through a courtroom. That is what Family Dispute Resolution is for. The practitioner assigned to your matter helps each of you shape and reality-check the proposals you put to each other, so you reach arrangements you both understand and can live with. If you want to see how that works, start with [what FDR is](/what-is-fdr/) and how it applies to a [financial settlement](/financial-settlement/). A Free Discovery Call is the simplest first step.
 

@@ -15,6 +15,7 @@ hero_image: "spousal-maintenance-after-separation-australia-hero.jpg"
 hero_alt: "An Australian flag and an American flag, both weathered and slightly torn, lie crumpled and overlapping at one corner on an ochre dusted floor."
 faq: true
 tldr: "Spousal maintenance is the Australian equivalent of alimony: support one former partner pays the other after separation, where that person cannot yet support themselves. It is never automatic, has no formula, and rests on a two-part test of need and capacity under the Family Law Act 1975. Most orders are short and transitional. It is separate from both the property split and child support, and can be agreed in Family Dispute Resolution."
+updated: 2026-10-28
 ---
 
 "Alimony" is a word most Australians know from American television, not from anything in Australian law. The local version is called spousal maintenance, and it is one of the most misunderstood parts of separating. It is not automatic, it is not a fixed slice of anyone's pay, and it is separate from both the property split and child support.
@@ -23,7 +24,7 @@ This post explains what spousal maintenance is, who can ask for it, what a court
 
 ## What is spousal maintenance?
 
-Spousal maintenance is financial support that one former partner pays the other after separation, where that other person cannot yet meet their own reasonable living costs. The right sits in Section 72 of the Family Law Act 1975, and the power to order it sits in Section 74.
+Spousal maintenance is financial support that one former partner pays the other after separation, where that other person cannot yet meet their own reasonable living costs. The right sits in Section 72 of the [Family Law Act 1975](https://www.legislation.gov.au/C2004A00275/latest/text), and the power to order it sits in Section 74.
 
 It is the closest thing Australia has to alimony, but the comparison only goes so far. In the United States, alimony rules vary widely from state to state, and some allow long-term or even lifelong support. Australia takes a narrower view: maintenance is needs based, never automatic, and usually meant to be temporary.
 
@@ -53,7 +54,7 @@ There is no formula and no set percentage. Two couples with similar incomes can 
 
 ## Family violence is now a factor
 
-Since 10 June 2025, courts must take the effect of family violence into account when deciding spousal maintenance. The Family Law Amendment Act 2024 added Section 75(2)(aa), which directs the court to consider the effect of family violence, including economic and financial abuse, on the person asking for support.
+Since 10 June 2025, courts must take the effect of family violence into account when deciding spousal maintenance. The [Family Law Amendment Act 2024](https://www.legislation.gov.au/C2024A00118/asmade/text) added Section 75(2)(aa), which directs the court to consider the effect of family violence, including economic and financial abuse, on the person asking for support.
 
 This recognises something victim survivors have long understood: abuse can damage a person's earning capacity and financial independence well beyond the relationship itself. Controlling access to money, sabotaging work or study, or running up debts in someone's name can leave lasting financial harm, and that harm can now form part of the maintenance picture.
 
@@ -61,13 +62,13 @@ This recognises something victim survivors have long understood: abuse can damag
 
 ## Spousal maintenance is not child support
 
-These two get confused constantly, and they are completely different schemes. Child support is money for the day-to-day costs of raising children. It is worked out by a formula and administered by Services Australia under the Child Support (Assessment) Act 1989, not by the family law courts.
+These two get confused constantly, and they are completely different schemes. Child support is money for the day-to-day costs of raising children. It is worked out by a formula and administered by Services Australia under the [Child Support (Assessment) Act 1989](https://www.legislation.gov.au/C2004A03872/latest/text), not by the family law courts.
 
 Spousal maintenance, by contrast, is support for an adult former partner under the Family Law Act 1975, based on need and capacity rather than a formula. The two can run at the same time. A parent caring for young children might receive child support for the children and, separately, spousal maintenance for themselves while they get back into work.
 
 ## Time limits and types of order
 
-There are strict deadlines to apply. For married couples, an application must be made within 12 months of the divorce becoming final. For de facto couples, the window is two years from the date of separation. These limits sit in Section 44 of the Family Law Act 1975, and going outside them needs the court's permission.
+There are [strict deadlines to apply](https://www.legalaid.vic.gov.au/financial-support-from-an-ex-partner). For married couples, an application must be made within 12 months of the divorce becoming final. For de facto couples, the window is two years from the date of separation. These limits sit in Section 44 of the Family Law Act 1975, and going outside them needs the court's permission.
 
 Maintenance also comes in different forms. Section 77 allows urgent maintenance where someone needs immediate help before the full financial picture is known. Beyond that, a court can order interim maintenance while a matter is being worked out, and final maintenance once it is resolved. Payments can be periodic, such as weekly or monthly, or made as a single lump sum.
 
@@ -83,7 +84,7 @@ Spousal maintenance is a financial matter, so it can be resolved by agreement in
 
 Where an ongoing payment does make sense, perhaps because the property pool is too small to cover the need, parties can agree on standalone maintenance and record it in Consent Orders or a Binding Financial Agreement.
 
-The two routes are not the same if payments later stop. Maintenance in a court order, including Consent Orders, can be collected by Services Australia and enforced by the court. Maintenance in a Binding Financial Agreement has to be enforced as a private contract, which is slower and more expensive.
+The two routes are not the same if payments later stop. Maintenance in a court order, including Consent Orders, can be [collected by Services Australia](https://www.servicesaustralia.gov.au/registering-australian-maintenance-order-or-court-registered-maintenance-agreement) and enforced by the court. Maintenance in a Binding Financial Agreement has to be enforced as a private contract, which is slower and more expensive.
 
 Because this is a financial matter and not a parenting one, it needs only the party-signed Genuine Steps Certificate if court orders are later sought, not a Section 60I certificate, which applies only to parenting applications.
 

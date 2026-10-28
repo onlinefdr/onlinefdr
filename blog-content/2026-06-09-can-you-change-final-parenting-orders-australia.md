@@ -12,6 +12,7 @@ hero_image: "can-you-change-final-parenting-orders-australia-hero.jpg"
 hero_alt: "The same girl shown at four ages, around five, nine, thirteen and sixteen, standing in a row that grows taller from left to right, all in the same navy school uniform and crest with backpacks, against a soft pale-blue background; the youngest glances up toward her older selves."
 faq: true
 tldr: "Final parenting orders are not permanent. If both parents agree, they can be changed at any time through a parenting plan or consent orders. If they do not agree, a parent has to satisfy a court that there has been a significant change of circumstances since the orders were made, and that reconsidering them is in the child's best interests. The threshold sits in Section 65DAAA of the Family Law Act 1975. Either way, a court application to change parenting orders generally requires a genuine effort at Family Dispute Resolution first."
+updated: 2026-10-28
 ---
 
 Final parenting orders sound permanent. The name suggests the matter is closed for good. It is not. Parenting orders can be changed, but how you go about it depends on one thing above all: whether you and the other parent agree.
@@ -20,9 +21,9 @@ This post explains when final parenting orders can be changed, what counts as a 
 
 ## Can final parenting orders be changed?
 
-Yes. Despite the name, final parenting orders are not locked in until a child turns 18. Children grow, circumstances shift, and arrangements that suited a toddler may not suit a teenager. The law allows orders to be changed, but it does not make it easy by design.
+Yes. Despite the name, final parenting orders are not locked in until a child turns 18. Children grow, circumstances shift, and arrangements that suited a toddler may not suit a teenager. The [law allows orders to be changed](https://www.legalaid.nsw.gov.au/my-problem-is-about/my-family-or-relationship/parenting/changing-your-parenting-arrangements), but it does not make it easy by design.
 
-There are two routes. If both parents agree, orders can be changed at any time. If they do not agree, one parent has to convince a court that enough has changed to justify looking at the orders again. The reason for that hurdle is straightforward: putting children through one court case after another is rarely good for them, so settled orders are meant to stay settled unless there is a genuine reason to revisit them. This rule is now written into the Family Law Act 1975 at Section 65DAAA.
+There are two routes. If both parents agree, orders can be changed at any time. If they do not agree, one parent has to convince a court that enough has changed to justify looking at the orders again. The reason for that hurdle is straightforward: putting children through one court case after another is rarely good for them, so settled orders are meant to stay settled unless there is a genuine reason to revisit them. This rule is now written into the [Family Law Act 1975](https://www.legislation.gov.au/C2004A00275/latest/text) at Section 65DAAA.
 
 ## What counts as a "significant change"?
 
@@ -40,7 +41,7 @@ Compare that with a parent who wants to move a Friday changeover an hour later b
 
 This is the simplest path. When both parents agree, there is no threshold to meet and nothing to prove. The Act lets a court reconsider final orders with everyone's consent under Section 65DAAA, so agreement takes the significant-change test out of the picture entirely.
 
-You have two main options. You can write the new arrangement into a parenting plan, which is a signed, dated agreement between you. A parenting plan is flexible and free to make, but it is not a court order, so it cannot be enforced if one of you later stops following it. If you want the new arrangement to be binding, you can ask the court to turn it into consent orders, which carry the same weight as any other parenting order.
+You have two main options. You can write the new arrangement into a parenting plan, which is a signed, dated agreement between you. A parenting plan is flexible and free to make, but it is not a court order, so it cannot be enforced if one of you later stops following it. If you want the new arrangement to be binding, you can ask the court to turn it into [consent orders](https://www.fcfcoa.gov.au/hdi/apply-consent-orders), which carry the same weight as any other parenting order.
 
 Family Dispute Resolution is the usual place to work out the new arrangement before you write it down.
 
@@ -54,7 +55,7 @@ So a disagreement does two things at once: it sends the question to court, and i
 
 ## Do we have to go to court?
 
-Usually you have to try mediation first. An application to change parenting orders is a parenting application under the Family Law Act 1975, so it triggers the Section 60I requirement to make a genuine effort at Family Dispute Resolution before you can file.
+Usually you have to try mediation first. An application to change parenting orders is a parenting application under the Family Law Act 1975, so it triggers the Section 60I requirement to make a [genuine effort at Family Dispute Resolution](https://www.fcfcoa.gov.au/fl/family-dispute-resolution) before you can file.
 
 The court will not accept the application unless you provide a valid [Section 60I certificate](/blog/section-60i-certificate-vs-genuine-steps-certificate/) from an accredited Family Dispute Resolution Practitioner, or the court grants an exemption. Exemptions are limited and decided on the facts, covering situations such as family violence or a risk to the child, urgency, or a parent who cannot take part effectively.
 

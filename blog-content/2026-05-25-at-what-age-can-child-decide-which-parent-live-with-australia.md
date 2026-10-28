@@ -10,6 +10,7 @@ related_pages:
 reading_time: 9
 hero_image: "at-what-age-can-child-decide-which-parent-live-with-australia-hero.jpg"
 tldr: "There is no age in Australian law at which a child can decide which parent to live with. Section 60CC(2)(b) of the Family Law Act 1975, as amended in 2024, requires a court to consider any views expressed by the child, but the High Court has confirmed in Bondelmonte v Bondelmonte that those views are not decisive at any age. A child has the right to be heard. A child does not have the right to decide."
+updated: 2026-10-28
 ---
 Search for this question and most Australian websites will give you a version of the same hedged answer. There is no fixed age, they say, but children's views start to matter around 12, and by 14 they carry real weight, and by 16 the court often defers to them. That answer sounds careful. It is also misleading. It mixes a legal rule, a heuristic, and a practical observation into a single sentence and leaves parents thinking that the question has a numerical answer somewhere between 12 and 16.
 
@@ -17,11 +18,11 @@ It does not. The legal answer is simpler than the hedged versions suggest, and t
 
 ## The short answer is no age, ever.
 
-There is no age at which an Australian child has the legal right to decide which parent they live with. The Family Law Act 1975 contains no age threshold and the Federal Circuit and Family Court of Australia applies none. A child may express a preference; it is not binding.
+There is no age at which an Australian child has the legal right to decide which parent they live with. The [Family Law Act 1975](https://www.legislation.gov.au/C2004A00275/latest/text) contains no age threshold and the Federal Circuit and Family Court of Australia applies none. A child may express a preference; it is not binding.
 
 ## What the Family Law Act 1975 actually says.
 
-The relevant provision is Section 60CC, rewritten by the Family Law Amendment Act 2023 and in force from 6 May 2024. It sets out six general considerations a court must take into account when deciding what is in a child's best interests. The child's views are one of the six.
+The relevant provision is Section 60CC, rewritten by the [Family Law Amendment Act 2023](https://www.legislation.gov.au/C2023A00087/latest/text) and in force from 6 May 2024. It sets out six general considerations a court must take into account when deciding what is in a child's best interests. The child's views are one of the six.
 
 > Any views expressed by the child.
 
@@ -47,11 +48,11 @@ None of those age thresholds gives a child a legal right to choose. The weightin
 
 A child's views are not usually heard through the child speaking to a judge. Children are not parties to parenting proceedings and are not normally asked to testify or choose between parents. There are four pathways for a child's views to enter a process, and which applies depends on circumstances.
 
-The first is through a family consultant or family report writer, an experienced social worker or psychologist appointed by the court to interview the child and the parents and produce a report. The report sets out the child's views, the consultant's assessment of how those views were formed, and a recommendation about arrangements. Family reports carry significant weight in contested proceedings.
+The first is through a family consultant or [family report writer](https://www.fcfcoa.gov.au/node/754), an experienced social worker or psychologist appointed by the court to interview the child and the parents and produce a report. The report sets out the child's views, the consultant's assessment of how those views were formed, and a recommendation about arrangements. Family reports carry significant weight in contested proceedings.
 
-The second is through an Independent Children's Lawyer, appointed by the court in cases involving complexity, family violence, or substantial dispute. Since 6 May 2024, Section 68LA(5A) of the Family Law Act requires an Independent Children's Lawyer to meet with the child and give them an opportunity to express their views, unless the child is under five, does not wish to meet, or exceptional circumstances apply. The Independent Children's Lawyer represents the child's best interests, which is not always the same as the child's stated preference.
+The second is through an [Independent Children's Lawyer](https://www.fcfcoa.gov.au/fl/children/icl), appointed by the court in cases involving complexity, family violence, or substantial dispute. Since 6 May 2024, Section 68LA(5A) of the Family Law Act requires an Independent Children's Lawyer to meet with the child and give them an opportunity to express their views, unless the child is under five, does not wish to meet, or exceptional circumstances apply. The Independent Children's Lawyer represents the child's best interests, which is not always the same as the child's stated preference.
 
-The third is through child-inclusive Family Dispute Resolution, available through some accredited FDR practices and through services such as Victoria Legal Aid's Kids Talk programme. A trained child consultant meets separately with the children and brings their perspective back into the mediation process. This pathway operates entirely outside the court system. It works best when both parents agree to it and when the children are old enough to participate meaningfully.
+The third is through child-inclusive Family Dispute Resolution, available through some accredited FDR practices and through services such as [Victoria Legal Aid's Kids Talk programme](https://legalaid.vic.gov.au/kids-talk). A trained child consultant meets separately with the children and brings their perspective back into the mediation process. This pathway operates entirely outside the court system. It works best when both parents agree to it and when the children are old enough to participate meaningfully.
 
 The fourth, and most common, is through the parents themselves. In most separations, parenting arrangements are reached privately, by agreement, without any court involvement or formal child interview. Both parents observe their child, talk to their child, and bring what they have learned into their decisions about care. The Family Dispute Resolution process is the structured way to do this work together.
 

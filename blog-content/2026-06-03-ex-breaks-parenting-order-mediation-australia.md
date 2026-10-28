@@ -10,9 +10,10 @@ tldr: "If your ex breaks a parenting order, you generally have to make a genuine
 related_pages:
   - /section-60i/
   - /parenting/
+updated: 2026-10-28
 ---
 
-In most cases, yes. If the other parent breaks a parenting order, you generally have to make a genuine effort at Family Dispute Resolution before you can apply to the court about it. The Family Law Act 1975 sets that out in Section 60I. The Act makes one narrow exception for recent, serious breaches, and the path you choose, enforce the order or change it, shapes what happens next.
+In most cases, yes. If the other parent breaks a parenting order, you generally have to make a genuine effort at Family Dispute Resolution before you can apply to the court about it. The [Family Law Act 1975](https://www.legislation.gov.au/C2004A00275/latest/text) sets that out in Section 60I. The Act makes one narrow exception for recent, serious breaches, and the path you choose, enforce the order or change it, shapes what happens next.
 
 ## Is it a parenting order, or just a parenting plan?
 
@@ -34,13 +35,13 @@ Until a court changes the order, you have to keep following it yourself, even if
 
 ## Two paths: enforce the order or change it
 
-There are two different things you might want. If you want the court to enforce the existing order and respond to the breach, that is a contravention application. If the arrangement no longer works and you want different terms, that is an application to change the order.
+There are two different things you might want. If you want the court to enforce the existing order and respond to the breach, that is a [contravention application](https://www.fcfcoa.gov.au/fl/children/compliance-enforcement). If the arrangement no longer works and you want different terms, that is an application to change the order.
 
 Both are parenting applications under Part VII, so both generally trigger the Section 60I requirement to attempt Family Dispute Resolution first. Changing a final order has a further hurdle: a court will not reconsider settled parenting orders without being satisfied there has been a significant change of circumstances, a threshold now set out in Section 65DAAA of the Family Law Act 1975.
 
 ## So do you have to mediate first?
 
-Usually, yes. Section 60I of the Family Law Act 1975 requires a genuine effort at Family Dispute Resolution before a parenting application is filed. Since 10 June 2025, the court must not accept the application for filing unless you file a valid Section 60I certificate or the court grants an exemption.
+Usually, yes. Section 60I of the Family Law Act 1975 requires a genuine effort at Family Dispute Resolution before a parenting application is filed. Since 10 June 2025, the court must not accept the application for filing unless you file a valid [Section 60I certificate](https://www.fcfcoa.gov.au/fl/pubs/comp-fdr) or the court grants an exemption.
 
 That certificate comes from an accredited Family Dispute Resolution Practitioner after you attempt mediation. It is separate from the Genuine Steps Certificate, which the party signs and files, and which initiating parenting applications also require. The two documents do different jobs, and we cover [how the two certificates compare](/blog/section-60i-certificate-vs-genuine-steps-certificate/) in its own article.
 
@@ -68,7 +69,7 @@ The recent-breach ground is one of several exemptions. Section 60I(9) of the Fam
 
 ## How you actually claim an exemption
 
-You have to ask the court for the exemption. In practice you file an Affidavit, Non-Filing of Family Dispute Resolution Certificate, setting out the ground you rely on and the facts behind it. A registrar then decides whether the exemption is made out.
+You have to ask the court for the exemption. In practice you file an [Affidavit, Non-Filing of Family Dispute Resolution Certificate](https://www.fcfcoa.gov.au/fl/forms/affidavit-non-filing), setting out the ground you rely on and the facts behind it. A registrar then decides whether the exemption is made out.
 
 If the exemption is refused, the parenting part of your application is rejected for filing, and you will need to attempt Family Dispute Resolution and obtain a Section 60I certificate before you can re-apply. If you also sought financial or property orders, those can still go ahead on their own.
 

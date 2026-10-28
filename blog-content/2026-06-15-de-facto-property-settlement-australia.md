@@ -12,6 +12,7 @@ faq: true
 hero_image: "de-facto-property-settlement-australia-hero.jpg"
 hero_alt: "A man and a woman sit at opposite ends of a sofa with a gap between them, in a living room half packed into removal boxes."
 tldr: "De facto couples divide property under the same law and the same four step process as married couples, set out in section 90SM of the Family Law Act 1975. The difference is two extra steps first: proving a de facto relationship existed under section 4AA, and clearing the section 90SB gate. There is no automatic 50/50 for anyone, and time together alone does not decide it."
+updated: 2026-10-28
 ---
 
 A man and a woman carried on an intimate relationship for seventeen years. He helped her buy a house and supported her with regular payments. When it ended, she asked a court to divide their property as his de facto partner. The court said no, because across all those years the two had never truly merged their lives into one. Seventeen years was not enough.
@@ -20,7 +21,7 @@ That case, *Jonah & White* [2011] FamCA 221, is a useful place to start, because
 
 ## Yes, the same law, after two extra steps
 
-Once a de facto couple is properly in the system, the answer is yes. The same part of the Family Law Act 1975 divides their property, using the same four step process and the same factors a court applies to married couples. The power sits in section 90SM, which mirrors section 79 for married couples almost word for word.
+Once a de facto couple is properly in the system, the answer is yes. The same part of the [Family Law Act 1975](https://www.legislation.gov.au/C2004A00275/latest/text) divides their property, using the same four step process and the same factors a court applies to married couples. The power sits in section 90SM, which mirrors section 79 for married couples almost word for word.
 
 The difference is not in how the property is divided. It is in getting there. A married couple has a marriage certificate, so the relationship itself is never in doubt. A de facto couple has to clear two steps a married couple never faces: proving the relationship existed at all, and then clearing a gate in the Act before a court can make any property order. Those two steps are where most of the difficulty, and most of the myths, live.
 
@@ -55,7 +56,7 @@ A child does not create a de facto relationship. Two people who were never a cou
 
 This is why the gateway works the way it does. The child limb in section 90SB means a child of the de facto relationship. It lets a couple whose relationship lasted under two years still apply, but only once they have shown a de facto relationship existed. It does not turn a one-night stand, what some now call a 'Tinder Surprise', into one.
 
-None of this leaves the child unprovided for, because child support runs on a separate track. It is based on who the parents are, not on whether they were ever a couple. Both parents have a duty to support their child financially whether they were married, de facto, together briefly, or never lived together at all. That duty sits in the Child Support (Assessment) Act 1989 and is administered by Services Australia, using a formula based on each parent's income and care of the child.
+None of this leaves the child unprovided for, because child support runs on a separate track. It is based on who the parents are, not on whether they were ever a couple. Both parents have a duty to support their child financially whether they were married, de facto, together briefly, or never lived together at all. That duty sits in the [Child Support (Assessment) Act 1989](https://www.legislation.gov.au/C2004A03872/latest/text) and is administered by Services Australia, using a formula based on each parent's income and care of the child.
 
 Arrangements for the child work the same way. Where the child lives and how time is shared are decided under the parenting part of the Family Law Act 1975, on the child's best interests under section 60CC, whatever the parents' relationship was. Those are the disputes a section 60I certificate and Family Dispute Resolution are built for. If parentage itself is in doubt, it can be settled by the birth certificate, a DNA test, or a court before child support is worked out.
 
@@ -73,13 +74,13 @@ Those steps sit in section 90SM for de facto couples and section 79 for married 
 
 ## How long do you have to apply?
 
-A de facto couple has two years from the date they separated to apply to a court for a property settlement or maintenance. That time limit is in section 44 of the Family Law Act 1975. It is a different clock from the one married couples use, and it is an easy one to miss.
+A de facto couple has [two years from the date they separated](https://legalaid.vic.gov.au/de-facto-relationships) to apply to a court for a property settlement or maintenance. That time limit is in section 44 of the Family Law Act 1975. It is a different clock from the one married couples use, and it is an easy one to miss.
 
 A married couple has twelve months from the date their divorce becomes final, which can fall years after they actually separated. A de facto couple has no divorce to start the clock, so the two years runs from separation itself. Apply after the deadline and you need the court's permission, which is not guaranteed. The safest course is to sort property out well inside the two years, by agreement wherever you can.
 
 ## Can you settle it without going to court?
 
-Yes, and most people do. You do not need a court to divide property. If the two of you can agree, you can make that agreement binding in one of two ways: Consent Orders approved by a court, or a Binding Financial Agreement. Both are available to de facto couples.
+Yes, and most people do. You do not need a court to divide property. If the two of you can agree, you can [make that agreement binding](https://www.legalaid.vic.gov.au/find-legal-answers/separation-divorce-and-marriage-annulment/dividing-your-property) in one of two ways: [Consent Orders](https://www.fcfcoa.gov.au/hdi/apply-consent-orders) approved by a court, or a Binding Financial Agreement. Both are available to de facto couples.
 
 For de facto couples, Binding Financial Agreements sit in Part VIIIAB of the Family Law Act 1975, and each person has to get their own legal advice for the agreement to hold. Consent Orders are a court's stamp on terms you have already agreed, without anyone needing to attend a hearing. The two work differently and suit different situations. We set out how [Consent Orders and Binding Financial Agreements compare](/financial-settlement/) on the financial settlement page.
 

@@ -10,6 +10,7 @@ related_pages:
 reading_time: 8
 hero_image: "add-backs-property-settlement-australia-hero.jpg"
 tldr: "From 10 June 2025, the court divides only property that actually exists at the time of trial, under the new section 79(3) of the Family Law Act 1975. The old practice of notionally adding spent or wasted money back into the pool, known as an add-back, is largely over. The Full Court confirmed this in Shinohara and Shinohara in July 2025. Wasted or dissipated money is not ignored, but it is now handled through the contributions assessment in section 79(4) and the current and future circumstances in section 79(5), rather than by inflating the pool."
+updated: 2026-10-28
 ---
 
 One of the most common questions in a financial separation sounds simple. My ex drained the joint account, ran up the credit cards, or spent tens of thousands on legal fees and a new car. Can the court put that money back into the pool before it is divided?
@@ -28,9 +29,9 @@ Before 10 June 2025, the courts recognised three accepted categories of add-back
 
 ## What changed on 10 June 2025
 
-The Family Law Amendment Act 2024 came into force on 10 June 2025 and rewrote the way property settlement is decided. One of the changes went to the very first step: identifying what is in the pool.
+The [Family Law Amendment Act 2024](https://www.legislation.gov.au/C2024A00118/asmade/text) came into force on 10 June 2025 and rewrote the way property settlement is decided. One of the changes went to the very first step: identifying what is in the pool. The Federal Circuit and Family Court summarises the [property changes from 10 June 2025](https://www.fcfcoa.gov.au/news-and-media-centre/fla-changes/fla2024) on its website.
 
-Under the new section 79(3) of the Family Law Act 1975, the court is directed to identify the existing legal and equitable rights and interests in the property of the parties. The word that does the work is existing. The pool is now limited to property that actually exists at the time of the hearing. The equivalent rule for de facto couples sits in section 90SM(3). Property that has been spent, lost, or dissipated is no longer in the pool, because it is no longer property the parties have.
+Under the new section 79(3) of the [Family Law Act 1975](https://www.legislation.gov.au/C2004A00275/latest/text), the court is directed to identify the existing legal and equitable rights and interests in the property of the parties. The word that does the work is existing. The pool is now limited to property that actually exists at the time of the hearing. The equivalent rule for de facto couples sits in section 90SM(3). Property that has been spent, lost, or dissipated is no longer in the pool, because it is no longer property the parties have.
 
 That single word narrows the balance sheet and removes the foundation that add-backs were built on. If the money is gone, there is nothing existing to divide, so there is nothing to add back.
 
@@ -62,7 +63,7 @@ For both parties, the underlying point is that the pool is now a snapshot of wha
 
 ## How this plays out in family dispute resolution
 
-Most separating couples will work out their financial settlement through family dispute resolution rather than a contested hearing. The end of add-backs still shapes those conversations, because the parties are reality-checking the same numbers a court would use.
+Most separating couples will work out their financial settlement through [family dispute resolution](https://www.fcfcoa.gov.au/fl/family-dispute-resolution) rather than a contested hearing. The end of add-backs still shapes those conversations, because the parties are reality-checking the same numbers a court would use.
 
 In mediation, the practitioner does not decide who is right or put a proposal of their own. The practitioner's role is to help each party shape and test the proposals they put to each other. Where one party feels the other has wasted joint money, the practitioner can help both parties separate two questions that the old add-back language used to blur together. First, what does the pool actually contain today, which is now simply the existing assets and liabilities. Second, what adjustment to the percentage split, if any, fairly reflects how money was spent along the way. The practitioner can explain in general terms how a court tends to approach wastage, so each party can factor it into their thinking, but that is general information, not legal advice, and the adjustment itself is a matter for the parties to agree or for a court to decide, not for the practitioner to impose. Keeping those two questions apart, in the order the Act now uses, tends to produce clearer and more durable agreements, because it mirrors how a court would approach the same facts if the matter did not settle.
 

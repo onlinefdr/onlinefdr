@@ -2,7 +2,7 @@
 title: "How much does a divorce cost in Australia?"
 slug: "how-much-does-a-divorce-cost-australia"
 date: 2026-06-05
-updated: 2026-10-06
+updated: 2026-10-28
 category: Financial Settlement
 meta_description: "A divorce costs $1,170 to file in Australia. The real money is in property and parenting, where your path can swing it by tens of thousands."
 related_pages:
@@ -23,7 +23,7 @@ This post pulls the two apart, gives you real figures for each, and explains the
 
 ## What the divorce itself actually costs
 
-A divorce in Australia is the legal order that ends a marriage. Filing an application for divorce in the Federal Circuit and Family Court of Australia costs $1,170. If you hold an eligible government concession card, or you can show financial hardship, that drops to a reduced fee of $390. The fee is set by regulation and usually rises on 1 July each year, so check the court's current figure before you file. Court filing fees do not attract GST.
+A divorce in Australia is the legal order that ends a marriage. [Filing an application for divorce](https://www.fcfcoa.gov.au/fl/divorce/apply) in the Federal Circuit and Family Court of Australia costs $1,170. If you hold an eligible government concession card, or you can show financial hardship, that drops to a reduced fee of $390. The fee is set by regulation and usually rises on 1 July each year, so check the [court's current figure](https://www.fcfcoa.gov.au/fees) before you file. Court filing fees do not attract GST.
 
 That is close to the whole cost if your circumstances are simple. You can apply yourself through the Commonwealth Courts Portal without a lawyer, and many people do. A joint application avoids the need to formally serve the other party, which keeps things simpler again.
 
@@ -49,7 +49,7 @@ The alternative to resolving things by agreement is fighting them out in court, 
 
 ## Even if you start with lawyers, the court usually sends you back
 
-It is worth knowing that the court itself prefers you to try to resolve things first. Before you can file most applications, you have to show you have made a genuine attempt at dispute resolution, through a Section 60I certificate for parenting matters or a Genuine Steps Certificate for financial ones. Even once a matter is on foot, the court can refer the parties to family dispute resolution under section 13C of the Family Law Act. In other words, for most couples the road still leads through mediation. Starting there, rather than after the legal bills have mounted, is usually the cheaper way to arrive.
+It is worth knowing that the court itself prefers you to try to resolve things first. Before you can file most applications, you have to show you have made a [genuine attempt at dispute resolution](https://www.fcfcoa.gov.au/fl/family-dispute-resolution), through a Section 60I certificate for parenting matters or a Genuine Steps Certificate for financial ones. Even once a matter is on foot, the court can refer the parties to family dispute resolution under section 13C of the [Family Law Act](https://www.legislation.gov.au/C2004A00275/latest/text). In other words, for most couples the road still leads through mediation. Starting there, rather than after the legal bills have mounted, is usually the cheaper way to arrive.
 
 ## The framework is the same wherever you resolve
 

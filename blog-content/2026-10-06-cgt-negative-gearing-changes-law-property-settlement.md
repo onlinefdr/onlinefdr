@@ -14,6 +14,7 @@ faq: true
 hero_image: "cgt-negative-gearing-changes-law-property-settlement-hero.jpg"
 hero_alt: "A man in a navy jumper on the front step of a red-brick house hands a single brass key to a woman in a grey jacket on the garden path below, at dusk on a quiet Australian suburban street."
 tldr: "The CGT and negative gearing changes announced in the May 2026 Budget are now law and start on 1 July 2027. Gains made before that date keep the 50 percent discount, so there is less reason to rush a settlement than first thought. The marriage breakdown rollover still applies, and an August amendment protects negative gearing on a property transferred to a former spouse. The family trust tax is not yet law."
+updated: 2026-10-28
 ---
 
 In May we wrote about [how the 2026 Budget CGT changes could affect your property settlement](/blog/budget-cgt-changes-property-settlement/). At the time they were proposals. Parliament has since passed them, and the final law differs from the announcement in ways that matter to separating couples.
@@ -22,9 +23,9 @@ This post sets out what became law, what changed between Budget night and the fi
 
 ## What has actually become law?
 
-Two Acts carry the changes. The Treasury Laws Amendment (Tax Reform No. 1) Act 2026 received Royal Assent on 26 June 2026. The Treasury Laws Amendment (Tax Reform No. 2) Act 2026 followed on 26 August 2026. Most of the new rules start on 1 July 2027.
+Two Acts carry the changes. The [Treasury Laws Amendment (Tax Reform No. 1) Act 2026](https://www.legislation.gov.au/C2026A00049/asmade) received Royal Assent on 26 June 2026. The Treasury Laws Amendment (Tax Reform No. 2) Act 2026 followed on 26 August 2026. Most of the new rules start on 1 July 2027.
 
-The first Act replaces the 50 percent Capital Gains Tax discount with inflation indexation for Australian resident individuals and trusts, adds a 30 percent minimum tax on capital gains for resident individuals, and limits negative gearing on established residential property bought after Budget night. The second Act fills gaps the first one left, including one that directly affects separating couples.
+The first Act [replaces the 50 percent Capital Gains Tax discount with inflation indexation](https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/capital-gains-tax-reform) for Australian resident individuals and trusts, adds a 30 percent minimum tax on capital gains for resident individuals, and limits negative gearing on established residential property bought after Budget night. The second Act fills gaps the first one left, including one that directly affects separating couples.
 
 One Budget measure has not become law. The proposed 30 percent minimum tax on discretionary trusts is still in draft, which we cover below.
 
@@ -32,7 +33,7 @@ One Budget measure has not become law. The proposed 30 percent minimum tax on di
 
 On 1 July 2027 every asset an individual or trust holds is treated as if it were sold and bought back at its market value. No tax is payable on that deemed sale. Instead, the gain to that date is set aside and only counted when the asset is actually sold later.
 
-That deferred gain keeps the old treatment. If the asset would have qualified for the 50 percent discount, the gain built up before 1 July 2027 still gets it, whenever the asset is eventually sold. Sections 112-155 and 112-160 of the Income Tax Assessment Act 1997 set this out for individuals, and sections 112-165 and 112-170 do the same for trusts.
+That deferred gain keeps the old treatment. If the asset would have qualified for the 50 percent discount, the gain built up before 1 July 2027 still gets it, whenever the asset is eventually sold. Sections 112-155 and 112-160 of the [Income Tax Assessment Act 1997](https://www.legislation.gov.au/C2004A05138/latest/text) set this out for individuals, and sections 112-165 and 112-170 do the same for trusts.
 
 Growth after 1 July 2027 is taxed differently. Instead of halving the gain, the cost base is indexed to inflation, so only the real increase in value is taxed. A 30 percent minimum tax then applies to resident individuals: if the tax worked out on a capital gain at your own rate is less than 30 percent of it, you pay the difference.
 
@@ -48,7 +49,7 @@ The more important point is the one the earlier post made: do not let a tax date
 
 ## How is future tax valued in the property pool?
 
-The Family Law Act 1975 sets out the steps for dividing property in section 79 for married couples and section 90SM for de facto couples. The first step is identifying and valuing the property pool, and that includes deciding how to treat tax that will fall due when an asset is eventually sold.
+The [Family Law Act 1975](https://www.legislation.gov.au/C2004A00275/latest/text) sets out the steps for dividing property in section 79 for married couples and section 90SM for de facto couples. The first step is identifying and valuing the property pool, and that includes deciding how to treat tax that will fall due when an asset is eventually sold.
 
 Courts have not taken a single approach to future tax. Where an asset is going to be sold, or a sale is likely, the expected tax is often deducted from its value. Where a sale is uncertain or a long way off, the tax may be given less weight or none. The new rules do not change that approach, but they change the size of the number.
 
@@ -56,7 +57,7 @@ Two things follow. First, the tax on an investment asset is now made up of two p
 
 ## Does the marriage breakdown rollover still apply?
 
-Yes. Neither Act changes Subdivision 126-A of the Income Tax Assessment Act 1997. When an asset is transferred from one spouse or former spouse to the other under a court order, a Binding Financial Agreement or another arrangement listed in section 126-5, no CGT is payable at the time of the transfer.
+Yes. Neither Act changes Subdivision 126-A of the Income Tax Assessment Act 1997. When an asset is transferred from one spouse or former spouse to the other under a court order, a Binding Financial Agreement or another arrangement listed in section 126-5, [no CGT is payable at the time of the transfer](https://www.ato.gov.au/forms-and-instructions/capital-gains-tax-guide-2026/about-capital-gains-tax/marriage-or-relationship-breakdown).
 
 The rollover defers the tax rather than removing it. The person who receives the asset takes on its cost base and its tax history, so the tax arrives when they eventually sell. Under the new rules that history may include a deferred pre-2027 gain as well as later growth taxed under indexation and the minimum tax. Exactly how those pieces carry across in your circumstances is a question for your accountant.
 
@@ -72,7 +73,7 @@ Under section 26-158, if you take an ownership interest in a residential dwellin
 
 ## What about family trusts?
 
-The proposed 30 percent minimum tax on discretionary trusts is not law. The Australian Taxation Office describes it as announced, with draft legislation released for consultation in September 2026 and a proposed start date of 1 July 2028. Its final shape may change before it passes.
+The proposed 30 percent minimum tax on discretionary trusts is not law. The Australian Taxation Office [describes it as announced](https://www.ato.gov.au/about-ato/new-legislation/in-detail/businesses/tax-reform-introducing-a-minimum-tax-on-discretionary-trusts), with draft legislation released for consultation in September 2026 and a proposed start date of 1 July 2028. Its final shape may change before it passes.
 
 Even so, trusts already matter in a property settlement. Both parties have a duty to disclose trust structures they control or benefit from, including distribution history. Where one party relies on trust distributions as income, it is sensible to model what those distributions might look like if the minimum tax passes in its current form, and to treat that figure as uncertain rather than settled.
 

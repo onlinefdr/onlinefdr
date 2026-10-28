@@ -8,7 +8,7 @@ related_pages:
   - /financial-settlement/
   - /book/
 reading_time: 8
-updated: 2026-10-08
+updated: 2026-10-28
 superseded: true
 hero_image: "budget-cgt-changes-property-settlement-hero.jpg"
 tldr: "The 2026 Federal Budget proposes major changes to Capital Gains Tax and negative gearing from 1 July 2027, with a 30% minimum tax on discretionary trusts from 1 July 2028. If legislated, these reforms will substantially increase the embedded tax liability in investment properties, shares, and trust structures, directly affecting how the property pool is valued and divided. CGT rollover relief continues to apply between separating spouses through Consent Orders or a Binding Financial Agreement, and Family Dispute Resolution allows parties to negotiate tax-aware settlements efficiently."
@@ -16,9 +16,9 @@ tldr: "The 2026 Federal Budget proposes major changes to Capital Gains Tax and n
 
 > **Update, October 2026:** These changes have now passed Parliament, and the final law differs from the Budget announcement. Gains made before 1 July 2027 keep the 50 percent discount, so the pressure to settle before that date is much lower than this post suggests, and the family trust tax is still not law. For the rules as they now stand, read [The CGT and negative gearing changes are now law](/blog/cgt-negative-gearing-changes-law-property-settlement/).
 
-The 2026 Federal Budget has announced sweeping proposed changes to Capital Gains Tax and negative gearing that, if legislated, will fundamentally alter how separating couples divide their assets. If you are navigating a property settlement right now, understanding these reforms is not optional; it is essential to protecting your financial future.
+The [2026 Federal Budget](https://treasury.gov.au/policy-topics/taxation/budget2026-27) has announced sweeping proposed changes to Capital Gains Tax and negative gearing that, if legislated, will fundamentally alter how separating couples divide their assets. If you are navigating a property settlement right now, understanding these reforms is not optional; it is essential to protecting your financial future.
 
-The landscape of Australian family law property settlements is shifting on two fronts simultaneously. The Family Law Amendment Act 2024, effective 10 June 2025, has codified the four-step property framework that courts use to divide assets. Now, the 2026 Federal Budget is proposing to change the taxation rules that determine what those assets are actually worth after settlement. Together, these reforms demand a more informed, strategic approach to financial separation.
+The landscape of Australian family law property settlements is shifting on two fronts simultaneously. The [Family Law Amendment Act 2024](https://www.legislation.gov.au/C2024A00118/latest/text), effective 10 June 2025, has codified the four-step property framework that courts use to divide assets. Now, the 2026 Federal Budget is proposing to change the taxation rules that determine what those assets are actually worth after settlement. Together, these reforms demand a more informed, strategic approach to financial separation.
 
 The measures discussed in this post are announced government proposals and remain subject to legislation passing Parliament. Final operation may differ from what has been announced, and you should obtain current professional advice before making decisions based on these changes.
 
@@ -36,7 +36,7 @@ Transitional rules will apply to assets held before 1 July 2027. The gain accrue
 
 The future tax liability attached to an investment property or share portfolio is likely to be substantially higher under the proposed rules, directly affecting how assets are valued and divided during settlement negotiations. Courts and parties will need to account for these increased embedded liabilities when determining the net property pool.
 
-Under the codified four-step property framework in the Family Law Act 1975, the first step requires identifying and valuing the entire property pool. This includes determining the net value of each asset after accounting for liabilities, including embedded tax liabilities. Courts have historically taken varying approaches to future CGT, sometimes discounting or ignoring it where a sale was not imminent. However, with a harsher and more structurally embedded tax regime, the argument for recognising these liabilities at their full present value becomes significantly stronger.
+Under the codified four-step property framework in the [Family Law Act 1975](https://www.legislation.gov.au/C2004A00275/latest/text), the first step requires identifying and valuing the entire property pool. This includes determining the net value of each asset after accounting for liabilities, including embedded tax liabilities. Courts have historically taken varying approaches to future CGT, sometimes discounting or ignoring it where a sale was not imminent. However, with a harsher and more structurally embedded tax regime, the argument for recognising these liabilities at their full present value becomes significantly stronger.
 
 Consider a scenario where one party wishes to retain an investment property as part of their settlement. Under the old rules, the future CGT liability might have been discounted because the 50 percent discount made it relatively manageable. Under the proposed 30 percent minimum tax rate, the eventual tax bill on disposal would be materially higher. This affects the true value of what that party is receiving and must be factored into any just and equitable division.
 
@@ -44,7 +44,7 @@ The duty of disclosure under sections 71B and 90RI of the Family Law Act 1975 re
 
 ## How Does Negative Gearing Change After Separation?
 
-Negative gearing benefits are proposed to be limited for established residential properties acquired after 7:30pm AEST on 12 May 2026, with the changes taking effect from 1 July 2027. This would fundamentally alter the financial viability of retaining an investment property on a single income after separation.
+[Negative gearing benefits](https://www.ato.gov.au/about-ato/new-legislation/in-detail/individuals/tax-reform-boosting-home-ownership-reforming-negative-gearing-and-capital-gains-tax) are proposed to be limited for established residential properties acquired after 7:30pm AEST on 12 May 2026, with the changes taking effect from 1 July 2027. This would fundamentally alter the financial viability of retaining an investment property on a single income after separation.
 
 Under the current rules, if your rental income does not cover the costs of holding an investment property (mortgage interest, rates, maintenance), you can deduct that net rental loss against your other taxable income, reducing your overall tax bill. This has historically made it feasible for a single-income household to retain an investment property after separation, even if the rental yield was modest.
 
@@ -54,7 +54,7 @@ This change is particularly relevant when parties are negotiating whether to sel
 
 ## Do CGT Rollover Rules Still Apply?
 
-Yes, Capital Gains Tax rollover relief continues to apply when assets are transferred between separating spouses as part of a formal property settlement, provided the transfer is formalised through Consent Orders or a Binding Financial Agreement under the Family Law Act 1975.
+Yes, [Capital Gains Tax rollover relief](https://www.ato.gov.au/forms-and-instructions/guide-to-capital-gains-tax-2025/about-capital-gains-tax/marriage-or-relationship-breakdown) continues to apply when assets are transferred between separating spouses as part of a formal property settlement, provided the transfer is formalised through Consent Orders or a Binding Financial Agreement under the Family Law Act 1975.
 
 This is an important point of reassurance. The CGT rollover provisions in the tax legislation ensure that when an investment property, shares, or other CGT assets are transferred from one party to the other as part of a [property settlement](/financial-settlement/), no CGT event is triggered at the time of transfer. The receiving party inherits the original cost base of the asset and the obligation to pay CGT is deferred until they eventually sell.
 

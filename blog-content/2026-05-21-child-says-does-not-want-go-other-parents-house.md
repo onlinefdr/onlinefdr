@@ -10,6 +10,7 @@ related_pages:
 reading_time: 9
 hero_image: "child-says-does-not-want-go-other-parents-house-hero.jpg"
 tldr: "When a child resists time with the other parent, Australian family law does not allow either parent to decide unilaterally. A child's views are one of six factors a court considers under Section 60CC of the Family Law Act 1975, weighted by maturity and circumstances. There is no statutory age at which a child can choose. Both parents retain responsibility to support the relationship unless safety is at risk. Family Dispute Resolution is the structured place to work through these moments."
+updated: 2026-10-28
 ---
 Few moments are harder than the one at the front door. Your child says they don't want to go to the other parent's house. They might be crying, refusing to put on their shoes, or telling you that the other home is no fun, that the other parent is mean, that they want to stay. You have minutes to decide what to do, and whatever you choose will shape what happens next time.
 
@@ -17,7 +18,7 @@ This is one of the most common, and most misunderstood, situations separated par
 
 ## What does the law actually say?
 
-Australian family law treats a child's views as one factor among several, never the final word. Section 60CC of the Family Law Act 1975, amended in 2024, sets six general considerations the court weighs when deciding what is in a child's best interests. No age gives a child the choice.
+Australian family law treats a child's views as one factor among several, never the final word. Section 60CC of the [Family Law Act 1975](https://www.legislation.gov.au/C2004A00275/latest/text), amended in 2024, sets six general considerations the court weighs when deciding what is in a child's best interests. No age gives a child the choice.
 
 The six general considerations under Section 60CC of the Family Law Act 1975 are: the safety of the child and those caring for them (including any history of family violence); any views expressed by the child; the child's emotional, developmental, psychological and cultural needs; the capacity of each proposed carer to provide for those needs; the benefit to the child of maintaining a relationship with each parent where it is safe to do so; and anything else relevant to the child's particular circumstances. The framework is non-hierarchical. The court is not required to give one factor more weight than another.
 
@@ -47,21 +48,21 @@ Real safety concerns include physical or sexual abuse, exposure to family violen
 
 The distinction is important because the family law system, and the practitioner assigned to your matter, can help you respond proportionately. Withholding a child from a parent without a genuine safety basis can itself harm the child, damage the parent's relationship, and weaken your position in future proceedings. If you are uncertain whether your concerns rise to a safety level, get advice before acting. The [get help](/get-help/) page has links to crisis services and national support lines.
 
-> If you or your child are in immediate danger, contact police on 000. For confidential family violence support, 1800RESPECT is available 24 hours a day on 1800 737 732. The Kids Helpline is available for children and young people on 1800 55 1800.
+> If you or your child are in immediate danger, contact police on 000. For confidential family violence support, [1800RESPECT](https://www.1800respect.org.au/) is available 24 hours a day on 1800 737 732. The Kids Helpline is available for children and young people on 1800 55 1800.
 
 ## How are children's views actually heard?
 
 Children's views are usually heard through a Family Report writer, a court-appointed expert, or through an Independent Children's Lawyer where one is appointed by the court. Parents do not directly relay or interpret a child's views to the court, and a child is generally not asked to choose between parents.
 
-Under the changes effective 6 May 2024, where an Independent Children's Lawyer is appointed in a parenting matter, that lawyer must now meet with the child and give them an opportunity to express their views. There are limited exceptions, including where the child is under five years old, where they do not wish to meet, or where meeting would expose them to harm. This is a significant strengthening of the child's voice in proceedings, but the lawyer represents the child's best interests, not simply their stated preference. The lawyer's role is to bring the child's perspective into the process in a way that is age-appropriate and that protects them from being placed in the middle of the dispute.
+Under the changes effective 6 May 2024, where an [Independent Children's Lawyer](https://www.fcfcoa.gov.au/fl/children/icl) is appointed in a parenting matter, that lawyer must now meet with the child and give them an opportunity to express their views. There are limited exceptions, including where the child is under five years old, where they do not wish to meet, or where meeting would expose them to harm. This is a significant strengthening of the child's voice in proceedings, but the lawyer represents the child's best interests, not simply their stated preference. The lawyer's role is to bring the child's perspective into the process in a way that is age-appropriate and that protects them from being placed in the middle of the dispute.
 
-Family Report writers are typically social workers or psychologists who interview both parents and the children, observe interactions, and prepare a report including the children's views and the writer's recommendations. This is the most common way children's perspectives reach a contested hearing, and it is structured, professional, and designed to minimise pressure on the child.
+[Family Report writers](https://www.fcfcoa.gov.au/node/754) are typically social workers or psychologists who interview both parents and the children, observe interactions, and prepare a report including the children's views and the writer's recommendations. This is the most common way children's perspectives reach a contested hearing, and it is structured, professional, and designed to minimise pressure on the child.
 
 What the court does not do is ask the child directly which parent they want to live with. Putting that question to a child is recognised as harmful, and the system is built to avoid placing children in the position of choosing.
 
 ## What should parents do at the front door?
 
-In the moment, support the transition, acknowledge the child's feelings, and follow through with the arrangement unless there is a genuine safety concern. After the transition, raise the issue with the other parent directly, or through Family Dispute Resolution if direct communication is difficult. Do not change arrangements unilaterally.
+In the moment, support the transition, acknowledge the child's feelings, and follow through with the arrangement unless there is a genuine safety concern. After the transition, raise the issue with the other parent directly, or through [Family Dispute Resolution](https://www.fcfcoa.gov.au/fl/family-dispute-resolution) if direct communication is difficult. Do not change arrangements unilaterally.
 
 Several practical responses help in the moment. Keep changeovers calm and brief; the longer the goodbye, the harder it becomes. Ask gentle, open questions about how the child is feeling and listen carefully to the answer; if genuine safety concerns surface, take them seriously. Reassure the child that both homes are safe places where they are loved, and that you will see them again soon. Speak positively or neutrally about the other parent and the other home, even when it is difficult, then physically support the transition.
 

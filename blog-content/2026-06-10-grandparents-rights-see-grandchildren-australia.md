@@ -12,15 +12,16 @@ hero_image: "grandparents-rights-see-grandchildren-australia-hero.jpg"
 hero_alt: "An older woman sits alone on a weathered timber park bench in soft afternoon light, a small child's knitted cardigan folded in her lap, looking away towards an empty playground in the middle distance."
 faq: true
 tldr: "Grandparents have no automatic right to see their grandchildren, but they can apply for a parenting order under Section 65C of the Family Law Act 1975, and unlike other relatives they do not need the court's permission to file. The court decides on the child's best interests, not the grandparent's wishes, and safety comes first. Like parents, grandparents must usually attempt Family Dispute Resolution and obtain a Section 60I certificate before they can go to court."
+updated: 2026-10-28
 ---
 
 When grandparents lose contact with their grandchildren after a separation or a family rift, the first question is almost always the same. Do I have a right to see them? The honest answer is no, not an automatic one. But that is not the end of it, and most of what is written online either stops at the wrong place or describes a version of the law that changed in 2024.
 
-A grandparent cannot demand time as a right. What a grandparent can do is apply for a parenting order, and before that, try to resolve things through Family Dispute Resolution. This post sets out where grandparents actually stand under the Family Law Act 1975 (Cth), what a court weighs up, and why mediation, not a court application, is almost always the first step.
+A grandparent cannot demand time as a right. What a grandparent can do is [apply for a parenting order](https://www.fcfcoa.gov.au/fl/hdi/apply-parenting-orders), and before that, try to resolve things through Family Dispute Resolution. This post sets out where grandparents actually stand under the [Family Law Act 1975](https://www.legislation.gov.au/C2004A00275/latest/text) (Cth), what a court weighs up, and why mediation, not a court application, is almost always the first step.
 
 ## Do grandparents have an automatic right to see grandchildren?
 
-No. Australian family law gives no one an automatic right to spend time with a child, and grandparents are no exception. The focus sits on the child, not the adult. The right the law protects belongs to the child: a relationship with people who are significant to them, where that is safe.
+No. Australian family law [gives no one an automatic right](https://www.legalaid.nsw.gov.au/ways-to-get-help/publications-and-resources/are-you-a-grandparent) to spend time with a child, and grandparents are no exception. The focus sits on the child, not the adult. The right the law protects belongs to the child: a relationship with people who are significant to them, where that is safe.
 
 That is the framing to hold onto. Section 60CA of the Family Law Act makes the child's best interests the paramount consideration in every parenting decision, and section 60CC(2)(e) asks the court to weigh the benefit to the child of a relationship with their parents and other significant people. A grandparent who has been a steady part of a child's life fits squarely there. But the Act gives grandparents no head start. As the Full Court explained in *Valentine and Lacerra* [2013] FamCAFC 53, there is no presumption or preferred position between a parent and a non-parent. The child's best interests decide the outcome, the same way they would between two parents.
 
@@ -38,7 +39,7 @@ Safety comes first. Section 60CC(2)(a) asks what arrangements would promote the 
 
 ## Do you have to try mediation first?
 
-Almost always, yes. A grandparent's application is a parenting application, so before going to court a grandparent generally has to make a genuine effort at Family Dispute Resolution and obtain a Section 60I certificate. The same requirement that applies to parents applies to grandparents.
+Almost always, yes. A grandparent's application is a parenting application, so before going to court a grandparent generally has to make a [genuine effort at Family Dispute Resolution](https://www.fcfcoa.gov.au/fl/family-dispute-resolution) and obtain a Section 60I certificate. The same requirement that applies to parents applies to grandparents.
 
 Section 60I of the Family Law Act requires that genuine effort before most parenting applications, and in practice that means obtaining a [Section 60I certificate](/blog/section-60i-certificate-vs-genuine-steps-certificate/) from an accredited practitioner. Mediation here is not a box to tick. The practitioner assigned to your matter does not take sides or put forward a solution. They help each person shape and reality-check their own proposals, usually with the parties in separate online rooms, and test how those arrangements would work for the child. If agreement is reached, it is recorded as a Parenting Plan, which is not a court order but can later become Consent Orders if enforceability is needed.
 

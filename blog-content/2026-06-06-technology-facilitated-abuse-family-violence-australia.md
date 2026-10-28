@@ -12,6 +12,7 @@ hero_image: "technology-facilitated-abuse-family-violence-australia-hero.jpg"
 hero_alt: "A smartphone lying face down on a pale table beside a set of house keys, in quiet, warm afternoon light."
 faq: true
 tldr: "Technology-facilitated abuse means using devices, accounts, or apps to monitor, control, or frighten someone. Under the Family Law Act 1975 it can be family violence: it fits the coercive and controlling behaviour described in section 4AB, and surveillance can amount to stalking. It often escalates after separation, and it can matter in both parenting and property decisions. If you think you are being monitored, the safest first step is specialist advice, not changing your devices on your own. eSafety, WESNET, and 1800RESPECT can help."
+updated: 2026-10-28
 ---
 
 Separation increasingly plays out through phones, accounts, and apps, and so does control. Using technology to monitor, track, or frighten a former partner has a name: technology-facilitated abuse. It is common, it is often worst around the time a relationship ends, and under Australian law it can be a form of family violence.
@@ -20,7 +21,7 @@ This post explains what it is, why it tends to escalate after separation, how it
 
 ## Is technology-facilitated abuse a form of family violence?
 
-It can be. The Family Law Act 1975 defines family violence in section 4AB as behaviour that coerces or controls a family member, or makes them fearful. That definition is about the effect of the behaviour, not the tool used to carry it out. Using a tracking app, reading someone's messages, or controlling their accounts to keep tabs on them sits squarely within coercive and controlling behaviour.
+It can be. The [Family Law Act 1975](https://www.legislation.gov.au/C2004A00275/latest/text) defines family violence in section 4AB as behaviour that coerces or controls a family member, or makes them fearful. That definition is about the effect of the behaviour, not the tool used to carry it out. Using a tracking app, reading someone's messages, or controlling their accounts to keep tabs on them sits squarely within coercive and controlling behaviour.
 
 The Act also lists stalking as an example of family violence, and persistent monitoring or surveillance through technology is a modern form of exactly that. Technology rarely invents a new kind of abuse; it extends and amplifies patterns of control that are already there, and it lets them continue across any distance, which is why separation does not end it.
 
@@ -28,7 +29,7 @@ The Act also lists stalking as an example of family violence, and persistent mon
 
 People are often surprised that the abuse gets worse, not better, once they leave. For someone whose behaviour is about control, separation is the moment control is slipping, and technology offers a way to hold on to it. It can show up as constant monitoring of where someone is and who they are with, repeated messaging and harassment across different platforms, access to email or bank or social accounts, location tracking through a phone or a hidden device, or monitoring that runs through shared subscriptions, smart-home devices, or a child's phone or tablet.
 
-It frequently overlaps with money. Watching or controlling someone's bank accounts, online banking, or day-to-day spending to limit their independence is a recognised form of economic abuse, and the Family Law Act now spells this out as a form of family violence. The common thread is not the gadget. It is one person using whatever is to hand to keep power over another.
+It frequently overlaps with money. Watching or controlling someone's bank accounts, online banking, or day-to-day spending to limit their independence is a recognised form of economic abuse, and the Family Law Act [now spells this out](https://www.fcfcoa.gov.au/news-and-media-centre/fla-changes/fla2024) as a form of family violence. The common thread is not the gadget. It is one person using whatever is to hand to keep power over another.
 
 ## Why it matters in a family law matter
 
@@ -42,7 +43,7 @@ In property matters, the effect of family violence is now a required considerati
 
 If any of this is familiar, the most important message is that you do not have to work it out alone, and you should not try to fix it alone if you feel unsafe. There are services in Australia built for exactly this.
 
-The **eSafety Commissioner** (esafety.gov.au) is the national online safety regulator. It has plain, practical guidance on technology-facilitated abuse as part of domestic and family violence, including help to make an online safety plan. **WESNET's Safety Net Australia** project runs the Women's Technology Safety and Privacy Toolkit at techsafety.org.au, which was designed specifically for people experiencing this kind of abuse. **1800RESPECT** (1800 737 732) is the national counselling and support line, available around the clock, and it points people to both of those resources as well.
+The [**eSafety Commissioner**](https://www.esafety.gov.au/key-topics/domestic-family-violence) (esafety.gov.au) is the national online safety regulator. It has plain, practical guidance on technology-facilitated abuse as part of domestic and family violence, including help to make an online safety plan. **WESNET's Safety Net Australia** project runs the Women's Technology Safety and Privacy Toolkit at techsafety.org.au, which was designed specifically for people experiencing this kind of abuse. [**1800RESPECT**](https://www.1800respect.org.au) (1800 737 732) is the national counselling and support line, available around the clock, and it points people to both of those resources as well.
 
 Two practical points that these services stress. First, if you think a device might be monitored, it is safer to look for help on a device the other person has not had access to, such as a computer at a public library or a trusted friend's phone. Second, it can be tempting to delete an app or change every password straight away, but if someone is watching, a sudden change can tell them you know, and that can escalate things. Specialists help you plan the safest order to act. That is why the first step is advice, not action.
 

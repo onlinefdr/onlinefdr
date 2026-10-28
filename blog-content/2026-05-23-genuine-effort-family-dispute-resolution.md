@@ -10,8 +10,9 @@ related_pages:
 reading_time: 8
 hero_image: "genuine-effort-family-dispute-resolution-hero.jpg"
 tldr: "Australian law requires both parents to make a genuine effort to resolve their parenting dispute through Family Dispute Resolution before going to court. Showing up is not enough. Genuine effort means a real, honest attempt directed at resolving the issues. The practitioner assesses whether each party made that effort, and the type of certificate they issue can affect costs orders and case management directions in any subsequent proceedings."
+updated: 2026-10-28
 ---
-Showing up to Family Dispute Resolution is not enough. Australian law requires both parents to make a **genuine effort** to resolve their parenting dispute, and the practitioner conducting the session is the one who decides whether each party did. The type of certificate the practitioner issues at the end can affect what happens next in court.
+Showing up to Family Dispute Resolution is not enough. Australian law requires both parents to make a **genuine effort** to resolve their parenting dispute, and the practitioner conducting the session is the one who decides whether each party did. The type of certificate the practitioner issues at the end can affect what happens next in court. The Federal Circuit and Family Court of Australia explains this requirement on its [family dispute resolution page](https://www.fcfcoa.gov.au/fl/family-dispute-resolution).
 
 This is one of the most misunderstood parts of the Family Dispute Resolution process. Many parents arrive thinking that attending the session, sitting in the room, and letting the time run out is the whole obligation. It is not. What follows explains what genuine effort actually means, what falls short of it, and why the practitioner's assessment matters.
 
@@ -35,7 +36,7 @@ It is worth being clear about what is not on this list. A parent who is upset, w
 
 The accredited Family Dispute Resolution Practitioner conducting the session decides. This is a matter of professional judgement and one of the most significant functions an accredited practitioner performs. The practitioner is the only neutral observer in the room and has heard both sides.
 
-The Family Law Act 1975 does not set out a checklist for the practitioner to apply. It leaves the assessment to the practitioner's professional judgement, informed by what genuine effort means in the ordinary sense of the words and by the practitioner's training and experience. This is why accredited practitioners are required to hold specific qualifications and to be registered with the Attorney-General's Department. The certificate is not a formality. It carries the practitioner's professional assessment of how the session was conducted.
+The [Family Law Act 1975](https://www.legislation.gov.au/C2004A00275/latest/text) does not set out a checklist for the practitioner to apply. It leaves the assessment to the practitioner's professional judgement, informed by what genuine effort means in the ordinary sense of the words and by the practitioner's training and experience. This is why accredited practitioners are required to hold specific qualifications and to be [registered with the Attorney-General's Department](https://www.ag.gov.au/families-and-marriage/family-dispute-resolution/find-family-dispute-resolution-practitioner). The certificate is not a formality. It carries the practitioner's professional assessment of how the session was conducted.
 
 A practitioner will not issue a certificate that misrepresents what happened in the session. If both parties genuinely engaged but could not agree, the certificate will say so. If one party did not engage, the certificate will record that. The practitioner's name and accreditation number appear on the certificate, and the assessment they make is one they stand behind professionally.
 
@@ -47,7 +48,7 @@ The five types are: **(a)** the other party did not attend due to their refusal 
 
 The type of certificate matters. The (a) certificate identifies which party refused or failed to attend. The (b) certificate is the cleanest outcome where agreement could not be reached: it tells the court both parents tried in good faith. The (c) certificate identifies that one or more attendees did not make a genuine effort and, by inference, who. The (d) certificate signals that the practitioner formed a view during the session that continuing would not be appropriate, often because of safety concerns or behaviour that emerged once Family Dispute Resolution was underway.
 
-Practitioners cannot revoke certificates once issued. Neither the Family Law Act nor the regulations allow for revocation. This is one of the reasons the practitioner's assessment must be careful and accurate at the point of issue.
+Practitioners cannot revoke certificates once issued. Neither the Family Law Act nor the [regulations](https://www.legislation.gov.au/F2025L00304/latest/text) allow for revocation. This is one of the reasons the practitioner's assessment must be careful and accurate at the point of issue.
 
 ## How does the certificate type affect court proceedings?
 
@@ -55,7 +56,7 @@ Section 60I(7) of the Family Law Act notes that a court can take the kind of cer
 
 The certificate is not evidence of what was said in the session, and it cannot be used to prove the substance of any party's position. But the type of certificate the court receives can affect both the path of the proceedings and the financial consequences. In practice, a parent who files a (c) certificate has flagged to the court that the failure to resolve the matter was attributable, at least in part, to the other party's lack of genuine effort. The court can take that into account in deciding whether further dispute resolution is likely to be productive and in determining costs. A parent who has been responsible for a (c) certificate cannot assume the court will overlook that conduct. Section 114UB exists for a reason.
 
-This does not mean a (c) certificate guarantees a costs order or a particular case management outcome. Courts retain discretion. But the type of certificate is a piece of professional assessment from an accredited practitioner that the court is statutorily directed to consider, and parents should approach Family Dispute Resolution understanding that.
+This does not mean a (c) certificate guarantees a costs order or a particular case management outcome. Courts retain discretion. But the type of certificate is a piece of professional assessment from an accredited practitioner that the court is statutorily directed to consider, and parents should approach Family Dispute Resolution understanding that. Victoria Legal Aid gives a plain English summary of the certificate types and how they can affect costs on its [family dispute resolution page](https://legalaid.vic.gov.au/using-family-dispute-resolution).
 
 ## What is the practitioner's role during the session?
 

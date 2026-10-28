@@ -11,6 +11,7 @@ reading_time: 9
 hero_image: "family-violence-property-settlement-australia-hero.jpg"
 hero_alt: "A woman stands at a supermarket checkout looking down at her groceries beside a card payment terminal."
 tldr: "Since 10 June 2025, the Family Law Act 1975 expressly requires a court to consider the effect of family violence when dividing property. New sections 79(4)(ca) and 79(5)(a), and 90SM for de facto couples, codify the Kennon principle. It is the effect on contributions or future circumstances that counts, shown by evidence, not the violence alone. It is not a penalty or an automatic larger share."
+updated: 2026-10-28
 ---
 
 For a long time, people who had been through family violence found it hard to have that experience reflected in how their property was divided. The law allowed it, but it sat in case law rather than in the words of the Act, and it was difficult to argue. That changed on 10 June 2025.
@@ -19,13 +20,13 @@ This post explains how the effect of family violence is now a required part of a
 
 ## Does family violence change how property is divided?
 
-Yes. Since 10 June 2025, the Family Law Act 1975 expressly requires a court to consider the effect of family violence when dividing property after separation. It is not automatic and it is not a punishment, but where the effect is shown, it can change the share each person walks away with.
+Yes. Since 10 June 2025, the [Family Law Act 1975](https://www.legislation.gov.au/C2004A00275/latest/text) expressly requires a court to consider the effect of family violence when dividing property after separation. It is not automatic and it is not a punishment, but where the effect is shown, it can change the share each person walks away with.
 
 The key word is effect. The law is not interested in family violence as a label or a moral judgement. It looks at what the violence did: whether it made one person's contributions harder, or whether it has left them worse off going forward. Those two questions now have a home in the Act, and a court has to ask them where family violence is raised.
 
 ## What changed on 10 June 2025
 
-The Family Law Amendment Act 2024 came into force on 10 June 2025 and rewrote how property is divided. For the first time, the effect of family violence sits in the words of the Act itself, in two places, rather than resting on case law alone. The change applies to married and de facto couples.
+The [Family Law Amendment Act 2024](https://www.legislation.gov.au/C2024A00118/asmade/text) came into force on 10 June 2025 and rewrote how property is divided. For the first time, the effect of family violence sits in the words of the Act itself, in two places, rather than resting on case law alone. The change applies to married and de facto couples. The Federal Circuit and Family Court summarises the [property changes from 10 June 2025](https://www.fcfcoa.gov.au/news-and-media-centre/fla-changes/fla2024) on its website.
 
 Before this, the leading case was *Kennon and Kennon* (1997) FLC 92-757. It allowed a court to make an adjustment where one person's violent conduct had a discernible impact on the other person and made their contributions significantly more arduous. The principle existed, but it was treated as an exception and was often difficult to run. The 2025 changes take that principle and write it directly into section 79, so it is no longer an optional argument at the edges. It is part of the standard assessment.
 
@@ -43,7 +44,7 @@ This limb is forward looking. Even if the violence did not change what someone c
 
 ## What counts as family violence and financial abuse
 
-Family violence in the Act is wider than physical violence. Section 4AB covers behaviour that makes a family member fearful or that controls or coerces them. From 10 June 2025, section 4AB(2A) added clear examples of economic and financial abuse, so money itself can be a recognised tool of control under the law.
+Family violence in the Act is wider than physical violence. Section 4AB covers behaviour that makes a family member fearful or that controls or coerces them. From 10 June 2025, section 4AB(2A) added clear examples of [economic and financial abuse](https://www.1800respect.org.au/violence-and-abuse/financial-abuse), so money itself can be a recognised tool of control under the law.
 
 The examples in the Act include behaviour such as:
 
@@ -83,6 +84,6 @@ Inside mediation, the practitioner does not decide who is right or put forward a
 
 Whether your matter settles in mediation or goes to court, the same thing helps most: a clear record. Evidence of the conduct, and of its effect on your work, health, finances, or contributions, is what lets a negotiation or a court reflect it fairly in the division.
 
-This is the same lesson that applies when one person has [spent down or wasted joint money](/blog/add-backs-property-settlement-australia/): a clear timeline, financial records, and documents are worth far more than an accusation. Keep records of both what happened and how it affected you. If your safety is a concern, support services can help with safety planning as well, and that comes first.
+This is the same lesson that applies when one person has [spent down or wasted joint money](/blog/add-backs-property-settlement-australia/): a clear timeline, financial records, and documents are worth far more than an accusation. Keep records of both what happened and how it affected you. If your safety is a concern, [support services](https://www.1800respect.org.au/) can help with safety planning as well, and that comes first.
 
 > If you or someone you know is experiencing family violence, coercive control, or financial abuse, please visit our [Get Help page](/get-help/) for crisis support services and pathways to safety.

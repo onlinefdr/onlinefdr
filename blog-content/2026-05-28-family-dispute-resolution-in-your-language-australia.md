@@ -11,6 +11,7 @@ pin_order: 1
 related_pages:
   - /how-it-works/
   - /book/
+updated: 2026-10-28
 ---
 
 If English is not your first language, you can still take part in family dispute resolution in Australia, and you can do it in the language you are most comfortable using. Because the service is online, it uses live AI translated captions in Google Meet. Each person reads the conversation in their own language, in real time, on their own screen. This post explains how that works, which languages are supported, how the agreement is handled, and what to do if you would prefer a human interpreter.
@@ -117,7 +118,7 @@ That final step is the safeguard. The signed document records what the parties a
 
 This is the most important point for anyone worried about translation errors. The agreement reached in mediation is not legally binding at the moment it is signed. It is an in-principle agreement. If something was misunderstood during the session, no party is locked into the result.
 
-A parenting agreement reached in FDR is a Parenting Plan, which is not a court order. A financial understanding is similarly not binding at the point it is written down in mediation. These become binding only through later steps that happen with legal advice, such as applying for Consent Orders for a parenting matter or formalising a financial agreement in the form the law requires. Because those steps happen after independent legal advice, a translation mistake made during mediation does not quietly become a binding obligation. It is caught before that point.
+A parenting agreement reached in FDR is a Parenting Plan, which is not a court order. A financial understanding is similarly not binding at the point it is written down in mediation. These become binding only through later steps that happen with legal advice, such as applying for [Consent Orders](https://www.fcfcoa.gov.au/hdi/apply-consent-orders) for a parenting matter or formalising a financial agreement in the form the law requires. Because those steps happen after independent legal advice, a translation mistake made during mediation does not quietly become a binding obligation. It is caught before that point.
 
 This is why the workflow ends with each party seeing their own lawyer. The lawyer reviews the agreement in the party's own language and in English, and advises before anything is formalised.
 
@@ -137,14 +138,14 @@ The trade-off is cost. Engaging a human interpreter means paying that interprete
 
 ## Your confidentiality is protected
 
-Everything said in FDR is protected by two separate provisions of the Family Law Act 1975 (Cth). Section 10H makes communications in the FDR process confidential. Section 10J makes them inadmissible, meaning that even if confidentiality were breached, what was said could not be used as evidence in court. These protections apply to a translated session as to any other.
+Everything said in FDR is protected by two separate provisions of the [Family Law Act 1975 (Cth)](https://www.legislation.gov.au/C2004A00275/latest/text). Section 10H makes communications in the FDR process confidential. Section 10J makes them inadmissible, meaning that even if confidentiality were breached, what was said could not be used as evidence in court. These protections apply to a translated session as to any other.
 
-The AI translation runs on Google's infrastructure as part of Google Meet. The use of Google's services, including AI processing and the possibility of data being processed outside Australia, is disclosed in our Privacy Policy in line with Australian Privacy Principle 8. The captions are visible only to the person who turns them on and are not saved into the session recording or transcript.
+The AI translation runs on Google's infrastructure as part of Google Meet. The use of Google's services, including AI processing and the possibility of data being processed outside Australia, is disclosed in our Privacy Policy in line with [Australian Privacy Principle 8](https://www.oaic.gov.au/privacy/australian-privacy-principles-guidelines/chapter-8-app-8-cross-border-disclosure-of-personal-information/). The captions are visible only to the person who turns them on and are not saved into the session recording or transcript.
 
 ## Arranging a session in your language
 
 The first step is the free discovery call. If you speak a language other than English, that call cannot be made through a normal phone line, because phone calls do not carry live translation.
 
-Instead, book the discovery call through the website, and it will be held over Google Meet with translated captions, the same way the mediation itself runs. That way the very first conversation already happens in your language.
+Instead, book the discovery call through the website, and it will be held over Google Meet with translated captions, the same way the mediation itself runs. That way the very first conversation already happens in your language. The Federal Circuit and Family Court also publishes [translated fact sheets](https://www.fcfcoa.gov.au/resources/translations) on family law topics, including family dispute resolution, in many community languages.
 
 From there, the process is the same as any other matter, with translated captions running throughout, the agreement handled in the step-by-step way described above, and independent legal advice before anything is formalised. Speaking a language other than English is not a barrier to resolving a family law matter out of court. It is exactly the kind of situation online FDR is built to handle.
