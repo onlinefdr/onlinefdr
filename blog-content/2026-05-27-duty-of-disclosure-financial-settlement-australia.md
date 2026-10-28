@@ -52,7 +52,7 @@ The duty starts at the [pre-action stage](https://www.fcfcoa.gov.au/fl/pubs/pre-
 
 The duty continues throughout any proceeding until the proceeding is finalised. New information that becomes relevant during the proceeding must be disclosed as it arises. The duty does not end when a party has handed over a first batch of documents; it is ongoing.
 
-For matters that resolve outside court through Consent Orders or a Binding Financial Agreement, the duty informs the integrity of the agreement itself. An agreement reached on the basis of incomplete disclosure can later be challenged and, in some cases, set aside.
+For matters that resolve outside court through Consent Orders or a Binding Financial Agreement, the duty informs the integrity of the agreement itself. An agreement reached on the basis of incomplete disclosure can later be challenged and, in some cases, set aside. The Last Step explains the limited grounds on which [consent orders can be changed or set aside](https://thelaststep.com.au/blog/can-consent-orders-be-changed/).
 
 ## What you must disclose
 

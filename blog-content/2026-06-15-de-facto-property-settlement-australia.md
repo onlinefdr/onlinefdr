@@ -82,7 +82,7 @@ A married couple has twelve months from the date their divorce becomes final, wh
 
 Yes, and most people do. You do not need a court to divide property. If the two of you can agree, you can [make that agreement binding](https://www.legalaid.vic.gov.au/find-legal-answers/separation-divorce-and-marriage-annulment/dividing-your-property) in one of two ways: [Consent Orders](https://www.fcfcoa.gov.au/hdi/apply-consent-orders) approved by a court, or a Binding Financial Agreement. Both are available to de facto couples.
 
-For de facto couples, Binding Financial Agreements sit in Part VIIIAB of the Family Law Act 1975, and each person has to get their own legal advice for the agreement to hold. Consent Orders are a court's stamp on terms you have already agreed, without anyone needing to attend a hearing. The two work differently and suit different situations. We set out how [Consent Orders and Binding Financial Agreements compare](/financial-settlement/) on the financial settlement page.
+For de facto couples, Binding Financial Agreements sit in Part VIIIAB of the Family Law Act 1975, and each person has to get their own legal advice for the agreement to hold. Consent Orders are a court's stamp on terms you have already agreed, without anyone needing to attend a hearing. The two work differently and suit different situations. We set out how [Consent Orders and Binding Financial Agreements compare](/financial-settlement/) on the financial settlement page. If you want to prepare Consent Orders yourselves, The Last Step, a self-service tool developed by our founder, explains [how to apply for consent orders](https://thelaststep.com.au/blog/how-to-apply-for-consent-orders-australia/) step by step.
 
 ## Do you need a section 60I certificate?
 
