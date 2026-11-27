@@ -553,6 +553,15 @@ footer { background: var(--charcoal); padding: 64px 0 36px; }
 
   </style>
 <link rel="stylesheet" href="/theme.css?v=1">
+<style>/* 27 Nov 2026: The Last Step box, sidebar follows scroll */
+body{overflow-x:clip}
+.sidebar{position:static;align-self:stretch}
+.sidebar-follow{position:sticky;top:92px;max-height:calc(100vh - 112px);overflow-y:auto;display:flex;flex-direction:column;gap:20px}
+.tool-row{border-left:4px solid #C4873A}
+.tool-row .download-row-buttons .btn-primary{text-align:center}
+.sidebar-card-tool{border-top:3px solid #C4873A}
+@media(max-width:960px){.sidebar-follow{position:static;max-height:none;overflow:visible}}
+</style>
 </head>
 <body>
 
@@ -766,6 +775,16 @@ footer { background: var(--charcoal); padding: 64px 0 36px; }
           <p>BFAs have their place, particularly for protecting pre-relationship assets or for second relationships. For most post-separation financial settlements, Consent Orders are simpler and more reliably enforceable. The right choice depends on the structure of the asset pool and the goals of both parties, and is a conversation worth having before drafting anything.</p>
         </div>
 
+        <div class="download-row tool-row">
+<div class="download-row-text">
+<h3>Preparing Consent Orders yourselves</h3>
+<p>Once you reach agreement, the terms need to be turned into Consent Orders and filed with the Court. The Last Step, a self-service tool developed by our founder, completes the Court's Application for Consent Orders and the Minute of Consent Orders from the agreement you have reached, ready for you both to sign and file.</p>
+</div>
+<div class="download-row-buttons">
+<a class="btn-primary" href="https://thelaststep.com.au/" target="_blank" rel="noopener">Prepare your Consent Orders with The Last Step</a>
+</div>
+</div>
+
         <div class="img-real" style="aspect-ratio:16/9;margin:32px 0"><img width="2000" height="1125" src="/images/financial-supporting-1.jpg" alt="A woman working on her financial paperwork late at night, seated on a borrowed sofa in her new home. A laptop, a spread of documents, and a mug on the coffee table in front of her. Children's books at the side of the sofa." loading="lazy" decoding="async"></div>
 
         <h2 id="companion-animals">Companion animals</h2>
@@ -804,21 +823,6 @@ footer { background: var(--charcoal); padding: 64px 0 36px; }
         <div class="sidebar-card sidebar-card-img">
           <div class="img-real" style="aspect-ratio:4/5"><img width="2000" height="1002" src="/images/financial-supporting-2.jpg" alt="A man at a kitchen table reviewing a bank statement on his laptop." loading="lazy" decoding="async"></div>
         </div>
-        <nav class="sidebar-card sidebar-nav">
-          <h5>On this page</h5>
-          <ul>
-            <li><a href="#why-informal-risky"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>Why informal is risky</a></li>
-            <li><a href="#four-step-framework"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>Four-step framework</a></li>
-            <li><a href="#family-violence"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>Family violence</a></li>
-            <li><a href="#disclosure"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>Disclosure duty</a></li>
-            <li><a href="#superannuation"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>Superannuation</a></li>
-            <li><a href="#de-facto"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>De facto relationships</a></li>
-            <li><a href="#spousal-maintenance"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>Spousal maintenance</a></li>
-            <li><a href="#consent-orders-bfas"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>Consent Orders vs BFAs</a></li>
-            <li><a href="#companion-animals"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>Companion animals</a></li>
-            <li><a href="#time-limits"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>Time limits</a></li>
-          </ul>
-        </nav>
         <div class="sidebar-card">
           <h4>Related pages</h4>
           <ul class="related-links">
@@ -835,6 +839,28 @@ footer { background: var(--charcoal); padding: 64px 0 36px; }
             <li><a href="/blog/spousal-maintenance-after-separation-australia/">Spousal maintenance after separation <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
             <li><a href="/blog/family-violence-property-settlement-australia/">Family violence and property <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
           </ul>
+        </div>
+        <div class="sidebar-follow">
+        <div class="sidebar-card sidebar-card-tool">
+          <h4>Preparing your Consent Orders</h4>
+          <p>The Last Step, a self-service tool developed by our founder, prepares the Court's Consent Orders forms from the agreement you have reached.</p>
+          <a class="btn-primary" href="https://thelaststep.com.au/" target="_blank" rel="noopener">Try The Last Step</a>
+        </div>
+        <nav class="sidebar-card sidebar-nav">
+          <h5>On this page</h5>
+          <ul>
+            <li><a href="#why-informal-risky"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>Why informal is risky</a></li>
+            <li><a href="#four-step-framework"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>Four-step framework</a></li>
+            <li><a href="#family-violence"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>Family violence</a></li>
+            <li><a href="#disclosure"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>Disclosure duty</a></li>
+            <li><a href="#superannuation"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>Superannuation</a></li>
+            <li><a href="#de-facto"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>De facto relationships</a></li>
+            <li><a href="#spousal-maintenance"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>Spousal maintenance</a></li>
+            <li><a href="#consent-orders-bfas"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>Consent Orders vs BFAs</a></li>
+            <li><a href="#companion-animals"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>Companion animals</a></li>
+            <li><a href="#time-limits"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>Time limits</a></li>
+          </ul>
+        </nav>
         </div>
       </aside>
     </div>
