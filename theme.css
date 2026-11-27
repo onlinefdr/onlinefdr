@@ -1,0 +1,63 @@
+/* ============================================================
+   onlinefdr.com.au: "Navy and ochre" refresh (27 Nov 2026)
+   Plain white pages, navy for actions and bands, the brand ochre as the accent.
+   Loaded last on every page, so it overrides the earlier earth palette.
+   ============================================================ */
+:root{
+  --dust:#FFFFFF; --dust-2:#F3F5F8; --dust-3:#E3E8EF;
+  --terra:#1F3A5F; --terra-lt:#2C4D78;
+  --ochre:#C4873A; --ochre-lt:#D4975A; --ochre-pale:#FBF3E8;
+  --charcoal:#1E2C32; --charcoal-2:#2A3B42; --mid:#55666B; --light-mid:#8A999D; --white:#FFFFFF;
+  --navy:#1F3A5F; --tink:#1E2C32;
+}
+body{background:#FFFFFF}
+.nav{background:rgba(255,255,255,0.97)!important}
+.accent,h1 .accent,h2 .accent,h3 .accent{color:var(--ochre)!important}
+
+/* the old dark page headers and sections: white, ink text */
+.hero,.hero-dark,.post-header,.blog-page-header,.article-page-header,.legal-header,.wifdr-hero,.why-online,
+.notfor-section,.jtt-header,.hiw-header,.hero-body,.gethelp-header,.faq-hero,.complaints-header,
+.book-header,.about-hero,.dark,.header:not(.table-row),.topbar,.helpstrip{background:#FFFFFF!important;color:var(--tink)!important}
+:is(.hero,.hero-dark,.post-header,.blog-page-header,.article-page-header,.legal-header,.wifdr-hero,.why-online,.notfor-section,.jtt-header,.hiw-header,.hero-body,.gethelp-header,.faq-hero,.complaints-header,.book-header,.about-hero,.dark,.header:not(.table-row),.topbar,.helpstrip)::before{display:none!important}
+:is(.hero,.hero-dark,.post-header,.blog-page-header,.article-page-header,.legal-header,.wifdr-hero,.why-online,.notfor-section,.jtt-header,.hiw-header,.hero-body,.gethelp-header,.faq-hero,.complaints-header,.book-header,.about-hero,.dark,.header:not(.table-row),.topbar,.helpstrip) :is(h1,h2,h3,h4,h5,strong,b,dt,th,td,li,label){color:var(--tink)!important}
+:is(.hero,.hero-dark,.post-header,.blog-page-header,.article-page-header,.legal-header,.wifdr-hero,.why-online,.notfor-section,.jtt-header,.hiw-header,.hero-body,.gethelp-header,.faq-hero,.complaints-header,.book-header,.about-hero,.dark,.header:not(.table-row),.topbar,.helpstrip) :is(p,dd,small,time,.meta,[class*=sub],[class*=lead],[class*=desc],[class*=label]:not([class*=eyebrow])){color:var(--mid)!important}
+:is(.hero,.hero-dark,.post-header,.blog-page-header,.article-page-header,.legal-header,.wifdr-hero,.why-online,.notfor-section,.jtt-header,.hiw-header,.hero-body,.gethelp-header,.faq-hero,.complaints-header,.book-header,.about-hero,.dark,.header:not(.table-row),.topbar,.helpstrip) :is([class*=eyebrow],.section-label,[class*=kicker]):not(#_){color:var(--ochre)!important}
+:is(.hero,.hero-dark,.post-header,.blog-page-header,.article-page-header,.legal-header,.wifdr-hero,.why-online,.notfor-section,.jtt-header,.hiw-header,.hero-body,.gethelp-header,.faq-hero,.complaints-header,.book-header,.about-hero,.dark,.header:not(.table-row),.topbar,.helpstrip) a:not([class*=btn]):not([class*=cta]){color:var(--navy)!important}
+:is(.hero,.hero-dark,.post-header,.blog-page-header,.article-page-header,.legal-header,.wifdr-hero,.why-online,.notfor-section,.jtt-header,.hiw-header,.hero-body,.gethelp-header,.faq-hero,.complaints-header,.book-header,.about-hero,.dark,.header:not(.table-row),.topbar,.helpstrip) .accent{color:var(--ochre)!important}
+:is(.hero,.hero-dark,.post-header,.blog-page-header,.article-page-header,.legal-header,.wifdr-hero,.why-online,.notfor-section,.jtt-header,.hiw-header,.hero-body,.gethelp-header,.faq-hero,.complaints-header,.book-header,.about-hero,.dark) .btn-outline-light{color:var(--navy)!important;border-color:var(--navy)!important}
+:is(.hero,.hero-dark,.post-header,.blog-page-header,.article-page-header,.legal-header,.wifdr-hero,.why-online,.notfor-section,.jtt-header,.hiw-header,.hero-body,.gethelp-header,.faq-hero,.complaints-header,.book-header,.about-hero,.dark) .btn-outline-light:hover{background:var(--navy)!important;color:#fff!important}
+
+/* home: why online facts and stats on white */
+.why-facts,.why-fact{border-color:var(--dust-3)!important}
+.why-fact-icon{background:var(--dust-2)!important;color:var(--navy)!important}
+.why-fact-text p,.why-stat-label{color:var(--mid)!important}
+.why-stats{background:var(--dust-3)!important}.why-stat{background:#FFFFFF!important}
+.why-stat-val{color:var(--tink)!important}
+
+/* thin lines between white sections */
+main > section + section, body > section + section{border-top:1px solid #EEF1F5}
+.marquee-bar{background:#FFFFFF!important;border-top:1px solid var(--dust-3);border-bottom:1px solid var(--dust-3)}
+.marquee-item{color:var(--navy)!important}
+
+/* photos */
+.hero-img-real,.empathy-img-real,.why-img-real,.process-img-real{border-radius:16px;overflow:hidden}
+
+/* navy bands and buttons */
+.cta-band,.page-cta,.cta,.post-cta-inner,.loc-cta{background:var(--navy)!important}
+.cta-btn,.btn-cta{background:var(--ochre)!important;color:#fff!important;border-color:var(--ochre)!important}
+.cta-btn:hover,.btn-cta:hover{background:var(--ochre-lt)!important}
+.path-teaser-grey{background:var(--navy)!important;border-color:var(--navy)!important}
+footer{background:#152840!important}
+
+/* light buttons that sat on the old dark headers */
+:is(.hero,.hero-dark,.post-header,.blog-page-header,.article-page-header,.legal-header,.wifdr-hero,.why-online,.notfor-section,.jtt-header,.hiw-header,.hero-body,.gethelp-header,.faq-hero,.complaints-header,.book-header,.about-hero,.dark,.header:not(.table-row)) .btn-light{background:var(--navy)!important;color:#fff!important;border-color:var(--navy)!important}
+
+/* sections that stay as navy bands (cards and text were built for a dark background) */
+.timeframes-section,#find-your-path{background:var(--navy)!important}
+.table-row.header{background:var(--navy)!important}
+.table-row.header .table-cell{color:rgba(255,255,255,0.8)!important}
+/* decorative step numbers and calendar days: a touch darker so they still show on white */
+.pillar-num,.process-num,.story-num{color:#C9D3DF!important}
+.hours-cal-cell.is-muted,.hours-cal-cell.is-weekend{color:#AEB9C5!important}
+.post-meta,.post-meta span{color:var(--mid)!important}
+.section-label:not(.section-label-light){color:var(--ochre)!important}

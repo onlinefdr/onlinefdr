@@ -791,6 +791,7 @@ def shell(title, meta_desc, canonical, schema_json, page_html, current_page=None
 {BLOG_CSS}
 {extra_css}
   </style>
+<link rel="stylesheet" href="/theme.css?v=1">
 </head>
 <body>
 

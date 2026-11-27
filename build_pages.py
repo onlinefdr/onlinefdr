@@ -353,6 +353,7 @@ def build_page(
 {BASE_CSS}
 {extra_css}
   </style>
+<link rel="stylesheet" href="/theme.css?v=1">
 </head>
 <body>
 
