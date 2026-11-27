@@ -649,6 +649,12 @@ footer { background: var(--charcoal); padding: 64px 0 36px; }
 
   </style>
 <link rel="stylesheet" href="/theme.css?v=1">
+<style>/* 27 Nov 2026: sidebar follows scroll */
+body{overflow-x:clip}
+.sidebar{position:static;align-self:stretch}
+.sidebar-follow{position:sticky;top:92px;max-height:calc(100vh - 112px);overflow-y:auto;display:flex;flex-direction:column;gap:20px}
+@media(max-width:960px){.sidebar-follow{position:static;max-height:none;overflow:visible}}
+</style>
 </head>
 <body>
 
@@ -922,15 +928,7 @@ footer { background: var(--charcoal); padding: 64px 0 36px; }
             <img width="96" height="96" src="/images/payment/afterpay.png" alt="Afterpay" loading="lazy" decoding="async">
           </div>
         </div>
-        <nav class="sidebar-card sidebar-nav">
-          <h5>On this page</h5>
-          <ul>
-            <li><a href="#packages"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>What it costs</a></li>
-            <li><a href="#how"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>How the fixed price works</a></li>
-            <li><a href="#whats-included"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>Single-purpose services</a></li>
-            <li><a href="#court-comparison"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>The 3-question test</a></li>
-          </ul>
-        </nav>
+        
         <div class="sidebar-card">
           <h4>Related pages</h4>
           <ul class="related-links">
@@ -950,6 +948,17 @@ footer { background: var(--charcoal); padding: 64px 0 36px; }
             <li><a href="/blog/superannuation-splitting-after-separation-australia/">How super splitting works <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
             <li><a href="/blog/duty-of-disclosure-financial-settlement-australia/">The duty of disclosure <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
           </ul>
+        </div>
+        <div class="sidebar-follow">
+        <nav class="sidebar-card sidebar-nav">
+          <h5>On this page</h5>
+          <ul>
+            <li><a href="#packages"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>What it costs</a></li>
+            <li><a href="#how"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>How the fixed price works</a></li>
+            <li><a href="#whats-included"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>Single-purpose services</a></li>
+            <li><a href="#court-comparison"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>The 3-question test</a></li>
+          </ul>
+        </nav>
         </div>
       </aside>
     </div>

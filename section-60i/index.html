@@ -553,6 +553,12 @@ footer { background: var(--charcoal); padding: 64px 0 36px; }
 
   </style>
 <link rel="stylesheet" href="/theme.css?v=1">
+<style>/* 27 Nov 2026: sidebar follows scroll */
+body{overflow-x:clip}
+.sidebar{position:static;align-self:stretch}
+.sidebar-follow{position:sticky;top:92px;max-height:calc(100vh - 112px);overflow-y:auto;display:flex;flex-direction:column;gap:20px}
+@media(max-width:960px){.sidebar-follow{position:static;max-height:none;overflow:visible}}
+</style>
 </head>
 <body>
 
@@ -787,18 +793,7 @@ footer { background: var(--charcoal); padding: 64px 0 36px; }
         <div class="sidebar-card sidebar-card-img">
           <div class="img-real" style="aspect-ratio:4/5"><img width="1600" height="2000" src="/images/section60i-supporting-2.jpg" alt="A man in a suit standing composed on the steps of the Federal Court of Australia, briefcase in hand, his solicitor in robes a few steps behind." loading="lazy" decoding="async"></div>
         </div>
-        <nav class="sidebar-card sidebar-nav">
-          <h5>On this page</h5>
-          <ul>
-            <li><a href="#what-is-it"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>What is a Section 60I certificate</a></li>
-            <li><a href="#why-it-exists"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>Why the certificate exists</a></li>
-            <li><a href="#five-types"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>The five certificate types</a></li>
-            <li><a href="#practitioner-role"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>The practitioner's role</a></li>
-            <li><a href="#validity-and-issuance"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>Validity and issuance</a></li>
-            <li><a href="#exemptions"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>Exemptions</a></li>
-            <li><a href="#after-issued"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>After the certificate is issued</a></li>
-          </ul>
-        </nav>
+        
         <div class="sidebar-card">
           <h4>Related pages</h4>
           <ul class="related-links">
@@ -815,6 +810,20 @@ footer { background: var(--charcoal); padding: 64px 0 36px; }
             <li><a href="/blog/ex-breaks-parenting-order-mediation-australia/">If your ex breaks an order <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
             <li><a href="/blog/grandparents-rights-see-grandchildren-australia/">Grandparents' rights <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
           </ul>
+        </div>
+        <div class="sidebar-follow">
+        <nav class="sidebar-card sidebar-nav">
+          <h5>On this page</h5>
+          <ul>
+            <li><a href="#what-is-it"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>What is a Section 60I certificate</a></li>
+            <li><a href="#why-it-exists"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>Why the certificate exists</a></li>
+            <li><a href="#five-types"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>The five certificate types</a></li>
+            <li><a href="#practitioner-role"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>The practitioner's role</a></li>
+            <li><a href="#validity-and-issuance"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>Validity and issuance</a></li>
+            <li><a href="#exemptions"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>Exemptions</a></li>
+            <li><a href="#after-issued"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>After the certificate is issued</a></li>
+          </ul>
+        </nav>
         </div>
       </aside>
     </div>

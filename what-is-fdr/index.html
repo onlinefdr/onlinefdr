@@ -534,6 +534,12 @@ footer { background: var(--charcoal); padding: 64px 0 36px; }
 
   </style>
 <link rel="stylesheet" href="/theme.css?v=1">
+<style>/* 27 Nov 2026: sidebar follows scroll */
+body{overflow-x:clip}
+.sidebar{position:static;align-self:stretch}
+.sidebar-follow{position:sticky;top:92px;max-height:calc(100vh - 112px);overflow-y:auto;display:flex;flex-direction:column;gap:20px}
+@media(max-width:960px){.sidebar-follow{position:static;max-height:none;overflow:visible}}
+</style>
 </head>
 <body>
 
@@ -766,12 +772,13 @@ footer { background: var(--charcoal); padding: 64px 0 36px; }
           <p><strong>Inadmissibility (section 10J)</strong> goes further. Even if confidentiality is breached and something is disclosed, that information cannot be admitted as evidence in court proceedings. This is unusual. Most professional confidentiality protects against disclosure but not against admissibility once disclosure occurs. FDR protects against both.</p>
           <p>This matters because it means parties can speak frankly in FDR without worrying that what they say will be used against them later. The protection applies whether or not agreement is reached, and whether or not the matter ends up in court.</p>
         </article>
-        <aside class="sidebar">
+        <aside class="sidebar"><div class="sidebar-follow">
           <div class="sidebar-card">
             <h4>The protection in one line</h4>
             <p>What is said in FDR stays out of court. That is the legal protection that lets the conversation happen at all.</p>
           </div>
-        </aside>
+        </div>
+      </aside>
       </div>
     </div>
   </section>
