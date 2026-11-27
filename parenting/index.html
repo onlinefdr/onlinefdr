@@ -554,6 +554,15 @@ footer { background: var(--charcoal); padding: 64px 0 36px; }
 
   </style>
 <link rel="stylesheet" href="/theme.css?v=1">
+<style>/* 27 Nov 2026: GetCoPlan box, sidebar follows scroll */
+body{overflow-x:clip}
+.sidebar{position:static;align-self:stretch}
+.sidebar-follow{position:sticky;top:92px;max-height:calc(100vh - 112px);overflow-y:auto;display:flex;flex-direction:column;gap:20px}
+.gcp-row{border-left:4px solid #C4873A}
+.gcp-row .download-row-buttons .btn-primary{text-align:center}
+.sidebar-card-gcp{border-top:3px solid #C4873A}
+@media(max-width:960px){.sidebar-follow{position:static}}
+</style>
 </head>
 <body>
 
@@ -676,6 +685,14 @@ footer { background: var(--charcoal); padding: 64px 0 36px; }
 <div class="table-row" role="row"><div class="table-cell" role="cell"><strong>1. Parenting Plan</strong></div><div class="table-cell" role="cell">A written agreement between parents, signed and dated. Recognised under section 63C of the Family Law Act. Not court-approved. Easily updated by mutual agreement. <strong>Best when</strong> both parents can communicate, agreement is genuinely mutual, and flexibility matters more than enforceability.</div></div>
 <div class="table-row" role="row"><div class="table-cell" role="cell"><strong>2. Consent Orders</strong></div><div class="table-cell" role="cell">A court order made by agreement. Parents file an Application for Consent Orders and the court reviews and approves without a hearing. Legally enforceable. <strong>Best when</strong> both parents agree on the arrangements but want certainty, formal protection, and a higher bar against future change.</div></div>
 <div class="table-row" role="row"><div class="table-cell" role="cell"><strong>3. Contested Parenting Orders</strong></div><div class="table-cell" role="cell">A court order made after a hearing, where the judge decides. Used when parents cannot agree. The longest, most expensive, and most adversarial path. <strong>Best when</strong> agreement is genuinely impossible, or where there are serious safety concerns that require the court to step in.</div></div>
+</div><div class="download-row gcp-row">
+<div class="download-row-text">
+<h3>Building your Parenting Plan yourselves</h3>
+<p>If you can mostly agree, GetCoPlan, an online tool developed by our founder, lets you build a Parenting Plan together, each on your own phone. One parent starts, the other replies, and you take turns to agree or suggest changes until you both sign. If you get stuck on a few points, we can help you settle just those in a family dispute resolution session.</p>
+</div>
+<div class="download-row-buttons">
+<a class="btn-primary" href="https://getcoplan.com.au/" target="_blank" rel="noopener">Build your Parenting Plan with GetCoPlan</a>
+</div>
 </div><div class="notice notice-amber">
 <p class="notice-label">Preparing for the joint session</p>
 <p>Parents who arrive at mediation having thought through what they actually want, what is working, and where they already agree tend to have shorter, calmer, and more productive sessions. The <a href="/downloads/onlinefdr-parenting-reflection-workbook.pdf">Pre-Mediation Parenting Reflection Workbook</a> is a private thinking document, not a form. Nothing in it needs to be filled out, signed, or returned. It is for each parent, separately, in their own time, ahead of the joint session.</p>
@@ -753,6 +770,12 @@ footer { background: var(--charcoal); padding: 64px 0 36px; }
 <p>A private thinking document, not a form. Nothing to fill out, sign, or return. For each parent to work through separately before the joint session.</p>
 <a class="btn-primary" download="" href="/downloads/onlinefdr-parenting-reflection-workbook.pdf">Download PDF</a>
 </div>
+<div class="sidebar-follow">
+<div class="sidebar-card sidebar-card-gcp">
+<h4>Build your Parenting Plan together</h4>
+<p>GetCoPlan, an online tool developed by our founder, lets you both build a Parenting Plan, each on your own phone.</p>
+<a class="btn-primary" href="https://getcoplan.com.au/" target="_blank" rel="noopener">Try GetCoPlan</a>
+</div>
 <nav class="sidebar-card sidebar-nav">
 <h5>On this page</h5>
 <ul>
@@ -769,6 +792,7 @@ footer { background: var(--charcoal); padding: 64px 0 36px; }
 
 <li><a href="#best-interests"><svg fill="none" height="13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="13"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>What is best for your children</a></li><li><a href="#childrens-voices"><svg fill="none" height="13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="13"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>Your children’s voices</a></li><li><a href="#three-paths"><svg fill="none" height="13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="13"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>Three paths at a glance</a></li><li class="sidebar-nav-download"><a download="" href="/downloads/onlinefdr-parenting-reflection-workbook.pdf"><svg fill="none" height="13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="13"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg>Reflection workbook (PDF)</a></li><li><a href="#parenting-plan"><svg fill="none" height="13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="13"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>1. Parenting Plan</a></li><li><a href="#consent-orders"><svg fill="none" height="13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="13"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>2. Consent Orders</a></li><li><a href="#contested"><svg fill="none" height="13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="13"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>3. Contested Orders</a></li><li><a href="#changing"><svg fill="none" height="13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="13"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>Changing arrangements</a></li><li><a href="#breach"><svg fill="none" height="13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="13"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>When an order is breached</a></li><li><a href="#recovery"><svg fill="none" height="13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="13"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>Recovery orders</a></li><li><a href="#grandparents"><svg fill="none" height="13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="13"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>Grandparents and others</a></li><li><a href="#lawyer"><svg fill="none" height="13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="13"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>When you need a lawyer</a></li></ul>
 </nav>
+</div>
 <div class="sidebar-card">
 <h4>Related pages</h4>
 <ul class="related-links">
