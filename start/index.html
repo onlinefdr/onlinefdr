@@ -113,6 +113,35 @@
     }
     @media(prefers-reduced-motion:reduce){ html{scroll-behavior:auto;} .step.active{animation:none;} .opt:hover,.btn-primary:hover{transform:none;} }
   </style>
+  <style>
+    /* 27 Nov 2026: navy and ochre on plain white, to match the rest of the site */
+    :root{ --ink:#1E2C32; --char:#1E2C32; --terra:#1F3A5F; --terra-lt:#2C4D78; --white:#FFFFFF; --dust:#F3F5F8; --dust-3:#E3E8EF;
+      --t-hi:#1E2C32; --t-mid:#55666B; --t-lo:#8A999D; --line:#E3E8EF; --navy:#1F3A5F; }
+    body{ background:#FFFFFF; color:var(--t-hi); }
+    .logo{ color:var(--ink); }
+    .top-phone{ color:var(--navy); border-color:var(--navy); }
+    .top-phone:hover{ background:var(--navy); color:#fff; border-color:var(--navy); }
+    h1{ color:var(--ink); }
+    h1 .terra{ color:var(--ochre); }
+    .hero-sub{ color:var(--t-mid); }
+    .hero-photo::after{ background:linear-gradient(90deg, #FFFFFF 0%, rgba(255,255,255,0.75) 22%, rgba(255,255,255,0.1) 55%, rgba(255,255,255,0) 100%); }
+    .funnel{ background:#FFFFFF; color:var(--ink); border:1px solid var(--line); box-shadow:0 24px 60px rgba(30,44,50,0.16); }
+    .q .amt{ color:var(--ochre); }
+    .qsub,label,.back{ color:var(--t-mid); }
+    .reassure{ color:var(--t-lo); }
+    .opt{ background:var(--dust); }
+    .opt:hover{ border-color:var(--navy); background:#EEF2F7; }
+    .nudge .q{ color:var(--navy); }
+    .trust{ background:#F7F9FB; border-top:1px solid var(--line); }
+    .trust-item .tn{ color:var(--ochre); }
+    .trust-item .tl{ color:var(--t-mid); }
+    footer{ background:#152840; }
+    footer .tag{ color:rgba(255,255,255,0.8); }
+    footer .meta{ color:rgba(255,255,255,0.55); }
+    @media(max-width:860px){
+      .hero-photo::after{ background:linear-gradient(0deg, #FFFFFF 0%, rgba(255,255,255,0.25) 45%, rgba(255,255,255,0) 100%); }
+    }
+  </style>
 </head>
 <body>
 
