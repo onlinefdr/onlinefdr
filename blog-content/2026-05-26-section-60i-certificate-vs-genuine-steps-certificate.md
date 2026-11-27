@@ -10,7 +10,7 @@ related_pages:
 reading_time: 8
 hero_image: "section-60i-certificate-vs-genuine-steps-certificate-hero.jpg"
 tldr: "A Section 60I certificate is issued by an accredited FDR Practitioner for parenting applications under Part VII of the Family Law Act 1975. A Genuine Steps Certificate is signed by the party themselves under Schedule 1 of the FCFCOA (Family Law) Rules 2021 and is required for every initiating application and response, parenting and financial."
-updated: 2026-10-28
+updated: 2026-11-27
 ---
 
 Two certificates sit in the same neighbourhood of Australian family law and are constantly confused. They have different names that sound similar, different issuers, different statutory sources, and different triggers. Getting them wrong delays a court filing.
@@ -91,7 +91,7 @@ The Letter of Attendance and Genuine Effort serves the same evidentiary purpose 
 
 The Family Law Act 1975 covers parenting orders for the children of married couples nationally, and for the children of de facto couples in every state and territory except Western Australia. For the children of unmarried parents in Western Australia, parenting orders are made under the [Family Court Act 1997 (WA)](https://www.legislation.wa.gov.au/legislation/statutes.nsf/law_a1839.html&view=reprint), and the equivalent certificate is issued under section 66H of that Act.
 
-A section 66H certificate is the WA state equivalent of a Section 60I certificate. It serves the same function, has the same categories, and is issued by an accredited FDR Practitioner. Where the [Family Court of Western Australia](https://familycourt.wa.gov.au/F/family_dispute_resolution.aspx) hears the matter, a section 66H certificate substitutes for a Section 60I certificate. Where the Federal Circuit and Family Court of Australia hears the matter (married couples in WA, and parenting for de facto couples in any other state), a Section 60I certificate applies.
+A section 66H certificate is the WA state equivalent of a Section 60I certificate. It serves the same function, has the same categories, and is issued by an accredited FDR Practitioner. The [Family Court of Western Australia](https://familycourt.wa.gov.au/F/family_dispute_resolution.aspx) hears every family law matter in WA. For never-married parents it applies the WA Act, and a section 66H certificate is used. For married parents it applies the Family Law Act 1975, and a Section 60I certificate is used, the same as in every other state and territory.
 
 The Genuine Steps Certificate requirement under the FCFCOA (Family Law) Rules 2021 does not apply in the Family Court of Western Australia. WA has its own pre-action procedure regime under the Family Court Rules 2021 (WA), which a party should consult separately if they are filing in the WA Family Court.
 
@@ -99,13 +99,13 @@ The Genuine Steps Certificate requirement under the FCFCOA (Family Law) Rules 20
 
 If a Section 60I certificate is missing from a parenting application and no exemption is established, the court can refuse to accept the application for filing under the post-2024 framework. The applicant must then attend FDR, obtain the certificate or establish an exemption, and refile.
 
-If a Genuine Steps Certificate is missing from an initiating application or response, the court can refuse to accept the document for filing, or accept it provisionally and later impose a stay of proceedings pending compliance with the pre-action procedures. The court can also award costs against a party who has not complied, including against a party who has filed the certificate but has not in fact taken genuine steps to resolve the dispute before filing. Section 114UB of the Family Law Act 1975 provides the costs power for parenting matters; the corresponding general costs jurisdiction applies for financial matters.
+If a Genuine Steps Certificate is missing from an initiating application or response, the court can refuse to accept the document for filing, or accept it provisionally and later impose a stay of proceedings pending compliance with the pre-action procedures. The court can also award costs against a party who has not complied, including against a party who has filed the certificate but has not in fact taken genuine steps to resolve the dispute before filing. Section 114UB of the Family Law Act 1975 is the general costs power for all proceedings under the Act, parenting and financial.
 
 The practical effect of either certificate being missing is the same: delay and cost. Getting both right at the point of filing is faster and cheaper than fixing the omission after the application is rejected.
 
 ## A third document: the Certificate of Dispute Resolution
 
-There is a third document that uses similar language, and it helps to know why it is neither of the two above. It is called a Certificate of Dispute Resolution, and it comes from rule 8.12 of the Federal Circuit and Family Court of Australia (Family Law) Rules 2021.
+There is a third document that uses similar language, and it helps to know why it is neither of the two above. It is called a Certificate of Dispute Resolution, and it is used in court-ordered dispute resolution under the Federal Circuit and Family Court of Australia (Family Law) Rules 2021.
 
 The difference is timing. A Section 60I certificate and a Genuine Steps Certificate are both filed before a court application starts. A Certificate of Dispute Resolution only exists after an application has started, when the court itself orders the parties to attend dispute resolution. The practitioner who runs that court-ordered session, whether a registrar, a judicial officer, or an external practitioner the court refers the parties to, completes the certificate at the end. It records whether an agreement was reached and whether each party attended and made a genuine effort. It goes to the court, where it can affect how the case proceeds and any decision about costs.
 

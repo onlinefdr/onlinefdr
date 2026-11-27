@@ -11,8 +11,8 @@ reading_time: 7
 hero_image: "grandparents-rights-see-grandchildren-australia-hero.jpg"
 hero_alt: "An older woman sits alone on a weathered timber park bench in soft afternoon light, a small child's knitted cardigan folded in her lap, looking away towards an empty playground in the middle distance."
 faq: true
-tldr: "Grandparents have no automatic right to see their grandchildren, but they can apply for a parenting order under Section 65C of the Family Law Act 1975, and unlike other relatives they do not need the court's permission to file. The court decides on the child's best interests, not the grandparent's wishes, and safety comes first. Like parents, grandparents must usually attempt Family Dispute Resolution and obtain a Section 60I certificate before they can go to court."
-updated: 2026-10-28
+tldr: "Grandparents have no automatic right to see their grandchildren, but they can apply for a parenting order under Section 65C of the Family Law Act 1975, and unlike most other relatives they do not first have to show they are concerned with the child's care, welfare or development. The court decides on the child's best interests, not the grandparent's wishes, and safety comes first. Like parents, grandparents must usually attempt Family Dispute Resolution and obtain a Section 60I certificate before they can go to court."
+updated: 2026-11-27
 ---
 
 When grandparents lose contact with their grandchildren after a separation or a family rift, the first question is almost always the same. Do I have a right to see them? The honest answer is no, not an automatic one. But that is not the end of it, and most of what is written online either stops at the wrong place or describes a version of the law that changed in 2024.
@@ -55,7 +55,7 @@ The exemptions include genuine urgency, child abuse or family violence or a risk
 
 Some grandparents are not asking for a regular visit. They are stepping in to raise a child because a parent has died, is seriously unwell, or cannot safely care for them. In that situation a grandparent can seek much more than time.
 
-A parenting order can provide for a child to live with a grandparent and can give the grandparent parental responsibility, meaning a say in major long-term decisions about schooling, health and upbringing. Courts make these orders where the child's best interests require it. In *Kay and Jasper* [2007] FamCA 1646, a court ordered that children live with their grandmother, who shared parental responsibility, because their mother was too unwell to care for them. Where no parent is available at all, after a death, a critical injury or incarceration, the Federal Circuit and Family Court of Australia runs a Critical Incident List to put urgent care arrangements in place quickly.
+A parenting order can provide for a child to live with a grandparent and can give the grandparent parental responsibility, meaning a say in major long-term decisions about schooling, health and upbringing. Courts make these orders where the child's best interests require it. Where no parent is available at all, after a death, a critical injury or incarceration, the Federal Circuit and Family Court of Australia runs a Critical Incident List to put urgent care arrangements in place quickly.
 
 ## What can a grandparent's parenting order cover?
 

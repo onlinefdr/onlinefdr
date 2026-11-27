@@ -2,7 +2,7 @@
 title: "How much does a divorce cost in Australia?"
 slug: "how-much-does-a-divorce-cost-australia"
 date: 2026-06-05
-updated: 2026-10-28
+updated: 2026-11-27
 category: Financial Settlement
 meta_description: "A divorce costs $1,170 to file in Australia. The real money is in property and parenting, where your path can swing it by tens of thousands."
 related_pages:
@@ -45,7 +45,7 @@ That last point matters more than it looks. When you compare quotes, check wheth
 
 ## What a courtroom fight costs
 
-The alternative to resolving things by agreement is fighting them out in court, and the figures are an order of magnitude larger. Preparation and the first court date alone commonly run between $6,500 and $12,000 each. By the time a matter is genuinely contested, it regularly costs $85,000 or more per person, and a matter that runs all the way to trial can reach $150,000 or more. Independent guides put the cost of contested family law proceedings anywhere from $30,000 to well over $100,000 per party. On top of that, the timeline is measured in years, commonly 18 to 36 months, not weeks.
+The alternative to resolving things by agreement is fighting them out in court, and the figures are an order of magnitude larger. Preparation and the first court date alone commonly run between $6,500 and $12,000 each. By the time a matter is genuinely contested, it can cost $85,000 or more per person, and a matter that runs all the way to trial can reach $150,000 or more. Independent guides put the cost of contested family law proceedings anywhere from $30,000 to well over $100,000 per party. On top of that, the timeline is measured in years, commonly 18 to 36 months, not weeks.
 
 ## Even if you start with lawyers, the court usually sends you back
 
@@ -81,7 +81,7 @@ The divorce order itself costs $1,170 to file, or $390 on a concession card or h
 
 ### Is family dispute resolution cheaper than going to court?
 
-In most cases yes, and by a wide margin. Contested court proceedings regularly run past $85,000 per person and take 18 to 36 months, while most matters that resolve through family dispute resolution settle in weeks at a fraction of that cost. You also keep control of the outcome rather than handing it to a judge.
+In most cases yes, and by a wide margin. Contested court proceedings can run past $85,000 per person and take 18 to 36 months, while most matters that resolve through family dispute resolution settle in weeks at a fraction of that cost. You also keep control of the outcome rather than handing it to a judge.
 
 ### How long does it take?
 

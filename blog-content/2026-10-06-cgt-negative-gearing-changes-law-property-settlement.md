@@ -14,7 +14,7 @@ faq: true
 hero_image: "cgt-negative-gearing-changes-law-property-settlement-hero.jpg"
 hero_alt: "A man in a navy jumper on the front step of a red-brick house hands a single brass key to a woman in a grey jacket on the garden path below, at dusk on a quiet Australian suburban street."
 tldr: "The CGT and negative gearing changes announced in the May 2026 Budget are now law and start on 1 July 2027. Gains made before that date keep the 50 percent discount, so there is less reason to rush a settlement than first thought. The marriage breakdown rollover still applies, and an August amendment protects negative gearing on a property transferred to a former spouse. The family trust tax is not yet law."
-updated: 2026-10-28
+updated: 2026-11-27
 ---
 
 In May we wrote about [how the 2026 Budget CGT changes could affect your property settlement](/blog/budget-cgt-changes-property-settlement/). At the time they were proposals. Parliament has since passed them, and the final law differs from the announcement in ways that matter to separating couples.
@@ -73,7 +73,7 @@ Under section 26-158, if you take an ownership interest in a residential dwellin
 
 ## What about family trusts?
 
-The proposed 30 percent minimum tax on discretionary trusts is not law. The Australian Taxation Office [describes it as announced](https://www.ato.gov.au/about-ato/new-legislation/in-detail/businesses/tax-reform-introducing-a-minimum-tax-on-discretionary-trusts), with draft legislation released for consultation in September 2026 and a proposed start date of 1 July 2028. Its final shape may change before it passes.
+The proposed 30 percent minimum tax on discretionary trusts is not law yet. On 14 October 2026 the Government introduced the Treasury Laws Amendment (Tax Reform No. 3) Bill 2026, which carries the trust tax from 1 July 2028, a second tranche of CGT changes and further changes to the negative gearing rules. At the time of this update the Bill had not passed, and its final shape may change before it does.
 
 Even so, trusts already matter in a property settlement. Both parties have a duty to disclose trust structures they control or benefit from, including distribution history. Where one party relies on trust distributions as income, it is sensible to model what those distributions might look like if the minimum tax passes in its current form, and to treat that figure as uncertain rather than settled.
 
@@ -91,7 +91,7 @@ In Family Dispute Resolution, you can bring that work into the room. Each person
 
 ### Are the 2026 CGT changes law?
 
-Yes. The Treasury Laws Amendment (Tax Reform No. 1) Act 2026 received Royal Assent on 26 June 2026, and the Treasury Laws Amendment (Tax Reform No. 2) Act 2026 followed on 26 August 2026. Most of the changes start on 1 July 2027. The proposed minimum tax on discretionary trusts is not yet law.
+Yes. The Treasury Laws Amendment (Tax Reform No. 1) Act 2026 received Royal Assent on 26 June 2026, and the Treasury Laws Amendment (Tax Reform No. 2) Act 2026 followed on 26 August 2026. Most of the changes start on 1 July 2027. Further changes, including the minimum tax on discretionary trusts, are in the Tax Reform No. 3 Bill 2026, which was before Parliament at the time of this update.
 
 ### Do pre-2027 gains keep the 50 percent discount?
 

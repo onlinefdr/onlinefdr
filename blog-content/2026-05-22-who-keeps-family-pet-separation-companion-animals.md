@@ -12,7 +12,7 @@ related_posts:
 reading_time: 8
 hero_image: "who-keeps-family-pet-separation-companion-animals-hero.jpg"
 tldr: "From 10 June 2025, pets in Australia are no longer treated as ordinary property in family law proceedings. The Family Law Amendment Act 2024 introduced the concept of a companion animal, a distinct category of property with its own factors for ownership. The court can transfer ownership or order a sale, but cannot order shared care. Family violence involving pets is now expressly considered. Pets remain property, not children; arrangements are part of property settlement, not parenting."
-updated: 2026-10-28
+updated: 2026-11-27
 ---
 When couples separate in Australia, almost everyone has a list of what matters most. The house, superannuation, the kids if there are kids, and somewhere on that list, often higher than people admit, is the dog. Or the cat. Or in some households, both. Pets are family. That has always been true emotionally. Until recently, it was not reflected in family law.
 
@@ -24,7 +24,7 @@ The Family Law Amendment Act 2024 introduced a statutory definition of companion
 
 A companion animal under the new provisions is an animal kept by one or both parties to a marriage or de facto relationship primarily for the purpose of companionship. The definition excludes assistance animals as defined by the [Disability Discrimination Act 1992](https://www.legislation.gov.au/C2004A04426/latest/text), animals kept as part of a business, and animals kept for agricultural or laboratory purposes. The most common companion animals in practice are dogs and cats, but the definition is broader. A house rabbit, a parrot, a pet snake, and a horse kept for companionship can all qualify, provided companionship is the primary purpose.
 
-Before the amendments, pets were treated as ordinary property under sections 79 and 90SM of the Family Law Act 1975. The court considered them alongside cars, furniture, and appliances, and decided ownership based on factors like who paid for the animal, whose name was on the microchip registration, and the animal's monetary value. Emotional attachment carried little legal weight. The leading case of Grunseth & Wighton confirmed that the bond between a person and a pet was not the primary determinant. The new framework changes that, while still keeping pets within the property settlement system rather than treating them as children.
+Before the amendments, pets were treated as ordinary property under sections 79 and 90SM of the Family Law Act 1975. The court considered them alongside cars, furniture, and appliances, and decided ownership based on factors like who paid for the animal, whose name was on the microchip registration, and the animal's monetary value. Emotional attachment carried little legal weight. The new framework changes that, while still keeping pets within the property settlement system rather than treating them as children.
 
 ## What factors does the court now consider?
 
